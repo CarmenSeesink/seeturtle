@@ -1,0 +1,13 @@
+/Users/CarmenSeesink/Desktop/seeturtle/seeturtle/bin/Debug/netstandard2.0/seeturtle.deps.json
+/Users/CarmenSeesink/Desktop/seeturtle/seeturtle/bin/Debug/netstandard2.0/seeturtle.dll
+/Users/CarmenSeesink/Desktop/seeturtle/seeturtle/bin/Debug/netstandard2.0/ref/seeturtle.dll
+/Users/CarmenSeesink/Desktop/seeturtle/seeturtle/bin/Debug/netstandard2.0/seeturtle.pdb
+/Users/CarmenSeesink/Desktop/seeturtle/seeturtle/obj/Debug/netstandard2.0/seeturtle.csprojAssemblyReference.cache
+/Users/CarmenSeesink/Desktop/seeturtle/seeturtle/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/CarmenSeesink/Desktop/seeturtle/seeturtle/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
+/Users/CarmenSeesink/Desktop/seeturtle/seeturtle/obj/Debug/netstandard2.0/seeturtle.AssemblyInfoInputs.cache
+/Users/CarmenSeesink/Desktop/seeturtle/seeturtle/obj/Debug/netstandard2.0/seeturtle.AssemblyInfo.cs
+/Users/CarmenSeesink/Desktop/seeturtle/seeturtle/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/CarmenSeesink/Desktop/seeturtle/seeturtle/obj/Debug/netstandard2.0/seeturtle.dll
+/Users/CarmenSeesink/Desktop/seeturtle/seeturtle/obj/Debug/netstandard2.0/ref/seeturtle.dll
+/Users/CarmenSeesink/Desktop/seeturtle/seeturtle/obj/Debug/netstandard2.0/seeturtle.pdb
