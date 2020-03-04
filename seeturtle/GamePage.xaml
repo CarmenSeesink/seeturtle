@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="seeturtle.GamePage"
+             BackgroundColor="#6371e7">
+    <ContentPage.Content>
+        <StackLayout>
+        <StackLayout VerticalOptions="StartAndExpand">
+            <ImageButton BackgroundColor="#fdbb11"
+                         Source="arrow"
+                         VerticalOptions="StartAndExpand"
+                         Margin="30, 35, 0, 20"
+                         HorizontalOptions="Start"
+                         WidthRequest="48"
+                         HeightRequest="48"
+                         CornerRadius="24"
+                         Padding="18"
+                         Clicked="BackTapped">
+            </ImageButton>
+            <Label Text="Help turtle get to the sea"
+                   VerticalOptions="CenterAndExpand"
+                   TextColor="White"
+                   FontSize="22"
+                   FontFamily="Avenir"
+                   FontAttributes="Bold"
+                   Margin="30, 0, 0, 30">
+            </Label>
+            </StackLayout>
+             <StackLayout VerticalOptions="EndAndExpand">
+                 <Frame CornerRadius="40"
+                        OutlineColor="#fce8be"
+                        BackgroundColor="#fce8be"
+                        Padding="0"
+                        HeightRequest="700"
+                        Margin="0, 0, 0, -40"
+                        HasShadow="False"
+                        VerticalOptions="End">
+                     <Image Source="turtle_top"
+                            VerticalOptions="End"
+                            WidthRequest="60"
+                            HeightRequest="60"
+                            Margin="0, 0, 0, 60"
+                         ></Image>
+                 </Frame>
+             </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

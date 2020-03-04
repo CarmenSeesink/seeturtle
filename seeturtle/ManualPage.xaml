@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="seeturtle.ManualPage">
+    <StackLayout>
+        <StackLayout>
+            <StackLayout VerticalOptions="FillAndExpand">
+            <ImageButton BackgroundColor="#fdbb11"
+                         Source="arrow"
+                         VerticalOptions="StartAndExpand"
+                         Margin="30, 35, 0, 20"
+                         HorizontalOptions="Start"
+                         WidthRequest="48"
+                         HeightRequest="48"
+                         CornerRadius="24"
+                         Padding="18"
+                         Clicked="BackPlayTapped">
+            </ImageButton>
+            <Label Text="Manual"
+                   VerticalOptions="CenterAndExpand"
+                   TextColor="Black"
+                   FontSize="22"
+                   FontFamily="Avenir"
+                   FontAttributes="Bold"
+                   Margin="30, 0, 0, 30">
+            </Label>
+            </StackLayout>
+            <Frame VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="StartAndExpand"
+                   BackgroundColor="#6371e7"
+                   CornerRadius="10"
+                   OutlineColor="#6371e7"
+                   Padding="0"
+                   Margin="30, 0, 30, 10"
+                   HasShadow="False">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                             <ColumnDefinition Width="65"></ColumnDefinition>
+                             <ColumnDefinition Width="250"></ColumnDefinition>
+                             <ColumnDefinition Width="45"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0"
+                           Source="bagicon"
+                           WidthRequest="20"
+                           HeightRequest="30"
+                           HorizontalOptions="End"
+                           Margin="35, 0, 0, 0">
+                    </Image>
+                    <Button Grid.Column="1"
+                            Text="Pollution"
+                            HorizontalOptions="Start"
+                            TextColor="White"
+                            WidthRequest="140"
+                            HeightRequest="80"
+                            BackgroundColor="Transparent"
+                            FontFamily="Avenir"
+                            FontAttributes="Bold"
+                            FontSize="16"
+                            >
+                    </Button>
+                    <Image Grid.Column="2"
+                           Source="forwardarrow"
+                           WidthRequest="20"
+                           HeightRequest="20"
+                           Margin="0, 0, 30, 0">
+                    </Image>
+                </Grid>
+                
+            </Frame>
+            <Frame VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="StartAndExpand"
+                   BackgroundColor="#6371e7"
+                   CornerRadius="10"
+                   OutlineColor="#6371e7"
+                   Padding="0"
+                   Margin="30, 0, 30, 10"
+                   HasShadow="False">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                             <ColumnDefinition Width="65"></ColumnDefinition>
+                             <ColumnDefinition Width="250"></ColumnDefinition>
+                             <ColumnDefinition Width="45"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0"
+                           Source="jellyfishicon"
+                           WidthRequest="20"
+                           HeightRequest="30"
+                           HorizontalOptions="End"
+                           Margin="35, 0, 0, 0">
+                    </Image>
+                    <Button Grid.Column="1"
+                            Text="Feeding"
+                            HorizontalOptions="StartAndExpand"
+                            TextColor="White"
+                            WidthRequest="130"
+                            HeightRequest="80"
+                            BackgroundColor="Transparent"
+                            FontFamily="Avenir"
+                            FontAttributes="Bold"
+                            FontSize="16">
+                    </Button>
+                    <Image Grid.Column="2"
+                           Source="forwardarrow"
+                           WidthRequest="20"
+                           HeightRequest="20"
+                           Margin="0, 0, 30, 0">
+                    </Image>
+                </Grid>
+            </Frame>
+            <Frame VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="StartAndExpand"
+                   BackgroundColor="#6371e7"
+                   CornerRadius="10"
+                   OutlineColor="#6371e7"
+                   Padding="0"
+                   Margin="30, 0, 30, 10"
+                   HasShadow="False">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                             <ColumnDefinition Width="65"></ColumnDefinition>
+                             <ColumnDefinition Width="250"></ColumnDefinition>
+                             <ColumnDefinition Width="45"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0"
+                           Source="coralicon"
+                           WidthRequest="20"
+                           HeightRequest="30"
+                           HorizontalOptions="End"
+                           Margin="35, 0, 0, 0">
+                    </Image>
+                    <Button Grid.Column="1"
+                            Text="Coral restoration"
+                            HorizontalOptions="Start"
+                            TextColor="White"
+                            WidthRequest="200"
+                            HeightRequest="80"
+                            BackgroundColor="Transparent"
+                            FontFamily="Avenir"
+                            FontAttributes="Bold"
+                            FontSize="16">
+                    </Button>
+                    <Image Grid.Column="2"
+                           Source="forwardarrow"
+                           WidthRequest="20"
+                           HeightRequest="20"
+                           Margin="0, 0, 30, 0">
+                    </Image>
+                </Grid>
+            </Frame>
+            <Frame VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="StartAndExpand"
+                   BackgroundColor="#6371e7"
+                   CornerRadius="10"
+                   OutlineColor="#6371e7"
+                   Padding="0"
+                   Margin="30, 0, 30, 10"
+                   HasShadow="False">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                             <ColumnDefinition Width="65"></ColumnDefinition>
+                             <ColumnDefinition Width="250"></ColumnDefinition>
+                             <ColumnDefinition Width="45"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0"
+                           Source="pinicon"
+                           WidthRequest="20"
+                           HeightRequest="30"
+                           HorizontalOptions="End"
+                           Margin="35, 0, 0, 0">
+                    </Image>
+                    <Button Grid.Column="1"
+                            Text="Migration"
+                            HorizontalOptions="Start"
+                            TextColor="White"
+                            WidthRequest="140"
+                            HeightRequest="80"
+                            BackgroundColor="Transparent"
+                            FontFamily="Avenir"
+                            FontAttributes="Bold"
+                            FontSize="16">
+                    </Button>
+                    <Image Grid.Column="2"
+                           Source="forwardarrow"
+                           WidthRequest="20"
+                           HeightRequest="20"
+                           Margin="0, 0, 30, 0">
+                    </Image>
+                </Grid>
+            </Frame>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

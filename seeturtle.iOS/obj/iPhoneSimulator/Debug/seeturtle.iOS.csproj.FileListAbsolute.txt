@@ -45,13 +45,12 @@
 /Users/CarmenSeesink/Desktop/seeturtle/seeturtle.iOS/bin/iPhoneSimulator/Debug/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll
 /Users/CarmenSeesink/Desktop/seeturtle/seeturtle.iOS/bin/iPhoneSimulator/Debug/seeturtle.dll
 /Users/CarmenSeesink/Desktop/seeturtle/seeturtle.iOS/bin/iPhoneSimulator/Debug/seeturtle.pdb
-/Users/CarmenSeesink/Desktop/seeturtle/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.3/ibtool/_BundleResourceWithLogicalName.items
-/Users/CarmenSeesink/Desktop/seeturtle/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.3/actool/_PartialAppManifest.items
-/Users/CarmenSeesink/Desktop/seeturtle/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.3/actool/_BundleResourceWithLogicalName.items
-/Users/CarmenSeesink/Desktop/seeturtle/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.3/coremlc/_PartialAppManifest.items
-/Users/CarmenSeesink/Desktop/seeturtle/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.3/coremlc/_BundleResourceWithLogicalName.items
-/Users/CarmenSeesink/Desktop/seeturtle/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.3/optimized/
-/Users/CarmenSeesink/Desktop/seeturtle/seeturtle.iOS/obj/iPhoneSimulator/Debug/seeturtle.iOS.csprojAssemblyReference.cache
+/Users/CarmenSeesink/Desktop/seeturtle/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/ibtool/_BundleResourceWithLogicalName.items
+/Users/CarmenSeesink/Desktop/seeturtle/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/_PartialAppManifest.items
+/Users/CarmenSeesink/Desktop/seeturtle/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/_BundleResourceWithLogicalName.items
+/Users/CarmenSeesink/Desktop/seeturtle/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/coremlc/_PartialAppManifest.items
+/Users/CarmenSeesink/Desktop/seeturtle/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/coremlc/_BundleResourceWithLogicalName.items
+/Users/CarmenSeesink/Desktop/seeturtle/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/optimized/
 /Users/CarmenSeesink/Desktop/seeturtle/seeturtle.iOS/obj/iPhoneSimulator/Debug/XamlC.stamp
 /Users/CarmenSeesink/Desktop/seeturtle/seeturtle.iOS/obj/iPhoneSimulator/Debug/seeturtle.iOS.csproj.CopyComplete
 /Users/CarmenSeesink/Desktop/seeturtle/seeturtle.iOS/obj/iPhoneSimulator/Debug/seeturtle.iOS.exe

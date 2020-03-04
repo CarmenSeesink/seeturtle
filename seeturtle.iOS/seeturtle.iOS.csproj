@@ -112,6 +112,77 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\logo.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\logo.imageset\logo_3px.png" />
+    <ImageAsset Include="Assets.xcassets\logo.imageset\logo_2px.png" />
+    <ImageAsset Include="Assets.xcassets\logo.imageset\logo_1px.png" />
+    <ImageAsset Include="Assets.xcassets\crab.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\crab.imageset\crab_3px.png" />
+    <ImageAsset Include="Assets.xcassets\crab.imageset\crab_2px.png" />
+    <ImageAsset Include="Assets.xcassets\crab.imageset\crab_1px.png" />
+    <ImageAsset Include="Assets.xcassets\diver.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\diver.imageset\diver_3px.png" />
+    <ImageAsset Include="Assets.xcassets\diver.imageset\diver_2px.png" />
+    <ImageAsset Include="Assets.xcassets\diver.imageset\diver_1px.png" />
+    <ImageAsset Include="Assets.xcassets\coralicon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\hearticon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\gameicon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\question.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\jellyfishicon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\pinicon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\hearticon.imageset\hearticon_3px.png" />
+    <ImageAsset Include="Assets.xcassets\hearticon.imageset\hearticon_2px.png" />
+    <ImageAsset Include="Assets.xcassets\hearticon.imageset\hearticon_1px.png" />
+    <ImageAsset Include="Assets.xcassets\coralicon.imageset\coralicon_3px.png" />
+    <ImageAsset Include="Assets.xcassets\coralicon.imageset\coralicon_1px.png" />
+    <ImageAsset Include="Assets.xcassets\coralicon.imageset\coralicon_2px.png" />
+    <ImageAsset Include="Assets.xcassets\gameicon.imageset\gameicon_3px.png" />
+    <ImageAsset Include="Assets.xcassets\gameicon.imageset\gameicon_2px.png" />
+    <ImageAsset Include="Assets.xcassets\gameicon.imageset\gameicon_1px.png" />
+    <ImageAsset Include="Assets.xcassets\question.imageset\question_3px.png" />
+    <ImageAsset Include="Assets.xcassets\question.imageset\question_2px.png" />
+    <ImageAsset Include="Assets.xcassets\question.imageset\question_1px.png" />
+    <ImageAsset Include="Assets.xcassets\jellyfishicon.imageset\jellyfishicon_3px.png" />
+    <ImageAsset Include="Assets.xcassets\jellyfishicon.imageset\jellyfishicon_2px.png" />
+    <ImageAsset Include="Assets.xcassets\jellyfishicon.imageset\jellyfishicon_1px.png" />
+    <ImageAsset Include="Assets.xcassets\pinicon.imageset\pinicon_3px.png" />
+    <ImageAsset Include="Assets.xcassets\pinicon.imageset\pinicon_2px.png" />
+    <ImageAsset Include="Assets.xcassets\pinicon.imageset\pinicon_1px.png" />
+    <ImageAsset Include="Assets.xcassets\arrow.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\arrow.imageset\arrow_3px.png" />
+    <ImageAsset Include="Assets.xcassets\arrow.imageset\arrow_2px.png" />
+    <ImageAsset Include="Assets.xcassets\arrow.imageset\arrow_1px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_happy.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\turtle_happy.imageset\turtle_happy_3px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_happy.imageset\turtle_happy_2px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_happy.imageset\turtle_happy_1px.png" />
+    <ImageAsset Include="Assets.xcassets\bagicon.imageset\bagicon_1px.png" />
+    <ImageAsset Include="Assets.xcassets\bagicon.imageset\bagicon_2px.png" />
+    <ImageAsset Include="Assets.xcassets\bagicon.imageset\bagicon_3px.png" />
+    <ImageAsset Include="Assets.xcassets\bagicon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\bagicon.imageset\bagicon_1px-1.png" />
+    <ImageAsset Include="Assets.xcassets\bagicon.imageset\bagicon_2px-1.png" />
+    <ImageAsset Include="Assets.xcassets\bagicon.imageset\bagicon_3px-1.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_top.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\forwardarrow.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\jellyfish.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\coral.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\bag.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\bag.imageset\bag_3px.png" />
+    <ImageAsset Include="Assets.xcassets\bag.imageset\bag_2px.png" />
+    <ImageAsset Include="Assets.xcassets\bag.imageset\bag_1px.png" />
+    <ImageAsset Include="Assets.xcassets\coral.imageset\coral_3px.png" />
+    <ImageAsset Include="Assets.xcassets\coral.imageset\coral_2px.png" />
+    <ImageAsset Include="Assets.xcassets\coral.imageset\coral_1px.png" />
+    <ImageAsset Include="Assets.xcassets\jellyfish.imageset\jellyfish_3px.png" />
+    <ImageAsset Include="Assets.xcassets\jellyfish.imageset\jellyfish_2px.png" />
+    <ImageAsset Include="Assets.xcassets\jellyfish.imageset\jellyfish_1px.png" />
+    <ImageAsset Include="Assets.xcassets\forwardarrow.imageset\forwardarrow_3px.png" />
+    <ImageAsset Include="Assets.xcassets\forwardarrow.imageset\forwardarrow_2px.png" />
+    <ImageAsset Include="Assets.xcassets\forwardarrow.imageset\forwardarrow_1px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_top.imageset\turtletop_3px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_top.imageset\turtletop_2px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_top.imageset\turtletop_1px.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -131,5 +202,24 @@
       <Project>{EF59E4F3-49C9-4998-8DE2-EEAFC5D11083}</Project>
       <Name>seeturtle</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets.xcassets\logo.imageset\" />
+    <Folder Include="Assets.xcassets\crab.imageset\" />
+    <Folder Include="Assets.xcassets\diver.imageset\" />
+    <Folder Include="Assets.xcassets\coralicon.imageset\" />
+    <Folder Include="Assets.xcassets\hearticon.imageset\" />
+    <Folder Include="Assets.xcassets\gameicon.imageset\" />
+    <Folder Include="Assets.xcassets\question.imageset\" />
+    <Folder Include="Assets.xcassets\jellyfishicon.imageset\" />
+    <Folder Include="Assets.xcassets\pinicon.imageset\" />
+    <Folder Include="Assets.xcassets\arrow.imageset\" />
+    <Folder Include="Assets.xcassets\turtle_happy.imageset\" />
+    <Folder Include="Assets.xcassets\bagicon.imageset\" />
+    <Folder Include="Assets.xcassets\turtle_top.imageset\" />
+    <Folder Include="Assets.xcassets\forwardarrow.imageset\" />
+    <Folder Include="Assets.xcassets\jellyfish.imageset\" />
+    <Folder Include="Assets.xcassets\coral.imageset\" />
+    <Folder Include="Assets.xcassets\bag.imageset\" />
   </ItemGroup>
 </Project>

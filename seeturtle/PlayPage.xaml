@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="seeturtle.PlayPage"
+             BackgroundColor="White">
+    <StackLayout VerticalOptions="Fill">
+        <ImageButton BackgroundColor="#fdbb11"
+                     Source="question"
+                     VerticalOptions="StartAndExpand"
+                     Margin="0, 35, 20, 0"
+                     HorizontalOptions="End"
+                     WidthRequest="48"
+                     HeightRequest="48"
+                     CornerRadius="24"
+                     Padding="15"
+                     Clicked="ManualTapped">
+        </ImageButton>
+        <Frame VerticalOptions="CenterAndExpand"
+               HorizontalOptions="FillAndExpand"
+               BackgroundColor="#6371e7"
+               CornerRadius="40"
+               OutlineColor="#6371e7"
+               Padding="0"
+               HasShadow="False"
+               HeightRequest="520"
+               Margin="0, 0, 0, -50">
+            <Image Source="turtle_happy"
+                   WidthRequest="150"
+                   HeightRequest="150"
+                   VerticalOptions="Center">
+            </Image>
+        </Frame>
+        <Frame BackgroundColor="#5868c4"
+               HeightRequest="70"
+               CornerRadius="0"
+               OutlineColor="#6371e7"
+               Padding="0"
+               HasShadow="False"
+               >
+        <Grid  HorizontalOptions="CenterAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="60"></ColumnDefinition>
+                <ColumnDefinition Width="60"></ColumnDefinition>
+                <ColumnDefinition Width="80"></ColumnDefinition>
+                <ColumnDefinition Width="60"></ColumnDefinition>
+                <ColumnDefinition Width="60"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+           <ImageButton Grid.Column="0"
+                        Source="pinicon"
+                        Grid.ColumnSpan="1"
+                        Padding="5"
+                        Margin="10"
+                        BackgroundColor="Transparent"
+                        Clicked="PinTapped">
+           </ImageButton>
+           <ImageButton Grid.Column="1"
+                        Source="gameicon"
+                        Grid.ColumnSpan="1"
+                        Padding="2"
+                        Margin="10"
+                        BackgroundColor="Transparent"
+                        Clicked="GameTapped">
+           </ImageButton>
+           <ImageButton Grid.Column="2"
+                        Source="hearticon"
+                        Grid.ColumnSpan="1"
+                        Padding="1"
+                        Margin="10"
+                        BackgroundColor="Transparent"
+                        Clicked="HeartTapped">
+           </ImageButton>
+           <ImageButton Grid.Column="3"
+                        Source="jellyfishicon"
+                        Grid.ColumnSpan="1"
+                        Padding="5"
+                        Margin="10"
+                        BackgroundColor="Transparent"
+                        >
+           </ImageButton>
+           <ImageButton Grid.Column="4"
+                        Source="coralicon"
+                        Grid.ColumnSpan="1"
+                        Padding="5"
+                        Margin="10"
+                        BackgroundColor="Transparent"
+                        >
+           </ImageButton>
+      
+       
+       </Grid>
+            </Frame>
+
+
+      </StackLayout>
+</ContentPage>

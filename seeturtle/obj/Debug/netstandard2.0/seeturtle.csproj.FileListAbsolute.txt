@@ -11,3 +11,9 @@
 /Users/CarmenSeesink/Desktop/seeturtle/seeturtle/obj/Debug/netstandard2.0/seeturtle.dll
 /Users/CarmenSeesink/Desktop/seeturtle/seeturtle/obj/Debug/netstandard2.0/ref/seeturtle.dll
 /Users/CarmenSeesink/Desktop/seeturtle/seeturtle/obj/Debug/netstandard2.0/seeturtle.pdb
+/Users/CarmenSeesink/Desktop/seeturtle/seeturtle/obj/Debug/netstandard2.0/IntroductionPage.xaml.g.cs
+/Users/CarmenSeesink/Desktop/seeturtle/seeturtle/obj/Debug/netstandard2.0/PlayPage.xaml.g.cs
+/Users/CarmenSeesink/Desktop/seeturtle/seeturtle/obj/Debug/netstandard2.0/ManualPage.xaml.g.cs
+/Users/CarmenSeesink/Desktop/seeturtle/seeturtle/obj/Debug/netstandard2.0/GamePage.xaml.g.cs
+/Users/CarmenSeesink/Desktop/seeturtle/seeturtle/obj/Debug/netstandard2.0/StatusPage.xaml.g.cs
+/Users/CarmenSeesink/Desktop/seeturtle/seeturtle/obj/Debug/netstandard2.0/MigrationPage.xaml.g.cs

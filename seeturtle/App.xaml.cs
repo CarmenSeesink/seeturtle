@@ -10,6 +10,7 @@ namespace seeturtle
         {
             InitializeComponent();
 
+
             MainPage = new MainPage();
         }
 
