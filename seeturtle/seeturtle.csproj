@@ -25,4 +25,7 @@
       <DependentUpon>MigrationPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Objects\" />
+  </ItemGroup>
 </Project>

@@ -76,34 +76,13 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon1024.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon180.png">
-      <Visible>false</Visible>
-    </ImageAsset>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon167.png">
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon152.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon120.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon87.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon80.png">
-      <Visible>false</Visible>
-    </ImageAsset>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon76.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon60.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon58.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon40.png">
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon29.png">
@@ -152,10 +131,6 @@
     <ImageAsset Include="Assets.xcassets\arrow.imageset\arrow_3px.png" />
     <ImageAsset Include="Assets.xcassets\arrow.imageset\arrow_2px.png" />
     <ImageAsset Include="Assets.xcassets\arrow.imageset\arrow_1px.png" />
-    <ImageAsset Include="Assets.xcassets\turtle_happy.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\turtle_happy.imageset\turtle_happy_3px.png" />
-    <ImageAsset Include="Assets.xcassets\turtle_happy.imageset\turtle_happy_2px.png" />
-    <ImageAsset Include="Assets.xcassets\turtle_happy.imageset\turtle_happy_1px.png" />
     <ImageAsset Include="Assets.xcassets\bagicon.imageset\bagicon_1px.png" />
     <ImageAsset Include="Assets.xcassets\bagicon.imageset\bagicon_2px.png" />
     <ImageAsset Include="Assets.xcassets\bagicon.imageset\bagicon_3px.png" />
@@ -183,6 +158,26 @@
     <ImageAsset Include="Assets.xcassets\turtle_top.imageset\turtletop_3px.png" />
     <ImageAsset Include="Assets.xcassets\turtle_top.imageset\turtletop_2px.png" />
     <ImageAsset Include="Assets.xcassets\turtle_top.imageset\turtletop_1px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_sad_2.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\turtle_sad_2.imageset\turtle_sad_1_3px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_sad_2.imageset\turtle_sad_1_2px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_sad_2.imageset\turtle_sad_1_1px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_happy_2.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\turtle_happy_2.imageset\turtle_happy_1px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_happy_2.imageset\turtle_happy_2px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_happy_2.imageset\turtle_happy_3px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_happy_1.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\turtle_happy_1.imageset\turtle_happy_1_1px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_happy_1.imageset\turtle_happy_1_2px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_happy_1.imageset\turtle_happy_1_3px.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo2.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo3.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo2a.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo2a-2.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo2b.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo3a.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo2c.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -214,12 +209,14 @@
     <Folder Include="Assets.xcassets\jellyfishicon.imageset\" />
     <Folder Include="Assets.xcassets\pinicon.imageset\" />
     <Folder Include="Assets.xcassets\arrow.imageset\" />
-    <Folder Include="Assets.xcassets\turtle_happy.imageset\" />
     <Folder Include="Assets.xcassets\bagicon.imageset\" />
     <Folder Include="Assets.xcassets\turtle_top.imageset\" />
     <Folder Include="Assets.xcassets\forwardarrow.imageset\" />
     <Folder Include="Assets.xcassets\jellyfish.imageset\" />
     <Folder Include="Assets.xcassets\coral.imageset\" />
     <Folder Include="Assets.xcassets\bag.imageset\" />
+    <Folder Include="Assets.xcassets\turtle_sad_2.imageset\" />
+    <Folder Include="Assets.xcassets\turtle_happy_2.imageset\" />
+    <Folder Include="Assets.xcassets\turtle_happy_1.imageset\" />
   </ItemGroup>
 </Project>

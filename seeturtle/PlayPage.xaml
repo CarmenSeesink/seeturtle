@@ -15,6 +15,15 @@
                      Padding="15"
                      Clicked="ManualTapped">
         </ImageButton>
+        <Label Text=""
+               HorizontalOptions="Start"
+               TextColor="Black"
+               FontFamily="Avenir"
+               FontSize="14"
+               FontAttributes="Bold"
+               x:Name="xpLabel"
+               Margin="30, 10, 0, 10">
+        </Label>
         <Frame VerticalOptions="CenterAndExpand"
                HorizontalOptions="FillAndExpand"
                BackgroundColor="#6371e7"
@@ -24,29 +33,51 @@
                HasShadow="False"
                HeightRequest="520"
                Margin="0, 0, 0, -50">
-            <Image Source="turtle_happy"
+            <StackLayout>
+            <Image Source="turtle_happy_1"
                    WidthRequest="150"
                    HeightRequest="150"
-                   VerticalOptions="Center">
+                   VerticalOptions="Center"
+                   x:Name="turtleImage">
             </Image>
+            <ImageButton Source="bag"
+                         x:Name="bag"
+                         IsVisible="false"
+                         WidthRequest="40"
+                         HeightRequest="40"
+                         Clicked="bagTapped">
+            </ImageButton>
+            <ImageButton Source="jellyfish"
+                         x:Name="jellyfish"
+                         IsVisible="false"
+                         WidthRequest="40"
+                         HeightRequest="40"
+                         Clicked="jellyfishTapped">
+            </ImageButton>
+            <ImageButton Source="coral"
+                         x:Name="coral"
+                         IsVisible="false"
+                         WidthRequest="40"
+                         HeightRequest="40">
+            </ImageButton>
+                </StackLayout>
         </Frame>
         <Frame BackgroundColor="#5868c4"
                HeightRequest="70"
                CornerRadius="0"
                OutlineColor="#6371e7"
-               Padding="0"
                HasShadow="False"
-               >
-        <Grid  HorizontalOptions="CenterAndExpand">
+               Padding="1, 1, 0, 0">
+        <Grid  HorizontalOptions="Center">
             <Grid.RowDefinitions>
                 <RowDefinition Height="70"></RowDefinition>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="60"></ColumnDefinition>
-                <ColumnDefinition Width="60"></ColumnDefinition>
+                <ColumnDefinition Width="54"></ColumnDefinition>
+                <ColumnDefinition Width="54"></ColumnDefinition>
                 <ColumnDefinition Width="80"></ColumnDefinition>
-                <ColumnDefinition Width="60"></ColumnDefinition>
-                <ColumnDefinition Width="60"></ColumnDefinition>
+                <ColumnDefinition Width="54"></ColumnDefinition>
+                <ColumnDefinition Width="54"></ColumnDefinition>
             </Grid.ColumnDefinitions>
            <ImageButton Grid.Column="0"
                         Source="pinicon"
@@ -78,6 +109,9 @@
                         Padding="5"
                         Margin="10"
                         BackgroundColor="Transparent"
+                        Clicked="showJellyfishTapped"
+                        x:Name="jellyfishButton"
+                        IsVisible="true"
                         >
            </ImageButton>
            <ImageButton Grid.Column="4"
@@ -86,7 +120,8 @@
                         Padding="5"
                         Margin="10"
                         BackgroundColor="Transparent"
-                        >
+                        Clicked="showCoralTapped"
+                        x:Name="coralButton">
            </ImageButton>
       
        

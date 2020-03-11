@@ -37,24 +37,8 @@
       <LogicalName>AppIcon20x20~ipad.png</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
-    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/bundle/AppIcon20x20@2x~ipad.png">
-      <LogicalName>AppIcon20x20@2x~ipad.png</LogicalName>
-      <Optimize>false</Optimize>
-    </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/bundle/AppIcon29x29~ipad.png">
       <LogicalName>AppIcon29x29~ipad.png</LogicalName>
-      <Optimize>false</Optimize>
-    </_BundleResourceWithLogicalName>
-    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/bundle/AppIcon29x29@2x~ipad.png">
-      <LogicalName>AppIcon29x29@2x~ipad.png</LogicalName>
-      <Optimize>false</Optimize>
-    </_BundleResourceWithLogicalName>
-    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/bundle/AppIcon40x40~ipad.png">
-      <LogicalName>AppIcon40x40~ipad.png</LogicalName>
-      <Optimize>false</Optimize>
-    </_BundleResourceWithLogicalName>
-    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/bundle/AppIcon40x40@2x~ipad.png">
-      <LogicalName>AppIcon40x40@2x~ipad.png</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/bundle/AppIcon76x76~ipad.png">

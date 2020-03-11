@@ -260,8 +260,8 @@ bl _p_2
 adrp x16, mono_aot_seeturtle_iOS_got@PAGE+0
 add x16, x16, mono_aot_seeturtle_iOS_got@PAGEOFF
 ldr x0, [x16, #232]
-.word 0xd2802e01
-.word 0xd2802e01
+.word 0xd2802f01
+.word 0xd2802f01
 bl _p_3
 .word 0xf9002fa0
 bl _p_4
@@ -694,7 +694,7 @@ _mono_aot_file_info:
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
-	.byte 210,234,83,109,90,45,188,7,60,30,216,32,147,82,85,73
+	.byte 76,81,53,202,186,75,67,30,175,253,46,248,21,179,143,255
 	.globl _mono_aot_module_seeturtle_iOS_info
 	.align 3
 _mono_aot_module_seeturtle_iOS_info:

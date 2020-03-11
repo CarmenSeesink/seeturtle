@@ -31,7 +31,7 @@
                    FontAttributes="Bold"
                    ></Label>
             <ProgressBar Margin="30, 10, 30, 30"
-                         Progress="0.5"
+                         x:Name="TurtleProgressBar"
                          ProgressColor="#6371e7"
                         />
             <Label Text="Happiness"
