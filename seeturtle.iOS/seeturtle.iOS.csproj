@@ -158,18 +158,6 @@
     <ImageAsset Include="Assets.xcassets\turtle_top.imageset\turtletop_3px.png" />
     <ImageAsset Include="Assets.xcassets\turtle_top.imageset\turtletop_2px.png" />
     <ImageAsset Include="Assets.xcassets\turtle_top.imageset\turtletop_1px.png" />
-    <ImageAsset Include="Assets.xcassets\turtle_sad_2.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\turtle_sad_2.imageset\turtle_sad_1_3px.png" />
-    <ImageAsset Include="Assets.xcassets\turtle_sad_2.imageset\turtle_sad_1_2px.png" />
-    <ImageAsset Include="Assets.xcassets\turtle_sad_2.imageset\turtle_sad_1_1px.png" />
-    <ImageAsset Include="Assets.xcassets\turtle_happy_2.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\turtle_happy_2.imageset\turtle_happy_1px.png" />
-    <ImageAsset Include="Assets.xcassets\turtle_happy_2.imageset\turtle_happy_2px.png" />
-    <ImageAsset Include="Assets.xcassets\turtle_happy_2.imageset\turtle_happy_3px.png" />
-    <ImageAsset Include="Assets.xcassets\turtle_happy_1.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\turtle_happy_1.imageset\turtle_happy_1_1px.png" />
-    <ImageAsset Include="Assets.xcassets\turtle_happy_1.imageset\turtle_happy_1_2px.png" />
-    <ImageAsset Include="Assets.xcassets\turtle_happy_1.imageset\turtle_happy_1_3px.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo2.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo3.png" />
@@ -178,6 +166,39 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo2b.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo3a.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo2c.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_happy_3.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\turtle_happy_3.imageset\turtle_happy_1px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_happy_3.imageset\turtle_happy_2px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_happy_3.imageset\turtle_happy_3px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_happy_2.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\turtle_happy_2.imageset\turtle_happy_1_1px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_happy_2.imageset\turtle_happy_1_2px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_happy_2.imageset\turtle_happy_1_3px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_happy_1.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\turtle_happy_1.imageset\turtle_happy_3px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_happy_1.imageset\turtle_1_1px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_sad_2.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\turtle_sad_2.imageset\turtle_sad_2_3px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_sad_2.imageset\turtle_sad_2_2px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_sad_2.imageset\turtle_sad_2_1px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_sad_3.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\turtle_sad_3.imageset\turtle_sad_3_3px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_sad_3.imageset\turtle_sad_3_2px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_sad_3.imageset\turtle_sad_3_1.5px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_depressed_2.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\turtle_depressed_2.imageset\turtle_depressed_2_3px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_depressed_2.imageset\turtle_depressed_2_2px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_depressed_2.imageset\turtle_depressed_2_1px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_depressed_3.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\turtle_depressed_3.imageset\turtle_depressed_3_1px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_depressed_3.imageset\turtle_depressed_3_2px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_depressed_3.imageset\turtle_depressed_3_3px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_happy_2.imageset\turtle_happy_2_3px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_happy_2.imageset\turtle_happy_2_2px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_happy_2.imageset\turtle_happy_2_1px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_happy_3.imageset\turtle_happy_3_3px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_happy_3.imageset\turtle_happy_3_2px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_happy_3.imageset\turtle_happy_3_1px.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -216,7 +237,12 @@
     <Folder Include="Assets.xcassets\coral.imageset\" />
     <Folder Include="Assets.xcassets\bag.imageset\" />
     <Folder Include="Assets.xcassets\turtle_sad_2.imageset\" />
+    <Folder Include="Assets.xcassets\turtle_happy_3.imageset\" />
     <Folder Include="Assets.xcassets\turtle_happy_2.imageset\" />
     <Folder Include="Assets.xcassets\turtle_happy_1.imageset\" />
+    <Folder Include="Assets.xcassets\turtle_sad_2.imageset\" />
+    <Folder Include="Assets.xcassets\turtle_sad_3.imageset\" />
+    <Folder Include="Assets.xcassets\turtle_depressed_2.imageset\" />
+    <Folder Include="Assets.xcassets\turtle_depressed_3.imageset\" />
   </ItemGroup>
 </Project>

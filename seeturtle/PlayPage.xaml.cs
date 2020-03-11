@@ -30,15 +30,15 @@ namespace seeturtle
             {
                 xpLabel.Text = "Tap the plastic bags to clean the ocean";
             }
-            else if (turtleXp == 50)
+            else if (turtleXp == 100)
             {
                 xpLabel.Text = "Tap the jellyfish button to feed turtle";
             }
-            else if (turtleXp == 100)
+            else if (turtleXp == 200)
             {
                 xpLabel.Text = "Tap the coral button to add coral";
             }
-            else if (turtleXp == 250)
+            else if (turtleXp == 300)
             {
                 xpLabel.Text = "Tap the coral button to add coral";
             }

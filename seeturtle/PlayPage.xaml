@@ -35,8 +35,9 @@
                Margin="0, 0, 0, -50">
             <StackLayout>
             <Image Source="turtle_happy_1"
-                   WidthRequest="150"
-                   HeightRequest="150"
+                   WidthRequest="80"
+                   HeightRequest="80"
+                   Margin="0, 60, 0, 20"
                    VerticalOptions="Center"
                    x:Name="turtleImage">
             </Image>
@@ -57,8 +58,10 @@
             <ImageButton Source="coral"
                          x:Name="coral"
                          IsVisible="false"
-                         WidthRequest="40"
-                         HeightRequest="40">
+                         WidthRequest="60"
+                         HeightRequest="60"
+                         Margin="0, 40, 0, 0"
+                         VerticalOptions="End">
             </ImageButton>
                 </StackLayout>
         </Frame>

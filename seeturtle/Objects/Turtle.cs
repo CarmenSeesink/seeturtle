@@ -53,12 +53,12 @@ namespace seeturtle.Objects
 
         public void giveFood()
         {
-            Xp = Xp + 200;
+            Xp = Xp + 100;
         }
 
         public void cleanOcean()
         {
-            Xp = Xp + 50;
+            Xp = Xp + 100;
         }
 
         public void addCoral()

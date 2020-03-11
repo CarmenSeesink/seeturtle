@@ -39,21 +39,17 @@
                           <ImageButton Source="bag"
                                   x:Name="plastic1"
                             VerticalOptions="End"
-                            WidthRequest="60"
-                            HeightRequest="60"
+                            WidthRequest="40"
+                            HeightRequest="40"
                             Margin="0, 0, 0, 60"
                                   Clicked="hidePlastic1Tapped"
-                                  IsVisible="true"
-                         >
-                          
-
-
+                                  IsVisible="true">
                      </ImageButton>
                            <ImageButton Source="bag"
                                   x:Name="plastic2"
                             VerticalOptions="End"
-                            WidthRequest="60"
-                            HeightRequest="60"
+                            WidthRequest="40"
+                            HeightRequest="40"
                             Margin="0, 0, 0, 60"
                                   Clicked="hidePlastic2Tapped"
                                   IsVisible="true"
@@ -65,8 +61,8 @@
                            <ImageButton Source="bag"
                                   x:Name="plastic3"
                             VerticalOptions="End"
-                            WidthRequest="60"
-                            HeightRequest="60"
+                            WidthRequest="40"
+                            HeightRequest="40"
                             Margin="0, 0, 0, 60"
                                   Clicked="hidePlastic3Tapped"
                                   IsVisible="true"
@@ -78,8 +74,8 @@
                            <ImageButton Source="bag"
                                   x:Name="plastic4"
                             VerticalOptions="End"
-                            WidthRequest="60"
-                            HeightRequest="60"
+                            WidthRequest="40"
+                            HeightRequest="40"
                             Margin="0, 0, 0, 60"
                                   Clicked="hidePlastic4Tapped"
                                   IsVisible="true"
