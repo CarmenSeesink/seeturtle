@@ -3,75 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d" x:Class="seeturtle.MainPage"
-             BackgroundColor="#6371e7">
-    <ContentPage.Content>
-    <StackLayout VerticalOptions="CenterAndExpand">
-        <StackLayout >
-             <Label Text="Let's play SeeTurtle"
-                    HorizontalOptions="Center"
-                    VerticalOptions="CenterAndExpand"
-                    TextColor="White"
-                    FontSize="25"
-                    FontFamily="Avenir"
-                    CharacterSpacing="1"
-                    FontAttributes="Bold"
-                    Margin="0, 30, 0, 0">
-             </Label>
-         </StackLayout>
-        <Image VerticalOptions="CenterAndExpand"
-               Source="crab"
-               WidthRequest="200"
-               HeightRequest="200"
-               Margin="0, 40, 0, 30">
-        </Image>
-         <StackLayout VerticalOptions="End">
-             <Label Text="Are you new to the game?"
-                    HorizontalOptions="Center"
-                    VerticalOptions="CenterAndExpand"
-                    TextColor="White"
-                    FontSize="20"
-                    FontFamily="Avenir"
-                    FontAttributes="Bold"
-                    CharacterSpacing="1">
-             </Label>
-             <Button Text="Yes"
-                     HorizontalOptions="Center"
-                     VerticalOptions="CenterAndExpand"
-                     TextColor="White"
-                     FontFamily="Avenir"
-                     FontSize="20"
-                     CharacterSpacing="1"
-                     BackgroundColor="#fdbb11"
-                     Margin="0, 30, 0, 5"
-                     WidthRequest="280"
-                     HeightRequest="50"
-                     CornerRadius="10"
-                     FontAttributes="Bold"
-                     Clicked="YesTapped">
-             </Button>
-             <Button Text="No"
-                     HorizontalOptions="Center"
-                     VerticalOptions="CenterAndExpand"
-                     TextColor="White"
-                     FontFamily="Avenir"
-                     FontSize="20"
-                     CharacterSpacing="1"
-                     BackgroundColor="#6371e7"
-                     Margin="0, 5, 0, 0"
-                     WidthRequest="280"
-                     HeightRequest="50"
-                     BorderColor="#fdbb11"
-                     BorderWidth="2"
-                     CornerRadius="15"
-                     FontAttributes="Bold">
-             </Button>
-         </StackLayout>
-    </StackLayout>
-    </ContentPage.Content>  
+             mc:Ignorable="d"
+             x:Class="seeturtle.MainPage">
+  <StackLayout>
+      <Button Text="Rename turtle" Clicked="Intro_Tapped"></Button>
+  </StackLayout>
 </ContentPage>
-
-
-
-      
-    

@@ -2,22 +2,145 @@
   "version": 3,
   "targets": {
     "Xamarin.iOS,Version=v1.0": {
-      "System.Numerics.Vectors/4.5.0": {
+      "Com.Airbnb.iOS.Lottie/2.5.10": {
         "type": "package",
         "compile": {
-          "ref/xamarinios10/_._": {}
+          "lib/xamarinios10/Lottie.iOS.dll": {}
         },
         "runtime": {
-          "lib/xamarinios10/_._": {}
+          "lib/xamarinios10/Lottie.iOS.dll": {}
         }
       },
-      "Xamarin.Essentials/1.3.1": {
+      "Com.Airbnb.Xamarin.Forms.Lottie/3.1.0": {
         "type": "package",
         "dependencies": {
-          "System.Numerics.Vectors": "4.5.0"
+          "Com.Airbnb.iOS.Lottie": "2.5.10",
+          "Xamarin.Forms": "4.5.0.356"
         },
+        "compile": {
+          "lib/xamarinios10/Lottie.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Lottie.Forms.dll": {}
+        }
+      },
+      "DK.SlidingPanel/2.2.9": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.77107",
+          "reactiveui": "6.5.2"
+        },
+        "compile": {
+          "lib/portable-win+net45+wp8+win8+wpa81/DK.SlidingPanel.Interface.dll": {}
+        },
+        "runtime": {
+          "lib/portable-win+net45+wp8+win8+wpa81/DK.SlidingPanel.Interface.dll": {}
+        }
+      },
+      "EasyTipView/1.0.1": {
+        "type": "package",
         "frameworkAssemblies": [
-          "OpenTK-1.0"
+          "System",
+          "System.Core",
+          "System.Xml",
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/EasyTipView.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/EasyTipView.dll": {}
+        }
+      },
+      "reactiveui/6.5.2": {
+        "type": "package",
+        "dependencies": {
+          "reactiveui-core": "[6.5.2]"
+        }
+      },
+      "reactiveui-core/6.5.2": {
+        "type": "package",
+        "dependencies": {
+          "Rx-Main": "2.2.5",
+          "Splat": "[1.4.0, 2.0.0)"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/ReactiveUI.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/ReactiveUI.dll": {}
+        }
+      },
+      "Rx-Core/2.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Rx-Interfaces": "2.2.5"
+        },
+        "compile": {
+          "lib/portable-windows8+net45+wp8/System.Reactive.Core.dll": {}
+        },
+        "runtime": {
+          "lib/portable-windows8+net45+wp8/System.Reactive.Core.dll": {}
+        }
+      },
+      "Rx-Interfaces/2.2.5": {
+        "type": "package",
+        "compile": {
+          "lib/portable-windows8+net45+wp8/System.Reactive.Interfaces.dll": {}
+        },
+        "runtime": {
+          "lib/portable-windows8+net45+wp8/System.Reactive.Interfaces.dll": {}
+        }
+      },
+      "Rx-Linq/2.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Rx-Core": "2.2.5",
+          "Rx-Interfaces": "2.2.5"
+        },
+        "compile": {
+          "lib/portable-windows8+net45+wp8/System.Reactive.Linq.dll": {}
+        },
+        "runtime": {
+          "lib/portable-windows8+net45+wp8/System.Reactive.Linq.dll": {}
+        }
+      },
+      "Rx-Main/2.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Rx-Core": "2.2.5",
+          "Rx-Interfaces": "2.2.5",
+          "Rx-Linq": "2.2.5",
+          "Rx-PlatformServices": "2.2.5"
+        }
+      },
+      "Rx-PlatformServices/2.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Rx-Core": "2.2.5",
+          "Rx-Interfaces": "2.2.5"
+        },
+        "compile": {
+          "lib/portable-windows8+net45+wp8/System.Reactive.PlatformServices.dll": {}
+        },
+        "runtime": {
+          "lib/portable-windows8+net45+wp8/System.Reactive.PlatformServices.dll": {}
+        }
+      },
+      "Splat/1.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/Portable-net45+win+wpa81+wp80/Splat.dll": {}
+        },
+        "runtime": {
+          "lib/Portable-net45+win+wpa81+wp80/Splat.dll": {}
+        }
+      },
+      "Xamarin.Essentials/1.5.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "OpenTK-1.0",
+          "System.Drawing.Common.dll"
         ],
         "compile": {
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
@@ -26,7 +149,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.3.0.908675": {
+      "Xamarin.Forms/4.5.0.356": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -149,12 +272,27 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.PancakeView/1.3.7": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "3.6.0.220655"
+        },
+        "compile": {
+          "lib/xamarinios10/Xamarin.Forms.PancakeView.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Xamarin.Forms.PancakeView.dll": {}
+        }
+      },
       "seeturtle/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.3.0.908675"
+          "Com.Airbnb.Xamarin.Forms.Lottie": "3.1.0",
+          "DK.SlidingPanel": "2.2.9",
+          "Xamarin.Essentials": "1.5.1",
+          "Xamarin.Forms": "4.5.0.356",
+          "Xamarin.Forms.PancakeView": "1.3.7"
         },
         "compile": {
           "bin/placeholder/seeturtle.dll": {}
@@ -165,22 +303,145 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win": {
-      "System.Numerics.Vectors/4.5.0": {
+      "Com.Airbnb.iOS.Lottie/2.5.10": {
         "type": "package",
         "compile": {
-          "ref/xamarinios10/_._": {}
+          "lib/xamarinios10/Lottie.iOS.dll": {}
         },
         "runtime": {
-          "lib/xamarinios10/_._": {}
+          "lib/xamarinios10/Lottie.iOS.dll": {}
         }
       },
-      "Xamarin.Essentials/1.3.1": {
+      "Com.Airbnb.Xamarin.Forms.Lottie/3.1.0": {
         "type": "package",
         "dependencies": {
-          "System.Numerics.Vectors": "4.5.0"
+          "Com.Airbnb.iOS.Lottie": "2.5.10",
+          "Xamarin.Forms": "4.5.0.356"
         },
+        "compile": {
+          "lib/xamarinios10/Lottie.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Lottie.Forms.dll": {}
+        }
+      },
+      "DK.SlidingPanel/2.2.9": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.77107",
+          "reactiveui": "6.5.2"
+        },
+        "compile": {
+          "lib/portable-win+net45+wp8+win8+wpa81/DK.SlidingPanel.Interface.dll": {}
+        },
+        "runtime": {
+          "lib/portable-win+net45+wp8+win8+wpa81/DK.SlidingPanel.Interface.dll": {}
+        }
+      },
+      "EasyTipView/1.0.1": {
+        "type": "package",
         "frameworkAssemblies": [
-          "OpenTK-1.0"
+          "System",
+          "System.Core",
+          "System.Xml",
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/EasyTipView.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/EasyTipView.dll": {}
+        }
+      },
+      "reactiveui/6.5.2": {
+        "type": "package",
+        "dependencies": {
+          "reactiveui-core": "[6.5.2]"
+        }
+      },
+      "reactiveui-core/6.5.2": {
+        "type": "package",
+        "dependencies": {
+          "Rx-Main": "2.2.5",
+          "Splat": "[1.4.0, 2.0.0)"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/ReactiveUI.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/ReactiveUI.dll": {}
+        }
+      },
+      "Rx-Core/2.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Rx-Interfaces": "2.2.5"
+        },
+        "compile": {
+          "lib/portable-windows8+net45+wp8/System.Reactive.Core.dll": {}
+        },
+        "runtime": {
+          "lib/portable-windows8+net45+wp8/System.Reactive.Core.dll": {}
+        }
+      },
+      "Rx-Interfaces/2.2.5": {
+        "type": "package",
+        "compile": {
+          "lib/portable-windows8+net45+wp8/System.Reactive.Interfaces.dll": {}
+        },
+        "runtime": {
+          "lib/portable-windows8+net45+wp8/System.Reactive.Interfaces.dll": {}
+        }
+      },
+      "Rx-Linq/2.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Rx-Core": "2.2.5",
+          "Rx-Interfaces": "2.2.5"
+        },
+        "compile": {
+          "lib/portable-windows8+net45+wp8/System.Reactive.Linq.dll": {}
+        },
+        "runtime": {
+          "lib/portable-windows8+net45+wp8/System.Reactive.Linq.dll": {}
+        }
+      },
+      "Rx-Main/2.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Rx-Core": "2.2.5",
+          "Rx-Interfaces": "2.2.5",
+          "Rx-Linq": "2.2.5",
+          "Rx-PlatformServices": "2.2.5"
+        }
+      },
+      "Rx-PlatformServices/2.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Rx-Core": "2.2.5",
+          "Rx-Interfaces": "2.2.5"
+        },
+        "compile": {
+          "lib/portable-windows8+net45+wp8/System.Reactive.PlatformServices.dll": {}
+        },
+        "runtime": {
+          "lib/portable-windows8+net45+wp8/System.Reactive.PlatformServices.dll": {}
+        }
+      },
+      "Splat/1.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/Portable-net45+win+wpa81+wp80/Splat.dll": {}
+        },
+        "runtime": {
+          "lib/Portable-net45+win+wpa81+wp80/Splat.dll": {}
+        }
+      },
+      "Xamarin.Essentials/1.5.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "OpenTK-1.0",
+          "System.Drawing.Common.dll"
         ],
         "compile": {
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
@@ -189,7 +450,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.3.0.908675": {
+      "Xamarin.Forms/4.5.0.356": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -312,12 +573,27 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.PancakeView/1.3.7": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "3.6.0.220655"
+        },
+        "compile": {
+          "lib/xamarinios10/Xamarin.Forms.PancakeView.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Xamarin.Forms.PancakeView.dll": {}
+        }
+      },
       "seeturtle/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.3.0.908675"
+          "Com.Airbnb.Xamarin.Forms.Lottie": "3.1.0",
+          "DK.SlidingPanel": "2.2.9",
+          "Xamarin.Essentials": "1.5.1",
+          "Xamarin.Forms": "4.5.0.356",
+          "Xamarin.Forms.PancakeView": "1.3.7"
         },
         "compile": {
           "bin/placeholder/seeturtle.dll": {}
@@ -328,22 +604,145 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x64": {
-      "System.Numerics.Vectors/4.5.0": {
+      "Com.Airbnb.iOS.Lottie/2.5.10": {
         "type": "package",
         "compile": {
-          "ref/xamarinios10/_._": {}
+          "lib/xamarinios10/Lottie.iOS.dll": {}
         },
         "runtime": {
-          "lib/xamarinios10/_._": {}
+          "lib/xamarinios10/Lottie.iOS.dll": {}
         }
       },
-      "Xamarin.Essentials/1.3.1": {
+      "Com.Airbnb.Xamarin.Forms.Lottie/3.1.0": {
         "type": "package",
         "dependencies": {
-          "System.Numerics.Vectors": "4.5.0"
+          "Com.Airbnb.iOS.Lottie": "2.5.10",
+          "Xamarin.Forms": "4.5.0.356"
         },
+        "compile": {
+          "lib/xamarinios10/Lottie.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Lottie.Forms.dll": {}
+        }
+      },
+      "DK.SlidingPanel/2.2.9": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.77107",
+          "reactiveui": "6.5.2"
+        },
+        "compile": {
+          "lib/portable-win+net45+wp8+win8+wpa81/DK.SlidingPanel.Interface.dll": {}
+        },
+        "runtime": {
+          "lib/portable-win+net45+wp8+win8+wpa81/DK.SlidingPanel.Interface.dll": {}
+        }
+      },
+      "EasyTipView/1.0.1": {
+        "type": "package",
         "frameworkAssemblies": [
-          "OpenTK-1.0"
+          "System",
+          "System.Core",
+          "System.Xml",
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/EasyTipView.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/EasyTipView.dll": {}
+        }
+      },
+      "reactiveui/6.5.2": {
+        "type": "package",
+        "dependencies": {
+          "reactiveui-core": "[6.5.2]"
+        }
+      },
+      "reactiveui-core/6.5.2": {
+        "type": "package",
+        "dependencies": {
+          "Rx-Main": "2.2.5",
+          "Splat": "[1.4.0, 2.0.0)"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/ReactiveUI.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/ReactiveUI.dll": {}
+        }
+      },
+      "Rx-Core/2.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Rx-Interfaces": "2.2.5"
+        },
+        "compile": {
+          "lib/portable-windows8+net45+wp8/System.Reactive.Core.dll": {}
+        },
+        "runtime": {
+          "lib/portable-windows8+net45+wp8/System.Reactive.Core.dll": {}
+        }
+      },
+      "Rx-Interfaces/2.2.5": {
+        "type": "package",
+        "compile": {
+          "lib/portable-windows8+net45+wp8/System.Reactive.Interfaces.dll": {}
+        },
+        "runtime": {
+          "lib/portable-windows8+net45+wp8/System.Reactive.Interfaces.dll": {}
+        }
+      },
+      "Rx-Linq/2.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Rx-Core": "2.2.5",
+          "Rx-Interfaces": "2.2.5"
+        },
+        "compile": {
+          "lib/portable-windows8+net45+wp8/System.Reactive.Linq.dll": {}
+        },
+        "runtime": {
+          "lib/portable-windows8+net45+wp8/System.Reactive.Linq.dll": {}
+        }
+      },
+      "Rx-Main/2.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Rx-Core": "2.2.5",
+          "Rx-Interfaces": "2.2.5",
+          "Rx-Linq": "2.2.5",
+          "Rx-PlatformServices": "2.2.5"
+        }
+      },
+      "Rx-PlatformServices/2.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Rx-Core": "2.2.5",
+          "Rx-Interfaces": "2.2.5"
+        },
+        "compile": {
+          "lib/portable-windows8+net45+wp8/System.Reactive.PlatformServices.dll": {}
+        },
+        "runtime": {
+          "lib/portable-windows8+net45+wp8/System.Reactive.PlatformServices.dll": {}
+        }
+      },
+      "Splat/1.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/Portable-net45+win+wpa81+wp80/Splat.dll": {}
+        },
+        "runtime": {
+          "lib/Portable-net45+win+wpa81+wp80/Splat.dll": {}
+        }
+      },
+      "Xamarin.Essentials/1.5.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "OpenTK-1.0",
+          "System.Drawing.Common.dll"
         ],
         "compile": {
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
@@ -352,7 +751,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.3.0.908675": {
+      "Xamarin.Forms/4.5.0.356": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -475,12 +874,27 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.PancakeView/1.3.7": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "3.6.0.220655"
+        },
+        "compile": {
+          "lib/xamarinios10/Xamarin.Forms.PancakeView.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Xamarin.Forms.PancakeView.dll": {}
+        }
+      },
       "seeturtle/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.3.0.908675"
+          "Com.Airbnb.Xamarin.Forms.Lottie": "3.1.0",
+          "DK.SlidingPanel": "2.2.9",
+          "Xamarin.Essentials": "1.5.1",
+          "Xamarin.Forms": "4.5.0.356",
+          "Xamarin.Forms.PancakeView": "1.3.7"
         },
         "compile": {
           "bin/placeholder/seeturtle.dll": {}
@@ -491,22 +905,145 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x86": {
-      "System.Numerics.Vectors/4.5.0": {
+      "Com.Airbnb.iOS.Lottie/2.5.10": {
         "type": "package",
         "compile": {
-          "ref/xamarinios10/_._": {}
+          "lib/xamarinios10/Lottie.iOS.dll": {}
         },
         "runtime": {
-          "lib/xamarinios10/_._": {}
+          "lib/xamarinios10/Lottie.iOS.dll": {}
         }
       },
-      "Xamarin.Essentials/1.3.1": {
+      "Com.Airbnb.Xamarin.Forms.Lottie/3.1.0": {
         "type": "package",
         "dependencies": {
-          "System.Numerics.Vectors": "4.5.0"
+          "Com.Airbnb.iOS.Lottie": "2.5.10",
+          "Xamarin.Forms": "4.5.0.356"
         },
+        "compile": {
+          "lib/xamarinios10/Lottie.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Lottie.Forms.dll": {}
+        }
+      },
+      "DK.SlidingPanel/2.2.9": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.77107",
+          "reactiveui": "6.5.2"
+        },
+        "compile": {
+          "lib/portable-win+net45+wp8+win8+wpa81/DK.SlidingPanel.Interface.dll": {}
+        },
+        "runtime": {
+          "lib/portable-win+net45+wp8+win8+wpa81/DK.SlidingPanel.Interface.dll": {}
+        }
+      },
+      "EasyTipView/1.0.1": {
+        "type": "package",
         "frameworkAssemblies": [
-          "OpenTK-1.0"
+          "System",
+          "System.Core",
+          "System.Xml",
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/EasyTipView.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/EasyTipView.dll": {}
+        }
+      },
+      "reactiveui/6.5.2": {
+        "type": "package",
+        "dependencies": {
+          "reactiveui-core": "[6.5.2]"
+        }
+      },
+      "reactiveui-core/6.5.2": {
+        "type": "package",
+        "dependencies": {
+          "Rx-Main": "2.2.5",
+          "Splat": "[1.4.0, 2.0.0)"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/ReactiveUI.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/ReactiveUI.dll": {}
+        }
+      },
+      "Rx-Core/2.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Rx-Interfaces": "2.2.5"
+        },
+        "compile": {
+          "lib/portable-windows8+net45+wp8/System.Reactive.Core.dll": {}
+        },
+        "runtime": {
+          "lib/portable-windows8+net45+wp8/System.Reactive.Core.dll": {}
+        }
+      },
+      "Rx-Interfaces/2.2.5": {
+        "type": "package",
+        "compile": {
+          "lib/portable-windows8+net45+wp8/System.Reactive.Interfaces.dll": {}
+        },
+        "runtime": {
+          "lib/portable-windows8+net45+wp8/System.Reactive.Interfaces.dll": {}
+        }
+      },
+      "Rx-Linq/2.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Rx-Core": "2.2.5",
+          "Rx-Interfaces": "2.2.5"
+        },
+        "compile": {
+          "lib/portable-windows8+net45+wp8/System.Reactive.Linq.dll": {}
+        },
+        "runtime": {
+          "lib/portable-windows8+net45+wp8/System.Reactive.Linq.dll": {}
+        }
+      },
+      "Rx-Main/2.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Rx-Core": "2.2.5",
+          "Rx-Interfaces": "2.2.5",
+          "Rx-Linq": "2.2.5",
+          "Rx-PlatformServices": "2.2.5"
+        }
+      },
+      "Rx-PlatformServices/2.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Rx-Core": "2.2.5",
+          "Rx-Interfaces": "2.2.5"
+        },
+        "compile": {
+          "lib/portable-windows8+net45+wp8/System.Reactive.PlatformServices.dll": {}
+        },
+        "runtime": {
+          "lib/portable-windows8+net45+wp8/System.Reactive.PlatformServices.dll": {}
+        }
+      },
+      "Splat/1.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/Portable-net45+win+wpa81+wp80/Splat.dll": {}
+        },
+        "runtime": {
+          "lib/Portable-net45+win+wpa81+wp80/Splat.dll": {}
+        }
+      },
+      "Xamarin.Essentials/1.5.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "OpenTK-1.0",
+          "System.Drawing.Common.dll"
         ],
         "compile": {
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
@@ -515,7 +1052,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.3.0.908675": {
+      "Xamarin.Forms/4.5.0.356": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -638,12 +1175,27 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.PancakeView/1.3.7": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "3.6.0.220655"
+        },
+        "compile": {
+          "lib/xamarinios10/Xamarin.Forms.PancakeView.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Xamarin.Forms.PancakeView.dll": {}
+        }
+      },
       "seeturtle/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.3.0.908675"
+          "Com.Airbnb.Xamarin.Forms.Lottie": "3.1.0",
+          "DK.SlidingPanel": "2.2.9",
+          "Xamarin.Essentials": "1.5.1",
+          "Xamarin.Forms": "4.5.0.356",
+          "Xamarin.Forms.PancakeView": "1.3.7"
         },
         "compile": {
           "bin/placeholder/seeturtle.dll": {}
@@ -655,69 +1207,313 @@
     }
   },
   "libraries": {
-    "System.Numerics.Vectors/4.5.0": {
-      "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
+    "Com.Airbnb.iOS.Lottie/2.5.10": {
+      "sha512": "Ys4oHgtKApYji5qymfWdSU+W9zauC7ptovgN42P29p0yWpONQ4YTQ64DbK1y+0mr+67hqiek9tSOb4Tht65sEQ==",
       "type": "package",
-      "path": "system.numerics.vectors/4.5.0",
+      "path": "com.airbnb.ios.lottie/2.5.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net46/System.Numerics.Vectors.dll",
-        "lib/net46/System.Numerics.Vectors.xml",
-        "lib/netcoreapp2.0/_._",
-        "lib/netstandard1.0/System.Numerics.Vectors.dll",
-        "lib/netstandard1.0/System.Numerics.Vectors.xml",
-        "lib/netstandard2.0/System.Numerics.Vectors.dll",
-        "lib/netstandard2.0/System.Numerics.Vectors.xml",
-        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.dll",
-        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.xml",
-        "lib/uap10.0.16299/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net45/System.Numerics.Vectors.dll",
-        "ref/net45/System.Numerics.Vectors.xml",
-        "ref/net46/System.Numerics.Vectors.dll",
-        "ref/net46/System.Numerics.Vectors.xml",
-        "ref/netcoreapp2.0/_._",
-        "ref/netstandard1.0/System.Numerics.Vectors.dll",
-        "ref/netstandard1.0/System.Numerics.Vectors.xml",
-        "ref/netstandard2.0/System.Numerics.Vectors.dll",
-        "ref/netstandard2.0/System.Numerics.Vectors.xml",
-        "ref/uap10.0.16299/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.numerics.vectors.4.5.0.nupkg.sha512",
-        "system.numerics.vectors.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
+        "LICENSE",
+        "com.airbnb.ios.lottie.2.5.10.nupkg.sha512",
+        "com.airbnb.ios.lottie.nuspec",
+        "icon.png",
+        "lib/xamarinios10/Lottie.iOS.dll",
+        "lib/xamarinios10/Lottie.iOS.pdb",
+        "lib/xamarinios10/Lottie.iOS.xml",
+        "lib/xamarinmac20/Lottie.iOS.dll",
+        "lib/xamarinmac20/Lottie.iOS.pdb",
+        "lib/xamarinmac20/Lottie.iOS.xml",
+        "lib/xamarintvos10/Lottie.iOS.dll",
+        "lib/xamarintvos10/Lottie.iOS.pdb",
+        "lib/xamarintvos10/Lottie.iOS.xml",
+        "readme.txt"
       ]
     },
-    "Xamarin.Essentials/1.3.1": {
-      "sha512": "+51728AdZ/qtABGvcIaNXgEoL2jAtxAXLHS8PvGCP0pb6n7twBqYpfgkmwHYVgu+U99szgtL+Jot8L+OXorPcA==",
+    "Com.Airbnb.Xamarin.Forms.Lottie/3.1.0": {
+      "sha512": "aOO+qvfD/czfT49S/RCBZUoCc4nGDMDMD9sBDdqDoQ/5RZR5eqs45W4ohlaQnY1w3te4CAw/IN2EesmZEMyiUA==",
       "type": "package",
-      "path": "xamarin.essentials/1.3.1",
+      "path": "com.airbnb.xamarin.forms.lottie/3.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/monoandroid60/Xamarin.Essentials.dll",
-        "lib/monoandroid60/Xamarin.Essentials.pdb",
-        "lib/monoandroid60/Xamarin.Essentials.xml",
-        "lib/monoandroid70/Xamarin.Essentials.dll",
-        "lib/monoandroid70/Xamarin.Essentials.pdb",
-        "lib/monoandroid70/Xamarin.Essentials.xml",
-        "lib/monoandroid71/Xamarin.Essentials.dll",
-        "lib/monoandroid71/Xamarin.Essentials.pdb",
-        "lib/monoandroid71/Xamarin.Essentials.xml",
+        "LICENSE",
+        "com.airbnb.xamarin.forms.lottie.3.1.0.nupkg.sha512",
+        "com.airbnb.xamarin.forms.lottie.nuspec",
+        "icon.png",
+        "lib/monoandroid10.0/Lottie.Forms.dll",
+        "lib/monoandroid10.0/Lottie.Forms.pdb",
+        "lib/monoandroid10.0/Lottie.Forms.xml",
+        "lib/netstandard2.0/Lottie.Forms.dll",
+        "lib/netstandard2.0/Lottie.Forms.pdb",
+        "lib/netstandard2.0/Lottie.Forms.xml",
+        "lib/tizen40/Lottie.Forms.dll",
+        "lib/tizen40/Lottie.Forms.pdb",
+        "lib/tizen40/Lottie.Forms.xml",
+        "lib/uap10.0.18362/Lottie.Forms.dll",
+        "lib/uap10.0.18362/Lottie.Forms.pdb",
+        "lib/uap10.0.18362/Lottie.Forms.pri",
+        "lib/uap10.0.18362/Lottie.Forms.xml",
+        "lib/xamarinios10/Lottie.Forms.dll",
+        "lib/xamarinios10/Lottie.Forms.pdb",
+        "lib/xamarinios10/Lottie.Forms.xml",
+        "lib/xamarinmac20/Lottie.Forms.dll",
+        "lib/xamarinmac20/Lottie.Forms.pdb",
+        "lib/xamarinmac20/Lottie.Forms.xml",
+        "readme.txt"
+      ]
+    },
+    "DK.SlidingPanel/2.2.9": {
+      "sha512": "SorILTXPhffxUFbhHPNCEADgUZwTJY6ZAniYWTdKk+fIAVNeb4QnRsHvHY5FT+6JpyOfjZ0OSq/YapIhHRdf3Q==",
+      "type": "package",
+      "path": "dk.slidingpanel/2.2.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "dk.slidingpanel.2.2.9.nupkg.sha512",
+        "dk.slidingpanel.nuspec",
+        "lib/portable-win+net45+wp8+win8+wpa81/DK.SlidingPanel.Interface.dll",
+        "lib/portable-win+net45+wp8+win8+wpa81/DK.SlidingPanel.Interface.pdb"
+      ]
+    },
+    "EasyTipView/1.0.1": {
+      "sha512": "zP1dSSlbaqmkZl29/RzYCWkAmVuFzWY0ROX9zqDNi4Wp4qvxdsDsfeEyRGVnflZzRYw/Oe505ASIeMbxzCw32Q==",
+      "type": "package",
+      "path": "easytipview/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "easytipview.1.0.1.nupkg.sha512",
+        "easytipview.nuspec",
+        "lib/xamarinios10/EasyTipView.dll"
+      ]
+    },
+    "reactiveui/6.5.2": {
+      "sha512": "RYE2hyKM8vYA9MT/mTn+JR1Tk/Utezzw+fORiTIhFrVFevYQ6B3y8Z2SHZghAF+fwUTcBbYnd58PGrX3iRldcQ==",
+      "type": "package",
+      "path": "reactiveui/6.5.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "reactiveui.6.5.2.nupkg.sha512",
+        "reactiveui.nuspec"
+      ]
+    },
+    "reactiveui-core/6.5.2": {
+      "sha512": "StJyFBzcQr3nA2t8xD0yYZs0zVTS4FoXy0ihmbbe9Sgl1H9vLOz0fgcbL+8i54p9bhghJWDz5BPBwEAOLMwSJw==",
+      "type": "package",
+      "path": "reactiveui-core/6.5.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid/ReactiveUI.dll",
+        "lib/MonoAndroid/ReactiveUI.dll.mdb",
+        "lib/MonoAndroid/ReactiveUI.xml",
+        "lib/MonoMac/ReactiveUI.dll",
+        "lib/MonoMac/ReactiveUI.dll.mdb",
+        "lib/MonoMac/ReactiveUI.xml",
+        "lib/Monotouch/ReactiveUI.dll",
+        "lib/Monotouch/ReactiveUI.dll.mdb",
+        "lib/Monotouch/ReactiveUI.xml",
+        "lib/Net45/ReactiveUI.dll",
+        "lib/Net45/ReactiveUI.xml",
+        "lib/Portable-Net45+Win8+WP8+WPA81/ReactiveUI.XML",
+        "lib/Portable-Net45+Win8+WP8+WPA81/ReactiveUI.dll",
+        "lib/Portable-Win81+WPA81/ReactiveUI.dll",
+        "lib/Portable-Win81+WPA81/ReactiveUI.pri",
+        "lib/Portable-Win81+WPA81/ReactiveUI.xml",
+        "lib/Portable-Win81+WPA81/ReactiveUI/ReactiveUI.xr.xml",
+        "lib/Portable-Win81+WPA81/ReactiveUI/Themes/generic-winrt.xbf",
+        "lib/WP8/ReactiveUI.dll",
+        "lib/WP8/ReactiveUI.xml",
+        "lib/Win8/ReactiveUI.dll",
+        "lib/Win8/ReactiveUI.pri",
+        "lib/Win8/ReactiveUI.xml",
+        "lib/Win8/ReactiveUI/Themes/generic-winrt.xaml",
+        "lib/Xamarin.Mac10/ReactiveUI.dll",
+        "lib/Xamarin.Mac10/ReactiveUI.dll.mdb",
+        "lib/Xamarin.Mac10/ReactiveUI.xml",
+        "lib/Xamarin.iOS10/ReactiveUI.dll",
+        "lib/Xamarin.iOS10/ReactiveUI.dll.mdb",
+        "lib/Xamarin.iOS10/ReactiveUI.xml",
+        "reactiveui-core.6.5.2.nupkg.sha512",
+        "reactiveui-core.nuspec"
+      ]
+    },
+    "Rx-Core/2.2.5": {
+      "sha512": "DfWVTfW6tvRkkqpnRHKxPIvaRZyDJGADuqrE6J2nwejOQbLRWi0rNUwXkViDWz++25BGDy3iRE5OE6Dv8mJxYQ==",
+      "type": "package",
+      "path": "rx-core/2.2.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/System.Reactive.Core.XML",
+        "lib/net40/System.Reactive.Core.dll",
+        "lib/net45/System.Reactive.Core.XML",
+        "lib/net45/System.Reactive.Core.dll",
+        "lib/portable-net40+sl5+win8+wp8/System.Reactive.Core.XML",
+        "lib/portable-net40+sl5+win8+wp8/System.Reactive.Core.dll",
+        "lib/portable-net45+winrt45+wp8+wpa81/System.Reactive.Core.XML",
+        "lib/portable-net45+winrt45+wp8+wpa81/System.Reactive.Core.dll",
+        "lib/portable-win81+wpa81/System.Reactive.Core.XML",
+        "lib/portable-win81+wpa81/System.Reactive.Core.dll",
+        "lib/portable-windows8+net45+wp8/System.Reactive.Core.XML",
+        "lib/portable-windows8+net45+wp8/System.Reactive.Core.dll",
+        "lib/sl5/System.Reactive.Core.XML",
+        "lib/sl5/System.Reactive.Core.dll",
+        "lib/windows8/System.Reactive.Core.XML",
+        "lib/windows8/System.Reactive.Core.dll",
+        "lib/windowsphone71/System.Reactive.Core.XML",
+        "lib/windowsphone71/System.Reactive.Core.dll",
+        "lib/windowsphone8/System.Reactive.Core.XML",
+        "lib/windowsphone8/System.Reactive.Core.dll",
+        "rx-core.2.2.5.nupkg.sha512",
+        "rx-core.nuspec"
+      ]
+    },
+    "Rx-Interfaces/2.2.5": {
+      "sha512": "FKtG2QfMIeUcfB7r3a89VoAiszX3DTvYETkpC6U0FzWpxRK/mcHyzYOsniDfag+NsDG0P1k1c8yNSefXKp3t2A==",
+      "type": "package",
+      "path": "rx-interfaces/2.2.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/System.Reactive.Interfaces.XML",
+        "lib/net40/System.Reactive.Interfaces.dll",
+        "lib/net45/System.Reactive.Interfaces.XML",
+        "lib/net45/System.Reactive.Interfaces.dll",
+        "lib/portable-net40+sl5+win8+wp8/System.Reactive.Interfaces.XML",
+        "lib/portable-net40+sl5+win8+wp8/System.Reactive.Interfaces.dll",
+        "lib/portable-net45+winrt45+wp8+wpa81/System.Reactive.Interfaces.XML",
+        "lib/portable-net45+winrt45+wp8+wpa81/System.Reactive.Interfaces.dll",
+        "lib/portable-win81+wpa81/System.Reactive.Interfaces.XML",
+        "lib/portable-win81+wpa81/System.Reactive.Interfaces.dll",
+        "lib/portable-windows8+net45+wp8/System.Reactive.Interfaces.XML",
+        "lib/portable-windows8+net45+wp8/System.Reactive.Interfaces.dll",
+        "lib/sl5/System.Reactive.Interfaces.XML",
+        "lib/sl5/System.Reactive.Interfaces.dll",
+        "lib/windows8/System.Reactive.Interfaces.XML",
+        "lib/windows8/System.Reactive.Interfaces.dll",
+        "lib/windowsphone71/System.Reactive.Interfaces.XML",
+        "lib/windowsphone71/System.Reactive.Interfaces.dll",
+        "lib/windowsphone8/System.Reactive.Interfaces.XML",
+        "lib/windowsphone8/System.Reactive.Interfaces.dll",
+        "rx-interfaces.2.2.5.nupkg.sha512",
+        "rx-interfaces.nuspec"
+      ]
+    },
+    "Rx-Linq/2.2.5": {
+      "sha512": "UTeCIu3cWPExxmTzdiVq7SalqTBhUaomBTaAC9LpYPoAopjlFwA3hjVWXoLkGlDc/44wqJemJuEwFP00KphiFg==",
+      "type": "package",
+      "path": "rx-linq/2.2.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/System.Reactive.Linq.XML",
+        "lib/net40/System.Reactive.Linq.dll",
+        "lib/net45/System.Reactive.Linq.XML",
+        "lib/net45/System.Reactive.Linq.dll",
+        "lib/portable-net40+sl5+win8+wp8/System.Reactive.Linq.XML",
+        "lib/portable-net40+sl5+win8+wp8/System.Reactive.Linq.dll",
+        "lib/portable-net45+winrt45+wp8+wpa81/System.Reactive.Linq.XML",
+        "lib/portable-net45+winrt45+wp8+wpa81/System.Reactive.Linq.dll",
+        "lib/portable-win81+wpa81/System.Reactive.Linq.XML",
+        "lib/portable-win81+wpa81/System.Reactive.Linq.dll",
+        "lib/portable-windows8+net45+wp8/System.Reactive.Linq.XML",
+        "lib/portable-windows8+net45+wp8/System.Reactive.Linq.dll",
+        "lib/sl5/System.Reactive.Linq.XML",
+        "lib/sl5/System.Reactive.Linq.dll",
+        "lib/windows8/System.Reactive.Linq.XML",
+        "lib/windows8/System.Reactive.Linq.dll",
+        "lib/windowsphone71/System.Reactive.Linq.XML",
+        "lib/windowsphone71/System.Reactive.Linq.dll",
+        "lib/windowsphone8/System.Reactive.Linq.XML",
+        "lib/windowsphone8/System.Reactive.Linq.dll",
+        "rx-linq.2.2.5.nupkg.sha512",
+        "rx-linq.nuspec"
+      ]
+    },
+    "Rx-Main/2.2.5": {
+      "sha512": "qdQ6qENEiLsp/LRdzZlLlodihWN8VDjwNfWa8c2ELjEHZgTdKzt1V4i61gkHVtFKZXe8Px6KupbMP3pZ+1tusQ==",
+      "type": "package",
+      "path": "rx-main/2.2.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "rx-main.2.2.5.nupkg.sha512",
+        "rx-main.nuspec"
+      ]
+    },
+    "Rx-PlatformServices/2.2.5": {
+      "sha512": "pMnNEvJVjT+wuDib+W/bi5hhIYcre7dW5yxvKrJxnR4iKJ1VLA/dY2FTtjDriHGx7OeGn12lQewXlH2oHiWFPA==",
+      "type": "package",
+      "path": "rx-platformservices/2.2.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/System.Reactive.PlatformServices.XML",
+        "lib/net40/System.Reactive.PlatformServices.dll",
+        "lib/net45/System.Reactive.PlatformServices.XML",
+        "lib/net45/System.Reactive.PlatformServices.dll",
+        "lib/portable-net40+sl5+win8+wp8/System.Reactive.PlatformServices.XML",
+        "lib/portable-net40+sl5+win8+wp8/System.Reactive.PlatformServices.dll",
+        "lib/portable-net45+winrt45+wp8+wpa81/System.Reactive.PlatformServices.XML",
+        "lib/portable-net45+winrt45+wp8+wpa81/System.Reactive.PlatformServices.dll",
+        "lib/portable-win81+wpa81/System.Reactive.PlatformServices.XML",
+        "lib/portable-win81+wpa81/System.Reactive.PlatformServices.dll",
+        "lib/portable-windows8+net45+wp8/System.Reactive.PlatformServices.XML",
+        "lib/portable-windows8+net45+wp8/System.Reactive.PlatformServices.dll",
+        "lib/sl5/System.Reactive.PlatformServices.XML",
+        "lib/sl5/System.Reactive.PlatformServices.dll",
+        "lib/windows8/System.Reactive.PlatformServices.XML",
+        "lib/windows8/System.Reactive.PlatformServices.dll",
+        "lib/windowsphone71/System.Reactive.PlatformServices.XML",
+        "lib/windowsphone71/System.Reactive.PlatformServices.dll",
+        "lib/windowsphone8/System.Reactive.PlatformServices.XML",
+        "lib/windowsphone8/System.Reactive.PlatformServices.dll",
+        "rx-platformservices.2.2.5.nupkg.sha512",
+        "rx-platformservices.nuspec"
+      ]
+    },
+    "Splat/1.4.0": {
+      "sha512": "F2crrxugiQOigrFIhLkgsCsar3k9ZCBYKd845qnskj51A6EsTQdlE8OQ0uakpm+HThYp/sKnvJ6HdotGPeo6hg==",
+      "type": "package",
+      "path": "splat/1.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoMac/Splat.dll",
+        "lib/MonoMac/Splat.dll.mdb",
+        "lib/Net45/Splat.dll",
+        "lib/Net45/Splat.pdb",
+        "lib/NetCore45/Splat.dll",
+        "lib/NetCore45/Splat.pdb",
+        "lib/NetCore45/Splat.pri",
+        "lib/Portable-Win81+Wpa81/Splat.dll",
+        "lib/Portable-Win81+Wpa81/Splat.pri",
+        "lib/Portable-net45+win+wpa81+wp80/Splat.dll",
+        "lib/monoandroid/Splat.dll",
+        "lib/monoandroid/Splat.dll.mdb",
+        "lib/monotouch/Splat.dll",
+        "lib/monotouch/Splat.dll.mdb",
+        "lib/wp8/Splat.dll",
+        "lib/wp8/Splat.pdb",
+        "splat.1.4.0.nupkg.sha512",
+        "splat.nuspec"
+      ]
+    },
+    "Xamarin.Essentials/1.5.1": {
+      "sha512": "XEKAp7BXfZkTGbMqySXtuhwxb06ULjkJNQ8p44e8amOPm4m4VTVV92F13ov0a8NFNU+6JFm98510QK9Q/HBD5A==",
+      "type": "package",
+      "path": "xamarin.essentials/1.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "icon.png",
+        "lib/monoandroid10.0/Xamarin.Essentials.dll",
+        "lib/monoandroid10.0/Xamarin.Essentials.pdb",
+        "lib/monoandroid10.0/Xamarin.Essentials.xml",
         "lib/monoandroid80/Xamarin.Essentials.dll",
         "lib/monoandroid80/Xamarin.Essentials.pdb",
         "lib/monoandroid80/Xamarin.Essentials.xml",
@@ -750,14 +1546,14 @@
         "lib/xamarinwatchos10/Xamarin.Essentials.pdb",
         "lib/xamarinwatchos10/Xamarin.Essentials.xml",
         "readme.txt",
-        "xamarin.essentials.1.3.1.nupkg.sha512",
+        "xamarin.essentials.1.5.1.nupkg.sha512",
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Forms/4.3.0.908675": {
-      "sha512": "kXrbXKJvXYF4cKjs1Jsb+pQFEnFGl0AONYSeABjgOJqN/o5Y4zC0XXQ68xiUI81PKQTuRB5F3oDom2t5ccJDZw==",
+    "Xamarin.Forms/4.5.0.356": {
+      "sha512": "aOg3sUA2xuLhyhtLuihrDVFZ5ZCa71pgojyz/HdjEH7eW5HxEws+IIgvKTYUZbFOIGD7eK/f3x1lYj6HI/o+jg==",
       "type": "package",
-      "path": "xamarin.forms/4.3.0.908675",
+      "path": "xamarin.forms/4.5.0.356",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -782,39 +1578,39 @@
         "build/netstandard2.0/Xamarin.Forms.Build.Tasks.dll",
         "build/netstandard2.0/Xamarin.Forms.Core.dll",
         "build/netstandard2.0/Xamarin.Forms.Xaml.dll",
-        "lib/MonoAndroid81/Design/Xamarin.Forms.Core.Design.dll",
-        "lib/MonoAndroid81/Design/Xamarin.Forms.Xaml.Design.dll",
-        "lib/MonoAndroid81/FormsViewGroup.dll",
-        "lib/MonoAndroid81/FormsViewGroup.pdb",
-        "lib/MonoAndroid81/Xamarin.Forms.Core.dll",
-        "lib/MonoAndroid81/Xamarin.Forms.Core.pdb",
-        "lib/MonoAndroid81/Xamarin.Forms.Core.xml",
-        "lib/MonoAndroid81/Xamarin.Forms.Platform.Android.dll",
-        "lib/MonoAndroid81/Xamarin.Forms.Platform.Android.pdb",
-        "lib/MonoAndroid81/Xamarin.Forms.Platform.dll",
-        "lib/MonoAndroid81/Xamarin.Forms.Xaml.dll",
-        "lib/MonoAndroid81/Xamarin.Forms.Xaml.pdb",
-        "lib/MonoAndroid81/Xamarin.Forms.Xaml.xml",
-        "lib/MonoAndroid81/de/Xamarin.Forms.Core.xml",
-        "lib/MonoAndroid81/de/Xamarin.Forms.Xaml.xml",
-        "lib/MonoAndroid81/es/Xamarin.Forms.Core.xml",
-        "lib/MonoAndroid81/es/Xamarin.Forms.Xaml.xml",
-        "lib/MonoAndroid81/fr/Xamarin.Forms.Core.xml",
-        "lib/MonoAndroid81/fr/Xamarin.Forms.Xaml.xml",
-        "lib/MonoAndroid81/it/Xamarin.Forms.Core.xml",
-        "lib/MonoAndroid81/it/Xamarin.Forms.Xaml.xml",
-        "lib/MonoAndroid81/ja/Xamarin.Forms.Core.xml",
-        "lib/MonoAndroid81/ja/Xamarin.Forms.Xaml.xml",
-        "lib/MonoAndroid81/ko/Xamarin.Forms.Core.xml",
-        "lib/MonoAndroid81/ko/Xamarin.Forms.Xaml.xml",
-        "lib/MonoAndroid81/pt-br/Xamarin.Forms.Core.xml",
-        "lib/MonoAndroid81/pt-br/Xamarin.Forms.Xaml.xml",
-        "lib/MonoAndroid81/ru/Xamarin.Forms.Core.xml",
-        "lib/MonoAndroid81/ru/Xamarin.Forms.Xaml.xml",
-        "lib/MonoAndroid81/zh-Hans/Xamarin.Forms.Core.xml",
-        "lib/MonoAndroid81/zh-Hans/Xamarin.Forms.Xaml.xml",
-        "lib/MonoAndroid81/zh-Hant/Xamarin.Forms.Core.xml",
-        "lib/MonoAndroid81/zh-Hant/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid10.0/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/MonoAndroid10.0/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/MonoAndroid10.0/FormsViewGroup.dll",
+        "lib/MonoAndroid10.0/FormsViewGroup.pdb",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Core.dll",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Core.pdb",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Platform.Android.dll",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Platform.Android.pdb",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Platform.dll",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Xaml.dll",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Xaml.pdb",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid10.0/de/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid10.0/de/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid10.0/es/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid10.0/es/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid10.0/fr/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid10.0/fr/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid10.0/it/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid10.0/it/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid10.0/ja/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid10.0/ja/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid10.0/ko/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid10.0/ko/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid10.0/pt-br/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid10.0/pt-br/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid10.0/ru/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid10.0/ru/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid10.0/zh-Hans/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid10.0/zh-Hans/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid10.0/zh-Hant/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid10.0/zh-Hant/Xamarin.Forms.Xaml.xml",
         "lib/MonoAndroid90/Design/Xamarin.Forms.Core.Design.dll",
         "lib/MonoAndroid90/Design/Xamarin.Forms.Xaml.Design.dll",
         "lib/MonoAndroid90/FormsViewGroup.dll",
@@ -968,38 +1764,90 @@
         "lib/tizen40/Xamarin.Forms.Xaml.dll",
         "lib/tizen40/Xamarin.Forms.Xaml.pdb",
         "lib/tizen40/Xamarin.Forms.Xaml.xml",
-        "lib/uap10.0/Design/Xamarin.Forms.Core.Design.dll",
-        "lib/uap10.0/Design/Xamarin.Forms.Xaml.Design.dll",
-        "lib/uap10.0/Xamarin.Forms.Core.dll",
-        "lib/uap10.0/Xamarin.Forms.Core.pdb",
-        "lib/uap10.0/Xamarin.Forms.Core.xml",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP.pdb",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP.pri",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/AutoSuggestStyle.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/CollectionView/ItemsViewStyles.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsCheckBoxStyle.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsCommandBarStyle.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsEmbeddedPageWrapper.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsFlyout.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsProgressBarStyle.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsTextBoxStyle.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/MasterDetailControlStyle.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/Microsoft.UI.Xaml/DensityStyles/Compact.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/PageControlStyle.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/Properties/Xamarin.Forms.Platform.UAP.rd.xml",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/Resources.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/Shell/ShellStyles.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/SliderStyle.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/StepperControl.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/TabbedPageStyle.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/Xamarin.Forms.Platform.UAP.xr.xml",
-        "lib/uap10.0/Xamarin.Forms.Platform.dll",
-        "lib/uap10.0/Xamarin.Forms.Xaml.dll",
-        "lib/uap10.0/Xamarin.Forms.Xaml.pdb",
-        "lib/uap10.0/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.4.3.0.908675.nupkg.sha512",
+        "lib/uap10.0.14393/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/uap10.0.14393/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/uap10.0.14393/Properties/Xamarin.Forms.Platform.UAP.rd.xml",
+        "lib/uap10.0.14393/Xamarin.Forms.Core.dll",
+        "lib/uap10.0.14393/Xamarin.Forms.Core.pdb",
+        "lib/uap10.0.14393/Xamarin.Forms.Core.xml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP.dll",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP.pdb",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP.pri",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/CollectionView/ItemsViewStyles.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/FormsAutoSuggestBoxStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/FormsCheckBoxStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/FormsCommandBarStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/FormsEmbeddedPageWrapper.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/FormsFlyout.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/FormsProgressBarStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/FormsTextBoxStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/MasterDetailControlStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/Microsoft.UI.Xaml/DensityStyles/Compact.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/Microsoft.UI.Xaml/Themes/generic.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/PageControlStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/PickerStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/Resources.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/Shell/ShellStyles.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/SliderStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/StepperControl.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/TabbedPageStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/Xamarin.Forms.Platform.UAP.xr.xml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.dll",
+        "lib/uap10.0.14393/Xamarin.Forms.Xaml.dll",
+        "lib/uap10.0.14393/Xamarin.Forms.Xaml.pdb",
+        "lib/uap10.0.14393/Xamarin.Forms.Xaml.xml",
+        "lib/uap10.0.16299/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/uap10.0.16299/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/uap10.0.16299/Properties/Xamarin.Forms.Platform.UAP.rd.xml",
+        "lib/uap10.0.16299/Xamarin.Forms.Core.dll",
+        "lib/uap10.0.16299/Xamarin.Forms.Core.pdb",
+        "lib/uap10.0.16299/Xamarin.Forms.Core.xml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP.dll",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP.pdb",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP.pri",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/CollectionView/ItemsViewStyles.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/FormsAutoSuggestBoxStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/FormsCheckBoxStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/FormsCommandBarStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/FormsEmbeddedPageWrapper.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/FormsFlyout.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/FormsProgressBarStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/FormsTextBoxStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/MasterDetailControlStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/Microsoft.UI.Xaml/DensityStyles/Compact.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/Microsoft.UI.Xaml/Themes/generic.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/PageControlStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/PickerStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/Resources.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/Shell/ShellStyles.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/SliderStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/StepperControl.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/TabbedPageStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/Xamarin.Forms.Platform.UAP.xr.xml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.dll",
+        "lib/uap10.0.16299/Xamarin.Forms.Xaml.dll",
+        "lib/uap10.0.16299/Xamarin.Forms.Xaml.pdb",
+        "lib/uap10.0.16299/Xamarin.Forms.Xaml.xml",
+        "xamarin.forms.4.5.0.356.nupkg.sha512",
         "xamarin.forms.nuspec"
+      ]
+    },
+    "Xamarin.Forms.PancakeView/1.3.7": {
+      "sha512": "b6g3lVHV764yU4BRPzb1bvHT4G9xSQAXIPGtWQvryzLgU2qoqvnboiL5caJfLLFYXPtDy5ptoRD/TzC5i3VF3w==",
+      "type": "package",
+      "path": "xamarin.forms.pancakeview/1.3.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid81/Xamarin.Forms.PancakeView.dll",
+        "lib/monoandroid90/Xamarin.Forms.PancakeView.dll",
+        "lib/netstandard1.0/Xamarin.Forms.PancakeView.dll",
+        "lib/netstandard2.0/Xamarin.Forms.PancakeView.dll",
+        "lib/uap10.0.16299/Xamarin.Forms.PancakeView.dll",
+        "lib/uap10.0.16299/Xamarin.Forms.PancakeView.pri",
+        "lib/xamarinios10/Xamarin.Forms.PancakeView.dll",
+        "xamarin.forms.pancakeview.1.3.7.nupkg.sha512",
+        "xamarin.forms.pancakeview.nuspec"
       ]
     },
     "seeturtle/1.0.0": {
@@ -1010,8 +1858,11 @@
   },
   "projectFileDependencyGroups": {
     "Xamarin.iOS,Version=v1.0": [
-      "Xamarin.Essentials >= 1.3.1",
-      "Xamarin.Forms >= 4.3.0.908675",
+      "Com.Airbnb.Xamarin.Forms.Lottie >= 3.1.0",
+      "EasyTipView >= 1.0.1",
+      "Xamarin.Essentials >= 1.5.1",
+      "Xamarin.Forms >= 4.5.0.356",
+      "Xamarin.Forms.PancakeView >= 1.3.7",
       "seeturtle >= 1.0.0"
     ]
   },
@@ -1021,11 +1872,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/CarmenSeesink/Desktop/seeturtle/seeturtle.iOS/seeturtle.iOS.csproj",
+      "projectUniqueName": "/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/seeturtle.iOS.csproj",
       "projectName": "seeturtle.iOS",
-      "projectPath": "/Users/CarmenSeesink/Desktop/seeturtle/seeturtle.iOS/seeturtle.iOS.csproj",
+      "projectPath": "/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/seeturtle.iOS.csproj",
       "packagesPath": "/Users/CarmenSeesink/.nuget/packages/",
-      "outputPath": "/Users/CarmenSeesink/Desktop/seeturtle/seeturtle.iOS/obj/",
+      "outputPath": "/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -1040,8 +1891,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "/Users/CarmenSeesink/Desktop/seeturtle/seeturtle/seeturtle.csproj": {
-              "projectPath": "/Users/CarmenSeesink/Desktop/seeturtle/seeturtle/seeturtle.csproj"
+            "/Users/CarmenSeesink/Desktop/project/seeturtle/seeturtle.csproj": {
+              "projectPath": "/Users/CarmenSeesink/Desktop/project/seeturtle/seeturtle.csproj"
             }
           }
         }
@@ -1050,13 +1901,25 @@
     "frameworks": {
       "xamarinios10": {
         "dependencies": {
+          "Com.Airbnb.Xamarin.Forms.Lottie": {
+            "target": "Package",
+            "version": "[3.1.0, )"
+          },
+          "EasyTipView": {
+            "target": "Package",
+            "version": "[1.0.1, )"
+          },
           "Xamarin.Essentials": {
             "target": "Package",
-            "version": "[1.3.1, )"
+            "version": "[1.5.1, )"
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[4.3.0.908675, )"
+            "version": "[4.5.0.356, )"
+          },
+          "Xamarin.Forms.PancakeView": {
+            "target": "Package",
+            "version": "[1.3.7, )"
           }
         }
       }

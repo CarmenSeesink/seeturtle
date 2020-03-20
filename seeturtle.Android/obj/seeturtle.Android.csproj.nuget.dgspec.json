@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/CarmenSeesink/Desktop/seeturtle/seeturtle.Android/seeturtle.Android.csproj": {}
+    "/Users/CarmenSeesink/Desktop/project/seeturtle.Android/seeturtle.Android.csproj": {}
   },
   "projects": {
-    "/Users/CarmenSeesink/Desktop/seeturtle/seeturtle.Android/seeturtle.Android.csproj": {
+    "/Users/CarmenSeesink/Desktop/project/seeturtle.Android/seeturtle.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/CarmenSeesink/Desktop/seeturtle/seeturtle.Android/seeturtle.Android.csproj",
+        "projectUniqueName": "/Users/CarmenSeesink/Desktop/project/seeturtle.Android/seeturtle.Android.csproj",
         "projectName": "seeturtle.Android",
-        "projectPath": "/Users/CarmenSeesink/Desktop/seeturtle/seeturtle.Android/seeturtle.Android.csproj",
+        "projectPath": "/Users/CarmenSeesink/Desktop/project/seeturtle.Android/seeturtle.Android.csproj",
         "packagesPath": "/Users/CarmenSeesink/.nuget/packages/",
-        "outputPath": "/Users/CarmenSeesink/Desktop/seeturtle/seeturtle.Android/obj/",
+        "outputPath": "/Users/CarmenSeesink/Desktop/project/seeturtle.Android/obj/",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
@@ -26,8 +26,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "/Users/CarmenSeesink/Desktop/seeturtle/seeturtle/seeturtle.csproj": {
-                "projectPath": "/Users/CarmenSeesink/Desktop/seeturtle/seeturtle/seeturtle.csproj"
+              "/Users/CarmenSeesink/Desktop/project/seeturtle/seeturtle.csproj": {
+                "projectPath": "/Users/CarmenSeesink/Desktop/project/seeturtle/seeturtle.csproj"
               }
             }
           }
@@ -36,26 +36,38 @@
       "frameworks": {
         "monoandroid90": {
           "dependencies": {
+            "Com.Airbnb.Xamarin.Forms.Lottie": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Xamarin.Android.Tooltips": {
+              "target": "Package",
+              "version": "[1.0.7, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.3.1, )"
+              "version": "[1.5.1, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.3.0.908675, )"
+              "version": "[4.5.0.356, )"
+            },
+            "Xamarin.Forms.PancakeView": {
+              "target": "Package",
+              "version": "[1.3.7, )"
             }
           }
         }
       }
     },
-    "/Users/CarmenSeesink/Desktop/seeturtle/seeturtle/seeturtle.csproj": {
+    "/Users/CarmenSeesink/Desktop/project/seeturtle/seeturtle.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/CarmenSeesink/Desktop/seeturtle/seeturtle/seeturtle.csproj",
+        "projectUniqueName": "/Users/CarmenSeesink/Desktop/project/seeturtle/seeturtle.csproj",
         "projectName": "seeturtle",
-        "projectPath": "/Users/CarmenSeesink/Desktop/seeturtle/seeturtle/seeturtle.csproj",
+        "projectPath": "/Users/CarmenSeesink/Desktop/project/seeturtle/seeturtle.csproj",
         "packagesPath": "/Users/CarmenSeesink/.nuget/packages/",
-        "outputPath": "/Users/CarmenSeesink/Desktop/seeturtle/seeturtle/obj/",
+        "outputPath": "/Users/CarmenSeesink/Desktop/project/seeturtle/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/CarmenSeesink/.config/NuGet/NuGet.Config"
@@ -80,6 +92,14 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "Com.Airbnb.Xamarin.Forms.Lottie": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "DK.SlidingPanel": {
+              "target": "Package",
+              "version": "[2.2.9, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
@@ -88,11 +108,15 @@
             },
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.3.1, )"
+              "version": "[1.5.1, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.3.0.908675, )"
+              "version": "[4.5.0.356, )"
+            },
+            "Xamarin.Forms.PancakeView": {
+              "target": "Package",
+              "version": "[1.3.7, )"
             }
           },
           "imports": [

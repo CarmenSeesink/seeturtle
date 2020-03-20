@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="seeturtle.RenamePage"
+             BackgroundColor="White">
+<ContentPage.Content>
+    <StackLayout Margin="0, 100, 0, 20">
+            <ScrollView Orientation="Vertical" VerticalScrollBarVisibility="Never">
+                <StackLayout>
+                    <Image Source="diver"
+                           WidthRequest="220"
+                           HeightRequest="220"></Image>
+                    <Label Style="{StaticResource HeaderBlack}"
+                           Text="Welcome"
+                           VerticalOptions="Start"/>
+                    <Label Style="{StaticResource SubHeader}"
+                           Text="Name your turtle"/>
+                    
+                        <Entry Margin="35, 0, 35, 30"
+                               Text="Lily"
+                               x:Name="TurtleNameInput"
+                               FontFamily="Montserrat-Regular"
+                               HeightRequest="40"
+                               WidthRequest="100"
+                               BackgroundColor="Transparent">
+                        </Entry>
+                    <Button Text="Let's play"
+                            Style="{StaticResource buttonStyle}"
+                            Clicked="LetsPlayTapped">
+                    </Button>
+                   </StackLayout>
+            </ScrollView>
+     </StackLayout>
+    </ContentPage.Content>  
+</ContentPage>

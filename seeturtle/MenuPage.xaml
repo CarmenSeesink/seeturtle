@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="seeturtle.MenuPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+
+            <StackLayout Grid.Row="0" VerticalOptions="Start">
+                <BoxView VerticalOptions="Start"
+                         HorizontalOptions="End"
+                         BackgroundColor="#f4315d"
+                         WidthRequest="55"
+                         HeightRequest="100"
+                         CornerRadius="0, 0, 30, 0">
+                </BoxView>
+                 <ImageButton Source="backarrow"
+                              Clicked="BackMenuTapped"
+                              TranslationY="-60"
+                              TranslationX="-14"
+                              HorizontalOptions="End"
+                              WidthRequest="20"
+                              HeightRequest="15">
+                 </ImageButton>
+         </StackLayout>
+        <Button Grid.Row="1"
+                Text="Care for turtle"
+                TextColor="Black"
+                Clicked="PlayTapped"
+                FontFamily="Montserrat-Medium"
+                BackgroundColor="Transparent"
+                FontSize="16"
+                HorizontalOptions="Start"
+                Margin="35, 0, 0, 0">
+        </Button>
+        <Button Grid.Row="2"
+                Text="Play game"
+                TextColor="Black"
+                Clicked="GameTapped"
+                FontFamily="Montserrat-Medium"
+                BackgroundColor="Transparent"
+                FontSize="16"
+                HorizontalOptions="Start"
+                Margin="35, 0, 0, 0">
+        </Button>
+        <Button Grid.Row="3"
+                Text="Rename turtle"
+                Clicked="RenameTapped"
+                TextColor="Black"
+                FontFamily="Montserrat-Medium"
+                BackgroundColor="Transparent"
+                FontSize="16"
+                HorizontalOptions="Start"
+                Margin="35, 0, 0, 0">
+        </Button>
+        <Button Grid.Row="4"
+                Text="Manual"
+                Clicked="ManualTapped"
+                TextColor="Black"
+                FontFamily="Montserrat-Medium"
+                BackgroundColor="Transparent"
+                FontSize="16"
+                HorizontalOptions="Start"
+                Margin="35, 0, 0, 0">
+        </Button>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

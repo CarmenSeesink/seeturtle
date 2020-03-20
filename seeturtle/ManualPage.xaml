@@ -1,204 +1,132 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
              x:Class="seeturtle.ManualPage">
     <StackLayout>
+          <pancake:PancakeView CornerRadius="0,0, 20, 0"
+                               HeightRequest="90"
+                               WidthRequest="60"
+                               BackgroundColor="#f4315d"
+                               HorizontalOptions="End"
+                               VerticalOptions="Start">
+                   <RelativeLayout>
+                   <ImageButton Source="menu"
+                                Clicked="MenuTapped"
+                                WidthRequest="16"
+                                HeightRequest="14"
+                                TranslationX="25"
+                                Padding="1"
+                                TranslationY="40"
+                                CornerRadius="0">
+                   </ImageButton>
+                       </RelativeLayout>
+               </pancake:PancakeView>
         <StackLayout>
-            <StackLayout VerticalOptions="FillAndExpand">
-            <ImageButton BackgroundColor="#fdbb11"
-                         Source="arrow"
-                         VerticalOptions="StartAndExpand"
-                         Margin="30, 35, 0, 20"
-                         HorizontalOptions="Start"
-                         WidthRequest="48"
-                         HeightRequest="48"
-                         CornerRadius="24"
-                         Padding="18"
-                         Clicked="BackPlayTapped">
-            </ImageButton>
-            <Label Text="Manual"
-                   VerticalOptions="CenterAndExpand"
-                   TextColor="Black"
-                   FontSize="22"
-                   FontFamily="Avenir"
-                   FontAttributes="Bold"
-                   Margin="30, 0, 0, 30">
-            </Label>
+            <StackLayout VerticalOptions="FillAndExpand"
+                         Margin="0, -40, 0, 40">
+                <Label Style="{StaticResource HeaderBlack}"
+                       Text="Manual"/>
+                <Label Style="{StaticResource SubHeader}"
+                       Text="Learn more"
+                       Margin="35, -8 , 0, 0"/>
             </StackLayout>
-            <Frame VerticalOptions="CenterAndExpand"
-                   HorizontalOptions="StartAndExpand"
-                   BackgroundColor="#6371e7"
-                   CornerRadius="10"
-                   OutlineColor="#6371e7"
-                   Padding="0"
-                   Margin="30, 0, 30, 10"
-                   HasShadow="False">
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition></RowDefinition>
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                             <ColumnDefinition Width="65"></ColumnDefinition>
-                             <ColumnDefinition Width="250"></ColumnDefinition>
-                             <ColumnDefinition Width="45"></ColumnDefinition>
-                    </Grid.ColumnDefinitions>
-                    <Image Grid.Column="0"
-                           Source="bagicon"
-                           WidthRequest="20"
-                           HeightRequest="30"
-                           HorizontalOptions="End"
-                           Margin="35, 0, 0, 0">
-                    </Image>
-                    <Button Grid.Column="1"
-                            Text="Pollution"
-                            HorizontalOptions="Start"
-                            TextColor="White"
-                            WidthRequest="140"
-                            HeightRequest="80"
-                            BackgroundColor="Transparent"
-                            FontFamily="Avenir"
-                            FontAttributes="Bold"
-                            FontSize="16"
-                            >
-                    </Button>
-                    <Image Grid.Column="2"
-                           Source="forwardarrow"
-                           WidthRequest="20"
-                           HeightRequest="20"
-                           Margin="0, 0, 30, 0">
-                    </Image>
-                </Grid>
-                
-            </Frame>
-            <Frame VerticalOptions="CenterAndExpand"
-                   HorizontalOptions="StartAndExpand"
-                   BackgroundColor="#6371e7"
-                   CornerRadius="10"
-                   OutlineColor="#6371e7"
-                   Padding="0"
-                   Margin="30, 0, 30, 10"
-                   HasShadow="False">
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition></RowDefinition>
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                             <ColumnDefinition Width="65"></ColumnDefinition>
-                             <ColumnDefinition Width="250"></ColumnDefinition>
-                             <ColumnDefinition Width="45"></ColumnDefinition>
-                    </Grid.ColumnDefinitions>
-                    <Image Grid.Column="0"
-                           Source="jellyfishicon"
-                           WidthRequest="20"
-                           HeightRequest="30"
-                           HorizontalOptions="End"
-                           Margin="35, 0, 0, 0">
-                    </Image>
-                    <Button Grid.Column="1"
-                            Text="Feeding"
-                            HorizontalOptions="StartAndExpand"
-                            TextColor="White"
-                            WidthRequest="130"
-                            HeightRequest="80"
-                            BackgroundColor="Transparent"
-                            FontFamily="Avenir"
-                            FontAttributes="Bold"
-                            FontSize="16">
-                    </Button>
-                    <Image Grid.Column="2"
-                           Source="forwardarrow"
-                           WidthRequest="20"
-                           HeightRequest="20"
-                           Margin="0, 0, 30, 0">
-                    </Image>
-                </Grid>
-            </Frame>
-            <Frame VerticalOptions="CenterAndExpand"
-                   HorizontalOptions="StartAndExpand"
-                   BackgroundColor="#6371e7"
-                   CornerRadius="10"
-                   OutlineColor="#6371e7"
-                   Padding="0"
-                   Margin="30, 0, 30, 10"
-                   HasShadow="False">
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition></RowDefinition>
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                             <ColumnDefinition Width="65"></ColumnDefinition>
-                             <ColumnDefinition Width="250"></ColumnDefinition>
-                             <ColumnDefinition Width="45"></ColumnDefinition>
-                    </Grid.ColumnDefinitions>
-                    <Image Grid.Column="0"
-                           Source="coralicon"
-                           WidthRequest="20"
-                           HeightRequest="30"
-                           HorizontalOptions="End"
-                           Margin="35, 0, 0, 0">
-                    </Image>
-                    <Button Grid.Column="1"
-                            Text="Coral restoration"
-                            HorizontalOptions="Start"
-                            TextColor="White"
-                            WidthRequest="200"
-                            HeightRequest="80"
-                            BackgroundColor="Transparent"
-                            FontFamily="Avenir"
-                            FontAttributes="Bold"
-                            FontSize="16">
-                    </Button>
-                    <Image Grid.Column="2"
-                           Source="forwardarrow"
-                           WidthRequest="20"
-                           HeightRequest="20"
-                           Margin="0, 0, 30, 0">
-                    </Image>
-                </Grid>
-            </Frame>
-            <Frame VerticalOptions="CenterAndExpand"
-                   HorizontalOptions="StartAndExpand"
-                   BackgroundColor="#6371e7"
-                   CornerRadius="10"
-                   OutlineColor="#6371e7"
-                   Padding="0"
-                   Margin="30, 0, 30, 10"
-                   HasShadow="False">
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition></RowDefinition>
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                             <ColumnDefinition Width="65"></ColumnDefinition>
-                             <ColumnDefinition Width="250"></ColumnDefinition>
-                             <ColumnDefinition Width="45"></ColumnDefinition>
-                    </Grid.ColumnDefinitions>
-                    <Image Grid.Column="0"
-                           Source="pinicon"
-                           WidthRequest="20"
-                           HeightRequest="30"
-                           HorizontalOptions="End"
-                           Margin="35, 0, 0, 0">
-                    </Image>
-                    <Button Grid.Column="1"
-                            Text="Migration"
-                            HorizontalOptions="Start"
-                            TextColor="White"
-                            WidthRequest="140"
-                            HeightRequest="80"
-                            BackgroundColor="Transparent"
-                            FontFamily="Avenir"
-                            FontAttributes="Bold"
-                            FontSize="16">
-                    </Button>
-                    <Image Grid.Column="2"
-                           Source="forwardarrow"
-                           WidthRequest="20"
-                           HeightRequest="20"
-                           Margin="0, 0, 30, 0">
-                    </Image>
-                </Grid>
-            </Frame>
+           <ScrollView HorizontalScrollBarVisibility="Never" Orientation="Horizontal">
+                <StackLayout Orientation="Horizontal">
+                    <pancake:PancakeView CornerRadius="40"  Margin="35, 0, 10, 0">
+                        <Grid
+                            BackgroundColor="#6328cf"
+                            HeightRequest="400"
+                            WidthRequest="290">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="250"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <StackLayout Margin="0, 5, 0, 0">
+                            <Label Text="Coral Restoration"
+                                   Style="{StaticResource ManualHeader}"></Label>
+                            <Label Text="Coral restoration refers to the process of growing corals in land-based nurseries to transplant coral colonies to degraded reefs."
+                                   Style="{StaticResource Body}"></Label>
+                            </StackLayout>  
+                            <Image Grid.Row="1"
+                                   Source="coral"
+                                   HeightRequest="110"
+                                   WidthRequest="110"
+                                   TranslationX="40"/>
+                        </Grid>
+                    </pancake:PancakeView>
+                    <pancake:PancakeView CornerRadius="40"  Margin="0, 0, 10, 0">
+                        <Grid
+                            BackgroundColor="#6328cf"
+                            HeightRequest="400"
+                            WidthRequest="290">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="250"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <StackLayout Margin="0, 5, 0, 0">
+                            <Label Text="Pollution"
+                                   Style="{StaticResource ManualHeader}"></Label>
+                            <Label Text="There can be several causes of ocean pollution, but the leading causes include sewage, toxic chemicals from industries, nuclear waste, thermal pollution, plastics, acid rain, and oil spillage"
+                                   Style="{StaticResource Body}"></Label>
+                            </StackLayout>  
+                            <Image Grid.Row="1"
+                                   Source="bag"
+                                   TranslationY="10"
+                                   HeightRequest="105"
+                                   WidthRequest="105"
+                                   TranslationX="40"/>
+                        </Grid>
+                    </pancake:PancakeView>
+                    <pancake:PancakeView CornerRadius="40"  Margin="0, 0, 10, 0">
+                        <Grid
+                            BackgroundColor="#6328cf"
+                            HeightRequest="400"
+                            WidthRequest="290">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="250"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <StackLayout Margin="0, 5, 0, 0">
+                            <Label Text="Migration"
+                                   Style="{StaticResource ManualHeader}"></Label>
+                            <Label Text="Sea turtles are able to migrate back to the exact beach they hatched. This allows them to navigate vast distances between their nesting and feeding grounds."
+                                   Style="{StaticResource Body}"></Label>
+                            </StackLayout>  
+                            <Image Grid.Row="1"
+                                   Source="migration"
+                                   HeightRequest="110"
+                                   WidthRequest="110"
+                                   TranslationX="40"/>
+                        </Grid>
+                    </pancake:PancakeView>
+                    <pancake:PancakeView CornerRadius="40"  Margin="0, 0, 10, 0">
+                        <Grid
+                            BackgroundColor="#6328cf"
+                            HeightRequest="400"
+                            WidthRequest="290">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="250"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <StackLayout Margin="0, 5, 0, 0">
+                            <Label Text="Feeding"
+                                   Style="{StaticResource ManualHeader}"></Label>
+                            <Label Text="Leatherbacks have delicate scissor-like jaws that would be damaged by anything other than their normal diet of jellyfish, tunicates, and other soft-bodied animals. "
+                                   Style="{StaticResource Body}"></Label>
+                            </StackLayout>  
+                            <Image Grid.Row="1"
+                                   Source="jellyfish"
+                                   HeightRequest="110"
+                                   WidthRequest="110"
+                                   TranslationX="40"/>
+                        </Grid>
+                    </pancake:PancakeView>
+               
+
+                      
+                </StackLayout>
+            </ScrollView>
         </StackLayout>
     </StackLayout>
 </ContentPage>

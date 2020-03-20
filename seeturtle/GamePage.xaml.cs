@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Timers;
-
-
 using Xamarin.Forms;
 
 namespace seeturtle
@@ -13,10 +11,11 @@ namespace seeturtle
         {
             InitializeComponent();
         }
+        /* Navigation */
 
-        async void BackTapped(System.Object sender, System.EventArgs e)
+        async void MenuIconTapped(System.Object sender, System.EventArgs e)
         {
-            await Navigation.PopModalAsync();
+            await Navigation.PushModalAsync(new MenuPage());
         }
 
         private void hidePlastic1Tapped(object sender, EventArgs args)
@@ -24,7 +23,7 @@ namespace seeturtle
             Device.BeginInvokeOnMainThread(() =>
             {
                 plastic1.IsVisible = false;
-                
+
             });
         }
 
@@ -56,18 +55,50 @@ namespace seeturtle
             });
         }
 
-
-
-        private async void TurtleMove(object sender, EventArgs args)
-        { 
-            if (plastic1.IsVisible && plastic2.IsVisible && plastic3.IsVisible && plastic4.IsVisible == false)
+        private void hideBottle1Tapped(object sender, EventArgs args)
+        {
+            Device.BeginInvokeOnMainThread(() =>
             {
-                await turtle.TranslateTo(-100, -100, 1000, Easing.BounceOut);
+                bottle1.IsVisible = false;
 
-
-            }
+            });
         }
 
+        private void hideBottle2Tapped(object sender, EventArgs args)
+        {
+            Device.BeginInvokeOnMainThread(() =>
+            {
+                bottle2.IsVisible = false;
+
+            });
+        }
+
+
+        private void hideBottle3Tapped(object sender, EventArgs args)
+        {
+            Device.BeginInvokeOnMainThread(() =>
+            {
+                bottle3.IsVisible = false;
+
+            });
+        }
+
+        private void hideBottle4Tapped(object sender, EventArgs args)
+        {
+            Device.BeginInvokeOnMainThread(() =>
+            {
+                bottle4.IsVisible = false;
+
+            });
+        }
+
+        private async void TurtleMove(object sender, EventArgs args)
+        {
+            if (plastic1.IsVisible && plastic2.IsVisible && plastic3.IsVisible && plastic4.IsVisible && bottle1.IsVisible && bottle2.IsVisible && bottle3.IsVisible && bottle4.IsVisible == false)
+            {
+                await turtle.TranslateTo(-100, -100, 2000, Easing.BounceOut);
+            }
+        }
 
     }
 }

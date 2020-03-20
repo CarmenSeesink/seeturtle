@@ -11,21 +11,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.3.0.908675" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
+    <PackageReference Include="Xamarin.Forms" Version="4.5.0.356" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.1" />
+    <PackageReference Include="Com.Airbnb.Xamarin.Forms.Lottie" Version="3.1.0" />
+    <PackageReference Include="DK.SlidingPanel" Version="2.2.9" />
+    <PackageReference Include="Xamarin.Forms.PancakeView" Version="1.3.7" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="GamePage.xaml.cs">
       <DependentUpon>GamePage.xaml</DependentUpon>
     </Compile>
-    <Compile Update="StatusPage.xaml.cs">
-      <DependentUpon>StatusPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="MigrationPage.xaml.cs">
-      <DependentUpon>MigrationPage.xaml</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Objects\" />
+    <Folder Include="Effects\" />
   </ItemGroup>
 </Project>

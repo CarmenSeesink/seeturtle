@@ -12,9 +12,9 @@ namespace seeturtle
             InitializeComponent();
         }
 
-        async void LetsPlayTapped(System.Object sender, System.EventArgs e)
+        async void LetsGoTapped(System.Object sender, System.EventArgs e)
         {
-            await Navigation.PushModalAsync(new PlayPage());
+            await Navigation.PushModalAsync(new RenamePage());
         }
     }
 }

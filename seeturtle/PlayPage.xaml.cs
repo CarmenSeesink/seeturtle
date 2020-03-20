@@ -3,12 +3,57 @@ using System.Collections.Generic;
 using Xamarin.Forms;
 using seeturtle.Objects;
 using System.Timers;
+using System.Threading.Tasks;
+using seeturtle.Effects;
 
 namespace seeturtle
 {
     public partial class PlayPage : ContentPage
     {
+        /* Modal */
+
+        double x, y;
+        void OnPanUpdated(object sender, PanUpdatedEventArgs e)
+        {
+            // Handle the pan
+            switch (e.StatusType)
+            {
+                case GestureStatus.Running:
+                    var translateY = Math.Max(Math.Min(0, y + e.TotalY), -Math.Abs((Height * .15) - Height));
+                    bottomSheet.TranslateTo(bottomSheet.X, translateY, 10);
+                    break;
+                case GestureStatus.Completed:
+                    y = bottomSheet.TranslationY;
+                    break;
+            }
+
+        }
+
+        /* Tooltip */
+
+        void Handle_Tapped(object sender, System.EventArgs e)
+        {
+            foreach (var c in mainLayout.Children)
+            {
+                if (TooltipEffect.GetHasTooltip(c))
+                {
+                    TooltipEffect.SetHasTooltip(c, false);
+                    TooltipEffect.SetHasTooltip(c, true);
+                }
+            }
+        }
+
+        /* Navigation */
+
+        async void MenuTapped(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PushModalAsync(new MenuPage());
+        }
+
         private Turtle turtle = new Turtle();
+        private Turtle happiness = new Turtle();
+        private Turtle health = new Turtle();
+        private Turtle hunger = new Turtle();
 
         private TimeKeeper timeKeeper = new TimeKeeper();
         private static Timer timer;
@@ -25,27 +70,7 @@ namespace seeturtle
         void updateUI()
         {
             int turtleXp = turtle.Xp;
-
-            if(turtleXp < 1)
-            {
-                xpLabel.Text = "Tap the plastic bags to clean the ocean";
-            }
-            else if (turtleXp == 100)
-            {
-                xpLabel.Text = "Tap the jellyfish button to feed turtle";
-            }
-            else if (turtleXp == 200)
-            {
-                xpLabel.Text = "Tap the coral button to add coral";
-            }
-            else if (turtleXp == 300)
-            {
-                xpLabel.Text = "Tap the coral button to add coral";
-            }
-            else
-            {
-                xpLabel.Text = turtleXp.ToString();
-            }
+            int happinessXp = happiness.HappinessXp;
 
             Device.BeginInvokeOnMainThread(async () =>
             {
@@ -55,56 +80,82 @@ namespace seeturtle
                 {
                     TurtleFailedMigration();
                 }
+
+                if (turtleNameLabel.Text != turtle.TurtleName)
+                {
+                    turtleNameLabel.Text = turtle.TurtleName;
+
+                }
+
             });
-        }
 
-        /* Navigation */
-
-        async void ManualTapped(System.Object sender, System.EventArgs e)
-        {
-            await Navigation.PushModalAsync(new ManualPage());
-        }
-
-        async void GameTapped(System.Object sender, System.EventArgs e)
-        {
-            await Navigation.PushModalAsync(new GamePage());
-        }
-
-        async void HeartTapped(System.Object sender, System.EventArgs e)
-        {
-            await Navigation.PushModalAsync(new StatusPage());
-        }
-
-        async void PinTapped(System.Object sender, System.EventArgs e)
-        {
-            await Navigation.PushModalAsync(new MigrationPage());
-        }
-
-        /* Give food */
-
-        private void showJellyfishTapped(object sender, EventArgs args)
-        {
-            Device.BeginInvokeOnMainThread(() =>
+            Device.BeginInvokeOnMainThread(async () =>
             {
-                jellyfishButton.IsVisible = true;
-                jellyfish.IsVisible = true;
+                happinessImage.Source = "happy_" + happiness.CurrentHappinessState.ToString();
+
+                if (happiness.CurrentHappinessState == HappinessState.worse)
+                {
+                    uint timeout = 50;
+                    await happinessImage.TranslateTo(-15, 0, timeout);
+                    await happinessImage.TranslateTo(15, 0, timeout);
+                    await happinessImage.TranslateTo(-10, 0, timeout);
+                    await happinessImage.TranslateTo(10, 0, timeout);
+                    await happinessImage.TranslateTo(-5, 0, timeout);
+                    await happinessImage.TranslateTo(5, 0, timeout);
+                    happinessImage.TranslationX = 0;
+                }
+
+            });
+
+            Device.BeginInvokeOnMainThread(async () =>
+            {
+                healthImage.Source = "health_" + health.CurrentHealthState.ToString();
+
+                if (health.CurrentHealthState == HealthState.worse)
+                {
+                    uint timeout = 50;
+                    await healthImage.TranslateTo(-15, 0, timeout);
+                    await healthImage.TranslateTo(15, 0, timeout);
+                    await healthImage.TranslateTo(-10, 0, timeout);
+                    await healthImage.TranslateTo(10, 0, timeout);
+                    await healthImage.TranslateTo(-5, 0, timeout);
+                    await healthImage.TranslateTo(5, 0, timeout);
+                    healthImage.TranslationX = 0;
+                }
+            });
+
+            Device.BeginInvokeOnMainThread(async () =>
+            {
+                hungerImage.Source = "hunger_" + hunger.CurrentHungerState.ToString();
+
+                if (hunger.CurrentHungerState == HungerState.worse)
+                {
+                    uint timeout = 50;
+                    await hungerImage.TranslateTo(-15, 0, timeout);
+                    await hungerImage.TranslateTo(15, 0, timeout);
+                    await hungerImage.TranslateTo(-10, 0, timeout);
+                    await hungerImage.TranslateTo(10, 0, timeout);
+                    await hungerImage.TranslateTo(-5, 0, timeout);
+                    await hungerImage.TranslateTo(5, 0, timeout);
+                    hungerImage.TranslationX = 0;
+                }
             });
         }
 
-        void jellyfishTapped(System.Object sender, System.EventArgs e)
+        /* Migration Failed */
+
+        private async void TurtleFailedMigration()
         {
+            await DisplayAlert("Migration", "Turtle failed to complete her migration", "Restart journey");
+
+            turtle.Xp = 0;
+            turtle.CurrentTurtleState = TurtleState.happy;
             ResetTimer();
 
-            turtle.giveFood();
-
             updateUI();
-
-            Device.BeginInvokeOnMainThread(() => {
-                jellyfish.IsVisible = false;
-            });
         }
 
-        /* Clean ocean */
+        /* Bag */
 
         void bagTapped(System.Object sender, System.EventArgs e)
         {
@@ -114,8 +165,25 @@ namespace seeturtle
 
             updateUI();
 
-            Device.BeginInvokeOnMainThread(() => {
+            Device.BeginInvokeOnMainThread(() =>
+            {
                 bag.IsVisible = false;
+            });
+        }
+
+        /* Jellyfish */
+
+        void jellyfishTapped(System.Object sender, System.EventArgs e)
+        {
+            ResetTimer();
+
+            turtle.giveFood();
+
+            updateUI();
+
+            Device.BeginInvokeOnMainThread(() =>
+            {
+                jellyfish.IsVisible = false;
             });
         }
 
@@ -131,22 +199,8 @@ namespace seeturtle
 
             Device.BeginInvokeOnMainThread(() =>
             {
-                coralButton.IsVisible = true;
                 coral.IsVisible = true;
             });
-        }
-
-        /* Migration */
-
-        private async void TurtleFailedMigration()
-        {
-            await DisplayAlert("Migration", "Turtle failed to complete her migration", "Restart journey");
-
-            turtle.Xp = 0;
-            turtle.CurrentTurtleState = TurtleState.happy;
-            ResetTimer();
-
-            updateUI();
         }
 
         /* Timer */
@@ -168,11 +222,23 @@ namespace seeturtle
             StartTimer();
         }
 
+        /* Update State */
+
         private void UpdateTimedData(object sender, ElapsedEventArgs e)
         {
             TimeSpan timeElapsed = e.SignalTime - timeKeeper.StartTime;
 
             TurtleState newTurtleState = turtle.CurrentTurtleState;
+            HappinessState newHappinessState = happiness.CurrentHappinessState;
+            HealthState newHealthState = health.CurrentHealthState;
+            HungerState newHungerState = hunger.CurrentHungerState;
+
+            if (turtle.TurtleName != turtleNameLabel.Text)
+            {
+                turtleNameLabel.Text = turtle.TurtleName.ToString();
+            }
+
+            /* Turtle */
 
             if (timeElapsed.TotalSeconds < 40)
             {
@@ -189,8 +255,10 @@ namespace seeturtle
 
             if (timeElapsed.TotalSeconds >= 10)
             {
-                Device.BeginInvokeOnMainThread(() => {
+                Device.BeginInvokeOnMainThread(() =>
+                {
                     bag.IsVisible = true;
+                    jellyfish.IsVisible = true;
                 });
             }
 
@@ -199,6 +267,84 @@ namespace seeturtle
                 turtle.CurrentTurtleState = newTurtleState;
                 updateUI();
             }
+
+            /* Happiness */
+
+            if (timeElapsed.TotalSeconds < 20)
+            {
+                newHappinessState = HappinessState.good;
+                HappinessProgressBar.ProgressTo(1, 900, Easing.Linear);
+            }
+            else if (timeElapsed.TotalSeconds < 30)
+            {
+                newHappinessState = HappinessState.bad;
+                HappinessProgressBar.ProgressTo(0.5, 900, Easing.Linear);
+            }
+            else if (timeElapsed.TotalSeconds >= 50)
+            {
+                newHappinessState = HappinessState.worse;
+                HappinessProgressBar.ProgressTo(0.1, 900, Easing.Linear);
+            }
+
+            if (newHappinessState != happiness.CurrentHappinessState)
+            {
+                happiness.CurrentHappinessState = newHappinessState;
+                updateUI();
+            }
+
+            /* Health */
+
+            if (timeElapsed.TotalSeconds < 20)
+            {
+                newHealthState = HealthState.good;
+                HealthProgressBar.ProgressTo(1, 900, Easing.Linear);
+            }
+            else if (timeElapsed.TotalSeconds < 30)
+            {
+                newHealthState = HealthState.bad;
+                HealthProgressBar.ProgressTo(0.5, 900, Easing.Linear);
+            }
+            else if (timeElapsed.TotalSeconds >= 50)
+            {
+                newHealthState = HealthState.worse;
+                HealthProgressBar.ProgressTo(0.1, 900, Easing.Linear);
+            }
+
+            if (newHealthState != health.CurrentHealthState)
+            {
+                health.CurrentHealthState = newHealthState;
+                updateUI();
+            }
+
+            /* Hunger */
+
+            if (timeElapsed.TotalSeconds < 20)
+            {
+                newHungerState = HungerState.good;
+                HungerProgressBar.ProgressTo(1, 900, Easing.Linear);
+            }
+            else if (timeElapsed.TotalSeconds < 30)
+            {
+                newHungerState = HungerState.bad;
+                HungerProgressBar.ProgressTo(0.5, 900, Easing.Linear);
+            }
+            else if (timeElapsed.TotalSeconds >= 50)
+            {
+                newHungerState = HungerState.worse;
+                HungerProgressBar.ProgressTo(0.1, 900, Easing.Linear);
+            }
+
+            if (newHungerState != hunger.CurrentHungerState)
+            {
+                hunger.CurrentHungerState = newHungerState;
+                updateUI();
+            }
         }
+
     }
 }
+
+
+
+
+

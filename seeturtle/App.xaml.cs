@@ -13,7 +13,7 @@ namespace seeturtle
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new IntroductionPage();
         }
 
         protected override void OnStart()

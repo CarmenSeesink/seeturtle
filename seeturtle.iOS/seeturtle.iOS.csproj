@@ -67,6 +67,11 @@
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Effects\iOSTooltipEffect.cs" />
+    <Compile Include="Resources\PlayPage.xaml.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' ">
+      <DependentUpon>PlayPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -99,47 +104,11 @@
     <ImageAsset Include="Assets.xcassets\crab.imageset\crab_3px.png" />
     <ImageAsset Include="Assets.xcassets\crab.imageset\crab_2px.png" />
     <ImageAsset Include="Assets.xcassets\crab.imageset\crab_1px.png" />
-    <ImageAsset Include="Assets.xcassets\diver.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\diver.imageset\diver_3px.png" />
-    <ImageAsset Include="Assets.xcassets\diver.imageset\diver_2px.png" />
-    <ImageAsset Include="Assets.xcassets\diver.imageset\diver_1px.png" />
-    <ImageAsset Include="Assets.xcassets\coralicon.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\hearticon.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\gameicon.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\question.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\jellyfishicon.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\pinicon.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\hearticon.imageset\hearticon_3px.png" />
-    <ImageAsset Include="Assets.xcassets\hearticon.imageset\hearticon_2px.png" />
-    <ImageAsset Include="Assets.xcassets\hearticon.imageset\hearticon_1px.png" />
-    <ImageAsset Include="Assets.xcassets\coralicon.imageset\coralicon_3px.png" />
-    <ImageAsset Include="Assets.xcassets\coralicon.imageset\coralicon_1px.png" />
-    <ImageAsset Include="Assets.xcassets\coralicon.imageset\coralicon_2px.png" />
-    <ImageAsset Include="Assets.xcassets\gameicon.imageset\gameicon_3px.png" />
-    <ImageAsset Include="Assets.xcassets\gameicon.imageset\gameicon_2px.png" />
-    <ImageAsset Include="Assets.xcassets\gameicon.imageset\gameicon_1px.png" />
     <ImageAsset Include="Assets.xcassets\question.imageset\question_3px.png" />
     <ImageAsset Include="Assets.xcassets\question.imageset\question_2px.png" />
     <ImageAsset Include="Assets.xcassets\question.imageset\question_1px.png" />
-    <ImageAsset Include="Assets.xcassets\jellyfishicon.imageset\jellyfishicon_3px.png" />
-    <ImageAsset Include="Assets.xcassets\jellyfishicon.imageset\jellyfishicon_2px.png" />
-    <ImageAsset Include="Assets.xcassets\jellyfishicon.imageset\jellyfishicon_1px.png" />
-    <ImageAsset Include="Assets.xcassets\pinicon.imageset\pinicon_3px.png" />
-    <ImageAsset Include="Assets.xcassets\pinicon.imageset\pinicon_2px.png" />
-    <ImageAsset Include="Assets.xcassets\pinicon.imageset\pinicon_1px.png" />
-    <ImageAsset Include="Assets.xcassets\arrow.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\arrow.imageset\arrow_3px.png" />
-    <ImageAsset Include="Assets.xcassets\arrow.imageset\arrow_2px.png" />
-    <ImageAsset Include="Assets.xcassets\arrow.imageset\arrow_1px.png" />
-    <ImageAsset Include="Assets.xcassets\bagicon.imageset\bagicon_1px.png" />
-    <ImageAsset Include="Assets.xcassets\bagicon.imageset\bagicon_2px.png" />
-    <ImageAsset Include="Assets.xcassets\bagicon.imageset\bagicon_3px.png" />
-    <ImageAsset Include="Assets.xcassets\bagicon.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\bagicon.imageset\bagicon_1px-1.png" />
-    <ImageAsset Include="Assets.xcassets\bagicon.imageset\bagicon_2px-1.png" />
-    <ImageAsset Include="Assets.xcassets\bagicon.imageset\bagicon_3px-1.png" />
     <ImageAsset Include="Assets.xcassets\turtle_top.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\forwardarrow.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\jellyfish.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\coral.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\bag.imageset\Contents.json" />
@@ -152,9 +121,6 @@
     <ImageAsset Include="Assets.xcassets\jellyfish.imageset\jellyfish_3px.png" />
     <ImageAsset Include="Assets.xcassets\jellyfish.imageset\jellyfish_2px.png" />
     <ImageAsset Include="Assets.xcassets\jellyfish.imageset\jellyfish_1px.png" />
-    <ImageAsset Include="Assets.xcassets\forwardarrow.imageset\forwardarrow_3px.png" />
-    <ImageAsset Include="Assets.xcassets\forwardarrow.imageset\forwardarrow_2px.png" />
-    <ImageAsset Include="Assets.xcassets\forwardarrow.imageset\forwardarrow_1px.png" />
     <ImageAsset Include="Assets.xcassets\turtle_top.imageset\turtletop_3px.png" />
     <ImageAsset Include="Assets.xcassets\turtle_top.imageset\turtletop_2px.png" />
     <ImageAsset Include="Assets.xcassets\turtle_top.imageset\turtletop_1px.png" />
@@ -199,6 +165,55 @@
     <ImageAsset Include="Assets.xcassets\turtle_happy_3.imageset\turtle_happy_3_3px.png" />
     <ImageAsset Include="Assets.xcassets\turtle_happy_3.imageset\turtle_happy_3_2px.png" />
     <ImageAsset Include="Assets.xcassets\turtle_happy_3.imageset\turtle_happy_3_1px.png" />
+    <ImageAsset Include="Assets.xcassets\diver.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\diver.imageset\dive_3px.png" />
+    <ImageAsset Include="Assets.xcassets\diver.imageset\divexhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\diver.imageset\divemdpi.png" />
+    <ImageAsset Include="Assets.xcassets\happy_good.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\health_good.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\hunger_good.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\hunger_good.imageset\food_goodxxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\happy_good.imageset\happy_goodxxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\health_good.imageset\health_goodxxhdpi-1.png" />
+    <ImageAsset Include="Assets.xcassets\menu.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\backarrow.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\backarrow.imageset\right-arrowxxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\menu.imageset\menuxxhdpi-1.png" />
+    <ImageAsset Include="Assets.xcassets\migration.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\migration.imageset\migrationxxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\migration.imageset\migrationxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\migration.imageset\migrationhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\bottle.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\bottle.imageset\bottlexxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\bottle.imageset\bottlexhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\bottle.imageset\bottlemdpi.png" />
+    <ImageAsset Include="Assets.xcassets\happy_bad.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\happy_bad.imageset\happy_badxxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\happy_bad.imageset\happy_badxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\happy_bad.imageset\happy_badmdpi.png" />
+    <ImageAsset Include="Assets.xcassets\happy_worse.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\happy_worse.imageset\happy_worsexxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\happy_worse.imageset\happy_worsexhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\happy_worse.imageset\happy_worsemdpi.png" />
+    <ImageAsset Include="Assets.xcassets\health_bad.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\health_bad.imageset\health_badxxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\health_bad.imageset\health_badxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\health_bad.imageset\health_badmdpi.png" />
+    <ImageAsset Include="Assets.xcassets\health_worse.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\health_worse.imageset\health_worsexxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\health_worse.imageset\health_worsexhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\health_worse.imageset\health_worsemdpi.png" />
+    <ImageAsset Include="Assets.xcassets\hunger_bad.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\hunger_bad.imageset\food_badxxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\hunger_bad.imageset\food_badxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\hunger_bad.imageset\food_badmdpi.png" />
+    <ImageAsset Include="Assets.xcassets\hunger_worse.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\hunger_worse.imageset\food_worsexxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\hunger_worse.imageset\food_worsexhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\hunger_worse.imageset\food_worsemdpi.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_happy_1.imageset\turtle_happy_1_2px.png" />
+    <ImageAsset Include="Assets.xcassets\menu.imageset\menuxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\menu.imageset\menumdpi.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -209,8 +224,17 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.3.0.908675" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
+    <PackageReference Include="Xamarin.Forms" Version="4.5.0.356" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.1" />
+    <PackageReference Include="Com.Airbnb.Xamarin.Forms.Lottie">
+      <Version>3.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms.PancakeView">
+      <Version>1.3.7</Version>
+    </PackageReference>
+    <PackageReference Include="EasyTipView">
+      <Version>1.0.1</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
@@ -222,7 +246,6 @@
   <ItemGroup>
     <Folder Include="Assets.xcassets\logo.imageset\" />
     <Folder Include="Assets.xcassets\crab.imageset\" />
-    <Folder Include="Assets.xcassets\diver.imageset\" />
     <Folder Include="Assets.xcassets\coralicon.imageset\" />
     <Folder Include="Assets.xcassets\hearticon.imageset\" />
     <Folder Include="Assets.xcassets\gameicon.imageset\" />
@@ -244,5 +267,36 @@
     <Folder Include="Assets.xcassets\turtle_sad_3.imageset\" />
     <Folder Include="Assets.xcassets\turtle_depressed_2.imageset\" />
     <Folder Include="Assets.xcassets\turtle_depressed_3.imageset\" />
+    <Folder Include="Assets.xcassets\dive.imageset\" />
+    <Folder Include="Assets.xcassets\diver.imageset\" />
+    <Folder Include="Assets.xcassets\happy_good.imageset\" />
+    <Folder Include="Assets.xcassets\health_good.imageset\" />
+    <Folder Include="Assets.xcassets\hunger_good.imageset\" />
+    <Folder Include="Assets.xcassets\menu.imageset\" />
+    <Folder Include="Assets.xcassets\backarrow.imageset\" />
+    <Folder Include="Effects\" />
+    <Folder Include="Assets.xcassets\migration.imageset\" />
+    <Folder Include="Assets.xcassets\bottle.imageset\" />
+    <Folder Include="Assets.xcassets\happy_bad.imageset\" />
+    <Folder Include="Assets.xcassets\happy_worse.imageset\" />
+    <Folder Include="Assets.xcassets\health_bad.imageset\" />
+    <Folder Include="Assets.xcassets\health_worse.imageset\" />
+    <Folder Include="Assets.xcassets\hunger_bad.imageset\" />
+    <Folder Include="Assets.xcassets\hunger_worse.imageset\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Montserrat-Bold.ttf" />
+    <BundleResource Include="Resources\Montserrat-Regular.ttf" />
+    <BundleResource Include="Resources\Montserrat-Medium.ttf" />
+    <BundleResource Include="Resources\bubbles.json" />
+    <BundleResource Include="Resources\menu.json" />
+    <BundleResource Include="Resources\oceanbubbles.json" />
+    <BundleResource Include="Resources\whitebubbles.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\PlayPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

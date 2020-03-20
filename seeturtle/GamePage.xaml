@@ -2,99 +2,142 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="seeturtle.GamePage"
-             BackgroundColor="#6371e7">
+             xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             BackgroundColor="#6328cf">
     <ContentPage.Content>
         <StackLayout>
-        <StackLayout VerticalOptions="StartAndExpand">
-            <ImageButton BackgroundColor="#fdbb11"
-                         Source="arrow"
-                         VerticalOptions="StartAndExpand"
-                         Margin="30, 35, 0, 20"
-                         HorizontalOptions="Start"
-                         WidthRequest="48"
-                         HeightRequest="48"
-                         CornerRadius="24"
-                         Padding="18"
-                         Clicked="BackTapped">
-            </ImageButton>
-            <Label Text="Help turtle get to the sea"
-                   VerticalOptions="CenterAndExpand"
-                   TextColor="White"
-                   FontSize="22"
-                   FontFamily="Avenir"
-                   FontAttributes="Bold"
-                   Margin="30, 0, 0, 30">
-            </Label>
+       
+          <BoxView CornerRadius="0,0, 30, 0"
+                                WidthRequest="55"
+                               HeightRequest="100"
+                               BackgroundColor="#f4315d"
+                               HorizontalOptions="End"
+                               VerticalOptions="Start">      
+           </BoxView>
+           <ImageButton Source="menu"
+                              Clicked="MenuIconTapped"
+                              TranslationY="-60"
+                              TranslationX="-14"
+                              HorizontalOptions="End"
+                              WidthRequest="15"
+                              HeightRequest="15"
+                              CornerRadius="0"
+                              BackgroundColor="Transparent">
+           </ImageButton>
+           
+
+            <StackLayout VerticalOptions="FillAndExpand"
+                         Margin="0, -70, 0, 40">
+                <Label Style="{StaticResource HeaderWhite}"
+                       Text="Let's play"/>
+                <Label Style="{StaticResource Body}"
+                       Text="Help clean up the beach"/>
             </StackLayout>
-             <StackLayout VerticalOptions="EndAndExpand">
-                 <Frame CornerRadius="40"
-                        OutlineColor="#fce8be"
-                        BackgroundColor="#fce8be"
-                        Padding="0"
-                        HeightRequest="700"
-                        Margin="0, 0, 0, -40"
-                        HasShadow="False"
-                        VerticalOptions="End">
-                     <StackLayout>
-                          <ImageButton Source="bag"
-                                  x:Name="plastic1"
-                            VerticalOptions="End"
-                            WidthRequest="40"
-                            HeightRequest="40"
-                            Margin="0, 0, 0, 60"
-                                  Clicked="hidePlastic1Tapped"
-                                  IsVisible="true">
-                     </ImageButton>
-                           <ImageButton Source="bag"
-                                  x:Name="plastic2"
-                            VerticalOptions="End"
-                            WidthRequest="40"
-                            HeightRequest="40"
-                            Margin="0, 0, 0, 60"
-                                  Clicked="hidePlastic2Tapped"
-                                  IsVisible="true"
-                         >
-                          
-
-
-                     </ImageButton>
-                           <ImageButton Source="bag"
-                                  x:Name="plastic3"
-                            VerticalOptions="End"
-                            WidthRequest="40"
-                            HeightRequest="40"
-                            Margin="0, 0, 0, 60"
-                                  Clicked="hidePlastic3Tapped"
-                                  IsVisible="true"
-                         >
-                          
-
-
-                     </ImageButton>
-                           <ImageButton Source="bag"
-                                  x:Name="plastic4"
-                            VerticalOptions="End"
-                            WidthRequest="40"
-                            HeightRequest="40"
-                            Margin="0, 0, 0, 60"
-                                  Clicked="hidePlastic4Tapped"
-                                  IsVisible="true"
-                         >
-                          
-
-
-                     </ImageButton>
-                     <Image Source="turtle_top"
-                            x:Name="turtle"
-                            VerticalOptions="End"
-                            WidthRequest="60"
-                            HeightRequest="60"
-                            Margin="0, 0, 0, 60"
-                         ></Image>
-                    
-                         </StackLayout>
-                 </Frame>
-             </StackLayout>
-        </StackLayout>
+            <pancake:PancakeView HeightRequest="500"
+                                   BackgroundColor="#fcd98d"
+                                   CornerRadius="40, 40, 0, 0"
+                                   VerticalOptions="End">
+            <StackLayout HorizontalOptions="CenterAndExpand">
+              <Grid Margin="20, 40, 20, 20">
+                  <Grid.RowDefinitions>
+                      <RowDefinition Height="*"></RowDefinition>
+                      <RowDefinition Height="Auto"></RowDefinition>
+                       <RowDefinition Height="Auto"></RowDefinition>
+                      <RowDefinition Height="Auto"></RowDefinition>
+                  </Grid.RowDefinitions>
+                  <Grid.ColumnDefinitions>
+                      <ColumnDefinition Width="50"></ColumnDefinition>
+                      <ColumnDefinition Width="50"></ColumnDefinition>
+                      <ColumnDefinition Width="50"></ColumnDefinition>
+                      <ColumnDefinition Width="50"></ColumnDefinition>
+                  </Grid.ColumnDefinitions>
+                  <ImageButton Source="bag"
+                               x:Name="plastic1"
+                               Rotation="5"
+                               Clicked="hidePlastic1Tapped"
+                               IsVisible="true"
+                               HeightRequest="50"
+                               BackgroundColor="Transparent">
+                  </ImageButton>
+                  <ImageButton Grid.Row="0"
+                               Grid.Column="3"
+                               Source="bottle"
+                               x:Name="bottle1"
+                               Rotation="-10"
+                               Clicked="hideBottle1Tapped"
+                               IsVisible="true"
+                               HeightRequest="50"
+                               BackgroundColor="Transparent">
+                  </ImageButton>
+                  <ImageButton Grid.Row="1"
+                               Grid.Column="1"
+                               Source="bag"
+                               x:Name="plastic2"
+                               Rotation="-10"
+                               Clicked="hidePlastic2Tapped"
+                               IsVisible="true"
+                               HeightRequest="50"
+                               BackgroundColor="Transparent">
+                  </ImageButton>
+                  <ImageButton Grid.Row="1"
+                               Grid.Column="3"
+                               Source="bottle"
+                               x:Name="bottle2"
+                               Clicked="hideBottle2Tapped"
+                               IsVisible="true"
+                               HeightRequest="50"
+                               BackgroundColor="Transparent">
+                  </ImageButton>
+                  <ImageButton Grid.Row="2"
+                               Grid.Column="0"
+                               Source="bottle"
+                               x:Name="bottle3"
+                               Rotation="10"
+                               Clicked="hideBottle3Tapped"
+                               IsVisible="true"
+                               HeightRequest="50"
+                               BackgroundColor="Transparent">
+                  </ImageButton>
+                  <ImageButton Grid.Row="2"
+                               Grid.Column="2"
+                               Source="bag"
+                               x:Name="plastic3"
+                               Rotation="15"
+                               Clicked="hidePlastic3Tapped"
+                               IsVisible="true"
+                               HeightRequest="50"
+                               BackgroundColor="Transparent">
+                  </ImageButton>
+                  <ImageButton Grid.Row="3"
+                               Grid.Column="1"
+                               Source="bottle"
+                               x:Name="bottle4"
+                               Rotation="20"
+                               Clicked="hideBottle4Tapped"
+                               IsVisible="true"
+                               HeightRequest="50"
+                               BackgroundColor="Transparent">
+                  </ImageButton>
+                  <ImageButton Grid.Row="3"
+                               Grid.Column="3"
+                               Source="bag"
+                               x:Name="plastic4"
+                               Rotation="-10"
+                               Clicked="hidePlastic4Tapped"
+                               IsVisible="true"
+                               HeightRequest="50"
+                               BackgroundColor="Transparent">
+                  </ImageButton>
+              </Grid>
+                <Image Source="turtle_top"
+                       x:Name="turtle"
+                       VerticalOptions="End"
+                       WidthRequest="80"
+                       HeightRequest="80"
+                       Margin="0, 0, 0, 0">
+                </Image>
+            </StackLayout>
+              </pancake:PancakeView>
+    </StackLayout>
     </ContentPage.Content>
 </ContentPage>
