@@ -7,10 +7,12 @@ namespace seeturtle.Objects
         const string happinessStateKey = "happinessState";
         const string healthStateKey = "healthState";
         const string hungerStateKey = "hungerState";
+        const string coralStateKey = "coralState";
         const string turtleXpKey = "turtleXp";
         const string turtleHappinessXpKey = "turtleHappinessXp";
         const string turtleHealthXpKey = "turtleHealthXp";
         const string turtleHungerXpKey = "turtleHungerXp";
+        const string turtleCoralXpKey = "turtleCoralXp";
         const string turtleNameKey = "turtleName";
 
         public TurtleState CurrentTurtleState
@@ -173,6 +175,45 @@ namespace seeturtle.Objects
             }
         }
 
+        public int CoralXp
+        {
+            get
+            {
+                if (App.Current.Properties.ContainsKey(turtleCoralXpKey))
+                {
+                    Console.WriteLine((int)App.Current.Properties[turtleCoralXpKey]);
+                    return (int)App.Current.Properties[turtleCoralXpKey];
+                }
+                else
+                {
+                    return 0;
+                }
+            }
+            set
+            {
+                App.Current.Properties[turtleCoralXpKey] = value;
+            }
+        }
+
+        public CoralState CurrentCoralState
+        {
+            get
+            {
+                if (App.Current.Properties.ContainsKey(coralStateKey))
+                {
+                    return CoralStates.GetCoralState((string)App.Current.Properties[coralStateKey]);
+                }
+                else
+                {
+                    return CoralState.good;
+                }
+            }
+
+            set
+            {
+                App.Current.Properties[coralStateKey] = CoralStates.GetCoralString(value);
+            }
+        }
 
         public Turtle()
         {
@@ -181,20 +222,17 @@ namespace seeturtle.Objects
 
         public void giveFood()
         {
-            Xp = Xp + 100;
-            HungerXp = HungerXp + 100;
+            Xp = Xp + 500;
         }
 
         public void cleanOcean()
         {
-            Xp = Xp + 100;
-            HealthXp = HealthXp + 100;
+            Xp = Xp + 500;
         }
 
         public void addCoral()
         {
-            Xp = Xp + 100;
-            HappinessXp = HappinessXp + 100;
+            Xp = Xp + 500;
         }
 
         public string TurtleName

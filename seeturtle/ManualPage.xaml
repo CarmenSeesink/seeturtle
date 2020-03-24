@@ -27,7 +27,7 @@
                          Margin="0, -40, 0, 40">
                 <Label Style="{StaticResource HeaderBlack}"
                        Text="Manual"/>
-                <Label Style="{StaticResource SubHeader}"
+                <Label Style="{StaticResource Body}"
                        Text="Learn more"
                        Margin="35, -8 , 0, 0"/>
             </StackLayout>
@@ -46,7 +46,7 @@
                             <Label Text="Coral Restoration"
                                    Style="{StaticResource ManualHeader}"></Label>
                             <Label Text="Coral restoration refers to the process of growing corals in land-based nurseries to transplant coral colonies to degraded reefs."
-                                   Style="{StaticResource Body}"></Label>
+                                   Style="{StaticResource BodyWhite}"></Label>
                             </StackLayout>  
                             <Image Grid.Row="1"
                                    Source="coral"

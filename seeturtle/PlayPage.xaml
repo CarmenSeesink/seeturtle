@@ -43,7 +43,7 @@
                    <Label Style="{StaticResource HeaderWhite}"
                           Text="Lily"
                           x:Name="turtleNameLabel"/>
-                   <Label Style="{StaticResource Body}"
+                   <Label Style="{StaticResource BodyWhite}"
                           Text="The leatherback turtle"/>
                </StackLayout>
 
@@ -65,8 +65,8 @@
                    <lottie:AnimationView RelativeLayout.XConstraint =
                                          "{ConstraintExpression Type=RelativeToParent,
                                          Property=Width,
-                                         Factor=0.5,
-                                         Constant=-115}"
+                                         Factor=0.4,
+                                         Constant=-108}"
                                          RelativeLayout.YConstraint ="{ConstraintExpression Type=RelativeToParent,
                                          Property=Height,
                                          Factor=0,
@@ -89,7 +89,6 @@
                                 Source="bag"
                                 Rotation="-15"
                                 x:Name="bag"
-                                IsVisible="false"
                                 Clicked="bagTapped"
                                 HeightRequest="60"
                                 BackgroundColor="Transparent">    
@@ -108,10 +107,26 @@
                                 Source="jellyfish"
                                 Rotation="15"
                                 x:Name="jellyfish"
-                                IsVisible="false"
+                                IsVisible="true"
                                 HeightRequest="65"
-                                BackgroundColor="Transparent">    
+                                BackgroundColor="Transparent"
+                                Clicked="jellyfishTapped">    
                     </ImageButton>
+                    <Image RelativeLayout.XConstraint =
+                            "{ConstraintExpression Type=RelativeToParent,
+                            Property=Width,
+                            Factor=0.5,
+                            Constant=-100}"
+                            RelativeLayout.YConstraint ="{ConstraintExpression Type=RelativeToParent,
+                            Property=Height,
+                            Factor=0.5,
+                            Constant=180}"
+                            Source="crab"
+                            x:Name="crab"
+                            HeightRequest="60"
+                            BackgroundColor="Transparent"
+                            Opacity="0">
+                    </Image>
                     <ImageButton RelativeLayout.XConstraint =
                                  "{ConstraintExpression Type=RelativeToParent,
                                  Property=Width,
@@ -120,11 +135,10 @@
                                  RelativeLayout.YConstraint ="{ConstraintExpression Type=RelativeToParent,
                                  Property=Height,
                                  Factor=0.5,
-                                 Constant=180}"
-                                 Source="coral"
-                                 x:Name="coral"
-                                 IsVisible="false"
-                                 HeightRequest="65"
+                                 Constant=160}"
+                                 Source="coral_0"
+                                 x:Name="coralImage"
+                                 HeightRequest="80"
                                  BackgroundColor="Transparent">
                     </ImageButton>
                     <Button RelativeLayout.XConstraint =
@@ -172,19 +186,34 @@
                                Source="happy_good"
                                x:Name="happinessImage"
                                WidthRequest="22"
-                               Margin="0, 5, 20, 0">
+                               Margin="0, 5, 20, 0"
+                               effects:TooltipEffect.Position="Top"
+                               effects:TooltipEffect.BackgroundColor="#f4315d"
+                               effects:TooltipEffect.TextColor="White"
+                               effects:TooltipEffect.Text="The happiness level depends on the amount of coral being planted" 
+                               effects:TooltipEffect.HasTooltip="True">
                         </Image>
                         <Image Grid.Column="2"
                                Source="health_good"
                                x:Name="healthImage"
                                WidthRequest="21"
-                               Margin="0, 5, 20, 0">
+                               Margin="0, 5, 20, 0"
+                               effects:TooltipEffect.Position="Top"
+                               effects:TooltipEffect.BackgroundColor="#f4315d"
+                               effects:TooltipEffect.TextColor="White"
+                               effects:TooltipEffect.Text="The health level is related to removing pollution" 
+                               effects:TooltipEffect.HasTooltip="True">
                         </Image>
                         <Image Grid.Column="3"
                                Source="hunger_good"
                                x:Name="hungerImage"
                                WidthRequest="25"
-                               Margin="0, 4, 35, 0">
+                               Margin="0, 4, 35, 0"
+                               effects:TooltipEffect.Position="Top"
+                               effects:TooltipEffect.BackgroundColor="#f4315d"
+                               effects:TooltipEffect.TextColor="White"
+                               effects:TooltipEffect.Text="The hunger level depends on the amount of jellyfish is given" 
+                               effects:TooltipEffect.HasTooltip="True">
                         </Image>
                     </Grid>
                     <Grid Margin="35, 50, 35, 0">
@@ -201,35 +230,20 @@
                         <Label Text="Happiness"
                                FontFamily="Montserrat-Medium"
                                TextColor="Gray"
-                               FontSize="16"
-                               effects:TooltipEffect.Position="Top"
-                               effects:TooltipEffect.BackgroundColor="#6328cf"
-                               effects:TooltipEffect.TextColor="White"
-                               effects:TooltipEffect.Text="The happiness level depends on the amount of coral being planted" 
-                               effects:TooltipEffect.HasTooltip="True">
+                               FontSize="16">
                         </Label>
                         <Label Grid.Row="1"
                                Text="Health"
                                FontFamily="Montserrat-Medium"
                                TextColor="Gray"
                                FontSize="16"
-                               Margin="0, 0, 0, 50"
-                               effects:TooltipEffect.Position="Top"
-                               effects:TooltipEffect.BackgroundColor="#6328cf"
-                               effects:TooltipEffect.TextColor="White"
-                               effects:TooltipEffect.Text="The health level is related to removing pollution" 
-                               effects:TooltipEffect.HasTooltip="True">
+                               Margin="0, 0, 0, 50">
                         </Label>
                          <Label Grid.Row="2"
                                Text="Hunger"
                                FontFamily="Montserrat-Medium"
                                TextColor="Gray"
-                               FontSize="16"
-                               effects:TooltipEffect.Position="Top"
-                               effects:TooltipEffect.BackgroundColor="#6328cf"
-                               effects:TooltipEffect.TextColor="White"
-                               effects:TooltipEffect.Text="The hunger level depends on the amount of jellyfish is given" 
-                               effects:TooltipEffect.HasTooltip="True">
+                               FontSize="16">
                         </Label>
                         <ProgressBar Grid.Column="1"
                                      x:Name="HappinessProgressBar"
@@ -257,7 +271,6 @@
                                WidthRequest="30"
                                Margin="0, -80, 0, 0">
                         </Image>
-
                         <ProgressBar Grid.Row="2"
                                      x:Name="HungerProgressBar"
                                      Grid.Column="1"

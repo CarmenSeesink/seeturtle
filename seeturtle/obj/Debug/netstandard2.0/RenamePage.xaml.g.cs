@@ -17,12 +17,16 @@ namespace seeturtle {
     public partial class RenamePage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Entry TurtleNameInput;
+        private global::Xamarin.Forms.ScrollView layout;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::seeturtle.Effects.CustomEntry TurtleNameInput;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(RenamePage));
-            TurtleNameInput = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "TurtleNameInput");
+            layout = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ScrollView>(this, "layout");
+            TurtleNameInput = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::seeturtle.Effects.CustomEntry>(this, "TurtleNameInput");
         }
     }
 }

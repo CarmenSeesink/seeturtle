@@ -4,10 +4,12 @@
       "idiom": "universal"
     },
     {
+      "filename": "menumdpi.png",
       "scale": "1x",
       "idiom": "universal"
     },
     {
+      "filename": "menuxhdpi.png",
       "scale": "2x",
       "idiom": "universal"
     },

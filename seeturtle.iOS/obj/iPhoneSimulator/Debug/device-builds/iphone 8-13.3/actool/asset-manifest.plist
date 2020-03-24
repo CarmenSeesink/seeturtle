@@ -28,38 +28,38 @@
 		<dict>
 			<key>affected-items</key>
 			<array>
-				<string>./turtle_top.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_top.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./turtle_top.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_top.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./turtle_top.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_top.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./turtle_top.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_top.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+				<string>./menu.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./menu.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./menu.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./menu.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./menu.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./menu.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./menu.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./menu.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
 			</array>
 			<key>catalog</key>
 			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
 			<key>message</key>
-			<string>The image set "turtle_top" has 8 unassigned children.</string>
+			<string>The image set "menu" has 8 unassigned children.</string>
 			<key>type</key>
 			<string>Ambiguous Content</string>
 		</dict>
 		<dict>
 			<key>affected-items</key>
 			<array>
-				<string>./health_good.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./health_good.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./health_good.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./health_good.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./health_good.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./health_good.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./health_good.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./health_good.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+				<string>./backarrow.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./backarrow.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./backarrow.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./backarrow.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./backarrow.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./backarrow.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./backarrow.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./backarrow.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
 			</array>
 			<key>catalog</key>
 			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
 			<key>message</key>
-			<string>The image set "health_good" has 8 unassigned children.</string>
+			<string>The image set "backarrow" has 8 unassigned children.</string>
 			<key>type</key>
 			<string>Ambiguous Content</string>
 		</dict>
@@ -85,19 +85,19 @@
 		<dict>
 			<key>affected-items</key>
 			<array>
-				<string>./coral.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./coral.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./coral.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./coral.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./coral.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./coral.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./coral.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./coral.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+				<string>./diver.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./diver.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./diver.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./diver.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./diver.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./diver.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./diver.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./diver.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
 			</array>
 			<key>catalog</key>
 			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
 			<key>message</key>
-			<string>The image set "coral" has 8 unassigned children.</string>
+			<string>The image set "diver" has 8 unassigned children.</string>
 			<key>type</key>
 			<string>Ambiguous Content</string>
 		</dict>
@@ -123,57 +123,38 @@
 		<dict>
 			<key>affected-items</key>
 			<array>
-				<string>./diver.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./diver.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./diver.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./diver.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./diver.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./diver.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./diver.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./diver.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+				<string>./turtle_top.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_top.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./turtle_top.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_top.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./turtle_top.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_top.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./turtle_top.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_top.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
 			</array>
 			<key>catalog</key>
 			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
 			<key>message</key>
-			<string>The image set "diver" has 8 unassigned children.</string>
+			<string>The image set "turtle_top" has 8 unassigned children.</string>
 			<key>type</key>
 			<string>Ambiguous Content</string>
 		</dict>
 		<dict>
 			<key>affected-items</key>
 			<array>
-				<string>./bottle.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./bottle.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./bottle.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./bottle.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./bottle.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./bottle.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./bottle.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./bottle.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+				<string>./happy_worse.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./happy_worse.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./happy_worse.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./happy_worse.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./happy_worse.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./happy_worse.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./happy_worse.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./happy_worse.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
 			</array>
 			<key>catalog</key>
 			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
 			<key>message</key>
-			<string>The image set "bottle" has 8 unassigned children.</string>
-			<key>type</key>
-			<string>Ambiguous Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./turtle_depressed_3.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_depressed_3.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./turtle_depressed_3.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_depressed_3.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./turtle_depressed_3.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_depressed_3.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./turtle_depressed_3.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_depressed_3.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The image set "turtle_depressed_3" has 8 unassigned children.</string>
+			<string>The image set "happy_worse" has 8 unassigned children.</string>
 			<key>type</key>
 			<string>Ambiguous Content</string>
 		</dict>
@@ -199,293 +180,33 @@
 		<dict>
 			<key>affected-items</key>
 			<array>
-				<string>./turtle_happy_2.imageset/(null)[2d][turtle_happy_1_1px.png]</string>
-				<string>./turtle_happy_2.imageset/(null)[2d][turtle_happy_1_2px.png]</string>
-				<string>./turtle_happy_2.imageset/(null)[2d][turtle_happy_1_3px.png]</string>
-				<string>./turtle_happy_2.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_happy_2.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./turtle_happy_2.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_happy_2.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./turtle_happy_2.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_happy_2.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./turtle_happy_2.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_happy_2.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+				<string>./turtle_depressed_3.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_depressed_3.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./turtle_depressed_3.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_depressed_3.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./turtle_depressed_3.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_depressed_3.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./turtle_depressed_3.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_depressed_3.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
 			</array>
 			<key>catalog</key>
 			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
 			<key>message</key>
-			<string>The image set "turtle_happy_2" has 11 unassigned children.</string>
+			<string>The image set "turtle_depressed_3" has 8 unassigned children.</string>
 			<key>type</key>
 			<string>Ambiguous Content</string>
 		</dict>
 		<dict>
 			<key>affected-items</key>
 			<array>
-				<string>./crab.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./crab.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./crab.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./crab.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./crab.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./crab.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./crab.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./crab.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+				<string>./AppIcon.appiconset/[][ipad][20x20][][][2x][][]</string>
 			</array>
 			<key>catalog</key>
 			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
 			<key>message</key>
-			<string>The image set "crab" has 8 unassigned children.</string>
+			<string>The file "Icon40.png" for the image set "AppIcon" does not exist.</string>
 			<key>type</key>
-			<string>Ambiguous Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./happy_good.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./happy_good.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./happy_good.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./happy_good.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./happy_good.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./happy_good.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./happy_good.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./happy_good.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The image set "happy_good" has 8 unassigned children.</string>
-			<key>type</key>
-			<string>Ambiguous Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./bag.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./bag.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./bag.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./bag.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./bag.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./bag.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./bag.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./bag.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The image set "bag" has 8 unassigned children.</string>
-			<key>type</key>
-			<string>Ambiguous Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./turtle_happy_3.imageset/(null)[2d][turtle_happy_1px.png]</string>
-				<string>./turtle_happy_3.imageset/(null)[2d][turtle_happy_2px.png]</string>
-				<string>./turtle_happy_3.imageset/(null)[2d][turtle_happy_3px.png]</string>
-				<string>./turtle_happy_3.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_happy_3.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./turtle_happy_3.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_happy_3.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./turtle_happy_3.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_happy_3.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./turtle_happy_3.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_happy_3.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The image set "turtle_happy_3" has 11 unassigned children.</string>
-			<key>type</key>
-			<string>Ambiguous Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./hunger_good.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./hunger_good.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./hunger_good.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./hunger_good.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./hunger_good.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./hunger_good.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./hunger_good.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./hunger_good.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The image set "hunger_good" has 8 unassigned children.</string>
-			<key>type</key>
-			<string>Ambiguous Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./question.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./question.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./question.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./question.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./question.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./question.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./question.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./question.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The image set "question" has 8 unassigned children.</string>
-			<key>type</key>
-			<string>Ambiguous Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./turtle_happy_1.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_happy_1.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./turtle_happy_1.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_happy_1.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./turtle_happy_1.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_happy_1.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./turtle_happy_1.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_happy_1.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The image set "turtle_happy_1" has 8 unassigned children.</string>
-			<key>type</key>
-			<string>Ambiguous Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./health_bad.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./health_bad.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./health_bad.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./health_bad.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./health_bad.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./health_bad.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./health_bad.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./health_bad.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The image set "health_bad" has 8 unassigned children.</string>
-			<key>type</key>
-			<string>Ambiguous Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./happy_bad.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./happy_bad.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./happy_bad.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./happy_bad.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./happy_bad.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./happy_bad.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./happy_bad.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./happy_bad.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The image set "happy_bad" has 8 unassigned children.</string>
-			<key>type</key>
-			<string>Ambiguous Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./hunger_worse.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./hunger_worse.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./hunger_worse.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./hunger_worse.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./hunger_worse.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./hunger_worse.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./hunger_worse.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./hunger_worse.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The image set "hunger_worse" has 8 unassigned children.</string>
-			<key>type</key>
-			<string>Ambiguous Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./hunger_bad.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./hunger_bad.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./hunger_bad.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./hunger_bad.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./hunger_bad.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./hunger_bad.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./hunger_bad.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./hunger_bad.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The image set "hunger_bad" has 8 unassigned children.</string>
-			<key>type</key>
-			<string>Ambiguous Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./arrow.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./arrow.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./arrow.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./arrow.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./arrow.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./arrow.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./arrow.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./arrow.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The image set "arrow" has 8 unassigned children.</string>
-			<key>type</key>
-			<string>Ambiguous Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./turtle_sad_3.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_sad_3.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./turtle_sad_3.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_sad_3.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./turtle_sad_3.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_sad_3.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./turtle_sad_3.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_sad_3.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The image set "turtle_sad_3" has 8 unassigned children.</string>
-			<key>type</key>
-			<string>Ambiguous Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./forwardarrow.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./forwardarrow.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./forwardarrow.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./forwardarrow.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./forwardarrow.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./forwardarrow.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./forwardarrow.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./forwardarrow.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The image set "forwardarrow" has 8 unassigned children.</string>
-			<key>type</key>
-			<string>Ambiguous Content</string>
+			<string>Missing Content</string>
 		</dict>
 		<dict>
 			<key>affected-items</key>
@@ -526,14 +247,195 @@
 		<dict>
 			<key>affected-items</key>
 			<array>
-				<string>./AppIcon.appiconset/[][ipad][20x20][][][2x][][]</string>
+				<string>./happy_bad.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./happy_bad.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./happy_bad.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./happy_bad.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./happy_bad.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./happy_bad.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./happy_bad.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./happy_bad.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
 			</array>
 			<key>catalog</key>
 			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
 			<key>message</key>
-			<string>The file "Icon40.png" for the image set "AppIcon" does not exist.</string>
+			<string>The image set "happy_bad" has 8 unassigned children.</string>
 			<key>type</key>
-			<string>Missing Content</string>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./bag.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./bag.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./bag.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./bag.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./bag.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./bag.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./bag.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./bag.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "bag" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./hunger_bad.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./hunger_bad.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./hunger_bad.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./hunger_bad.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./hunger_bad.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./hunger_bad.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./hunger_bad.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./hunger_bad.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "hunger_bad" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./question.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./question.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./question.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./question.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./question.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./question.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./question.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./question.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "question" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./health_good.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./health_good.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./health_good.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./health_good.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./health_good.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./health_good.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./health_good.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./health_good.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "health_good" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./turtle_happy_3.imageset/(null)[2d][turtle_happy_1px.png]</string>
+				<string>./turtle_happy_3.imageset/(null)[2d][turtle_happy_2px.png]</string>
+				<string>./turtle_happy_3.imageset/(null)[2d][turtle_happy_3px.png]</string>
+				<string>./turtle_happy_3.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_happy_3.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./turtle_happy_3.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_happy_3.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./turtle_happy_3.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_happy_3.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./turtle_happy_3.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_happy_3.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "turtle_happy_3" has 11 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./turtle_happy_1.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_happy_1.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./turtle_happy_1.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_happy_1.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./turtle_happy_1.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_happy_1.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./turtle_happy_1.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_happy_1.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "turtle_happy_1" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./crab.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./crab.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./crab.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./crab.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./crab.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./crab.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./crab.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./crab.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "crab" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./coral_good_2.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./coral_good_2.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./coral_good_2.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./coral_good_2.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./coral_good_2.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./coral_good_2.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./coral_good_2.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./coral_good_2.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "coral_good_2" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./bottle.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./bottle.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./bottle.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./bottle.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./bottle.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./bottle.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./bottle.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./bottle.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "bottle" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
 		</dict>
 		<dict>
 			<key>affected-items</key>
@@ -551,120 +453,6 @@
 			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
 			<key>message</key>
 			<string>The image set "turtle_sad_2" has 8 unassigned children.</string>
-			<key>type</key>
-			<string>Ambiguous Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./jellyfish.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./jellyfish.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./jellyfish.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./jellyfish.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./jellyfish.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./jellyfish.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./jellyfish.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./jellyfish.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The image set "jellyfish" has 8 unassigned children.</string>
-			<key>type</key>
-			<string>Ambiguous Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./menu.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./menu.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./menu.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./menu.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./menu.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./menu.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./menu.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./menu.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The image set "menu" has 8 unassigned children.</string>
-			<key>type</key>
-			<string>Ambiguous Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./backarrow.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./backarrow.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./backarrow.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./backarrow.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./backarrow.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./backarrow.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./backarrow.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./backarrow.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The image set "backarrow" has 8 unassigned children.</string>
-			<key>type</key>
-			<string>Ambiguous Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./happy_worse.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./happy_worse.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./happy_worse.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./happy_worse.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./happy_worse.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./happy_worse.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./happy_worse.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./happy_worse.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The image set "happy_worse" has 8 unassigned children.</string>
-			<key>type</key>
-			<string>Ambiguous Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./migration.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./migration.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./migration.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./migration.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./migration.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./migration.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./migration.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./migration.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The image set "migration" has 8 unassigned children.</string>
-			<key>type</key>
-			<string>Ambiguous Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./arrow.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./arrow.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./arrow.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./arrow.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./arrow.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./arrow.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./arrow.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./arrow.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The image set "arrow" has 8 unassigned children.</string>
 			<key>type</key>
 			<string>Ambiguous Content</string>
 		</dict>
@@ -690,6 +478,440 @@
 		<dict>
 			<key>affected-items</key>
 			<array>
+				<string>./turtle_happy_2.imageset/(null)[2d][turtle_happy_1_1px.png]</string>
+				<string>./turtle_happy_2.imageset/(null)[2d][turtle_happy_1_2px.png]</string>
+				<string>./turtle_happy_2.imageset/(null)[2d][turtle_happy_1_3px.png]</string>
+				<string>./turtle_happy_2.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_happy_2.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./turtle_happy_2.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_happy_2.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./turtle_happy_2.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_happy_2.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./turtle_happy_2.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_happy_2.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "turtle_happy_2" has 11 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./health_bad.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./health_bad.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./health_bad.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./health_bad.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./health_bad.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./health_bad.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./health_bad.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./health_bad.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "health_bad" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./hunger_worse.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./hunger_worse.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./hunger_worse.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./hunger_worse.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./hunger_worse.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./hunger_worse.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./hunger_worse.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./hunger_worse.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "hunger_worse" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./coral.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./coral.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./coral.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./coral.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./coral.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./coral.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./coral.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./coral.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "coral" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./coral_good_1.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./coral_good_1.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./coral_good_1.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./coral_good_1.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./coral_good_1.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./coral_good_1.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./coral_good_1.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./coral_good_1.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "coral_good_1" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./turtle_sad_3.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_sad_3.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./turtle_sad_3.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_sad_3.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./turtle_sad_3.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_sad_3.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./turtle_sad_3.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_sad_3.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "turtle_sad_3" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./coral_good_3.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./coral_good_3.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./coral_good_3.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./coral_good_3.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./coral_good_3.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./coral_good_3.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./coral_good_3.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./coral_good_3.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "coral_good_3" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./happy_good.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./happy_good.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./happy_good.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./happy_good.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./happy_good.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./happy_good.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./happy_good.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./happy_good.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "happy_good" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./jellyfish.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./jellyfish.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./jellyfish.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./jellyfish.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./jellyfish.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./jellyfish.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./jellyfish.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./jellyfish.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "jellyfish" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./migration.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./migration.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./migration.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./migration.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./migration.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./migration.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./migration.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./migration.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "migration" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./hunger_bad.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./hunger_bad.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./hunger_bad.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./hunger_bad.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./hunger_bad.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./hunger_bad.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./hunger_bad.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./hunger_bad.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "hunger_bad" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./menu.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./menu.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./menu.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./menu.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./menu.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./menu.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./menu.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./menu.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "menu" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./question.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./question.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./question.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./question.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./question.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./question.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./question.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./question.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "question" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./health_good.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./health_good.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./health_good.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./health_good.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./health_good.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./health_good.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./health_good.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./health_good.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "health_good" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./jellyfish.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./jellyfish.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./jellyfish.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./jellyfish.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./jellyfish.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./jellyfish.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./jellyfish.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./jellyfish.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "jellyfish" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./coral_good_1.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./coral_good_1.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./coral_good_1.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./coral_good_1.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./coral_good_1.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./coral_good_1.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./coral_good_1.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./coral_good_1.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "coral_good_1" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./AppIcon.appiconset/[][ipad][29x29][][][2x][][]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The file "Icon58.png" for the image set "AppIcon" does not exist.</string>
+			<key>type</key>
+			<string>Missing Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./AppIcon.appiconset/[][ipad][20x20][][][2x][][]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The file "Icon40.png" for the image set "AppIcon" does not exist.</string>
+			<key>type</key>
+			<string>Missing Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./AppIcon.appiconset/[][ipad][40x40][][][2x][][]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The file "Icon80.png" for the image set "AppIcon" does not exist.</string>
+			<key>type</key>
+			<string>Missing Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./AppIcon.appiconset/[][ipad][40x40][][][1x][][]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The file "Icon40.png" for the image set "AppIcon" does not exist.</string>
+			<key>type</key>
+			<string>Missing Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./backarrow.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./backarrow.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./backarrow.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./backarrow.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./backarrow.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./backarrow.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./backarrow.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./backarrow.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "backarrow" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./turtle_happy_3.imageset/(null)[2d][turtle_happy_1px.png]</string>
+				<string>./turtle_happy_3.imageset/(null)[2d][turtle_happy_2px.png]</string>
+				<string>./turtle_happy_3.imageset/(null)[2d][turtle_happy_3px.png]</string>
+				<string>./turtle_happy_3.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_happy_3.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./turtle_happy_3.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_happy_3.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./turtle_happy_3.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_happy_3.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./turtle_happy_3.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_happy_3.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "turtle_happy_3" has 11 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./turtle_sad_2.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_sad_2.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./turtle_sad_2.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_sad_2.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./turtle_sad_2.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_sad_2.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./turtle_sad_2.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_sad_2.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "turtle_sad_2" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./diver.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./diver.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./diver.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./diver.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./diver.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./diver.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./diver.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./diver.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "diver" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
 				<string>./logo.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
 				<string>./logo.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
 				<string>./logo.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
@@ -703,6 +925,101 @@
 			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
 			<key>message</key>
 			<string>The image set "logo" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./migration.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./migration.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./migration.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./migration.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./migration.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./migration.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./migration.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./migration.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "migration" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./coral_good_3.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./coral_good_3.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./coral_good_3.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./coral_good_3.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./coral_good_3.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./coral_good_3.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./coral_good_3.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./coral_good_3.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "coral_good_3" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./bottle.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./bottle.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./bottle.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./bottle.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./bottle.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./bottle.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./bottle.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./bottle.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "bottle" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./hunger_worse.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./hunger_worse.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./hunger_worse.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./hunger_worse.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./hunger_worse.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./hunger_worse.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./hunger_worse.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./hunger_worse.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "hunger_worse" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./turtle_depressed_2.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_depressed_2.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./turtle_depressed_2.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_depressed_2.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./turtle_depressed_2.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_depressed_2.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./turtle_depressed_2.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_depressed_2.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "turtle_depressed_2" has 8 unassigned children.</string>
 			<key>type</key>
 			<string>Ambiguous Content</string>
 		</dict>
@@ -747,54 +1064,6 @@
 		<dict>
 			<key>affected-items</key>
 			<array>
-				<string>./AppIcon.appiconset/[][ipad][40x40][][][1x][][]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The file "Icon40.png" for the image set "AppIcon" does not exist.</string>
-			<key>type</key>
-			<string>Missing Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./AppIcon.appiconset/[][ipad][20x20][][][2x][][]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The file "Icon40.png" for the image set "AppIcon" does not exist.</string>
-			<key>type</key>
-			<string>Missing Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./AppIcon.appiconset/[][ipad][40x40][][][2x][][]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The file "Icon80.png" for the image set "AppIcon" does not exist.</string>
-			<key>type</key>
-			<string>Missing Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./AppIcon.appiconset/[][ipad][29x29][][][2x][][]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The file "Icon58.png" for the image set "AppIcon" does not exist.</string>
-			<key>type</key>
-			<string>Missing Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
 				<string>./crab.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
 				<string>./crab.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
 				<string>./crab.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
@@ -814,212 +1083,38 @@
 		<dict>
 			<key>affected-items</key>
 			<array>
-				<string>./happy_good.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./happy_good.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./happy_good.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./happy_good.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./happy_good.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./happy_good.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./happy_good.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./happy_good.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+				<string>./bag.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./bag.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./bag.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./bag.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./bag.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./bag.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./bag.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./bag.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
 			</array>
 			<key>catalog</key>
 			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
 			<key>message</key>
-			<string>The image set "happy_good" has 8 unassigned children.</string>
+			<string>The image set "bag" has 8 unassigned children.</string>
 			<key>type</key>
 			<string>Ambiguous Content</string>
 		</dict>
 		<dict>
 			<key>affected-items</key>
 			<array>
-				<string>./turtle_happy_3.imageset/(null)[2d][turtle_happy_1px.png]</string>
-				<string>./turtle_happy_3.imageset/(null)[2d][turtle_happy_2px.png]</string>
-				<string>./turtle_happy_3.imageset/(null)[2d][turtle_happy_3px.png]</string>
-				<string>./turtle_happy_3.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_happy_3.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./turtle_happy_3.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_happy_3.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./turtle_happy_3.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_happy_3.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./turtle_happy_3.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_happy_3.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+				<string>./hunger_good.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./hunger_good.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./hunger_good.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./hunger_good.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./hunger_good.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./hunger_good.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./hunger_good.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./hunger_good.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
 			</array>
 			<key>catalog</key>
 			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
 			<key>message</key>
-			<string>The image set "turtle_happy_3" has 11 unassigned children.</string>
-			<key>type</key>
-			<string>Ambiguous Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./bottle.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./bottle.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./bottle.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./bottle.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./bottle.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./bottle.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./bottle.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./bottle.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The image set "bottle" has 8 unassigned children.</string>
-			<key>type</key>
-			<string>Ambiguous Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./backarrow.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./backarrow.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./backarrow.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./backarrow.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./backarrow.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./backarrow.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./backarrow.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./backarrow.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The image set "backarrow" has 8 unassigned children.</string>
-			<key>type</key>
-			<string>Ambiguous Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./turtle_sad_3.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_sad_3.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./turtle_sad_3.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_sad_3.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./turtle_sad_3.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_sad_3.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./turtle_sad_3.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_sad_3.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The image set "turtle_sad_3" has 8 unassigned children.</string>
-			<key>type</key>
-			<string>Ambiguous Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./turtle_happy_1.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_happy_1.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./turtle_happy_1.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_happy_1.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./turtle_happy_1.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_happy_1.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./turtle_happy_1.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_happy_1.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The image set "turtle_happy_1" has 8 unassigned children.</string>
-			<key>type</key>
-			<string>Ambiguous Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./turtle_depressed_2.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_depressed_2.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./turtle_depressed_2.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_depressed_2.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./turtle_depressed_2.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_depressed_2.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./turtle_depressed_2.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_depressed_2.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The image set "turtle_depressed_2" has 8 unassigned children.</string>
-			<key>type</key>
-			<string>Ambiguous Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./jellyfish.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./jellyfish.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./jellyfish.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./jellyfish.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./jellyfish.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./jellyfish.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./jellyfish.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./jellyfish.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The image set "jellyfish" has 8 unassigned children.</string>
-			<key>type</key>
-			<string>Ambiguous Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./diver.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./diver.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./diver.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./diver.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./diver.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./diver.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./diver.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./diver.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The image set "diver" has 8 unassigned children.</string>
-			<key>type</key>
-			<string>Ambiguous Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./menu.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./menu.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./menu.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./menu.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./menu.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./menu.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./menu.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./menu.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The image set "menu" has 8 unassigned children.</string>
-			<key>type</key>
-			<string>Ambiguous Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./health_worse.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./health_worse.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./health_worse.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./health_worse.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./health_worse.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./health_worse.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./health_worse.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./health_worse.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The image set "health_worse" has 8 unassigned children.</string>
+			<string>The image set "hunger_good" has 8 unassigned children.</string>
 			<key>type</key>
 			<string>Ambiguous Content</string>
 		</dict>
@@ -1045,38 +1140,38 @@
 		<dict>
 			<key>affected-items</key>
 			<array>
-				<string>./migration.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./migration.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./migration.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./migration.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./migration.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./migration.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./migration.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./migration.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+				<string>./turtle_top.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_top.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./turtle_top.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_top.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./turtle_top.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_top.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./turtle_top.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_top.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
 			</array>
 			<key>catalog</key>
 			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
 			<key>message</key>
-			<string>The image set "migration" has 8 unassigned children.</string>
+			<string>The image set "turtle_top" has 8 unassigned children.</string>
 			<key>type</key>
 			<string>Ambiguous Content</string>
 		</dict>
 		<dict>
 			<key>affected-items</key>
 			<array>
-				<string>./coral.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./coral.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./coral.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./coral.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./coral.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./coral.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./coral.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./coral.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+				<string>./turtle_sad_3.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_sad_3.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./turtle_sad_3.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_sad_3.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./turtle_sad_3.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_sad_3.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./turtle_sad_3.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_sad_3.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
 			</array>
 			<key>catalog</key>
 			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
 			<key>message</key>
-			<string>The image set "coral" has 8 unassigned children.</string>
+			<string>The image set "turtle_sad_3" has 8 unassigned children.</string>
 			<key>type</key>
 			<string>Ambiguous Content</string>
 		</dict>
@@ -1102,19 +1197,19 @@
 		<dict>
 			<key>affected-items</key>
 			<array>
-				<string>./hunger_bad.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./hunger_bad.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./hunger_bad.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./hunger_bad.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./hunger_bad.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./hunger_bad.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./hunger_bad.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./hunger_bad.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+				<string>./coral_good_2.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./coral_good_2.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./coral_good_2.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./coral_good_2.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./coral_good_2.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./coral_good_2.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./coral_good_2.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./coral_good_2.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
 			</array>
 			<key>catalog</key>
 			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
 			<key>message</key>
-			<string>The image set "hunger_bad" has 8 unassigned children.</string>
+			<string>The image set "coral_good_2" has 8 unassigned children.</string>
 			<key>type</key>
 			<string>Ambiguous Content</string>
 		</dict>
@@ -1143,133 +1238,76 @@
 		<dict>
 			<key>affected-items</key>
 			<array>
-				<string>./question.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./question.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./question.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./question.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./question.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./question.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./question.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./question.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+				<string>./coral.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./coral.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./coral.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./coral.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./coral.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./coral.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./coral.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./coral.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
 			</array>
 			<key>catalog</key>
 			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
 			<key>message</key>
-			<string>The image set "question" has 8 unassigned children.</string>
+			<string>The image set "coral" has 8 unassigned children.</string>
 			<key>type</key>
 			<string>Ambiguous Content</string>
 		</dict>
 		<dict>
 			<key>affected-items</key>
 			<array>
-				<string>./turtle_sad_2.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_sad_2.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./turtle_sad_2.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_sad_2.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./turtle_sad_2.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_sad_2.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./turtle_sad_2.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_sad_2.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+				<string>./health_worse.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./health_worse.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./health_worse.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./health_worse.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./health_worse.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./health_worse.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./health_worse.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./health_worse.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
 			</array>
 			<key>catalog</key>
 			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
 			<key>message</key>
-			<string>The image set "turtle_sad_2" has 8 unassigned children.</string>
+			<string>The image set "health_worse" has 8 unassigned children.</string>
 			<key>type</key>
 			<string>Ambiguous Content</string>
 		</dict>
 		<dict>
 			<key>affected-items</key>
 			<array>
-				<string>./turtle_top.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_top.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./turtle_top.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_top.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./turtle_top.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_top.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./turtle_top.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./turtle_top.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+				<string>./happy_good.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./happy_good.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./happy_good.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./happy_good.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./happy_good.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./happy_good.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./happy_good.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./happy_good.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
 			</array>
 			<key>catalog</key>
 			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
 			<key>message</key>
-			<string>The image set "turtle_top" has 8 unassigned children.</string>
+			<string>The image set "happy_good" has 8 unassigned children.</string>
 			<key>type</key>
 			<string>Ambiguous Content</string>
 		</dict>
 		<dict>
 			<key>affected-items</key>
 			<array>
-				<string>./health_good.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./health_good.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./health_good.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./health_good.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./health_good.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./health_good.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./health_good.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./health_good.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+				<string>./turtle_happy_1.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_happy_1.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./turtle_happy_1.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_happy_1.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./turtle_happy_1.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_happy_1.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./turtle_happy_1.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./turtle_happy_1.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
 			</array>
 			<key>catalog</key>
 			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
 			<key>message</key>
-			<string>The image set "health_good" has 8 unassigned children.</string>
-			<key>type</key>
-			<string>Ambiguous Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./forwardarrow.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./forwardarrow.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./forwardarrow.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./forwardarrow.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./forwardarrow.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./forwardarrow.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./forwardarrow.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./forwardarrow.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The image set "forwardarrow" has 8 unassigned children.</string>
-			<key>type</key>
-			<string>Ambiguous Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./bag.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./bag.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./bag.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./bag.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./bag.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./bag.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./bag.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./bag.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The image set "bag" has 8 unassigned children.</string>
-			<key>type</key>
-			<string>Ambiguous Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./hunger_worse.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./hunger_worse.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./hunger_worse.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./hunger_worse.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./hunger_worse.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./hunger_worse.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
-				<string>./hunger_worse.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
-				<string>./hunger_worse.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The image set "hunger_worse" has 8 unassigned children.</string>
+			<string>The image set "turtle_happy_1" has 8 unassigned children.</string>
 			<key>type</key>
 			<string>Ambiguous Content</string>
 		</dict>

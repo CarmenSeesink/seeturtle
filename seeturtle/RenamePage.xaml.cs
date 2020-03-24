@@ -14,6 +14,12 @@ namespace seeturtle
             InitializeComponent();
         }
 
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            layout.TranslateTo(0, -20, 1000, Easing.BounceOut);
+        }
+
         async void LetsPlayTapped(System.Object sender, System.EventArgs e)
         {
             turtle.TurtleName = TurtleNameInput.Text;

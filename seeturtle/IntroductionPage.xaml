@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="seeturtle.IntroductionPage"
-             BackgroundColor="White">
+             BackgroundColor="#6328cf">
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
@@ -11,27 +11,44 @@
             </Grid.RowDefinitions>
             <BoxView
                 Grid.Row="1"
-                BackgroundColor="#6328cf"
-                HeightRequest="450"
-                CornerRadius="40,40,0,0"
+                x:Name="boxView"
+                BackgroundColor="White"
+                HeightRequest="350"
+                CornerRadius="60,60,0,0"
                 HorizontalOptions="Fill"
                 VerticalOptions="End"/>
             <Image Grid.Row="1"
                    WidthRequest="220"
                    HeightRequest="220"
                    Source="diver"
-                   TranslationY="-155"
+                   x:Name="mainImage"
+                   TranslationY="-60"
                    VerticalOptions="Start"/>
-            <StackLayout Grid.Row="1" Margin="20, 50, 20, 20">
-                <Label Style="{StaticResource HeaderWhite}"
+            <StackLayout Grid.Row="1" Margin="20, 140, 20, 20">
+                <Label Style="{StaticResource HeaderBlack}"
                        Text="Welcome"
+                       x:Name="welcomeLabel"
+                       VerticalOptions="Start"/>
+                <Label Style="{StaticResource SubHeader}"
+                       Text="SeeTurtle"
+                       x:Name="subheaderLabel"
                        VerticalOptions="Start"/>
                 <Label Style="{StaticResource Body}"
-                       Text="A leatherback turtle needs to complete her seasonal migration. You have been selected to be part of our marine conservation team, to assist the turtle on her important journey. Are you ready to help her navigate the challenges of her migration?"/>
-                 <Button x:Name="LearnMoreLabel"
+                       x:Name="content"
+                       Text="A leatherback turtle needs to complete her seasonal migration. You have been selected to be part of our marine conservation team, to assist the turtle on her important journey. Are you ready to help her navigate the challenges of her migration?"
+                       Opacity="0"/>
+                 <Button TranslationY="-180"
+                         x:Name="button1"
                          Text="Let's go"
                          Style="{StaticResource buttonStyle}"
                          Clicked="LetsGoTapped">
+                 </Button>
+                 <Button TranslationY="-180"
+                         x:Name="button2"
+                         Text="Let's play"
+                         Style="{StaticResource buttonStyle}"
+                         Clicked="LetsPlayTapped"
+                         Opacity="0">
                  </Button>
             </StackLayout>
         </Grid>

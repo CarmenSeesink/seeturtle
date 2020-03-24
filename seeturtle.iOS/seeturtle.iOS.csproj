@@ -72,6 +72,7 @@
       <DependentUpon>PlayPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Effects\CustomEntryRendereriOS.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -101,9 +102,6 @@
     <ImageAsset Include="Assets.xcassets\logo.imageset\logo_2px.png" />
     <ImageAsset Include="Assets.xcassets\logo.imageset\logo_1px.png" />
     <ImageAsset Include="Assets.xcassets\crab.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\crab.imageset\crab_3px.png" />
-    <ImageAsset Include="Assets.xcassets\crab.imageset\crab_2px.png" />
-    <ImageAsset Include="Assets.xcassets\crab.imageset\crab_1px.png" />
     <ImageAsset Include="Assets.xcassets\question.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\question.imageset\question_3px.png" />
     <ImageAsset Include="Assets.xcassets\question.imageset\question_2px.png" />
@@ -214,6 +212,25 @@
     <ImageAsset Include="Assets.xcassets\turtle_happy_1.imageset\turtle_happy_1_2px.png" />
     <ImageAsset Include="Assets.xcassets\menu.imageset\menuxhdpi.png" />
     <ImageAsset Include="Assets.xcassets\menu.imageset\menumdpi.png" />
+    <ImageAsset Include="Assets.xcassets\coral_good_1.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\coral_good_2.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\coral_good_2.imageset\coral_3px.png" />
+    <ImageAsset Include="Assets.xcassets\coral_good_2.imageset\coral_2px.png" />
+    <ImageAsset Include="Assets.xcassets\coral_good_2.imageset\coral_1px.png" />
+    <ImageAsset Include="Assets.xcassets\coral_good_3.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\coral_good_1.imageset\coral_3px.png" />
+    <ImageAsset Include="Assets.xcassets\coral_good_1.imageset\coral_2px.png" />
+    <ImageAsset Include="Assets.xcassets\coral_good_1.imageset\coral_1px.png" />
+    <ImageAsset Include="Assets.xcassets\coral_good_3.imageset\coral_good_1xxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\coral_good_3.imageset\coral_good_1xhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\coral_good_3.imageset\coral_good_1mdpi.png" />
+    <ImageAsset Include="Assets.xcassets\coral_bad_2.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\coral_bad_3.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\coral_worse_2.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\coral_worse_3.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\crab.imageset\crabxxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\crab.imageset\crabxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\crab.imageset\crabxhdpi-1.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -283,6 +300,13 @@
     <Folder Include="Assets.xcassets\health_worse.imageset\" />
     <Folder Include="Assets.xcassets\hunger_bad.imageset\" />
     <Folder Include="Assets.xcassets\hunger_worse.imageset\" />
+    <Folder Include="Assets.xcassets\coral_good_1.imageset\" />
+    <Folder Include="Assets.xcassets\coral_good_2.imageset\" />
+    <Folder Include="Assets.xcassets\coral_good_3.imageset\" />
+    <Folder Include="Assets.xcassets\coral_bad_2.imageset\" />
+    <Folder Include="Assets.xcassets\coral_bad_3.imageset\" />
+    <Folder Include="Assets.xcassets\coral_worse_2.imageset\" />
+    <Folder Include="Assets.xcassets\coral_worse_3.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Montserrat-Bold.ttf" />

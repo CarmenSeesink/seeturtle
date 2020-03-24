@@ -30,7 +30,7 @@
                          Margin="0, -70, 0, 40">
                 <Label Style="{StaticResource HeaderWhite}"
                        Text="Let's play"/>
-                <Label Style="{StaticResource Body}"
+                <Label Style="{StaticResource BodyWhite}"
                        Text="Help clean up the beach"/>
             </StackLayout>
             <pancake:PancakeView HeightRequest="500"
