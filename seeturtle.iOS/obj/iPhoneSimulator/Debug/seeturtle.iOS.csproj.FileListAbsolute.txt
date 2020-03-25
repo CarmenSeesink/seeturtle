@@ -58,6 +58,11 @@
 /Users/CarmenSeesink/Desktop/seeturtle/seeturtle.iOS/obj/iPhoneSimulator/Debug/seeturtle.iOS.csprojAssemblyReference.cache
 /Users/CarmenSeesink/Desktop/project/seeturtle.iOS/bin/iPhoneSimulator/Debug/seeturtle.iOS.exe
 /Users/CarmenSeesink/Desktop/project/seeturtle.iOS/bin/iPhoneSimulator/Debug/seeturtle.iOS.pdb
+/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/bin/iPhoneSimulator/Debug/Lottie.iOS.dll
+/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/bin/iPhoneSimulator/Debug/Lottie.iOS.pdb
+/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/bin/iPhoneSimulator/Debug/Lottie.Forms.dll
+/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/bin/iPhoneSimulator/Debug/Lottie.Forms.pdb
+/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/bin/iPhoneSimulator/Debug/EasyTipView.dll
 /Users/CarmenSeesink/Desktop/project/seeturtle.iOS/bin/iPhoneSimulator/Debug/Xamarin.Essentials.dll
 /Users/CarmenSeesink/Desktop/project/seeturtle.iOS/bin/iPhoneSimulator/Debug/Xamarin.Essentials.pdb
 /Users/CarmenSeesink/Desktop/project/seeturtle.iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Core.dll
@@ -101,32 +106,19 @@
 /Users/CarmenSeesink/Desktop/project/seeturtle.iOS/bin/iPhoneSimulator/Debug/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll
 /Users/CarmenSeesink/Desktop/project/seeturtle.iOS/bin/iPhoneSimulator/Debug/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll
 /Users/CarmenSeesink/Desktop/project/seeturtle.iOS/bin/iPhoneSimulator/Debug/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/bin/iPhoneSimulator/Debug/Plugin.InputKit.dll
+/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.PancakeView.dll
 /Users/CarmenSeesink/Desktop/project/seeturtle.iOS/bin/iPhoneSimulator/Debug/seeturtle.dll
 /Users/CarmenSeesink/Desktop/project/seeturtle.iOS/bin/iPhoneSimulator/Debug/seeturtle.pdb
-/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/seeturtle.iOS.csprojAssemblyReference.cache
-/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/XamlC.stamp
-/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/seeturtle.iOS.csproj.CopyComplete
-/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/seeturtle.iOS.exe
-/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/seeturtle.iOS.pdb
-/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/bin/iPhoneSimulator/Debug/Lottie.iOS.dll
-/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/bin/iPhoneSimulator/Debug/Lottie.iOS.pdb
-/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/bin/iPhoneSimulator/Debug/Lottie.Forms.dll
-/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/bin/iPhoneSimulator/Debug/Lottie.Forms.pdb
-/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/bin/iPhoneSimulator/Debug/DK.SlidingPanel.Interface.dll
-/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/bin/iPhoneSimulator/Debug/DK.SlidingPanel.Interface.pdb
-/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/bin/iPhoneSimulator/Debug/ReactiveUI.dll
-/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/bin/iPhoneSimulator/Debug/ReactiveUI.dll.mdb
-/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/bin/iPhoneSimulator/Debug/System.Reactive.Core.dll
-/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/bin/iPhoneSimulator/Debug/System.Reactive.Interfaces.dll
-/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/bin/iPhoneSimulator/Debug/System.Reactive.Linq.dll
-/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/bin/iPhoneSimulator/Debug/System.Reactive.PlatformServices.dll
-/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/bin/iPhoneSimulator/Debug/Splat.dll
-/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.PancakeView.dll
-/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/bin/iPhoneSimulator/Debug/EasyTipView.dll
 /Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/ibtool/_BundleResourceWithLogicalName.items
 /Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/_PartialAppManifest.items
 /Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/_BundleResourceWithLogicalName.items
 /Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/coremlc/_PartialAppManifest.items
 /Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/coremlc/_BundleResourceWithLogicalName.items
 /Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/optimized/
-/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/Resources/PlayPage.xaml.g.cs
+/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/seeturtle.iOS.csprojAssemblyReference.cache
+/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/seeturtle.iOS.csproj.CoreCompileInputs.cache
+/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/XamlC.stamp
+/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/seeturtle.iOS.csproj.CopyComplete
+/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/seeturtle.iOS.exe
+/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/seeturtle.iOS.pdb

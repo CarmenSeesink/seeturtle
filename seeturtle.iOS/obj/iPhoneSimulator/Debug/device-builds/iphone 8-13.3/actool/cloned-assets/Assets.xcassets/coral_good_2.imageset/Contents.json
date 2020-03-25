@@ -4,17 +4,17 @@
       "idiom": "universal"
     },
     {
-      "filename": "coral_1px.png",
+      "filename": "coral_good_2mdpi.png",
       "scale": "1x",
       "idiom": "universal"
     },
     {
-      "filename": "coral_2px.png",
+      "filename": "coral_good_2xhdpi.png",
       "scale": "2x",
       "idiom": "universal"
     },
     {
-      "filename": "coral_3px.png",
+      "filename": "coral_good_2xxhdpi.png",
       "scale": "3x",
       "idiom": "universal"
     },

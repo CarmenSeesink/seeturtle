@@ -14,8 +14,8 @@
     <PackageReference Include="Xamarin.Forms" Version="4.5.0.356" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.1" />
     <PackageReference Include="Com.Airbnb.Xamarin.Forms.Lottie" Version="3.1.0" />
-    <PackageReference Include="DK.SlidingPanel" Version="2.2.9" />
     <PackageReference Include="Xamarin.Forms.PancakeView" Version="1.3.7" />
+    <PackageReference Include="Xamarin.Forms.InputKit" Version="3.2.2" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="GamePage.xaml.cs">
@@ -25,5 +25,10 @@
   <ItemGroup>
     <Folder Include="Objects\" />
     <Folder Include="Effects\" />
+    <Folder Include="Components\" />
+    <Folder Include="Converters\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Interfaces\" />
   </ItemGroup>
 </Project>

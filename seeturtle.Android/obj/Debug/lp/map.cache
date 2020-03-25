@@ -1,6 +1,5 @@
 FormsViewGroup
-ReactiveUI
-Splat
+Plugin.InputKit
 Xamarin.Android.Arch.Core.Common
 Xamarin.Android.Arch.Core.Runtime
 Xamarin.Android.Arch.Lifecycle.Common

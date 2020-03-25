@@ -32,6 +32,9 @@
                        Text="Let's play"/>
                 <Label Style="{StaticResource BodyWhite}"
                        Text="Help clean up the beach"/>
+                  <Label Style="{StaticResource BodyWhite}"
+                       Text=""
+                         x:Name="gameWonLabel"/>
             </StackLayout>
             <pancake:PancakeView HeightRequest="500"
                                    BackgroundColor="#fcd98d"
@@ -51,7 +54,7 @@
                       <ColumnDefinition Width="50"></ColumnDefinition>
                       <ColumnDefinition Width="50"></ColumnDefinition>
                   </Grid.ColumnDefinitions>
-                  <ImageButton Source="bag"
+                  <ImageButton Source="bags"
                                x:Name="plastic1"
                                Rotation="5"
                                Clicked="hidePlastic1Tapped"
@@ -71,7 +74,7 @@
                   </ImageButton>
                   <ImageButton Grid.Row="1"
                                Grid.Column="1"
-                               Source="bag"
+                               Source="bags"
                                x:Name="plastic2"
                                Rotation="-10"
                                Clicked="hidePlastic2Tapped"
@@ -100,7 +103,7 @@
                   </ImageButton>
                   <ImageButton Grid.Row="2"
                                Grid.Column="2"
-                               Source="bag"
+                               Source="bags"
                                x:Name="plastic3"
                                Rotation="15"
                                Clicked="hidePlastic3Tapped"
@@ -120,7 +123,7 @@
                   </ImageButton>
                   <ImageButton Grid.Row="3"
                                Grid.Column="3"
-                               Source="bag"
+                               Source="bags"
                                x:Name="plastic4"
                                Rotation="-10"
                                Clicked="hidePlastic4Tapped"
@@ -129,8 +132,8 @@
                                BackgroundColor="Transparent">
                   </ImageButton>
               </Grid>
-                <Image Source="turtle_top"
-                       x:Name="turtle"
+                <Image Source="turtletop"
+                       x:Name="turtletopImage"
                        VerticalOptions="End"
                        WidthRequest="80"
                        HeightRequest="80"

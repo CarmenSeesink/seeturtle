@@ -4,9 +4,9 @@ namespace seeturtle.Objects
 {
     public enum TurtleState
     {
-        happy,
-        sad,
-        depressed
+        good,
+        bad,
+        worse
     }
 
     class TurtleStates
@@ -15,12 +15,12 @@ namespace seeturtle.Objects
         {
             switch (turtleState)
             {
-                case TurtleState.happy:
-                    return "happy";
-                case TurtleState.sad:
-                    return "sad";
-                case TurtleState.depressed:
-                    return "depressed";
+                case TurtleState.good:
+                    return "good";
+                case TurtleState.bad:
+                    return "bad";
+                case TurtleState.worse:
+                    return "worse";
                 default:
                     return "neutral";
             }
@@ -30,14 +30,14 @@ namespace seeturtle.Objects
         {
             switch (turtleString)
             {
-                case "happy":
-                    return TurtleState.happy;
-                case "sad":
-                    return TurtleState.sad;
-                case "depressed":
-                    return TurtleState.depressed;
+                case "good":
+                    return TurtleState.good;
+                case "bad":
+                    return TurtleState.bad;
+                case "worse":
+                    return TurtleState.worse;
                 default:
-                    return TurtleState.happy;
+                    return TurtleState.good;
             }
         }
     }

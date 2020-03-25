@@ -1,12 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Timers;
+using seeturtle.Objects;
 using Xamarin.Forms;
 
 namespace seeturtle
 {
     public partial class GamePage : ContentPage
     {
+        private Turtle turtle = new Turtle();
+
         public GamePage()
         {
             InitializeComponent();
@@ -92,13 +95,23 @@ namespace seeturtle
             });
         }
 
-        private async void TurtleMove(object sender, EventArgs args)
+        async void TurtleMove(object sender, EventArgs args)
         {
             if (plastic1.IsVisible && plastic2.IsVisible && plastic3.IsVisible && plastic4.IsVisible && bottle1.IsVisible && bottle2.IsVisible && bottle3.IsVisible && bottle4.IsVisible == false)
             {
-                await turtle.TranslateTo(-100, -100, 2000, Easing.BounceOut);
+                //await DisplayAlert("Well done", "You helped turtle get safely to the ocean", "Restart game");
+
+                await turtletopImage.TranslateTo(-100, -100, 2000, Easing.BounceOut);
+                //turtle.cleanOcean();
+                GameWon();
+               
             }
         }
 
+       void GameWon()
+        {
+            gameWonLabel.Text = "Well done you won the game!";
+
+        }
     }
 }

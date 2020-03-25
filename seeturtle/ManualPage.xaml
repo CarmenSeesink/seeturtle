@@ -68,10 +68,10 @@
                             <Label Text="Pollution"
                                    Style="{StaticResource ManualHeader}"></Label>
                             <Label Text="There can be several causes of ocean pollution, but the leading causes include sewage, toxic chemicals from industries, nuclear waste, thermal pollution, plastics, acid rain, and oil spillage"
-                                   Style="{StaticResource Body}"></Label>
+                                   Style="{StaticResource BodyWhite}"></Label>
                             </StackLayout>  
                             <Image Grid.Row="1"
-                                   Source="bag"
+                                   Source="bags"
                                    TranslationY="10"
                                    HeightRequest="105"
                                    WidthRequest="105"
@@ -91,10 +91,10 @@
                             <Label Text="Migration"
                                    Style="{StaticResource ManualHeader}"></Label>
                             <Label Text="Sea turtles are able to migrate back to the exact beach they hatched. This allows them to navigate vast distances between their nesting and feeding grounds."
-                                   Style="{StaticResource Body}"></Label>
+                                   Style="{StaticResource BodyWhite}"></Label>
                             </StackLayout>  
                             <Image Grid.Row="1"
-                                   Source="migration"
+                                   Source="compass"
                                    HeightRequest="110"
                                    WidthRequest="110"
                                    TranslationX="40"/>
@@ -113,18 +113,15 @@
                             <Label Text="Feeding"
                                    Style="{StaticResource ManualHeader}"></Label>
                             <Label Text="Leatherbacks have delicate scissor-like jaws that would be damaged by anything other than their normal diet of jellyfish, tunicates, and other soft-bodied animals. "
-                                   Style="{StaticResource Body}"></Label>
+                                   Style="{StaticResource BodyWhite}"></Label>
                             </StackLayout>  
                             <Image Grid.Row="1"
-                                   Source="jellyfish"
+                                   Source="jellyfishs"
                                    HeightRequest="110"
                                    WidthRequest="110"
                                    TranslationX="40"/>
                         </Grid>
                     </pancake:PancakeView>
-               
-
-                      
                 </StackLayout>
             </ScrollView>
         </StackLayout>

@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="seeturtle.PlayPage"
              xmlns:local="clr-namespace:seeturtle"
+             xmlns:components="clr-namespace:seeturtle.Components"
              xmlns:effects="clr-namespace:seeturtle.Effects"
              xmlns:lottie="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
              xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
@@ -46,22 +47,20 @@
                    <Label Style="{StaticResource BodyWhite}"
                           Text="The leatherback turtle"/>
                </StackLayout>
-
                <RelativeLayout>
-                   <Image RelativeLayout.XConstraint =
-                          "{ConstraintExpression Type=RelativeToParent,
-                          Property=Width,
-                          Factor=0.5,
-                          Constant=-80}"
-                          RelativeLayout.YConstraint ="{ConstraintExpression Type=RelativeToParent,
-                          Property=Height,
-                          Factor=0,
-                          Constant=240}"
-                          x:Name="turtleImage"
+                   <components:DragAndDropReceivingView AbsoluteLayout.LayoutFlags="All"
+                                                        AbsoluteLayout.LayoutBounds=".1,.1,.2,.3" 
+                                                        TranslationY="250"
+                                                        TranslationX="73"
+                                                        BackgroundColor="Transparent"
+                                                        HasShadow="False"
+                                                        x:Name="droppable">
+                   <Image x:Name="turtleImage"
                           WidthRequest="180"
                           HeightRequest="180"
-                          Source="turtle_happy_1"
+                          Source="turtle_good_1"
                           TranslationY="0"/>
+                    </components:DragAndDropReceivingView>
                    <lottie:AnimationView RelativeLayout.XConstraint =
                                          "{ConstraintExpression Type=RelativeToParent,
                                          Property=Width,
@@ -81,48 +80,79 @@
                                 "{ConstraintExpression Type=RelativeToParent,
                                 Property=Width,
                                 Factor=0.5,
-                                Constant=-140}"
+                                Constant=-120}"
                                 RelativeLayout.YConstraint ="{ConstraintExpression Type=RelativeToParent,
                                 Property=Height,
                                 Factor=0,
                                 Constant=200}"
-                                Source="bag"
-                                Rotation="-15"
+                                Source="bags"
+                                Rotation="15"
                                 x:Name="bag"
                                 Clicked="bagTapped"
-                                HeightRequest="60"
+                                HeightRequest="65"
                                 BackgroundColor="Transparent">    
                     </ImageButton>
                </RelativeLayout>
-
                     <ImageButton RelativeLayout.XConstraint =
                                 "{ConstraintExpression Type=RelativeToParent,
                                 Property=Width,
                                 Factor=0.5,
-                                Constant=100}"
+                                Constant=90}"
                                 RelativeLayout.YConstraint ="{ConstraintExpression Type=RelativeToParent,
                                 Property=Height,
                                 Factor=0,
                                 Constant=400}"
-                                Source="jellyfish"
-                                Rotation="15"
+                                Source="jellyfishs"
+                                Rotation="-25"
                                 x:Name="jellyfish"
-                                IsVisible="true"
+                                Opacity="0"
                                 HeightRequest="65"
                                 BackgroundColor="Transparent"
                                 Clicked="jellyfishTapped">    
                     </ImageButton>
+                    <components:DragAndDropMovingView RelativeLayout.XConstraint =
+                                                      "{ConstraintExpression Type=RelativeToParent,
+                                                      Property=Width,
+                                                      Factor=0.5,
+                                                      Constant=-100}"
+                                                      RelativeLayout.YConstraint ="{ConstraintExpression Type=RelativeToParent,
+                                                      Property=Height,
+                                                      Factor=0.5,
+                                                      Constant=180}"
+                                                      AbsoluteLayout.LayoutFlags="All"
+                                                      AbsoluteLayout.LayoutBounds=".1,.9,.2,.3"
+                                                      BackgroundColor="#6328cf"
+                                                      HasShadow="False">
+                            <Image Source="jellyfish"
+                                   HeightRequest="60"
+                                   BackgroundColor="Transparent"/>
+                    </components:DragAndDropMovingView>
                     <Image RelativeLayout.XConstraint =
                             "{ConstraintExpression Type=RelativeToParent,
                             Property=Width,
                             Factor=0.5,
-                            Constant=-100}"
+                            Constant=-140}"
                             RelativeLayout.YConstraint ="{ConstraintExpression Type=RelativeToParent,
                             Property=Height,
                             Factor=0.5,
-                            Constant=180}"
-                            Source="crab"
-                            x:Name="crab"
+                            Constant=150}"
+                            Source="fish"
+                            x:Name="fish"
+                            HeightRequest="60"
+                            BackgroundColor="Transparent"
+                            Opacity="0">
+                    </Image>
+                    <Image RelativeLayout.XConstraint =
+                            "{ConstraintExpression Type=RelativeToParent,
+                            Property=Width,
+                            Factor=0.5,
+                            Constant=80}"
+                            RelativeLayout.YConstraint ="{ConstraintExpression Type=RelativeToParent,
+                            Property=Height,
+                            Factor=0.5,
+                            Constant=-130}"
+                            Source="fish"
+                            x:Name="fish2"
                             HeightRequest="60"
                             BackgroundColor="Transparent"
                             Opacity="0">
@@ -156,7 +186,7 @@
                             TextColor="White"
                             FontSize="16"
                             FontFamily="Montserrat-Regular">
-               </Button>
+                    </Button>
                
                <Frame x:Name="bottomSheet" HasShadow="False" CornerRadius="40" Padding="1,4,1,0" BackgroundColor="#faf9f8"
                    RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=.9,Constant=0}"

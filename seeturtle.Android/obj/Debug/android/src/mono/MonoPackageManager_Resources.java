@@ -3,16 +3,10 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "seeturtle.Android.dll" comes first in this list. */
 		"seeturtle.Android.dll",
-		"DK.SlidingPanel.Interface.dll",
 		"FormsViewGroup.dll",
 		"Lottie.Forms.dll",
-		"ReactiveUI.dll",
+		"Plugin.InputKit.dll",
 		"seeturtle.dll",
-		"Splat.dll",
-		"System.Reactive.Core.dll",
-		"System.Reactive.Interfaces.dll",
-		"System.Reactive.Linq.dll",
-		"System.Reactive.PlatformServices.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Core.Runtime.dll",
 		"Xamarin.Android.Arch.Lifecycle.Common.dll",

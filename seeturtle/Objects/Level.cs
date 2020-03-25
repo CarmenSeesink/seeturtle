@@ -89,11 +89,11 @@ namespace seeturtle.Objects
             {
                 return 0;
             }
-            else if (xp < 1000)
+            else if (xp < 2000)
             {
                 return 1;
             }
-            else if (xp >= 1000)
+            else if (xp >= 2000)
             {
                 return 2;
             }

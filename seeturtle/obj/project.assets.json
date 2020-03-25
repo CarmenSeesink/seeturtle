@@ -14,19 +14,6 @@
           "lib/netstandard2.0/Lottie.Forms.dll": {}
         }
       },
-      "DK.SlidingPanel/2.2.9": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Forms": "2.5.0.77107",
-          "reactiveui": "6.5.2"
-        },
-        "compile": {
-          "lib/portable-win+net45+wp8+win8+wpa81/DK.SlidingPanel.Interface.dll": {}
-        },
-        "runtime": {
-          "lib/portable-win+net45+wp8+win8+wpa81/DK.SlidingPanel.Interface.dll": {}
-        }
-      },
       "Microsoft.NETCore.Platforms/1.1.0": {
         "type": "package",
         "compile": {
@@ -49,90 +36,6 @@
         },
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
-        }
-      },
-      "reactiveui/6.5.2": {
-        "type": "package",
-        "dependencies": {
-          "reactiveui-core": "[6.5.2]"
-        }
-      },
-      "reactiveui-core/6.5.2": {
-        "type": "package",
-        "dependencies": {
-          "Rx-Main": "2.2.5",
-          "Splat": "[1.4.0, 2.0.0)"
-        },
-        "compile": {
-          "lib/Net45/ReactiveUI.dll": {}
-        },
-        "runtime": {
-          "lib/Net45/ReactiveUI.dll": {}
-        }
-      },
-      "Rx-Core/2.2.5": {
-        "type": "package",
-        "dependencies": {
-          "Rx-Interfaces": "2.2.5"
-        },
-        "compile": {
-          "lib/net45/System.Reactive.Core.dll": {}
-        },
-        "runtime": {
-          "lib/net45/System.Reactive.Core.dll": {}
-        }
-      },
-      "Rx-Interfaces/2.2.5": {
-        "type": "package",
-        "compile": {
-          "lib/net45/System.Reactive.Interfaces.dll": {}
-        },
-        "runtime": {
-          "lib/net45/System.Reactive.Interfaces.dll": {}
-        }
-      },
-      "Rx-Linq/2.2.5": {
-        "type": "package",
-        "dependencies": {
-          "Rx-Core": "2.2.5",
-          "Rx-Interfaces": "2.2.5"
-        },
-        "compile": {
-          "lib/net45/System.Reactive.Linq.dll": {}
-        },
-        "runtime": {
-          "lib/net45/System.Reactive.Linq.dll": {}
-        }
-      },
-      "Rx-Main/2.2.5": {
-        "type": "package",
-        "dependencies": {
-          "Rx-Core": "2.2.5",
-          "Rx-Interfaces": "2.2.5",
-          "Rx-Linq": "2.2.5",
-          "Rx-PlatformServices": "2.2.5"
-        }
-      },
-      "Rx-PlatformServices/2.2.5": {
-        "type": "package",
-        "dependencies": {
-          "Rx-Core": "2.2.5",
-          "Rx-Interfaces": "2.2.5"
-        },
-        "compile": {
-          "lib/net45/System.Reactive.PlatformServices.dll": {}
-        },
-        "runtime": {
-          "lib/net45/System.Reactive.PlatformServices.dll": {}
-        }
-      },
-      "Splat/1.4.0": {
-        "type": "package",
-        "compile": {
-          "lib/Net45/Splat.dll": {}
-        },
-        "runtime": {
-          "lib/Net45/Splat.dll": {}
         }
       },
       "System.Numerics.Vectors/4.5.0": {
@@ -171,6 +74,15 @@
         "build": {
           "build/Xamarin.Forms.props": {},
           "build/Xamarin.Forms.targets": {}
+        }
+      },
+      "Xamarin.Forms.InputKit/3.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Plugin.InputKit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Plugin.InputKit.dll": {}
         }
       },
       "Xamarin.Forms.PancakeView/1.3.7": {
@@ -219,19 +131,6 @@
         "lib/xamarinmac20/Lottie.Forms.pdb",
         "lib/xamarinmac20/Lottie.Forms.xml",
         "readme.txt"
-      ]
-    },
-    "DK.SlidingPanel/2.2.9": {
-      "sha512": "SorILTXPhffxUFbhHPNCEADgUZwTJY6ZAniYWTdKk+fIAVNeb4QnRsHvHY5FT+6JpyOfjZ0OSq/YapIhHRdf3Q==",
-      "type": "package",
-      "path": "dk.slidingpanel/2.2.9",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "dk.slidingpanel.2.2.9.nupkg.sha512",
-        "dk.slidingpanel.nuspec",
-        "lib/portable-win+net45+wp8+win8+wpa81/DK.SlidingPanel.Interface.dll",
-        "lib/portable-win+net45+wp8+win8+wpa81/DK.SlidingPanel.Interface.pdb"
       ]
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
@@ -376,220 +275,6 @@
         "lib/netstandard1.0/_._",
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
-      ]
-    },
-    "reactiveui/6.5.2": {
-      "sha512": "RYE2hyKM8vYA9MT/mTn+JR1Tk/Utezzw+fORiTIhFrVFevYQ6B3y8Z2SHZghAF+fwUTcBbYnd58PGrX3iRldcQ==",
-      "type": "package",
-      "path": "reactiveui/6.5.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "reactiveui.6.5.2.nupkg.sha512",
-        "reactiveui.nuspec"
-      ]
-    },
-    "reactiveui-core/6.5.2": {
-      "sha512": "StJyFBzcQr3nA2t8xD0yYZs0zVTS4FoXy0ihmbbe9Sgl1H9vLOz0fgcbL+8i54p9bhghJWDz5BPBwEAOLMwSJw==",
-      "type": "package",
-      "path": "reactiveui-core/6.5.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/MonoAndroid/ReactiveUI.dll",
-        "lib/MonoAndroid/ReactiveUI.dll.mdb",
-        "lib/MonoAndroid/ReactiveUI.xml",
-        "lib/MonoMac/ReactiveUI.dll",
-        "lib/MonoMac/ReactiveUI.dll.mdb",
-        "lib/MonoMac/ReactiveUI.xml",
-        "lib/Monotouch/ReactiveUI.dll",
-        "lib/Monotouch/ReactiveUI.dll.mdb",
-        "lib/Monotouch/ReactiveUI.xml",
-        "lib/Net45/ReactiveUI.dll",
-        "lib/Net45/ReactiveUI.xml",
-        "lib/Portable-Net45+Win8+WP8+WPA81/ReactiveUI.XML",
-        "lib/Portable-Net45+Win8+WP8+WPA81/ReactiveUI.dll",
-        "lib/Portable-Win81+WPA81/ReactiveUI.dll",
-        "lib/Portable-Win81+WPA81/ReactiveUI.pri",
-        "lib/Portable-Win81+WPA81/ReactiveUI.xml",
-        "lib/Portable-Win81+WPA81/ReactiveUI/ReactiveUI.xr.xml",
-        "lib/Portable-Win81+WPA81/ReactiveUI/Themes/generic-winrt.xbf",
-        "lib/WP8/ReactiveUI.dll",
-        "lib/WP8/ReactiveUI.xml",
-        "lib/Win8/ReactiveUI.dll",
-        "lib/Win8/ReactiveUI.pri",
-        "lib/Win8/ReactiveUI.xml",
-        "lib/Win8/ReactiveUI/Themes/generic-winrt.xaml",
-        "lib/Xamarin.Mac10/ReactiveUI.dll",
-        "lib/Xamarin.Mac10/ReactiveUI.dll.mdb",
-        "lib/Xamarin.Mac10/ReactiveUI.xml",
-        "lib/Xamarin.iOS10/ReactiveUI.dll",
-        "lib/Xamarin.iOS10/ReactiveUI.dll.mdb",
-        "lib/Xamarin.iOS10/ReactiveUI.xml",
-        "reactiveui-core.6.5.2.nupkg.sha512",
-        "reactiveui-core.nuspec"
-      ]
-    },
-    "Rx-Core/2.2.5": {
-      "sha512": "DfWVTfW6tvRkkqpnRHKxPIvaRZyDJGADuqrE6J2nwejOQbLRWi0rNUwXkViDWz++25BGDy3iRE5OE6Dv8mJxYQ==",
-      "type": "package",
-      "path": "rx-core/2.2.5",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net40/System.Reactive.Core.XML",
-        "lib/net40/System.Reactive.Core.dll",
-        "lib/net45/System.Reactive.Core.XML",
-        "lib/net45/System.Reactive.Core.dll",
-        "lib/portable-net40+sl5+win8+wp8/System.Reactive.Core.XML",
-        "lib/portable-net40+sl5+win8+wp8/System.Reactive.Core.dll",
-        "lib/portable-net45+winrt45+wp8+wpa81/System.Reactive.Core.XML",
-        "lib/portable-net45+winrt45+wp8+wpa81/System.Reactive.Core.dll",
-        "lib/portable-win81+wpa81/System.Reactive.Core.XML",
-        "lib/portable-win81+wpa81/System.Reactive.Core.dll",
-        "lib/portable-windows8+net45+wp8/System.Reactive.Core.XML",
-        "lib/portable-windows8+net45+wp8/System.Reactive.Core.dll",
-        "lib/sl5/System.Reactive.Core.XML",
-        "lib/sl5/System.Reactive.Core.dll",
-        "lib/windows8/System.Reactive.Core.XML",
-        "lib/windows8/System.Reactive.Core.dll",
-        "lib/windowsphone71/System.Reactive.Core.XML",
-        "lib/windowsphone71/System.Reactive.Core.dll",
-        "lib/windowsphone8/System.Reactive.Core.XML",
-        "lib/windowsphone8/System.Reactive.Core.dll",
-        "rx-core.2.2.5.nupkg.sha512",
-        "rx-core.nuspec"
-      ]
-    },
-    "Rx-Interfaces/2.2.5": {
-      "sha512": "FKtG2QfMIeUcfB7r3a89VoAiszX3DTvYETkpC6U0FzWpxRK/mcHyzYOsniDfag+NsDG0P1k1c8yNSefXKp3t2A==",
-      "type": "package",
-      "path": "rx-interfaces/2.2.5",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net40/System.Reactive.Interfaces.XML",
-        "lib/net40/System.Reactive.Interfaces.dll",
-        "lib/net45/System.Reactive.Interfaces.XML",
-        "lib/net45/System.Reactive.Interfaces.dll",
-        "lib/portable-net40+sl5+win8+wp8/System.Reactive.Interfaces.XML",
-        "lib/portable-net40+sl5+win8+wp8/System.Reactive.Interfaces.dll",
-        "lib/portable-net45+winrt45+wp8+wpa81/System.Reactive.Interfaces.XML",
-        "lib/portable-net45+winrt45+wp8+wpa81/System.Reactive.Interfaces.dll",
-        "lib/portable-win81+wpa81/System.Reactive.Interfaces.XML",
-        "lib/portable-win81+wpa81/System.Reactive.Interfaces.dll",
-        "lib/portable-windows8+net45+wp8/System.Reactive.Interfaces.XML",
-        "lib/portable-windows8+net45+wp8/System.Reactive.Interfaces.dll",
-        "lib/sl5/System.Reactive.Interfaces.XML",
-        "lib/sl5/System.Reactive.Interfaces.dll",
-        "lib/windows8/System.Reactive.Interfaces.XML",
-        "lib/windows8/System.Reactive.Interfaces.dll",
-        "lib/windowsphone71/System.Reactive.Interfaces.XML",
-        "lib/windowsphone71/System.Reactive.Interfaces.dll",
-        "lib/windowsphone8/System.Reactive.Interfaces.XML",
-        "lib/windowsphone8/System.Reactive.Interfaces.dll",
-        "rx-interfaces.2.2.5.nupkg.sha512",
-        "rx-interfaces.nuspec"
-      ]
-    },
-    "Rx-Linq/2.2.5": {
-      "sha512": "UTeCIu3cWPExxmTzdiVq7SalqTBhUaomBTaAC9LpYPoAopjlFwA3hjVWXoLkGlDc/44wqJemJuEwFP00KphiFg==",
-      "type": "package",
-      "path": "rx-linq/2.2.5",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net40/System.Reactive.Linq.XML",
-        "lib/net40/System.Reactive.Linq.dll",
-        "lib/net45/System.Reactive.Linq.XML",
-        "lib/net45/System.Reactive.Linq.dll",
-        "lib/portable-net40+sl5+win8+wp8/System.Reactive.Linq.XML",
-        "lib/portable-net40+sl5+win8+wp8/System.Reactive.Linq.dll",
-        "lib/portable-net45+winrt45+wp8+wpa81/System.Reactive.Linq.XML",
-        "lib/portable-net45+winrt45+wp8+wpa81/System.Reactive.Linq.dll",
-        "lib/portable-win81+wpa81/System.Reactive.Linq.XML",
-        "lib/portable-win81+wpa81/System.Reactive.Linq.dll",
-        "lib/portable-windows8+net45+wp8/System.Reactive.Linq.XML",
-        "lib/portable-windows8+net45+wp8/System.Reactive.Linq.dll",
-        "lib/sl5/System.Reactive.Linq.XML",
-        "lib/sl5/System.Reactive.Linq.dll",
-        "lib/windows8/System.Reactive.Linq.XML",
-        "lib/windows8/System.Reactive.Linq.dll",
-        "lib/windowsphone71/System.Reactive.Linq.XML",
-        "lib/windowsphone71/System.Reactive.Linq.dll",
-        "lib/windowsphone8/System.Reactive.Linq.XML",
-        "lib/windowsphone8/System.Reactive.Linq.dll",
-        "rx-linq.2.2.5.nupkg.sha512",
-        "rx-linq.nuspec"
-      ]
-    },
-    "Rx-Main/2.2.5": {
-      "sha512": "qdQ6qENEiLsp/LRdzZlLlodihWN8VDjwNfWa8c2ELjEHZgTdKzt1V4i61gkHVtFKZXe8Px6KupbMP3pZ+1tusQ==",
-      "type": "package",
-      "path": "rx-main/2.2.5",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "rx-main.2.2.5.nupkg.sha512",
-        "rx-main.nuspec"
-      ]
-    },
-    "Rx-PlatformServices/2.2.5": {
-      "sha512": "pMnNEvJVjT+wuDib+W/bi5hhIYcre7dW5yxvKrJxnR4iKJ1VLA/dY2FTtjDriHGx7OeGn12lQewXlH2oHiWFPA==",
-      "type": "package",
-      "path": "rx-platformservices/2.2.5",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net40/System.Reactive.PlatformServices.XML",
-        "lib/net40/System.Reactive.PlatformServices.dll",
-        "lib/net45/System.Reactive.PlatformServices.XML",
-        "lib/net45/System.Reactive.PlatformServices.dll",
-        "lib/portable-net40+sl5+win8+wp8/System.Reactive.PlatformServices.XML",
-        "lib/portable-net40+sl5+win8+wp8/System.Reactive.PlatformServices.dll",
-        "lib/portable-net45+winrt45+wp8+wpa81/System.Reactive.PlatformServices.XML",
-        "lib/portable-net45+winrt45+wp8+wpa81/System.Reactive.PlatformServices.dll",
-        "lib/portable-win81+wpa81/System.Reactive.PlatformServices.XML",
-        "lib/portable-win81+wpa81/System.Reactive.PlatformServices.dll",
-        "lib/portable-windows8+net45+wp8/System.Reactive.PlatformServices.XML",
-        "lib/portable-windows8+net45+wp8/System.Reactive.PlatformServices.dll",
-        "lib/sl5/System.Reactive.PlatformServices.XML",
-        "lib/sl5/System.Reactive.PlatformServices.dll",
-        "lib/windows8/System.Reactive.PlatformServices.XML",
-        "lib/windows8/System.Reactive.PlatformServices.dll",
-        "lib/windowsphone71/System.Reactive.PlatformServices.XML",
-        "lib/windowsphone71/System.Reactive.PlatformServices.dll",
-        "lib/windowsphone8/System.Reactive.PlatformServices.XML",
-        "lib/windowsphone8/System.Reactive.PlatformServices.dll",
-        "rx-platformservices.2.2.5.nupkg.sha512",
-        "rx-platformservices.nuspec"
-      ]
-    },
-    "Splat/1.4.0": {
-      "sha512": "F2crrxugiQOigrFIhLkgsCsar3k9ZCBYKd845qnskj51A6EsTQdlE8OQ0uakpm+HThYp/sKnvJ6HdotGPeo6hg==",
-      "type": "package",
-      "path": "splat/1.4.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/MonoMac/Splat.dll",
-        "lib/MonoMac/Splat.dll.mdb",
-        "lib/Net45/Splat.dll",
-        "lib/Net45/Splat.pdb",
-        "lib/NetCore45/Splat.dll",
-        "lib/NetCore45/Splat.pdb",
-        "lib/NetCore45/Splat.pri",
-        "lib/Portable-Win81+Wpa81/Splat.dll",
-        "lib/Portable-Win81+Wpa81/Splat.pri",
-        "lib/Portable-net45+win+wpa81+wp80/Splat.dll",
-        "lib/monoandroid/Splat.dll",
-        "lib/monoandroid/Splat.dll.mdb",
-        "lib/monotouch/Splat.dll",
-        "lib/monotouch/Splat.dll.mdb",
-        "lib/wp8/Splat.dll",
-        "lib/wp8/Splat.pdb",
-        "splat.1.4.0.nupkg.sha512",
-        "splat.nuspec"
       ]
     },
     "System.Numerics.Vectors/4.5.0": {
@@ -969,6 +654,25 @@
         "xamarin.forms.nuspec"
       ]
     },
+    "Xamarin.Forms.InputKit/3.2.2": {
+      "sha512": "ZEZAQ7cnKUUeWWNAdcehImTylldRwtzFPF4zvmj9aQ7Ri56J6zQPN/vLd+aHftqD73CL/38Q4XJWfls2b3q2aA==",
+      "type": "package",
+      "path": "xamarin.forms.inputkit/3.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid90/Plugin.InputKit.dll",
+        "lib/monoandroid90/Plugin.InputKit.xml",
+        "lib/netstandard1.0/Plugin.InputKit.dll",
+        "lib/netstandard1.0/Plugin.InputKit.xml",
+        "lib/netstandard2.0/Plugin.InputKit.dll",
+        "lib/netstandard2.0/Plugin.InputKit.xml",
+        "lib/xamarinios10/Plugin.InputKit.dll",
+        "lib/xamarinios10/Plugin.InputKit.xml",
+        "xamarin.forms.inputkit.3.2.2.nupkg.sha512",
+        "xamarin.forms.inputkit.nuspec"
+      ]
+    },
     "Xamarin.Forms.PancakeView/1.3.7": {
       "sha512": "b6g3lVHV764yU4BRPzb1bvHT4G9xSQAXIPGtWQvryzLgU2qoqvnboiL5caJfLLFYXPtDy5ptoRD/TzC5i3VF3w==",
       "type": "package",
@@ -991,10 +695,10 @@
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "Com.Airbnb.Xamarin.Forms.Lottie >= 3.1.0",
-      "DK.SlidingPanel >= 2.2.9",
       "NETStandard.Library >= 2.0.3",
       "Xamarin.Essentials >= 1.5.1",
       "Xamarin.Forms >= 4.5.0.356",
+      "Xamarin.Forms.InputKit >= 3.2.2",
       "Xamarin.Forms.PancakeView >= 1.3.7"
     ]
   },
@@ -1037,10 +741,6 @@
             "target": "Package",
             "version": "[3.1.0, )"
           },
-          "DK.SlidingPanel": {
-            "target": "Package",
-            "version": "[2.2.9, )"
-          },
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
@@ -1054,6 +754,10 @@
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[4.5.0.356, )"
+          },
+          "Xamarin.Forms.InputKit": {
+            "target": "Package",
+            "version": "[3.2.2, )"
           },
           "Xamarin.Forms.PancakeView": {
             "target": "Package",
@@ -1070,80 +774,8 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.102/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.200/RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'DK.SlidingPanel 2.2.9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "DK.SlidingPanel",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'reactiveui-core 6.5.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "reactiveui-core",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Rx-Core 2.2.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Rx-Core",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Rx-Interfaces 2.2.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Rx-Interfaces",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Rx-Linq 2.2.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Rx-Linq",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Rx-PlatformServices 2.2.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Rx-PlatformServices",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Splat 1.4.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Splat",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    }
-  ]
+  }
 }

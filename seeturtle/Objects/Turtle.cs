@@ -25,7 +25,7 @@ namespace seeturtle.Objects
                 }
                 else
                 {
-                    return TurtleState.happy;
+                    return TurtleState.good;
                 }
             }
 

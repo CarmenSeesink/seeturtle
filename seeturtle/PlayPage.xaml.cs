@@ -82,7 +82,7 @@ namespace seeturtle
             {
                 turtleImage.Source = "turtle_" + turtle.CurrentTurtleState + "_" + (Level.GetLevelFromXp(turtleXp) + 1).ToString();
 
-                if (turtle.CurrentTurtleState == TurtleState.depressed)
+                if (turtle.CurrentTurtleState == TurtleState.worse)
                 {
                     TurtleFailedMigration();
                 }
@@ -171,7 +171,7 @@ namespace seeturtle
 
             Device.BeginInvokeOnMainThread(async () =>
             {
-                coralImage.Source = "coral_" + corals.CurrentCoralState + "_" + (Level.GetHappinessLevelFromXp(turtleXp) + 1).ToString();
+                coralImage.Source = "coral_" + corals.CurrentCoralState + "_" + (Level.GetCoralLevelFromXp(turtleXp) + 1).ToString();
 
             });
         }
@@ -183,11 +183,12 @@ namespace seeturtle
             await DisplayAlert("Migration", "Turtle failed to complete her migration", "Restart journey");
 
             turtle.Xp = 0;
-            turtle.CurrentTurtleState = TurtleState.happy;
+            turtle.CurrentTurtleState = TurtleState.good;
             ResetTimer();
             ResetHealthTimer();
             ResetHappinessTimer();
             ResetHungerTimer();
+            ResetCoralTimer();
 
             updateUI();
         }
@@ -214,7 +215,7 @@ namespace seeturtle
 
         /* Jellyfish */
 
-        void jellyfishTapped(System.Object sender, System.EventArgs e)
+        async void jellyfishTapped(System.Object sender, System.EventArgs e)
         {
             ResetHungerTimer();
             ResetTimer();
@@ -223,10 +224,15 @@ namespace seeturtle
 
             turtle.giveFood();
 
-            Device.BeginInvokeOnMainThread(() =>
-            {
-                jellyfish.IsVisible = false;
-            });
+            //await jellyfish.TranslateTo(-10, -40, 500, Easing.Linear);
+            //await jellyfish.ScaleTo(1, 100, Easing.BounceOut);
+            // set opacity to 0 (transparent)
+            await jellyfish.FadeTo(0, 500);
+
+            //Device.BeginInvokeOnMainThread(() =>
+            //{
+            //    jellyfish.IsVisible = false;
+            //});
         }
 
         /* Add coral */
@@ -354,15 +360,15 @@ namespace seeturtle
 
             if (timeElapsed.TotalSeconds < 20)
             {
-                newTurtleState = TurtleState.happy;
+                newTurtleState = TurtleState.good;
             }
             else if (timeElapsed.TotalSeconds < 40)
             {
-                newTurtleState = TurtleState.sad;
+                newTurtleState = TurtleState.bad;
             }
             else if (timeElapsed.TotalSeconds >= 120)
             {
-                newTurtleState = TurtleState.depressed;
+                newTurtleState = TurtleState.worse;
             }
 
             if (timeElapsed.TotalSeconds >= 10)
@@ -370,7 +376,7 @@ namespace seeturtle
                 Device.BeginInvokeOnMainThread(() =>
                 {
                     bag.FadeTo(1, 500, Easing.Linear);
-                    jellyfish.IsVisible = true;
+                    jellyfish.FadeTo(1, 500, Easing.Linear);
                 });
             }
 
@@ -421,19 +427,26 @@ namespace seeturtle
 
             CoralState newCoralState = corals.CurrentCoralState;
 
+            if (timeCoralElapsed.TotalSeconds < 20)
+            {
+                fish.FadeTo(1, 500, Easing.Linear);
+                fish2.FadeTo(1, 500, Easing.Linear);
+            }
+
             if (timeCoralElapsed.TotalSeconds < 30)
             {
                 newCoralState = CoralState.good;
-                crab.FadeTo(1, 500, Easing.Linear);
+                fish.FadeTo(1, 500, Easing.Linear);
             }
             else if (timeCoralElapsed.TotalSeconds < 40)
             {
                 newCoralState = CoralState.bad;
-                crab.FadeTo(0, 500, Easing.Linear);
+                fish.FadeTo(0, 500, Easing.Linear);
             }
             else if (timeCoralElapsed.TotalSeconds >= 60)
             {
                 newCoralState = CoralState.worse;
+                fish2.FadeTo(0, 500, Easing.Linear);
             }
 
             if (newCoralState != corals.CurrentCoralState)
@@ -451,17 +464,17 @@ namespace seeturtle
 
             HealthState newHealthState = health.CurrentHealthState;
 
-            if (timeHealthElapsed.TotalSeconds < 10)
+            if (timeHealthElapsed.TotalSeconds < 20)
             {
                 newHealthState = HealthState.good;
                 HealthProgressBar.ProgressTo(1, 900, Easing.Linear);
             }
-            else if (timeHealthElapsed.TotalSeconds < 20)
+            else if (timeHealthElapsed.TotalSeconds < 30)
             {
                 newHealthState = HealthState.bad;
                 HealthProgressBar.ProgressTo(0.5, 900, Easing.Linear);
             }
-            else if (timeHealthElapsed.TotalSeconds >= 30)
+            else if (timeHealthElapsed.TotalSeconds >= 40)
             {
                 newHealthState = HealthState.worse;
                 HealthProgressBar.ProgressTo(0.1, 900, Easing.Linear);
@@ -482,12 +495,12 @@ namespace seeturtle
 
             HungerState newHungerState = hunger.CurrentHungerState;
 
-            if (timeHungerElapsed.TotalSeconds < 20)
+            if (timeHungerElapsed.TotalSeconds < 30)
             {
                 newHungerState = HungerState.good;
                 HungerProgressBar.ProgressTo(1, 900, Easing.Linear);
             }
-            else if (timeHungerElapsed.TotalSeconds < 30)
+            else if (timeHungerElapsed.TotalSeconds < 40)
             {
                 newHungerState = HungerState.bad;
                 HungerProgressBar.ProgressTo(0.5, 900, Easing.Linear);
@@ -502,6 +515,15 @@ namespace seeturtle
             {
                 hunger.CurrentHungerState = newHungerState;
                 updateHungerUI();
+            }
+
+            if (droppable.BackgroundColor == Color.FromHex("#6328cf"))
+            {
+                //turtle.giveFood();
+                ResetHungerTimer();
+                //ResetTimer();
+                updateHungerUI();
+                //updateUI();
             }
         }
 

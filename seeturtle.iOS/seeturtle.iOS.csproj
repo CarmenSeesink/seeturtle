@@ -68,10 +68,6 @@
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Effects\iOSTooltipEffect.cs" />
-    <Compile Include="Resources\PlayPage.xaml.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' ">
-      <DependentUpon>PlayPage.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Effects\CustomEntryRendereriOS.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -102,26 +98,10 @@
     <ImageAsset Include="Assets.xcassets\logo.imageset\logo_2px.png" />
     <ImageAsset Include="Assets.xcassets\logo.imageset\logo_1px.png" />
     <ImageAsset Include="Assets.xcassets\crab.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\question.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\question.imageset\question_3px.png" />
-    <ImageAsset Include="Assets.xcassets\question.imageset\question_2px.png" />
-    <ImageAsset Include="Assets.xcassets\question.imageset\question_1px.png" />
-    <ImageAsset Include="Assets.xcassets\turtle_top.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\jellyfish.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\coral.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\bag.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\bag.imageset\bag_3px.png" />
-    <ImageAsset Include="Assets.xcassets\bag.imageset\bag_2px.png" />
-    <ImageAsset Include="Assets.xcassets\bag.imageset\bag_1px.png" />
     <ImageAsset Include="Assets.xcassets\coral.imageset\coral_3px.png" />
     <ImageAsset Include="Assets.xcassets\coral.imageset\coral_2px.png" />
     <ImageAsset Include="Assets.xcassets\coral.imageset\coral_1px.png" />
-    <ImageAsset Include="Assets.xcassets\jellyfish.imageset\jellyfish_3px.png" />
-    <ImageAsset Include="Assets.xcassets\jellyfish.imageset\jellyfish_2px.png" />
-    <ImageAsset Include="Assets.xcassets\jellyfish.imageset\jellyfish_1px.png" />
-    <ImageAsset Include="Assets.xcassets\turtle_top.imageset\turtletop_3px.png" />
-    <ImageAsset Include="Assets.xcassets\turtle_top.imageset\turtletop_2px.png" />
-    <ImageAsset Include="Assets.xcassets\turtle_top.imageset\turtletop_1px.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo2.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo3.png" />
@@ -130,39 +110,6 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo2b.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo3a.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo2c.png" />
-    <ImageAsset Include="Assets.xcassets\turtle_happy_3.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\turtle_happy_3.imageset\turtle_happy_1px.png" />
-    <ImageAsset Include="Assets.xcassets\turtle_happy_3.imageset\turtle_happy_2px.png" />
-    <ImageAsset Include="Assets.xcassets\turtle_happy_3.imageset\turtle_happy_3px.png" />
-    <ImageAsset Include="Assets.xcassets\turtle_happy_2.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\turtle_happy_2.imageset\turtle_happy_1_1px.png" />
-    <ImageAsset Include="Assets.xcassets\turtle_happy_2.imageset\turtle_happy_1_2px.png" />
-    <ImageAsset Include="Assets.xcassets\turtle_happy_2.imageset\turtle_happy_1_3px.png" />
-    <ImageAsset Include="Assets.xcassets\turtle_happy_1.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\turtle_happy_1.imageset\turtle_happy_3px.png" />
-    <ImageAsset Include="Assets.xcassets\turtle_happy_1.imageset\turtle_1_1px.png" />
-    <ImageAsset Include="Assets.xcassets\turtle_sad_2.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\turtle_sad_2.imageset\turtle_sad_2_3px.png" />
-    <ImageAsset Include="Assets.xcassets\turtle_sad_2.imageset\turtle_sad_2_2px.png" />
-    <ImageAsset Include="Assets.xcassets\turtle_sad_2.imageset\turtle_sad_2_1px.png" />
-    <ImageAsset Include="Assets.xcassets\turtle_sad_3.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\turtle_sad_3.imageset\turtle_sad_3_3px.png" />
-    <ImageAsset Include="Assets.xcassets\turtle_sad_3.imageset\turtle_sad_3_2px.png" />
-    <ImageAsset Include="Assets.xcassets\turtle_sad_3.imageset\turtle_sad_3_1.5px.png" />
-    <ImageAsset Include="Assets.xcassets\turtle_depressed_2.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\turtle_depressed_2.imageset\turtle_depressed_2_3px.png" />
-    <ImageAsset Include="Assets.xcassets\turtle_depressed_2.imageset\turtle_depressed_2_2px.png" />
-    <ImageAsset Include="Assets.xcassets\turtle_depressed_2.imageset\turtle_depressed_2_1px.png" />
-    <ImageAsset Include="Assets.xcassets\turtle_depressed_3.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\turtle_depressed_3.imageset\turtle_depressed_3_1px.png" />
-    <ImageAsset Include="Assets.xcassets\turtle_depressed_3.imageset\turtle_depressed_3_2px.png" />
-    <ImageAsset Include="Assets.xcassets\turtle_depressed_3.imageset\turtle_depressed_3_3px.png" />
-    <ImageAsset Include="Assets.xcassets\turtle_happy_2.imageset\turtle_happy_2_3px.png" />
-    <ImageAsset Include="Assets.xcassets\turtle_happy_2.imageset\turtle_happy_2_2px.png" />
-    <ImageAsset Include="Assets.xcassets\turtle_happy_2.imageset\turtle_happy_2_1px.png" />
-    <ImageAsset Include="Assets.xcassets\turtle_happy_3.imageset\turtle_happy_3_3px.png" />
-    <ImageAsset Include="Assets.xcassets\turtle_happy_3.imageset\turtle_happy_3_2px.png" />
-    <ImageAsset Include="Assets.xcassets\turtle_happy_3.imageset\turtle_happy_3_1px.png" />
     <ImageAsset Include="Assets.xcassets\diver.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\diver.imageset\dive_3px.png" />
     <ImageAsset Include="Assets.xcassets\diver.imageset\divexhdpi.png" />
@@ -177,10 +124,6 @@
     <ImageAsset Include="Assets.xcassets\backarrow.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\backarrow.imageset\right-arrowxxhdpi.png" />
     <ImageAsset Include="Assets.xcassets\menu.imageset\menuxxhdpi-1.png" />
-    <ImageAsset Include="Assets.xcassets\migration.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\migration.imageset\migrationxxhdpi.png" />
-    <ImageAsset Include="Assets.xcassets\migration.imageset\migrationxhdpi.png" />
-    <ImageAsset Include="Assets.xcassets\migration.imageset\migrationhdpi.png" />
     <ImageAsset Include="Assets.xcassets\bottle.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\bottle.imageset\bottlexxhdpi.png" />
     <ImageAsset Include="Assets.xcassets\bottle.imageset\bottlexhdpi.png" />
@@ -209,21 +152,10 @@
     <ImageAsset Include="Assets.xcassets\hunger_worse.imageset\food_worsexxhdpi.png" />
     <ImageAsset Include="Assets.xcassets\hunger_worse.imageset\food_worsexhdpi.png" />
     <ImageAsset Include="Assets.xcassets\hunger_worse.imageset\food_worsemdpi.png" />
-    <ImageAsset Include="Assets.xcassets\turtle_happy_1.imageset\turtle_happy_1_2px.png" />
     <ImageAsset Include="Assets.xcassets\menu.imageset\menuxhdpi.png" />
     <ImageAsset Include="Assets.xcassets\menu.imageset\menumdpi.png" />
-    <ImageAsset Include="Assets.xcassets\coral_good_1.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\coral_good_2.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\coral_good_2.imageset\coral_3px.png" />
-    <ImageAsset Include="Assets.xcassets\coral_good_2.imageset\coral_2px.png" />
-    <ImageAsset Include="Assets.xcassets\coral_good_2.imageset\coral_1px.png" />
     <ImageAsset Include="Assets.xcassets\coral_good_3.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\coral_good_1.imageset\coral_3px.png" />
-    <ImageAsset Include="Assets.xcassets\coral_good_1.imageset\coral_2px.png" />
-    <ImageAsset Include="Assets.xcassets\coral_good_1.imageset\coral_1px.png" />
-    <ImageAsset Include="Assets.xcassets\coral_good_3.imageset\coral_good_1xxhdpi.png" />
-    <ImageAsset Include="Assets.xcassets\coral_good_3.imageset\coral_good_1xhdpi.png" />
-    <ImageAsset Include="Assets.xcassets\coral_good_3.imageset\coral_good_1mdpi.png" />
     <ImageAsset Include="Assets.xcassets\coral_bad_2.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\coral_bad_3.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\coral_worse_2.imageset\Contents.json" />
@@ -231,6 +163,101 @@
     <ImageAsset Include="Assets.xcassets\crab.imageset\crabxxhdpi.png" />
     <ImageAsset Include="Assets.xcassets\crab.imageset\crabxhdpi.png" />
     <ImageAsset Include="Assets.xcassets\crab.imageset\crabxhdpi-1.png" />
+    <ImageAsset Include="Assets.xcassets\fish.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\fish.imageset\fishxxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\fish.imageset\fishxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\fish.imageset\fishmdpi.png" />
+    <ImageAsset Include="Assets.xcassets\coral_bad_1.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\coral_worse_1.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\turtletop.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\turtletop.imageset\turtletop_1px.png" />
+    <ImageAsset Include="Assets.xcassets\turtletop.imageset\turtletop_2px.png" />
+    <ImageAsset Include="Assets.xcassets\turtletop.imageset\turtletop_3px.png" />
+    <ImageAsset Include="Assets.xcassets\turtlelogo.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\coral_bad_2.imageset\coral_bad_2xxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\coral_bad_2.imageset\coral_bad_2xhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\coral_bad_2.imageset\coral_bad_2mdpi.png" />
+    <ImageAsset Include="Assets.xcassets\coral_bad_3.imageset\coral_bad_3xxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\coral_bad_3.imageset\coral_bad_3xhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\coral_bad_3.imageset\coral_bad_3mdpi.png" />
+    <ImageAsset Include="Assets.xcassets\coral_good_2.imageset\coral_good_2xxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\coral_good_2.imageset\coral_good_2xhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\coral_good_2.imageset\coral_good_2mdpi.png" />
+    <ImageAsset Include="Assets.xcassets\coral_good_3.imageset\coral_good_3xxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\coral_good_3.imageset\coral_good_3xhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\coral_good_3.imageset\coral_good_3mdpi.png" />
+    <ImageAsset Include="Assets.xcassets\coral_worse_2.imageset\coral_worse_2xxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\coral_worse_2.imageset\coral_worse_2xhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\coral_worse_2.imageset\coral_worse_2mdpi.png" />
+    <ImageAsset Include="Assets.xcassets\coral_worse_3.imageset\coral_worse_3xxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\coral_worse_3.imageset\coral_worse_3xhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\coral_worse_3.imageset\coral_worse_3mdpi.png" />
+    <ImageAsset Include="Assets.xcassets\turtletop.imageset\turtletopxxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\turtletop.imageset\turtletopxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\turtletop.imageset\turtletopmdpi.png" />
+    <ImageAsset Include="Assets.xcassets\coral_bad_1.imageset\coral_bad_1xxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\coral_bad_1.imageset\coral_bad_1xhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\coral_bad_1.imageset\coral_bad_1mdpi.png" />
+    <ImageAsset Include="Assets.xcassets\coral_worse_1.imageset\coral_worse_1xxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\coral_worse_1.imageset\coral_worse_1xhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\coral_worse_1.imageset\coral_worse_1mdpi.png" />
+    <ImageAsset Include="Assets.xcassets\turtlelogo.imageset\turtlelogoxxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\turtlelogo.imageset\turtlelogoxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\turtlelogo.imageset\turtlelogomdpi.png" />
+    <ImageAsset Include="Assets.xcassets\compass.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\compass.imageset\compassxxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\compass.imageset\compassxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\compass.imageset\compassmdpi.png" />
+    <ImageAsset Include="Assets.xcassets\bags.imageset\bagmdpi.png" />
+    <ImageAsset Include="Assets.xcassets\bags.imageset\bagxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\bags.imageset\bagxxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\bags.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\jellyfishs.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\jellyfishs.imageset\jellyfishmdpi.png" />
+    <ImageAsset Include="Assets.xcassets\jellyfishs.imageset\jellyfishxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\jellyfishs.imageset\jellyfishxxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_worse_1.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\turtle_worse_1.imageset\turtle_depressed_1mdpi.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_worse_1.imageset\turtle_depressed_1xhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_worse_1.imageset\turtle_depressed_1xxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_worse_2.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\turtle_worse_2.imageset\turtle_depressed_2mdpi.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_worse_2.imageset\turtle_depressed_2xhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_worse_2.imageset\turtle_depressed_2xxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_worse_3.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\turtle_worse_3.imageset\turtle_depressed_3mdpi.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_worse_3.imageset\turtle_depressed_3xhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_worse_3.imageset\turtle_depressed_3xxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_good_1.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\turtle_good_1.imageset\turtle_happy_1mdpi.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_good_1.imageset\turtle_happy_1xhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_good_1.imageset\turtle_happy_1xxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_good_2.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\turtle_good_2.imageset\turtle_happy_1_1px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_good_2.imageset\turtle_happy_1_2px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_good_2.imageset\turtle_happy_1_3px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_good_2.imageset\turtle_happy_2mdpi.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_good_2.imageset\turtle_happy_2xhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_good_2.imageset\turtle_happy_2xxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_good_3.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\turtle_good_3.imageset\turtle_happy_1px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_good_3.imageset\turtle_happy_2px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_good_3.imageset\turtle_happy_3mdpi.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_good_3.imageset\turtle_happy_3px.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_good_3.imageset\turtle_happy_3xhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_good_3.imageset\turtle_happy_3xxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_bad_1.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\turtle_bad_1.imageset\turtle_sad_1mdpi.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_bad_1.imageset\turtle_sad_1xhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_bad_1.imageset\turtle_sad_1xxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_bad_2.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\turtle_bad_2.imageset\turtle_sad_2mdpi.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_bad_2.imageset\turtle_sad_2xhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_bad_2.imageset\turtle_sad_2xxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_bad_3.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\turtle_bad_3.imageset\turtle_sad_3mdpi.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_bad_3.imageset\turtle_sad_3xhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\turtle_bad_3.imageset\turtle_sad_3xxhdpi.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -252,6 +279,9 @@
     <PackageReference Include="EasyTipView">
       <Version>1.0.1</Version>
     </PackageReference>
+    <PackageReference Include="Xamarin.Forms.InputKit">
+      <Version>3.2.2</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
@@ -271,19 +301,9 @@
     <Folder Include="Assets.xcassets\pinicon.imageset\" />
     <Folder Include="Assets.xcassets\arrow.imageset\" />
     <Folder Include="Assets.xcassets\bagicon.imageset\" />
-    <Folder Include="Assets.xcassets\turtle_top.imageset\" />
     <Folder Include="Assets.xcassets\forwardarrow.imageset\" />
-    <Folder Include="Assets.xcassets\jellyfish.imageset\" />
     <Folder Include="Assets.xcassets\coral.imageset\" />
-    <Folder Include="Assets.xcassets\bag.imageset\" />
     <Folder Include="Assets.xcassets\turtle_sad_2.imageset\" />
-    <Folder Include="Assets.xcassets\turtle_happy_3.imageset\" />
-    <Folder Include="Assets.xcassets\turtle_happy_2.imageset\" />
-    <Folder Include="Assets.xcassets\turtle_happy_1.imageset\" />
-    <Folder Include="Assets.xcassets\turtle_sad_2.imageset\" />
-    <Folder Include="Assets.xcassets\turtle_sad_3.imageset\" />
-    <Folder Include="Assets.xcassets\turtle_depressed_2.imageset\" />
-    <Folder Include="Assets.xcassets\turtle_depressed_3.imageset\" />
     <Folder Include="Assets.xcassets\dive.imageset\" />
     <Folder Include="Assets.xcassets\diver.imageset\" />
     <Folder Include="Assets.xcassets\happy_good.imageset\" />
@@ -307,20 +327,28 @@
     <Folder Include="Assets.xcassets\coral_bad_3.imageset\" />
     <Folder Include="Assets.xcassets\coral_worse_2.imageset\" />
     <Folder Include="Assets.xcassets\coral_worse_3.imageset\" />
+    <Folder Include="Assets.xcassets\fish.imageset\" />
+    <Folder Include="Assets.xcassets\coral_bad_1.imageset\" />
+    <Folder Include="Assets.xcassets\coral_worse_1.imageset\" />
+    <Folder Include="Assets.xcassets\turtletop.imageset\" />
+    <Folder Include="Assets.xcassets\turtlelogo.imageset\" />
+    <Folder Include="Assets.xcassets\compass.imageset\" />
+    <Folder Include="Assets.xcassets\bags.imageset\" />
+    <Folder Include="Assets.xcassets\jellyfishs.imageset\" />
+    <Folder Include="Assets.xcassets\turtle_worse_1.imageset\" />
+    <Folder Include="Assets.xcassets\turtle_worse_2.imageset\" />
+    <Folder Include="Assets.xcassets\turtle_worse_3.imageset\" />
+    <Folder Include="Assets.xcassets\turtle_good_1.imageset\" />
+    <Folder Include="Assets.xcassets\turtle_good_2.imageset\" />
+    <Folder Include="Assets.xcassets\turtle_good_3.imageset\" />
+    <Folder Include="Assets.xcassets\turtle_bad_1.imageset\" />
+    <Folder Include="Assets.xcassets\turtle_bad_2.imageset\" />
+    <Folder Include="Assets.xcassets\turtle_bad_3.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Montserrat-Bold.ttf" />
     <BundleResource Include="Resources\Montserrat-Regular.ttf" />
     <BundleResource Include="Resources\Montserrat-Medium.ttf" />
-    <BundleResource Include="Resources\bubbles.json" />
-    <BundleResource Include="Resources\menu.json" />
-    <BundleResource Include="Resources\oceanbubbles.json" />
     <BundleResource Include="Resources\whitebubbles.json" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\PlayPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
   </ItemGroup>
 </Project>

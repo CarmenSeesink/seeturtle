@@ -35,6 +35,10 @@ Function=SystemNative_GetEGid
 	/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/mtouch-cache/1-Link/mscorlib.dll
 Function=SystemNative_GetEUid
 	/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_LChflags
+	/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_LChflagsCanSetHiddenFlag
+	/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/mtouch-cache/1-Link/mscorlib.dll
 Function=SystemNative_Link
 	/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/mtouch-cache/1-Link/mscorlib.dll
 Function=SystemNative_MkDir
@@ -1133,6 +1137,8 @@ Function=xamarin_localized_string_format_8
 Function=xamarin_localized_string_format_9
 	/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/mtouch-cache/1-Link/Xamarin.iOS.dll
 Function=xamarin_init_nsthread
+	/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_os_log
 	/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/mtouch-cache/1-Link/Xamarin.iOS.dll
 ObjectiveCClass=OBJC_CLASS_$_LOTAnimationView
 	/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/mtouch-cache/1-Link/Lottie.iOS.dll

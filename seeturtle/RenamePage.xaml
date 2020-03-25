@@ -4,12 +4,12 @@
              x:Class="seeturtle.RenamePage"
              BackgroundColor="White">
 <ContentPage.Content>
-    <StackLayout Margin="0, 100, 0, 20">
+    <StackLayout Margin="0, 150, 0, 20">
             <ScrollView  x:Name="layout" Orientation="Vertical" VerticalScrollBarVisibility="Never">
                 <StackLayout>
-                    <Image Source="diver"
-                           WidthRequest="220"
-                           HeightRequest="220"></Image>
+                    <Image Source="turtlelogo"
+                           WidthRequest="150"
+                           HeightRequest="150"></Image>
                     <Label Style="{StaticResource HeaderBlack}"
                            Text="Name turtle"
                            VerticalOptions="Start"/>
