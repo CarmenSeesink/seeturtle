@@ -4,27 +4,27 @@
              xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
              x:Class="seeturtle.ManualPage">
     <StackLayout>
-          <pancake:PancakeView CornerRadius="0,0, 20, 0"
-                               HeightRequest="90"
-                               WidthRequest="60"
+          <pancake:PancakeView CornerRadius="0,0, 30, 0"
+                               HeightRequest="120"
+                               WidthRequest="55"
                                BackgroundColor="#f4315d"
                                HorizontalOptions="End"
                                VerticalOptions="Start">
                    <RelativeLayout>
                    <ImageButton Source="menu"
                                 Clicked="MenuTapped"
-                                WidthRequest="16"
-                                HeightRequest="14"
-                                TranslationX="25"
+                                WidthRequest="22"
+                                HeightRequest="11"
+                                TranslationX="19"
                                 Padding="1"
-                                TranslationY="40"
+                                TranslationY="70"
                                 CornerRadius="0">
                    </ImageButton>
                        </RelativeLayout>
                </pancake:PancakeView>
         <StackLayout>
             <StackLayout VerticalOptions="FillAndExpand"
-                         Margin="0, -40, 0, 40">
+                         Margin="0, -40, 0, 50">
                 <Label Style="{StaticResource HeaderBlack}"
                        Text="Manual"/>
                 <Label Style="{StaticResource Body}"
@@ -52,14 +52,26 @@
                                    Source="coral"
                                    HeightRequest="110"
                                    WidthRequest="110"
-                                   TranslationX="40"/>
+                                   TranslationX="40">
+                                 <Image.TranslationY>
+                                    <OnPlatform
+                                       x:TypeArguments="x:Double"
+                                       iOS="40"
+                                       Android="0" />
+                                </Image.TranslationY>
+                            </Image>
                         </Grid>
                     </pancake:PancakeView>
                     <pancake:PancakeView CornerRadius="40"  Margin="0, 0, 10, 0">
                         <Grid
                             BackgroundColor="#6328cf"
-                            HeightRequest="400"
                             WidthRequest="290">
+                            <Grid.HeightRequest>
+                                <OnPlatform
+                                       x:TypeArguments="x:Double"
+                                       iOS="450"
+                                       Android="400" />
+                            </Grid.HeightRequest>
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="250"></RowDefinition>
                                 <RowDefinition Height="Auto"></RowDefinition>
@@ -75,7 +87,14 @@
                                    TranslationY="10"
                                    HeightRequest="105"
                                    WidthRequest="105"
-                                   TranslationX="40"/>
+                                   TranslationX="40">
+                                 <Image.TranslationY>
+                                    <OnPlatform
+                                       x:TypeArguments="x:Double"
+                                       iOS="40"
+                                       Android="0" />
+                                </Image.TranslationY>
+                            </Image>
                         </Grid>
                     </pancake:PancakeView>
                     <pancake:PancakeView CornerRadius="40"  Margin="0, 0, 10, 0">
@@ -97,7 +116,15 @@
                                    Source="compass"
                                    HeightRequest="110"
                                    WidthRequest="110"
-                                   TranslationX="40"/>
+                                   TranslationX="40">
+                                <Image.TranslationY>
+                                    <OnPlatform
+                                       x:TypeArguments="x:Double"
+                                       iOS="30"
+                                       Android="0" />
+                                </Image.TranslationY>
+                            </Image>
+                                   
                         </Grid>
                     </pancake:PancakeView>
                     <pancake:PancakeView CornerRadius="40"  Margin="0, 0, 10, 0">
@@ -119,7 +146,14 @@
                                    Source="jellyfishs"
                                    HeightRequest="110"
                                    WidthRequest="110"
-                                   TranslationX="40"/>
+                                   TranslationX="40">
+                                 <Image.TranslationY>
+                                    <OnPlatform
+                                       x:TypeArguments="x:Double"
+                                       iOS="30"
+                                       Android="0" />
+                                </Image.TranslationY>
+                            </Image>
                         </Grid>
                     </pancake:PancakeView>
                 </StackLayout>

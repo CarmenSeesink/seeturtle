@@ -21,7 +21,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 8,1
-	.asciz "Mono AOT Compiler 6.6.0 (2019-08/fd9f379d294 Wed Dec 18 16:32:17 EST 2019)"
+	.asciz "Mono AOT Compiler 6.8.0 (2019-10/c0c5c78e2bd Tue Feb 18 13:51:26 EST 2020)"
 	.asciz "System.Numerics.dll"
 	.asciz ""
 
@@ -3957,7 +3957,7 @@ bl _p_13
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_14
 
@@ -8388,7 +8388,7 @@ ldr x0, [x16, #0]
 .word 0xd28010c1
 bl _p_26
 .word 0xaa0003e1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
@@ -8408,7 +8408,7 @@ ldr x0, [x16, #0]
 .word 0xd28013c1
 bl _p_26
 .word 0xaa0003e1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
@@ -8428,7 +8428,7 @@ ldr x0, [x16, #0]
 .word 0xd2801841
 bl _p_26
 .word 0xaa0003e1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
@@ -8447,7 +8447,7 @@ ldr x0, [x16, #0]
 .word 0xd28013c1
 bl _p_26
 .word 0xaa0003e1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
@@ -8683,7 +8683,7 @@ ldr x0, [x16, #0]
 .word 0xd28013c1
 bl _p_26
 .word 0xaa0003e1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
@@ -8703,7 +8703,7 @@ ldr x0, [x16, #0]
 .word 0xd2801841
 bl _p_26
 .word 0xaa0003e1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
@@ -8722,7 +8722,7 @@ ldr x0, [x16, #0]
 .word 0xd28013c1
 bl _p_26
 .word 0xaa0003e1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
@@ -8948,7 +8948,7 @@ ldr x0, [x16, #0]
 .word 0xd28013c1
 bl _p_26
 .word 0xaa0003e1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
@@ -8968,7 +8968,7 @@ ldr x0, [x16, #0]
 .word 0xd2801841
 bl _p_26
 .word 0xaa0003e1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
@@ -8987,7 +8987,7 @@ ldr x0, [x16, #0]
 .word 0xd28013c1
 bl _p_26
 .word 0xaa0003e1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
@@ -17566,7 +17566,7 @@ bl _p_35
 .word 0x910003bf
 .word 0xa8cb7bfd
 .word 0xd65f03c0
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_14
 
@@ -19752,7 +19752,7 @@ ldr x1, [x16, #280]
 .word 0x910003bf
 .word 0xa8c87bfd
 .word 0xd65f03c0
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_14
 
@@ -23547,7 +23547,7 @@ bl _p_42
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_14
 
@@ -23939,7 +23939,7 @@ bl _p_43
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_14
 
@@ -25741,7 +25741,7 @@ ldr x0, [x16, #0]
 .word 0xd2805061
 bl _p_26
 .word 0xaa0003e1
-.word 0xd2802700
+.word 0xd2802720
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
@@ -25760,7 +25760,7 @@ ldr x0, [x16, #0]
 .word 0xd2805e61
 bl _p_26
 .word 0xf9003fa0
-.word 0xd28023e0
+.word 0xd2802400
 bl _p_52
 .word 0xaa0003e1
 .word 0xf9403fa0
@@ -25768,7 +25768,7 @@ bl _p_52
 bl _p_53
 .word 0xaa0003e2
 .word 0xf9403ba1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_27
@@ -25780,18 +25780,18 @@ ldr x0, [x16, #0]
 .word 0xd28064a1
 bl _p_26
 .word 0xf9003ba0
-.word 0xd28023e0
+.word 0xd2802400
 bl _p_52
 .word 0xaa0003e1
 .word 0xf9403ba0
 .word 0xb900103a
 bl _p_53
 .word 0xaa0003e1
-.word 0xd2801920
+.word 0xd2801940
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -27007,7 +27007,7 @@ bl _p_54
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_14
 
@@ -28956,7 +28956,7 @@ ldr x0, [x16, #0]
 .word 0xd2805e61
 bl _p_26
 .word 0xf9003fa0
-.word 0xd28023e0
+.word 0xd2802400
 bl _p_52
 .word 0xaa0003e1
 .word 0xf9403fa0
@@ -28964,7 +28964,7 @@ bl _p_52
 bl _p_53
 .word 0xaa0003e2
 .word 0xf9403ba1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_27
@@ -28975,14 +28975,14 @@ ldr x0, [x16, #0]
 .word 0xd28064a1
 bl _p_26
 .word 0xf9003ba0
-.word 0xd28023e0
+.word 0xd2802400
 bl _p_52
 .word 0xaa0003e1
 .word 0xf9403ba0
 .word 0xb900103a
 bl _p_53
 .word 0xaa0003e1
-.word 0xd2801920
+.word 0xd2801940
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
@@ -28993,11 +28993,11 @@ ldr x0, [x16, #0]
 .word 0xd2805061
 bl _p_26
 .word 0xaa0003e1
-.word 0xd2802700
+.word 0xd2802720
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -29086,7 +29086,7 @@ ldr x0, [x16, #0]
 .word 0xd2805061
 bl _p_26
 .word 0xaa0003e1
-.word 0xd2802700
+.word 0xd2802720
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
@@ -29105,7 +29105,7 @@ ldr x0, [x16, #0]
 .word 0xd2805e61
 bl _p_26
 .word 0xf9003fa0
-.word 0xd28023e0
+.word 0xd2802400
 bl _p_52
 .word 0xaa0003e1
 .word 0xf9403fa0
@@ -29113,7 +29113,7 @@ bl _p_52
 bl _p_53
 .word 0xaa0003e2
 .word 0xf9403ba1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_27
@@ -29125,18 +29125,18 @@ ldr x0, [x16, #0]
 .word 0xd28064a1
 bl _p_26
 .word 0xf9003ba0
-.word 0xd28023e0
+.word 0xd2802400
 bl _p_52
 .word 0xaa0003e1
 .word 0xf9403ba0
 .word 0xb900103a
 bl _p_53
 .word 0xaa0003e1
-.word 0xd2801920
+.word 0xd2801940
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -30512,7 +30512,7 @@ bl _p_63
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_14
 
@@ -33243,7 +33243,7 @@ ldr x0, [x16, #0]
 .word 0xd2805e61
 bl _p_26
 .word 0xf9003fa0
-.word 0xd28023e0
+.word 0xd2802400
 bl _p_52
 .word 0xaa0003e1
 .word 0xf9403fa0
@@ -33251,7 +33251,7 @@ bl _p_52
 bl _p_53
 .word 0xaa0003e2
 .word 0xf9403ba1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_27
@@ -33262,14 +33262,14 @@ ldr x0, [x16, #0]
 .word 0xd28064a1
 bl _p_26
 .word 0xf9003ba0
-.word 0xd28023e0
+.word 0xd2802400
 bl _p_52
 .word 0xaa0003e1
 .word 0xf9403ba0
 .word 0xb900103a
 bl _p_53
 .word 0xaa0003e1
-.word 0xd2801920
+.word 0xd2801940
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
@@ -33280,11 +33280,11 @@ ldr x0, [x16, #0]
 .word 0xd2805061
 bl _p_26
 .word 0xaa0003e1
-.word 0xd2802700
+.word 0xd2802720
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -33387,7 +33387,7 @@ ldr x0, [x16, #0]
 .word 0xd2805061
 bl _p_26
 .word 0xaa0003e1
-.word 0xd2802700
+.word 0xd2802720
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
@@ -33406,7 +33406,7 @@ ldr x0, [x16, #0]
 .word 0xd2805e61
 bl _p_26
 .word 0xf9003fa0
-.word 0xd28023e0
+.word 0xd2802400
 bl _p_52
 .word 0xaa0003e1
 .word 0xf9403fa0
@@ -33414,7 +33414,7 @@ bl _p_52
 bl _p_53
 .word 0xaa0003e2
 .word 0xf9403ba1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_27
@@ -33426,18 +33426,18 @@ ldr x0, [x16, #0]
 .word 0xd28064a1
 bl _p_26
 .word 0xf9003ba0
-.word 0xd28023e0
+.word 0xd2802400
 bl _p_52
 .word 0xaa0003e1
 .word 0xf9403ba0
 .word 0xb900103a
 bl _p_53
 .word 0xaa0003e1
-.word 0xd2801920
+.word 0xd2801940
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -34685,7 +34685,7 @@ b System_Numerics_BigInteger__ctor_uint
 	.no_dead_strip System_Numerics_BigInteger__ctor_uint
 System_Numerics_BigInteger__ctor_uint:
 .loc 12 51 0 prologue_end
-.word 0xa9be7bfd
+.word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000bb9
 .word 0xaa0003f9
@@ -34701,7 +34701,7 @@ System_Numerics_BigInteger__ctor_uint:
 .loc 12 54 0
 .word 0xf900073f
 .loc 12 55 0
-.word 0x1400001b
+.word 0x1400001e
 .loc 12 58 0
 .word 0xd280003e
 .word 0xb900033e
@@ -34712,7 +34712,10 @@ add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
 ldr x0, [x16, #376]
 .word 0xd2800021
 bl _p_16
+.word 0xf90013a0
 .word 0x91002321
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -34736,9 +34739,9 @@ ldr x2, [x16, #16]
 .loc 12 63 0
 .word 0xf9400bb9
 .word 0x910003bf
-.word 0xa8c27bfd
+.word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -34752,7 +34755,7 @@ b System_Numerics_BigInteger__ctor_long
 	.no_dead_strip System_Numerics_BigInteger__ctor_long
 System_Numerics_BigInteger__ctor_long:
 .loc 12 67 0 prologue_end
-.word 0xa9bc7bfd
+.word 0xa9bb7bfd
 .word 0x910003fd
 .word 0xa90167b8
 .word 0xf90013ba
@@ -34774,7 +34777,7 @@ System_Numerics_BigInteger__ctor_long:
 .loc 12 70 0
 .word 0xf900073f
 .loc 12 71 0
-.word 0x14000066
+.word 0x1400006c
 .loc 12 72 0
 .word 0xd280001e
 .word 0xf2b0001e
@@ -34808,7 +34811,7 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .loc 12 75 0
-.word 0x14000049
+.word 0x1400004f
 .loc 12 79 0
 .word 0xeb1f035f
 .word 0x540000ca
@@ -34829,7 +34832,7 @@ ldr x2, [x16, #16]
 .word 0xd29fffe0
 .word 0xf2bfffe0
 .word 0xeb00031f
-.word 0x54000348
+.word 0x540003a8
 .loc 12 92 0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
@@ -34837,7 +34840,10 @@ add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
 ldr x0, [x16, #376]
 .word 0xd2800021
 bl _p_16
+.word 0xf90023a0
 .word 0x91002321
+.word 0xd5033bbf
+.word 0xf94023a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -34856,10 +34862,10 @@ ldr x2, [x16, #16]
 .word 0xb9801802
 .word 0xeb1f005f
 .word 0x10000011
-.word 0x54000529
+.word 0x54000589
 .word 0xb9002001
 .loc 12 94 0
-.word 0x14000022
+.word 0x14000025
 .loc 12 97 0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
@@ -34867,7 +34873,10 @@ add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
 ldr x0, [x16, #376]
 .word 0xd2800041
 bl _p_16
+.word 0xf90023a0
 .word 0x91002321
+.word 0xd5033bbf
+.word 0xf94023a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -34902,9 +34911,9 @@ ldr x2, [x16, #16]
 .word 0xa94167b8
 .word 0xf94013ba
 .word 0x910003bf
-.word 0xa8c47bfd
+.word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -34918,7 +34927,7 @@ b System_Numerics_BigInteger__ctor_ulong
 	.no_dead_strip System_Numerics_BigInteger__ctor_ulong
 System_Numerics_BigInteger__ctor_ulong:
 .loc 12 109 0 prologue_end
-.word 0xa9be7bfd
+.word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xa9016bb9
 .word 0xaa0003f9
@@ -34933,12 +34942,12 @@ System_Numerics_BigInteger__ctor_ulong:
 .loc 12 112 0
 .word 0xf900073f
 .loc 12 113 0
-.word 0x14000043
+.word 0x14000049
 .loc 12 114 0
 .word 0xd29fffe0
 .word 0xf2bfffe0
 .word 0xeb00035f
-.word 0x54000388
+.word 0x540003e8
 .loc 12 116 0
 .word 0xd280003e
 .word 0xb900033e
@@ -34949,7 +34958,10 @@ add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
 ldr x0, [x16, #376]
 .word 0xd2800021
 bl _p_16
+.word 0xf90013a0
 .word 0x91002321
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -34968,10 +34980,10 @@ ldr x2, [x16, #16]
 .word 0xb9801802
 .word 0xeb1f005f
 .word 0x10000011
-.word 0x54000549
+.word 0x540005a9
 .word 0xb9002001
 .loc 12 119 0
-.word 0x14000024
+.word 0x14000027
 .loc 12 122 0
 .word 0xd280003e
 .word 0xb900033e
@@ -34982,7 +34994,10 @@ add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
 ldr x0, [x16, #376]
 .word 0xd2800041
 bl _p_16
+.word 0xf90013a0
 .word 0x91002321
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -35016,9 +35031,9 @@ ldr x2, [x16, #16]
 .loc 12 129 0
 .word 0xa9416bb9
 .word 0x910003bf
-.word 0xa8c27bfd
+.word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -35055,7 +35070,7 @@ b System_Numerics_BigInteger__ctor_double
 	.no_dead_strip System_Numerics_BigInteger__ctor_double
 System_Numerics_BigInteger__ctor_double:
 .loc 12 137 0 prologue_end
-.word 0xa9b37bfd
+.word 0xa9b27bfd
 .word 0x910003fd
 .word 0xa90167b8
 .word 0xf90013ba
@@ -35093,8 +35108,8 @@ System_Numerics_BigInteger__ctor_double:
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x53001c00
-.word 0x35001f80
-.word 0x140000f1
+.word 0x35001fe0
+.word 0x140000f4
 .loc 12 149 0
 .word 0xb900035f
 .loc 12 150 0
@@ -35142,7 +35157,7 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .loc 12 161 0
-.word 0x140000c5
+.word 0x140000c8
 .loc 12 167 0
 .word 0xb9807ba0
 .word 0x6b1f001f
@@ -35186,7 +35201,7 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .loc 12 172 0
-.word 0x140000a0
+.word 0x140000a3
 .loc 12 174 0
 .word 0xf94043a0
 .word 0xb9807ba1
@@ -35219,13 +35234,13 @@ ldr x2, [x16, #16]
 .loc 12 175 0
 .word 0xb98073a0
 .word 0x6b1f001f
-.word 0x5400104a
+.word 0x540010aa
 .loc 12 176 0
 .word 0xb9800340
 .word 0x4b0003e0
 .word 0xb9000340
 .loc 12 177 0
-.word 0x1400007e
+.word 0x14000081
 .loc 12 178 0
 .word 0xb9807ba0
 .word 0xd280017e
@@ -35262,13 +35277,13 @@ ldr x2, [x16, #16]
 .loc 12 181 0
 .word 0xb98073a0
 .word 0x6b1f001f
-.word 0x54000baa
+.word 0x54000c0a
 .loc 12 182 0
 .word 0xb9800340
 .word 0x4b0003e0
 .word 0xb9000340
 .loc 12 183 0
-.word 0x14000059
+.word 0x1400005c
 .loc 12 188 0
 .word 0xf94043a0
 .word 0xd375d000
@@ -35297,7 +35312,10 @@ adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
 ldr x0, [x16, #376]
 bl _p_16
+.word 0xf9006ba0
 .word 0x91002341
+.word 0xd5033bbf
+.word 0xf9406ba0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -35373,7 +35391,7 @@ ldr x2, [x16, #16]
 .word 0xa94167b8
 .word 0xf94013ba
 .word 0x910003bf
-.word 0xa8cd7bfd
+.word 0xa8ce7bfd
 .word 0xd65f03c0
 .loc 12 145 0
 
@@ -35383,7 +35401,7 @@ ldr x0, [x16, #0]
 .word 0xd28080c1
 bl _p_26
 .word 0xaa0003e1
-.word 0xd2802820
+.word 0xd2802840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
@@ -35395,12 +35413,12 @@ ldr x0, [x16, #0]
 .word 0xd2807741
 bl _p_26
 .word 0xaa0003e1
-.word 0xd2802820
+.word 0xd2802840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
 .word 0x17ffffec
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -35414,7 +35432,7 @@ b System_Numerics_BigInteger__ctor_System_Decimal
 	.no_dead_strip System_Numerics_BigInteger__ctor_System_Decimal
 System_Numerics_BigInteger__ctor_System_Decimal:
 .loc 12 212 0 prologue_end
-.word 0xa9b97bfd
+.word 0xa9b87bfd
 .word 0x910003fd
 .word 0xa90163b7
 .word 0xa9026bb9
@@ -35458,7 +35476,7 @@ bl _p_75
 .word 0xb9801b21
 .word 0xeb00003f
 .word 0x10000011
-.word 0x54001289
+.word 0x540012e9
 .word 0xd37ef400
 .word 0x8b000320
 .word 0x91008000
@@ -35492,7 +35510,7 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .loc 12 222 0
-.word 0x14000072
+.word 0x14000075
 .loc 12 223 0
 .word 0xd280003e
 .word 0x6b1e031f
@@ -35500,7 +35518,7 @@ ldr x2, [x16, #16]
 .word 0xb9801b20
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54000e09
+.word 0x54000e69
 .word 0xb9802320
 .word 0x6b1f001f
 .word 0x5400038d
@@ -35508,7 +35526,7 @@ ldr x2, [x16, #16]
 .word 0xb9801b20
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54000d29
+.word 0x54000d89
 .word 0xb9802320
 .word 0xb9000340
 .loc 12 228 0
@@ -35517,7 +35535,7 @@ ldr x2, [x16, #16]
 .word 0xd280007e
 .word 0xeb1e001f
 .word 0x10000011
-.word 0x54000c29
+.word 0x54000c89
 .word 0xb9802f20
 .word 0x929ffffe
 .word 0xf2b0001e
@@ -35534,7 +35552,7 @@ ldr x2, [x16, #16]
 .loc 12 229 0
 .word 0xf900075f
 .loc 12 230 0
-.word 0x1400004d
+.word 0x14000050
 .loc 12 233 0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
@@ -35542,7 +35560,10 @@ add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
 ldr x0, [x16, #376]
 .word 0xaa1803e1
 bl _p_16
+.word 0xf9003ba0
 .word 0x91002341
+.word 0xd5033bbf
+.word 0xf9403ba0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -35624,9 +35645,9 @@ ldr x2, [x16, #16]
 .word 0xa94163b7
 .word 0xa9426bb9
 .word 0x910003bf
-.word 0xa8c77bfd
+.word 0xa8c87bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -35683,7 +35704,7 @@ ldr x0, [x16, #0]
 .word 0xd2808781
 bl _p_26
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
@@ -35698,7 +35719,7 @@ b System_Numerics_BigInteger__ctor_System_ReadOnlySpan_1_byte_bool_bool
 	.no_dead_strip System_Numerics_BigInteger__ctor_System_ReadOnlySpan_1_byte_bool_bool
 System_Numerics_BigInteger__ctor_System_ReadOnlySpan_1_byte_bool_bool:
 .loc 12 261 0 prologue_end
-.word 0xa9b47bfd
+.word 0xa9b37bfd
 .word 0x910003fd
 .word 0xa90153b3
 .word 0xa9025bb5
@@ -35723,7 +35744,7 @@ System_Numerics_BigInteger__ctor_System_ReadOnlySpan_1_byte_bool_bool:
 .word 0xb98063a2
 .word 0xeb01005f
 .word 0x10000011
-.word 0x54004c49
+.word 0x54004d49
 .word 0x8b010000
 .word 0x39400015
 .word 0x14000007
@@ -35731,7 +35752,7 @@ System_Numerics_BigInteger__ctor_System_ReadOnlySpan_1_byte_bool_bool:
 .word 0xb98063a1
 .word 0xeb1f003f
 .word 0x10000011
-.word 0x54004b49
+.word 0x54004c49
 .word 0x39400015
 .loc 12 267 0
 .word 0xd280101e
@@ -35760,7 +35781,7 @@ System_Numerics_BigInteger__ctor_System_ReadOnlySpan_1_byte_bool_bool:
 .word 0xb98063a2
 .word 0xeb01005f
 .word 0x10000011
-.word 0x54004869
+.word 0x54004969
 .word 0x8b010000
 .word 0x39400000
 .word 0x34fffea0
@@ -35794,7 +35815,7 @@ bl _p_78
 .word 0xb98063a2
 .word 0xeb01005f
 .word 0x10000011
-.word 0x54004509
+.word 0x54004609
 .word 0x8b010000
 .word 0x39400000
 .word 0x34fffea0
@@ -35813,11 +35834,11 @@ bl _p_78
 .loc 12 306 0
 .word 0xf900041f
 .loc 12 308 0
-.word 0x14000215
+.word 0x1400021d
 .loc 12 311 0
 .word 0xd280009e
 .word 0x6b1e02ff
-.word 0x54000e0c
+.word 0x54000e6c
 .loc 12 313 0
 .word 0xf9402bba
 .word 0x35000079
@@ -35841,7 +35862,7 @@ bl _p_78
 .word 0xb98063a4
 .word 0xeb03009f
 .word 0x10000011
-.word 0x540040a9
+.word 0x540041a9
 .word 0x8b030042
 .word 0x39400042
 .word 0x2a020021
@@ -35863,7 +35884,7 @@ bl _p_78
 .word 0xb98063a4
 .word 0xeb03009f
 .word 0x10000011
-.word 0x54003e49
+.word 0x54003f49
 .word 0x8b030042
 .word 0x39400042
 .word 0x2a020021
@@ -35878,8 +35899,8 @@ bl _p_78
 .loc 12 331 0
 .word 0xb9800000
 .word 0x6b1f001f
-.word 0x540003ca
-.word 0x350003b9
+.word 0x5400042a
+.word 0x35000419
 .loc 12 337 0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
@@ -35894,9 +35915,12 @@ bl _p_16
 .word 0xb9801844
 .word 0xeb1f009f
 .word 0x10000011
-.word 0x54003b09
+.word 0x54003c09
 .word 0xb9002043
+.word 0xf90063a0
 .word 0x91002002
+.word 0xd5033bbf
+.word 0xf94063a0
 .word 0xf9000041
 .word 0xd349fc42
 .word 0xd29ffffe
@@ -35918,7 +35942,7 @@ ldr x3, [x16, #16]
 .word 0x929ffffe
 .word 0xf2b0001e
 .word 0x6b1e001f
-.word 0x54003781
+.word 0x54003821
 .loc 12 342 0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
@@ -35947,7 +35971,7 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .loc 12 344 0
-.word 0x140001a3
+.word 0x140001a8
 .loc 12 347 0
 .word 0x131f7ee0
 .word 0x531e7c01
@@ -35994,7 +36018,7 @@ bl _p_16
 .word 0xb98063a2
 .word 0xeb01005f
 .word 0x10000011
-.word 0x540030a9
+.word 0x54003149
 .word 0x8b010000
 .word 0x39400000
 .word 0x53001c14
@@ -36004,7 +36028,7 @@ bl _p_16
 .word 0xb9801802
 .word 0xeb01005f
 .word 0x10000011
-.word 0x54002f89
+.word 0x54003029
 .word 0xd37ef421
 .word 0x8b010001
 .word 0x91008021
@@ -36015,7 +36039,7 @@ bl _p_16
 .word 0xb9801803
 .word 0xeb02007f
 .word 0x10000011
-.word 0x54002e29
+.word 0x54002ec9
 .word 0xd37ef442
 .word 0x8b020000
 .word 0x91008000
@@ -36063,7 +36087,7 @@ bl _p_16
 .word 0xb98063a2
 .word 0xeb01005f
 .word 0x10000011
-.word 0x54002929
+.word 0x540029c9
 .word 0x8b010000
 .word 0x39400000
 .word 0x53001c14
@@ -36073,7 +36097,7 @@ bl _p_16
 .word 0xb9801802
 .word 0xeb01005f
 .word 0x10000011
-.word 0x54002809
+.word 0x540028a9
 .word 0xd37ef421
 .word 0x8b010001
 .word 0x91008021
@@ -36084,7 +36108,7 @@ bl _p_16
 .word 0xb9801803
 .word 0xeb02007f
 .word 0x10000011
-.word 0x540026a9
+.word 0x54002749
 .word 0xd37ef442
 .word 0x8b020000
 .word 0x91008000
@@ -36126,7 +36150,7 @@ bl _p_16
 .word 0xb9801802
 .word 0xeb01005f
 .word 0x10000011
-.word 0x54002249
+.word 0x540022e9
 .word 0xd37ef421
 .word 0x8b010000
 .word 0x91008000
@@ -36146,7 +36170,7 @@ bl _p_16
 .word 0xb98063a2
 .word 0xeb01005f
 .word 0x10000011
-.word 0x54002029
+.word 0x540020c9
 .word 0x8b010000
 .word 0x39400000
 .word 0x53001c1a
@@ -36156,7 +36180,7 @@ bl _p_16
 .word 0xb9801802
 .word 0xeb01005f
 .word 0x10000011
-.word 0x54001f09
+.word 0x54001fa9
 .word 0xd37ef421
 .word 0x8b010001
 .word 0x91008021
@@ -36167,7 +36191,7 @@ bl _p_16
 .word 0xb9801803
 .word 0xeb02007f
 .word 0x10000011
-.word 0x54001da9
+.word 0x54001e49
 .word 0xd37ef442
 .word 0x8b020000
 .word 0x91008000
@@ -36190,7 +36214,7 @@ bl _p_16
 .word 0xb98063a2
 .word 0xeb01005f
 .word 0x10000011
-.word 0x54001b29
+.word 0x54001bc9
 .word 0x8b010000
 .word 0x39400000
 .word 0x53001c1a
@@ -36200,7 +36224,7 @@ bl _p_16
 .word 0xb9801802
 .word 0xeb01005f
 .word 0x10000011
-.word 0x54001a09
+.word 0x54001aa9
 .word 0xd37ef421
 .word 0x8b010001
 .word 0x91008021
@@ -36211,7 +36235,7 @@ bl _p_16
 .word 0xb9801803
 .word 0xeb02007f
 .word 0x10000011
-.word 0x540018a9
+.word 0x54001949
 .word 0xd37ef442
 .word 0x8b020000
 .word 0x91008000
@@ -36225,13 +36249,13 @@ bl _p_16
 .word 0x6b01001f
 .word 0x54fffb6a
 .loc 12 412 0
-.word 0x34001459
+.word 0x340014d9
 .loc 12 414 0
 .word 0xf94053a0
 bl _p_79
 .loc 12 417 0
-.word 0xf94053a0
-.word 0xb9801800
+.word 0xf94053a1
+.word 0xb9801820
 .word 0x5100041a
 .word 0x14000002
 .loc 12 418 0
@@ -36243,7 +36267,7 @@ bl _p_79
 .word 0xb9801802
 .word 0xeb01005f
 .word 0x10000011
-.word 0x54001549
+.word 0x540015e9
 .word 0xd37ef421
 .word 0x8b010000
 .word 0x91008000
@@ -36261,7 +36285,7 @@ bl _p_79
 .word 0xb9801801
 .word 0xeb1f003f
 .word 0x10000011
-.word 0x54001369
+.word 0x54001409
 .word 0xb9402019
 .word 0xaa1903e0
 .word 0xd280003e
@@ -36300,7 +36324,7 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .loc 12 427 0
-.word 0x14000071
+.word 0x14000076
 .loc 12 430 0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
@@ -36329,13 +36353,13 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .loc 12 431 0
-.word 0x14000058
+.word 0x1400005d
 .loc 12 434 0
 .word 0xf94053a0
 .word 0xb9801801
 .word 0xeb1f003f
 .word 0x10000011
-.word 0x54000b49
+.word 0x54000be9
 .word 0xb9402000
 .word 0x6b1f001f
 .word 0x5400018d
@@ -36344,7 +36368,7 @@ ldr x2, [x16, #16]
 .word 0xb9801801
 .word 0xeb1f003f
 .word 0x10000011
-.word 0x54000a49
+.word 0x54000ae9
 .word 0xb9402000
 .word 0x4b0003e1
 .word 0xf9402ba0
@@ -36352,12 +36376,12 @@ ldr x2, [x16, #16]
 .loc 12 437 0
 .word 0xf900041f
 .loc 12 439 0
-.word 0x14000045
+.word 0x1400004a
 .loc 12 446 0
-.word 0xf94053a0
-.word 0xb9801800
+.word 0xf94053a1
+.word 0xb9801820
 .word 0x6b00035f
-.word 0x540003e0
+.word 0x54000440
 .loc 12 448 0
 .word 0xf9402ba0
 .word 0x9280001e
@@ -36372,7 +36396,10 @@ ldr x0, [x16, #376]
 bl _p_16
 .word 0xaa0003e1
 .word 0xf9402ba0
+.word 0xf90063a0
 .word 0x91002002
+.word 0xd5033bbf
+.word 0xf94063a0
 .word 0xf9000041
 .word 0xd349fc42
 .word 0xd29ffffe
@@ -36393,7 +36420,7 @@ ldr x3, [x16, #16]
 .word 0xaa1a03e4
 bl _p_80
 .loc 12 451 0
-.word 0x14000023
+.word 0x14000025
 .loc 12 454 0
 .word 0xf9402ba0
 .word 0x9280001e
@@ -36401,6 +36428,7 @@ bl _p_80
 .word 0xb900001e
 .loc 12 455 0
 .word 0x91002001
+.word 0xd5033bbf
 .word 0xf94053a0
 .word 0xf9000020
 .word 0xd349fc21
@@ -36415,13 +36443,14 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .loc 12 457 0
-.word 0x14000011
+.word 0x14000012
 .loc 12 460 0
 .word 0xf9402ba0
 .word 0xd280003e
 .word 0xb900001e
 .loc 12 461 0
 .word 0x91002001
+.word 0xd5033bbf
 .word 0xf94053a0
 .word 0xf9000020
 .word 0xd349fc21
@@ -36441,9 +36470,9 @@ ldr x2, [x16, #16]
 .word 0xa94363b7
 .word 0xa9446bb9
 .word 0x910003bf
-.word 0xa8cc7bfd
+.word 0xa8cd7bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -36467,6 +36496,7 @@ System_Numerics_BigInteger__ctor_int_uint__:
 .word 0xb9000300
 .loc 12 470 0
 .word 0x91002301
+.word 0xd5033bbf
 .word 0xf94013a0
 .word 0xf9000020
 .word 0xd349fc21
@@ -36496,7 +36526,7 @@ b System_Numerics_BigInteger__ctor_uint___bool
 	.no_dead_strip System_Numerics_BigInteger__ctor_uint___bool
 System_Numerics_BigInteger__ctor_uint___bool:
 .loc 12 482 0 prologue_end
-.word 0xa9ba7bfd
+.word 0xa9b97bfd
 .word 0x910003fd
 .word 0xa9015fb6
 .word 0xa90267b8
@@ -36504,9 +36534,10 @@ System_Numerics_BigInteger__ctor_uint___bool:
 .word 0xaa0003f8
 .word 0xaa0103f9
 .word 0xaa0203fa
-.word 0xb40010b9
+.word 0xb4001139
 .loc 12 489 0
-.word 0xb9801b37
+.word 0xb9801b20
+.word 0xaa0003f7
 .word 0x14000002
 .word 0x510006f7
 .word 0x6b1f02ff
@@ -36516,7 +36547,7 @@ System_Numerics_BigInteger__ctor_uint___bool:
 .word 0xb9801b21
 .word 0xeb00003f
 .word 0x10000011
-.word 0x54001089
+.word 0x540010e9
 .word 0xd37ef400
 .word 0x8b000320
 .word 0x91008000
@@ -36549,7 +36580,7 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-.word 0x14000057
+.word 0x1400005a
 .loc 12 494 0
 .word 0xd280003e
 .word 0x6b1e02ff
@@ -36557,7 +36588,7 @@ ldr x2, [x16, #16]
 .word 0xb9801b20
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54000c09
+.word 0x54000c69
 .word 0xb9402320
 .word 0x929ffffe
 .word 0xf2b0001e
@@ -36569,13 +36600,13 @@ ldr x2, [x16, #16]
 .word 0xb9801b20
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54000aa9
+.word 0x54000b09
 .word 0xb940233a
 .word 0x14000007
 .word 0xb9801b20
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x540009e9
+.word 0x54000a49
 .word 0xb9402320
 .word 0x4b0003fa
 .word 0xb90002da
@@ -36586,7 +36617,7 @@ ldr x2, [x16, #16]
 .word 0x929ffffe
 .word 0xf2b0001e
 .word 0x6b1e001f
-.word 0x540006c1
+.word 0x54000721
 .loc 12 500 0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
@@ -36613,7 +36644,7 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .loc 12 501 0
-.word 0x1400001f
+.word 0x14000022
 .loc 12 504 0
 .word 0xaa1803f6
 .word 0x3500007a
@@ -36629,7 +36660,10 @@ add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
 ldr x0, [x16, #376]
 .word 0xaa1703e1
 bl _p_16
+.word 0xf90033a0
 .word 0x91002301
+.word 0xd5033bbf
+.word 0xf94033a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -36654,7 +36688,7 @@ bl _p_80
 .word 0xa94267b8
 .word 0xf9401bba
 .word 0x910003bf
-.word 0xa8c67bfd
+.word 0xa8c77bfd
 .word 0xd65f03c0
 .loc 12 483 0
 
@@ -36664,11 +36698,11 @@ ldr x0, [x16, #0]
 .word 0xd2808781
 bl _p_26
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -36682,18 +36716,18 @@ b System_Numerics_BigInteger__ctor_uint__
 	.no_dead_strip System_Numerics_BigInteger__ctor_uint__
 System_Numerics_BigInteger__ctor_uint__:
 .loc 12 519 0 prologue_end
-.word 0xa9b87bfd
+.word 0xa9b77bfd
 .word 0x910003fd
 .word 0xa9015fb6
 .word 0xa90267b8
 .word 0xf9001bba
 .word 0xaa0003f9
 .word 0xaa0103fa
-.word 0xb4002ada
+.word 0xb4002cda
 .loc 12 522 0
-.word 0xb9801b58
+.word 0xb9801b40
+.word 0xaa0003f8
 .loc 12 523 0
-.word 0xaa1803e0
 .word 0x6b1f001f
 .word 0x5400026d
 .word 0x51000700
@@ -36701,7 +36735,7 @@ System_Numerics_BigInteger__ctor_uint__:
 .word 0xb9801b41
 .word 0xeb00003f
 .word 0x10000011
-.word 0x54002ac9
+.word 0x54002cc9
 .word 0xd37ef400
 .word 0x8b000340
 .word 0x91008000
@@ -36726,7 +36760,7 @@ System_Numerics_BigInteger__ctor_uint__:
 .word 0xb9801b41
 .word 0xeb00003f
 .word 0x10000011
-.word 0x540027c9
+.word 0x540029c9
 .word 0xd37ef400
 .word 0x8b000340
 .word 0x91008000
@@ -36760,20 +36794,20 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .loc 12 533 0
-.word 0x14000111
+.word 0x14000121
 .loc 12 535 0
 .word 0xd280003e
 .word 0x6b1e031f
-.word 0x54000a01
+.word 0x54000a61
 .loc 12 537 0
 .word 0xb9801b40
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54002349
+.word 0x54002549
 .word 0xb9402340
 .word 0x6b1f001f
-.word 0x5400042a
-.word 0x35000416
+.word 0x5400048a
+.word 0x35000476
 .loc 12 539 0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
@@ -36781,7 +36815,10 @@ add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
 ldr x0, [x16, #376]
 .word 0xd2800021
 bl _p_16
+.word 0xf90043a0
 .word 0x91002321
+.word 0xd5033bbf
+.word 0xf94043a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -36799,25 +36836,25 @@ ldr x2, [x16, #16]
 .word 0xb9801b41
 .word 0xeb1f003f
 .word 0x10000011
-.word 0x54002009
+.word 0x540021a9
 .word 0xb9402341
 .word 0xb9801802
 .word 0xeb1f005f
 .word 0x10000011
-.word 0x54001f69
+.word 0x54002109
 .word 0xb9002001
 .loc 12 541 0
 .word 0xd280003e
 .word 0xb900033e
 .loc 12 542 0
-.word 0x140000e7
+.word 0x140000f4
 .loc 12 544 0
 .word 0x929fffe0
 .word 0xf2b00000
 .word 0xb9801b41
 .word 0xeb1f003f
 .word 0x10000011
-.word 0x54001e29
+.word 0x54001fc9
 .word 0xb9402341
 .word 0x6b01001f
 .word 0x54000301
@@ -36847,24 +36884,24 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .loc 12 547 0
-.word 0x140000c7
+.word 0x140000d4
 .loc 12 550 0
 .word 0xb9801b40
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54001a69
+.word 0x54001c09
 .word 0xb9402340
 .word 0xb9000320
 .loc 12 551 0
 .word 0xf900073f
 .loc 12 554 0
-.word 0x140000bf
+.word 0x140000cc
 .loc 12 557 0
-.word 0x350005b6
+.word 0x35000676
 .loc 12 560 0
 .word 0xb9801b40
 .word 0x6b00031f
-.word 0x54000360
+.word 0x540003c0
 .loc 12 562 0
 .word 0xd280003e
 .word 0xb900033e
@@ -36875,7 +36912,10 @@ add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
 ldr x0, [x16, #376]
 .word 0xaa1803e1
 bl _p_16
+.word 0xf90043a0
 .word 0x91002321
+.word 0xd5033bbf
+.word 0xf94043a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -36896,12 +36936,15 @@ ldr x2, [x16, #16]
 .word 0xaa1803e4
 bl _p_80
 .loc 12 565 0
-.word 0x140000a1
+.word 0x140000ab
 .loc 12 569 0
 .word 0xd280003e
 .word 0xb900033e
 .loc 12 570 0
 .word 0x91002320
+.word 0xf90043a0
+.word 0xd5033bbf
+.word 0xf94043a0
 .word 0xf900001a
 .word 0xd349fc00
 .word 0xd29ffffe
@@ -36915,12 +36958,13 @@ ldr x1, [x16, #16]
 .word 0xd280003e
 .word 0x3900001e
 .loc 12 573 0
-.word 0x14000092
+.word 0x14000099
 .loc 12 577 0
 .word 0xaa1a03e0
 bl _p_79
 .loc 12 580 0
-.word 0xb9801b58
+.word 0xb9801b40
+.word 0xaa0003f8
 .word 0x14000002
 .loc 12 581 0
 .word 0x51000718
@@ -36931,7 +36975,7 @@ bl _p_79
 .word 0xb9801b41
 .word 0xeb00003f
 .word 0x10000011
-.word 0x540012a9
+.word 0x54001369
 .word 0xd37ef400
 .word 0x8b000340
 .word 0x91008000
@@ -36944,7 +36988,7 @@ bl _p_79
 .word 0xb9801b40
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54001129
+.word 0x540011e9
 .word 0xb9402340
 .word 0x6b1f001f
 .word 0x5400092d
@@ -36952,7 +36996,7 @@ bl _p_79
 .word 0xb9801b40
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54001049
+.word 0x54001109
 .word 0xb9402340
 .word 0xd280003e
 .word 0x6b1e001f
@@ -36983,12 +37027,12 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .loc 12 589 0
-.word 0x14000057
+.word 0x1400005d
 .loc 12 590 0
 .word 0xb9801b40
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54000c69
+.word 0x54000d29
 .word 0xb9402340
 .word 0x929ffffe
 .word 0xf2b0001e
@@ -37020,23 +37064,23 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .loc 12 593 0
-.word 0x14000037
+.word 0x1400003d
 .loc 12 596 0
 .word 0xb9801b40
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54000869
+.word 0x54000929
 .word 0xb9402340
 .word 0x4b0003e0
 .word 0xb9000320
 .loc 12 597 0
 .word 0xf900073f
 .loc 12 599 0
-.word 0x1400002e
+.word 0x14000034
 .loc 12 602 0
 .word 0xb9801b40
 .word 0x6b00031f
-.word 0x54000380
+.word 0x540003e0
 .loc 12 604 0
 .word 0x9280001e
 .word 0xf2bffffe
@@ -37048,7 +37092,10 @@ add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
 ldr x0, [x16, #376]
 .word 0xaa1803e1
 bl _p_16
+.word 0xf90043a0
 .word 0x91002321
+.word 0xd5033bbf
+.word 0xf94043a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -37069,13 +37116,16 @@ ldr x2, [x16, #16]
 .word 0xaa1803e4
 bl _p_80
 .loc 12 607 0
-.word 0x14000010
+.word 0x14000013
 .loc 12 611 0
 .word 0x9280001e
 .word 0xf2bffffe
 .word 0xb900033e
 .loc 12 612 0
 .word 0x91002320
+.word 0xf90043a0
+.word 0xd5033bbf
+.word 0xf94043a0
 .word 0xf900001a
 .word 0xd349fc00
 .word 0xd29ffffe
@@ -37093,7 +37143,7 @@ ldr x1, [x16, #16]
 .word 0xa94267b8
 .word 0xf9401bba
 .word 0x910003bf
-.word 0xa8c87bfd
+.word 0xa8c97bfd
 .word 0xd65f03c0
 .loc 12 520 0
 
@@ -37103,11 +37153,11 @@ ldr x0, [x16, #0]
 .word 0xd2808781
 bl _p_26
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -37226,8 +37276,8 @@ System_Numerics_BigInteger_get_IsPowerOfTwo:
 .word 0xd2800000
 .word 0x14000030
 .loc 12 635 0
-.word 0xf9400740
-.word 0xb9801800
+.word 0xf9400741
+.word 0xb9801820
 .word 0x51000419
 .loc 12 636 0
 .word 0xf9400740
@@ -37283,7 +37333,7 @@ System_Numerics_BigInteger_get_IsPowerOfTwo:
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -37372,7 +37422,7 @@ System_Numerics_BigInteger_get_IsEven:
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -37700,7 +37750,7 @@ b System_Numerics_BigInteger_Abs_System_Numerics_BigInteger
 	.no_dead_strip System_Numerics_BigInteger_Abs_System_Numerics_BigInteger
 System_Numerics_BigInteger_Abs_System_Numerics_BigInteger:
 .loc 12 710 0 prologue_end
-.word 0xa9ba7bfd
+.word 0xa9b97bfd
 .word 0x910003fd
 .word 0xf90013a0
 .word 0xf90017a1
@@ -37725,20 +37775,23 @@ ldr x0, [x16, #392]
 .word 0xf9401fa3
 bl _p_90
 .word 0x53001c00
-.word 0x350003c0
+.word 0x35000420
 .word 0xf94013a0
 .word 0xf9002ba0
 .word 0xf94017a0
 .word 0xf9002fa0
 .word 0xb98053a0
-.word 0x4b0003e1
-.word 0xf9402fa0
-.word 0xd2800002
-.word 0xf90023a2
-.word 0xf90027a2
-.word 0xb90043a1
-.word 0x910103a1
-.word 0x91002021
+.word 0x4b0003e0
+.word 0xf9402fa1
+.word 0xf90033a1
+.word 0xd2800001
+.word 0xf90023a1
+.word 0xf90027a1
+.word 0xb90043a0
+.word 0x910103a0
+.word 0x91002001
+.word 0xd5033bbf
+.word 0xf94033a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -37763,7 +37816,7 @@ ldr x2, [x16, #16]
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0x910003bf
-.word 0xa8c67bfd
+.word 0xa8c77bfd
 .word 0xd65f03c0
 
 Lme_153:
@@ -38164,10 +38217,10 @@ bl _p_99
 .word 0xf9001ba0
 .word 0x14000054
 .loc 12 769 0
-.word 0xf94023a0
-.word 0xb9801800
-.word 0xf9402ba1
-.word 0xb9801821
+.word 0xf94023a1
+.word 0xb9801820
+.word 0xf9402ba2
+.word 0xb9801841
 .word 0x6b01001f
 .word 0x5400038a
 .loc 12 771 0
@@ -38262,10 +38315,10 @@ bl _p_99
 .word 0x910003bf
 .word 0xa8d07bfd
 .word 0xd65f03c0
-.word 0xd2802820
+.word 0xd2802840
 .word 0xaa1103e1
 bl _p_14
-.word 0xd2801cc0
+.word 0xd2801ce0
 .word 0xaa1103e1
 bl _p_14
 
@@ -38279,7 +38332,7 @@ b System_Numerics_BigInteger_Negate_System_Numerics_BigInteger
 	.no_dead_strip System_Numerics_BigInteger_Negate_System_Numerics_BigInteger
 System_Numerics_BigInteger_Negate_System_Numerics_BigInteger:
 .loc 12 786 0 prologue_end
-.word 0xa9bb7bfd
+.word 0xa9ba7bfd
 .word 0x910003fd
 .word 0xf90013a0
 .word 0xf90017a1
@@ -38288,14 +38341,17 @@ System_Numerics_BigInteger_Negate_System_Numerics_BigInteger:
 .word 0xf94017a0
 .word 0xf90027a0
 .word 0xb98043a0
-.word 0x4b0003e1
-.word 0xf94027a0
-.word 0xd2800002
-.word 0xf9001ba2
-.word 0xf9001fa2
-.word 0xb90033a1
-.word 0x9100c3a1
-.word 0x91002021
+.word 0x4b0003e0
+.word 0xf94027a1
+.word 0xf9002ba1
+.word 0xd2800001
+.word 0xf9001ba1
+.word 0xf9001fa1
+.word 0xb90033a0
+.word 0x9100c3a0
+.word 0x91002001
+.word 0xd5033bbf
+.word 0xf9402ba0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -38315,7 +38371,7 @@ ldr x2, [x16, #16]
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0x910003bf
-.word 0xa8c57bfd
+.word 0xa8c67bfd
 .word 0xd65f03c0
 
 Lme_15a:
@@ -38417,8 +38473,8 @@ bl _p_103
 .word 0x14000069
 .loc 12 805 0
 .word 0xf94017a0
-.word 0xf94017a1
-.word 0xb9801821
+.word 0xf94017a2
+.word 0xb9801841
 .word 0x51000421
 .word 0x93407c21
 .word 0xb9801802
@@ -38431,19 +38487,17 @@ bl _p_103
 .word 0xb9400000
 .word 0x2a0003e1
 .loc 12 806 0
-.word 0xf94017a0
-.word 0xb9801800
-.loc 12 805 0
+.word 0xf94017a2
+.word 0xb9801840
 .word 0xaa0103fa
-.loc 12 806 0
 .word 0xd280003e
 .word 0x6b1e001f
 .word 0x5400006c
 .word 0xd2800019
 .word 0x1400000e
 .word 0xf94017a0
-.word 0xf94017a1
-.word 0xb9801821
+.word 0xf94017a2
+.word 0xb9801841
 .word 0x51000821
 .word 0x93407c21
 .word 0xb9801802
@@ -38457,16 +38511,16 @@ bl _p_103
 .word 0x2a1903e0
 .word 0xf9001fa0
 .loc 12 807 0
-.word 0xf94017a0
-.word 0xb9801800
+.word 0xf94017a1
+.word 0xb9801820
 .word 0xd280005e
 .word 0x6b1e001f
 .word 0x5400006c
 .word 0xd2800019
 .word 0x1400000e
 .word 0xf94017a0
-.word 0xf94017a1
-.word 0xb9801821
+.word 0xf94017a2
+.word 0xb9801841
 .word 0x51000c21
 .word 0x93407c21
 .word 0xb9801802
@@ -38485,8 +38539,8 @@ bl _p_104
 .word 0x93407c00
 .word 0xaa0003f9
 .loc 12 811 0
-.word 0xf94017a0
-.word 0xb9801800
+.word 0xf94017a1
+.word 0xb9801820
 .word 0x93407c00
 .word 0xd37be800
 .word 0x93407f21
@@ -38532,7 +38586,7 @@ bl _p_103
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -38712,7 +38766,7 @@ bl _p_108
 .word 0x910003bf
 .word 0xa8c87bfd
 .word 0xd65f03c0
-.word 0xd2801cc0
+.word 0xd2801ce0
 .word 0xaa1103e1
 bl _p_14
 
@@ -38847,10 +38901,10 @@ bl _p_99
 .word 0x910003bf
 .word 0xa8c77bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
-.word 0xd2801cc0
+.word 0xd2801ce0
 .word 0xaa1103e1
 bl _p_14
 
@@ -39135,7 +39189,7 @@ ldr x0, [x16, #0]
 bl _p_26
 .word 0xaa0003e2
 .word 0xf94043a1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_27
@@ -39293,7 +39347,7 @@ ldr x0, [x16, #0]
 bl _p_26
 .word 0xaa0003e2
 .word 0xf9402ba1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_27
@@ -39317,12 +39371,13 @@ System_Numerics_BigInteger_GetHashCode:
 .word 0xb5000060
 .loc 12 971 0
 .word 0xb9800340
-.word 0x14000019
+.word 0x1400001a
 .loc 12 972 0
 .word 0xb9800359
 .loc 12 973 0
-.word 0xf9400740
-.word 0xb9801818
+.word 0xf9400741
+.word 0xb9801820
+.word 0xaa0003f8
 .word 0x1400000f
 .loc 12 974 0
 .word 0xf9400740
@@ -39352,7 +39407,7 @@ System_Numerics_BigInteger_GetHashCode:
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -39420,7 +39475,7 @@ bl _p_125
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_14
 
@@ -39447,17 +39502,16 @@ System_Numerics_BigInteger_Equals_long:
 .word 0x93407c00
 .word 0xeb1a001f
 .word 0x9a9f17e0
-.word 0x14000036
+.word 0x14000035
 .loc 12 995 0
 .word 0xb9800320
 .word 0x93407c00
 .word 0xca1a0000
 .word 0xeb1f001f
-.word 0x5400010b
-.word 0xf9400720
-.word 0xb9801801
-.word 0xaa0103e0
-.word 0xb9002ba1
+.word 0x540000eb
+.word 0xf9400721
+.word 0xb9801820
+.word 0xb9002ba0
 .word 0xd280005e
 .word 0x6b1e001f
 .word 0x5400006d
@@ -39512,7 +39566,7 @@ System_Numerics_BigInteger_Equals_long:
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -39528,39 +39582,40 @@ System_Numerics_BigInteger_Equals_ulong:
 .loc 12 1010 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
-.word 0xa90167b8
+.word 0xf9000bb9
 .word 0xaa0003f9
-.word 0xf90013a1
+.word 0xf9000fa1
 .word 0xb9800320
 .word 0x6b1f001f
 .word 0x5400006a
 .loc 12 1011 0
 .word 0xd2800000
-.word 0x14000033
+.word 0x14000034
 .loc 12 1012 0
 .word 0xf9400720
 .word 0xb50000e0
 .loc 12 1013 0
 .word 0xb9800320
 .word 0x93407c00
-.word 0xf94013a1
+.word 0xf9400fa1
 .word 0xeb01001f
 .word 0x9a9f17e0
-.word 0x1400002b
+.word 0x1400002c
 .loc 12 1015 0
-.word 0xf9400720
-.word 0xb9801818
+.word 0xf9400721
+.word 0xb9801820
+.word 0xb90023a0
 .loc 12 1016 0
-.word 0xaa1803e0
 .word 0xd280005e
 .word 0x6b1e001f
 .word 0x5400006d
 .loc 12 1017 0
 .word 0xd2800000
-.word 0x14000023
+.word 0x14000024
 .loc 12 1018 0
+.word 0xb98023a0
 .word 0xd280003e
-.word 0x6b1e031f
+.word 0x6b1e001f
 .word 0x54000181
 .loc 12 1019 0
 .word 0xf9400720
@@ -39570,7 +39625,7 @@ System_Numerics_BigInteger_Equals_ulong:
 .word 0x540003e9
 .word 0xb9402000
 .word 0x2a0003e0
-.word 0xf94013a1
+.word 0xf9400fa1
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x14000015
@@ -39592,14 +39647,14 @@ System_Numerics_BigInteger_Equals_ulong:
 .word 0xd3607c00
 .word 0x2a0103e1
 .word 0xaa010000
-.word 0xf94013a1
+.word 0xf9400fa1
 .word 0xeb01001f
 .word 0x9a9f17e0
-.word 0xa94167b8
+.word 0xf9400bb9
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -39615,12 +39670,12 @@ System_Numerics_BigInteger_Equals_System_Numerics_BigInteger:
 .loc 12 1028 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
-.word 0xa9016bb9
+.word 0xf9000bba
 .word 0xaa0003fa
-.word 0xf90013a1
-.word 0xf90017a2
+.word 0xf9000fa1
+.word 0xf90013a2
 .word 0xb9800340
-.word 0xb98023a1
+.word 0xb9801ba1
 .word 0x6b01001f
 .word 0x54000060
 .loc 12 1029 0
@@ -39628,7 +39683,7 @@ System_Numerics_BigInteger_Equals_System_Numerics_BigInteger:
 .word 0x1400001d
 .loc 12 1030 0
 .word 0xf9400740
-.word 0xf94017a1
+.word 0xf94013a1
 .word 0xeb01001f
 .word 0x54000061
 .loc 12 1032 0
@@ -39637,18 +39692,18 @@ System_Numerics_BigInteger_Equals_System_Numerics_BigInteger:
 .loc 12 1034 0
 .word 0xf9400740
 .word 0xb4000060
-.word 0xf94017a0
+.word 0xf94013a0
 .word 0xb5000060
 .loc 12 1035 0
 .word 0xd2800000
 .word 0x14000011
 .loc 12 1036 0
-.word 0xf9400740
-.word 0xb9801819
+.word 0xf9400741
+.word 0xb9801820
+.word 0xb9002ba0
 .loc 12 1037 0
-.word 0xaa1903e0
-.word 0xf94017a1
-.word 0xb9801821
+.word 0xf94013a2
+.word 0xb9801841
 .word 0x6b01001f
 .word 0x54000060
 .loc 12 1038 0
@@ -39656,14 +39711,14 @@ System_Numerics_BigInteger_Equals_System_Numerics_BigInteger:
 .word 0x14000008
 .loc 12 1039 0
 .word 0xf9400740
-.word 0xf94017a1
-.word 0xaa1903e2
+.word 0xf94013a1
+.word 0xb9802ba2
 bl _p_126
 .word 0x93407c00
 .loc 12 1040 0
 .word 0x6b1f001f
 .word 0x9a9f17e0
-.word 0xa9416bb9
+.word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -39707,17 +39762,16 @@ System_Numerics_BigInteger_CompareTo_long:
 .word 0x14000002
 .word 0xd280001a
 .word 0xaa1a03e0
-.word 0x14000042
+.word 0x14000041
 .loc 12 1050 0
 .word 0xb9800320
 .word 0x93407c00
 .word 0xca1a0000
 .word 0xeb1f001f
-.word 0x5400010b
-.word 0xf9400720
-.word 0xb9801801
-.word 0xaa0103e0
-.word 0xaa0103f8
+.word 0x540000eb
+.word 0xf9400721
+.word 0xb9801820
+.word 0xaa0003f8
 .word 0xd280005e
 .word 0x6b1e001f
 .word 0x5400006d
@@ -39783,7 +39837,7 @@ System_Numerics_BigInteger_CompareTo_long:
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -39836,10 +39890,10 @@ System_Numerics_BigInteger_CompareTo_ulong:
 .word 0xaa1a03e0
 .word 0x14000035
 .loc 12 1066 0
-.word 0xf9400720
-.word 0xb9801818
+.word 0xf9400721
+.word 0xb9801820
+.word 0xaa0003f8
 .loc 12 1067 0
-.word 0xaa1803e0
 .word 0xd280005e
 .word 0x6b1e001f
 .word 0x5400006d
@@ -39897,7 +39951,7 @@ System_Numerics_BigInteger_CompareTo_ulong:
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -39927,10 +39981,10 @@ System_Numerics_BigInteger_CompareTo_System_Numerics_BigInteger:
 .word 0x6b1f001f
 .word 0x5400006b
 .word 0xd2800020
-.word 0x14000054
+.word 0x14000052
 .word 0x92800000
 .word 0xf2bfffe0
-.word 0x14000051
+.word 0x1400004f
 .loc 12 1085 0
 .word 0xf9400740
 .word 0xb50002a0
@@ -39947,27 +40001,25 @@ System_Numerics_BigInteger_CompareTo_System_Numerics_BigInteger:
 .word 0x6b01001f
 .word 0x5400006c
 .word 0xd2800000
-.word 0x14000043
-.word 0xd2800020
 .word 0x14000041
+.word 0xd2800020
+.word 0x1400003f
 .word 0x92800000
 .word 0xf2bfffe0
-.word 0x1400003e
+.word 0x1400003c
 .loc 12 1089 0
 .word 0xb98023a0
 .word 0x4b0003e0
-.word 0x1400003b
+.word 0x14000039
 .loc 12 1092 0
 .word 0xf94017a0
-.word 0xb4000160
-.word 0xf9400740
-.word 0xb9801801
-.word 0xaa0103e0
-.word 0xaa0103f9
-.word 0xf94017a1
-.word 0xb9801822
-.word 0xaa0203e1
-.word 0xb90033a2
+.word 0xb4000120
+.word 0xf9400741
+.word 0xb9801820
+.word 0xaa0003f9
+.word 0xf94017a2
+.word 0xb9801841
+.word 0xb90033a1
 .word 0x6b01001f
 .word 0x5400006d
 .loc 12 1093 0
@@ -40027,7 +40079,7 @@ bl _p_126
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -40113,11 +40165,11 @@ ldr x0, [x16, #0]
 bl _p_26
 .word 0xaa0003e2
 .word 0xf94023a1
-.word 0xd2801920
+.word 0xd2801940
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_27
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_14
 
@@ -40774,14 +40826,14 @@ ldr x0, [x16, #0]
 .word 0xd280a1c1
 bl _p_26
 .word 0xaa0003e1
-.word 0xd2802820
+.word 0xd2802840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
-.word 0xd2802820
+.word 0xd2802840
 .word 0xaa1103e1
 bl _p_14
 
@@ -40972,10 +41024,10 @@ bl _p_80
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_14
 
@@ -41817,7 +41869,7 @@ bl _p_146
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2802820
+.word 0xd2802840
 .word 0xaa1103e1
 bl _p_14
 
@@ -41852,7 +41904,7 @@ bl _p_146
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2802820
+.word 0xd2802840
 .word 0xaa1103e1
 bl _p_14
 
@@ -41887,7 +41939,7 @@ bl _p_146
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2802820
+.word 0xd2802840
 .word 0xaa1103e1
 bl _p_14
 
@@ -41918,7 +41970,7 @@ bl _p_146
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2802820
+.word 0xd2802840
 .word 0xaa1103e1
 bl _p_14
 
@@ -41942,8 +41994,8 @@ System_Numerics_BigInteger_op_Explicit_System_Numerics_BigInteger_3:
 .word 0xb98013a0
 .word 0x14000024
 .loc 12 1644 0
-.word 0xf9400fa0
-.word 0xb9801800
+.word 0xf9400fa1
+.word 0xb9801820
 .word 0xd280003e
 .word 0x6b1e001f
 .word 0x5400044c
@@ -41992,7 +42044,7 @@ ldr x0, [x16, #0]
 .word 0xd280afc1
 bl _p_26
 .word 0xaa0003e1
-.word 0xd2802820
+.word 0xd2802840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
@@ -42004,14 +42056,14 @@ ldr x0, [x16, #0]
 .word 0xd280afc1
 bl _p_26
 .word 0xaa0003e1
-.word 0xd2802820
+.word 0xd2802840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
-.word 0xd2802820
+.word 0xd2802840
 .word 0xaa1103e1
 bl _p_14
 
@@ -42038,8 +42090,8 @@ System_Numerics_BigInteger_op_Explicit_System_Numerics_BigInteger_4:
 .word 0x5400040b
 .word 0x1400000f
 .loc 12 1669 0
-.word 0xf9400fa0
-.word 0xb9801800
+.word 0xf9400fa1
+.word 0xb9801820
 .word 0xd280003e
 .word 0x6b1e001f
 .word 0x540001ac
@@ -42064,14 +42116,14 @@ ldr x0, [x16, #0]
 .word 0xd280bd41
 bl _p_26
 .word 0xaa0003e1
-.word 0xd2802820
+.word 0xd2802840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
-.word 0xd2802820
+.word 0xd2802840
 .word 0xaa1103e1
 bl _p_14
 
@@ -42097,8 +42149,8 @@ System_Numerics_BigInteger_op_Explicit_System_Numerics_BigInteger_5:
 .word 0x93407c00
 .word 0x14000040
 .loc 12 1687 0
-.word 0xf94017a0
-.word 0xb9801800
+.word 0xf94017a1
+.word 0xb9801820
 .loc 12 1688 0
 .word 0xaa0003fa
 .word 0xd280005e
@@ -42166,7 +42218,7 @@ ldr x0, [x16, #0]
 .word 0xd280cac1
 bl _p_26
 .word 0xaa0003e1
-.word 0xd2802820
+.word 0xd2802840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
@@ -42182,11 +42234,11 @@ ldr x0, [x16, #0]
 .word 0xd280cac1
 bl _p_26
 .word 0xaa0003e1
-.word 0xd2802820
+.word 0xd2802840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -42214,8 +42266,8 @@ System_Numerics_BigInteger_op_Explicit_System_Numerics_BigInteger_6:
 .word 0x2a0003e0
 .word 0x14000027
 .loc 12 1721 0
-.word 0xf9400fa0
-.word 0xb9801800
+.word 0xf9400fa1
+.word 0xb9801820
 .loc 12 1722 0
 .word 0xb90023a0
 .word 0xd280005e
@@ -42267,14 +42319,14 @@ ldr x0, [x16, #0]
 .word 0xd280d841
 bl _p_26
 .word 0xaa0003e1
-.word 0xd2802820
+.word 0xd2802840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
-.word 0xd2802820
+.word 0xd2802840
 .word 0xaa1103e1
 bl _p_14
 
@@ -42329,9 +42381,9 @@ System_Numerics_BigInteger_op_Explicit_System_Numerics_BigInteger_8:
 .word 0x1e620340
 .word 0x14000057
 .loc 12 1749 0
-.word 0xb9801b38
+.word 0xb9801b20
+.word 0xaa0003f8
 .loc 12 1756 0
-.word 0xaa1803e0
 .word 0xd280041e
 .word 0x6b1e001f
 .word 0x5400018d
@@ -42432,7 +42484,7 @@ bl _p_148
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -42464,8 +42516,8 @@ bl _p_149
 .word 0xf90007c1
 .word 0x14000036
 .loc 12 1782 0
-.word 0xf94027a0
-.word 0xb9801800
+.word 0xf94027a1
+.word 0xb9801820
 .loc 12 1783 0
 .word 0xaa0003fa
 .word 0xd280007e
@@ -42538,11 +42590,11 @@ ldr x0, [x16, #0]
 .word 0xd280e5c1
 bl _p_26
 .word 0xaa0003e1
-.word 0xd2802820
+.word 0xd2802840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -42722,7 +42774,7 @@ bl _p_152
 .word 0x910003bf
 .word 0xa8ca7bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -42898,7 +42950,7 @@ bl _p_152
 .word 0x910003bf
 .word 0xa8ca7bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -43050,7 +43102,7 @@ bl _p_152
 .word 0x910003bf
 .word 0xa8ca7bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -43259,7 +43311,7 @@ bl _p_99
 .word 0x910003bf
 .word 0xa8cd7bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -43540,7 +43592,7 @@ bl _p_99
 .word 0x910003bf
 .word 0xa8cd7bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -43554,7 +43606,7 @@ b System_Numerics_BigInteger_op_OnesComplement_System_Numerics_BigInteger
 	.no_dead_strip System_Numerics_BigInteger_op_OnesComplement_System_Numerics_BigInteger
 System_Numerics_BigInteger_op_OnesComplement_System_Numerics_BigInteger:
 .loc 12 1971 0 prologue_end
-.word 0xa9b97bfd
+.word 0xa9b87bfd
 .word 0x910003fd
 .word 0xf90013a0
 .word 0xf90017a1
@@ -43584,14 +43636,17 @@ bl _p_91
 .word 0xf90003c0
 .word 0xf90007c1
 .word 0xb98053a0
-.word 0x4b0003e1
-.word 0xf9402fa0
-.word 0xd2800002
-.word 0xf90023a2
-.word 0xf90027a2
-.word 0xb90043a1
-.word 0x910103a1
-.word 0x91002021
+.word 0x4b0003e0
+.word 0xf9402fa1
+.word 0xf9003ba1
+.word 0xd2800001
+.word 0xf90023a1
+.word 0xf90027a1
+.word 0xb90043a0
+.word 0x910103a0
+.word 0x91002001
+.word 0xd5033bbf
+.word 0xf9403ba0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -43611,7 +43666,7 @@ ldr x2, [x16, #16]
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0x910003bf
-.word 0xa8c77bfd
+.word 0xa8c87bfd
 .word 0xd65f03c0
 
 Lme_197:
@@ -43624,19 +43679,22 @@ b System_Numerics_BigInteger_op_UnaryNegation_System_Numerics_BigInteger
 	.no_dead_strip System_Numerics_BigInteger_op_UnaryNegation_System_Numerics_BigInteger
 System_Numerics_BigInteger_op_UnaryNegation_System_Numerics_BigInteger:
 .loc 12 1977 0 prologue_end
-.word 0xa9bc7bfd
+.word 0xa9bb7bfd
 .word 0x910003fd
 .word 0xf90013a0
 .word 0xf90017a1
 .word 0xb98023a0
-.word 0x4b0003e1
-.word 0xf94017a0
-.word 0xd2800002
-.word 0xf9001ba2
-.word 0xf9001fa2
-.word 0xb90033a1
-.word 0x9100c3a1
-.word 0x91002021
+.word 0x4b0003e0
+.word 0xf94017a1
+.word 0xf90023a1
+.word 0xd2800001
+.word 0xf9001ba1
+.word 0xf9001fa1
+.word 0xb90033a0
+.word 0x9100c3a0
+.word 0x91002001
+.word 0xd5033bbf
+.word 0xf94023a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -43656,7 +43714,7 @@ ldr x2, [x16, #16]
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0x910003bf
-.word 0xa8c47bfd
+.word 0xa8c57bfd
 .word 0xd65f03c0
 
 Lme_198:
@@ -43953,10 +44011,10 @@ bl _p_99
 .word 0xf90017a0
 .word 0x14000030
 .loc 12 2037 0
-.word 0xf9401fa0
-.word 0xb9801800
-.word 0xf94027a1
-.word 0xb9801821
+.word 0xf9401fa1
+.word 0xb9801820
+.word 0xf94027a2
+.word 0xb9801841
 .word 0x6b01001f
 .word 0x540002ca
 .loc 12 2039 0
@@ -44123,10 +44181,10 @@ bl _p_99
 .word 0xf90017a0
 .word 0x14000023
 .loc 12 2075 0
-.word 0xf9401fa0
-.word 0xb9801800
-.word 0xf94027a1
-.word 0xb9801821
+.word 0xf9401fa1
+.word 0xb9801820
+.word 0xf94027a2
+.word 0xb9801841
 .word 0x6b01001f
 .word 0x5400012a
 .loc 12 2077 0
@@ -44167,10 +44225,10 @@ bl _p_99
 .word 0x910003bf
 .word 0xa8c87bfd
 .word 0xd65f03c0
-.word 0xd2802820
+.word 0xd2802840
 .word 0xaa1103e1
 bl _p_14
-.word 0xd2801cc0
+.word 0xd2801ce0
 .word 0xaa1103e1
 bl _p_14
 
@@ -44285,10 +44343,10 @@ bl _p_98
 .word 0xf90007c1
 .word 0x1400001c
 .loc 12 2112 0
-.word 0xf9401fa0
-.word 0xb9801800
-.word 0xf94027a1
-.word 0xb9801821
+.word 0xf9401fa1
+.word 0xb9801820
+.word 0xf94027a2
+.word 0xb9801841
 .word 0x6b01001f
 .word 0x540000ca
 .loc 12 2114 0
@@ -44321,10 +44379,10 @@ bl _p_99
 .word 0x910003bf
 .word 0xa8c77bfd
 .word 0xd65f03c0
-.word 0xd2802820
+.word 0xd2802840
 .word 0xaa1103e1
 bl _p_14
-.word 0xd2801cc0
+.word 0xd2801ce0
 .word 0xaa1103e1
 bl _p_14
 
@@ -45110,7 +45168,7 @@ b System_Numerics_BigInteger_GetPartsForBitManipulation_System_Numerics_BigInteg
 	.no_dead_strip System_Numerics_BigInteger_GetPartsForBitManipulation_System_Numerics_BigInteger__uint____int_
 System_Numerics_BigInteger_GetPartsForBitManipulation_System_Numerics_BigInteger__uint____int_:
 .loc 12 2296 0 prologue_end
-.word 0xa9bd7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xa90167b8
 .word 0xf90013ba
@@ -45118,11 +45176,11 @@ System_Numerics_BigInteger_GetPartsForBitManipulation_System_Numerics_BigInteger
 .word 0xaa0103f9
 .word 0xaa0203fa
 .word 0xf9400700
-.word 0xb50006e0
+.word 0xb5000760
 .loc 12 2298 0
 .word 0xb9800300
 .word 0x6b1f001f
-.word 0x5400036a
+.word 0x540003aa
 .loc 12 2300 0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
@@ -45131,14 +45189,16 @@ ldr x0, [x16, #376]
 .word 0xd2800021
 bl _p_16
 .word 0xaa0003e1
-.word 0xaa0103e0
-.word 0xb9800302
-.word 0x4b0203e2
-.word 0xb9801823
-.word 0xeb1f007f
+.word 0xf9001ba1
+.word 0xb9800301
+.word 0x4b0103e1
+.word 0xb9801802
+.word 0xeb1f005f
 .word 0x10000011
-.word 0x54000869
-.word 0xb9002022
+.word 0x54000969
+.word 0xb9002001
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9000320
 .word 0xd349ff21
 .word 0xd29ffffe
@@ -45152,7 +45212,7 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .loc 12 2301 0
-.word 0x14000026
+.word 0x1400002b
 .loc 12 2304 0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
@@ -45161,13 +45221,15 @@ ldr x0, [x16, #376]
 .word 0xd2800021
 bl _p_16
 .word 0xaa0003e1
-.word 0xaa0103e0
-.word 0xb9800302
-.word 0xb9801823
-.word 0xeb1f007f
+.word 0xf9001ba1
+.word 0xb9800301
+.word 0xb9801802
+.word 0xeb1f005f
 .word 0x10000011
-.word 0x54000549
-.word 0xb9002022
+.word 0x54000609
+.word 0xb9002001
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9000320
 .word 0xd349ff21
 .word 0xd29ffffe
@@ -45181,9 +45243,12 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .loc 12 2306 0
-.word 0x1400000d
+.word 0x14000010
 .loc 12 2309 0
 .word 0xf9400700
+.word 0xf9001ba0
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9000320
 .word 0xd349ff21
 .word 0xd29ffffe
@@ -45199,9 +45264,10 @@ ldr x2, [x16, #16]
 .loc 12 2311 0
 .word 0xf9400700
 .word 0xaa1a03f9
-.word 0xb4000080
-.word 0xf9400700
-.word 0xb980181a
+.word 0xb40000a0
+.word 0xf9400701
+.word 0xb9801820
+.word 0xaa0003fa
 .word 0x14000002
 .word 0xd280003a
 .word 0xb900033a
@@ -45212,9 +45278,9 @@ ldr x2, [x16, #16]
 .word 0xa94167b8
 .word 0xf94013ba
 .word 0x910003bf
-.word 0xa8c37bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -45274,7 +45340,7 @@ System_Numerics_BigInteger_GetDiffLength_uint___uint___int:
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -45308,7 +45374,7 @@ b System_Numerics_BigInteger__cctor
 	.no_dead_strip System_Numerics_BigInteger__cctor
 System_Numerics_BigInteger__cctor:
 .loc 12 31 0 prologue_end
-.word 0xa9b77bfd
+.word 0xa9b67bfd
 .word 0x910003fd
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
@@ -45317,22 +45383,24 @@ ldr x0, [x16, #376]
 .word 0xd2800021
 bl _p_16
 .word 0xaa0003e1
-.word 0xaa0103e0
-.word 0xb9801822
-.word 0xeb1f005f
+.word 0xf9004fa1
+.word 0xb9801801
+.word 0xeb1f003f
 .word 0x10000011
-.word 0x540012c9
+.word 0x54001369
 .word 0x929ffffe
 .word 0xf2b0001e
-.word 0xb900203e
-.word 0xd2800001
-.word 0xf90043a1
-.word 0xf90047a1
+.word 0xb900201e
+.word 0xd2800000
+.word 0xf90043a0
+.word 0xf90047a0
 .word 0x9280001e
 .word 0xf2bffffe
 .word 0xb90083be
-.word 0x910203a1
-.word 0x91002021
+.word 0x910203a0
+.word 0x91002001
+.word 0xd5033bbf
+.word 0xf9404fa0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -45484,11 +45552,14 @@ ldr x0, [x16, #480]
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
 ldr x0, [x16, #440]
+.word 0xf9004ba0
+.word 0xd5033bbf
+.word 0xf9404ba0
 .word 0xf9000001
 .word 0x910003bf
-.word 0xa8c97bfd
+.word 0xa8ca7bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -45585,7 +45656,7 @@ bl _p_16
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -45659,7 +45730,7 @@ bl _p_165
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -45897,7 +45968,7 @@ bl _p_16
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -45974,7 +46045,7 @@ bl _p_166
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -46219,7 +46290,7 @@ System_Numerics_BigIntegerCalculator_Compare_uint___uint__:
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -46378,10 +46449,10 @@ bl _p_16
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
-.word 0xd2801cc0
+.word 0xd2801ce0
 .word 0xaa1103e1
 bl _p_14
 
@@ -46461,10 +46532,10 @@ bl _p_16
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
-.word 0xd2801cc0
+.word 0xd2801ce0
 .word 0xaa1103e1
 bl _p_14
 
@@ -46519,10 +46590,10 @@ System_Numerics_BigIntegerCalculator_Remainder_uint___uint:
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2801cc0
+.word 0xd2801ce0
 .word 0xaa1103e1
 bl _p_14
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -46534,16 +46605,15 @@ System_Numerics_BigIntegerCalculator_Divide_uint___uint___uint___:
 .loc 14 89 0 prologue_end
 .word 0xa9bb7bfd
 .word 0x910003fd
-.word 0xf9000bb9
-.word 0xf9000fa0
+.word 0xa90167b8
+.word 0xaa0003f8
 .word 0xaa0103f9
 .word 0xf90013a2
-.word 0xf9400fa0
+.word 0xaa1803e0
 bl _p_167
 .word 0xf90023a0
 .loc 14 90 0
-.word 0xf9400fa0
-.word 0xb9801800
+.word 0xb9801b00
 .word 0xb9801b21
 .word 0x4b010000
 .word 0x11000401
@@ -46552,35 +46622,36 @@ adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
 ldr x0, [x16, #376]
 bl _p_16
-.word 0xaa0003e5
-.word 0xf94023a1
-.word 0xb9801820
+.word 0xaa0003e6
+.word 0xf94023a3
+.word 0xb9801860
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x540004a9
-.word 0xaa0103e0
+.word 0x540004c9
+.word 0xaa0303e0
 .word 0x91008000
 .loc 14 92 0
-.word 0xb9801b22
-.word 0xeb1f005f
+.word 0xb9801b21
+.word 0xeb1f003f
 .word 0x10000011
-.word 0x540003e9
+.word 0x54000409
 .word 0x91008322
-.word 0xb98018a3
-.word 0xeb1f007f
+.word 0xb98018c1
+.word 0xeb1f003f
 .word 0x10000011
-.word 0x54000349
-.word 0x910080a4
-.word 0xf9001fa1
-.word 0xb9801821
-.word 0xb9801b23
-.word 0xf9001ba5
-.word 0xb98018a5
+.word 0x54000369
+.word 0x910080c4
+.word 0xb9801861
+.word 0xf9001fa3
 .loc 14 94 0
+.word 0xb9801b23
+.word 0xb98018c5
+.word 0xf9001ba6
 bl _p_168
-.word 0xf9401ba0
 .word 0xf9401fa1
 .loc 14 99 0
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf94013a2
 .word 0xf9000041
 .word 0xd349fc42
@@ -46595,11 +46666,11 @@ ldr x3, [x16, #16]
 .word 0xd280003e
 .word 0x3900005e
 .loc 14 101 0
-.word 0xf9400bb9
+.word 0xa94167b8
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -46611,15 +46682,14 @@ System_Numerics_BigIntegerCalculator_Divide_uint___uint__:
 .loc 14 116 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
-.word 0xf9000bba
-.word 0xf9000fa0
+.word 0xa9016bb9
+.word 0xaa0003f9
 .word 0xaa0103fa
-.word 0xf9400fa0
+.word 0xaa1903e0
 bl _p_167
 .word 0xf90017a0
 .loc 14 117 0
-.word 0xf9400fa0
-.word 0xb9801800
+.word 0xb9801b20
 .word 0xb9801b41
 .word 0x4b010000
 .word 0x11000401
@@ -46628,38 +46698,38 @@ adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
 ldr x0, [x16, #376]
 bl _p_16
-.word 0xaa0003e5
-.word 0xf94017a1
-.word 0xb9801820
+.word 0xaa0003e6
+.word 0xf94017a3
+.word 0xb9801860
 .word 0xeb1f001f
 .word 0x10000011
 .word 0x540002e9
-.word 0xaa0103e0
+.word 0xaa0303e0
 .word 0x91008000
 .loc 14 119 0
-.word 0xb9801b42
-.word 0xeb1f005f
+.word 0xb9801b41
+.word 0xeb1f003f
 .word 0x10000011
 .word 0x54000229
 .word 0x91008342
-.word 0xb98018a3
-.word 0xeb1f007f
+.word 0xb98018c1
+.word 0xeb1f003f
 .word 0x10000011
 .word 0x54000189
-.word 0x910080a4
-.word 0xb9801821
-.word 0xb9801b43
-.word 0xf90013a5
-.word 0xb98018a5
+.word 0x910080c4
+.word 0xb9801861
 .loc 14 121 0
+.word 0xb9801b43
+.word 0xb98018c5
+.word 0xf90013a6
 bl _p_168
 .word 0xf94013a0
 .loc 14 126 0
-.word 0xf9400bba
+.word 0xa9416bb9
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -46676,23 +46746,23 @@ System_Numerics_BigIntegerCalculator_Remainder_uint___uint__:
 .word 0xaa0103fa
 .word 0xf9400fa0
 bl _p_167
-.word 0xaa0003e1
-.word 0xaa0103e0
-.word 0xb9801802
-.word 0xeb1f005f
+.word 0xaa0003e3
+.word 0xaa0303e0
+.word 0xb9801801
+.word 0xeb1f003f
 .word 0x10000011
 .word 0x54000269
 .word 0x91008000
 .loc 14 143 0
-.word 0xb9801b42
-.word 0xeb1f005f
+.word 0xb9801b41
+.word 0xeb1f003f
 .word 0x10000011
 .word 0x540001c9
 .word 0x91008342
-.word 0xf90013a1
-.word 0xb9801821
-.word 0xb9801b43
+.word 0xb9801861
+.word 0xf90013a3
 .loc 14 145 0
+.word 0xb9801b43
 .word 0xd2800004
 .word 0x2a0403e4
 .word 0xd2800005
@@ -46703,7 +46773,7 @@ bl _p_168
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -46957,7 +47027,7 @@ bl _p_172
 .word 0x910003bf
 .word 0xa8ca7bfd
 .word 0xd65f03c0
-.word 0xd2801cc0
+.word 0xd2801ce0
 .word 0xaa1103e1
 bl _p_14
 
@@ -47153,9 +47223,9 @@ System_Numerics_BigIntegerCalculator_CreateCopy_uint__:
 .loc 14 321 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
-.word 0xf9000ba0
-.word 0xf9400ba0
-.word 0xb9801801
+.word 0xf9000bba
+.word 0xaa0003fa
+.word 0xb9801b41
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -47164,13 +47234,14 @@ bl _p_16
 .word 0xaa0003e2
 .loc 14 322 0
 .word 0xb9801844
-.word 0xf9400ba0
+.word 0xaa1a03e0
 .word 0xd2800001
 .word 0xf90013a2
 .word 0xd2800003
 bl _p_80
 .word 0xf94013a0
 .loc 14 323 0
+.word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -47275,7 +47346,7 @@ System_Numerics_BigIntegerCalculator_Gcd_uint_uint:
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2801cc0
+.word 0xd2801ce0
 .word 0xaa1103e1
 bl _p_14
 
@@ -47344,7 +47415,7 @@ System_Numerics_BigIntegerCalculator_Gcd_ulong_ulong:
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2801cc0
+.word 0xd2801ce0
 .word 0xaa1103e1
 bl _p_14
 
@@ -47382,7 +47453,7 @@ bl _p_109
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2801cc0
+.word 0xd2801ce0
 .word 0xaa1103e1
 bl _p_14
 
@@ -47394,22 +47465,23 @@ System_Numerics_BigIntegerCalculator_Gcd_uint___uint__:
 .loc 15 66 0 prologue_end
 .word 0xa9bc7bfd
 .word 0x910003fd
-.word 0xf9000ba0
-.word 0xf9000fa1
+.word 0xa9016bb9
+.word 0xaa0003f9
+.word 0xaa0103fa
 .word 0xd2800000
 .word 0xf9001ba0
 .word 0xf9001fa0
 .word 0xd2800000
 .word 0xf90013a0
 .word 0xf90017a0
-.word 0xf9400ba2
-.word 0xb9801841
+.word 0xb9801b21
 .word 0x9100c3a0
+.word 0xaa1903e2
 bl _p_173
 .loc 15 67 0
-.word 0xf9400fa2
-.word 0xb9801841
+.word 0xb9801b41
 .word 0x910083a0
+.word 0xaa1a03e2
 bl _p_173
 .loc 15 69 0
 .word 0x9100c3a0
@@ -47417,6 +47489,7 @@ bl _p_173
 bl _p_174
 .loc 15 71 0
 .word 0xf9401ba0
+.word 0xa9416bb9
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
@@ -47427,7 +47500,7 @@ Lme_1db:
 	.no_dead_strip System_Numerics_BigIntegerCalculator_Gcd_System_Numerics_BigIntegerCalculator_BitsBuffer__System_Numerics_BigIntegerCalculator_BitsBuffer_
 System_Numerics_BigIntegerCalculator_Gcd_System_Numerics_BigIntegerCalculator_BitsBuffer__System_Numerics_BigIntegerCalculator_BitsBuffer_:
 .loc 15 0 0 prologue_end
-.word 0xa9b77bfd
+.word 0xa9b67bfd
 .word 0x910003fd
 .word 0xa90153b3
 .word 0xa9025bb5
@@ -47443,7 +47516,7 @@ System_Numerics_BigIntegerCalculator_Gcd_System_Numerics_BigIntegerCalculator_Bi
 .word 0xd2800000
 .word 0xf9002fa0
 .word 0xf90033a0
-.word 0x140000d2
+.word 0x140000da
 .loc 15 91 0
 .word 0xaa1903e0
 .word 0xf9402ba1
@@ -47464,10 +47537,10 @@ bl _p_175
 .word 0xf94043a1
 .word 0xeb1f003f
 .word 0x10000011
-.word 0x54002040
+.word 0x54002140
 .word 0xf100003f
 .word 0x10000011
-.word 0x54001fe0
+.word 0x540020e0
 .word 0x9ac10813
 .loc 15 106 0
 .word 0xaa1303e0
@@ -47529,10 +47602,10 @@ bl _p_175
 .word 0xf9403fa1
 .word 0xeb1f003f
 .word 0x10000011
-.word 0x540019a0
+.word 0x54001aa0
 .word 0xf100003f
 .word 0x10000011
-.word 0x54001940
+.word 0x54001a40
 .word 0x9ac10813
 .loc 15 129 0
 .word 0xaa1303e0
@@ -47593,7 +47666,7 @@ bl _p_175
 .word 0xf94043a0
 .word 0xb5fff2a0
 .loc 15 150 0
-.word 0x35000517
+.word 0x35000597
 .loc 15 153 0
 .word 0xaa1903e0
 .word 0xf9402ba1
@@ -47604,9 +47677,10 @@ bl _p_176
 .word 0xf9400720
 .word 0xf9003ba0
 .loc 15 156 0
-.word 0xf9402ba0
-.word 0xf9400001
-.word 0xf9000321
+.word 0xd5033bbf
+.word 0xf9402ba1
+.word 0xf9400020
+.word 0xf9000320
 .word 0xd349ff22
 .word 0xd29ffffe
 .word 0xf2a00ffe
@@ -47618,10 +47692,13 @@ ldr x3, [x16, #16]
 .word 0x8b030042
 .word 0xd280003e
 .word 0x3900005e
-.word 0x91002321
-.word 0xf9400402
-.word 0xf9000022
+.word 0x91002320
+.word 0xf9004ba1
+.word 0xf9400421
+.word 0xf9000001
 .loc 15 157 0
+.word 0xd5033bbf
+.word 0xf9404ba0
 .word 0xf94037a1
 .word 0xf9000001
 .word 0xd349fc02
@@ -47639,7 +47716,7 @@ ldr x3, [x16, #16]
 .word 0xf9403ba1
 .word 0xf9000001
 .loc 15 158 0
-.word 0x14000033
+.word 0x14000037
 .loc 15 162 0
 .word 0x2a1803e2
 .word 0x2a1703e3
@@ -47656,16 +47733,17 @@ bl _p_177
 .word 0x4b010000
 .word 0xd280003e
 .word 0x6b1e001f
-.word 0x54000481
+.word 0x54000501
 .loc 15 167 0
 .word 0xf9400320
 .word 0xf9002fa0
 .word 0xf9400720
 .word 0xf90033a0
 .loc 15 168 0
-.word 0xf9402ba0
-.word 0xf9400001
-.word 0xf9000321
+.word 0xd5033bbf
+.word 0xf9402ba1
+.word 0xf9400020
+.word 0xf9000320
 .word 0xd349ff22
 .word 0xd29ffffe
 .word 0xf2a00ffe
@@ -47677,10 +47755,13 @@ ldr x3, [x16, #16]
 .word 0x8b030042
 .word 0xd280003e
 .word 0x3900005e
-.word 0x91002321
-.word 0xf9400402
-.word 0xf9000022
+.word 0x91002320
+.word 0xf9004ba1
+.word 0xf9400421
+.word 0xf9000001
 .loc 15 169 0
+.word 0xd5033bbf
+.word 0xf9404ba0
 .word 0xf9402fa1
 .word 0xf9000001
 .word 0xd349fc02
@@ -47702,7 +47783,7 @@ ldr x3, [x16, #16]
 .word 0xb9800800
 .word 0xd280005e
 .word 0x6b1e001f
-.word 0x54ffe56c
+.word 0x54ffe46c
 .loc 15 174 0
 .word 0xf9402ba0
 .word 0xb9800800
@@ -47766,12 +47847,12 @@ bl _p_179
 .word 0xa94363b7
 .word 0xa9446bb9
 .word 0x910003bf
-.word 0xa8c97bfd
+.word 0xa8ca7bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
-.word 0xd2801cc0
+.word 0xd2801ce0
 .word 0xaa1103e1
 bl _p_14
 
@@ -47993,7 +48074,7 @@ bl _p_169
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -48131,7 +48212,7 @@ bl _p_180
 .word 0x910003bf
 .word 0xa8c87bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -48175,13 +48256,13 @@ System_Numerics_BigIntegerCalculator_Pow_uint___uint:
 .loc 16 35 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
-.word 0xf9000ba0
+.word 0xf9000bb9
+.word 0xaa0003f9
 .word 0xf9000fa1
 .word 0xd2800000
 .word 0xf90013a0
 .word 0xf90017a0
-.word 0xf9400ba0
-.word 0xb9801801
+.word 0xb9801b21
 .word 0xb9401ba0
 .word 0xd2800022
 bl _p_181
@@ -48189,12 +48270,13 @@ bl _p_181
 .word 0xaa0003e1
 .loc 16 36 0
 .word 0x910083a0
-.word 0xf9400ba2
+.word 0xaa1903e2
 bl _p_173
 .loc 16 37 0
 .word 0xb9401ba0
 .word 0x910083a1
 bl _p_183
+.word 0xf9400bb9
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -48218,9 +48300,10 @@ System_Numerics_BigIntegerCalculator_PowCore_uint_System_Numerics_BigIntegerCalc
 .word 0xf9400fa0
 .word 0xf9400000
 .word 0xb9801801
+.word 0xaa0103e0
+.word 0xf90023a0
 .loc 16 46 0
 .word 0x9100c3a0
-.word 0xf90023a1
 .word 0xd2800002
 bl _p_182
 .word 0xf94023a1
@@ -48285,7 +48368,7 @@ System_Numerics_BigIntegerCalculator_PowBound_uint_int_int:
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2802820
+.word 0xd2802840
 .word 0xaa1103e1
 bl _p_14
 
@@ -48519,10 +48602,10 @@ bl _p_187
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
-.word 0xd2801cc0
+.word 0xd2801ce0
 .word 0xaa1103e1
 bl _p_14
 
@@ -48593,7 +48676,7 @@ System_Numerics_BigIntegerCalculator_PowCore_uint_uint_ulong_ulong:
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2801cc0
+.word 0xd2801ce0
 .word 0xaa1103e1
 bl _p_14
 
@@ -48777,9 +48860,10 @@ System_Numerics_BigIntegerCalculator_PowCore_uint___uint___System_Numerics_BigIn
 .word 0xf90027a0
 .word 0xf9400340
 .word 0xb9801801
+.word 0xaa0103e0
+.word 0xf9003ba0
 .loc 16 238 0
 .word 0x910183a0
-.word 0xf9003ba1
 .word 0xd2800002
 bl _p_182
 .word 0xf9403ba1
@@ -48849,9 +48933,10 @@ System_Numerics_BigIntegerCalculator_PowCore_uint_uint___System_Numerics_BigInte
 .word 0xf90027a0
 .word 0xf9400340
 .word 0xb9801801
+.word 0xaa0103e0
+.word 0xf9003ba0
 .loc 16 261 0
 .word 0x910183a0
-.word 0xf9003ba1
 .word 0xd2800002
 bl _p_182
 .word 0xf9403ba1
@@ -48988,7 +49073,7 @@ bl _p_194
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -49141,7 +49226,7 @@ bl _p_195
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -49209,11 +49294,13 @@ System_Numerics_BigIntegerCalculator_ActualLength_uint__:
 .loc 16 394 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
-.word 0xf9000ba0
-.word 0xf9400ba0
-.word 0xb9801801
+.word 0xf9000bba
+.word 0xaa0003fa
+.word 0xb9801b41
+.word 0xaa1a03e0
 bl _p_198
 .word 0x93407c00
+.word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -49252,7 +49339,7 @@ System_Numerics_BigIntegerCalculator_ActualLength_uint___int:
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -49315,7 +49402,7 @@ bl _p_199
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -49574,8 +49661,8 @@ bl _p_16
 .word 0xaa0103e0
 .word 0xf9003fa1
 .word 0xb4000080
-.word 0xf9403fa0
-.word 0xb9801800
+.word 0xf9403fa1
+.word 0xb9801820
 .word 0x350000a0
 .word 0xd2800000
 .word 0x2a0003e0
@@ -49599,8 +49686,8 @@ bl _p_16
 .word 0xaa0103e0
 .word 0xf90047a1
 .word 0xb4000080
-.word 0xf94047a0
-.word 0xb9801800
+.word 0xf94047a1
+.word 0xb9801820
 .word 0x350000a0
 .word 0xd2800000
 .word 0x2a0003e0
@@ -49652,7 +49739,7 @@ bl _p_202
 .word 0x910003bf
 .word 0xa8cb7bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -49733,7 +49820,7 @@ bl _p_16
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -49812,7 +49899,7 @@ bl _p_203
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -50102,8 +50189,8 @@ bl _p_16
 .word 0xaa0103e0
 .word 0xf90053a1
 .word 0xb4000080
-.word 0xf94053a0
-.word 0xb9801800
+.word 0xf94053a1
+.word 0xb9801820
 .word 0x350000a0
 .word 0xd2800000
 .word 0x2a0003e0
@@ -50127,8 +50214,8 @@ bl _p_16
 .word 0xaa0103e0
 .word 0xf9005ba1
 .word 0xb4000080
-.word 0xf9405ba0
-.word 0xb9801800
+.word 0xf9405ba1
+.word 0xb9801820
 .word 0x350000a0
 .word 0xd2800000
 .word 0x2a0003e0
@@ -50152,8 +50239,8 @@ bl _p_16
 .word 0xaa0103e0
 .word 0xf90063a1
 .word 0xb4000080
-.word 0xf94063a0
-.word 0xb9801800
+.word 0xf94063a1
+.word 0xb9801820
 .word 0x350000a0
 .word 0xd2800000
 .word 0x2a0003e0
@@ -50215,7 +50302,7 @@ bl _p_202
 .word 0x910003bf
 .word 0xa8cf7bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -50383,7 +50470,7 @@ System_Numerics_BigNumber_TryValidateParseStyleInteger_System_Globalization_Numb
 .word 0x92807ffe
 .word 0xf2bffffe
 .word 0xa1e0000
-.word 0x340003e0
+.word 0x34000400
 .loc 18 310 0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
@@ -50404,6 +50491,7 @@ bl _p_45
 .word 0xf94027a1
 .word 0xf90023a0
 bl _p_204
+.word 0xd5033bbf
 .word 0xf94023a0
 .word 0xf9000340
 .word 0xd349ff41
@@ -50419,18 +50507,18 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .loc 18 311 0
 .word 0xd2800000
-.word 0x14000026
+.word 0x14000028
 .loc 18 313 0
 .word 0xb9801ba0
 .word 0xd280401e
 .word 0xa1e0000
-.word 0x34000400
+.word 0x34000420
 .loc 18 315 0
 .word 0xb9801ba0
 .word 0x9280407e
 .word 0xf2bffffe
 .word 0xa1e0000
-.word 0x34000360
+.word 0x34000380
 .loc 18 317 0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
@@ -50446,6 +50534,7 @@ bl _p_45
 .word 0xf94027a1
 .word 0xf90023a0
 bl _p_204
+.word 0xd5033bbf
 .word 0xf94023a0
 .word 0xf9000340
 .word 0xd349ff41
@@ -50461,8 +50550,9 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .loc 18 318 0
 .word 0xd2800000
-.word 0x14000003
+.word 0x14000004
 .loc 18 321 0
+.word 0xd5033bbf
 .word 0xf900035f
 .loc 18 322 0
 .word 0xd2800020
@@ -50666,7 +50756,7 @@ ldr x0, [x16, #0]
 .word 0xd2808781
 bl _p_26
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
@@ -50735,7 +50825,7 @@ ldr x0, [x16, #0]
 .word 0xd2812a21
 bl _p_26
 .word 0xaa0003e1
-.word 0xd2801e20
+.word 0xd2801e40
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
@@ -50945,7 +51035,7 @@ ldr x2, [x16, #16]
 .word 0x910003bf
 .word 0xa8c87bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -50955,7 +51045,7 @@ Lme_202:
 	.no_dead_strip System_Numerics_BigNumber_NumberToBigInteger_System_Numerics_BigNumber_BigNumberBuffer__System_Numerics_BigInteger_
 System_Numerics_BigNumber_NumberToBigInteger_System_Numerics_BigNumber_BigNumberBuffer__System_Numerics_BigInteger_:
 .loc 18 447 0 prologue_end
-.word 0xa9b27bfd
+.word 0xa9b17bfd
 .word 0x910003fd
 .word 0xa90163b7
 .word 0xa9026bb9
@@ -51100,7 +51190,7 @@ bl _p_211
 .word 0x6b1e001f
 .word 0x54000060
 .word 0xd2800000
-.word 0x14000036
+.word 0x14000039
 .loc 18 460 0
 .word 0xf9400322
 .word 0xaa0203e0
@@ -51111,21 +51201,24 @@ bl _p_211
 .word 0x35fffdc0
 .loc 18 464 0
 .word 0x39404320
-.word 0x34000580
+.word 0x340005e0
 .loc 18 466 0
 .word 0xf9400340
 .word 0xf9005ba0
 .word 0xf9400740
 .word 0xf9005fa0
 .word 0xb980b3a0
-.word 0x4b0003e1
-.word 0xf9405fa0
-.word 0xd2800002
-.word 0xf90053a2
-.word 0xf90057a2
-.word 0xb900a3a1
-.word 0x910283a1
-.word 0x91002021
+.word 0x4b0003e0
+.word 0xf9405fa1
+.word 0xf90073a1
+.word 0xd2800001
+.word 0xf90053a1
+.word 0xf90057a1
+.word 0xb900a3a0
+.word 0x910283a0
+.word 0x91002001
+.word 0xd5033bbf
+.word 0xf94073a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -51163,7 +51256,7 @@ ldr x2, [x16, #16]
 .word 0xa94163b7
 .word 0xa9426bb9
 .word 0x910003bf
-.word 0xa8ce7bfd
+.word 0xa8cf7bfd
 .word 0xd65f03c0
 
 Lme_203:
@@ -51336,7 +51429,7 @@ System_Numerics_BigNumber_ParseFormatSpecifier_System_ReadOnlySpan_1_char_int_:
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -51813,7 +51906,7 @@ bl _p_224
 .word 0x910003bf
 .word 0xa8d37bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -51984,7 +52077,7 @@ bl _p_227
 .word 0xf9400f89
 .word 0xf90007e9
 bl _p_228
-.word 0x1400026f
+.word 0x14000270
 .loc 18 616 0
 .word 0xf94033a0
 .word 0xb5000900
@@ -52055,7 +52148,7 @@ bl _p_230
 .word 0x39000001
 .loc 18 626 0
 .word 0xd2800000
-.word 0x14000231
+.word 0x14000232
 .loc 18 630 0
 .word 0xf9400b80
 .word 0xb900001f
@@ -52069,10 +52162,11 @@ bl _p_230
 .word 0xaa1703e1
 .word 0xf9403fa2
 bl _p_231
-.word 0x14000226
+.word 0x14000227
 .loc 18 640 0
-.word 0xf94033a0
-.word 0xb9801817
+.word 0xf94033a1
+.word 0xb9801820
+.word 0xaa0003f7
 .loc 18 644 0
 .word 0xaa1703e0
 .word 0xd2800141
@@ -52105,7 +52199,7 @@ bl _p_26
 .word 0xf900d7a0
 .word 0xf94083a0
 .word 0xf900dba0
-.word 0xd2801e20
+.word 0xd2801e40
 bl _p_52
 .word 0xf940d7a1
 .word 0xf940dba2
@@ -52263,7 +52357,7 @@ bl _p_26
 .word 0xf900d7a0
 .word 0xf94087a0
 .word 0xf900dba0
-.word 0xd2801e20
+.word 0xd2801e40
 bl _p_52
 .word 0xf940d7a1
 .word 0xf940dba2
@@ -52333,7 +52427,7 @@ bl _p_26
 .word 0xf900d7a0
 .word 0xf9408ba0
 .word 0xf900dba0
-.word 0xd2801e20
+.word 0xd2801e40
 bl _p_52
 .word 0xf940d7a1
 .word 0xf940dba2
@@ -52362,7 +52456,7 @@ bl _p_26
 .word 0xf900d7a0
 .word 0xf9408fa0
 .word 0xf900dba0
-.word 0xd2801e20
+.word 0xd2801e40
 bl _p_52
 .word 0xf940d7a1
 .word 0xf940dba2
@@ -52716,13 +52810,13 @@ bl _p_236
 .word 0x910003bf
 .word 0xa8dc7bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
-.word 0xd2801cc0
+.word 0xd2801ce0
 .word 0xaa1103e1
 bl _p_14
-.word 0xd2802820
+.word 0xd2802840
 .word 0xaa1103e1
 bl _p_14
 
@@ -53720,7 +53814,7 @@ bl _p_250
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_14
 
@@ -53857,10 +53951,10 @@ System_Numerics_Complex_GetHashCode:
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802820
+.word 0xd2802840
 .word 0xaa1103e1
 bl _p_14
-.word 0xd2801cc0
+.word 0xd2801ce0
 .word 0xaa1103e1
 bl _p_14
 
@@ -56642,7 +56736,7 @@ System_Numerics_NumericsHelpers_DangerousMakeTwosComplement_uint__:
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -56968,7 +57062,7 @@ bl _p_274
 .word 0x910003bf
 .word 0xa8c97bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -57231,7 +57325,7 @@ ldr x0, [x16, #720]
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -57263,7 +57357,7 @@ System_Text_ValueStringBuilder_get_Item_int:
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -57440,7 +57534,7 @@ bl _p_277
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -57847,7 +57941,7 @@ bl _p_219
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -57909,7 +58003,7 @@ bl _p_283
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -58055,7 +58149,7 @@ bl _p_221
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -58134,7 +58228,7 @@ bl _p_221
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -58298,7 +58392,7 @@ bl _p_219
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -58376,6 +58470,7 @@ bl _p_281
 .word 0xf9400338
 .loc 23 239 0
 .word 0xaa1a03f7
+.word 0xd5033bbf
 .word 0xf900033a
 .word 0xd349ff20
 .word 0xd29ffffe
@@ -58523,7 +58618,7 @@ b System_Numerics_BigIntegerCalculator_BitsBuffer__ctor_int_uint
 System_Numerics_BigIntegerCalculator_BitsBuffer__ctor_int_uint:
 .file 24 "/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/src/Xamarin.iOS/external/corefx/src/System.Runtime.Numerics/src/System/Numerics/BigIntegerCalculator.BitsBuffer.cs"
 .loc 24 30 0 prologue_end
-.word 0xa9bd7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xa90163b7
 .word 0xf90013b9
@@ -58536,6 +58631,9 @@ add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
 ldr x0, [x16, #376]
 .word 0xaa1903e1
 bl _p_16
+.word 0xf9001ba0
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9000300
 .word 0xd349ff01
 .word 0xd29ffffe
@@ -58568,9 +58666,9 @@ ldr x2, [x16, #16]
 .word 0xa94163b7
 .word 0xf94013b9
 .word 0x910003bf
-.word 0xa8c37bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -58584,7 +58682,7 @@ b System_Numerics_BigIntegerCalculator_BitsBuffer__ctor_int_uint__
 	.no_dead_strip System_Numerics_BigIntegerCalculator_BitsBuffer__ctor_int_uint__
 System_Numerics_BigIntegerCalculator_BitsBuffer__ctor_int_uint__:
 .loc 24 41 0 prologue_end
-.word 0xa9bd7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xf9000bb8
 .word 0xaa0003f8
@@ -58596,6 +58694,9 @@ add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
 ldr x0, [x16, #376]
 .word 0xb9801ba1
 bl _p_16
+.word 0xf9001ba0
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9000300
 .word 0xd349ff01
 .word 0xd29ffffe
@@ -58623,7 +58724,7 @@ bl _p_80
 .loc 24 45 0
 .word 0xf9400bb8
 .word 0x910003bf
-.word 0xa8c37bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
 
 Lme_270:
@@ -58728,7 +58829,7 @@ bl _p_287
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -58798,7 +58899,7 @@ bl _p_287
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -58897,7 +58998,7 @@ bl _p_198
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -58971,7 +59072,7 @@ bl _p_198
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -59037,7 +59138,7 @@ bl _p_289
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -59087,7 +59188,7 @@ bl _p_289
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -59124,8 +59225,8 @@ System_Numerics_BigIntegerCalculator_BitsBuffer_GetSize:
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9400ba0
-.word 0xf9400000
-.word 0xb9801800
+.word 0xf9400001
+.word 0xb9801820
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -59195,7 +59296,7 @@ b System_Numerics_BigIntegerCalculator_BitsBuffer_Apply_System_Numerics_BigInteg
 	.no_dead_strip System_Numerics_BigIntegerCalculator_BitsBuffer_Apply_System_Numerics_BigIntegerCalculator_BitsBuffer__int
 System_Numerics_BigIntegerCalculator_BitsBuffer_Apply_System_Numerics_BigIntegerCalculator_BitsBuffer__int:
 .loc 24 206 0 prologue_end
-.word 0xa9bd7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xa90167b8
 .word 0xaa0003f8
@@ -59207,21 +59308,27 @@ System_Numerics_BigIntegerCalculator_BitsBuffer_Apply_System_Numerics_BigInteger
 bl _p_289
 .loc 24 208 0
 .word 0xf9400320
+.word 0xf9001ba0
 .loc 24 209 0
-.word 0xf9400301
-.word 0xf9000321
-.word 0xd349ff22
+.word 0xf9400300
+.word 0xf9001fa0
+.word 0xd5033bbf
+.word 0xf9401fa0
+.word 0xf9000320
+.word 0xd349ff21
 .word 0xd29ffffe
 .word 0xf2a00ffe
-.word 0x8a1e0042
+.word 0x8a1e0021
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
-ldr x3, [x16, #16]
-.word 0x8b030042
+ldr x2, [x16, #16]
+.word 0x8b020021
 .word 0xd280003e
-.word 0x3900005e
+.word 0x3900003e
 .loc 24 210 0
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9000300
 .word 0xd349ff01
 .word 0xd29ffffe
@@ -59243,7 +59350,7 @@ bl _p_198
 .loc 24 213 0
 .word 0xa94167b8
 .word 0x910003bf
-.word 0xa8c37bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
 
 Lme_27c:
@@ -59257,7 +59364,7 @@ b System_Numerics_BigIntegerCalculator_FastReducer__ctor_uint__
 System_Numerics_BigIntegerCalculator_FastReducer__ctor_uint__:
 .file 25 "/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/src/Xamarin.iOS/external/corefx/src/System.Runtime.Numerics/src/System/Numerics/BigIntegerCalculator.FastReducer.cs"
 .loc 25 32 0 prologue_end
-.word 0xa9be7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xa9016bb9
 .word 0xaa0003f9
@@ -59278,7 +59385,7 @@ bl _p_16
 .word 0xb9801823
 .word 0xeb02007f
 .word 0x10000011
-.word 0x540009a9
+.word 0x54000ae9
 .word 0xd37ef442
 .word 0x8b020021
 .word 0x91008021
@@ -59287,7 +59394,10 @@ bl _p_16
 .loc 25 36 0
 .word 0xaa1a03e1
 bl _p_160
+.word 0xf9001ba0
 .word 0x91002321
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -59301,6 +59411,7 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .loc 25 37 0
+.word 0xd5033bbf
 .word 0xf900033a
 .word 0xd349ff20
 .word 0xd29ffffe
@@ -59322,7 +59433,10 @@ adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
 ldr x0, [x16, #376]
 bl _p_16
+.word 0xf90017a0
 .word 0x91004321
+.word 0xd5033bbf
+.word 0xf94017a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -59344,7 +59458,10 @@ adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
 ldr x0, [x16, #376]
 bl _p_16
+.word 0xf90013a0
 .word 0x91006321
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -59365,9 +59482,9 @@ bl _p_286
 .loc 25 44 0
 .word 0xa9416bb9
 .word 0x910003bf
-.word 0xa8c27bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -59388,8 +59505,8 @@ System_Numerics_BigIntegerCalculator_FastReducer_Reduce_uint___int:
 .word 0xaa0003f8
 .word 0xf90017a1
 .word 0xaa0203fa
-.word 0xf9400300
-.word 0xb9801800
+.word 0xf9400301
+.word 0xb9801820
 .word 0x6b00035f
 .word 0x5400006a
 .loc 25 54 0
@@ -59399,8 +59516,8 @@ System_Numerics_BigIntegerCalculator_FastReducer_Reduce_uint___int:
 .word 0xf9400702
 .word 0xb9802303
 .word 0xf9400b04
-.word 0xf9400300
-.word 0xb9801800
+.word 0xf9400301
+.word 0xb9801820
 .word 0x51000405
 .word 0xf94017a0
 .word 0xaa1a03e1
@@ -59413,8 +59530,8 @@ bl _p_290
 .word 0xf9400301
 .word 0xb9801823
 .word 0xf9400f04
-.word 0xf9400301
-.word 0xb9801821
+.word 0xf9400305
+.word 0xb98018a1
 .word 0x11000425
 .word 0xaa1703e1
 bl _p_290
@@ -59423,8 +59540,8 @@ bl _p_290
 .loc 25 65 0
 .word 0xf9400f02
 .word 0xf9400304
-.word 0xf9400300
-.word 0xb9801800
+.word 0xf9400301
+.word 0xb9801820
 .word 0x11000405
 .word 0xf94017a0
 .word 0xaa1a03e1
@@ -59545,7 +59662,7 @@ bl _p_198
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -59665,7 +59782,7 @@ bl _p_289
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -59679,7 +59796,7 @@ b System_Numerics_BigNumber_BigNumberBuffer_Create
 	.no_dead_strip System_Numerics_BigNumber_BigNumberBuffer_Create
 System_Numerics_BigNumber_BigNumberBuffer_Create:
 .loc 18 298 0 prologue_end
-.word 0xa9ba7bfd
+.word 0xa9b97bfd
 .word 0x910003fd
 .word 0xf9000ba8
 .word 0xd2800000
@@ -59692,17 +59809,18 @@ System_Numerics_BigNumber_BigNumberBuffer_Create:
 .word 0xf90023a0
 .loc 18 299 0
 .word 0x9100c3a0
-.word 0xf9002fa0
+.word 0xf90033a0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
 ldr x0, [x16, #328]
 .word 0xd2800601
 bl _p_45
-.word 0xf9002ba0
+.word 0xf9002fa0
 bl _p_46
-.word 0xf9402ba0
-.word 0xf9402fa1
+.word 0xf94033a1
+.word 0xd5033bbf
+.word 0xf9402fa0
 .word 0xf9001ba0
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -59723,6 +59841,9 @@ ldr x2, [x16, #16]
 .word 0xf94023a0
 .word 0xf90017a0
 .word 0xf9400ba0
+.word 0xf9002ba0
+.word 0xd5033bbf
+.word 0xf9402ba0
 .word 0xf9400fa1
 .word 0xf9000001
 .word 0xd349fc02
@@ -59743,7 +59864,7 @@ ldr x3, [x16, #16]
 .word 0xf94017a1
 .word 0xf9000001
 .word 0x910003bf
-.word 0xa8c67bfd
+.word 0xa8c77bfd
 .word 0xd65f03c0
 
 Lme_281:
@@ -60637,7 +60758,7 @@ System_Globalization_FormatProvider_Number_TrailingZeros_System_ReadOnlySpan_1_c
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -60792,10 +60913,10 @@ bl _p_298
 .word 0x910003bf
 .word 0xa8ca7bfd
 .word 0xd65f03c0
-.word 0xd2802820
+.word 0xd2802840
 .word 0xaa1103e1
 bl _p_14
-.word 0xd2801cc0
+.word 0xd2801ce0
 .word 0xaa1103e1
 bl _p_14
 
@@ -60851,7 +60972,7 @@ System_Globalization_FormatProvider_Number_Int32ToDecChars_char__int__uint_int:
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801cc0
+.word 0xd2801ce0
 .word 0xaa1103e1
 bl _p_14
 
@@ -61041,7 +61162,7 @@ System_Globalization_FormatProvider_Number_ParseFormatSpecifier_System_ReadOnlyS
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -61446,11 +61567,11 @@ ldr x0, [x16, #0]
 .word 0xd2814fc1
 bl _p_26
 .word 0xaa0003e1
-.word 0xd2801e20
+.word 0xd2801e40
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -61673,7 +61794,7 @@ bl _p_219
 .word 0x910003bf
 .word 0xa8c77bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -61741,29 +61862,30 @@ System_Globalization_FormatProvider_Number_FormatFixed_System_Text_ValueStringBu
 .word 0xb9807bb6
 .loc 26 904 0
 .word 0x6b1f029f
-.word 0x540019cd
+.word 0x540019ed
 .loc 26 906 0
-.word 0xb40016d8
+.word 0xb40016f8
 .loc 26 908 0
 .word 0xd2800017
 .loc 26 909 0
 .word 0xb9801b00
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x540029a9
+.word 0x540029c9
 .word 0xb9802300
 .word 0xb90083a0
 .loc 26 910 0
-.word 0xb9801b15
+.word 0xb9801b00
+.word 0xaa0003f5
 .loc 26 911 0
 .word 0xb9008bb4
 .loc 26 912 0
-.word 0xb9801340
-.word 0xb90093a0
+.word 0xb9801341
+.word 0xb90093a1
 .loc 26 913 0
 .word 0xb9009bbf
 .loc 26 916 0
-.word 0x34000675
+.word 0x34000660
 .word 0x14000025
 .loc 26 920 0
 .word 0x93407ee0
@@ -62136,11 +62258,11 @@ bl _p_219
 .word 0xa8cd7bfd
 .word 0xd65f03c0
 .loc 26 935 0
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_27
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -62306,7 +62428,7 @@ bl _p_219
 .word 0x910003bf
 .word 0xa8c77bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -62467,7 +62589,7 @@ bl _p_310
 .word 0x910003bf
 .word 0xa8c77bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -62675,7 +62797,7 @@ bl _p_219
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -62912,7 +63034,7 @@ bl _p_310
 .word 0x910003bf
 .word 0xa8c87bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -63135,7 +63257,7 @@ bl _p_219
 .word 0x910003bf
 .word 0xa8c77bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -65009,7 +65131,7 @@ bl _p_219
 .word 0x910003bf
 .word 0xa8dd7bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -65019,7 +65141,7 @@ Lme_296:
 	.no_dead_strip System_Globalization_FormatProvider_Number__cctor
 System_Globalization_FormatProvider_Number__cctor:
 .loc 26 593 0 prologue_end
-.word 0xa9aa7bfd
+.word 0xa9a77bfd
 .word 0x910003fd
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
@@ -65029,7 +65151,7 @@ ldr x0, [x16, #864]
 bl _p_16
 .word 0xaa0003e3
 .word 0xaa0303e0
-.word 0xf900aba0
+.word 0xf900c3a0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -65039,9 +65161,9 @@ ldr x2, [x16, #872]
 .word 0xf9400063
 .word 0xf9408470
 .word 0xd63f0200
-.word 0xf940aba3
+.word 0xf940c3a3
 .word 0xaa0303e0
-.word 0xf900a7a0
+.word 0xf900bfa0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -65051,9 +65173,9 @@ ldr x2, [x16, #880]
 .word 0xf9400063
 .word 0xf9408470
 .word 0xd63f0200
-.word 0xf940a7a3
+.word 0xf940bfa3
 .word 0xaa0303e0
-.word 0xf900a3a0
+.word 0xf900bba0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -65063,9 +65185,9 @@ ldr x2, [x16, #888]
 .word 0xf9400063
 .word 0xf9408470
 .word 0xd63f0200
-.word 0xf940a3a3
+.word 0xf940bba3
 .word 0xaa0303e0
-.word 0xf9009fa0
+.word 0xf900b7a0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -65075,11 +65197,14 @@ ldr x2, [x16, #896]
 .word 0xf9400063
 .word 0xf9408470
 .word 0xd63f0200
-.word 0xf9409fa1
+.word 0xf940b7a1
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
 ldr x0, [x16, #768]
+.word 0xf900b3a0
+.word 0xd5033bbf
+.word 0xf940b3a0
 .word 0xf9000001
 .loc 26 598 0
 
@@ -65090,7 +65215,7 @@ ldr x0, [x16, #864]
 bl _p_16
 .word 0xaa0003e3
 .word 0xaa0303e0
-.word 0xf9009ba0
+.word 0xf900afa0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -65100,9 +65225,9 @@ ldr x2, [x16, #904]
 .word 0xf9400063
 .word 0xf9408470
 .word 0xd63f0200
-.word 0xf9409ba3
+.word 0xf940afa3
 .word 0xaa0303e0
-.word 0xf90097a0
+.word 0xf900aba0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -65112,9 +65237,9 @@ ldr x2, [x16, #912]
 .word 0xf9400063
 .word 0xf9408470
 .word 0xd63f0200
-.word 0xf94097a3
+.word 0xf940aba3
 .word 0xaa0303e0
-.word 0xf90093a0
+.word 0xf900a7a0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -65124,9 +65249,9 @@ ldr x2, [x16, #920]
 .word 0xf9400063
 .word 0xf9408470
 .word 0xd63f0200
-.word 0xf94093a3
+.word 0xf940a7a3
 .word 0xaa0303e0
-.word 0xf9008fa0
+.word 0xf900a3a0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -65136,9 +65261,9 @@ ldr x2, [x16, #928]
 .word 0xf9400063
 .word 0xf9408470
 .word 0xd63f0200
-.word 0xf9408fa3
+.word 0xf940a3a3
 .word 0xaa0303e0
-.word 0xf9008ba0
+.word 0xf9009fa0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -65148,9 +65273,9 @@ ldr x2, [x16, #936]
 .word 0xf9400063
 .word 0xf9408470
 .word 0xd63f0200
-.word 0xf9408ba3
+.word 0xf9409fa3
 .word 0xaa0303e0
-.word 0xf90087a0
+.word 0xf9009ba0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -65160,9 +65285,9 @@ ldr x2, [x16, #944]
 .word 0xf9400063
 .word 0xf9408470
 .word 0xd63f0200
-.word 0xf94087a3
+.word 0xf9409ba3
 .word 0xaa0303e0
-.word 0xf90083a0
+.word 0xf90097a0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -65172,9 +65297,9 @@ ldr x2, [x16, #952]
 .word 0xf9400063
 .word 0xf9408470
 .word 0xd63f0200
-.word 0xf94083a3
+.word 0xf94097a3
 .word 0xaa0303e0
-.word 0xf9007fa0
+.word 0xf90093a0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -65184,9 +65309,9 @@ ldr x2, [x16, #960]
 .word 0xf9400063
 .word 0xf9408470
 .word 0xd63f0200
-.word 0xf9407fa3
+.word 0xf94093a3
 .word 0xaa0303e0
-.word 0xf9007ba0
+.word 0xf9008fa0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -65196,9 +65321,9 @@ ldr x2, [x16, #968]
 .word 0xf9400063
 .word 0xf9408470
 .word 0xd63f0200
-.word 0xf9407ba3
+.word 0xf9408fa3
 .word 0xaa0303e0
-.word 0xf90077a0
+.word 0xf9008ba0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -65208,9 +65333,9 @@ ldr x2, [x16, #976]
 .word 0xf9400063
 .word 0xf9408470
 .word 0xd63f0200
-.word 0xf94077a3
+.word 0xf9408ba3
 .word 0xaa0303e0
-.word 0xf90073a0
+.word 0xf90087a0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -65220,9 +65345,9 @@ ldr x2, [x16, #984]
 .word 0xf9400063
 .word 0xf9408470
 .word 0xd63f0200
-.word 0xf94073a3
+.word 0xf94087a3
 .word 0xaa0303e0
-.word 0xf9006fa0
+.word 0xf90083a0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -65232,9 +65357,9 @@ ldr x2, [x16, #992]
 .word 0xf9400063
 .word 0xf9408470
 .word 0xd63f0200
-.word 0xf9406fa3
+.word 0xf94083a3
 .word 0xaa0303e0
-.word 0xf9006ba0
+.word 0xf9007fa0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -65244,9 +65369,9 @@ ldr x2, [x16, #1000]
 .word 0xf9400063
 .word 0xf9408470
 .word 0xd63f0200
-.word 0xf9406ba3
+.word 0xf9407fa3
 .word 0xaa0303e0
-.word 0xf90067a0
+.word 0xf9007ba0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -65256,9 +65381,9 @@ ldr x2, [x16, #1008]
 .word 0xf9400063
 .word 0xf9408470
 .word 0xd63f0200
-.word 0xf94067a3
+.word 0xf9407ba3
 .word 0xaa0303e0
-.word 0xf90063a0
+.word 0xf90077a0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -65268,9 +65393,9 @@ ldr x2, [x16, #1016]
 .word 0xf9400063
 .word 0xf9408470
 .word 0xd63f0200
-.word 0xf94063a3
+.word 0xf94077a3
 .word 0xaa0303e0
-.word 0xf9005fa0
+.word 0xf90073a0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -65280,11 +65405,14 @@ ldr x2, [x16, #1024]
 .word 0xf9400063
 .word 0xf9408470
 .word 0xd63f0200
-.word 0xf9405fa1
+.word 0xf94073a1
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
 ldr x0, [x16, #776]
+.word 0xf9006fa0
+.word 0xd5033bbf
+.word 0xf9406fa0
 .word 0xf9000001
 .loc 26 606 0
 
@@ -65295,7 +65423,7 @@ ldr x0, [x16, #864]
 bl _p_16
 .word 0xaa0003e3
 .word 0xaa0303e0
-.word 0xf9005ba0
+.word 0xf9006ba0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -65305,9 +65433,9 @@ ldr x2, [x16, #1032]
 .word 0xf9400063
 .word 0xf9408470
 .word 0xd63f0200
-.word 0xf9405ba3
+.word 0xf9406ba3
 .word 0xaa0303e0
-.word 0xf90057a0
+.word 0xf90067a0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -65317,9 +65445,9 @@ ldr x2, [x16, #1040]
 .word 0xf9400063
 .word 0xf9408470
 .word 0xd63f0200
-.word 0xf94057a3
+.word 0xf94067a3
 .word 0xaa0303e0
-.word 0xf90053a0
+.word 0xf90063a0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -65329,9 +65457,9 @@ ldr x2, [x16, #1048]
 .word 0xf9400063
 .word 0xf9408470
 .word 0xd63f0200
-.word 0xf94053a3
+.word 0xf94063a3
 .word 0xaa0303e0
-.word 0xf9004fa0
+.word 0xf9005fa0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -65341,11 +65469,14 @@ ldr x2, [x16, #1056]
 .word 0xf9400063
 .word 0xf9408470
 .word 0xd63f0200
-.word 0xf9404fa1
+.word 0xf9405fa1
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
 ldr x0, [x16, #800]
+.word 0xf9005ba0
+.word 0xd5033bbf
+.word 0xf9405ba0
 .word 0xf9000001
 .loc 26 611 0
 
@@ -65356,7 +65487,7 @@ ldr x0, [x16, #864]
 bl _p_16
 .word 0xaa0003e3
 .word 0xaa0303e0
-.word 0xf9004ba0
+.word 0xf90057a0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -65366,9 +65497,9 @@ ldr x2, [x16, #1064]
 .word 0xf9400063
 .word 0xf9408470
 .word 0xd63f0200
-.word 0xf9404ba3
+.word 0xf94057a3
 .word 0xaa0303e0
-.word 0xf90047a0
+.word 0xf90053a0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -65378,9 +65509,9 @@ ldr x2, [x16, #1072]
 .word 0xf9400063
 .word 0xf9408470
 .word 0xd63f0200
-.word 0xf94047a3
+.word 0xf94053a3
 .word 0xaa0303e0
-.word 0xf90043a0
+.word 0xf9004fa0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -65390,9 +65521,9 @@ ldr x2, [x16, #1080]
 .word 0xf9400063
 .word 0xf9408470
 .word 0xd63f0200
-.word 0xf94043a3
+.word 0xf9404fa3
 .word 0xaa0303e0
-.word 0xf9003fa0
+.word 0xf9004ba0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -65402,9 +65533,9 @@ ldr x2, [x16, #1088]
 .word 0xf9400063
 .word 0xf9408470
 .word 0xd63f0200
-.word 0xf9403fa3
+.word 0xf9404ba3
 .word 0xaa0303e0
-.word 0xf9003ba0
+.word 0xf90047a0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -65414,9 +65545,9 @@ ldr x2, [x16, #1096]
 .word 0xf9400063
 .word 0xf9408470
 .word 0xd63f0200
-.word 0xf9403ba3
+.word 0xf94047a3
 .word 0xaa0303e0
-.word 0xf90037a0
+.word 0xf90043a0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -65426,9 +65557,9 @@ ldr x2, [x16, #1104]
 .word 0xf9400063
 .word 0xf9408470
 .word 0xd63f0200
-.word 0xf94037a3
+.word 0xf94043a3
 .word 0xaa0303e0
-.word 0xf90033a0
+.word 0xf9003fa0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -65438,9 +65569,9 @@ ldr x2, [x16, #1112]
 .word 0xf9400063
 .word 0xf9408470
 .word 0xd63f0200
-.word 0xf94033a3
+.word 0xf9403fa3
 .word 0xaa0303e0
-.word 0xf9002fa0
+.word 0xf9003ba0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -65450,9 +65581,9 @@ ldr x2, [x16, #1120]
 .word 0xf9400063
 .word 0xf9408470
 .word 0xd63f0200
-.word 0xf9402fa3
+.word 0xf9403ba3
 .word 0xaa0303e0
-.word 0xf9002ba0
+.word 0xf90037a0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -65462,9 +65593,9 @@ ldr x2, [x16, #1128]
 .word 0xf9400063
 .word 0xf9408470
 .word 0xd63f0200
-.word 0xf9402ba3
+.word 0xf94037a3
 .word 0xaa0303e0
-.word 0xf90027a0
+.word 0xf90033a0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -65474,9 +65605,9 @@ ldr x2, [x16, #1136]
 .word 0xf9400063
 .word 0xf9408470
 .word 0xd63f0200
-.word 0xf94027a3
+.word 0xf94033a3
 .word 0xaa0303e0
-.word 0xf90023a0
+.word 0xf9002fa0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -65486,9 +65617,9 @@ ldr x2, [x16, #1144]
 .word 0xf9400063
 .word 0xf9408470
 .word 0xd63f0200
-.word 0xf94023a3
+.word 0xf9402fa3
 .word 0xaa0303e0
-.word 0xf9001fa0
+.word 0xf9002ba0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -65498,11 +65629,14 @@ ldr x2, [x16, #1152]
 .word 0xf9400063
 .word 0xf9408470
 .word 0xd63f0200
-.word 0xf9401fa1
+.word 0xf9402ba1
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
 ldr x0, [x16, #808]
+.word 0xf90027a0
+.word 0xd5033bbf
+.word 0xf94027a0
 .word 0xf9000001
 .loc 26 620 0
 
@@ -65513,7 +65647,7 @@ ldr x0, [x16, #864]
 bl _p_16
 .word 0xaa0003e3
 .word 0xaa0303e0
-.word 0xf9001ba0
+.word 0xf90023a0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -65523,9 +65657,9 @@ ldr x2, [x16, #1160]
 .word 0xf9400063
 .word 0xf9408470
 .word 0xd63f0200
-.word 0xf9401ba3
+.word 0xf94023a3
 .word 0xaa0303e0
-.word 0xf90017a0
+.word 0xf9001fa0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -65535,9 +65669,9 @@ ldr x2, [x16, #1168]
 .word 0xf9400063
 .word 0xf9408470
 .word 0xd63f0200
-.word 0xf94017a3
+.word 0xf9401fa3
 .word 0xaa0303e0
-.word 0xf90013a0
+.word 0xf9001ba0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -65547,9 +65681,9 @@ ldr x2, [x16, #1176]
 .word 0xf9400063
 .word 0xf9408470
 .word 0xd63f0200
-.word 0xf94013a3
+.word 0xf9401ba3
 .word 0xaa0303e0
-.word 0xf9000fa0
+.word 0xf90017a0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -65559,9 +65693,9 @@ ldr x2, [x16, #1184]
 .word 0xf9400063
 .word 0xf9408470
 .word 0xd63f0200
-.word 0xf9400fa3
+.word 0xf94017a3
 .word 0xaa0303e0
-.word 0xf9000ba0
+.word 0xf90013a0
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -65571,11 +65705,14 @@ ldr x2, [x16, #1192]
 .word 0xf9400063
 .word 0xf9408470
 .word 0xd63f0200
-.word 0xf9400ba1
+.word 0xf94013a1
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
 ldr x0, [x16, #792]
+.word 0xf9000fa0
+.word 0xd5033bbf
+.word 0xf9400fa0
 .word 0xf9000001
 .loc 26 625 0
 
@@ -65586,9 +65723,12 @@ ldr x1, [x16, #1200]
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
 ldr x0, [x16, #784]
+.word 0xf9000ba0
+.word 0xd5033bbf
+.word 0xf9400ba0
 .word 0xf9000001
 .word 0x910003bf
-.word 0xa8d67bfd
+.word 0xa8d97bfd
 .word 0xd65f03c0
 
 Lme_297:
@@ -65736,7 +65876,7 @@ b System_ReadOnlySpan_1_T_BYTE__ctor_void__int
 	.no_dead_strip System_ReadOnlySpan_1_T_BYTE__ctor_void__int
 System_ReadOnlySpan_1_T_BYTE__ctor_void__int:
 .loc 28 106 0 prologue_end
-.word 0xa9ba7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xf9000bb8
 .word 0xf9001faf
@@ -65762,7 +65902,7 @@ bl _p_317
 .loc 28 111 0
 .word 0xf9400bb8
 .word 0x910003bf
-.word 0xa8c67bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
 .loc 28 107 0
 bl _p_318
@@ -66375,7 +66515,7 @@ System_ReadOnlySpan_1_T_BYTE_Equals_object:
 .word 0xd28ffb00
 bl _p_333
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
@@ -66400,7 +66540,7 @@ System_ReadOnlySpan_1_T_BYTE_GetHashCode:
 .word 0xd2900e20
 bl _p_333
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
@@ -66622,7 +66762,7 @@ System_ByReference_1_T_BYTE__ctor_T_BYTE_:
 .word 0xf90013af
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_27
@@ -66644,7 +66784,7 @@ System_ByReference_1_T_BYTE_get_Value:
 .word 0x910003fd
 .word 0xf9000faf
 .word 0xf9000ba0
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_27
@@ -66813,7 +66953,7 @@ b System_Span_1_T_BYTE__ctor_void__int
 	.no_dead_strip System_Span_1_T_BYTE__ctor_void__int
 System_Span_1_T_BYTE__ctor_void__int:
 .loc 31 112 0 prologue_end
-.word 0xa9ba7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xf9000bb8
 .word 0xf9001faf
@@ -66839,7 +66979,7 @@ bl _p_343
 .loc 31 117 0
 .word 0xf9400bb8
 .word 0x910003bf
-.word 0xa8c67bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
 .loc 31 113 0
 bl _p_318
@@ -67566,7 +67706,7 @@ System_Span_1_T_BYTE_Equals_object:
 .word 0xd28ffb00
 bl _p_333
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
@@ -67591,7 +67731,7 @@ System_Span_1_T_BYTE_GetHashCode:
 .word 0xd2900e20
 bl _p_333
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
@@ -67922,7 +68062,7 @@ b System_ReadOnlySpan_1_T_CHAR__ctor_void__int
 	.no_dead_strip System_ReadOnlySpan_1_T_CHAR__ctor_void__int
 System_ReadOnlySpan_1_T_CHAR__ctor_void__int:
 .loc 28 106 0 prologue_end
-.word 0xa9ba7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xf9000bb8
 .word 0xf9001faf
@@ -67948,7 +68088,7 @@ bl _p_367
 .loc 28 111 0
 .word 0xf9400bb8
 .word 0x910003bf
-.word 0xa8c67bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
 .loc 28 107 0
 bl _p_318
@@ -68563,7 +68703,7 @@ System_ReadOnlySpan_1_T_CHAR_Equals_object:
 .word 0xd28ffb00
 bl _p_333
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
@@ -68588,7 +68728,7 @@ System_ReadOnlySpan_1_T_CHAR_GetHashCode:
 .word 0xd2900e20
 bl _p_333
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
@@ -68809,7 +68949,7 @@ System_ByReference_1_T_CHAR__ctor_T_CHAR_:
 .word 0xf90013af
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_27
@@ -68831,7 +68971,7 @@ System_ByReference_1_T_CHAR_get_Value:
 .word 0x910003fd
 .word 0xf9000faf
 .word 0xf9000ba0
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_27
@@ -68933,7 +69073,7 @@ Lme_2f2:
 	.no_dead_strip System_Buffers_ArrayPool_1_T_BYTE__cctor
 System_Buffers_ArrayPool_1_T_BYTE__cctor:
 .loc 33 36 0 prologue_end
-.word 0xa9bd7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xf9000baf
 .word 0xf9400ba0
@@ -68945,19 +69085,22 @@ bl _p_1
 bl _p_391
 .word 0xd2800501
 bl _p_45
-.word 0xf90017a0
+.word 0xf9001ba0
 .word 0xf9400ba0
 bl _p_392
 .word 0xaa0003e1
-.word 0xf94017a0
-.word 0xf90013a0
+.word 0xf9401ba0
+.word 0xf90017a0
 .word 0xd63f0020
 .word 0xf9400ba0
 bl _p_387
-.word 0xf94013a1
+.word 0xf90013a0
+.word 0xf94017a1
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xf9000001
 .word 0x910003bf
-.word 0xa8c37bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
 
 Lme_2f3:
@@ -69121,7 +69264,7 @@ b System_Span_1_T_CHAR__ctor_void__int
 	.no_dead_strip System_Span_1_T_CHAR__ctor_void__int
 System_Span_1_T_CHAR__ctor_void__int:
 .loc 31 112 0 prologue_end
-.word 0xa9ba7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xf9000bb8
 .word 0xf9001faf
@@ -69147,7 +69290,7 @@ bl _p_394
 .loc 31 117 0
 .word 0xf9400bb8
 .word 0x910003bf
-.word 0xa8c67bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
 .loc 31 113 0
 bl _p_318
@@ -69962,7 +70105,7 @@ System_Span_1_T_CHAR_Equals_object:
 .word 0xd28ffb00
 bl _p_333
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
@@ -69987,7 +70130,7 @@ System_Span_1_T_CHAR_GetHashCode:
 .word 0xd2900e20
 bl _p_333
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
@@ -70286,7 +70429,7 @@ Lme_312:
 	.no_dead_strip System_Buffers_ArrayPool_1_T_CHAR__cctor
 System_Buffers_ArrayPool_1_T_CHAR__cctor:
 .loc 33 36 0 prologue_end
-.word 0xa9bd7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xf9000baf
 .word 0xf9400ba0
@@ -70298,19 +70441,22 @@ bl _p_1
 bl _p_420
 .word 0xd2800501
 bl _p_45
-.word 0xf90017a0
+.word 0xf9001ba0
 .word 0xf9400ba0
 bl _p_421
 .word 0xaa0003e1
-.word 0xf94017a0
-.word 0xf90013a0
+.word 0xf9401ba0
+.word 0xf90017a0
 .word 0xd63f0020
 .word 0xf9400ba0
 bl _p_416
-.word 0xf94013a1
+.word 0xf90013a0
+.word 0xf94017a1
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xf9000001
 .word 0x910003bf
-.word 0xa8c37bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
 
 Lme_313:
@@ -70474,7 +70620,7 @@ b System_Span_1_T_INT__ctor_void__int
 	.no_dead_strip System_Span_1_T_INT__ctor_void__int
 System_Span_1_T_INT__ctor_void__int:
 .loc 31 112 0 prologue_end
-.word 0xa9ba7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xf9000bb8
 .word 0xf9001faf
@@ -70500,7 +70646,7 @@ bl _p_423
 .loc 31 117 0
 .word 0xf9400bb8
 .word 0x910003bf
-.word 0xa8c67bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
 .loc 31 113 0
 bl _p_318
@@ -71315,7 +71461,7 @@ System_Span_1_T_INT_Equals_object:
 .word 0xd28ffb00
 bl _p_333
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
@@ -71340,7 +71486,7 @@ System_Span_1_T_INT_GetHashCode:
 .word 0xd2900e20
 bl _p_333
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
@@ -71561,7 +71707,7 @@ System_ByReference_1_T_INT__ctor_T_INT_:
 .word 0xf90013af
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_27
@@ -71583,7 +71729,7 @@ System_ByReference_1_T_INT_get_Value:
 .word 0x910003fd
 .word 0xf9000faf
 .word 0xf9000ba0
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_27
@@ -71596,7 +71742,7 @@ Lme_32e:
 	.align 4
 	.no_dead_strip wrapper_runtime_invoke__Module_runtime_invoke_void__this___single_single_single_single_single_single_single_single_single_single_single_single_single_single_single_single_intptr__intptr_intptr_intptr
 wrapper_runtime_invoke__Module_runtime_invoke_void__this___single_single_single_single_single_single_single_single_single_single_single_single_single_single_single_single_intptr__intptr_intptr_intptr:
-.word 0xa9ba7bfd
+.word 0xa9b97bfd
 .word 0x910003fd
 .word 0xd2800410
 .word 0x910003f1
@@ -71611,7 +71757,7 @@ wrapper_runtime_invoke__Module_runtime_invoke_void__this___single_single_single_
 .word 0xf9001fbf
 .word 0xf90023bf
 .word 0xf94017a0
-.word 0xb4000da0
+.word 0xb4000e00
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -71701,12 +71847,15 @@ bl _p_445
 .word 0xbd001ff0
 .word 0xf9401ba1
 .word 0xd63f0020
-.word 0x14000012
+.word 0x14000015
 .word 0xf90027a0
 .word 0xf94027a0
 .word 0xf90023a0
 .word 0xf94017a1
 .word 0xf94023a0
+.word 0xf90033a0
+.word 0xd5033bbf
+.word 0xf94033a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -71808,7 +71957,7 @@ ldr x0, [x16, #48]
 .word 0xf9400bb7
 .word 0xf9400fb9
 .word 0x910003bf
-.word 0xa8c67bfd
+.word 0xa8c77bfd
 .word 0xd65f03c0
 bl _p_444
 .word 0xaa0003f7
@@ -71824,7 +71973,7 @@ Lme_32f:
 	.align 4
 	.no_dead_strip wrapper_runtime_invoke__Module_runtime_invoke_Quaternion_Quaternion_Quaternion_single_object_intptr_intptr_intptr
 wrapper_runtime_invoke__Module_runtime_invoke_Quaternion_Quaternion_Quaternion_single_object_intptr_intptr_intptr:
-.word 0xa9b37bfd
+.word 0xa9b27bfd
 .word 0x910003fd
 .word 0xd2800210
 .word 0x910003f1
@@ -71838,7 +71987,7 @@ wrapper_runtime_invoke__Module_runtime_invoke_Quaternion_Quaternion_Quaternion_s
 .word 0xf9004fbf
 .word 0xf90053bf
 .word 0xf94017a0
-.word 0xb4000d20
+.word 0xb4000d80
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -71925,12 +72074,15 @@ bl _p_45
 .word 0xb98077a2
 .word 0xb9000c22
 .word 0xf9004fa0
-.word 0x14000012
+.word 0x14000015
 .word 0xf9005ba0
 .word 0xf9405ba0
 .word 0xf90053a0
 .word 0xf94017a1
 .word 0xf94053a0
+.word 0xf9006ba0
+.word 0xd5033bbf
+.word 0xf9406ba0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -72028,7 +72180,7 @@ bl _p_45
 .word 0xf9404fa0
 .word 0xa94167b8
 .word 0x910003bf
-.word 0xa8cd7bfd
+.word 0xa8ce7bfd
 .word 0xd65f03c0
 bl _p_444
 .word 0xaa0003f8
@@ -72044,7 +72196,7 @@ Lme_330:
 	.align 4
 	.no_dead_strip wrapper_runtime_invoke__Module_runtime_invoke_Vector4_Vector4_Vector4_single_object_intptr_intptr_intptr
 wrapper_runtime_invoke__Module_runtime_invoke_Vector4_Vector4_Vector4_single_object_intptr_intptr_intptr:
-.word 0xa9b37bfd
+.word 0xa9b27bfd
 .word 0x910003fd
 .word 0xd2800210
 .word 0x910003f1
@@ -72058,7 +72210,7 @@ wrapper_runtime_invoke__Module_runtime_invoke_Vector4_Vector4_Vector4_single_obj
 .word 0xf9004fbf
 .word 0xf90053bf
 .word 0xf94017a0
-.word 0xb4000d20
+.word 0xb4000d80
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -72145,12 +72297,15 @@ bl _p_45
 .word 0xb98077a2
 .word 0xb9000c22
 .word 0xf9004fa0
-.word 0x14000012
+.word 0x14000015
 .word 0xf9005ba0
 .word 0xf9405ba0
 .word 0xf90053a0
 .word 0xf94017a1
 .word 0xf94053a0
+.word 0xf9006ba0
+.word 0xd5033bbf
+.word 0xf9406ba0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -72248,7 +72403,7 @@ bl _p_45
 .word 0xf9404fa0
 .word 0xa94167b8
 .word 0x910003bf
-.word 0xa8cd7bfd
+.word 0xa8ce7bfd
 .word 0xd65f03c0
 bl _p_444
 .word 0xaa0003f8
@@ -72283,7 +72438,7 @@ wrapper_other_uint___Get_int:
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -72302,7 +72457,7 @@ wrapper_runtime_invoke__Module_runtime_invoke_uint__this___int_object_intptr_int
 .word 0xf9001fbf
 .word 0xf90023bf
 .word 0xf94017a0
-.word 0xb4000620
+.word 0xb4000680
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -72333,12 +72488,15 @@ bl _p_45
 .word 0xf94033a1
 .word 0xb9001001
 .word 0xf9001fa0
-.word 0x14000012
+.word 0x14000015
 .word 0xf90027a0
 .word 0xf94027a0
 .word 0xf90023a0
 .word 0xf94017a1
 .word 0xf94023a0
+.word 0xf90033a0
+.word 0xd5033bbf
+.word 0xf94033a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -72417,7 +72575,7 @@ wrapper_other_uint___Set_int_uint:
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -72426,7 +72584,7 @@ Lme_334:
 	.align 4
 	.no_dead_strip wrapper_runtime_invoke__Module_runtime_invoke_void__this___int_uint_object_intptr_intptr_intptr
 wrapper_runtime_invoke__Module_runtime_invoke_void__this___int_uint_object_intptr_intptr_intptr:
-.word 0xa9ba7bfd
+.word 0xa9b97bfd
 .word 0x910003fd
 .word 0xf9000bb7
 .word 0xf9000fb9
@@ -72437,7 +72595,7 @@ wrapper_runtime_invoke__Module_runtime_invoke_void__this___int_uint_object_intpt
 .word 0xf9001fbf
 .word 0xf90023bf
 .word 0xf94017a0
-.word 0xb4000520
+.word 0xb4000580
 
 adrp x16, mono_aot_System_Numerics_got@PAGE+0
 add x16, x16, mono_aot_System_Numerics_got@PAGEOFF
@@ -72459,12 +72617,15 @@ bl _p_445
 .word 0xf94013a0
 .word 0xf9401ba3
 .word 0xd63f0060
-.word 0x14000012
+.word 0x14000015
 .word 0xf90027a0
 .word 0xf94027a0
 .word 0xf90023a0
 .word 0xf94017a1
 .word 0xf94023a0
+.word 0xf90033a0
+.word 0xd5033bbf
+.word 0xf94033a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -72498,7 +72659,7 @@ ldr x0, [x16, #48]
 .word 0xf9400bb7
 .word 0xf9400fb9
 .word 0x910003bf
-.word 0xa8c67bfd
+.word 0xa8c77bfd
 .word 0xd65f03c0
 bl _p_444
 .word 0xaa0003f7
@@ -81232,10 +81393,13 @@ System_EmptyArray_1_T_BYTE__cctor:
 bl _p_446
 .word 0xd2800001
 bl _p_16
-.word 0xf90013a0
+.word 0xf90017a0
 .word 0xf9400ba0
 bl _p_447
-.word 0xf94013a1
+.word 0xf90013a0
+.word 0xf94017a1
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -85226,10 +85390,10 @@ bl _p_453
 .word 0xd63f0020
 .loc 39 25 0
 .word 0x6b1f033f
-.word 0x54000f2d
+.word 0x54000f8d
 .loc 39 29 0
 .word 0x6b1f035f
-.word 0x54000ded
+.word 0x54000e4d
 .loc 39 37 0
 .word 0xd280001e
 .word 0xf2a8001e
@@ -85336,6 +85500,9 @@ bl _p_457
 .loc 39 54 0
 .word 0xf9401ba0
 .word 0x91004000
+.word 0xf90023a0
+.word 0xd5033bbf
+.word 0xf94023a0
 .word 0xf9000019
 .word 0xd349fc00
 .word 0xd29ffffe
@@ -85355,20 +85522,20 @@ ldr x1, [x16, #16]
 .word 0xa8c67bfd
 .word 0xd65f03c0
 .loc 39 31 0
-.word 0xd286b5a0
+.word 0xd286ada0
 .word 0xf2a00060
 bl _p_333
 .word 0xaa0003e1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
-.word 0xd286b1e0
+.word 0xd286a9e0
 .word 0xf2a00060
 .loc 39 27 0
 bl _p_333
 .word 0xaa0003e1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
@@ -85411,14 +85578,18 @@ System_Buffers_TlsOverPerCoreLockedStacksArrayPool_1_T_BYTE__ctor:
 .word 0xa9016bb9
 .word 0xf90013a0
 .word 0xf94013a0
-.word 0xf90023a0
+.word 0xf90027a0
 .word 0xf94013a0
 .word 0xf9400000
 bl _p_458
 .word 0xd2800221
 bl _p_16
-.word 0xf94023a1
-.word 0x91006021
+.word 0xaa0003e1
+.word 0xf94027a0
+.word 0xf90023a1
+.word 0x91006001
+.word 0xd5033bbf
+.word 0xf94023a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -85469,7 +85640,7 @@ bl _p_16
 .word 0xb9801b42
 .word 0xeb00005f
 .word 0x10000011
-.word 0x54000349
+.word 0x540003a9
 .word 0xd37ef400
 .word 0x8b000340
 .word 0x91008000
@@ -85482,6 +85653,9 @@ bl _p_16
 .loc 40 68 0
 .word 0xf94013a0
 .word 0x91004000
+.word 0xf9001ba0
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf900001a
 .word 0xd349fc00
 .word 0xd29ffffe
@@ -85499,7 +85673,7 @@ ldr x1, [x16, #16]
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -85592,10 +85766,10 @@ bl _p_463
 .word 0xd63f0020
 .loc 39 25 0
 .word 0x6b1f033f
-.word 0x54000f2d
+.word 0x54000f8d
 .loc 39 29 0
 .word 0x6b1f035f
-.word 0x54000ded
+.word 0x54000e4d
 .loc 39 37 0
 .word 0xd280001e
 .word 0xf2a8001e
@@ -85702,6 +85876,9 @@ bl _p_467
 .loc 39 54 0
 .word 0xf9401ba0
 .word 0x91004000
+.word 0xf90023a0
+.word 0xd5033bbf
+.word 0xf94023a0
 .word 0xf9000019
 .word 0xd349fc00
 .word 0xd29ffffe
@@ -85721,20 +85898,20 @@ ldr x1, [x16, #16]
 .word 0xa8c67bfd
 .word 0xd65f03c0
 .loc 39 31 0
-.word 0xd286b5a0
+.word 0xd286ada0
 .word 0xf2a00060
 bl _p_333
 .word 0xaa0003e1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
-.word 0xd286b1e0
+.word 0xd286a9e0
 .word 0xf2a00060
 .loc 39 27 0
 bl _p_333
 .word 0xaa0003e1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_27
@@ -85750,14 +85927,18 @@ System_Buffers_TlsOverPerCoreLockedStacksArrayPool_1_T_CHAR__ctor:
 .word 0xa9016bb9
 .word 0xf90013a0
 .word 0xf94013a0
-.word 0xf90023a0
+.word 0xf90027a0
 .word 0xf94013a0
 .word 0xf9400000
 bl _p_468
 .word 0xd2800221
 bl _p_16
-.word 0xf94023a1
-.word 0x91006021
+.word 0xaa0003e1
+.word 0xf94027a0
+.word 0xf90023a1
+.word 0x91006001
+.word 0xd5033bbf
+.word 0xf94023a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -85808,7 +85989,7 @@ bl _p_16
 .word 0xb9801b42
 .word 0xeb00005f
 .word 0x10000011
-.word 0x54000349
+.word 0x540003a9
 .word 0xd37ef400
 .word 0x8b000340
 .word 0x91008000
@@ -85821,6 +86002,9 @@ bl _p_16
 .loc 40 68 0
 .word 0xf94013a0
 .word 0x91004000
+.word 0xf9001ba0
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf900001a
 .word 0xd349fc00
 .word 0xd29ffffe
@@ -85838,7 +86022,7 @@ ldr x1, [x16, #16]
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_14
 
@@ -86050,20 +86234,20 @@ Lme_4a0:
 	.no_dead_strip System_Buffers_ConfigurableArrayPool_1_Bucket_T_BYTE__ctor_int_int_int
 System_Buffers_ConfigurableArrayPool_1_Bucket_T_BYTE__ctor_int_int_int:
 .loc 39 177 0 prologue_end
-.word 0xa9bb7bfd
+.word 0xa9ba7bfd
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf90013a2
 .word 0xf90017a3
 .word 0xf9400ba0
-.word 0xf90027a0
+.word 0xf9002ba0
 bl _p_472
 .word 0x53001c01
 .word 0xb9003bbf
 .word 0x9100e3a0
 bl _p_473
-.word 0xf94027a0
+.word 0xf9402ba0
 .word 0xb9803ba1
 .word 0xb90033a1
 .word 0x91008000
@@ -86071,14 +86255,18 @@ bl _p_473
 .word 0xb9000001
 .loc 39 178 0
 .word 0xf9400ba0
-.word 0xf90023a0
+.word 0xf90027a0
 .word 0xf9400ba0
 .word 0xf9400000
 bl _p_474
 .word 0xb98023a1
 bl _p_16
-.word 0xf94023a1
-.word 0x91004021
+.word 0xaa0003e1
+.word 0xf94027a0
+.word 0xf90023a1
+.word 0x91004001
+.word 0xd5033bbf
+.word 0xf94023a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -86101,7 +86289,7 @@ ldr x2, [x16, #16]
 .word 0xb9001c01
 .loc 39 181 0
 .word 0x910003bf
-.word 0xa8c57bfd
+.word 0xa8c67bfd
 .word 0xd65f03c0
 
 Lme_4a1:
@@ -86153,20 +86341,20 @@ Lme_4a3:
 	.no_dead_strip System_Buffers_ConfigurableArrayPool_1_Bucket_T_CHAR__ctor_int_int_int
 System_Buffers_ConfigurableArrayPool_1_Bucket_T_CHAR__ctor_int_int_int:
 .loc 39 177 0 prologue_end
-.word 0xa9bb7bfd
+.word 0xa9ba7bfd
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf90013a2
 .word 0xf90017a3
 .word 0xf9400ba0
-.word 0xf90027a0
+.word 0xf9002ba0
 bl _p_472
 .word 0x53001c01
 .word 0xb9003bbf
 .word 0x9100e3a0
 bl _p_473
-.word 0xf94027a0
+.word 0xf9402ba0
 .word 0xb9803ba1
 .word 0xb90033a1
 .word 0x91008000
@@ -86174,14 +86362,18 @@ bl _p_473
 .word 0xb9000001
 .loc 39 178 0
 .word 0xf9400ba0
-.word 0xf90023a0
+.word 0xf90027a0
 .word 0xf9400ba0
 .word 0xf9400000
 bl _p_475
 .word 0xb98023a1
 bl _p_16
-.word 0xf94023a1
-.word 0x91004021
+.word 0xaa0003e1
+.word 0xf94027a0
+.word 0xf90023a1
+.word 0x91004001
+.word 0xd5033bbf
+.word 0xf94023a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -86204,7 +86396,7 @@ ldr x2, [x16, #16]
 .word 0xb9001c01
 .loc 39 181 0
 .word 0x910003bf
-.word 0xa8c57bfd
+.word 0xa8c67bfd
 .word 0xd65f03c0
 
 Lme_4a4:
@@ -88299,68 +88491,67 @@ unwind_info:
 	.byte 158,15,68,13,29,68,152,14,153,13,68,154,12,20,12,31,0,68,14,192,1,157,24,158,23,68,13,29,68,152,22,68
 	.byte 154,21,17,12,31,0,68,14,128,2,157,32,158,31,68,13,29,68,156,30,22,12,31,0,68,14,208,1,157,26,158,25
 	.byte 68,13,29,68,152,24,153,23,68,154,22,17,12,31,0,68,14,240,1,157,30,158,29,68,13,29,68,156,28,16,12,31
-	.byte 0,68,14,48,157,6,158,5,68,13,29,68,153,4,16,12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,21
-	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6,153,5,68,154,4,18,12,31,0,68,14,32,157,4,158,3
-	.byte 68,13,29,68,153,2,154,1,23,12,31,0,68,14,112,157,14,158,13,68,13,29,68,151,12,152,11,68,153,10,154,9
-	.byte 16,12,31,0,68,14,80,157,10,158,9,68,13,29,68,153,8,34,12,31,0,68,14,192,1,157,24,158,23,68,13,29
-	.byte 68,147,22,148,21,68,149,20,150,19,68,151,18,152,17,68,153,16,154,15,16,12,31,0,68,14,48,157,6,158,5,68
-	.byte 13,29,68,152,4,26,12,31,0,68,14,96,157,12,158,11,68,13,29,68,150,10,151,9,68,152,8,153,7,68,154,6
-	.byte 27,12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,150,14,151,13,68,152,12,153,11,68,154,10,22,12,31,0
-	.byte 68,14,128,2,157,32,158,31,68,13,29,68,152,30,153,29,68,154,28,18,12,31,0,68,14,96,157,12,158,11,68,13
-	.byte 29,68,153,10,154,9,19,12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,153,14,154,13,21,12,31,0,68,14
-	.byte 112,157,14,158,13,68,13,29,68,152,12,153,11,68,154,10,19,12,31,0,68,14,144,1,157,18,158,17,68,13,29,68
-	.byte 153,16,154,15,21,12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4,153,3,68,154,2,21,12,31,0,68,14
-	.byte 48,157,6,158,5,68,13,29,68,151,4,68,153,3,154,2,18,12,31,0,68,14,48,157,6,158,5,68,13,29,68,152
-	.byte 4,153,3,18,12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4,154,3,23,12,31,0,68,14,64,157,8,158
-	.byte 7,68,13,29,68,151,6,152,5,68,153,4,154,3,18,12,31,0,68,14,64,157,8,158,7,68,13,29,68,153,6,154
-	.byte 5,19,12,31,0,68,14,80,157,10,158,9,68,13,29,68,152,8,68,154,7,34,12,31,0,68,14,176,1,157,22,158
-	.byte 21,68,13,29,68,147,20,148,19,68,149,18,150,17,68,151,16,152,15,68,153,14,154,13,28,12,31,0,68,14,64,157
-	.byte 8,158,7,68,13,29,68,149,6,150,5,68,151,4,152,3,68,153,2,154,1,27,12,31,0,68,14,176,1,157,22,158
-	.byte 21,68,13,29,68,149,20,150,19,68,151,18,152,17,68,153,16,26,12,31,0,68,14,80,157,10,158,9,68,13,29,68
-	.byte 150,8,151,7,68,152,6,153,5,68,154,4,34,12,31,0,68,14,160,1,157,20,158,19,68,13,29,68,147,18,148,17
-	.byte 68,149,16,150,15,68,151,14,152,13,68,153,12,154,11,34,12,31,0,68,14,208,1,157,26,158,25,68,13,29,68,147
-	.byte 24,148,23,68,149,22,150,21,68,151,20,152,19,68,153,18,154,17,13,12,31,0,68,14,112,157,14,158,13,68,13,29
-	.byte 19,12,31,0,68,14,176,1,157,22,158,21,68,13,29,68,153,20,154,19,18,12,31,0,68,14,112,157,14,158,13,68
-	.byte 13,29,68,153,12,154,11,21,12,31,0,68,14,48,157,6,158,5,68,13,29,68,151,4,152,3,68,153,2,26,12,31
-	.byte 0,68,14,64,157,8,158,7,68,13,29,68,150,6,151,5,68,152,4,153,3,68,154,2,28,12,31,0,68,14,80,157
-	.byte 10,158,9,68,13,29,68,149,8,150,7,68,151,6,152,5,68,153,4,154,3,31,12,31,0,68,14,80,157,10,158,9
-	.byte 68,13,29,68,148,8,149,7,68,150,6,151,5,68,152,4,153,3,68,154,2,26,12,31,0,68,14,64,157,8,158,7
-	.byte 68,13,29,68,149,6,150,5,68,151,4,152,3,68,153,2,23,12,31,0,68,14,48,157,6,158,5,68,13,29,68,151
-	.byte 4,152,3,68,153,2,154,1,34,12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,147,16,148,15,68,149,14,150
-	.byte 13,68,151,12,152,11,68,153,10,154,9,27,12,31,0,68,14,96,157,12,158,11,68,13,29,68,147,10,68,150,9,151
-	.byte 8,68,152,7,68,154,6,32,12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,147,14,148,13,68,150,12,151,11
-	.byte 68,152,10,153,9,68,154,8,33,12,31,0,68,14,80,157,10,158,9,68,13,29,68,147,8,148,7,68,149,6,150,5
-	.byte 68,151,4,152,3,68,153,2,154,1,34,12,31,0,68,14,240,1,157,30,158,29,68,13,29,68,147,28,148,27,68,149
-	.byte 26,150,25,68,151,24,152,23,68,153,22,154,21,13,12,31,0,68,14,16,157,2,158,1,68,13,29,34,12,31,0,68
-	.byte 14,128,1,157,16,158,15,68,13,29,68,147,14,148,13,68,149,12,150,11,68,151,10,152,9,68,153,8,154,7,24,12
-	.byte 31,0,68,14,224,1,157,28,158,27,68,13,29,68,151,26,152,25,68,153,24,154,23,21,12,31,0,68,14,64,157,8
-	.byte 158,7,68,13,29,68,151,6,152,5,68,153,4,33,12,31,0,68,14,176,2,157,38,158,37,68,13,29,68,147,36,148
-	.byte 35,68,149,34,68,151,33,68,153,32,154,31,68,156,30,37,12,31,0,68,14,192,3,157,56,158,55,68,13,29,84,147
-	.byte 54,148,53,68,149,52,150,51,68,151,50,152,49,68,153,48,154,47,68,156,46,16,12,31,0,68,14,96,157,12,158,11
-	.byte 68,13,29,68,153,10,14,12,31,0,68,14,144,3,157,50,158,49,68,13,29,17,12,31,0,68,14,128,2,157,32,158
-	.byte 31,68,13,29,68,154,30,14,12,31,0,68,14,160,3,157,52,158,51,68,13,29,18,12,31,0,68,14,64,157,8,158
-	.byte 7,68,13,29,68,152,6,153,5,21,12,31,0,68,14,64,157,8,158,7,68,13,29,68,151,6,68,153,5,154,4,25
-	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,147,16,68,153,15,154,14,68,156,13,22,12,31,0,68,14,176
-	.byte 1,157,22,158,21,68,13,29,68,151,20,152,19,68,154,18,23,12,31,0,68,14,80,157,10,158,9,68,13,29,68,151
-	.byte 8,152,7,68,153,6,154,5,21,12,31,0,68,14,96,157,12,158,11,68,13,29,68,152,10,153,9,68,154,8,24,12
-	.byte 31,0,68,14,144,1,157,18,158,17,68,13,29,68,151,16,152,15,68,153,14,154,13,21,12,31,0,68,14,48,157,6
-	.byte 158,5,68,13,29,68,151,4,152,3,68,154,2,28,12,31,0,68,14,80,157,10,158,9,68,13,29,68,148,8,149,7
-	.byte 68,150,6,151,5,68,153,4,154,3,30,12,31,0,68,14,176,1,157,22,158,21,68,13,29,68,147,20,148,19,68,150
-	.byte 18,68,152,17,153,16,68,154,15,19,12,31,0,68,14,160,1,157,20,158,19,68,13,29,68,148,18,149,17,33,12,31
-	.byte 0,68,14,96,157,12,158,11,68,13,29,68,147,10,148,9,68,149,8,150,7,68,151,6,152,5,68,153,4,154,3,33
-	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29,68,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6,154
-	.byte 5,26,12,31,0,68,14,112,157,14,158,13,68,13,29,68,150,12,151,11,68,152,10,153,9,68,154,8,34,12,31,0
-	.byte 68,14,208,3,157,58,158,57,68,13,29,68,147,56,148,55,68,149,54,150,53,68,151,52,152,51,68,153,50,154,49,14
-	.byte 12,31,0,68,14,224,2,157,44,158,43,68,13,29,18,12,31,0,68,14,80,157,10,158,9,68,13,29,68,153,8,154
-	.byte 7,21,12,31,0,68,14,96,157,12,158,11,68,13,29,68,151,10,152,9,68,153,8,16,12,31,0,68,14,96,157,12
-	.byte 158,11,68,13,29,68,152,10,16,12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6,16,12,31,0,68,14,112
-	.byte 157,14,158,13,68,13,29,68,153,12,16,12,31,0,68,14,112,157,14,158,13,68,13,29,68,152,12,19,12,31,0,68
-	.byte 14,96,157,12,158,11,68,13,29,84,151,10,68,153,9,19,12,31,0,68,14,208,1,157,26,158,25,68,13,29,84,152
-	.byte 24,153,23,16,12,31,0,68,14,112,157,14,158,13,68,13,29,68,151,12,19,12,31,0,68,14,96,157,12,158,11,68
-	.byte 13,29,68,151,10,68,153,9,16,12,31,0,68,14,96,157,12,158,11,68,13,29,84,156,10,14,12,31,0,68,14,128
-	.byte 3,157,48,158,47,68,13,29,17,12,31,0,68,14,128,1,157,16,158,15,68,13,29,84,156,14,17,12,31,0,68,14
-	.byte 144,1,157,18,158,17,68,13,29,84,156,16,16,12,31,0,68,14,112,157,14,158,13,68,13,29,84,156,12,23,12,31
-	.byte 0,68,14,96,157,12,158,11,68,13,29,68,151,10,152,9,68,153,8,154,7
+	.byte 0,68,14,48,157,6,158,5,68,13,29,68,153,4,21,12,31,0,68,14,80,157,10,158,9,68,13,29,68,152,8,153
+	.byte 7,68,154,6,18,12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4,154,3,22,12,31,0,68,14,224,1,157
+	.byte 28,158,27,68,13,29,68,152,26,153,25,68,154,24,24,12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,151,14
+	.byte 152,13,68,153,12,154,11,16,12,31,0,68,14,80,157,10,158,9,68,13,29,68,153,8,34,12,31,0,68,14,208,1
+	.byte 157,26,158,25,68,13,29,68,147,24,148,23,68,149,22,150,21,68,151,20,152,19,68,153,18,154,17,16,12,31,0,68
+	.byte 14,48,157,6,158,5,68,13,29,68,152,4,26,12,31,0,68,14,112,157,14,158,13,68,13,29,68,150,12,151,11,68
+	.byte 152,10,153,9,68,154,8,27,12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,150,16,151,15,68,152,14,153,13
+	.byte 68,154,12,18,12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,154,1,13,12,31,0,68,14,112,157,14,158
+	.byte 13,68,13,29,22,12,31,0,68,14,128,2,157,32,158,31,68,13,29,68,152,30,153,29,68,154,28,18,12,31,0,68
+	.byte 14,96,157,12,158,11,68,13,29,68,153,10,154,9,19,12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,153,14
+	.byte 154,13,21,12,31,0,68,14,112,157,14,158,13,68,13,29,68,152,12,153,11,68,154,10,19,12,31,0,68,14,144,1
+	.byte 157,18,158,17,68,13,29,68,153,16,154,15,21,12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4,153,3,68
+	.byte 154,2,21,12,31,0,68,14,48,157,6,158,5,68,13,29,68,151,4,68,153,3,154,2,23,12,31,0,68,14,64,157
+	.byte 8,158,7,68,13,29,68,151,6,152,5,68,153,4,154,3,21,12,31,0,68,14,64,157,8,158,7,68,13,29,68,152
+	.byte 6,153,5,68,154,4,18,12,31,0,68,14,64,157,8,158,7,68,13,29,68,153,6,154,5,19,12,31,0,68,14,80
+	.byte 157,10,158,9,68,13,29,68,152,8,68,154,7,34,12,31,0,68,14,176,1,157,22,158,21,68,13,29,68,147,20,148
+	.byte 19,68,149,18,150,17,68,151,16,152,15,68,153,14,154,13,28,12,31,0,68,14,64,157,8,158,7,68,13,29,68,149
+	.byte 6,150,5,68,151,4,152,3,68,153,2,154,1,27,12,31,0,68,14,176,1,157,22,158,21,68,13,29,68,149,20,150
+	.byte 19,68,151,18,152,17,68,153,16,26,12,31,0,68,14,80,157,10,158,9,68,13,29,68,150,8,151,7,68,152,6,153
+	.byte 5,68,154,4,23,12,31,0,68,14,112,157,14,158,13,68,13,29,68,151,12,152,11,68,153,10,154,9,34,12,31,0
+	.byte 68,14,160,1,157,20,158,19,68,13,29,68,147,18,148,17,68,149,16,150,15,68,151,14,152,13,68,153,12,154,11,19
+	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,68,153,20,154,19,18,12,31,0,68,14,112,157,14,158,13,68,13
+	.byte 29,68,153,12,154,11,21,12,31,0,68,14,48,157,6,158,5,68,13,29,68,151,4,152,3,68,153,2,26,12,31,0
+	.byte 68,14,64,157,8,158,7,68,13,29,68,150,6,151,5,68,152,4,153,3,68,154,2,28,12,31,0,68,14,80,157,10
+	.byte 158,9,68,13,29,68,149,8,150,7,68,151,6,152,5,68,153,4,154,3,31,12,31,0,68,14,80,157,10,158,9,68
+	.byte 13,29,68,148,8,149,7,68,150,6,151,5,68,152,4,153,3,68,154,2,26,12,31,0,68,14,64,157,8,158,7,68
+	.byte 13,29,68,149,6,150,5,68,151,4,152,3,68,153,2,23,12,31,0,68,14,48,157,6,158,5,68,13,29,68,151,4
+	.byte 152,3,68,153,2,154,1,18,12,31,0,68,14,80,157,10,158,9,68,13,29,68,152,8,153,7,27,12,31,0,68,14
+	.byte 96,157,12,158,11,68,13,29,68,147,10,68,150,9,151,8,68,152,7,68,154,6,32,12,31,0,68,14,128,1,157,16
+	.byte 158,15,68,13,29,68,147,14,148,13,68,150,12,151,11,68,152,10,153,9,68,154,8,33,12,31,0,68,14,80,157,10
+	.byte 158,9,68,13,29,68,147,8,148,7,68,149,6,150,5,68,151,4,152,3,68,153,2,154,1,34,12,31,0,68,14,240
+	.byte 1,157,30,158,29,68,13,29,68,147,28,148,27,68,149,26,150,25,68,151,24,152,23,68,153,22,154,21,13,12,31,0
+	.byte 68,14,16,157,2,158,1,68,13,29,34,12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,147,14,148,13,68,149
+	.byte 12,150,11,68,151,10,152,9,68,153,8,154,7,24,12,31,0,68,14,240,1,157,30,158,29,68,13,29,68,151,28,152
+	.byte 27,68,153,26,154,25,21,12,31,0,68,14,64,157,8,158,7,68,13,29,68,151,6,152,5,68,153,4,33,12,31,0
+	.byte 68,14,176,2,157,38,158,37,68,13,29,68,147,36,148,35,68,149,34,68,151,33,68,153,32,154,31,68,156,30,37,12
+	.byte 31,0,68,14,192,3,157,56,158,55,68,13,29,84,147,54,148,53,68,149,52,150,51,68,151,50,152,49,68,153,48,154
+	.byte 47,68,156,46,16,12,31,0,68,14,96,157,12,158,11,68,13,29,68,153,10,14,12,31,0,68,14,144,3,157,50,158
+	.byte 49,68,13,29,17,12,31,0,68,14,128,2,157,32,158,31,68,13,29,68,154,30,14,12,31,0,68,14,160,3,157,52
+	.byte 158,51,68,13,29,18,12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6,153,5,21,12,31,0,68,14,64,157
+	.byte 8,158,7,68,13,29,68,151,6,68,153,5,154,4,25,12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,147,16
+	.byte 68,153,15,154,14,68,156,13,22,12,31,0,68,14,176,1,157,22,158,21,68,13,29,68,151,20,152,19,68,154,18,18
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4,153,3,23,12,31,0,68,14,80,157,10,158,9,68,13,29
+	.byte 68,151,8,152,7,68,153,6,154,5,21,12,31,0,68,14,96,157,12,158,11,68,13,29,68,152,10,153,9,68,154,8
+	.byte 24,12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,151,16,152,15,68,153,14,154,13,16,12,31,0,68,14,64
+	.byte 157,8,158,7,68,13,29,68,152,6,16,12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,21,12,31,0,68
+	.byte 14,48,157,6,158,5,68,13,29,68,151,4,152,3,68,154,2,28,12,31,0,68,14,80,157,10,158,9,68,13,29,68
+	.byte 148,8,149,7,68,150,6,151,5,68,153,4,154,3,30,12,31,0,68,14,176,1,157,22,158,21,68,13,29,68,147,20
+	.byte 148,19,68,150,18,68,152,17,153,16,68,154,15,19,12,31,0,68,14,160,1,157,20,158,19,68,13,29,68,148,18,149
+	.byte 17,33,12,31,0,68,14,96,157,12,158,11,68,13,29,68,147,10,148,9,68,149,8,150,7,68,151,6,152,5,68,153
+	.byte 4,154,3,33,12,31,0,68,14,112,157,14,158,13,68,13,29,68,147,12,148,11,68,149,10,150,9,68,151,8,152,7
+	.byte 68,153,6,154,5,34,12,31,0,68,14,208,3,157,58,158,57,68,13,29,68,147,56,148,55,68,149,54,150,53,68,151
+	.byte 52,152,51,68,153,50,154,49,18,12,31,0,68,14,80,157,10,158,9,68,13,29,68,153,8,154,7,21,12,31,0,68
+	.byte 14,96,157,12,158,11,68,13,29,68,151,10,152,9,68,153,8,16,12,31,0,68,14,112,157,14,158,13,68,13,29,68
+	.byte 153,12,16,12,31,0,68,14,112,157,14,158,13,68,13,29,68,152,12,19,12,31,0,68,14,112,157,14,158,13,68,13
+	.byte 29,84,151,12,68,153,11,19,12,31,0,68,14,224,1,157,28,158,27,68,13,29,84,152,26,153,25,16,12,31,0,68
+	.byte 14,112,157,14,158,13,68,13,29,68,151,12,19,12,31,0,68,14,112,157,14,158,13,68,13,29,68,151,12,68,153,11
+	.byte 16,12,31,0,68,14,96,157,12,158,11,68,13,29,84,156,10,14,12,31,0,68,14,128,3,157,48,158,47,68,13,29
+	.byte 17,12,31,0,68,14,128,1,157,16,158,15,68,13,29,84,156,14,17,12,31,0,68,14,144,1,157,18,158,17,68,13
+	.byte 29,84,156,16,16,12,31,0,68,14,112,157,14,158,13,68,13,29,84,156,12,23,12,31,0,68,14,96,157,12,158,11
+	.byte 68,13,29,68,151,10,152,9,68,153,8,154,7
 
 .text
 	.align 4
@@ -92200,7 +92391,7 @@ runtime_version:
 .section __TEXT, __const
 	.align 2
 assembly_guid:
-	.asciz "880D171F-66E9-47EA-96AF-002E6C21F426"
+	.asciz "140093E7-E934-4439-9F53-2A71DAC3AD24"
 .section __TEXT, __const
 	.align 2
 assembly_name:
@@ -92209,7 +92400,7 @@ assembly_name:
 	.align 3
 _mono_aot_file_info:
 
-	.long 170,0
+	.long 171,0
 	.align 3
 	.quad mono_aot_System_Numerics_got
 	.align 3
@@ -92288,13 +92479,13 @@ _mono_aot_file_info:
 	.quad unbox_trampoline_addresses
 
 	.long 161,5096,476,1191,344,354,387000831,0
-	.long 134329,128,8,8,8,9,8388607,0
-	.long 4,25,156432,0,0,22096,21896,19232
+	.long 135036,128,8,8,8,9,8388607,0
+	.long 4,25,157144,0,0,22096,21896,19232
 	.long 0,19784,21832,19552,0,15024,1584,22088
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
-	.byte 67,226,198,182,192,73,50,250,152,14,86,255,202,250,205,89
+	.byte 96,178,244,104,15,136,154,138,49,17,232,43,150,161,120,48
 	.globl _mono_aot_module_System_Numerics_info
 	.align 3
 _mono_aot_module_System_Numerics_info:
@@ -108521,7 +108712,7 @@ Lfde310_start:
 LDIFF_SYM2047=Lme_136 - System_Numerics_BigInteger__ctor_uint
 	.long LDIFF_SYM2047
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4
 	.align 3
 Lfde310_end:
 
@@ -108620,7 +108811,7 @@ Lfde311_start:
 LDIFF_SYM2062=Lme_137 - System_Numerics_BigInteger__ctor_long
 	.long LDIFF_SYM2062
 	.long 0
-	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6,153,5,68,154,4
+	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,152,8,153,7,68,154,6
 	.align 3
 Lfde311_end:
 
@@ -108659,7 +108850,7 @@ Lfde312_start:
 LDIFF_SYM2066=Lme_138 - System_Numerics_BigInteger__ctor_ulong
 	.long LDIFF_SYM2066
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,154,1
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4,154,3
 	.align 3
 Lfde312_end:
 
@@ -108794,7 +108985,7 @@ Lfde314_start:
 LDIFF_SYM2085=Lme_13a - System_Numerics_BigInteger__ctor_double
 	.long LDIFF_SYM2085
 	.long 0
-	.byte 12,31,0,68,14,208,1,157,26,158,25,68,13,29,68,152,24,153,23,68,154,22
+	.byte 12,31,0,68,14,224,1,157,28,158,27,68,13,29,68,152,26,153,25,68,154,24
 	.align 3
 Lfde314_end:
 
@@ -108843,7 +109034,7 @@ Lfde315_start:
 LDIFF_SYM2091=Lme_13b - System_Numerics_BigInteger__ctor_System_Decimal
 	.long LDIFF_SYM2091
 	.long 0
-	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29,68,151,12,152,11,68,153,10,154,9
+	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,151,14,152,13,68,153,12,154,11
 	.align 3
 Lfde315_end:
 
@@ -109053,8 +109244,8 @@ Lfde317_start:
 LDIFF_SYM2125=Lme_13d - System_Numerics_BigInteger__ctor_System_ReadOnlySpan_1_byte_bool_bool
 	.long LDIFF_SYM2125
 	.long 0
-	.byte 12,31,0,68,14,192,1,157,24,158,23,68,13,29,68,147,22,148,21,68,149,20,150,19,68,151,18,152,17,68,153,16
-	.byte 154,15
+	.byte 12,31,0,68,14,208,1,157,26,158,25,68,13,29,68,147,24,148,23,68,149,22,150,21,68,151,20,152,19,68,153,18
+	.byte 154,17
 	.align 3
 Lfde317_end:
 
@@ -109147,7 +109338,7 @@ Lfde319_start:
 LDIFF_SYM2136=Lme_13f - System_Numerics_BigInteger__ctor_uint___bool
 	.long LDIFF_SYM2136
 	.long 0
-	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,150,10,151,9,68,152,8,153,7,68,154,6
+	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29,68,150,12,151,11,68,152,10,153,9,68,154,8
 	.align 3
 Lfde319_end:
 
@@ -109201,7 +109392,7 @@ Lfde320_start:
 LDIFF_SYM2143=Lme_140 - System_Numerics_BigInteger__ctor_uint__
 	.long LDIFF_SYM2143
 	.long 0
-	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,150,14,151,13,68,152,12,153,11,68,154,10
+	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,150,16,151,15,68,152,14,153,13,68,154,12
 	.align 3
 Lfde320_end:
 
@@ -109985,7 +110176,7 @@ Lfde339_start:
 LDIFF_SYM2217=Lme_153 - System_Numerics_BigInteger_Abs_System_Numerics_BigInteger
 	.long LDIFF_SYM2217
 	.long 0
-	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29
+	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29
 	.align 3
 Lfde339_end:
 
@@ -110278,7 +110469,7 @@ Lfde346_start:
 LDIFF_SYM2249=Lme_15a - System_Numerics_BigInteger_Negate_System_Numerics_BigInteger
 	.long LDIFF_SYM2249
 	.long 0
-	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29
+	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29
 	.align 3
 Lfde346_end:
 
@@ -110845,12 +111036,12 @@ LDIFF_SYM2313=LDIE_I - Ldebug_info_start
 
 LDIFF_SYM2314=LDIE_U8 - Ldebug_info_start
 	.long LDIFF_SYM2314
-	.byte 2,141,32,11
+	.byte 2,141,24,11
 	.asciz "cu"
 
 LDIFF_SYM2315=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM2315
-	.byte 1,104,0
+	.byte 2,141,32,0
 
 .section __DWARF, __debug_frame,regular,debug
 
@@ -110865,7 +111056,7 @@ Lfde359_start:
 LDIFF_SYM2317=Lme_167 - System_Numerics_BigInteger_Equals_ulong
 	.long LDIFF_SYM2317
 	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4,153,3
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4
 	.align 3
 Lfde359_end:
 
@@ -110889,12 +111080,12 @@ LDIFF_SYM2318=LDIE_I - Ldebug_info_start
 
 LDIFF_SYM2319=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM2319
-	.byte 2,141,32,11
+	.byte 2,141,24,11
 	.asciz "cu"
 
 LDIFF_SYM2320=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM2320
-	.byte 1,105,0
+	.byte 2,141,40,0
 
 .section __DWARF, __debug_frame,regular,debug
 
@@ -110909,7 +111100,7 @@ Lfde360_start:
 LDIFF_SYM2322=Lme_168 - System_Numerics_BigInteger_Equals_System_Numerics_BigInteger
 	.long LDIFF_SYM2322
 	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4,154,3
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4
 	.align 3
 Lfde360_end:
 
@@ -113315,7 +113506,7 @@ Lfde407_start:
 LDIFF_SYM2620=Lme_197 - System_Numerics_BigInteger_op_OnesComplement_System_Numerics_BigInteger
 	.long LDIFF_SYM2620
 	.long 0
-	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29
+	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29
 	.align 3
 Lfde407_end:
 
@@ -113349,7 +113540,7 @@ Lfde408_start:
 LDIFF_SYM2623=Lme_198 - System_Numerics_BigInteger_op_UnaryNegation_System_Numerics_BigInteger
 	.long LDIFF_SYM2623
 	.long 0
-	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
+	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29
 	.align 3
 Lfde408_end:
 
@@ -114856,7 +115047,7 @@ Lfde446_start:
 LDIFF_SYM2780=Lme_1be - System_Numerics_BigInteger_GetPartsForBitManipulation_System_Numerics_BigInteger__uint____int_
 	.long LDIFF_SYM2780
 	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4,153,3,68,154,2
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6,153,5,68,154,4
 	.align 3
 Lfde446_end:
 
@@ -114968,7 +115159,7 @@ Lfde449_start:
 LDIFF_SYM2791=Lme_1c1 - System_Numerics_BigInteger__cctor
 	.long LDIFF_SYM2791
 	.long 0
-	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29
+	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29
 	.align 3
 Lfde449_end:
 
@@ -115819,7 +116010,7 @@ Lfde462_end:
 
 LDIFF_SYM2909=LDIE_SZARRAY - Ldebug_info_start
 	.long LDIFF_SYM2909
-	.byte 2,141,24,3
+	.byte 1,104,3
 	.asciz "right"
 
 LDIFF_SYM2910=LDIE_SZARRAY - Ldebug_info_start
@@ -115879,7 +116070,7 @@ Lfde463_start:
 LDIFF_SYM2920=Lme_1cf - System_Numerics_BigIntegerCalculator_Divide_uint___uint___uint___
 	.long LDIFF_SYM2920
 	.long 0
-	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,153,8
+	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,152,8,153,7
 	.align 3
 Lfde463_end:
 
@@ -115898,7 +116089,7 @@ Lfde463_end:
 
 LDIFF_SYM2921=LDIE_SZARRAY - Ldebug_info_start
 	.long LDIFF_SYM2921
-	.byte 2,141,24,3
+	.byte 1,105,3
 	.asciz "right"
 
 LDIFF_SYM2922=LDIE_SZARRAY - Ldebug_info_start
@@ -115953,7 +116144,7 @@ Lfde464_start:
 LDIFF_SYM2931=Lme_1d0 - System_Numerics_BigIntegerCalculator_Divide_uint___uint__
 	.long LDIFF_SYM2931
 	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4,154,3
 	.align 3
 Lfde464_end:
 
@@ -116348,7 +116539,7 @@ Lfde469_end:
 
 LDIFF_SYM2988=LDIE_SZARRAY - Ldebug_info_start
 	.long LDIFF_SYM2988
-	.byte 2,141,16,11
+	.byte 1,106,11
 	.asciz "bits"
 
 LDIFF_SYM2989=LDIE_I4 - Ldebug_info_start
@@ -116368,7 +116559,7 @@ Lfde470_start:
 LDIFF_SYM2991=Lme_1d6 - System_Numerics_BigIntegerCalculator_CreateCopy_uint__
 	.long LDIFF_SYM2991
 	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4
 	.align 3
 Lfde470_end:
 
@@ -116548,12 +116739,12 @@ Lfde474_end:
 
 LDIFF_SYM3009=LDIE_SZARRAY - Ldebug_info_start
 	.long LDIFF_SYM3009
-	.byte 2,141,16,3
+	.byte 1,105,3
 	.asciz "right"
 
 LDIFF_SYM3010=LDIE_SZARRAY - Ldebug_info_start
 	.long LDIFF_SYM3010
-	.byte 2,141,24,11
+	.byte 1,106,11
 	.asciz "leftBuffer"
 
 LDIFF_SYM3011=LDIE_I4 - Ldebug_info_start
@@ -116578,7 +116769,7 @@ Lfde475_start:
 LDIFF_SYM3014=Lme_1db - System_Numerics_BigIntegerCalculator_Gcd_uint___uint__
 	.long LDIFF_SYM3014
 	.long 0
-	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,153,6,154,5
 	.align 3
 Lfde475_end:
 
@@ -116734,8 +116925,8 @@ Lfde476_start:
 LDIFF_SYM3041=Lme_1dc - System_Numerics_BigIntegerCalculator_Gcd_System_Numerics_BigIntegerCalculator_BitsBuffer__System_Numerics_BigIntegerCalculator_BitsBuffer_
 	.long LDIFF_SYM3041
 	.long 0
-	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,147,16,148,15,68,149,14,150,13,68,151,12,152,11,68,153,10
-	.byte 154,9
+	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29,68,147,18,148,17,68,149,16,150,15,68,151,14,152,13,68,153,12
+	.byte 154,11
 	.align 3
 Lfde476_end:
 
@@ -117006,7 +117197,7 @@ Lfde479_end:
 
 LDIFF_SYM3081=LDIE_SZARRAY - Ldebug_info_start
 	.long LDIFF_SYM3081
-	.byte 2,141,16,3
+	.byte 1,105,3
 	.asciz "power"
 
 LDIFF_SYM3082=LDIE_U4 - Ldebug_info_start
@@ -117036,7 +117227,7 @@ Lfde480_start:
 LDIFF_SYM3086=Lme_1e0 - System_Numerics_BigIntegerCalculator_Pow_uint___uint
 	.long LDIFF_SYM3086
 	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4
 	.align 3
 Lfde480_end:
 
@@ -118140,7 +118331,7 @@ Lfde499_end:
 
 LDIFF_SYM3231=LDIE_SZARRAY - Ldebug_info_start
 	.long LDIFF_SYM3231
-	.byte 2,141,16,0
+	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
@@ -118155,7 +118346,7 @@ Lfde500_start:
 LDIFF_SYM3233=Lme_1f4 - System_Numerics_BigIntegerCalculator_ActualLength_uint__
 	.long LDIFF_SYM3233
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
 	.align 3
 Lfde500_end:
 
@@ -120299,7 +120490,7 @@ Lfde515_start:
 LDIFF_SYM3586=Lme_203 - System_Numerics_BigNumber_NumberToBigInteger_System_Numerics_BigNumber_BigNumberBuffer__System_Numerics_BigInteger_
 	.long LDIFF_SYM3586
 	.long 0
-	.byte 12,31,0,68,14,224,1,157,28,158,27,68,13,29,68,151,26,152,25,68,153,24,154,23
+	.byte 12,31,0,68,14,240,1,157,30,158,29,68,13,29,68,151,28,152,27,68,153,26,154,25
 	.align 3
 Lfde515_end:
 
@@ -125386,7 +125577,7 @@ Lfde623_start:
 LDIFF_SYM4189=Lme_26f - System_Numerics_BigIntegerCalculator_BitsBuffer__ctor_int_uint
 	.long LDIFF_SYM4189
 	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,151,4,152,3,68,153,2
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,151,6,152,5,68,153,4
 	.align 3
 Lfde623_end:
 
@@ -125430,7 +125621,7 @@ Lfde624_start:
 LDIFF_SYM4194=Lme_270 - System_Numerics_BigIntegerCalculator_BitsBuffer__ctor_int_uint__
 	.long LDIFF_SYM4194
 	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6
 	.align 3
 Lfde624_end:
 
@@ -125998,7 +126189,7 @@ Lfde636_start:
 LDIFF_SYM4262=Lme_27c - System_Numerics_BigIntegerCalculator_BitsBuffer_Apply_System_Numerics_BigIntegerCalculator_BitsBuffer__int
 	.long LDIFF_SYM4262
 	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4,153,3
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6,153,5
 	.align 3
 Lfde636_end:
 
@@ -126042,7 +126233,7 @@ Lfde637_start:
 LDIFF_SYM4267=Lme_27d - System_Numerics_BigIntegerCalculator_FastReducer__ctor_uint__
 	.long LDIFF_SYM4267
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,154,1
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,153,6,154,5
 	.align 3
 Lfde637_end:
 
@@ -126308,7 +126499,7 @@ Lfde641_start:
 LDIFF_SYM4305=Lme_281 - System_Numerics_BigNumber_BigNumberBuffer_Create
 	.long LDIFF_SYM4305
 	.long 0
-	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29
+	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29
 	.align 3
 Lfde641_end:
 
@@ -127974,7 +128165,7 @@ Lfde663_start:
 LDIFF_SYM4552=Lme_297 - System_Globalization_FormatProvider_Number__cctor
 	.long LDIFF_SYM4552
 	.long 0
-	.byte 12,31,0,68,14,224,2,157,44,158,43,68,13,29
+	.byte 12,31,0,68,14,144,3,157,50,158,49,68,13,29
 	.align 3
 Lfde663_end:
 
@@ -128172,7 +128363,7 @@ Lfde667_start:
 LDIFF_SYM4576=Lme_2a6 - System_ReadOnlySpan_1_T_BYTE__ctor_void__int
 	.long LDIFF_SYM4576
 	.long 0
-	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,152,10
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6
 	.align 3
 Lfde667_end:
 
@@ -129202,7 +129393,7 @@ Lfde691_start:
 LDIFF_SYM4690=Lme_2be - System_Span_1_T_BYTE__ctor_void__int
 	.long LDIFF_SYM4690
 	.long 0
-	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,152,10
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6
 	.align 3
 Lfde691_end:
 
@@ -130274,7 +130465,7 @@ Lfde716_start:
 LDIFF_SYM4809=Lme_2d7 - System_ReadOnlySpan_1_T_CHAR__ctor_void__int
 	.long LDIFF_SYM4809
 	.long 0
-	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,152,10
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6
 	.align 3
 Lfde716_end:
 
@@ -131312,7 +131503,7 @@ Lfde742_start:
 LDIFF_SYM4917=Lme_2f3 - System_Buffers_ArrayPool_1_T_BYTE__cctor
 	.long LDIFF_SYM4917
 	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
 	.align 3
 Lfde742_end:
 
@@ -131486,7 +131677,7 @@ Lfde745_start:
 LDIFF_SYM4940=Lme_2f6 - System_Span_1_T_CHAR__ctor_void__int
 	.long LDIFF_SYM4940
 	.long 0
-	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,152,10
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6
 	.align 3
 Lfde745_end:
 
@@ -132576,7 +132767,7 @@ Lfde772_start:
 LDIFF_SYM5055=Lme_313 - System_Buffers_ArrayPool_1_T_CHAR__cctor
 	.long LDIFF_SYM5055
 	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
 	.align 3
 Lfde772_end:
 
@@ -132750,7 +132941,7 @@ Lfde775_start:
 LDIFF_SYM5078=Lme_316 - System_Span_1_T_INT__ctor_void__int
 	.long LDIFF_SYM5078
 	.long 0
-	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,152,10
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6
 	.align 3
 Lfde775_end:
 
@@ -133817,7 +134008,7 @@ Lfde800_start:
 LDIFF_SYM5196=Lme_32f - wrapper_runtime_invoke__Module_runtime_invoke_void__this___single_single_single_single_single_single_single_single_single_single_single_single_single_single_single_single_intptr__intptr_intptr_intptr
 	.long LDIFF_SYM5196
 	.long 0
-	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,84,151,10,68,153,9
+	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29,84,151,12,68,153,11
 	.align 3
 Lfde800_end:
 
@@ -133876,7 +134067,7 @@ Lfde801_start:
 LDIFF_SYM5204=Lme_330 - wrapper_runtime_invoke__Module_runtime_invoke_Quaternion_Quaternion_Quaternion_single_object_intptr_intptr_intptr
 	.long LDIFF_SYM5204
 	.long 0
-	.byte 12,31,0,68,14,208,1,157,26,158,25,68,13,29,84,152,24,153,23
+	.byte 12,31,0,68,14,224,1,157,28,158,27,68,13,29,84,152,26,153,25
 	.align 3
 Lfde801_end:
 
@@ -133935,7 +134126,7 @@ Lfde802_start:
 LDIFF_SYM5212=Lme_331 - wrapper_runtime_invoke__Module_runtime_invoke_Vector4_Vector4_Vector4_single_object_intptr_intptr_intptr
 	.long LDIFF_SYM5212
 	.long 0
-	.byte 12,31,0,68,14,208,1,157,26,158,25,68,13,29,84,152,24,153,23
+	.byte 12,31,0,68,14,224,1,157,28,158,27,68,13,29,84,152,26,153,25
 	.align 3
 Lfde802_end:
 
@@ -134136,7 +134327,7 @@ Lfde806_start:
 LDIFF_SYM5237=Lme_335 - wrapper_runtime_invoke__Module_runtime_invoke_void__this___int_uint_object_intptr_intptr_intptr
 	.long LDIFF_SYM5237
 	.long 0
-	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,151,10,68,153,9
+	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29,68,151,12,68,153,11
 	.align 3
 Lfde806_end:
 
@@ -152895,7 +153086,7 @@ Lfde1170_start:
 LDIFF_SYM7594=Lme_4a1 - System_Buffers_ConfigurableArrayPool_1_Bucket_T_BYTE__ctor_int_int_int
 	.long LDIFF_SYM7594
 	.long 0
-	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29
+	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29
 	.align 3
 Lfde1170_end:
 
@@ -153074,7 +153265,7 @@ Lfde1173_start:
 LDIFF_SYM7618=Lme_4a4 - System_Buffers_ConfigurableArrayPool_1_Bucket_T_CHAR__ctor_int_int_int
 	.long LDIFF_SYM7618
 	.long 0
-	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29
+	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29
 	.align 3
 Lfde1173_end:
 

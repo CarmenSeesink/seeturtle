@@ -15,6 +15,8 @@ namespace seeturtle.Objects
         const string turtleCoralXpKey = "turtleCoralXp";
         const string turtleNameKey = "turtleName";
 
+        /* Create States */
+
         public TurtleState CurrentTurtleState
         {
             get
@@ -220,6 +222,8 @@ namespace seeturtle.Objects
 
         }
 
+        /* Increase Xp */
+
         public void giveFood()
         {
             Xp = Xp + 500;
@@ -234,6 +238,8 @@ namespace seeturtle.Objects
         {
             Xp = Xp + 500;
         }
+
+        /* Turtle Name */
 
         public string TurtleName
         {

@@ -14,11 +14,15 @@ namespace seeturtle
             InitializeComponent();
         }
 
+        /* Animation OnAppearing */
+
         protected override void OnAppearing()
         {
             base.OnAppearing();
             layout.TranslateTo(0, -20, 1000, Easing.BounceOut);
         }
+
+        /* Navigation */
 
         async void LetsPlayTapped(System.Object sender, System.EventArgs e)
         {

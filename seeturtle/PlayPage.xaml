@@ -17,64 +17,69 @@
                             RelativeLayout.XConstraint =
                             "{ConstraintExpression Type=RelativeToParent,
                             Property=Width,
-                            Factor=0.9,
-                            Constant=-15}"
-                            CornerRadius="0,0, 20, 0"
-                            HeightRequest="90"
-                            WidthRequest="80"
+                            Factor=0.8,
+                            Constant=20}"
+                            CornerRadius="0,0, 30, 0"
+                            HeightRequest="120"
+                            WidthRequest="70"
                             BackgroundColor="#f4315d">
-                   <RelativeLayout>
-                   <ImageButton Source="menu"
-                                Clicked="MenuTapped"
-                                WidthRequest="16"
-                                HeightRequest="14"
-                                TranslationX="20"
-                                Padding="1"
-                                TranslationY="40"
-                                CornerRadius="0"
+                  <RelativeLayout>
+                   <Image Source="menu"
+                                WidthRequest="20"
+                                HeightRequest="18"
+                                TranslationX="19"
+                                TranslationY="60"
                                 BackgroundColor="Transparent">
-                   </ImageButton>
-                       </RelativeLayout>
+                   </Image>
+               </RelativeLayout>
+                 <pancake:PancakeView.GestureRecognizers>
+                           <TapGestureRecognizer
+                               Tapped="MenuTapped">
+                           </TapGestureRecognizer>
+                 </pancake:PancakeView.GestureRecognizers>
                </pancake:PancakeView>
                <StackLayout RelativeLayout.YConstraint ="{ConstraintExpression Type=RelativeToParent,
                             Property=Height,
                             Factor=0,
                             Constant=0}"
-                            Margin="0, 40, 35, 0">
+                            Margin="0, 90, 35, 0">
                    <Label Style="{StaticResource HeaderWhite}"
                           Text="Lily"
                           x:Name="turtleNameLabel"/>
                    <Label Style="{StaticResource BodyWhite}"
-                          Text="The leatherback turtle"/>
+                          Text="the leatherback turtle"
+                          Margin="35, -5, 0, 0"/>
                </StackLayout>
                <RelativeLayout>
-                   <components:DragAndDropReceivingView AbsoluteLayout.LayoutFlags="All"
+                   <!--<components:DragAndDropReceivingView AbsoluteLayout.LayoutFlags="All"
                                                         AbsoluteLayout.LayoutBounds=".1,.1,.2,.3" 
-                                                        TranslationY="250"
-                                                        TranslationX="73"
+                                                        
                                                         BackgroundColor="Transparent"
                                                         HasShadow="False"
                                                         x:Name="droppable">
+                   
+                    </components:DragAndDropReceivingView>-->
                    <Image x:Name="turtleImage"
-                          WidthRequest="180"
-                          HeightRequest="180"
-                          Source="turtle_good_1"
-                          TranslationY="0"/>
-                    </components:DragAndDropReceivingView>
+                          VerticalOptions="Center"
+                          WidthRequest="190"
+                          HeightRequest="190"
+                          TranslationY="350"
+                          TranslationX="90"
+                          Source="turtle_good_1"/>
                    <lottie:AnimationView RelativeLayout.XConstraint =
                                          "{ConstraintExpression Type=RelativeToParent,
                                          Property=Width,
-                                         Factor=0.4,
+                                         Factor=0.6,
                                          Constant=-108}"
                                          RelativeLayout.YConstraint ="{ConstraintExpression Type=RelativeToParent,
                                          Property=Height,
-                                         Factor=0,
-                                         Constant=160}"
+                                         Factor=0.1,
+                                         Constant=200}"
                                          Loop="True"
                                          AutoPlay="True"
                                          Animation="whitebubbles.json"
-                                         HeightRequest="300"
-                                         WidthRequest="300"
+                                         HeightRequest="200"
+                                         WidthRequest="200"
                                          Speed="0.3"/>
                    <ImageButton RelativeLayout.XConstraint =
                                 "{ConstraintExpression Type=RelativeToParent,
@@ -84,7 +89,7 @@
                                 RelativeLayout.YConstraint ="{ConstraintExpression Type=RelativeToParent,
                                 Property=Height,
                                 Factor=0,
-                                Constant=200}"
+                                Constant=250}"
                                 Source="bags"
                                 Rotation="15"
                                 x:Name="bag"
@@ -101,7 +106,7 @@
                                 RelativeLayout.YConstraint ="{ConstraintExpression Type=RelativeToParent,
                                 Property=Height,
                                 Factor=0,
-                                Constant=400}"
+                                Constant=500}"
                                 Source="jellyfishs"
                                 Rotation="-25"
                                 x:Name="jellyfish"
@@ -110,7 +115,7 @@
                                 BackgroundColor="Transparent"
                                 Clicked="jellyfishTapped">    
                     </ImageButton>
-                    <components:DragAndDropMovingView RelativeLayout.XConstraint =
+                    <!--<components:DragAndDropMovingView RelativeLayout.XConstraint =
                                                       "{ConstraintExpression Type=RelativeToParent,
                                                       Property=Width,
                                                       Factor=0.5,
@@ -123,10 +128,10 @@
                                                       AbsoluteLayout.LayoutBounds=".1,.9,.2,.3"
                                                       BackgroundColor="#6328cf"
                                                       HasShadow="False">
-                            <Image Source="jellyfish"
+                            <Image Source="jellyfishs"
                                    HeightRequest="60"
                                    BackgroundColor="Transparent"/>
-                    </components:DragAndDropMovingView>
+                    </components:DragAndDropMovingView>-->
                     <Image RelativeLayout.XConstraint =
                             "{ConstraintExpression Type=RelativeToParent,
                             Property=Width,
@@ -134,8 +139,8 @@
                             Constant=-140}"
                             RelativeLayout.YConstraint ="{ConstraintExpression Type=RelativeToParent,
                             Property=Height,
-                            Factor=0.5,
-                            Constant=150}"
+                            Factor=0.45,
+                            Constant=200}"
                             Source="fish"
                             x:Name="fish"
                             HeightRequest="60"
@@ -146,7 +151,7 @@
                             "{ConstraintExpression Type=RelativeToParent,
                             Property=Width,
                             Factor=0.5,
-                            Constant=80}"
+                            Constant=70}"
                             RelativeLayout.YConstraint ="{ConstraintExpression Type=RelativeToParent,
                             Property=Height,
                             Factor=0.5,
@@ -160,12 +165,12 @@
                     <ImageButton RelativeLayout.XConstraint =
                                  "{ConstraintExpression Type=RelativeToParent,
                                  Property=Width,
-                                 Factor=0.5,
+                                 Factor=0.4,
                                  Constant=0}"
                                  RelativeLayout.YConstraint ="{ConstraintExpression Type=RelativeToParent,
                                  Property=Height,
-                                 Factor=0.5,
-                                 Constant=160}"
+                                 Factor=0.44,
+                                 Constant=260}"
                                  Source="coral_0"
                                  x:Name="coralImage"
                                  HeightRequest="80"
@@ -178,18 +183,18 @@
                             Constant=0}"
                             RelativeLayout.YConstraint ="{ConstraintExpression Type=RelativeToParent,
                             Property=Height,
-                            Factor=0.5,
-                            Constant=220}"
+                            Factor=0.45,
+                            Constant=300}"
                             Text="+ Add coral"
                             Clicked="showCoralTapped"
                             BackgroundColor="Transparent"
                             TextColor="White"
-                            FontSize="16"
+                            FontSize="15"
                             FontFamily="Montserrat-Regular">
                     </Button>
                
-               <Frame x:Name="bottomSheet" HasShadow="False" CornerRadius="40" Padding="1,4,1,0" BackgroundColor="#faf9f8"
-                   RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=.9,Constant=0}"
+               <Frame x:Name="bottomSheet" HasShadow="False" CornerRadius="40" Padding="1,4,1,0" BackgroundColor="White"
+                   RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=.89,Constant=0}"
                    RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=1,Constant=0}"
                    RelativeLayout.HeightConstraint="{ConstraintExpression
                    Type=RelativeToParent,Property=Height,Factor=1,Constant=0}">
@@ -197,28 +202,29 @@
                     <PanGestureRecognizer PanUpdated="OnPanUpdated" />
                 </Frame.GestureRecognizers>
 
-                <StackLayout Margin="0, 0, 0, 0" x:Name="mainLayout">
+                <StackLayout Margin="0, 5, 0, 0" x:Name="mainLayout">
                      <StackLayout.GestureRecognizers>
                     <TapGestureRecognizer Tapped="Handle_Tapped"/>
                 </StackLayout.GestureRecognizers>
-                    <BoxView HeightRequest="5" CornerRadius="2" WidthRequest="50" BackgroundColor="Gray" HorizontalOptions="Center"/>
-                    <Grid Margin="0, 5,0,0">
+                    <BoxView HeightRequest="5" CornerRadius="2" WidthRequest="50" BackgroundColor="#dddddd" HorizontalOptions="Center"/>
+                    <Grid Margin="0, 2,0,0">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*"></ColumnDefinition>
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
-                         <Label Text="Status"
+                         <Label Text="Turtle's status"
                            Style="{StaticResource SubHeader}"
-                           Margin="35, 2, 0, 0"></Label>
+                           Margin="35, 2, 0, 0"
+                                FontSize="16"></Label>
                         <Image Grid.Column="1"
                                Source="happy_good"
                                x:Name="happinessImage"
-                               WidthRequest="22"
+                               WidthRequest="19"
                                Margin="0, 5, 20, 0"
                                effects:TooltipEffect.Position="Top"
-                               effects:TooltipEffect.BackgroundColor="#f4315d"
+                               effects:TooltipEffect.BackgroundColor="#cccccc"
                                effects:TooltipEffect.TextColor="White"
                                effects:TooltipEffect.Text="The happiness level depends on the amount of coral being planted" 
                                effects:TooltipEffect.HasTooltip="True">
@@ -226,10 +232,10 @@
                         <Image Grid.Column="2"
                                Source="health_good"
                                x:Name="healthImage"
-                               WidthRequest="21"
+                               WidthRequest="18"
                                Margin="0, 5, 20, 0"
                                effects:TooltipEffect.Position="Top"
-                               effects:TooltipEffect.BackgroundColor="#f4315d"
+                               effects:TooltipEffect.BackgroundColor="#cccccc"
                                effects:TooltipEffect.TextColor="White"
                                effects:TooltipEffect.Text="The health level is related to removing pollution" 
                                effects:TooltipEffect.HasTooltip="True">
@@ -237,43 +243,103 @@
                         <Image Grid.Column="3"
                                Source="hunger_good"
                                x:Name="hungerImage"
-                               WidthRequest="25"
+                               WidthRequest="22"
                                Margin="0, 4, 35, 0"
                                effects:TooltipEffect.Position="Top"
-                               effects:TooltipEffect.BackgroundColor="#f4315d"
+                               effects:TooltipEffect.BackgroundColor="#cccccc"
                                effects:TooltipEffect.TextColor="White"
                                effects:TooltipEffect.Text="The hunger level depends on the amount of jellyfish is given" 
                                effects:TooltipEffect.HasTooltip="True">
                         </Image>
                     </Grid>
-                    <Grid Margin="35, 50, 35, 0">
+                    <Grid  Margin="35, 40, 35, 0">
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="80"></RowDefinition>
-                            <RowDefinition Height="80"></RowDefinition>
-                            <RowDefinition Height="80"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                             <ColumnDefinition Width="60"></ColumnDefinition>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                             <ColumnDefinition Width="60"></ColumnDefinition>
+                             <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            <ColumnDefinition Width="60"></ColumnDefinition>
+                            
+
+                        </Grid.ColumnDefinitions>
+                        <ImageButton Grid.Column="0"
+                                     Source="happy_good"
+                                     BackgroundColor="#ccbaf4"
+                                     HeightRequest="26"
+                                     WidthRequest="26"
+                                     CornerRadius="13"
+                                     Padding="6">
+                        </ImageButton>
+                        <Label Grid.Column="1"
+                               Text="Good"
+                               FontFamily="Poppins-Regular"
+                               TextColor="Black"
+                               FontSize="13"
+                               Margin="0, 5, 0, 0">
+                        </Label>
+                        <ImageButton Grid.Column="2"
+                                     Source="happy_bad"
+                                     BackgroundColor="#f7dda9"
+                                     HeightRequest="26"
+                                     WidthRequest="26"
+                                     CornerRadius="13"
+                                     Padding="6">
+                        </ImageButton>
+                        <Label Grid.Column="3"
+                               Text="Bad"
+                               FontFamily="Poppins-Regular"
+                               TextColor="Black"
+                               FontSize="13"
+                               Margin="0, 5, 0, 0">
+                        </Label>
+                        <ImageButton Grid.Column="4"
+                                     Source="happy_worse"
+                                     BackgroundColor="#f2a5bd"
+                                     HeightRequest="26"
+                                     WidthRequest="26"
+                                     CornerRadius="13"
+                                     Padding="6">
+                        </ImageButton>
+                        <Label Grid.Column="5"
+                               Text="Worse"
+                               FontFamily="Poppins-Regular"
+                               TextColor="Black"
+                               FontSize="13"
+                               Margin="0, 5, 0, 0">
+                        </Label>
+                    </Grid>
+                    <Grid Margin="35, 40, 35, 0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="60"></RowDefinition>
+                            <RowDefinition Height="60"></RowDefinition>
+                            <RowDefinition Height="60"></RowDefinition>
                         </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*"></ColumnDefinition>
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
-                            <ColumnDefinition Width="22"></ColumnDefinition>
+                            <ColumnDefinition Width="35"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <Label Text="Happiness"
-                               FontFamily="Montserrat-Medium"
-                               TextColor="Gray"
-                               FontSize="16">
+                               FontFamily="Poppins-Regular"
+                               TextColor="Black"
+                               FontSize="14">
                         </Label>
                         <Label Grid.Row="1"
                                Text="Health"
-                               FontFamily="Montserrat-Medium"
-                               TextColor="Gray"
-                               FontSize="16"
-                               Margin="0, 0, 0, 50">
+                               FontFamily="Poppins-Regular"
+                               TextColor="Black"
+                               FontSize="14"
+                               Margin="0, 0, 0, 20">
                         </Label>
                          <Label Grid.Row="2"
                                Text="Hunger"
-                               FontFamily="Montserrat-Medium"
-                               TextColor="Gray"
-                               FontSize="16">
+                               FontFamily="Poppins-Regular"
+                               TextColor="Black"
+                               FontSize="14">
                         </Label>
                         <ProgressBar Grid.Column="1"
                                      x:Name="HappinessProgressBar"
@@ -281,9 +347,9 @@
                                      ProgressColor="#6328cf"
                                      Margin="0, 10, 20, 0"/>
                         <Image Grid.Column="2"
-                               Source="happy_good"
-                               HeightRequest="10"
-                               WidthRequest="10"
+                               Source="coral"
+                               HeightRequest="30"
+                               WidthRequest="30"
                                Margin="0, -80, 0, 0">
                         </Image>
                         <ProgressBar Grid.Row="1"
@@ -296,7 +362,7 @@
                                      HeightRequest="50"/>
                         <Image Grid.Row="1"
                                Grid.Column="2"
-                               Source="health_good"
+                               Source="bagdark"
                                HeightRequest="30"
                                WidthRequest="30"
                                Margin="0, -80, 0, 0">
@@ -309,10 +375,10 @@
                                      Margin="0, 10, 20, 0"/>
                         <Image Grid.Row="2"
                                Grid.Column="2"
-                               Source="hunger_good"
+                               Source="jellyfishdark"
                                HeightRequest="30"
                                WidthRequest="30"
-                               Margin="0, -80, 0, 0"></Image>                         
+                               Margin="0, -70, 0, 0"></Image>                         
                     </Grid>
                 </StackLayout>
             </Frame>

@@ -12,6 +12,8 @@ namespace seeturtle
             InitializeComponent();
         }
 
+        /* Navigation */
+
         async void BackMenuTapped(System.Object sender, System.EventArgs e)
         {
             await Navigation.PopModalAsync();

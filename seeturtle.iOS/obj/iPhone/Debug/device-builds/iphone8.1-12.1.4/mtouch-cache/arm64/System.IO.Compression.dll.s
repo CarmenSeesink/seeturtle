@@ -21,7 +21,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 8,1
-	.asciz "Mono AOT Compiler 6.6.0 (2019-08/fd9f379d294 Wed Dec 18 16:32:17 EST 2019)"
+	.asciz "Mono AOT Compiler 6.8.0 (2019-10/c0c5c78e2bd Tue Feb 18 13:51:26 EST 2020)"
 	.asciz "System.IO.Compression.dll"
 	.asciz ""
 
@@ -418,7 +418,7 @@ System_IO_Compression_BrotliStream__ctor_System_IO_Stream_System_IO_Compression_
 .word 0xaa0103f8
 .word 0xf90013a2
 .word 0xf90017a3
-.word 0xb4000978
+.word 0xb4000a38
 .loc 2 23 0
 .word 0xb98023a0
 .word 0x34000180
@@ -432,7 +432,7 @@ System_IO_Compression_BrotliStream__ctor_System_IO_Stream_System_IO_Compression_
 .word 0xf940c430
 .word 0xd63f0200
 .word 0x53001c00
-.word 0x34000920
+.word 0x340009e0
 .word 0x14000019
 .loc 2 32 0
 .word 0xaa1803e0
@@ -440,7 +440,7 @@ System_IO_Compression_BrotliStream__ctor_System_IO_Stream_System_IO_Compression_
 .word 0xf940d030
 .word 0xd63f0200
 .word 0x53001c00
-.word 0x34000a60
+.word 0x34000b20
 .word 0x14000012
 .loc 2 36 0
 
@@ -458,7 +458,7 @@ ldr x0, [x16, #0]
 bl _p_8
 .word 0xaa0003e2
 .word 0xf9401ba1
-.word 0xd2801920
+.word 0xd2801940
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_9
@@ -467,6 +467,9 @@ bl _p_9
 .word 0xb9005ee0
 .loc 2 40 0
 .word 0x9100a2e0
+.word 0xf9001fa0
+.word 0xd5033bbf
+.word 0xf9401fa0
 .word 0xf9000018
 .word 0xd349fc00
 .word 0xd29ffffe
@@ -489,7 +492,10 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #216]
 .word 0xd29ffe01
 bl _p_10
+.word 0xf9001ba0
 .word 0x9100c2e1
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -515,7 +521,7 @@ ldr x0, [x16, #0]
 .word 0xd2800021
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -535,7 +541,7 @@ ldr x0, [x16, #0]
 bl _p_8
 .word 0xaa0003e2
 .word 0xf9401ba1
-.word 0xd2801920
+.word 0xd2801940
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_9
@@ -555,11 +561,11 @@ ldr x0, [x16, #0]
 bl _p_8
 .word 0xaa0003e2
 .word 0xf9401ba1
-.word 0xd2801920
+.word 0xd2801940
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_9
-.word 0x17ffff9e
+.word 0x17ffff98
 
 Lme_c:
 .text
@@ -593,7 +599,7 @@ ldr x0, [x16, #0]
 bl _p_8
 .word 0xaa0003e2
 .word 0xf94013a1
-.word 0xd28027c0
+.word 0xd28027e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_9
@@ -679,7 +685,7 @@ bl _p_15
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
 
@@ -691,11 +697,11 @@ System_IO_Compression_BrotliStream_ValidateParameters_byte___int_int:
 .loc 2 79 0 prologue_end
 .word 0xa9bc7bfd
 .word 0x910003fd
-.word 0xf9000ba0
+.word 0xf9000bb8
+.word 0xaa0003f8
 .word 0xf9000fa1
 .word 0xf90013a2
-.word 0xf9400ba0
-.word 0xb4000220
+.word 0xb4000238
 .loc 2 82 0
 .word 0xb9801ba0
 .word 0x6b1f001f
@@ -705,14 +711,14 @@ System_IO_Compression_BrotliStream_ValidateParameters_byte___int_int:
 .word 0x6b1f001f
 .word 0x540004cb
 .loc 2 88 0
-.word 0xf9400ba0
-.word 0xb9801800
+.word 0xb9801b00
 .word 0xb9801ba1
 .word 0x4b010000
 .word 0xb98023a1
 .word 0x6b01001f
-.word 0x5400060b
+.word 0x5400062b
 .loc 2 90 0
+.word 0xf9400bb8
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
@@ -724,7 +730,7 @@ ldr x0, [x16, #0]
 .word 0xd2802461
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -744,7 +750,7 @@ ldr x0, [x16, #0]
 bl _p_8
 .word 0xaa0003e2
 .word 0xf9401ba1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_9
@@ -764,7 +770,7 @@ ldr x0, [x16, #0]
 bl _p_8
 .word 0xaa0003e2
 .word 0xf9401ba1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_9
@@ -776,7 +782,7 @@ ldr x0, [x16, #0]
 .word 0xd2802fa1
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2801920
+.word 0xd2801940
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -877,7 +883,7 @@ System_IO_Compression_BrotliStream_Seek_long_System_IO_SeekOrigin:
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf90013a2
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -894,7 +900,7 @@ System_IO_Compression_BrotliStream_get_Length:
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -911,7 +917,7 @@ System_IO_Compression_BrotliStream_get_Position:
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -929,7 +935,7 @@ System_IO_Compression_BrotliStream_set_Position_long:
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -947,7 +953,7 @@ System_IO_Compression_BrotliStream_SetLength_long:
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -995,7 +1001,7 @@ ldr x0, [x16, #0]
 .word 0xd2803ee1
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2802440
+.word 0xd2802460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -1036,7 +1042,7 @@ ldr x0, [x16, #0]
 .word 0xd2803ee1
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2802440
+.word 0xd2802460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -1044,7 +1050,7 @@ bl _p_9
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
 
@@ -1075,7 +1081,7 @@ System_IO_Compression_BrotliStream_AsyncOperationCompleting:
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
 
@@ -1094,7 +1100,7 @@ ldr x0, [x16, #0]
 .word 0xd2803ee1
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2802440
+.word 0xd2802460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -1229,21 +1235,21 @@ bl _p_22
 .word 0xb9006b40
 .loc 3 47 0
 .word 0xb9806b40
-.word 0xf9401b41
-.word 0xb9801821
+.word 0xf9401b42
+.word 0xb9801841
 .word 0x6b01001f
 .word 0x54000dac
 .loc 3 44 0
 .word 0xb9806b40
-.word 0xf9401b41
-.word 0xb9801821
+.word 0xf9401b42
+.word 0xb9801841
 .word 0x6b01001f
 .word 0x5400024a
 .word 0xf9401744
 .word 0xf9401b41
 .word 0xb9806b42
-.word 0xf9401b40
-.word 0xb9801800
+.word 0xf9401b43
+.word 0xb9801860
 .word 0xb9806b43
 .word 0x4b030003
 .word 0xaa0403e0
@@ -1383,7 +1389,7 @@ ldr x0, [x16, #0]
 .word 0xd2807881
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2802440
+.word 0xd2802460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -1395,11 +1401,11 @@ ldr x0, [x16, #0]
 .word 0xd2805001
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2802440
+.word 0xd2802460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
 
@@ -1543,7 +1549,7 @@ ldr x0, [x16, #0]
 .word 0xd2803ee1
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2802440
+.word 0xd2802460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -1606,7 +1612,7 @@ ldr x0, [x16, #0]
 .word 0xd2805001
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2802440
+.word 0xd2802460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -1616,7 +1622,7 @@ Lme_23:
 	.align 4
 	.no_dead_strip System_IO_Compression_BrotliStream_FinishReadAsyncMemory_System_Memory_1_byte_System_Threading_CancellationToken
 System_IO_Compression_BrotliStream_FinishReadAsyncMemory_System_Memory_1_byte_System_Threading_CancellationToken:
-.word 0xa9b17bfd
+.word 0xa9b07bfd
 .word 0x910003fd
 .word 0xf90013a0
 .word 0xf90017a1
@@ -1633,6 +1639,7 @@ bl _p_36
 .word 0xf90043a0
 .word 0x910223a0
 .word 0x9100a001
+.word 0xd5033bbf
 .word 0xf94013a0
 .word 0xf9000020
 .word 0xd349fc21
@@ -1649,6 +1656,9 @@ ldr x2, [x16, #16]
 .word 0x910223a0
 .word 0x9100e002
 .word 0xaa0203e0
+.word 0xf9007fa0
+.word 0xd5033bbf
+.word 0xf9407fa0
 .word 0xf94017a1
 .word 0xf9000041
 .word 0xd349fc02
@@ -1668,6 +1678,7 @@ ldr x3, [x16, #16]
 .word 0x910223a0
 .word 0x9100c002
 .word 0xaa0203e1
+.word 0xd5033bbf
 .word 0xf9401fa0
 .word 0xf9000040
 .word 0xd349fc21
@@ -1693,6 +1704,9 @@ ldr x1, [x16, #288]
 .word 0xf90033a1
 .word 0x91002002
 .word 0xaa0203e0
+.word 0xf9007ba0
+.word 0xd5033bbf
+.word 0xf9407ba0
 .word 0xf94027a1
 .word 0xf9000041
 .word 0xd349fc02
@@ -1776,7 +1790,7 @@ bl _p_38
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0x910003bf
-.word 0xa8cf7bfd
+.word 0xa8d07bfd
 .word 0xd65f03c0
 
 Lme_24:
@@ -1834,7 +1848,7 @@ bl _p_41
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
 
@@ -1925,7 +1939,7 @@ System_IO_Compression_BrotliStream_WriteCore_System_ReadOnlySpan_1_byte_bool:
 .word 0xb9805f20
 .word 0xd280003e
 .word 0x6b1e001f
-.word 0x54001141
+.word 0x54001121
 .loc 4 36 0
 .word 0xaa1903e0
 bl _p_19
@@ -1978,7 +1992,7 @@ ldr x1, [x16, #320]
 .loc 4 44 0
 .word 0xeb1f033f
 .word 0x10000011
-.word 0x54000d00
+.word 0x54000ce0
 .word 0x91012320
 .word 0xf9401fa1
 .word 0xf9003fa1
@@ -2002,7 +2016,7 @@ bl _p_43
 .word 0xaa1803e0
 .word 0xd280007e
 .word 0x6b1e001f
-.word 0x540007a0
+.word 0x54000780
 .loc 4 47 0
 .word 0xb980b3a0
 .word 0x6b1f001f
@@ -2071,7 +2085,6 @@ bl _p_45
 .word 0xa8d07bfd
 .word 0xd65f03c0
 bl _p_46
-.word 0x17ffff9c
 .loc 4 46 0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -2080,7 +2093,7 @@ ldr x0, [x16, #0]
 .word 0xd2809861
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2802440
+.word 0xd2802460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -2092,11 +2105,11 @@ ldr x0, [x16, #0]
 .word 0xd2808041
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2802440
+.word 0xd2802460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
 
@@ -2220,7 +2233,7 @@ System_IO_Compression_BrotliStream_WriteAsync_System_ReadOnlyMemory_1_byte_Syste
 .word 0xb9805f40
 .word 0xd280003e
 .word 0x6b1e001f
-.word 0x540008c1
+.word 0x540008e1
 .loc 4 70 0
 .word 0xb9806340
 .word 0x6b1f001f
@@ -2234,7 +2247,7 @@ ldr x0, [x16, #0]
 .word 0xd2803ee1
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2802440
+.word 0xd2802460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -2269,7 +2282,8 @@ bl _p_33
 .word 0xf9003ba0
 .word 0x9101a3b9
 .word 0xaa1a03f8
-.word 0xb400049a
+.word 0xb40004ba
+.word 0xd5033bbf
 .word 0xf9000338
 .word 0xd349ff20
 .word 0xd29ffffe
@@ -2304,20 +2318,19 @@ ldr x0, [x16, #0]
 .word 0xd2808041
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2802440
+.word 0xd2802460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
 .word 0xd28004c0
 bl _p_51
-.word 0x17ffffdb
 
 Lme_2d:
 .text
 	.align 4
 	.no_dead_strip System_IO_Compression_BrotliStream_WriteAsyncMemoryCore_System_ReadOnlyMemory_1_byte_System_Threading_CancellationToken
 System_IO_Compression_BrotliStream_WriteAsyncMemoryCore_System_ReadOnlyMemory_1_byte_System_Threading_CancellationToken:
-.word 0xa9b47bfd
+.word 0xa9b37bfd
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
@@ -2333,6 +2346,7 @@ bl _p_36
 .word 0xf90033a0
 .word 0x9101a3a0
 .word 0x91008001
+.word 0xd5033bbf
 .word 0xf9400ba0
 .word 0xf9000020
 .word 0xd349fc21
@@ -2349,6 +2363,9 @@ ldr x2, [x16, #16]
 .word 0x9101a3a0
 .word 0x9100a002
 .word 0xaa0203e0
+.word 0xf90067a0
+.word 0xd5033bbf
+.word 0xf94067a0
 .word 0xf9400fa1
 .word 0xf9000041
 .word 0xd349fc02
@@ -2368,6 +2385,7 @@ ldr x3, [x16, #16]
 .word 0x9101a3a0
 .word 0x9100e002
 .word 0xaa0203e1
+.word 0xd5033bbf
 .word 0xf94017a0
 .word 0xf9000040
 .word 0xd349fc21
@@ -2388,6 +2406,9 @@ ldr x2, [x16, #16]
 .word 0xf90027a1
 .word 0x91002002
 .word 0xaa0203e0
+.word 0xf90063a0
+.word 0xd5033bbf
+.word 0xf94063a0
 .word 0xf9401fa1
 .word 0xf9000041
 .word 0xd349fc02
@@ -2451,7 +2472,7 @@ bl _p_52
 .word 0x91002000
 bl _p_53
 .word 0x910003bf
-.word 0xa8cc7bfd
+.word 0xa8cd7bfd
 .word 0xd65f03c0
 
 Lme_2e:
@@ -2479,13 +2500,13 @@ bl _p_19
 .loc 4 109 0
 .word 0xeb1f035f
 .word 0x10000011
-.word 0x54001100
+.word 0x540010e0
 .word 0x91012340
 .word 0xf9400000
 .word 0xb4000dc0
 .word 0xeb1f035f
 .word 0x10000011
-.word 0x54001040
+.word 0x54001020
 .word 0x91012340
 .word 0xf9400000
 .word 0xaa0003e1
@@ -2545,7 +2566,7 @@ ldr x1, [x16, #320]
 .loc 4 117 0
 .word 0xeb1f035f
 .word 0x10000011
-.word 0x540009a0
+.word 0x54000980
 .word 0x91012340
 .word 0xf9403ba1
 .word 0xf9002ba1
@@ -2561,7 +2582,7 @@ bl _p_54
 .word 0xaa1903e0
 .word 0xd280007e
 .word 0x6b1e001f
-.word 0x540005c0
+.word 0x540005a0
 .loc 4 120 0
 .word 0xb98083a0
 .word 0x6b1f001f
@@ -2612,7 +2633,6 @@ bl _p_23
 .word 0xa8cc7bfd
 .word 0xd65f03c0
 bl _p_46
-.word 0x17ffffb4
 .loc 4 119 0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -2632,7 +2652,7 @@ bl _p_26
 bl _p_27
 .word 0xf9405ba0
 bl _p_9
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
 
@@ -2659,7 +2679,7 @@ ldr x0, [x16, #0]
 .word 0xd2803ee1
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2802440
+.word 0xd2802460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -2710,7 +2730,7 @@ Lme_30:
 	.align 4
 	.no_dead_strip System_IO_Compression_BrotliStream_FlushAsyncCore_System_Threading_CancellationToken
 System_IO_Compression_BrotliStream_FlushAsyncCore_System_Threading_CancellationToken:
-.word 0xa9b67bfd
+.word 0xa9b57bfd
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
@@ -2724,6 +2744,7 @@ bl _p_36
 .word 0xf9002ba0
 .word 0x910163a0
 .word 0x91008001
+.word 0xd5033bbf
 .word 0xf9400ba0
 .word 0xf9000020
 .word 0xd349fc21
@@ -2740,6 +2761,7 @@ ldr x2, [x16, #16]
 .word 0x910163a0
 .word 0x9100a002
 .word 0xaa0203e1
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000040
 .word 0xd349fc21
@@ -2760,6 +2782,9 @@ ldr x2, [x16, #16]
 .word 0xf9001fa1
 .word 0x91002002
 .word 0xaa0203e0
+.word 0xf90053a0
+.word 0xd5033bbf
+.word 0xf94053a0
 .word 0xf94017a1
 .word 0xf9000041
 .word 0xd349fc02
@@ -2823,7 +2848,7 @@ bl _p_57
 .word 0x91002000
 bl _p_53
 .word 0x910003bf
-.word 0xa8ca7bfd
+.word 0xa8cb7bfd
 .word 0xd65f03c0
 
 Lme_31:
@@ -2885,7 +2910,7 @@ LDIFF_SYM3=ut_end - ut_51
 System_IO_Compression_BrotliDecoder_InitializeDecoder:
 .file 6 "/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/src/Xamarin.iOS/external/corefx/src/System.IO.Compression.Brotli/src/System/IO/Compression/dec/BrotliDecoder.cs"
 .loc 6 19 0 prologue_end
-.word 0xa9be7bfd
+.word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000bba
 .word 0xaa0003fa
@@ -2905,6 +2930,9 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x2, [x16, #376]
 .word 0xf9400042
 bl _p_58
+.word 0xf90013a0
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xf9000340
 .word 0xd349ff41
 .word 0xd29ffffe
@@ -2928,7 +2956,7 @@ ldr x2, [x16, #16]
 .loc 6 22 0
 .word 0xf9400bba
 .word 0x910003bf
-.word 0xa8c27bfd
+.word 0xa8c37bfd
 .word 0xd65f03c0
 .loc 6 21 0
 
@@ -2938,7 +2966,7 @@ ldr x0, [x16, #0]
 .word 0xd280a021
 bl _p_8
 .word 0xaa0003e1
-.word 0xd280eea0
+.word 0xd280eec0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -3036,7 +3064,7 @@ ldr x0, [x16, #0]
 bl _p_8
 .word 0xaa0003e2
 .word 0xf94013a1
-.word 0xd28027c0
+.word 0xd28027e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_9
@@ -3328,7 +3356,7 @@ b System_IO_Compression_BrotliEncoder__ctor_int_int
 System_IO_Compression_BrotliEncoder__ctor_int_int:
 .file 7 "/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/src/Xamarin.iOS/external/corefx/src/System.IO.Compression.Brotli/src/System/IO/Compression/enc/BrotliEncoder.cs"
 .loc 7 19 0 prologue_end
-.word 0xa9bd7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xf9000bb8
 .word 0xaa0003f8
@@ -3352,6 +3380,9 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x2, [x16, #376]
 .word 0xf9400042
 bl _p_66
+.word 0xf9001ba0
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9000300
 .word 0xd349ff01
 .word 0xd29ffffe
@@ -3383,7 +3414,7 @@ bl _p_67
 .loc 7 25 0
 .word 0xf9400bb8
 .word 0x910003bf
-.word 0xa8c37bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
 .loc 7 22 0
 
@@ -3393,7 +3424,7 @@ ldr x0, [x16, #0]
 .word 0xd280b5e1
 bl _p_8
 .word 0xaa0003e1
-.word 0xd280eea0
+.word 0xd280eec0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -3408,7 +3439,7 @@ b System_IO_Compression_BrotliEncoder_InitializeEncoder
 	.no_dead_strip System_IO_Compression_BrotliEncoder_InitializeEncoder
 System_IO_Compression_BrotliEncoder_InitializeEncoder:
 .loc 7 34 0 prologue_end
-.word 0xa9be7bfd
+.word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000bba
 .word 0xaa0003fa
@@ -3431,6 +3462,9 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x2, [x16, #376]
 .word 0xf9400042
 bl _p_66
+.word 0xf90013a0
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xf9000340
 .word 0xd349ff41
 .word 0xd29ffffe
@@ -3454,7 +3488,7 @@ ldr x2, [x16, #16]
 .loc 7 38 0
 .word 0xf9400bba
 .word 0x910003bf
-.word 0xa8c27bfd
+.word 0xa8c37bfd
 .word 0xd65f03c0
 .loc 7 37 0
 
@@ -3464,7 +3498,7 @@ ldr x0, [x16, #0]
 .word 0xd280b5e1
 bl _p_8
 .word 0xaa0003e1
-.word 0xd280eea0
+.word 0xd280eec0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -3562,7 +3596,7 @@ ldr x0, [x16, #0]
 bl _p_8
 .word 0xaa0003e2
 .word 0xf94013a1
-.word 0xd28027c0
+.word 0xd28027e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_9
@@ -3641,15 +3675,15 @@ ldr x0, [x16, #0]
 .word 0xd280cda1
 bl _p_8
 .word 0xf90037a0
-.word 0xd28023e0
+.word 0xd2802400
 bl _p_71
 .word 0xb900101a
 .word 0xf9003ba0
-.word 0xd28023e0
+.word 0xd2802400
 bl _p_71
 .word 0xb900101f
 .word 0xf9003fa0
-.word 0xd28023e0
+.word 0xd2802400
 bl _p_71
 .word 0xaa0003e3
 .word 0xf94037a0
@@ -3660,7 +3694,7 @@ bl _p_71
 bl _p_72
 .word 0xaa0003e2
 .word 0xf94033a1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_9
@@ -3682,7 +3716,7 @@ bl _p_8
 .word 0xf94033a0
 bl _p_73
 .word 0xaa0003e1
-.word 0xd2802440
+.word 0xd2802460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -3762,16 +3796,16 @@ ldr x0, [x16, #0]
 .word 0xd280fd21
 bl _p_8
 .word 0xf90037a0
-.word 0xd28023e0
+.word 0xd2802400
 bl _p_71
 .word 0xb900101a
 .word 0xf9003ba0
-.word 0xd28023e0
+.word 0xd2802400
 bl _p_71
 .word 0xd280015e
 .word 0xb900101e
 .word 0xf9003fa0
-.word 0xd28023e0
+.word 0xd2802400
 bl _p_71
 .word 0xaa0003e3
 .word 0xf94037a0
@@ -3782,7 +3816,7 @@ bl _p_71
 bl _p_72
 .word 0xaa0003e2
 .word 0xf94033a1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_9
@@ -3804,7 +3838,7 @@ bl _p_8
 .word 0xf94033a0
 bl _p_73
 .word 0xaa0003e1
-.word 0xd2802440
+.word 0xd2802460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -3871,7 +3905,7 @@ ldr x0, [x16, #0]
 .word 0xd2811981
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -4403,15 +4437,15 @@ ldr x0, [x16, #0]
 .word 0xd280cda1
 bl _p_8
 .word 0xf90067a0
-.word 0xd28023e0
+.word 0xd2802400
 bl _p_71
 .word 0xb9001019
 .word 0xf9006ba0
-.word 0xd28023e0
+.word 0xd2802400
 bl _p_71
 .word 0xb900101f
 .word 0xf9006fa0
-.word 0xd28023e0
+.word 0xd2802400
 bl _p_71
 .word 0xaa0003e3
 .word 0xf94067a0
@@ -4422,7 +4456,7 @@ bl _p_71
 bl _p_72
 .word 0xaa0003e2
 .word 0xf94063a1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_9
@@ -4441,16 +4475,16 @@ ldr x0, [x16, #0]
 .word 0xd280fd21
 bl _p_8
 .word 0xf90067a0
-.word 0xd28023e0
+.word 0xd2802400
 bl _p_71
 .word 0xb900101a
 .word 0xf9006ba0
-.word 0xd28023e0
+.word 0xd2802400
 bl _p_71
 .word 0xd280015e
 .word 0xb900101e
 .word 0xf9006fa0
-.word 0xd28023e0
+.word 0xd2802400
 bl _p_71
 .word 0xaa0003e3
 .word 0xf94067a0
@@ -4461,7 +4495,7 @@ bl _p_71
 bl _p_72
 .word 0xaa0003e2
 .word 0xf94063a1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_9
@@ -4488,8 +4522,8 @@ System_IO_Compression_CopyEncoder_GetBlock_System_IO_Compression_DeflateInput_Sy
 .word 0x3940031e
 .word 0xb9801b00
 .word 0x3940033e
-.word 0xf9400b21
-.word 0xb9801821
+.word 0xf9400b22
+.word 0xb9801841
 .word 0xb9801b22
 .word 0x4b020021
 .word 0x51001421
@@ -4635,6 +4669,7 @@ System_IO_Compression_DeflateInput_set_Buffer_byte__:
 .word 0xf9000fa1
 .word 0xf9400ba0
 .word 0x91004001
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -4842,7 +4877,7 @@ ldr x0, [x16, #0]
 .word 0xd2800021
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -4862,7 +4897,7 @@ ldr x0, [x16, #0]
 bl _p_8
 .word 0xaa0003e2
 .word 0xf9401ba1
-.word 0xd2801920
+.word 0xd2801940
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_9
@@ -4873,7 +4908,7 @@ Lme_55:
 	.no_dead_strip System_IO_Compression_DeflateManagedStream_InitializeInflater_System_IO_Stream_bool_System_IO_Compression_IFileFormatReader_System_IO_Compression_ZipArchiveEntry_CompressionMethodValues
 System_IO_Compression_DeflateManagedStream_InitializeInflater_System_IO_Stream_bool_System_IO_Compression_IFileFormatReader_System_IO_Compression_ZipArchiveEntry_CompressionMethodValues:
 .loc 10 47 0 prologue_end
-.word 0xa9ba7bfd
+.word 0xa9b97bfd
 .word 0x910003fd
 .word 0xa9015bb5
 .word 0xf90013b7
@@ -4888,7 +4923,7 @@ System_IO_Compression_DeflateManagedStream_InitializeInflater_System_IO_Stream_b
 .word 0xf940d030
 .word 0xd63f0200
 .word 0x53001c00
-.word 0x340008c0
+.word 0x340009a0
 .loc 10 50 0
 .word 0xaa1603f5
 .word 0xf9401fa0
@@ -4905,12 +4940,13 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #408]
 .word 0xd2801301
 bl _p_26
-.word 0xf9002ba0
+.word 0xf90033a0
 .word 0xf94023a1
 .word 0xaa1a03e2
 bl _p_89
-.word 0xf9402ba0
 .word 0x9100c2a1
+.word 0xd5033bbf
+.word 0xf94033a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -4925,6 +4961,9 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .loc 10 52 0
 .word 0x9100a2c0
+.word 0xf9002fa0
+.word 0xd5033bbf
+.word 0xf9402fa0
 .word 0xf9000017
 .word 0xd349fc00
 .word 0xd29ffffe
@@ -4949,7 +4988,10 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #216]
 .word 0xd2840001
 bl _p_10
+.word 0xf9002ba0
 .word 0x910102c1
+.word 0xd5033bbf
+.word 0xf9402ba0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -4967,7 +5009,7 @@ ldr x2, [x16, #16]
 .word 0xf94013b7
 .word 0xf94017ba
 .word 0x910003bf
-.word 0xa8c67bfd
+.word 0xa8c77bfd
 .word 0xd65f03c0
 .loc 10 48 0
 
@@ -4985,7 +5027,7 @@ ldr x0, [x16, #0]
 bl _p_8
 .word 0xaa0003e2
 .word 0xf9402ba1
-.word 0xd2801920
+.word 0xd2801940
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_9
@@ -5001,10 +5043,11 @@ System_IO_Compression_DeflateManagedStream_SetFileFormatWriter_System_IO_Compres
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf9400fa0
-.word 0xb40001e0
+.word 0xb4000200
 .loc 10 62 0
 .word 0xf9400ba0
 .word 0x91012001
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -5117,7 +5160,7 @@ ldr x0, [x16, #0]
 .word 0xd2811b41
 bl _p_8
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -5141,7 +5184,7 @@ ldr x0, [x16, #0]
 .word 0xd2811b41
 bl _p_8
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -5166,7 +5209,7 @@ ldr x0, [x16, #0]
 .word 0xd2811b41
 bl _p_8
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -5246,7 +5289,7 @@ ldr x0, [x16, #0]
 .word 0xd2811b41
 bl _p_8
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -5271,7 +5314,7 @@ ldr x0, [x16, #0]
 .word 0xd2811b41
 bl _p_8
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -5350,8 +5393,8 @@ bl _p_94
 .word 0x6b1f001f
 .word 0x540001ad
 .loc 10 161 0
-.word 0xf94022e0
-.word 0xb9801800
+.word 0xf94022e1
+.word 0xb9801820
 .word 0x6b0002bf
 .word 0x5400022c
 .loc 10 168 0
@@ -5401,12 +5444,12 @@ System_IO_Compression_DeflateManagedStream_ValidateParameters_byte___int_int:
 .loc 10 176 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
-.word 0xf9000ba0
-.word 0xf9000fa1
+.word 0xf9000bb8
+.word 0xf9000fa0
+.word 0xaa0103f8
 .word 0xf90013a2
 .word 0xf90017a3
-.word 0xf9400fa0
-.word 0xb4000220
+.word 0xb4000238
 .loc 10 179 0
 .word 0xb98023a0
 .word 0x6b1f001f
@@ -5416,14 +5459,14 @@ System_IO_Compression_DeflateManagedStream_ValidateParameters_byte___int_int:
 .word 0x6b1f001f
 .word 0x540003eb
 .loc 10 185 0
-.word 0xf9400fa0
-.word 0xb9801800
+.word 0xb9801b00
 .word 0xb98023a1
 .word 0x4b010000
 .word 0xb9802ba1
 .word 0x6b01001f
-.word 0x5400044b
+.word 0x5400046b
 .loc 10 187 0
+.word 0xf9400bb8
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -5435,7 +5478,7 @@ ldr x0, [x16, #0]
 .word 0xd2802461
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -5447,7 +5490,7 @@ ldr x0, [x16, #0]
 .word 0xd28025e1
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -5459,7 +5502,7 @@ ldr x0, [x16, #0]
 .word 0xd2802e21
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -5471,7 +5514,7 @@ ldr x0, [x16, #0]
 .word 0xd2802fa1
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2801920
+.word 0xd2801940
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -5510,7 +5553,7 @@ ldr x0, [x16, #0]
 .word 0xd2801c61
 bl _p_8
 .word 0xaa0003e2
-.word 0xd28027c0
+.word 0xd28027e0
 .word 0xf2a04000
 .word 0xd2800001
 bl _mono_create_corlib_exception_2
@@ -5553,7 +5596,7 @@ ldr x0, [x16, #0]
 .word 0xd2812c41
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2802440
+.word 0xd2802460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -5597,7 +5640,7 @@ ldr x0, [x16, #0]
 .word 0xd28139c1
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2802440
+.word 0xd2802460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -5796,7 +5839,7 @@ ldr x0, [x16, #0]
 .word 0xd2800a21
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2802440
+.word 0xd2802460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -5853,11 +5896,11 @@ ldr x0, [x16, #0]
 .word 0xd2803ee1
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2802440
+.word 0xd2802460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
 
@@ -5866,7 +5909,7 @@ Lme_6c:
 	.align 4
 	.no_dead_strip System_IO_Compression_DeflateManagedStream_ReadAsyncCore_System_Threading_Tasks_Task_1_int_byte___int_int_System_Threading_CancellationToken
 System_IO_Compression_DeflateManagedStream_ReadAsyncCore_System_Threading_Tasks_Task_1_int_byte___int_int_System_Threading_CancellationToken:
-.word 0xa9b37bfd
+.word 0xa9b27bfd
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
@@ -5884,6 +5927,7 @@ bl _p_36
 .word 0xf9003ba0
 .word 0x9101e3a0
 .word 0x9100a001
+.word 0xd5033bbf
 .word 0xf9400ba0
 .word 0xf9000020
 .word 0xd349fc21
@@ -5899,6 +5943,7 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .word 0x9101e3a0
 .word 0x91008001
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -5914,6 +5959,7 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .word 0x9101e3a0
 .word 0x9100e001
+.word 0xd5033bbf
 .word 0xf94013a0
 .word 0xf9000020
 .word 0xd349fc21
@@ -5934,6 +5980,7 @@ ldr x2, [x16, #16]
 .word 0x9101e3a0
 .word 0x9100c002
 .word 0xaa0203e1
+.word 0xd5033bbf
 .word 0xf9401fa0
 .word 0xf9000040
 .word 0xd349fc21
@@ -5958,6 +6005,9 @@ ldr x1, [x16, #424]
 .word 0xf9002fa1
 .word 0x91002002
 .word 0xaa0203e0
+.word 0xf9006ba0
+.word 0xd5033bbf
+.word 0xf9406ba0
 .word 0xf94027a1
 .word 0xf9000041
 .word 0xd349fc02
@@ -6025,7 +6075,7 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x15, [x16, #424]
 bl _p_102
 .word 0x910003bf
-.word 0xa8cd7bfd
+.word 0xa8ce7bfd
 .word 0xd65f03c0
 
 Lme_6d:
@@ -6468,7 +6518,7 @@ ldr x0, [x16, #0]
 .word 0xd2803ee1
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2802440
+.word 0xd2802460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -6478,7 +6528,7 @@ Lme_73:
 	.align 4
 	.no_dead_strip System_IO_Compression_DeflateManagedStream_WriteAsyncCore_byte___int_int_System_Threading_CancellationToken
 System_IO_Compression_DeflateManagedStream_WriteAsyncCore_byte___int_int_System_Threading_CancellationToken:
-.word 0xa9b47bfd
+.word 0xa9b37bfd
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
@@ -6495,6 +6545,7 @@ bl _p_36
 .word 0xf90037a0
 .word 0x9101c3a0
 .word 0x91008001
+.word 0xd5033bbf
 .word 0xf9400ba0
 .word 0xf9000020
 .word 0xd349fc21
@@ -6510,6 +6561,7 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .word 0x9101c3a0
 .word 0x9100a001
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -6530,6 +6582,7 @@ ldr x2, [x16, #16]
 .word 0x9101c3a0
 .word 0x9100e002
 .word 0xaa0203e1
+.word 0xd5033bbf
 .word 0xf9401ba0
 .word 0xf9000040
 .word 0xd349fc21
@@ -6550,6 +6603,9 @@ ldr x2, [x16, #16]
 .word 0xf9002ba1
 .word 0x91002002
 .word 0xaa0203e0
+.word 0xf90063a0
+.word 0xd5033bbf
+.word 0xf94063a0
 .word 0xf94023a1
 .word 0xf9000041
 .word 0xd349fc02
@@ -6613,7 +6669,7 @@ bl _p_112
 .word 0x91002000
 bl _p_53
 .word 0x910003bf
-.word 0xa8cc7bfd
+.word 0xa8cd7bfd
 .word 0xd65f03c0
 
 Lme_74:
@@ -6692,7 +6748,7 @@ Lme_77:
 System_IO_Compression_DeflaterManaged__ctor:
 .file 11 "/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/src/Xamarin.iOS/external/corefx/src/System.IO.Compression/src/System/IO/Compression/DeflateManaged/DeflaterManaged.cs"
 .loc 11 53 0 prologue_end
-.word 0xa9bd7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xf9000bba
 .word 0xaa0003fa
@@ -6702,10 +6758,11 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #472]
 .word 0xd2800501
 bl _p_26
-.word 0xf90013a0
+.word 0xf9001fa0
 bl _p_114
-.word 0xf94013a0
 .word 0x91004341
+.word 0xd5033bbf
+.word 0xf9401fa0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -6725,7 +6782,10 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #480]
 .word 0xd2800201
 bl _p_26
+.word 0xf9001ba0
 .word 0x91006341
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -6745,7 +6805,10 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #488]
 .word 0xd2800401
 bl _p_26
+.word 0xf90017a0
 .word 0x91008341
+.word 0xd5033bbf
+.word 0xf94017a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -6765,7 +6828,10 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #496]
 .word 0xd2800501
 bl _p_26
+.word 0xf90013a0
 .word 0x9100a341
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -6783,7 +6849,7 @@ ldr x2, [x16, #16]
 .loc 11 59 0
 .word 0xf9400bba
 .word 0x910003bf
-.word 0xa8c37bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
 
 Lme_78:
@@ -6836,6 +6902,7 @@ System_IO_Compression_DeflaterManaged_SetInput_byte___int_int:
 .word 0xf94012e0
 .word 0x3940001e
 .word 0x91004001
+.word 0xd5033bbf
 .word 0xf94013a0
 .word 0xf9000020
 .word 0xd349fc21
@@ -6895,7 +6962,7 @@ Lme_7a:
 	.no_dead_strip System_IO_Compression_DeflaterManaged_GetDeflateOutput_byte__
 System_IO_Compression_DeflaterManaged_GetDeflateOutput_byte__:
 .loc 11 101 0 prologue_end
-.word 0xa9b97bfd
+.word 0xa9b87bfd
 .word 0x910003fd
 .word 0xa9016bb9
 .word 0xaa0003f9
@@ -6912,7 +6979,10 @@ System_IO_Compression_DeflaterManaged_GetDeflateOutput_byte__:
 .word 0xb9003bbf
 .word 0xf9401720
 .word 0x3940001e
+.word 0xf9003ba0
 .word 0x91004001
+.word 0xd5033bbf
+.word 0xf9403ba0
 .word 0xf900003a
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -6930,7 +7000,7 @@ ldr x2, [x16, #16]
 .word 0xb9803b3a
 .word 0xd28000fe
 .word 0x6b1e035f
-.word 0x54001c62
+.word 0x54001cc2
 .word 0xd37df340
 .word 0x2a0003e1
 
@@ -7019,12 +7089,12 @@ bl _p_121
 .word 0xd28000be
 .word 0xb9003b3e
 .loc 11 125 0
-.word 0x14000096
+.word 0x14000099
 .loc 11 128 0
 .word 0xd280009e
 .word 0xb9003b3e
 .loc 11 131 0
-.word 0x14000093
+.word 0x14000096
 .loc 11 138 0
 .word 0xf9400b23
 .word 0xf9401321
@@ -7045,7 +7115,7 @@ bl _p_117
 .word 0x6b1f001f
 .word 0x9a9f17e0
 .word 0x53001c00
-.word 0x35001000
+.word 0x35001060
 .loc 11 142 0
 .word 0xd280003e
 .word 0xb9003b3e
@@ -7054,7 +7124,10 @@ bl _p_117
 .word 0xaa0103e0
 .word 0x3940003e
 bl _p_122
+.word 0xf9003ba0
 .word 0x9100c321
+.word 0xd5033bbf
+.word 0xf9403ba0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -7204,7 +7277,7 @@ bl _p_117
 .word 0xb9801800
 .word 0xa9416bb9
 .word 0x910003bf
-.word 0xa8c77bfd
+.word 0xa8c87bfd
 .word 0xd65f03c0
 
 Lme_7b:
@@ -7213,7 +7286,7 @@ Lme_7b:
 	.no_dead_strip System_IO_Compression_DeflaterManaged_Finish_byte___int_
 System_IO_Compression_DeflaterManaged_Finish_byte___int_:
 .loc 11 233 0 prologue_end
-.word 0xa9bd7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xf9000bb8
 .word 0xaa0003f8
@@ -7226,11 +7299,14 @@ System_IO_Compression_DeflaterManaged_Finish_byte___int_:
 .word 0xb900001f
 .loc 11 236 0
 .word 0xd2800020
-.word 0x1400002b
+.word 0x1400002e
 .loc 11 239 0
 .word 0xf9401700
 .word 0x3940001e
+.word 0xf9001ba0
 .word 0x91004002
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9400fa1
 .word 0xf9000041
 .word 0xd349fc42
@@ -7278,7 +7354,7 @@ bl _p_126
 .word 0xd2800020
 .word 0xf9400bb8
 .word 0x910003bf
-.word 0xa8c37bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
 
 Lme_7c:
@@ -7373,10 +7449,11 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #512]
 .word 0xd2800601
 bl _p_26
-.word 0xf90013a0
+.word 0xf90017a0
 bl _p_127
-.word 0xf94013a0
 .word 0x91004341
+.word 0xd5033bbf
+.word 0xf94017a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -7396,7 +7473,10 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #520]
 .word 0xd2800401
 bl _p_26
+.word 0xf90013a0
 .word 0x91006341
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -7665,8 +7745,8 @@ bl _p_86
 bl _p_134
 .loc 12 74 0
 .word 0x3940033e
-.word 0xf9400b20
-.word 0xb9801800
+.word 0xf9400b21
+.word 0xb9801820
 .word 0xb9801b21
 .word 0x4b010000
 .word 0xd280021e
@@ -7807,8 +7887,8 @@ bl _p_138
 .word 0x6b1f001f
 .word 0x5400016d
 .word 0x3940035e
-.word 0xf9400b40
-.word 0xb9801800
+.word 0xf9400b41
+.word 0xb9801820
 .word 0xb9801b41
 .word 0x4b010000
 .word 0xd280021e
@@ -7865,8 +7945,8 @@ System_IO_Compression_FastEncoder_SafeToWriteTo_System_IO_Compression_OutputBuff
 .word 0xf9000fa0
 .word 0xaa0103fa
 .word 0x3940035e
-.word 0xf9400b40
-.word 0xb9801800
+.word 0xf9400b41
+.word 0xb9801820
 .word 0xb9801b41
 .word 0x4b010000
 .word 0xd280021e
@@ -7912,7 +7992,7 @@ bl _p_82
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -8037,7 +8117,7 @@ bl _p_82
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -8078,7 +8158,7 @@ bl _p_82
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -8234,7 +8314,7 @@ ldr x1, [x16, #560]
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -8274,7 +8354,7 @@ ldr x0, [x16, #568]
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -8320,7 +8400,7 @@ Lme_94:
 	.no_dead_strip System_IO_Compression_FastEncoderStatics__cctor
 System_IO_Compression_FastEncoderStatics__cctor:
 .loc 13 13 0 prologue_end
-.word 0xa9bb7bfd
+.word 0xa9b77bfd
 .word 0x910003fd
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -8328,7 +8408,7 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #216]
 .word 0xd2800c41
 bl _p_10
-.word 0xf90023a0
+.word 0xf90043a0
 .word 0x91008000
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -8336,11 +8416,14 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x1, [x16, #576]
 .word 0xd2800c42
 bl _p_140
-.word 0xf94023a1
+.word 0xf94043a1
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #552]
+.word 0xf9003fa0
+.word 0xd5033bbf
+.word 0xf9403fa0
 .word 0xf9000001
 .loc 13 26 0
 
@@ -8349,7 +8432,7 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #216]
 .word 0xd2800c41
 bl _p_10
-.word 0xf9001fa0
+.word 0xf9003ba0
 .word 0x91008000
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -8357,11 +8440,14 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x1, [x16, #584]
 .word 0xd2800c42
 bl _p_140
-.word 0xf9401fa1
+.word 0xf9403ba1
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #592]
+.word 0xf90037a0
+.word 0xd5033bbf
+.word 0xf94037a0
 .word 0xf9000001
 .loc 13 70 0
 
@@ -8370,7 +8456,7 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #600]
 .word 0xd2804021
 bl _p_10
-.word 0xf9001ba0
+.word 0xf90033a0
 .word 0x91008000
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -8378,11 +8464,14 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x1, [x16, #608]
 .word 0xd2810082
 bl _p_140
-.word 0xf9401ba1
+.word 0xf94033a1
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #528]
+.word 0xf9002fa0
+.word 0xd5033bbf
+.word 0xf9402fa0
 .word 0xf9000001
 .loc 13 148 0
 
@@ -8391,7 +8480,7 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #600]
 .word 0xd2800401
 bl _p_10
-.word 0xf90017a0
+.word 0xf9002ba0
 .word 0x91008000
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -8399,11 +8488,14 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x1, [x16, #616]
 .word 0xd2801002
 bl _p_140
-.word 0xf94017a1
+.word 0xf9402ba1
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #536]
+.word 0xf90027a0
+.word 0xd5033bbf
+.word 0xf94027a0
 .word 0xf9000001
 .loc 13 157 0
 
@@ -8412,7 +8504,7 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #600]
 .word 0xd2800201
 bl _p_10
-.word 0xf90013a0
+.word 0xf90023a0
 .word 0x91008000
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -8420,11 +8512,14 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x1, [x16, #624]
 .word 0xd2800802
 bl _p_140
-.word 0xf94013a1
+.word 0xf94023a1
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #544]
+.word 0xf9001fa0
+.word 0xd5033bbf
+.word 0xf9401fa0
 .word 0xf9000001
 .loc 13 158 0
 
@@ -8433,7 +8528,7 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #216]
 .word 0xd28003a1
 bl _p_10
-.word 0xf9000fa0
+.word 0xf9001ba0
 .word 0x91008000
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -8441,11 +8536,14 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x1, [x16, #632]
 .word 0xd28003a2
 bl _p_140
-.word 0xf9400fa1
+.word 0xf9401ba1
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #640]
+.word 0xf90017a0
+.word 0xd5033bbf
+.word 0xf94017a0
 .word 0xf9000001
 .loc 13 159 0
 
@@ -8454,7 +8552,7 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #216]
 .word 0xd2800401
 bl _p_10
-.word 0xf9000ba0
+.word 0xf90013a0
 .word 0x91008000
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -8462,11 +8560,14 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x1, [x16, #648]
 .word 0xd2800402
 bl _p_140
-.word 0xf9400ba1
+.word 0xf94013a1
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #560]
+.word 0xf9000fa0
+.word 0xd5033bbf
+.word 0xf9400fa0
 .word 0xf9000001
 .loc 13 173 0
 bl _p_141
@@ -8475,9 +8576,12 @@ bl _p_141
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #568]
+.word 0xf9000ba0
+.word 0xd5033bbf
+.word 0xf9400ba0
 .word 0xf9000001
 .word 0x910003bf
-.word 0xa8c57bfd
+.word 0xa8c97bfd
 .word 0xd65f03c0
 
 Lme_95:
@@ -8521,7 +8625,7 @@ Lme_97:
 	.no_dead_strip System_IO_Compression_FastEncoderWindow_get_UnprocessedInput
 System_IO_Compression_FastEncoderWindow_get_UnprocessedInput:
 .loc 14 57 0 prologue_end
-.word 0xa9be7bfd
+.word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000bba
 .word 0xaa0003fa
@@ -8534,7 +8638,10 @@ bl _p_26
 .loc 14 58 0
 .word 0xf9400b41
 .word 0x3940001e
+.word 0xf90013a0
 .word 0x91004002
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xf9000041
 .word 0xd349fc42
 .word 0xd29ffffe
@@ -8560,7 +8667,7 @@ ldr x3, [x16, #16]
 .loc 14 61 0
 .word 0xf9400bba
 .word 0x910003bf
-.word 0xa8c27bfd
+.word 0xa8c37bfd
 .word 0xd65f03c0
 
 Lme_98:
@@ -8584,7 +8691,7 @@ Lme_99:
 	.no_dead_strip System_IO_Compression_FastEncoderWindow_ResetWindow
 System_IO_Compression_FastEncoderWindow_ResetWindow:
 .loc 14 69 0 prologue_end
-.word 0xa9be7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xf9000bba
 .word 0xaa0003fa
@@ -8594,7 +8701,10 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #216]
 .word 0xd28820c1
 bl _p_10
+.word 0xf9001ba0
 .word 0x91004341
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -8614,7 +8724,10 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #656]
 .word 0xd2842041
 bl _p_10
+.word 0xf90017a0
 .word 0x91006341
+.word 0xd5033bbf
+.word 0xf94017a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -8634,7 +8747,10 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #656]
 .word 0xd2810001
 bl _p_10
+.word 0xf90013a0
 .word 0x91008341
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -8656,7 +8772,7 @@ ldr x2, [x16, #16]
 .loc 14 74 0
 .word 0xf9400bba
 .word 0x910003bf
-.word 0xa8c27bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
 
 Lme_9a:
@@ -8837,7 +8953,7 @@ bl _p_143
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -8934,7 +9050,7 @@ System_IO_Compression_FastEncoderWindow_InsertString_uint_:
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -9249,7 +9365,7 @@ bl _p_147
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -9413,7 +9529,7 @@ System_IO_Compression_FastEncoderWindow_FindMatch_int_int__int_int:
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -9487,12 +9603,13 @@ Lme_ad:
 	.no_dead_strip System_IO_Compression_HuffmanTree__ctor_byte__
 System_IO_Compression_HuffmanTree__ctor_byte__:
 .loc 15 54 0 prologue_end
-.word 0xa9be7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xf9000bb9
 .word 0xaa0003f9
 .word 0xf9000fa1
 .word 0x9100a321
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -9507,8 +9624,8 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .loc 15 56 0
-.word 0xf9401720
-.word 0xb9801800
+.word 0xf9401721
+.word 0xb9801820
 .word 0xd280241e
 .word 0x6b1e001f
 .word 0x54000081
@@ -9539,7 +9656,10 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #680]
 bl _p_10
+.word 0xf9001ba0
 .word 0x91004321
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -9553,15 +9673,18 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .loc 15 72 0
-.word 0xf9401720
-.word 0xb9801800
+.word 0xf9401721
+.word 0xb9801820
 .word 0x531f7801
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #680]
 bl _p_10
+.word 0xf90017a0
 .word 0x91006321
+.word 0xd5033bbf
+.word 0xf94017a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -9575,15 +9698,18 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .loc 15 73 0
-.word 0xf9401720
-.word 0xb9801800
+.word 0xf9401721
+.word 0xb9801820
 .word 0x531f7801
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #680]
 bl _p_10
+.word 0xf90013a0
 .word 0x91008321
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -9602,7 +9728,7 @@ bl _p_148
 .loc 15 76 0
 .word 0xf9400bb9
 .word 0x910003bf
-.word 0xa8c27bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
 
 Lme_ae:
@@ -9699,7 +9825,7 @@ bl _p_10
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -9743,7 +9869,7 @@ bl _p_10
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -9903,8 +10029,8 @@ bl _p_149
 .word 0xb9000001
 .loc 15 128 0
 .word 0x110006f7
-.word 0xf9401740
-.word 0xb9801800
+.word 0xf9401741
+.word 0xb9801820
 .word 0x6b0002ff
 .word 0x54fffa0b
 .loc 15 138 0
@@ -9915,7 +10041,7 @@ bl _p_149
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -9937,8 +10063,8 @@ bl _p_150
 .word 0xaa0003f9
 .loc 15 148 0
 .word 0xf9402ba0
-.word 0xf9401400
-.word 0xb9801800
+.word 0xf9401401
+.word 0xb9801820
 .word 0x93403c18
 .loc 15 150 0
 .word 0xd2800017
@@ -10104,8 +10230,8 @@ bl _p_150
 .loc 15 150 0
 .word 0x110006f7
 .word 0xf9402ba0
-.word 0xf9401400
-.word 0xb9801800
+.word 0xf9401401
+.word 0xb9801820
 .word 0x6b0002ff
 .word 0x54ffef6b
 .loc 15 251 0
@@ -10154,7 +10280,7 @@ bl _p_26
 bl _p_27
 .word 0xf94033a0
 bl _p_9
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -10296,7 +10422,7 @@ bl _p_26
 bl _p_27
 .word 0xf94023a0
 bl _p_9
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -10306,45 +10432,51 @@ Lme_b3:
 	.no_dead_strip System_IO_Compression_HuffmanTree__cctor
 System_IO_Compression_HuffmanTree__cctor:
 .loc 15 43 0 prologue_end
-.word 0xa9bd7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 bl _p_153
-.word 0xf90017a0
+.word 0xf9001fa0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #688]
 .word 0xd2800701
 bl _p_26
-.word 0xf94017a1
-.word 0xf90013a0
+.word 0xf9401fa1
+.word 0xf9001ba0
 bl _p_154
-.word 0xf94013a1
+.word 0xf9401ba1
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #664]
+.word 0xf90017a0
+.word 0xd5033bbf
+.word 0xf94017a0
 .word 0xf9000001
 .loc 15 45 0
 bl _p_155
-.word 0xf9000fa0
+.word 0xf90013a0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #688]
 .word 0xd2800701
 bl _p_26
-.word 0xf9400fa1
-.word 0xf9000ba0
+.word 0xf94013a1
+.word 0xf9000fa0
 bl _p_154
-.word 0xf9400ba1
+.word 0xf9400fa1
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #672]
+.word 0xf9000ba0
+.word 0xd5033bbf
+.word 0xf9400ba0
 .word 0xf9000001
 .word 0x910003bf
-.word 0xa8c37bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
 
 Lme_b4:
@@ -10354,7 +10486,7 @@ Lme_b4:
 System_IO_Compression_InflaterManaged__ctor_System_IO_Compression_IFileFormatReader_bool:
 .file 16 "/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/src/Xamarin.iOS/external/corefx/src/System.IO.Compression/src/System/IO/Compression/DeflateManaged/InflaterManaged.cs"
 .loc 16 72 0 prologue_end
-.word 0xa9bc7bfd
+.word 0xa9ba7bfd
 .word 0x910003fd
 .word 0xa90167b8
 .word 0xf90013ba
@@ -10367,7 +10499,10 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #216]
 .word 0xd2800081
 bl _p_10
+.word 0xf9002ba0
 .word 0x9100c301
+.word 0xd5033bbf
+.word 0xf9402ba0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -10387,10 +10522,11 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #696]
 .word 0xd2800401
 bl _p_26
-.word 0xf9001ba0
+.word 0xf90027a0
 bl _p_156
-.word 0xf9401ba0
 .word 0x91004301
+.word 0xd5033bbf
+.word 0xf94027a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -10410,7 +10546,10 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #704]
 .word 0xd2800501
 bl _p_26
+.word 0xf90023a0
 .word 0x91006301
+.word 0xd5033bbf
+.word 0xf94023a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -10430,7 +10569,10 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #216]
 .word 0xd2802801
 bl _p_10
+.word 0xf9001fa0
 .word 0x9100e301
+.word 0xd5033bbf
+.word 0xf9401fa0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -10450,7 +10592,10 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #216]
 .word 0xd2800261
 bl _p_10
+.word 0xf9001ba0
 .word 0x91010301
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -10466,9 +10611,12 @@ ldr x2, [x16, #16]
 .loc 16 101 0
 .word 0x3902431a
 .loc 16 102 0
-.word 0xb40001f9
+.word 0xb4000259
 .loc 16 104 0
 .word 0x91014300
+.word 0xf9001ba0
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9000019
 .word 0xd349fc00
 .word 0xd29ffffe
@@ -10498,7 +10646,7 @@ ldr x1, [x16, #16]
 .word 0xa94167b8
 .word 0xf94013ba
 .word 0x910003bf
-.word 0xa8c47bfd
+.word 0xa8c67bfd
 .word 0xd65f03c0
 
 Lme_b5:
@@ -10711,7 +10859,7 @@ bl _p_94
 .word 0x34000060
 .loc 16 193 0
 .word 0xd2800020
-.word 0x140000ee
+.word 0x140000f4
 .loc 16 196 0
 .word 0x39417340
 .word 0x34000600
@@ -10735,7 +10883,7 @@ ldr x15, [x16, #728]
 .word 0x35000060
 .loc 16 202 0
 .word 0xd2800000
-.word 0x140000db
+.word 0x140000e1
 .loc 16 204 0
 .word 0xd280005e
 .word 0xb9005b5e
@@ -10767,13 +10915,13 @@ ldr x15, [x16, #736]
 .word 0x35000060
 .loc 16 209 0
 .word 0xd2800000
-.word 0x140000c1
+.word 0x140000c7
 .loc 16 211 0
 .word 0xd28002fe
 .word 0xb9005b5e
 .loc 16 212 0
 .word 0xd2800020
-.word 0x140000bd
+.word 0x140000c3
 .loc 16 216 0
 .word 0xb9805b40
 .word 0xd280005e
@@ -10789,7 +10937,7 @@ bl _p_160
 .word 0x35000060
 .loc 16 221 0
 .word 0xd2800000
-.word 0x140000b0
+.word 0x140000b6
 .loc 16 223 0
 .word 0xf9400f42
 .word 0xaa0203e0
@@ -10805,7 +10953,7 @@ bl _p_161
 .word 0xb9805b40
 .word 0xd280007e
 .word 0x6b1e001f
-.word 0x54000c41
+.word 0x54000d01
 .loc 16 230 0
 .word 0xf9400f42
 .word 0xaa0203e0
@@ -10819,7 +10967,7 @@ bl _p_160
 .word 0xb9005b5e
 .loc 16 233 0
 .word 0xd2800000
-.word 0x14000098
+.word 0x1400009e
 .loc 16 236 0
 .word 0xf9400f42
 .word 0xaa0203e0
@@ -10837,12 +10985,12 @@ bl _p_161
 .word 0xd280009e
 .word 0xb9005b5e
 .loc 16 240 0
-.word 0x14000049
+.word 0x1400004f
 .loc 16 241 0
 .word 0xb9806740
 .word 0xd280003e
 .word 0x6b1e001f
-.word 0x54000601
+.word 0x540006c1
 .loc 16 243 0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -10856,7 +11004,10 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #664]
 .word 0xf9400000
+.word 0xf9001fa0
 .word 0x91008341
+.word 0xd5033bbf
+.word 0xf9401fa0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -10882,7 +11033,10 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #672]
 .word 0xf9400000
+.word 0xf9001ba0
 .word 0x9100a341
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -11216,7 +11370,7 @@ bl _p_26
 bl _p_27
 .word 0xf9401ba0
 bl _p_9
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -11334,8 +11488,8 @@ bl _p_168
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #760]
-.word 0xf9400000
-.word 0xb9801800
+.word 0xf9400001
+.word 0xb9801820
 .word 0x6b0002ff
 .word 0x5400166a
 .loc 16 438 0
@@ -11386,8 +11540,8 @@ bl _p_161
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x1, [x16, #768]
-.word 0xf9400021
-.word 0xb9801821
+.word 0xf9400022
+.word 0xb9801841
 .word 0x6b01001f
 .word 0x5400132a
 .loc 16 460 0
@@ -11595,7 +11749,7 @@ bl _p_26
 bl _p_27
 .word 0xf9401ba0
 bl _p_9
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -11615,7 +11769,7 @@ System_IO_Compression_InflaterManaged_DecodeDynamicBlockHeader:
 .word 0x51001019
 .word 0xd28000de
 .word 0x6b1e033f
-.word 0x54002c62
+.word 0x54002c82
 .word 0xd37df320
 .word 0x2a0003e1
 
@@ -11639,7 +11793,7 @@ bl _p_161
 .word 0x5400006a
 .loc 16 554 0
 .word 0xd2800000
-.word 0x140001ab
+.word 0x140001ae
 .loc 16 556 0
 .word 0xb9807f40
 .word 0x11040400
@@ -11661,7 +11815,7 @@ bl _p_161
 .word 0x5400006a
 .loc 16 564 0
 .word 0xd2800000
-.word 0x1400019a
+.word 0x1400019d
 .loc 16 566 0
 .word 0xb9808340
 .word 0x11000400
@@ -11683,7 +11837,7 @@ bl _p_161
 .word 0x5400006a
 .loc 16 574 0
 .word 0xd2800000
-.word 0x14000189
+.word 0x1400018c
 .loc 16 576 0
 .word 0xb9808740
 .word 0x11001000
@@ -11709,7 +11863,7 @@ bl _p_161
 .word 0x5400006a
 .loc 16 587 0
 .word 0xd2800000
-.word 0x14000176
+.word 0x14000179
 .loc 16 589 0
 .word 0xf9402340
 
@@ -11722,7 +11876,7 @@ ldr x1, [x16, #800]
 .word 0xb9801823
 .word 0xeb02007f
 .word 0x10000011
-.word 0x540033c9
+.word 0x54003429
 .word 0x8b020021
 .word 0x91008021
 .word 0x39400021
@@ -11730,7 +11884,7 @@ ldr x1, [x16, #800]
 .word 0xb9801802
 .word 0xeb01005f
 .word 0x10000011
-.word 0x540032c9
+.word 0x54003329
 .word 0x8b010000
 .word 0x91008000
 .word 0x39000019
@@ -11757,7 +11911,7 @@ ldr x1, [x16, #800]
 .word 0xb9801823
 .word 0xeb02007f
 .word 0x10000011
-.word 0x54003009
+.word 0x54003069
 .word 0x8b020021
 .word 0x91008021
 .word 0x39400021
@@ -11765,7 +11919,7 @@ ldr x1, [x16, #800]
 .word 0xb9801802
 .word 0xeb01005f
 .word 0x10000011
-.word 0x54002f09
+.word 0x54002f69
 .word 0x8b010000
 .word 0x91008000
 .word 0x3900001f
@@ -11775,8 +11929,8 @@ ldr x1, [x16, #800]
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #800]
-.word 0xf9400000
-.word 0xb9801800
+.word 0xf9400001
+.word 0xb9801820
 .word 0x6b00033f
 .word 0x54fffc8b
 .loc 16 599 0
@@ -11791,8 +11945,9 @@ bl _p_26
 .word 0xf94027a1
 .word 0xf90023a0
 bl _p_154
-.word 0xf94023a0
 .word 0x91012341
+.word 0xd5033bbf
+.word 0xf94023a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -11836,7 +11991,7 @@ bl _p_167
 .word 0x5400006a
 .loc 16 614 0
 .word 0xd2800000
-.word 0x1400010a
+.word 0x1400010c
 .loc 16 630 0
 .word 0xb9808f40
 .word 0xd28001fe
@@ -11853,7 +12008,7 @@ bl _p_167
 .word 0xb9801803
 .word 0xeb02007f
 .word 0x10000011
-.word 0x540025c9
+.word 0x54002609
 .word 0x8b020000
 .word 0x91008000
 .word 0x39000001
@@ -11877,10 +12032,10 @@ bl _p_160
 .word 0xb9005b5e
 .loc 16 642 0
 .word 0xd2800000
-.word 0x140000e8
+.word 0x140000ea
 .loc 16 645 0
 .word 0xb9807b40
-.word 0x34001d80
+.word 0x34001dc0
 .loc 16 651 0
 .word 0xf9401f40
 .word 0xb9807b41
@@ -11889,7 +12044,7 @@ bl _p_160
 .word 0xb9801802
 .word 0xeb01005f
 .word 0x10000011
-.word 0x54002229
+.word 0x54002269
 .word 0x8b010000
 .word 0x91008000
 .word 0x39400000
@@ -11907,7 +12062,7 @@ bl _p_161
 .word 0xb190000
 .word 0xb9808b41
 .word 0x6b01001f
-.word 0x54001bac
+.word 0x54001bec
 .loc 16 659 0
 .word 0xd2800016
 .word 0x1400000f
@@ -11921,7 +12076,7 @@ bl _p_161
 .word 0xb9801802
 .word 0xeb01005f
 .word 0x10000011
-.word 0x54001ea9
+.word 0x54001ee9
 .word 0x8b010000
 .word 0x91008000
 .word 0x39000018
@@ -11948,7 +12103,7 @@ bl _p_160
 .word 0xb9005b5e
 .loc 16 669 0
 .word 0xd2800000
-.word 0x140000ac
+.word 0x140000ae
 .loc 16 672 0
 .word 0xf9400f42
 .word 0xaa0203e0
@@ -11962,7 +12117,7 @@ bl _p_161
 .word 0xb190000
 .word 0xb9808b41
 .word 0x6b01001f
-.word 0x5400170c
+.word 0x5400174c
 .loc 16 679 0
 .word 0xd2800018
 .word 0x1400000f
@@ -11976,7 +12131,7 @@ bl _p_161
 .word 0xb9801802
 .word 0xeb01005f
 .word 0x10000011
-.word 0x540018e9
+.word 0x54001929
 .word 0x8b010000
 .word 0x91008000
 .word 0x3900001f
@@ -11998,7 +12153,7 @@ bl _p_160
 .word 0xb9005b5e
 .loc 16 690 0
 .word 0xd2800000
-.word 0x14000082
+.word 0x14000084
 .loc 16 693 0
 .word 0xf9400f42
 .word 0xaa0203e0
@@ -12012,7 +12167,7 @@ bl _p_161
 .word 0xb190000
 .word 0xb9808b41
 .word 0x6b01001f
-.word 0x540012ec
+.word 0x5400132c
 .loc 16 700 0
 .word 0xd2800018
 .word 0x1400000f
@@ -12026,7 +12181,7 @@ bl _p_161
 .word 0xb9801802
 .word 0xeb01005f
 .word 0x10000011
-.word 0x540013a9
+.word 0x540013e9
 .word 0x8b010000
 .word 0x91008000
 .word 0x3900001f
@@ -12097,9 +12252,9 @@ bl _p_143
 .word 0xd280201e
 .word 0xeb1e001f
 .word 0x10000011
-.word 0x54000c69
+.word 0x54000ca9
 .word 0x39448320
-.word 0x34000b00
+.word 0x34000b40
 .loc 16 728 0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -12110,8 +12265,9 @@ bl _p_26
 .word 0xf90027a0
 .word 0xaa1903e1
 bl _p_154
-.word 0xf94027a0
 .word 0x91008341
+.word 0xd5033bbf
+.word 0xf94027a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -12134,8 +12290,9 @@ bl _p_26
 .word 0xf90023a0
 .word 0xaa1803e1
 bl _p_154
-.word 0xf94023a0
 .word 0x9100a341
+.word 0xd5033bbf
+.word 0xf94023a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -12214,7 +12371,7 @@ bl _p_26
 bl _p_170
 .word 0xf94023a0
 bl _p_9
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -12237,7 +12394,7 @@ Lme_bf:
 	.no_dead_strip System_IO_Compression_InflaterManaged__cctor
 System_IO_Compression_InflaterManaged__cctor:
 .loc 16 38 0 prologue_end
-.word 0xa9bc7bfd
+.word 0xa9ba7bfd
 .word 0x910003fd
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -12245,7 +12402,7 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #216]
 .word 0xd28003a1
 bl _p_10
-.word 0xf9001ba0
+.word 0xf9002fa0
 .word 0x91008000
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -12253,11 +12410,14 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x1, [x16, #808]
 .word 0xd28003a2
 bl _p_140
-.word 0xf9401ba1
+.word 0xf9402fa1
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #760]
+.word 0xf9002ba0
+.word 0xd5033bbf
+.word 0xf9402ba0
 .word 0xf9000001
 .loc 16 43 0
 
@@ -12266,7 +12426,7 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #816]
 .word 0xd28003a1
 bl _p_10
-.word 0xf90017a0
+.word 0xf90027a0
 .word 0x91008000
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -12274,11 +12434,14 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x1, [x16, #824]
 .word 0xd2800e82
 bl _p_140
-.word 0xf94017a1
+.word 0xf94027a1
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #768]
+.word 0xf90023a0
+.word 0xd5033bbf
+.word 0xf94023a0
 .word 0xf9000001
 .loc 16 48 0
 
@@ -12287,7 +12450,7 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #816]
 .word 0xd2800401
 bl _p_10
-.word 0xf90013a0
+.word 0xf9001fa0
 .word 0x91008000
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -12295,11 +12458,14 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x1, [x16, #832]
 .word 0xd2801002
 bl _p_140
-.word 0xf94013a1
+.word 0xf9401fa1
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #784]
+.word 0xf9001ba0
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9000001
 .loc 16 52 0
 
@@ -12308,7 +12474,7 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #216]
 .word 0xd2800261
 bl _p_10
-.word 0xf9000fa0
+.word 0xf90017a0
 .word 0x91008000
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -12316,11 +12482,14 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x1, [x16, #840]
 .word 0xd2800262
 bl _p_140
-.word 0xf9400fa1
+.word 0xf94017a1
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #800]
+.word 0xf90013a0
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xf9000001
 .loc 16 54 0
 
@@ -12329,7 +12498,7 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #216]
 .word 0xd2800401
 bl _p_10
-.word 0xf9000ba0
+.word 0xf9000fa0
 .word 0x91008000
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -12337,14 +12506,17 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x1, [x16, #848]
 .word 0xd2800402
 bl _p_140
-.word 0xf9400ba1
+.word 0xf9400fa1
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #776]
+.word 0xf9000ba0
+.word 0xd5033bbf
+.word 0xf9400ba0
 .word 0xf9000001
 .word 0x910003bf
-.word 0xa8c47bfd
+.word 0xa8c67bfd
 .word 0xd65f03c0
 
 Lme_c0:
@@ -12483,7 +12655,7 @@ System_IO_Compression_InputBuffer_EnsureBitsAvailable_int:
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -12604,7 +12776,7 @@ System_IO_Compression_InputBuffer_TryLoad16Bits:
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -12752,7 +12924,7 @@ bl _p_143
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -12789,6 +12961,7 @@ System_IO_Compression_InputBuffer_SetInput_byte___int_int:
 .word 0xf90013a2
 .word 0xf90017a3
 .word 0x910042e1
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -13047,6 +13220,7 @@ System_IO_Compression_OutputBuffer_UpdateBuffer_byte__:
 .word 0xaa0003f9
 .word 0xf9000fa1
 .word 0x91004321
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -13093,8 +13267,8 @@ System_IO_Compression_OutputBuffer_get_FreeBytes:
 .word 0x910003fd
 .word 0xf9000bba
 .word 0xaa0003fa
-.word 0xf9400b40
-.word 0xb9801800
+.word 0xf9400b41
+.word 0xb9801820
 .word 0xb9801b41
 .word 0x4b010000
 .word 0xf9400bba
@@ -13147,7 +13321,7 @@ System_IO_Compression_OutputBuffer_WriteUInt16_uint16:
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -13226,7 +13400,7 @@ System_IO_Compression_OutputBuffer_WriteBits_int_uint:
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -13297,7 +13471,7 @@ System_IO_Compression_OutputBuffer_FlushBits:
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -13385,7 +13559,7 @@ bl _p_172
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -13538,7 +13712,7 @@ System_IO_Compression_OutputWindow_Write_byte:
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -13669,7 +13843,7 @@ bl _p_143
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -13882,7 +14056,7 @@ Lme_e8:
 	.no_dead_strip System_IO_Compression_OutputWindow__ctor
 System_IO_Compression_OutputWindow__ctor:
 .loc 20 24 0 prologue_end
-.word 0xa9be7bfd
+.word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000ba0
 
@@ -13892,8 +14066,11 @@ ldr x0, [x16, #216]
 .word 0xd2800001
 .word 0xf2a00081
 bl _p_10
-.word 0xf9400ba1
-.word 0x91004021
+.word 0xf90013a0
+.word 0xf9400ba0
+.word 0x91004001
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -13907,7 +14084,7 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .word 0x910003bf
-.word 0xa8c27bfd
+.word 0xa8c37bfd
 .word 0xd65f03c0
 
 Lme_e9:
@@ -13923,6 +14100,7 @@ System_IO_Compression_PositionPreservingWriteOnlyStreamWrapper__ctor_System_IO_S
 .word 0xf9000fa1
 .word 0xf9400ba0
 .word 0x9100a001
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -14015,7 +14193,7 @@ ldr x0, [x16, #0]
 .word 0xd2811b41
 bl _p_8
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -14372,7 +14550,7 @@ ldr x0, [x16, #0]
 .word 0xd2811b41
 bl _p_8
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -14398,7 +14576,7 @@ ldr x0, [x16, #0]
 .word 0xd2811b41
 bl _p_8
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -14423,7 +14601,7 @@ ldr x0, [x16, #0]
 .word 0xd2811b41
 bl _p_8
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -14450,7 +14628,7 @@ ldr x0, [x16, #0]
 .word 0xd2811b41
 bl _p_8
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -14559,7 +14737,7 @@ ldr x0, [x16, #0]
 .word 0xd2800021
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -14598,7 +14776,7 @@ ldr x0, [x16, #0]
 .word 0xd2818801
 bl _p_8
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -14785,7 +14963,7 @@ ldr x0, [x16, #0]
 .word 0xd2818801
 bl _p_8
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -14797,7 +14975,7 @@ ldr x0, [x16, #0]
 .word 0xd2819181
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -14881,7 +15059,7 @@ bl _p_187
 .word 0xf9403050
 .word 0xd63f0200
 .word 0x53001c00
-.word 0x35000340
+.word 0x350003a0
 bl _p_188
 .word 0xaa0003e1
 .word 0xaa1a03e0
@@ -14889,10 +15067,13 @@ bl _p_188
 .word 0xf9403050
 .word 0xd63f0200
 .word 0x53001c00
-.word 0x35000240
+.word 0x350002a0
 .loc 22 299 0
 .word 0xf9400fa0
 .word 0x91014000
+.word 0xf90013a0
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xf900001a
 .word 0xd349fc00
 .word 0xd29ffffe
@@ -14926,7 +15107,7 @@ ldr x0, [x16, #0]
 bl _p_8
 .word 0xaa0003e2
 .word 0xf94013a1
-.word 0xd2801920
+.word 0xd2801940
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_9
@@ -15033,7 +15214,7 @@ ldr x0, [x16, #0]
 bl _p_8
 .word 0xaa0003e2
 .word 0xf94023a1
-.word 0xd2801920
+.word 0xd2801940
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_9
@@ -15045,7 +15226,7 @@ ldr x0, [x16, #0]
 .word 0xd281ab81
 bl _p_8
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -15057,7 +15238,7 @@ ldr x0, [x16, #0]
 .word 0xd2819181
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -15097,12 +15278,13 @@ ldr x0, [x16, #0]
 .word 0xd281b9c1
 bl _p_8
 .word 0xaa0003e1
-.word 0xd280eea0
+.word 0xd280eec0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
 .loc 22 341 0
 .word 0x91006321
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -15270,7 +15452,7 @@ System_IO_Compression_ZipArchive_ThrowIfDisposed:
 .word 0xf9402430
 .word 0xd63f0200
 .word 0xaa0003e1
-.word 0xd28027c0
+.word 0xd28027e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -15352,7 +15534,7 @@ Lme_11a:
 	.no_dead_strip System_IO_Compression_ZipArchive_Init_System_IO_Stream_System_IO_Compression_ZipArchiveMode_bool
 System_IO_Compression_ZipArchive_Init_System_IO_Stream_System_IO_Compression_ZipArchiveMode_bool:
 .loc 22 407 0 prologue_end
-.word 0xa9b47bfd
+.word 0xa9b37bfd
 .word 0x910003fd
 .word 0xa90163b7
 .word 0xa9026bb9
@@ -15382,14 +15564,14 @@ ldr x0, [x16, #872]
 .word 0x8b010000
 .word 0xf9400000
 .word 0xd61f0000
-.word 0x14000068
+.word 0x1400006b
 .loc 22 417 0
 .word 0xaa1803e0
 .word 0xf9400301
 .word 0xf940c430
 .word 0xd63f0200
 .word 0x53001c00
-.word 0x35000d80
+.word 0x35000de0
 .loc 22 418 0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -15398,7 +15580,7 @@ ldr x0, [x16, #0]
 .word 0xd281cca1
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2801920
+.word 0xd2801940
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -15417,7 +15599,7 @@ ldr x0, [x16, #0]
 .word 0xd281d8e1
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2801920
+.word 0xd2801940
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -15427,9 +15609,12 @@ bl _p_9
 .word 0xf940cc30
 .word 0xd63f0200
 .word 0x53001c00
-.word 0x35000980
+.word 0x350009e0
 .loc 22 425 0
 .word 0x910102e0
+.word 0xf9005ba0
+.word 0xd5033bbf
+.word 0xf9405ba0
 .word 0xf9000018
 .word 0xd349fc00
 .word 0xd29ffffe
@@ -15498,7 +15683,7 @@ ldr x0, [x16, #0]
 .word 0xd281e4a1
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2801920
+.word 0xd2801940
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -15511,7 +15696,7 @@ ldr x0, [x16, #0]
 .word 0xd2801b21
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -15520,13 +15705,13 @@ bl _p_9
 .loc 22 441 0
 .word 0xd280003e
 .word 0x6b1e033f
-.word 0x540004a1
+.word 0x54000561
 .word 0xaa1803e0
 .word 0xf9400301
 .word 0xf940cc30
 .word 0xd63f0200
 .word 0x53001c00
-.word 0x350003e0
+.word 0x350004a0
 .loc 22 442 0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -15534,20 +15719,26 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #888]
 .word 0xd2800701
 bl _p_26
-.word 0x9100a001
-.word 0xf9000038
-.word 0xd349fc21
+.word 0xf90053a0
+.word 0x9100a000
+.word 0xf90057a0
+.word 0xd5033bbf
+.word 0xf94057a0
+.word 0xf9000018
+.word 0xd349fc00
 .word 0xd29ffffe
 .word 0xf2a00ffe
-.word 0x8a1e0021
+.word 0x8a1e0000
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
-ldr x2, [x16, #16]
-.word 0x8b020021
+ldr x1, [x16, #16]
+.word 0x8b010000
 .word 0xd280003e
-.word 0x3900003e
+.word 0x3900001e
 .word 0x910042e1
+.word 0xd5033bbf
+.word 0xf94053a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -15560,9 +15751,12 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-.word 0x1400000d
+.word 0x14000010
 .loc 22 444 0
 .word 0x910042e0
+.word 0xf90053a0
+.word 0xd5033bbf
+.word 0xf94053a0
 .word 0xf9000018
 .word 0xd349fc00
 .word 0xd29ffffe
@@ -15583,7 +15777,7 @@ ldr x1, [x16, #16]
 .word 0x54000061
 .loc 22 447 0
 .word 0xf90012ff
-.word 0x14000018
+.word 0x14000019
 .loc 22 449 0
 .word 0xf9400ae0
 .word 0xf90057a0
@@ -15596,8 +15790,9 @@ bl _p_26
 .word 0xf94057a1
 .word 0xf90053a0
 bl _p_203
-.word 0xf94053a0
 .word 0x910082e1
+.word 0xd5033bbf
+.word 0xf94053a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -15622,20 +15817,26 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x1, [x16, #912]
 .word 0xf9400021
-.word 0x91004002
-.word 0xf9000041
-.word 0xd349fc42
+.word 0xf90063a1
+.word 0xf9005fa0
+.word 0x91004001
+.word 0xd5033bbf
+.word 0xf94063a0
+.word 0xf9000020
+.word 0xd349fc21
 .word 0xd29ffffe
 .word 0xf2a00ffe
-.word 0x8a1e0042
+.word 0x8a1e0021
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
-ldr x3, [x16, #16]
-.word 0x8b030042
+ldr x2, [x16, #16]
+.word 0x8b020021
 .word 0xd280003e
-.word 0x3900005e
+.word 0x3900003e
 .word 0x9100a2e1
+.word 0xd5033bbf
+.word 0xf9405fa0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -15660,8 +15861,9 @@ bl _p_26
 .word 0xf9405ba1
 .word 0xf90057a0
 bl _p_204
-.word 0xf94057a0
 .word 0x9100c2e1
+.word 0xd5033bbf
+.word 0xf94057a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -15683,8 +15885,9 @@ ldr x0, [x16, #928]
 bl _p_26
 .word 0xf90053a0
 bl _p_205
-.word 0xf94053a0
 .word 0x9100e2e1
+.word 0xd5033bbf
+.word 0xf94053a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -15813,7 +16016,7 @@ bl _p_210
 .word 0xa94163b7
 .word 0xa9426bb9
 .word 0x910003bf
-.word 0xa8cc7bfd
+.word 0xa8cd7bfd
 .word 0xd65f03c0
 
 Lme_11b:
@@ -16093,10 +16296,13 @@ bl _p_9
 .word 0xb9805b40
 .word 0xd280005e
 .word 0x6b1e001f
-.word 0x540001c1
+.word 0x54000221
 .loc 22 556 0
 .word 0xf94047a0
+.word 0xf9006ba0
 .word 0x91012341
+.word 0xd5033bbf
+.word 0xf9406ba0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -16389,7 +16595,7 @@ Lme_11d:
 	.no_dead_strip System_IO_Compression_ZipArchive_WriteFile
 System_IO_Compression_ZipArchive_WriteFile:
 .loc 22 622 0 prologue_end
-.word 0xa9b27bfd
+.word 0xa9b17bfd
 .word 0x910003fd
 .word 0xa9015bb5
 .word 0xa90263b7
@@ -16402,7 +16608,7 @@ System_IO_Compression_ZipArchive_WriteFile:
 .word 0xb9805b40
 .word 0xd280005e
 .word 0x6b1e001f
-.word 0x54001061
+.word 0x540010c1
 .loc 22 624 0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -16415,7 +16621,10 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x1, [x16, #912]
 .word 0xf9400021
+.word 0xf90073a0
 .word 0x91004002
+.word 0xd5033bbf
+.word 0xf94073a0
 .word 0xf9000041
 .word 0xd349fc42
 .word 0xd29ffffe
@@ -16656,7 +16865,7 @@ bl _p_221
 .word 0xa94263b7
 .word 0xa9436bb9
 .word 0x910003bf
-.word 0xa8ce7bfd
+.word 0xa8cf7bfd
 .word 0xd65f03c0
 
 Lme_11e:
@@ -16733,13 +16942,14 @@ Lme_11f:
 System_IO_Compression_ZipArchiveEntry__ctor_System_IO_Compression_ZipArchive_System_IO_Compression_ZipCentralDirectoryFileHeader:
 .file 23 "/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/src/Xamarin.iOS/external/corefx/src/System.IO.Compression/src/System/IO/Compression/ZipArchiveEntry.cs"
 .loc 23 53 0 prologue_end
-.word 0xa9ba7bfd
+.word 0xa9b97bfd
 .word 0x910003fd
 .word 0xf9000bb9
 .word 0xaa0003f9
 .word 0xf9000fa1
 .word 0xf90013a2
 .word 0x91004321
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -16823,7 +17033,7 @@ bl _p_227
 .loc 23 70 0
 .word 0xeb1f033f
 .word 0x10000011
-.word 0x54000760
+.word 0x54000820
 .word 0x91026320
 .word 0xd2800001
 .word 0xf9000001
@@ -16855,7 +17065,10 @@ bl _p_229
 .loc 23 83 0
 .word 0xf94013a0
 .word 0xf9402800
+.word 0xf90037a0
 .word 0x91010321
+.word 0xd5033bbf
+.word 0xf94037a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -16871,7 +17084,10 @@ ldr x2, [x16, #16]
 .loc 23 84 0
 .word 0xf94013a0
 .word 0xf9402400
+.word 0xf90033a0
 .word 0x91014321
+.word 0xd5033bbf
+.word 0xf94033a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -16894,9 +17110,9 @@ ldr x2, [x16, #16]
 .loc 23 87 0
 .word 0xf9400bb9
 .word 0x910003bf
-.word 0xa8c67bfd
+.word 0xa8c77bfd
 .word 0xd65f03c0
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
 
@@ -16954,6 +17170,7 @@ System_IO_Compression_ZipArchiveEntry__ctor_System_IO_Compression_ZipArchive_str
 .word 0xf9000fa1
 .word 0xf90013a2
 .word 0x91004301
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -17051,8 +17268,8 @@ bl _p_229
 .word 0xb900001f
 .word 0xb900041f
 .loc 23 132 0
-.word 0xf9401f00
-.word 0xb9801800
+.word 0xf9401f01
+.word 0xb9801820
 .word 0xd29ffffe
 .word 0x6b1e001f
 .word 0x5400022c
@@ -17083,11 +17300,11 @@ ldr x0, [x16, #0]
 .word 0xd2827641
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2801920
+.word 0xd2801940
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
 
@@ -17147,7 +17364,7 @@ ldr x0, [x16, #0]
 .word 0xd2828241
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2802440
+.word 0xd2802460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -17209,19 +17426,22 @@ Lme_128:
 	.no_dead_strip System_IO_Compression_ZipArchiveEntry_set_FullName_string
 System_IO_Compression_ZipArchiveEntry_set_FullName_string:
 .loc 23 189 0 prologue_end
-.word 0xa9bd7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xa9016bb9
 .word 0xaa0003f9
 .word 0xaa0103fa
 .word 0x390083bf
-.word 0xb400071a
+.word 0xb40007da
 .loc 23 193 0
 .word 0xaa1903e0
 .word 0xaa1a03e1
 .word 0x910083a2
 bl _p_233
+.word 0xf9001fa0
 .word 0x9100e321
+.word 0xd5033bbf
+.word 0xf9401fa0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -17236,6 +17456,9 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .loc 23 194 0
 .word 0x9100c320
+.word 0xf9001ba0
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf900001a
 .word 0xd349fc00
 .word 0xd29ffffe
@@ -17280,7 +17503,7 @@ bl _p_236
 .loc 23 203 0
 .word 0xa9416bb9
 .word 0x910003bf
-.word 0xa8c37bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
 .loc 23 190 0
 
@@ -17290,7 +17513,7 @@ ldr x0, [x16, #0]
 .word 0xd28295a1
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -17395,7 +17618,7 @@ ldr x0, [x16, #0]
 .word 0xd282a061
 bl _p_8
 .word 0xaa0003e1
-.word 0xd280eea0
+.word 0xd280eec0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -17415,7 +17638,7 @@ ldr x0, [x16, #0]
 bl _p_8
 .word 0xaa0003e2
 .word 0xf9402ba1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_9
@@ -17427,7 +17650,7 @@ ldr x0, [x16, #0]
 .word 0xd2829821
 bl _p_8
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -17458,7 +17681,7 @@ ldr x0, [x16, #0]
 .word 0xd2828241
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2802440
+.word 0xd2802460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -17533,7 +17756,7 @@ ldr x0, [x16, #0]
 .word 0xd282c821
 bl _p_8
 .word 0xaa0003e1
-.word 0xd280eea0
+.word 0xd280eec0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -17545,7 +17768,7 @@ ldr x0, [x16, #0]
 .word 0xd282d4e1
 bl _p_8
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -17727,7 +17950,7 @@ bl _p_26
 bl _p_27
 .word 0xf94023a0
 bl _p_9
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
 
@@ -17743,7 +17966,7 @@ System_IO_Compression_ZipArchiveEntry_get_UncompressedData:
 .word 0xf9000fbf
 .word 0xf9400ba0
 .word 0xf9401000
-.word 0xb5000a00
+.word 0xb5000a20
 .loc 23 346 0
 .word 0xf9400ba0
 .word 0xf9002fa0
@@ -17760,9 +17983,10 @@ bl _p_26
 .word 0xf94033a1
 .word 0xf9002ba0
 bl _p_247
+.word 0xf9402fa0
+.word 0x91008001
+.word 0xd5033bbf
 .word 0xf9402ba0
-.word 0xf9402fa1
-.word 0x91008021
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -18291,8 +18515,8 @@ bl _p_259
 .word 0xf9404c50
 .word 0xd63f0200
 .loc 23 523 0
-.word 0xf9401f40
-.word 0xb9801800
+.word 0xf9401f41
+.word 0xb9801820
 .word 0x53003c01
 .word 0xaa1903e0
 .word 0xf9400322
@@ -18310,8 +18534,8 @@ bl _p_259
 .word 0xb5000060
 .word 0xd2800013
 .word 0x14000004
-.word 0xf9402b40
-.word 0xb9801800
+.word 0xf9402b41
+.word 0xb9801820
 .word 0x53003c13
 .word 0xaa1703e0
 .word 0xaa1303e1
@@ -18384,7 +18608,7 @@ bl _p_261
 .word 0x910003bf
 .word 0xa8d27bfd
 .word 0xd65f03c0
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
 
@@ -18399,7 +18623,7 @@ System_IO_Compression_ZipArchiveEntry_LoadLocalHeaderExtraFieldAndCompressedByte
 .word 0xa9016bb9
 .word 0xaa0003fa
 .word 0x39416340
-.word 0x34000380
+.word 0x340003e0
 .loc 23 558 0
 .word 0xf9400b40
 .word 0xaa0003e1
@@ -18417,7 +18641,10 @@ System_IO_Compression_ZipArchiveEntry_LoadLocalHeaderExtraFieldAndCompressedByte
 .word 0x3940003e
 .word 0xf9401000
 bl _p_262
+.word 0xf90013a0
 .word 0x91012341
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -18432,16 +18659,16 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .loc 23 563 0
 .word 0x3942b740
-.word 0x35001b20
+.word 0x35001b80
 .word 0x39416340
-.word 0x34001ae0
+.word 0x34001b40
 .loc 23 567 0
 .word 0xf9404340
 .word 0xd29ff8e1
 .word 0xf2afffe1
 .word 0xeb1f003f
 .word 0x10000011
-.word 0x54001b20
+.word 0x54001b80
 .word 0xd29ffffe
 .word 0xf2bffffe
 .word 0xf2dffffe
@@ -18456,10 +18683,10 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x6b1e005f
 .word 0x10000011
-.word 0x540018e0
+.word 0x54001940
 .word 0xf100003f
 .word 0x10000011
-.word 0x540018e0
+.word 0x54001940
 .word 0xd2800010
 .word 0xf2f00010
 .word 0xeb10001f
@@ -18473,23 +18700,26 @@ ldr x2, [x16, #16]
 .word 0x8a110210
 .word 0xf100061f
 .word 0x10000011
-.word 0x540016c0
+.word 0x54001720
 .word 0x9ac10c00
 .word 0x91000401
 .word 0xd29ffffe
 .word 0xf2bffffe
 .word 0xeb1e003f
 .word 0x10000011
-.word 0x540015ec
+.word 0x5400164c
 .word 0xeb1f003f
 .word 0x10000011
-.word 0x5400158b
+.word 0x540015eb
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #1000]
 bl _p_10
+.word 0xf90013a0
 .word 0x91006341
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -18524,16 +18754,16 @@ bl _p_10
 .word 0xd63f0200
 .loc 23 568 0
 .word 0x11000739
-.word 0xf9400f40
-.word 0xb9801800
+.word 0xf9400f41
+.word 0xb9801820
 .word 0x51000400
 .word 0x6b00033f
 .word 0x54fffd8b
 .loc 23 572 0
 .word 0xf9400f40
 .word 0xf9001ba0
-.word 0xf9400f40
-.word 0xb9801800
+.word 0xf9400f41
+.word 0xb9801820
 .word 0x51000400
 .word 0xf90017a0
 .word 0xf9404340
@@ -18616,8 +18846,8 @@ bl _p_263
 bl _p_264
 .loc 23 576 0
 .word 0x11000739
-.word 0xf9400f40
-.word 0xb9801800
+.word 0xf9400f41
+.word 0xb9801820
 .word 0x51000400
 .word 0x6b00033f
 .word 0x54fffd4b
@@ -18627,8 +18857,8 @@ bl _p_264
 .word 0x3940003e
 .word 0xf9400800
 .word 0xf9400f41
-.word 0xf9400f42
-.word 0xb9801842
+.word 0xf9400f43
+.word 0xb9801862
 .word 0x51000442
 .word 0x93407c42
 .word 0xb9801823
@@ -18669,13 +18899,13 @@ bl _p_264
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802820
+.word 0xd2802840
 .word 0xaa1103e1
 bl _p_16
-.word 0xd2801cc0
+.word 0xd2801ce0
 .word 0xaa1103e1
 bl _p_16
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -18724,7 +18954,7 @@ Lme_13b:
 	.no_dead_strip System_IO_Compression_ZipArchiveEntry_GetDataCompressor_System_IO_Stream_bool_System_EventHandler
 System_IO_Compression_ZipArchiveEntry_GetDataCompressor_System_IO_Stream_bool_System_EventHandler:
 .loc 23 601 0 prologue_end
-.word 0xa9bb7bfd
+.word 0xa9ba7bfd
 .word 0x910003fd
 .word 0xa9015bb5
 .word 0xa90263b7
@@ -18735,7 +18965,7 @@ System_IO_Compression_ZipArchiveEntry_GetDataCompressor_System_IO_Stream_bool_Sy
 .word 0xaa0303fa
 .word 0xeb1f02ff
 .word 0x10000011
-.word 0x54001040
+.word 0x54001100
 .word 0x9102d2e0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -18759,7 +18989,7 @@ bl _p_267
 .word 0x14000016
 .word 0xeb1f02ff
 .word 0x10000011
-.word 0x54000d80
+.word 0x54000e40
 .word 0x9102d2e0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -18802,26 +19032,29 @@ ldr x0, [x16, #1016]
 .word 0xaa1703f5
 .word 0xaa1a03f7
 .word 0xaa0103fa
-.word 0xb5000660
+.word 0xb5000720
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #1024]
 .word 0xf9400000
-.word 0xf90023a0
+.word 0xf9002ba0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54000840
+.word 0x54000900
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #1032]
 .word 0xd2801001
 bl _p_26
-.word 0xf94023a1
+.word 0xf90027a0
+.word 0xf9402ba1
 .word 0xeb1f003f
 .word 0x10000011
-.word 0x540006c0
+.word 0x54000760
+.word 0xd5033bbf
+.word 0xf94027a0
 .word 0xf9001001
 .word 0x91008002
 .word 0xd349fc42
@@ -18854,10 +19087,13 @@ ldr x1, [x16, #1056]
 .word 0xf9401021
 .word 0xf9000801
 .word 0x3901c01f
+.word 0xf90023a0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x1, [x16, #1016]
+.word 0xd5033bbf
+.word 0xf94023a0
 .word 0xf9000020
 .word 0xaa0003fa
 
@@ -18880,12 +19116,12 @@ bl _p_269
 .word 0xa94263b7
 .word 0xa9436bb9
 .word 0x910003bf
-.word 0xa8c57bfd
+.word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
-.word 0xd2801920
+.word 0xd2801940
 .word 0xaa1103e1
 bl _p_16
 
@@ -19013,7 +19249,7 @@ System_IO_Compression_ZipArchiveEntry_OpenInWriteMode:
 .word 0xa901ebb9
 .word 0xaa0003fa
 .word 0x3942b740
-.word 0x35000e20
+.word 0x35000f00
 .loc 23 666 0
 .word 0xd280003e
 .word 0x3902b75e
@@ -19033,26 +19269,29 @@ ldr x0, [x16, #1088]
 .word 0xd280003e
 .word 0xb90033be
 .word 0xaa0103f6
-.word 0xb5000660
+.word 0xb5000720
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #1024]
 .word 0xf9400000
-.word 0xf90023a0
+.word 0xf9002ba0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54000ca0
+.word 0x54000d80
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #1096]
 .word 0xd2801001
 bl _p_26
-.word 0xf94023a1
+.word 0xf90027a0
+.word 0xf9402ba1
 .word 0xeb1f003f
 .word 0x10000011
-.word 0x54000b20
+.word 0x54000be0
+.word 0xd5033bbf
+.word 0xf94027a0
 .word 0xf9001001
 .word 0x91008002
 .word 0xd349fc42
@@ -19085,10 +19324,13 @@ ldr x1, [x16, #1120]
 .word 0xf9401021
 .word 0xf9000801
 .word 0x3901c01f
+.word 0xf90023a0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x1, [x16, #1088]
+.word 0xd5033bbf
+.word 0xf94023a0
 .word 0xf9000020
 .word 0xaa0003f6
 .word 0xaa1903e0
@@ -19108,8 +19350,9 @@ bl _p_26
 .word 0xaa1903e1
 .word 0xaa1a03e2
 bl _p_275
-.word 0xf9402ba0
 .word 0x9100a341
+.word 0xd5033bbf
+.word 0xf9402ba0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -19149,14 +19392,14 @@ ldr x0, [x16, #0]
 .word 0xd282ebe1
 bl _p_8
 .word 0xaa0003e1
-.word 0xd280eea0
+.word 0xd280eec0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
-.word 0xd2801920
+.word 0xd2801940
 .word 0xaa1103e1
 bl _p_16
 
@@ -19166,12 +19409,12 @@ Lme_13f:
 	.no_dead_strip System_IO_Compression_ZipArchiveEntry_OpenInUpdateMode
 System_IO_Compression_ZipArchiveEntry_OpenInUpdateMode:
 .loc 23 681 0 prologue_end
-.word 0xa9bc7bfd
+.word 0xa9bb7bfd
 .word 0x910003fd
 .word 0xf9000bba
 .word 0xaa0003fa
 .word 0x3942b340
-.word 0x35000be0
+.word 0x35000ca0
 .loc 23 684 0
 .word 0xaa1a03e0
 .word 0xd2800021
@@ -19206,26 +19449,29 @@ ldr x0, [x16, #1144]
 .word 0xf9000fa2
 .word 0xf90013ba
 .word 0xaa0103fa
-.word 0xb5000660
+.word 0xb5000720
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #1024]
 .word 0xf9400000
-.word 0xf9001ba0
+.word 0xf90023a0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x540008e0
+.word 0x540009a0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #1152]
 .word 0xd2801001
 bl _p_26
-.word 0xf9401ba1
+.word 0xf9001fa0
+.word 0xf94023a1
 .word 0xeb1f003f
 .word 0x10000011
-.word 0x54000760
+.word 0x54000800
+.word 0xd5033bbf
+.word 0xf9401fa0
 .word 0xf9001001
 .word 0x91008002
 .word 0xd349fc42
@@ -19258,10 +19504,13 @@ ldr x1, [x16, #1176]
 .word 0xf9401021
 .word 0xf9000801
 .word 0x3901c01f
+.word 0xf9001ba0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x1, [x16, #1144]
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9000020
 .word 0xaa0003fa
 
@@ -19278,7 +19527,7 @@ bl _p_278
 .word 0xf9401ba0
 .word 0xf9400bba
 .word 0x910003bf
-.word 0xa8c47bfd
+.word 0xa8c57bfd
 .word 0xd65f03c0
 .loc 23 682 0
 
@@ -19288,14 +19537,14 @@ ldr x0, [x16, #0]
 .word 0xd28304c1
 bl _p_8
 .word 0xaa0003e1
-.word 0xd280eea0
+.word 0xd280eec0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
-.word 0xd2801920
+.word 0xd2801940
 .word 0xaa1103e1
 bl _p_16
 
@@ -19305,7 +19554,7 @@ Lme_140:
 	.no_dead_strip System_IO_Compression_ZipArchiveEntry_IsOpenable_bool_bool_string_
 System_IO_Compression_ZipArchiveEntry_IsOpenable_bool_bool_string_:
 .loc 23 702 0 prologue_end
-.word 0xa9bc7bfd
+.word 0xa9bb7bfd
 .word 0x910003fd
 .word 0xf9000bb7
 .word 0xa901ebb9
@@ -19313,27 +19562,28 @@ System_IO_Compression_ZipArchiveEntry_IsOpenable_bool_bool_string_:
 .word 0xf90017a1
 .word 0xaa0203f9
 .word 0xaa0303fa
+.word 0xd5033bbf
 .word 0xf900035f
 .loc 23 704 0
 .word 0x394162e0
-.word 0x34001c40
+.word 0x34001ee0
 .loc 23 706 0
 .word 0x3940a3a0
-.word 0x34000980
+.word 0x34000a40
 .loc 23 708 0
 .word 0x7940d2e0
 .word 0x53003c00
-.word 0x34000920
+.word 0x340009e0
 .word 0x7940d2e0
 .word 0x53003c00
 .word 0xd280011e
 .word 0x6b1e001f
-.word 0x54000880
+.word 0x54000940
 .word 0x7940d2e0
 .word 0x53003c00
 .word 0xd280013e
 .word 0x6b1e001f
-.word 0x540007e0
+.word 0x540008a0
 .loc 23 712 0
 .word 0x7940d2e0
 .word 0x53003c00
@@ -19344,18 +19594,18 @@ System_IO_Compression_ZipArchiveEntry_IsOpenable_bool_bool_string_:
 .word 0x54000080
 .word 0xd28001de
 .word 0x6b1e033f
-.word 0x540004a1
+.word 0x54000501
 .loc 23 716 0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #1184]
-.word 0xf9001ba0
+.word 0xf9001fa0
 .word 0x7940d2e0
 .word 0x53003c00
 .word 0x53003c19
 .word 0xaa1903e0
-.word 0xf9001fa0
+.word 0xf90023a0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
@@ -19363,15 +19613,18 @@ ldr x0, [x16, #1192]
 .word 0xd2800241
 bl _p_26
 .word 0xaa0003e1
-.word 0xf9401fa0
+.word 0xf94023a0
 .word 0x79002020
 .word 0xaa0103e0
 .word 0xf9400021
 .word 0xf9402430
 .word 0xd63f0200
 .word 0xaa0003e1
-.word 0xf9401ba0
+.word 0xf9401fa0
 bl _p_73
+.word 0xf9001ba0
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9000340
 .word 0xd349ff41
 .word 0xd29ffffe
@@ -19385,12 +19638,15 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .loc 23 717 0
-.word 0x1400000f
+.word 0x14000012
 .loc 23 719 0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #1200]
+.word 0xf9001ba0
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9000340
 .word 0xd349ff41
 .word 0xd29ffffe
@@ -19405,7 +19661,7 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .loc 23 722 0
 .word 0xd2800000
-.word 0x14000096
+.word 0x140000a5
 .loc 23 725 0
 .word 0xb9805ee0
 .word 0x93407c00
@@ -19415,12 +19671,15 @@ ldr x2, [x16, #16]
 .word 0xb9406c21
 .word 0x2a0103e1
 .word 0xeb01001f
-.word 0x54000220
+.word 0x54000280
 .loc 23 727 0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #1208]
+.word 0xf9001ba0
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9000340
 .word 0xd349ff41
 .word 0xd29ffffe
@@ -19435,7 +19694,7 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .loc 23 728 0
 .word 0xd2800000
-.word 0x1400007d
+.word 0x14000089
 .loc 23 730 0
 .word 0xf9404ae0
 .word 0xf9001ba0
@@ -19450,12 +19709,15 @@ ldr x2, [x16, #16]
 .word 0xaa0003e1
 .word 0xf9401ba0
 .word 0xeb01001f
-.word 0x5400022d
+.word 0x5400028d
 .loc 23 732 0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #1216]
+.word 0xf9001ba0
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9000340
 .word 0xd349ff41
 .word 0xd29ffffe
@@ -19470,7 +19732,7 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .loc 23 733 0
 .word 0xd2800000
-.word 0x1400005f
+.word 0x14000068
 .loc 23 735 0
 .word 0xf9400ae0
 .word 0xaa0003e1
@@ -19489,12 +19751,15 @@ ldr x2, [x16, #16]
 .word 0xf9401000
 bl _p_244
 .word 0x53001c00
-.word 0x35000220
+.word 0x35000280
 .loc 23 738 0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #1216]
+.word 0xf9001ba0
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9000340
 .word 0xd349ff41
 .word 0xd29ffffe
@@ -19509,7 +19774,7 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .loc 23 739 0
 .word 0xd2800000
-.word 0x1400003e
+.word 0x14000044
 .loc 23 742 0
 .word 0xaa1703e0
 bl _p_263
@@ -19527,12 +19792,15 @@ bl _p_263
 .word 0xaa0003e1
 .word 0xf9401ba0
 .word 0xeb01001f
-.word 0x5400022d
+.word 0x5400028d
 .loc 23 744 0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #1216]
+.word 0xf9001ba0
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9000340
 .word 0xd349ff41
 .word 0xd29ffffe
@@ -19547,27 +19815,30 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .loc 23 745 0
 .word 0xd2800000
-.word 0x1400001d
+.word 0x14000020
 .loc 23 751 0
-.word 0x34000379
+.word 0x340003d9
 .loc 23 753 0
 .word 0xf94042e0
 .word 0xd29ffffe
 .word 0xf2affffe
 .word 0xeb1e001f
-.word 0x540002cd
+.word 0x5400032d
 .loc 23 755 0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #1224]
 .word 0x39400000
-.word 0x35000220
+.word 0x35000280
 .loc 23 757 0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #1232]
+.word 0xf9001ba0
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9000340
 .word 0xd349ff41
 .word 0xd29ffffe
@@ -19588,7 +19859,7 @@ ldr x2, [x16, #16]
 .word 0xf9400bb7
 .word 0xa941ebb9
 .word 0x910003bf
-.word 0xa8c47bfd
+.word 0xa8c57bfd
 .word 0xd65f03c0
 
 Lme_141:
@@ -19892,8 +20163,8 @@ bl _p_259
 .word 0xf9404c50
 .word 0xd63f0200
 .loc 23 859 0
-.word 0xf9401f20
-.word 0xb9801800
+.word 0xf9401f21
+.word 0xb9801820
 .word 0x53003c01
 .word 0xaa1803e0
 .word 0xf9400302
@@ -19939,7 +20210,7 @@ bl _p_261
 .word 0x910003bf
 .word 0xa8cf7bfd
 .word 0xd65f03c0
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
 
@@ -20100,7 +20371,7 @@ bl _p_279
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -20259,8 +20530,8 @@ bl _p_254
 .word 0xf9400803
 .word 0xf9404b20
 .word 0x91007800
-.word 0xf9401f21
-.word 0xb9801821
+.word 0xf9401f22
+.word 0xb9801841
 .word 0x93407c21
 .word 0x8b010000
 .word 0x91001001
@@ -20518,7 +20789,7 @@ ldr x0, [x16, #0]
 .word 0xd2834441
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2802440
+.word 0xd2802460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -20577,7 +20848,7 @@ bl _p_280
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -20624,7 +20895,7 @@ bl _p_280
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -20835,7 +21106,7 @@ b System_IO_Compression_ZipGenericExtraField_TryReadBlock_System_IO_BinaryReader
 	.no_dead_strip System_IO_Compression_ZipGenericExtraField_TryReadBlock_System_IO_BinaryReader_long_System_IO_Compression_ZipGenericExtraField_
 System_IO_Compression_ZipGenericExtraField_TryReadBlock_System_IO_BinaryReader_long_System_IO_Compression_ZipGenericExtraField_:
 .loc 25 38 0 prologue_end
-.word 0xa9bd7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xf9000bb8
 .word 0xf9000fba
@@ -20863,7 +21134,7 @@ System_IO_Compression_ZipGenericExtraField_TryReadBlock_System_IO_BinaryReader_l
 .word 0x5400006a
 .loc 25 42 0
 .word 0xd2800000
-.word 0x1400002f
+.word 0x14000032
 .loc 25 44 0
 .word 0xaa1803e0
 .word 0xf9400301
@@ -20895,14 +21166,17 @@ System_IO_Compression_ZipGenericExtraField_TryReadBlock_System_IO_BinaryReader_l
 .word 0x5400006a
 .loc 25 49 0
 .word 0xd2800000
-.word 0x14000013
+.word 0x14000016
 .loc 25 51 0
 .word 0x79400741
 .word 0xaa1803e0
 .word 0xf9400302
 .word 0xf9403c50
 .word 0xd63f0200
+.word 0xf9001ba0
 .word 0x91002341
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -20920,7 +21194,7 @@ ldr x2, [x16, #16]
 .word 0xf9400bb8
 .word 0xf9400fba
 .word 0x910003bf
-.word 0xa8c37bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
 
 Lme_153:
@@ -20954,7 +21228,10 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x1, [x16, #1264]
 .word 0xf9400021
+.word 0xf9004fa0
 .word 0x91004002
+.word 0xd5033bbf
+.word 0xf9404fa0
 .word 0xf9000041
 .word 0xd349fc42
 .word 0xd29ffffe
@@ -21077,7 +21354,7 @@ ldr x15, [x16, #984]
 .word 0x910003bf
 .word 0xa8ca7bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -22184,7 +22461,7 @@ b System_IO_Compression_Zip64ExtraField_GetAndRemoveZip64Block_System_Collection
 	.no_dead_strip System_IO_Compression_Zip64ExtraField_GetAndRemoveZip64Block_System_Collections_Generic_List_1_System_IO_Compression_ZipGenericExtraField_bool_bool_bool_bool
 System_IO_Compression_Zip64ExtraField_GetAndRemoveZip64Block_System_Collections_Generic_List_1_System_IO_Compression_ZipGenericExtraField_bool_bool_bool_bool:
 .loc 25 234 0 prologue_end
-.word 0xa9a67bfd
+.word 0xa9a57bfd
 .word 0x910003fd
 .word 0xa90153b3
 .word 0xa9025bb5
@@ -22260,7 +22537,10 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x1, [x16, #1264]
 .word 0xf9400021
+.word 0xf900d3a0
 .word 0x91004002
+.word 0xd5033bbf
+.word 0xf940d3a0
 .word 0xf9000041
 .word 0xd349fc42
 .word 0xd29ffffe
@@ -22313,11 +22593,11 @@ ldr x0, [x16, #1272]
 .word 0xb9802660
 .word 0x11000400
 .word 0xb9002660
-.word 0xf9400a61
-.word 0xf900aba1
+.word 0xf9400a62
+.word 0xf900aba2
 .word 0xb980227a
 .word 0xaa1a03e0
-.word 0xb9801821
+.word 0xb9801841
 .word 0x6b01001f
 .word 0x54000382
 .word 0x11000740
@@ -22482,9 +22762,9 @@ ldr x0, [x16, #1272]
 .word 0xa94363b7
 .word 0xa9446bb9
 .word 0x910003bf
-.word 0xa8da7bfd
+.word 0xa8db7bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -22498,7 +22778,7 @@ b System_IO_Compression_Zip64ExtraField_RemoveZip64Blocks_System_Collections_Gen
 	.no_dead_strip System_IO_Compression_Zip64ExtraField_RemoveZip64Blocks_System_Collections_Generic_List_1_System_IO_Compression_ZipGenericExtraField
 System_IO_Compression_Zip64ExtraField_RemoveZip64Blocks_System_Collections_Generic_List_1_System_IO_Compression_ZipGenericExtraField:
 .loc 25 268 0 prologue_end
-.word 0xa9b27bfd
+.word 0xa9b17bfd
 .word 0x910003fd
 .word 0xa9015fb6
 .word 0xa90267b8
@@ -22526,7 +22806,10 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x1, [x16, #1264]
 .word 0xf9400021
+.word 0xf90073a0
 .word 0x91004002
+.word 0xd5033bbf
+.word 0xf94073a0
 .word 0xf9000041
 .word 0xd349fc42
 .word 0xd29ffffe
@@ -22689,9 +22972,9 @@ ldr x0, [x16, #1272]
 .word 0xa94267b8
 .word 0xf9401bba
 .word 0x910003bf
-.word 0xa8ce7bfd
+.word 0xa8cf7bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -23422,7 +23705,7 @@ b System_IO_Compression_ZipCentralDirectoryFileHeader_TryReadBlock_System_IO_Bin
 	.no_dead_strip System_IO_Compression_ZipCentralDirectoryFileHeader_TryReadBlock_System_IO_BinaryReader_bool_System_IO_Compression_ZipCentralDirectoryFileHeader_
 System_IO_Compression_ZipCentralDirectoryFileHeader_TryReadBlock_System_IO_BinaryReader_bool_System_IO_Compression_ZipCentralDirectoryFileHeader_:
 .loc 25 461 0 prologue_end
-.word 0xa9af7bfd
+.word 0xa9ae7bfd
 .word 0x910003fd
 .word 0xa90153b3
 .word 0xa9025bb5
@@ -23461,7 +23744,7 @@ bl _p_36
 .word 0x54000060
 .loc 25 464 0
 .word 0xd2800000
-.word 0x14000179
+.word 0x14000182
 .loc 25 465 0
 .word 0xaa1803e0
 .word 0xf9400301
@@ -23565,7 +23848,10 @@ bl _p_36
 .word 0xf9400302
 .word 0xf9403c50
 .word 0xd63f0200
+.word 0xf9008ba0
 .word 0x91010341
+.word 0xd5033bbf
+.word 0xf9408ba0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -23648,11 +23934,14 @@ bl _p_272
 .word 0xf9407ba0
 .word 0xf90057a0
 .loc 25 494 0
-.word 0x34000399
+.word 0x340003f9
 .loc 25 496 0
 .word 0xf94057a0
 bl _p_294
+.word 0xf9007ba0
 .word 0x91014341
+.word 0xd5033bbf
+.word 0xf9407ba0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -23721,14 +24010,17 @@ ldr x15, [x16, #984]
 .word 0xf94067a1
 bl _p_298
 .loc 25 514 0
-.word 0x34000279
+.word 0x340002d9
 .loc 25 515 0
 .word 0x79404b41
 .word 0xaa1803e0
 .word 0xf9400302
 .word 0xf9403c50
 .word 0xd63f0200
+.word 0xf9007ba0
 .word 0x91012341
+.word 0xd5033bbf
+.word 0xf9407ba0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -23896,7 +24188,7 @@ bl _p_293
 .word 0xa94363b7
 .word 0xa9446bb9
 .word 0x910003bf
-.word 0xa8d17bfd
+.word 0xa8d27bfd
 .word 0xd65f03c0
 
 Lme_16b:
@@ -24039,7 +24331,7 @@ b System_IO_Compression_ZipEndOfCentralDirectoryBlock_TryReadBlock_System_IO_Bin
 	.no_dead_strip System_IO_Compression_ZipEndOfCentralDirectoryBlock_TryReadBlock_System_IO_BinaryReader_System_IO_Compression_ZipEndOfCentralDirectoryBlock_
 System_IO_Compression_ZipEndOfCentralDirectoryBlock_TryReadBlock_System_IO_BinaryReader_System_IO_Compression_ZipEndOfCentralDirectoryBlock_:
 .loc 25 581 0 prologue_end
-.word 0xa9bd7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xa9016bb9
 .word 0xaa0003f9
@@ -24060,7 +24352,7 @@ System_IO_Compression_ZipEndOfCentralDirectoryBlock_TryReadBlock_System_IO_Binar
 .word 0x54000060
 .loc 25 583 0
 .word 0xd2800000
-.word 0x1400003a
+.word 0x1400003d
 .loc 25 585 0
 .word 0xd2896a1e
 .word 0xf2a0c0be
@@ -24114,7 +24406,10 @@ System_IO_Compression_ZipEndOfCentralDirectoryBlock_TryReadBlock_System_IO_Binar
 .word 0xf9400322
 .word 0xf9403c50
 .word 0xd63f0200
+.word 0xf9001ba0
 .word 0x91006341
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -24131,7 +24426,7 @@ ldr x2, [x16, #16]
 .word 0xd2800020
 .word 0xa9416bb9
 .word 0x910003bf
-.word 0xa8c37bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
 
 Lme_16d:
@@ -24171,6 +24466,7 @@ System_IO_Compression_WrappedStream__ctor_System_IO_Stream_bool_System_IO_Compre
 .word 0xf90017a3
 .word 0xf9001ba4
 .word 0x9100a2c1
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -24189,6 +24485,7 @@ ldr x2, [x16, #16]
 .word 0x390102c0
 .loc 26 28 0
 .word 0x9100c2c1
+.word 0xd5033bbf
 .word 0xf9401ba0
 .word 0xf9000020
 .word 0xd349fc21
@@ -24204,6 +24501,7 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .loc 26 29 0
 .word 0x9100e2c1
+.word 0xd5033bbf
 .word 0xf94017a0
 .word 0xf9000020
 .word 0xd349fc21
@@ -24428,7 +24726,7 @@ ldr x0, [x16, #0]
 bl _p_8
 .word 0xaa0003e2
 .word 0xf94013a1
-.word 0xd28027c0
+.word 0xd28027e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_9
@@ -24461,7 +24759,7 @@ ldr x0, [x16, #0]
 .word 0xd28385c1
 bl _p_8
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -24494,7 +24792,7 @@ ldr x0, [x16, #0]
 .word 0xd2839481
 bl _p_8
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -24527,7 +24825,7 @@ ldr x0, [x16, #0]
 .word 0xd283a341
 bl _p_8
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -24750,6 +25048,7 @@ System_IO_Compression_SubReadStream__ctor_System_IO_Stream_long_long:
 .word 0xf90022e0
 .loc 26 161 0
 .word 0x9100a2e1
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -24836,7 +25135,7 @@ ldr x0, [x16, #0]
 .word 0xd283a341
 bl _p_8
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -24930,7 +25229,7 @@ ldr x0, [x16, #0]
 bl _p_8
 .word 0xaa0003e2
 .word 0xf94013a1
-.word 0xd28027c0
+.word 0xd28027e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_9
@@ -24963,7 +25262,7 @@ ldr x0, [x16, #0]
 .word 0xd28385c1
 bl _p_8
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -25061,7 +25360,7 @@ ldr x0, [x16, #0]
 .word 0xd283a341
 bl _p_8
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -25089,7 +25388,7 @@ ldr x0, [x16, #0]
 .word 0xd283b201
 bl _p_8
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -25119,7 +25418,7 @@ ldr x0, [x16, #0]
 .word 0xd2839481
 bl _p_8
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -25146,7 +25445,7 @@ ldr x0, [x16, #0]
 .word 0xd2839481
 bl _p_8
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -25197,6 +25496,7 @@ System_IO_Compression_CheckSumAndSizeWriteStream__ctor_System_IO_Stream_System_I
 .word 0xf9001fa5
 .word 0xf90023a6
 .word 0x9100a281
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -25212,6 +25512,7 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .loc 26 302 0
 .word 0x9100c281
+.word 0xd5033bbf
 .word 0xf94013a0
 .word 0xf9000020
 .word 0xd349fc21
@@ -25243,6 +25544,7 @@ ldr x2, [x16, #16]
 .word 0xf9003280
 .loc 26 309 0
 .word 0x9100e281
+.word 0xd5033bbf
 .word 0xf9401ba0
 .word 0xf9000020
 .word 0xd349fc21
@@ -25258,6 +25560,7 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .loc 26 310 0
 .word 0x91010281
+.word 0xd5033bbf
 .word 0xf9401fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -25273,6 +25576,7 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .loc 26 311 0
 .word 0x91012281
+.word 0xd5033bbf
 .word 0xf94023a0
 .word 0xf9000020
 .word 0xd349fc21
@@ -25311,7 +25615,7 @@ ldr x0, [x16, #0]
 .word 0xd283a341
 bl _p_8
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -25357,7 +25661,7 @@ ldr x0, [x16, #0]
 .word 0xd283a341
 bl _p_8
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -25441,7 +25745,7 @@ ldr x0, [x16, #0]
 bl _p_8
 .word 0xaa0003e2
 .word 0xf94013a1
-.word 0xd28027c0
+.word 0xd28027e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_9
@@ -25468,7 +25772,7 @@ ldr x0, [x16, #0]
 .word 0xd28385c1
 bl _p_8
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -25497,7 +25801,7 @@ ldr x0, [x16, #0]
 .word 0xd283a341
 bl _p_8
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -25525,7 +25829,7 @@ ldr x0, [x16, #0]
 .word 0xd283b201
 bl _p_8
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -25612,7 +25916,7 @@ ldr x0, [x16, #0]
 .word 0xd283c1c1
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -25632,7 +25936,7 @@ ldr x0, [x16, #0]
 bl _p_8
 .word 0xaa0003e2
 .word 0xf9401ba1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_9
@@ -25652,7 +25956,7 @@ ldr x0, [x16, #0]
 bl _p_8
 .word 0xaa0003e2
 .word 0xf9401ba1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_9
@@ -25664,7 +25968,7 @@ ldr x0, [x16, #0]
 .word 0xd283cc41
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2801920
+.word 0xd2801940
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -25800,7 +26104,7 @@ System_IO_Compression_ZipHelper_RequiresUnicode_string:
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -25857,7 +26161,7 @@ ldr x0, [x16, #0]
 .word 0xd283dfa1
 bl _p_8
 .word 0xaa0003e1
-.word 0xd280eea0
+.word 0xd280eec0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -26138,10 +26442,10 @@ bl _p_312
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802820
+.word 0xd2802840
 .word 0xaa1103e1
 bl _p_16
-.word 0xd2801cc0
+.word 0xd2801ce0
 .word 0xaa1103e1
 bl _p_16
 
@@ -26239,7 +26543,7 @@ bl _p_313
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -26307,7 +26611,7 @@ ldr x0, [x16, #0]
 .word 0xd283dfa1
 bl _p_8
 .word 0xaa0003e1
-.word 0xd280eea0
+.word 0xd280eec0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -26776,7 +27080,7 @@ ldr x0, [x16, #1352]
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -26786,8 +27090,104 @@ Lme_1a7:
 	.no_dead_strip System_IO_Compression_Crc32Helper__cctor
 System_IO_Compression_Crc32Helper__cctor:
 .loc 28 51 0 prologue_end
-.word 0xa9bb7bfd
+.word 0xa9b77bfd
 .word 0x910003fd
+
+adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
+add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
+ldr x0, [x16, #600]
+.word 0xd2802001
+bl _p_10
+.word 0xf90047a0
+.word 0x91008000
+
+adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
+add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
+ldr x1, [x16, #1360]
+.word 0xd2808002
+bl _p_140
+.word 0xf94047a1
+
+adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
+add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
+ldr x0, [x16, #1352]
+.word 0xf90043a0
+.word 0xd5033bbf
+.word 0xf94043a0
+.word 0xf9000001
+.loc 28 105 0
+
+adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
+add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
+ldr x0, [x16, #600]
+.word 0xd2802001
+bl _p_10
+.word 0xf9003fa0
+.word 0x91008000
+
+adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
+add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
+ldr x1, [x16, #1368]
+.word 0xd2808002
+bl _p_140
+.word 0xf9403fa1
+
+adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
+add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
+ldr x0, [x16, #1344]
+.word 0xf9003ba0
+.word 0xd5033bbf
+.word 0xf9403ba0
+.word 0xf9000001
+.loc 28 159 0
+
+adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
+add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
+ldr x0, [x16, #600]
+.word 0xd2802001
+bl _p_10
+.word 0xf90037a0
+.word 0x91008000
+
+adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
+add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
+ldr x1, [x16, #1376]
+.word 0xd2808002
+bl _p_140
+.word 0xf94037a1
+
+adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
+add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
+ldr x0, [x16, #1336]
+.word 0xf90033a0
+.word 0xd5033bbf
+.word 0xf94033a0
+.word 0xf9000001
+.loc 28 213 0
+
+adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
+add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
+ldr x0, [x16, #600]
+.word 0xd2802001
+bl _p_10
+.word 0xf9002fa0
+.word 0x91008000
+
+adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
+add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
+ldr x1, [x16, #1384]
+.word 0xd2808002
+bl _p_140
+.word 0xf9402fa1
+
+adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
+add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
+ldr x0, [x16, #1328]
+.word 0xf9002ba0
+.word 0xd5033bbf
+.word 0xf9402ba0
+.word 0xf9000001
+.loc 28 267 0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
@@ -26799,37 +27199,19 @@ bl _p_10
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
-ldr x1, [x16, #1360]
+ldr x1, [x16, #1392]
 .word 0xd2808002
 bl _p_140
 .word 0xf94027a1
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
-ldr x0, [x16, #1352]
-.word 0xf9000001
-.loc 28 105 0
-
-adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
-add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
-ldr x0, [x16, #600]
-.word 0xd2802001
-bl _p_10
+ldr x0, [x16, #1320]
 .word 0xf90023a0
-.word 0x91008000
-
-adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
-add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
-ldr x1, [x16, #1368]
-.word 0xd2808002
-bl _p_140
-.word 0xf94023a1
-
-adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
-add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
-ldr x0, [x16, #1344]
+.word 0xd5033bbf
+.word 0xf94023a0
 .word 0xf9000001
-.loc 28 159 0
+.loc 28 321 0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
@@ -26841,37 +27223,19 @@ bl _p_10
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
-ldr x1, [x16, #1376]
+ldr x1, [x16, #1400]
 .word 0xd2808002
 bl _p_140
 .word 0xf9401fa1
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
-ldr x0, [x16, #1336]
-.word 0xf9000001
-.loc 28 213 0
-
-adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
-add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
-ldr x0, [x16, #600]
-.word 0xd2802001
-bl _p_10
+ldr x0, [x16, #1312]
 .word 0xf9001ba0
-.word 0x91008000
-
-adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
-add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
-ldr x1, [x16, #1384]
-.word 0xd2808002
-bl _p_140
-.word 0xf9401ba1
-
-adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
-add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
-ldr x0, [x16, #1328]
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9000001
-.loc 28 267 0
+.loc 28 375 0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
@@ -26883,37 +27247,19 @@ bl _p_10
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
-ldr x1, [x16, #1392]
+ldr x1, [x16, #1408]
 .word 0xd2808002
 bl _p_140
 .word 0xf94017a1
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
-ldr x0, [x16, #1320]
-.word 0xf9000001
-.loc 28 321 0
-
-adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
-add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
-ldr x0, [x16, #600]
-.word 0xd2802001
-bl _p_10
+ldr x0, [x16, #1304]
 .word 0xf90013a0
-.word 0x91008000
-
-adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
-add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
-ldr x1, [x16, #1400]
-.word 0xd2808002
-bl _p_140
-.word 0xf94013a1
-
-adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
-add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
-ldr x0, [x16, #1312]
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xf9000001
-.loc 28 375 0
+.loc 28 429 0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
@@ -26925,38 +27271,20 @@ bl _p_10
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
-ldr x1, [x16, #1408]
+ldr x1, [x16, #1416]
 .word 0xd2808002
 bl _p_140
 .word 0xf9400fa1
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
-ldr x0, [x16, #1304]
-.word 0xf9000001
-.loc 28 429 0
-
-adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
-add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
-ldr x0, [x16, #600]
-.word 0xd2802001
-bl _p_10
-.word 0xf9000ba0
-.word 0x91008000
-
-adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
-add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
-ldr x1, [x16, #1416]
-.word 0xd2808002
-bl _p_140
-.word 0xf9400ba1
-
-adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
-add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #1296]
+.word 0xf9000ba0
+.word 0xd5033bbf
+.word 0xf9400ba0
 .word 0xf9000001
 .word 0x910003bf
-.word 0xa8c57bfd
+.word 0xa8c97bfd
 .word 0xd65f03c0
 
 Lme_1a8:
@@ -27053,7 +27381,7 @@ Lme_1a9:
 	.no_dead_strip System_Threading_Tasks_TaskToApm_End_System_IAsyncResult
 System_Threading_Tasks_TaskToApm_End_System_IAsyncResult:
 .loc 29 69 0 prologue_end
-.word 0xa9bc7bfd
+.word 0xa9bb7bfd
 .word 0x910003fd
 .word 0xa90167b8
 .word 0xf90013ba
@@ -27097,11 +27425,14 @@ ldr x1, [x16, #1440]
 .word 0xd2800019
 .word 0xaa1903fa
 .loc 29 82 0
-.word 0xb400031a
+.word 0xb400037a
 .loc 29 87 0
 .word 0x3940035e
 .word 0xf90017bf
 .word 0x9100a3a0
+.word 0xf90023a0
+.word 0xd5033bbf
+.word 0xf94023a0
 .word 0xf90017ba
 .word 0xd349fc00
 .word 0xd29ffffe
@@ -27122,10 +27453,10 @@ bl _p_318
 .word 0xa94167b8
 .word 0xf94013ba
 .word 0x910003bf
-.word 0xa8c47bfd
+.word 0xa8c57bfd
 .word 0xd65f03c0
 .loc 29 84 0
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -27214,7 +27545,7 @@ bl _p_322
 .word 0xa8c57bfd
 .word 0xd65f03c0
 .loc 29 112 0
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -27225,7 +27556,7 @@ Lme_1ab:
 	.no_dead_strip System_Threading_Tasks_TaskToApm_InvokeCallbackWhenTaskCompletes_System_Threading_Tasks_Task_System_AsyncCallback_System_IAsyncResult
 System_Threading_Tasks_TaskToApm_InvokeCallbackWhenTaskCompletes_System_Threading_Tasks_Task_System_AsyncCallback_System_IAsyncResult:
 .loc 29 0 0 prologue_end
-.word 0xa9b77bfd
+.word 0xa9b57bfd
 .word 0x910003fd
 .word 0xf9000bb8
 .word 0xaa0003f8
@@ -27243,7 +27574,10 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #1448]
 .word 0xd2800401
 bl _p_26
+.word 0xf90053a0
 .word 0x91004002
+.word 0xd5033bbf
+.word 0xf94053a0
 .word 0xf9400fa1
 .word 0xf9000041
 .word 0xd349fc42
@@ -27257,47 +27591,54 @@ ldr x3, [x16, #16]
 .word 0x8b030042
 .word 0xd280003e
 .word 0x3900005e
-.word 0x91006002
-.word 0xf94013a1
-.word 0xf9000041
-.word 0xd349fc42
+.word 0xf9004ba0
+.word 0x91006001
+.word 0xd5033bbf
+.word 0xf94013a0
+.word 0xf9000020
+.word 0xd349fc21
 .word 0xd29ffffe
 .word 0xf2a00ffe
-.word 0x8a1e0042
+.word 0x8a1e0021
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
-ldr x3, [x16, #16]
-.word 0x8b030042
+ldr x2, [x16, #16]
+.word 0x8b020021
 .word 0xd280003e
-.word 0x3900005e
+.word 0x3900003e
 .loc 29 131 0
 .word 0x3940031e
-.word 0xd2800001
-.word 0xf90027a1
-.word 0xf9002ba1
+.word 0xd2800000
+.word 0xf90027a0
+.word 0xf9002ba0
 .word 0x910123a1
-.word 0xd2800002
-.word 0xf9001fa2
-.word 0xf90023a2
-.word 0x9100e3a2
+.word 0xd2800000
+.word 0xf9001fa0
+.word 0xf90023a0
+.word 0x9100e3a0
+.word 0xf9004fa0
+.word 0xd5033bbf
+.word 0xf9404fa0
 .word 0xf9001fb8
-.word 0xd349fc42
+.word 0xd349fc00
 .word 0xd29ffffe
 .word 0xf2a00ffe
-.word 0x8a1e0042
+.word 0x8a1e0000
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
-ldr x3, [x16, #16]
-.word 0x8b030042
+ldr x2, [x16, #16]
+.word 0x8b020000
 .word 0xd280003e
-.word 0x3900005e
+.word 0x3900001e
 .word 0x390103bf
-.word 0xf9401fa2
-.word 0xf90017a2
-.word 0xf94023a2
-.word 0xf9001ba2
+.word 0xf9401fa0
+.word 0xf90017a0
+.word 0xf94023a0
+.word 0xf9001ba0
+.word 0xd5033bbf
+.word 0xf9404ba0
 .word 0xf94017a2
 .word 0xf90027a2
 .word 0xd349fc23
@@ -27324,10 +27665,10 @@ ldr x4, [x16, #16]
 .word 0xf9400421
 .word 0xf90033a1
 .word 0xaa0003e1
-.word 0xf90043a1
+.word 0xf90047a1
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54000600
+.word 0x54000660
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
@@ -27335,10 +27676,13 @@ ldr x0, [x16, #1456]
 .word 0xd2801001
 bl _p_26
 .word 0xaa0003e1
-.word 0xf94043a0
+.word 0xf94047a0
+.word 0xf90043a0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54000460
+.word 0x540004a0
+.word 0xd5033bbf
+.word 0xf94043a0
 .word 0xf9001020
 .word 0x91008022
 .word 0xd349fc42
@@ -27376,12 +27720,12 @@ bl _p_323
 .loc 29 150 0
 .word 0xf9400bb8
 .word 0x910003bf
-.word 0xa8c97bfd
+.word 0xa8cb7bfd
 .word 0xd65f03c0
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
-.word 0xd2801920
+.word 0xd2801940
 .word 0xaa1103e1
 bl _p_16
 
@@ -27559,7 +27903,7 @@ System_IO_Compression_BrotliStream__FinishReadAsyncMemoryd__41_MoveNext:
 .word 0xf9409ba0
 bl _p_327
 .word 0xb9812ba0
-.word 0x340020a0
+.word 0x34002100
 .loc 3 114 0
 .word 0xf9401ba0
 .word 0xb900481f
@@ -27570,11 +27914,11 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #264]
 .loc 3 116 0
 .word 0xd280003a
-.word 0x140001cd
+.word 0x140001d3
 .loc 3 120 0
 .word 0xd280005e
 .word 0x6b1e035f
-.word 0x54002981
+.word 0x540029e1
 .loc 3 123 0
 .word 0xf9409ba0
 .word 0xb9806800
@@ -27636,8 +27980,8 @@ bl _p_22
 .word 0xf9409ba0
 .word 0xb9806800
 .word 0xf9409ba1
-.word 0xf9401821
-.word 0xb9801821
+.word 0xf9401822
+.word 0xb9801841
 .word 0x6b01001f
 .word 0x5400022d
 .loc 3 137 0
@@ -27663,13 +28007,13 @@ bl _p_9
 .word 0xf9409ba0
 .word 0xb9806800
 .word 0xf9409ba1
-.word 0xf9401821
-.word 0xb9801821
+.word 0xf9401822
+.word 0xb9801841
 .word 0x6b01001f
 .word 0x9a9fa7e0
 .word 0x53001c1a
 .word 0xaa1a03e0
-.word 0x34001ea0
+.word 0x34001f00
 .word 0xf9409ba0
 .word 0xf9401400
 .word 0xf9011ba0
@@ -27678,8 +28022,8 @@ bl _p_9
 .word 0xf9409ba0
 .word 0xb9806802
 .word 0xf9409ba0
-.word 0xf9401800
-.word 0xb9801800
+.word 0xf9401803
+.word 0xb9801860
 .word 0xf9409ba3
 .word 0xb9806863
 .word 0x4b030003
@@ -27805,7 +28149,7 @@ ldr x15, [x16, #1512]
 .word 0x14000001
 .word 0x53001f40
 .word 0x53001c00
-.word 0x35000740
+.word 0x350007a0
 .word 0xf9401ba0
 .word 0xb9012bbf
 .word 0xb900001f
@@ -27816,6 +28160,9 @@ ldr x15, [x16, #1512]
 .word 0xf90043a1
 .word 0x91014002
 .word 0xaa0203e0
+.word 0xf9011ba0
+.word 0xd5033bbf
+.word 0xf9411ba0
 .word 0xf9403fa1
 .word 0xf9000041
 .word 0xd349fc02
@@ -27842,11 +28189,11 @@ ldr x15, [x16, #1520]
 .word 0x910423a1
 bl _p_330
 .word 0xf900afbf
-.word 0x940000e8
+.word 0x940000eb
 .word 0xf940afa0
 .word 0xb4000040
 bl _p_13
-.word 0x1400011a
+.word 0x1400011d
 .word 0xf9401ba0
 .word 0x91014000
 .word 0xf9400001
@@ -27927,12 +28274,12 @@ ldr x15, [x16, #1528]
 .word 0x6b1f035f
 .word 0x9a9fd7e0
 .word 0x53001c1a
-.word 0x35ffdcda
+.word 0x35ffdc7a
 .loc 3 141 0
 .word 0xf9409ba0
 .word 0xb9806800
 .word 0x6b1f001f
-.word 0x5400116d
+.word 0x540011cd
 .loc 3 147 0
 .word 0xf9401ba0
 .word 0x9100c000
@@ -27941,7 +28288,7 @@ bl _p_332
 .word 0xf9409ba0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54001960
+.word 0x540019c0
 .word 0x9100e000
 .word 0xf9011ba0
 .word 0xf9409ba0
@@ -28007,7 +28354,7 @@ ldr x0, [x16, #0]
 .word 0xd2807881
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2802440
+.word 0xd2802460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -28032,7 +28379,7 @@ bl _p_9
 .loc 3 160 0
 .word 0xb98143a0
 .word 0x6b1f001f
-.word 0x540004ed
+.word 0x5400054d
 .loc 3 162 0
 .word 0xf9401ba0
 .word 0xf9401ba1
@@ -28042,7 +28389,7 @@ bl _p_9
 .word 0xb9004801
 .loc 3 163 0
 .word 0xf9401ba0
-.word 0xf9011ba0
+.word 0xf9011fa0
 .word 0xf9401ba0
 .word 0x9100e000
 .word 0xb98143a1
@@ -28056,9 +28403,12 @@ bl _p_333
 .word 0xf940abbe
 .word 0xf90003c0
 .word 0xf90007c1
-.word 0xf9411ba0
+.word 0xf9411fa0
 .word 0x9100e002
 .word 0xaa0203e0
+.word 0xf9011ba0
+.word 0xd5033bbf
+.word 0xf9411ba0
 .word 0xf9401fa1
 .word 0xf9000041
 .word 0xd349fc02
@@ -28088,7 +28438,7 @@ ldr x1, [x16, #264]
 .word 0xa1e0000
 .word 0x6b1f001f
 .word 0x5400004d
-.word 0x35ffc53a
+.word 0x35ffc47a
 .loc 3 167 0
 .word 0xf9401ba0
 .word 0xb980481a
@@ -28165,7 +28515,7 @@ bl _p_335
 .word 0x8b100231
 .word 0x9100023f
 .word 0xd65f03c0
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
 
@@ -28204,7 +28554,7 @@ b System_IO_Compression_BrotliStream__WriteAsyncMemoryCored__52_MoveNext
 	.no_dead_strip System_IO_Compression_BrotliStream__WriteAsyncMemoryCored__52_MoveNext
 System_IO_Compression_BrotliStream__WriteAsyncMemoryCored__52_MoveNext:
 .loc 4 0 0 prologue_end
-.word 0xa9a37bfd
+.word 0xa9a27bfd
 .word 0x910003fd
 .word 0xa90163b7
 .word 0xa9026bb9
@@ -28238,12 +28588,12 @@ System_IO_Compression_BrotliStream__WriteAsyncMemoryCored__52_MoveNext:
 .word 0xf940afa0
 bl _p_327
 .word 0xb98153a0
-.word 0x34002a60
+.word 0x34002c60
 .loc 4 83 0
 .word 0xf9401ba0
 .word 0xd280003e
 .word 0xb900401e
-.word 0x1400018b
+.word 0x1400019b
 .loc 4 86 0
 .word 0xf940afa0
 .word 0xf9401800
@@ -28257,7 +28607,7 @@ ldr x1, [x16, #264]
 .word 0xd2800000
 .word 0xf9000340
 .word 0xf9000740
-.word 0x1400001d
+.word 0x1400001e
 .word 0x1400000d
 .word 0xf9400320
 .word 0xf9400c00
@@ -28272,6 +28622,7 @@ ldr x1, [x16, #312]
 .word 0x53001c00
 .word 0x34000040
 bl _p_46
+.word 0xd5033bbf
 .word 0xf9000359
 .word 0xd349ff40
 .word 0xd29ffffe
@@ -28298,7 +28649,7 @@ ldr x1, [x16, #16]
 .word 0xf940afa0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54003360
+.word 0x54003540
 .word 0x91012000
 .word 0xf9401ba1
 .word 0x9100a021
@@ -28336,17 +28687,17 @@ ldr x0, [x16, #0]
 .word 0xd2809861
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2802440
+.word 0xd2802460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
 .loc 4 92 0
 .word 0xb98163a0
 .word 0x6b1f001f
-.word 0x5400042d
+.word 0x5400048d
 .loc 4 93 0
 .word 0xf9401ba0
-.word 0xf900e3a0
+.word 0xf900e7a0
 .word 0xf9401ba0
 .word 0x9100a000
 .word 0xb98163a1
@@ -28360,9 +28711,12 @@ bl _p_338
 .word 0xf940bfbe
 .word 0xf90003c0
 .word 0xf90007c1
-.word 0xf940e3a0
+.word 0xf940e7a0
 .word 0x9100a002
 .word 0xaa0203e0
+.word 0xf900e3a0
+.word 0xd5033bbf
+.word 0xf940e3a0
 .word 0xf94043a1
 .word 0xf9000041
 .word 0xd349fc02
@@ -28382,11 +28736,11 @@ ldr x3, [x16, #16]
 .loc 4 94 0
 .word 0xb9816ba0
 .word 0x6b1f001f
-.word 0x540021ed
+.word 0x5400236d
 .loc 4 95 0
 .word 0xf940afa0
 .word 0xf9401400
-.word 0xf900e3a0
+.word 0xf900efa0
 .word 0xf940afa0
 .word 0xf9401801
 .word 0xb9816ba3
@@ -28400,7 +28754,7 @@ ldr x15, [x16, #328]
 .word 0x910403a0
 .word 0xd2800002
 bl _p_48
-.word 0xf940e3a4
+.word 0xf940efa4
 .word 0xf94083a0
 .word 0xf9003ba0
 .word 0xf94087a0
@@ -28423,10 +28777,13 @@ bl _p_48
 .word 0xf90007c1
 .word 0xf94093a1
 .word 0x798253a0
-.word 0xd2800002
-.word 0xf9007ba2
-.word 0xf9007fa2
+.word 0xf900eba0
+.word 0xd2800000
+.word 0xf9007ba0
+.word 0xf9007fa0
 .word 0x9103c3a2
+.word 0xd5033bbf
+.word 0xf940eba0
 .word 0xf9007ba1
 .word 0xd349fc42
 .word 0xd29ffffe
@@ -28449,6 +28806,9 @@ ldr x3, [x16, #16]
 .word 0xf90073a0
 .word 0xf90077a0
 .word 0x910383a0
+.word 0xf900e7a0
+.word 0xd5033bbf
+.word 0xf940e7a0
 .word 0xf9402fa1
 .word 0xf90073a1
 .word 0xd349fc02
@@ -28478,6 +28838,9 @@ ldr x3, [x16, #16]
 .word 0xf9006ba0
 .word 0xf9006fa0
 .word 0x910343a0
+.word 0xf900e3a0
+.word 0xd5033bbf
+.word 0xf940e3a0
 .word 0xf94027a1
 .word 0xf9006ba1
 .word 0xd349fc02
@@ -28560,7 +28923,7 @@ ldr x15, [x16, #1536]
 .word 0x14000001
 .word 0x53001f40
 .word 0x53001c00
-.word 0x35000740
+.word 0x350007a0
 .word 0xf9401ba0
 .word 0xb90153bf
 .word 0xb900001f
@@ -28571,6 +28934,9 @@ ldr x15, [x16, #1536]
 .word 0xf90023a1
 .word 0x91012002
 .word 0xaa0203e0
+.word 0xf900e3a0
+.word 0xd5033bbf
+.word 0xf940e3a0
 .word 0xf9401fa1
 .word 0xf9000041
 .word 0xd349fc02
@@ -28669,7 +29035,7 @@ ldr x15, [x16, #1552]
 .word 0xb9804000
 .word 0xd280003e
 .word 0x6b1e001f
-.word 0x54ffce40
+.word 0x54ffcc40
 .loc 4 97 0
 .word 0xf900c3bf
 .word 0x94000005
@@ -28730,9 +29096,9 @@ bl _p_341
 .word 0xa94163b7
 .word 0xa9426bb9
 .word 0x910003bf
-.word 0xa8dd7bfd
+.word 0xa8de7bfd
 .word 0xd65f03c0
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
 
@@ -28767,7 +29133,7 @@ b System_IO_Compression_BrotliStream__FlushAsyncCored__55_MoveNext
 	.no_dead_strip System_IO_Compression_BrotliStream__FlushAsyncCored__55_MoveNext
 System_IO_Compression_BrotliStream__FlushAsyncCored__55_MoveNext:
 .loc 4 0 0 prologue_end
-.word 0xa9a27bfd
+.word 0xa9a17bfd
 .word 0x910003fd
 .word 0xa90163b7
 .word 0xa9026bb9
@@ -28800,7 +29166,7 @@ System_IO_Compression_BrotliStream__FlushAsyncCored__55_MoveNext:
 .word 0xf940b7a0
 bl _p_327
 .word 0xb98163a0
-.word 0x34002a40
+.word 0x34002be0
 .loc 4 144 0
 .word 0xf940b7a0
 .word 0x91012000
@@ -28829,16 +29195,16 @@ bl _p_327
 .word 0x340000e0
 .loc 4 145 0
 .word 0xf900c7bf
-.word 0x9400017e
+.word 0x9400018b
 .word 0xf940c7a0
 .word 0xb4000040
 bl _p_13
-.word 0x140001a3
+.word 0x140001b0
 .loc 4 147 0
 .word 0xf9401ba0
 .word 0xd280003e
 .word 0xb900301e
-.word 0x1400016b
+.word 0x14000178
 .loc 4 150 0
 .word 0xf940b7a0
 .word 0xf9401800
@@ -28852,7 +29218,7 @@ ldr x1, [x16, #264]
 .word 0xd2800000
 .word 0xf9000340
 .word 0xf9000740
-.word 0x1400001d
+.word 0x1400001e
 .word 0x1400000d
 .word 0xf9400320
 .word 0xf9400c00
@@ -28867,6 +29233,7 @@ ldr x1, [x16, #312]
 .word 0x53001c00
 .word 0x34000040
 bl _p_46
+.word 0xd5033bbf
 .word 0xf9000359
 .word 0xd349ff40
 .word 0xd29ffffe
@@ -28891,7 +29258,7 @@ ldr x1, [x16, #16]
 .word 0xf940b7a0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54002f80
+.word 0x54003100
 .word 0x91012000
 .word 0xf940aba1
 .word 0xf9004ba1
@@ -28933,11 +29300,11 @@ bl _p_9
 .loc 4 155 0
 .word 0xb98173a0
 .word 0x6b1f001f
-.word 0x540022ed
+.word 0x5400246d
 .loc 4 156 0
 .word 0xf940b7a0
 .word 0xf9401400
-.word 0xf900eba0
+.word 0xf900f7a0
 .word 0xb98173a2
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -28951,7 +29318,7 @@ bl _p_344
 .word 0xf940c3be
 .word 0xf90003c0
 .word 0xf90007c1
-.word 0xf940eba4
+.word 0xf940f7a4
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
@@ -28983,10 +29350,13 @@ ldr x0, [x16, #264]
 .word 0xf90007c1
 .word 0xf9409ba1
 .word 0x798273a0
-.word 0xd2800002
-.word 0xf90073a2
-.word 0xf90077a2
+.word 0xf900f3a0
+.word 0xd2800000
+.word 0xf90073a0
+.word 0xf90077a0
 .word 0x910383a2
+.word 0xd5033bbf
+.word 0xf940f3a0
 .word 0xf90073a1
 .word 0xd349fc42
 .word 0xd29ffffe
@@ -29009,6 +29379,9 @@ ldr x3, [x16, #16]
 .word 0xf9006ba0
 .word 0xf9006fa0
 .word 0x910343a0
+.word 0xf900efa0
+.word 0xd5033bbf
+.word 0xf940efa0
 .word 0xf9402fa1
 .word 0xf9006ba1
 .word 0xd349fc02
@@ -29038,6 +29411,9 @@ ldr x3, [x16, #16]
 .word 0xf90063a0
 .word 0xf90067a0
 .word 0x910303a0
+.word 0xf900eba0
+.word 0xd5033bbf
+.word 0xf940eba0
 .word 0xf94027a1
 .word 0xf90063a1
 .word 0xd349fc02
@@ -29120,7 +29496,7 @@ ldr x15, [x16, #1536]
 .word 0x14000001
 .word 0x53001f40
 .word 0x53001c00
-.word 0x35000740
+.word 0x350007a0
 .word 0xf9401ba0
 .word 0xb90163bf
 .word 0xb900001f
@@ -29131,6 +29507,9 @@ ldr x15, [x16, #1536]
 .word 0xf90023a1
 .word 0x9100e002
 .word 0xaa0203e0
+.word 0xf900eba0
+.word 0xd5033bbf
+.word 0xf940eba0
 .word 0xf9401fa1
 .word 0xf9000041
 .word 0xd349fc02
@@ -29229,7 +29608,7 @@ ldr x15, [x16, #1552]
 .word 0xb9803000
 .word 0xd280003e
 .word 0x6b1e001f
-.word 0x54ffd240
+.word 0x54ffd0a0
 .loc 4 158 0
 .word 0xf900c7bf
 .word 0x94000005
@@ -29290,9 +29669,9 @@ bl _p_341
 .word 0xa94163b7
 .word 0xa9426bb9
 .word 0x910003bf
-.word 0xa8de7bfd
+.word 0xa8df7bfd
 .word 0xd65f03c0
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
 
@@ -29374,7 +29753,7 @@ System_IO_Compression_DeflateManagedStream__ReadAsyncCored__40_MoveNext:
 .word 0xf9401400
 .word 0xf90037a0
 .word 0xb98063a0
-.word 0x340009e0
+.word 0x34000a40
 .loc 10 292 0
 .word 0xf94013a0
 .word 0xf9401002
@@ -29416,7 +29795,7 @@ ldr x0, [x16, #1576]
 .word 0x53001c00
 .word 0x53001c00
 .word 0x53001c00
-.word 0x35000740
+.word 0x350007a0
 .word 0xf94013a0
 .word 0xb90063bf
 .word 0xb900001f
@@ -29427,6 +29806,9 @@ ldr x0, [x16, #1576]
 .word 0xf9001fa1
 .word 0x91012002
 .word 0xaa0203e0
+.word 0xf90063a0
+.word 0xd5033bbf
+.word 0xf94063a0
 .word 0xf9401ba1
 .word 0xf9000041
 .word 0xd349fc02
@@ -29453,11 +29835,11 @@ ldr x15, [x16, #1584]
 .word 0x910143a1
 bl _p_347
 .word 0xf9003fbf
-.word 0x94000094
+.word 0x94000098
 .word 0xf9403fa0
 .word 0xb4000040
 bl _p_13
-.word 0x140000c3
+.word 0x140000c7
 .word 0xf94013a0
 .word 0x91012000
 .word 0xf9400001
@@ -29493,15 +29875,15 @@ bl _p_90
 .loc 10 298 0
 .word 0xd2800019
 .word 0xf9003fbf
-.word 0x94000070
+.word 0x94000074
 .word 0xf9403fa0
 .word 0xb4000040
 bl _p_13
-.word 0x14000094
+.word 0x14000098
 .loc 10 300 0
 .word 0xf94037a0
-.word 0xf9402000
-.word 0xb9801800
+.word 0xf9402001
+.word 0xb9801820
 .word 0x6b00035f
 .word 0x5400022d
 .loc 10 304 0
@@ -29553,17 +29935,17 @@ bl _p_93
 .word 0xaa0003fa
 .loc 10 313 0
 .word 0xaa1a03e0
-.word 0x350006a0
+.word 0x35000720
 .word 0xf94037a0
 .word 0xf9401801
 .word 0xaa0103e0
 .word 0x3940003e
 bl _p_94
 .word 0x53001c00
-.word 0x350005c0
+.word 0x35000640
 .loc 10 317 0
 .word 0xf94013a0
-.word 0xf90063a0
+.word 0xf90067a0
 .word 0xf94037a0
 .word 0xf9401405
 .word 0xf94037a0
@@ -29581,8 +29963,12 @@ bl _p_94
 .word 0xf94000a5
 .word 0xf94080b0
 .word 0xd63f0200
-.word 0xf94063a1
-.word 0x91008021
+.word 0xaa0003e1
+.word 0xf94067a0
+.word 0xf90063a1
+.word 0x91008001
+.word 0xd5033bbf
+.word 0xf94063a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -29598,7 +29984,7 @@ ldr x2, [x16, #16]
 .loc 10 318 0
 .word 0xf94013a0
 .word 0xf9401000
-.word 0xb5ffe6a0
+.word 0xb5ffe5c0
 .loc 10 320 0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -29607,7 +29993,7 @@ ldr x0, [x16, #0]
 .word 0xd2800a21
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2802440
+.word 0xd2802460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -29678,7 +30064,7 @@ bl _p_350
 .word 0x910003bf
 .word 0xa8cd7bfd
 .word 0xd65f03c0
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
 
@@ -29717,7 +30103,7 @@ b System_IO_Compression_DeflateManagedStream__WriteAsyncCored__47_MoveNext
 	.no_dead_strip System_IO_Compression_DeflateManagedStream__WriteAsyncCored__47_MoveNext
 System_IO_Compression_DeflateManagedStream__WriteAsyncCored__47_MoveNext:
 .loc 10 0 0 prologue_end
-.word 0xa9b27bfd
+.word 0xa9b17bfd
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xb90083bf
@@ -29741,7 +30127,7 @@ System_IO_Compression_DeflateManagedStream__WriteAsyncCored__47_MoveNext:
 .word 0xf94047a0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54001980
+.word 0x54001a80
 .word 0x91016000
 .word 0xd2800021
 .word 0x885f7c10
@@ -29751,7 +30137,7 @@ System_IO_Compression_DeflateManagedStream__WriteAsyncCored__47_MoveNext:
 .word 0xd5033bbf
 .word 0xaa1003e0
 .word 0xb98083a0
-.word 0x34000f00
+.word 0x34001000
 .loc 10 510 0
 .word 0xf94047a0
 .word 0xf9400ba1
@@ -29766,33 +30152,38 @@ System_IO_Compression_DeflateManagedStream__WriteAsyncCored__47_MoveNext:
 .word 0xf9001fa4
 .word 0xf9401fa4
 bl _p_352
-.word 0xaa0003e1
-.word 0x3940003e
+.word 0x3940001e
+.word 0xf90073a0
 .word 0xd2800000
 .word 0xf9002ba0
 .word 0xf9002fa0
 .word 0x910143a0
-.word 0xd2800002
-.word 0xf90023a2
-.word 0xf90027a2
-.word 0x910103a2
-.word 0xf90023a1
-.word 0xd349fc42
+.word 0xf9006fa0
+.word 0xd2800000
+.word 0xf90023a0
+.word 0xf90027a0
+.word 0x910103a1
+.word 0xd5033bbf
+.word 0xf94073a0
+.word 0xf90023a0
+.word 0xd349fc21
 .word 0xd29ffffe
 .word 0xf2a00ffe
-.word 0x8a1e0042
+.word 0x8a1e0021
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
-ldr x3, [x16, #16]
-.word 0x8b030042
+ldr x2, [x16, #16]
+.word 0x8b020021
 .word 0xd280003e
-.word 0x3900005e
+.word 0x3900003e
 .word 0x390123bf
-.word 0xf94023a1
-.word 0xf90017a1
-.word 0xf94027a1
-.word 0xf9001ba1
+.word 0xf94023a0
+.word 0xf90017a0
+.word 0xf94027a0
+.word 0xf9001ba0
+.word 0xd5033bbf
+.word 0xf9406fa0
 .word 0xf94017a1
 .word 0xf9002ba1
 .word 0xd349fc02
@@ -29834,7 +30225,7 @@ ldr x3, [x16, #16]
 .word 0x53001c00
 .word 0x53001c00
 .word 0x53001c00
-.word 0x35000740
+.word 0x350007a0
 .word 0xf9400ba0
 .word 0xb90083bf
 .word 0xb900001f
@@ -29845,6 +30236,9 @@ ldr x3, [x16, #16]
 .word 0xf90013a1
 .word 0x91010002
 .word 0xaa0203e0
+.word 0xf9006ba0
+.word 0xd5033bbf
+.word 0xf9406ba0
 .word 0xf9400fa1
 .word 0xf9000041
 .word 0xd349fc02
@@ -29951,9 +30345,9 @@ bl _p_9
 .word 0x91002000
 bl _p_341
 .word 0x910003bf
-.word 0xa8ce7bfd
+.word 0xa8cf7bfd
 .word 0xd65f03c0
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
 
@@ -30025,6 +30419,7 @@ System_IO_Compression_ZipArchiveEntry_DirectToArchiveWriterStream__ctor_System_I
 .word 0xf9001f00
 .loc 23 1093 0
 .word 0x9100a301
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -30044,6 +30439,7 @@ ldr x2, [x16, #16]
 .word 0x3901071f
 .loc 23 1096 0
 .word 0x9100c301
+.word 0xd5033bbf
 .word 0xf94013a0
 .word 0xf9000020
 .word 0xd349fc21
@@ -30087,7 +30483,7 @@ ldr x0, [x16, #0]
 .word 0xd283a341
 bl _p_8
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -30133,7 +30529,7 @@ ldr x0, [x16, #0]
 .word 0xd283a341
 bl _p_8
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -30217,7 +30613,7 @@ ldr x0, [x16, #0]
 bl _p_8
 .word 0xaa0003e2
 .word 0xf94013a1
-.word 0xd28027c0
+.word 0xd28027e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_9
@@ -30244,7 +30640,7 @@ ldr x0, [x16, #0]
 .word 0xd28385c1
 bl _p_8
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -30273,7 +30669,7 @@ ldr x0, [x16, #0]
 .word 0xd283a341
 bl _p_8
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -30301,7 +30697,7 @@ ldr x0, [x16, #0]
 .word 0xd283b201
 bl _p_8
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -30383,7 +30779,7 @@ ldr x0, [x16, #0]
 .word 0xd283c1c1
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -30403,7 +30799,7 @@ ldr x0, [x16, #0]
 bl _p_8
 .word 0xaa0003e2
 .word 0xf9401ba1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_9
@@ -30423,7 +30819,7 @@ ldr x0, [x16, #0]
 bl _p_8
 .word 0xaa0003e2
 .word 0xf9401ba1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_9
@@ -30435,7 +30831,7 @@ ldr x0, [x16, #0]
 .word 0xd283cc41
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2801920
+.word 0xd2801940
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -30534,7 +30930,7 @@ Lme_1d7:
 	.align 4
 	.no_dead_strip System_IO_Compression_ZipArchiveEntry__c__cctor
 System_IO_Compression_ZipArchiveEntry__c__cctor:
-.word 0xa9bf7bfd
+.word 0xa9be7bfd
 .word 0x910003fd
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -30547,9 +30943,12 @@ bl _p_26
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #1024]
+.word 0xf9000ba0
+.word 0xd5033bbf
+.word 0xf9400ba0
 .word 0xf9000001
 .word 0x910003bf
-.word 0xa8c17bfd
+.word 0xa8c27bfd
 .word 0xd65f03c0
 
 Lme_1d8:
@@ -30650,7 +31049,7 @@ ldr x1, [x16, #1616]
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_16
 
@@ -30685,6 +31084,7 @@ System_Threading_Tasks_TaskToApm_TaskWrapperAsyncResult__ctor_System_Threading_T
 .word 0xf90013a2
 .word 0xf90017a3
 .word 0x910042e1
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -30700,6 +31100,7 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .loc 29 175 0
 .word 0x910062e1
+.word 0xd5033bbf
 .word 0xf94013a0
 .word 0xf9000020
 .word 0xd349fc21
@@ -30969,7 +31370,7 @@ bl _mono_gsharedvt_value_copy
 .word 0xa8c77bfd
 .word 0xd65f03c0
 .loc 29 112 0
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -31070,7 +31471,7 @@ bl _p_367
 .word 0xa8c57bfd
 .word 0xd65f03c0
 .loc 29 112 0
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -31200,7 +31601,7 @@ b System_ReadOnlySpan_1_T_BYTE__ctor_void__int
 	.no_dead_strip System_ReadOnlySpan_1_T_BYTE__ctor_void__int
 System_ReadOnlySpan_1_T_BYTE__ctor_void__int:
 .loc 31 106 0 prologue_end
-.word 0xa9ba7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xf9000bb8
 .word 0xf9001faf
@@ -31226,7 +31627,7 @@ bl _p_368
 .loc 31 111 0
 .word 0xf9400bb8
 .word 0x910003bf
-.word 0xa8c67bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
 .loc 31 107 0
 bl _p_369
@@ -31839,7 +32240,7 @@ System_ReadOnlySpan_1_T_BYTE_Equals_object:
 .word 0xd28ffb00
 bl _p_384
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -31864,7 +32265,7 @@ System_ReadOnlySpan_1_T_BYTE_GetHashCode:
 .word 0xd2900e20
 bl _p_384
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -32086,7 +32487,7 @@ System_ByReference_1_T_BYTE__ctor_T_BYTE_:
 .word 0xf90013af
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -32108,7 +32509,7 @@ System_ByReference_1_T_BYTE_get_Value:
 .word 0x910003fd
 .word 0xf9000faf
 .word 0xf9000ba0
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -32277,7 +32678,7 @@ b System_Span_1_T_BYTE__ctor_void__int
 	.no_dead_strip System_Span_1_T_BYTE__ctor_void__int
 System_Span_1_T_BYTE__ctor_void__int:
 .loc 34 112 0 prologue_end
-.word 0xa9ba7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xf9000bb8
 .word 0xf9001faf
@@ -32303,7 +32704,7 @@ bl _p_394
 .loc 34 117 0
 .word 0xf9400bb8
 .word 0x910003bf
-.word 0xa8c67bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
 .loc 34 113 0
 bl _p_369
@@ -33030,7 +33431,7 @@ System_Span_1_T_BYTE_Equals_object:
 .word 0xd28ffb00
 bl _p_384
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -33055,7 +33456,7 @@ System_Span_1_T_BYTE_GetHashCode:
 .word 0xd2900e20
 bl _p_384
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -33284,7 +33685,7 @@ System_Memory_1_T_BYTE__ctor_T_BYTE__:
 .word 0xf9000320
 .word 0xf9000720
 .loc 36 56 0
-.word 0x1400001d
+.word 0x1400001e
 .loc 36 58 0
 .word 0x1400000e
 .word 0xf9400340
@@ -33299,8 +33700,9 @@ bl _p_416
 .word 0x6b1f001f
 .word 0x9a9f17e0
 .word 0x53001c00
-.word 0x35000260
+.word 0x35000280
 .loc 36 61 0
+.word 0xd5033bbf
 .word 0xf900033a
 .word 0xd349ff20
 .word 0xd29ffffe
@@ -33325,7 +33727,7 @@ ldr x1, [x16, #16]
 .word 0xd65f03c0
 .loc 36 59 0
 bl _p_46
-.word 0x17ffffed
+.word 0x17ffffec
 
 Lme_218:
 .text
@@ -33347,13 +33749,13 @@ System_Memory_1_T_BYTE__ctor_T_BYTE___int:
 .word 0xaa0203fa
 .word 0xb50000d9
 .loc 36 71 0
-.word 0x3500055a
+.word 0x3500057a
 .loc 36 73 0
 .word 0xd2800000
 .word 0xf9000300
 .word 0xf9000700
 .loc 36 74 0
-.word 0x14000021
+.word 0x14000022
 .loc 36 76 0
 .word 0x1400000e
 .word 0xf9400320
@@ -33368,12 +33770,13 @@ bl _p_416
 .word 0x6b1f001f
 .word 0x9a9f17e0
 .word 0x53001c00
-.word 0x35000340
+.word 0x35000360
 .loc 36 78 0
 .word 0xb9801b20
 .word 0x6b00035f
-.word 0x54000328
+.word 0x54000348
 .loc 36 81 0
+.word 0xd5033bbf
 .word 0xf9000319
 .word 0xd349ff00
 .word 0xd29ffffe
@@ -33400,13 +33803,13 @@ ldr x1, [x16, #16]
 .word 0xd65f03c0
 .loc 36 72 0
 bl _p_369
-.word 0x17ffffd6
+.word 0x17ffffd5
 .loc 36 77 0
 bl _p_46
-.word 0x17ffffe6
+.word 0x17ffffe5
 .loc 36 79 0
 bl _p_369
-.word 0x17ffffe7
+.word 0x17ffffe6
 
 Lme_219:
 .text
@@ -33429,15 +33832,15 @@ System_Memory_1_T_BYTE__ctor_T_BYTE___int_int:
 .word 0xf90017a3
 .word 0xb5000118
 .loc 36 103 0
-.word 0x35000619
+.word 0x35000639
 .word 0xb9802ba0
-.word 0x350005c0
+.word 0x350005e0
 .loc 36 105 0
 .word 0xd2800000
 .word 0xf90002e0
 .word 0xf90006e0
 .loc 36 106 0
-.word 0x14000025
+.word 0x14000026
 .loc 36 108 0
 .word 0x1400000e
 .word 0xf9400300
@@ -33452,17 +33855,18 @@ bl _p_416
 .word 0x6b1f001f
 .word 0x9a9f17e0
 .word 0x53001c00
-.word 0x350003c0
+.word 0x350003e0
 .loc 36 110 0
 .word 0xb9801b00
 .word 0x6b00033f
-.word 0x540003a8
+.word 0x540003c8
 .word 0xb9801b00
 .word 0x4b190001
 .word 0xb9802ba0
 .word 0x6b01001f
-.word 0x54000308
+.word 0x54000328
 .loc 36 113 0
+.word 0xd5033bbf
 .word 0xf90002f8
 .word 0xd349fee0
 .word 0xd29ffffe
@@ -33488,13 +33892,13 @@ ldr x1, [x16, #16]
 .word 0xd65f03c0
 .loc 36 104 0
 bl _p_369
-.word 0x17ffffd2
+.word 0x17ffffd1
 .loc 36 109 0
 bl _p_46
-.word 0x17ffffe2
+.word 0x17ffffe1
 .loc 36 111 0
 bl _p_369
-.word 0x17ffffe8
+.word 0x17ffffe7
 
 Lme_21a:
 .text
@@ -33515,8 +33919,9 @@ System_Memory_1_T_BYTE__ctor_System_Buffers_MemoryManager_1_T_BYTE_int:
 .word 0xf90013a2
 .word 0xb98023a0
 .word 0x6b1f001f
-.word 0x540002cb
+.word 0x540002eb
 .loc 36 136 0
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000300
 .word 0xd349ff01
@@ -33544,7 +33949,7 @@ ldr x2, [x16, #16]
 .word 0xd65f03c0
 .loc 36 134 0
 bl _p_369
-.word 0x17ffffea
+.word 0x17ffffe9
 
 Lme_21b:
 .text
@@ -33566,11 +33971,12 @@ System_Memory_1_T_BYTE__ctor_System_Buffers_MemoryManager_1_T_BYTE_int_int:
 .word 0xf90017a3
 .word 0xb9802ba0
 .word 0x6b1f001f
-.word 0x5400036b
+.word 0x5400038b
 .word 0xb98023a0
 .word 0x6b1f001f
-.word 0x5400030b
+.word 0x5400032b
 .loc 36 161 0
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf90002e0
 .word 0xd349fee1
@@ -33600,7 +34006,7 @@ ldr x2, [x16, #16]
 .word 0xd65f03c0
 .loc 36 159 0
 bl _p_369
-.word 0x17ffffe8
+.word 0x17ffffe7
 
 Lme_21c:
 .text
@@ -33620,6 +34026,7 @@ System_Memory_1_T_BYTE__ctor_object_int_int:
 .word 0xf9000fa1
 .word 0xf90013a2
 .word 0xf90017a3
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf90002e0
 .word 0xd349fee1
@@ -33931,7 +34338,7 @@ bl _p_425
 .word 0xf9400400
 .word 0xeb18001f
 .word 0x10000011
-.word 0x54002061
+.word 0x54002021
 .word 0x9101e3a0
 .word 0xf9005ba0
 .word 0xaa1a03e0
@@ -34017,7 +34424,7 @@ ldr x1, [x16, #1680]
 .word 0x3940035e
 .word 0xeb1f035f
 .word 0x10000011
-.word 0x54001580
+.word 0x54001540
 .word 0x91005340
 .word 0xf9006ba0
 .word 0xb9801340
@@ -34055,11 +34462,11 @@ bl _p_426
 .word 0xf90027bf
 .word 0xb98083a0
 .word 0x6b00033f
-.word 0x54001088
+.word 0x54001068
 .word 0xb9800b40
 .word 0x4b190000
 .word 0x6b00031f
-.word 0x54001008
+.word 0x54000fe8
 .word 0xf9400340
 .word 0xf90027a0
 .word 0xf94027a0
@@ -34189,13 +34596,11 @@ bl _p_376
 .word 0xa8cf7bfd
 .word 0xd65f03c0
 bl _p_369
-.word 0x17ffff24
 bl _p_369
-.word 0x17ffff80
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_16
 
@@ -34374,7 +34779,7 @@ bl _p_425
 .word 0xf9400400
 .word 0xeb18001f
 .word 0x10000011
-.word 0x54001a41
+.word 0x54001a01
 .word 0x910243a0
 .word 0xf90053a0
 .word 0xaa1903e0
@@ -34462,7 +34867,7 @@ ldr x1, [x16, #1680]
 .word 0x3940033e
 .word 0xeb1f033f
 .word 0x10000011
-.word 0x54000f60
+.word 0x54000f20
 .word 0x91005320
 .word 0xf90063a0
 .word 0xb9801320
@@ -34500,11 +34905,11 @@ bl _p_426
 .word 0xf9002fbf
 .word 0xb9809ba0
 .word 0x6b00033f
-.word 0x54000a68
+.word 0x54000a48
 .word 0xb9800b40
 .word 0x4b190000
 .word 0x6b00031f
-.word 0x540009e8
+.word 0x540009c8
 .word 0xf9400340
 .word 0xf9002fa0
 .word 0xf9402fa0
@@ -34585,13 +34990,11 @@ bl _p_430
 .word 0xa8ce7bfd
 .word 0xd65f03c0
 bl _p_369
-.word 0x17ffff55
 bl _p_369
-.word 0x17ffffb1
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_16
 
@@ -34636,7 +35039,7 @@ bl _p_425
 .word 0xf9400400
 .word 0xeb18001f
 .word 0x10000011
-.word 0x540037a1
+.word 0x54003721
 .word 0x910403a0
 .word 0xf9009fa0
 .word 0xaa1a03e0
@@ -34722,7 +35125,497 @@ ldr x1, [x16, #1680]
 .word 0x3940035e
 .word 0xeb1f035f
 .word 0x10000011
-.word 0x54002cc0
+.word 0x54002c40
+.word 0x91005340
+.word 0xf900aba0
+.word 0xb9801340
+.word 0xf900afa0
+.word 0xd2800000
+.word 0xf9006fa0
+.word 0xf90073a0
+.word 0xf94093a0
+bl _p_426
+.word 0xf900b3a0
+.word 0xf94093a0
+bl _p_427
+.word 0xaa0003e3
+.word 0xf940aba1
+.word 0xf940afa2
+.word 0xf940b3af
+.word 0x910363a0
+.word 0xd63f0060
+.word 0xf9406fa0
+.word 0xf90083a0
+.word 0xf94073a0
+.word 0xf90087a0
+.word 0xb9800b20
+.word 0xf900a7a0
+.word 0xb9800f20
+.word 0xf900a3a0
+.word 0xf94093a0
+bl _p_426
+.word 0xaa0003e2
+.word 0xf940a3a0
+.word 0xf940a7a1
+.word 0x910403ba
+.word 0xaa0103f9
+.word 0xaa0003f8
+.word 0xf9006bbf
+.word 0xb9810ba0
+.word 0x6b00033f
+.word 0x54002728
+.word 0xb9800b40
+.word 0x4b190000
+.word 0x6b00031f
+.word 0x540026a8
+.word 0xf9400340
+.word 0xf9006ba0
+.word 0xf9406ba0
+.word 0x8b190000
+.word 0xf900a3a0
+.word 0xd2800000
+.word 0xf90063a0
+.word 0xf90067a0
+.word 0xf94093a0
+bl _p_426
+.word 0xf900a7a0
+.word 0xf94093a0
+bl _p_427
+.word 0xaa0003e3
+.word 0xf940a3a1
+.word 0xf940a7af
+.word 0x910303a0
+.word 0xaa1803e2
+.word 0xd63f0060
+.word 0xf94063a0
+.word 0xf9008ba0
+.word 0xf94067a0
+.word 0xf9008fa0
+.word 0x1400002e
+.word 0xf9400320
+.word 0xb40004a0
+.word 0xf9400320
+.word 0xf900b3a0
+.word 0xf94093a0
+bl _p_428
+.word 0xaa0003e2
+.word 0xf940b3a0
+.word 0xf9400441
+bl _p_429
+.word 0xf900a3a0
+.word 0xb9800b20
+.word 0xf900a7a0
+.word 0xb9800f20
+.word 0xd29ffffe
+.word 0xf2affffe
+.word 0xa1e0000
+.word 0xf900aba0
+.word 0xd2800000
+.word 0xf9005ba0
+.word 0xf9005fa0
+.word 0xf94093a0
+bl _p_426
+.word 0xf900afa0
+.word 0xf94093a0
+bl _p_430
+.word 0xaa0003e4
+.word 0xf940a3a1
+.word 0xf940a7a2
+.word 0xf940aba3
+.word 0xf940afaf
+.word 0x9102c3a0
+.word 0xd63f0080
+.word 0xf9405ba0
+.word 0xf9008ba0
+.word 0xf9405fa0
+.word 0xf9008fa0
+.word 0x14000008
+.word 0xd2800000
+.word 0xf90083a0
+.word 0xf90087a0
+.word 0xf94083a0
+.word 0xf9008ba0
+.word 0xf94087a0
+.word 0xf9008fa0
+.word 0xf9408ba0
+.word 0xf90097a0
+.word 0xf9408fa0
+.word 0xf9009ba0
+.word 0x9104a3ba
+.word 0xf94093a0
+bl _p_417
+.word 0x9100c3b9
+.word 0xd2800000
+.word 0xf9004ba0
+.word 0xf9004fa0
+.word 0xb9803ba0
+.word 0x6b1f001f
+.word 0x540008aa
+.word 0xf9400338
+.word 0xf94093a0
+bl _p_425
+.word 0xaa0003f7
+.word 0xb4000118
+.word 0xf9400300
+.word 0xf9400000
+.word 0xf9400800
+.word 0xf9400400
+.word 0xeb17001f
+.word 0x10000011
+.word 0x54001b81
+.word 0x910243a0
+.word 0xf9009fa0
+.word 0xaa1803e0
+.word 0xf9400301
+.word 0xf9405430
+.word 0xd63f0200
+.word 0xf9409fbe
+.word 0xf90003c0
+.word 0xf90007c1
+.word 0xb9800b20
+.word 0xd29ffffe
+.word 0xf2affffe
+.word 0xa1e0000
+.word 0xf900a7a0
+.word 0xb9800f20
+.word 0xf900a3a0
+.word 0xf94093a0
+bl _p_426
+.word 0xaa0003e2
+.word 0xf940a3a0
+.word 0xf940a7a1
+.word 0x910243b9
+.word 0xaa0103f8
+.word 0xaa0003f7
+.word 0xf90047bf
+.word 0xb9809ba0
+.word 0x6b00031f
+.word 0x54001768
+.word 0xb9800b20
+.word 0x4b180000
+.word 0x6b0002ff
+.word 0x540016e8
+.word 0xf9400320
+.word 0xf90047a0
+.word 0xf94047a0
+.word 0x8b180000
+.word 0xf900a3a0
+.word 0xd2800000
+.word 0xf9003fa0
+.word 0xf90043a0
+.word 0xf94093a0
+bl _p_426
+.word 0xf900a7a0
+.word 0xf94093a0
+bl _p_427
+.word 0xaa0003e3
+.word 0xf940a3a1
+.word 0xf940a7af
+.word 0x9101e3a0
+.word 0xaa1703e2
+.word 0xd63f0060
+.word 0xf9403fa0
+.word 0xf90053a0
+.word 0xf94043a0
+.word 0xf90057a0
+.word 0x1400008c
+.word 0xf94093a0
+bl _p_424
+
+adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
+add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
+ldr x1, [x16, #1672]
+.word 0xeb01001f
+.word 0x9a9f17e0
+.word 0x34000ae0
+.word 0xf9400338
+.word 0xaa1803f7
+.word 0xeb1f031f
+.word 0x54000160
+.word 0xf9400300
+.word 0xf9400000
+.word 0xf9400800
+.word 0xf9400400
+
+adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
+add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
+ldr x1, [x16, #1680]
+.word 0xeb01001f
+.word 0x54000040
+.word 0xd2800017
+.word 0xaa1703f8
+.word 0xb40008f7
+.word 0x3940031e
+.word 0xeb1f031f
+.word 0x10000011
+.word 0x540010a0
+.word 0x91005300
+.word 0xf900aba0
+.word 0xb9801300
+.word 0xf900afa0
+.word 0xd2800000
+.word 0xf90037a0
+.word 0xf9003ba0
+.word 0xf94093a0
+bl _p_426
+.word 0xf900b3a0
+.word 0xf94093a0
+bl _p_427
+.word 0xaa0003e3
+.word 0xf940aba1
+.word 0xf940afa2
+.word 0xf940b3af
+.word 0x9101a3a0
+.word 0xd63f0060
+.word 0xf94037a0
+.word 0xf9004ba0
+.word 0xf9403ba0
+.word 0xf9004fa0
+.word 0xb9800b20
+.word 0xf900a7a0
+.word 0xb9800f20
+.word 0xf900a3a0
+.word 0xf94093a0
+bl _p_426
+.word 0xaa0003e2
+.word 0xf940a3a0
+.word 0xf940a7a1
+.word 0x910243b9
+.word 0xaa0103f8
+.word 0xaa0003f7
+.word 0xf90033bf
+.word 0xb9809ba0
+.word 0x6b00031f
+.word 0x54000bc8
+.word 0xb9800b20
+.word 0x4b180000
+.word 0x6b0002ff
+.word 0x54000b48
+.word 0xf9400320
+.word 0xf90033a0
+.word 0xf94033a0
+.word 0x8b180000
+.word 0xf900a3a0
+.word 0xd2800000
+.word 0xf9002ba0
+.word 0xf9002fa0
+.word 0xf94093a0
+bl _p_426
+.word 0xf900a7a0
+.word 0xf94093a0
+bl _p_427
+.word 0xaa0003e3
+.word 0xf940a3a1
+.word 0xf940a7af
+.word 0x910143a0
+.word 0xaa1703e2
+.word 0xd63f0060
+.word 0xf9402ba0
+.word 0xf90053a0
+.word 0xf9402fa0
+.word 0xf90057a0
+.word 0x1400002e
+.word 0xf9400320
+.word 0xb40004a0
+.word 0xf9400320
+.word 0xf900b3a0
+.word 0xf94093a0
+bl _p_428
+.word 0xaa0003e2
+.word 0xf940b3a0
+.word 0xf9400441
+bl _p_429
+.word 0xf900a3a0
+.word 0xb9800b20
+.word 0xf900a7a0
+.word 0xb9800f20
+.word 0xd29ffffe
+.word 0xf2affffe
+.word 0xa1e0000
+.word 0xf900aba0
+.word 0xd2800000
+.word 0xf90023a0
+.word 0xf90027a0
+.word 0xf94093a0
+bl _p_426
+.word 0xf900afa0
+.word 0xf94093a0
+bl _p_430
+.word 0xaa0003e4
+.word 0xf940a3a1
+.word 0xf940a7a2
+.word 0xf940aba3
+.word 0xf940afaf
+.word 0x910103a0
+.word 0xd63f0080
+.word 0xf94023a0
+.word 0xf90053a0
+.word 0xf94027a0
+.word 0xf90057a0
+.word 0x14000008
+.word 0xd2800000
+.word 0xf9004ba0
+.word 0xf9004fa0
+.word 0xf9404ba0
+.word 0xf90053a0
+.word 0xf9404fa0
+.word 0xf90057a0
+.word 0xf94093a0
+bl _p_426
+.word 0xf900a3a0
+.word 0x3940035e
+.word 0xf94093a0
+bl _p_435
+.word 0xaa0003e3
+.word 0xf940a3af
+.word 0xaa1a03e0
+.word 0xf94053a1
+.word 0xf94057a2
+.word 0xd63f0060
+.word 0xa94163b7
+.word 0xa9426bb9
+.word 0x910003bf
+.word 0xa8d77bfd
+.word 0xd65f03c0
+bl _p_369
+bl _p_369
+bl _p_369
+bl _p_369
+.word 0xd2802720
+.word 0xaa1103e1
+bl _p_16
+.word 0xd2802440
+.word 0xaa1103e1
+bl _p_16
+
+Lme_228:
+.text
+ut_553:
+add x0, x0, 16
+b System_Memory_1_T_BYTE_TryCopyTo_System_Memory_1_T_BYTE
+.text
+	.align 4
+	.no_dead_strip System_Memory_1_T_BYTE_TryCopyTo_System_Memory_1_T_BYTE
+System_Memory_1_T_BYTE_TryCopyTo_System_Memory_1_T_BYTE:
+.loc 36 325 0 prologue_end
+.word 0xa9a97bfd
+.word 0x910003fd
+.word 0xa90163b7
+.word 0xa9026bb9
+.word 0xf90093af
+.word 0xaa0003fa
+.word 0xf9001ba1
+.word 0xf9001fa2
+.word 0xd2800000
+.word 0xf90097a0
+.word 0xf9009ba0
+.word 0xf94093a0
+bl _p_417
+.word 0xaa1a03f9
+.word 0xd2800000
+.word 0xf90083a0
+.word 0xf90087a0
+.word 0xb9800b40
+.word 0x6b1f001f
+.word 0x540008aa
+.word 0xf940033a
+.word 0xf94093a0
+bl _p_425
+.word 0xaa0003f8
+.word 0xb400011a
+.word 0xf9400340
+.word 0xf9400000
+.word 0xf9400800
+.word 0xf9400400
+.word 0xeb18001f
+.word 0x10000011
+.word 0x54003741
+.word 0x910403a0
+.word 0xf9009fa0
+.word 0xaa1a03e0
+.word 0xf9400341
+.word 0xf9405430
+.word 0xd63f0200
+.word 0xf9409fbe
+.word 0xf90003c0
+.word 0xf90007c1
+.word 0xb9800b20
+.word 0xd29ffffe
+.word 0xf2affffe
+.word 0xa1e0000
+.word 0xf900a7a0
+.word 0xb9800f20
+.word 0xf900a3a0
+.word 0xf94093a0
+bl _p_426
+.word 0xaa0003e2
+.word 0xf940a3a0
+.word 0xf940a7a1
+.word 0x910403ba
+.word 0xaa0103f9
+.word 0xaa0003f8
+.word 0xf9007fbf
+.word 0xb9810ba0
+.word 0x6b00033f
+.word 0x540032e8
+.word 0xb9800b40
+.word 0x4b190000
+.word 0x6b00031f
+.word 0x54003268
+.word 0xf9400340
+.word 0xf9007fa0
+.word 0xf9407fa0
+.word 0x8b190000
+.word 0xf900a3a0
+.word 0xd2800000
+.word 0xf90077a0
+.word 0xf9007ba0
+.word 0xf94093a0
+bl _p_426
+.word 0xf900a7a0
+.word 0xf94093a0
+bl _p_427
+.word 0xaa0003e3
+.word 0xf940a3a1
+.word 0xf940a7af
+.word 0x9103a3a0
+.word 0xaa1803e2
+.word 0xd63f0060
+.word 0xf94077a0
+.word 0xf9008ba0
+.word 0xf9407ba0
+.word 0xf9008fa0
+.word 0x1400008c
+.word 0xf94093a0
+bl _p_424
+
+adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
+add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
+ldr x1, [x16, #1672]
+.word 0xeb01001f
+.word 0x9a9f17e0
+.word 0x34000ae0
+.word 0xf940033a
+.word 0xaa1a03f8
+.word 0xeb1f035f
+.word 0x54000160
+.word 0xf9400340
+.word 0xf9400000
+.word 0xf9400800
+.word 0xf9400400
+
+adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
+add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
+ldr x1, [x16, #1680]
+.word 0xeb01001f
+.word 0x54000040
+.word 0xd2800018
+.word 0xaa1803fa
+.word 0xb40008f8
+.word 0x3940035e
+.word 0xeb1f035f
+.word 0x10000011
+.word 0x54002c60
 .word 0x91005340
 .word 0xf900aba0
 .word 0xb9801340
@@ -34859,7 +35752,7 @@ bl _p_425
 .word 0xf9400400
 .word 0xeb17001f
 .word 0x10000011
-.word 0x54001c01
+.word 0x54001ba1
 .word 0x910243a0
 .word 0xf9009fa0
 .word 0xaa1803e0
@@ -34887,11 +35780,11 @@ bl _p_426
 .word 0xf90047bf
 .word 0xb9809ba0
 .word 0x6b00031f
-.word 0x540017a8
+.word 0x54001788
 .word 0xb9800b20
 .word 0x4b180000
 .word 0x6b0002ff
-.word 0x54001728
+.word 0x54001708
 .word 0xf9400320
 .word 0xf90047a0
 .word 0xf94047a0
@@ -34945,7 +35838,7 @@ ldr x1, [x16, #1680]
 .word 0x3940031e
 .word 0xeb1f031f
 .word 0x10000011
-.word 0x54001120
+.word 0x540010c0
 .word 0x91005300
 .word 0xf900aba0
 .word 0xb9801300
@@ -34983,505 +35876,11 @@ bl _p_426
 .word 0xf90033bf
 .word 0xb9809ba0
 .word 0x6b00031f
-.word 0x54000c28
+.word 0x54000be8
 .word 0xb9800b20
 .word 0x4b180000
 .word 0x6b0002ff
-.word 0x54000ba8
-.word 0xf9400320
-.word 0xf90033a0
-.word 0xf94033a0
-.word 0x8b180000
-.word 0xf900a3a0
-.word 0xd2800000
-.word 0xf9002ba0
-.word 0xf9002fa0
-.word 0xf94093a0
-bl _p_426
-.word 0xf900a7a0
-.word 0xf94093a0
-bl _p_427
-.word 0xaa0003e3
-.word 0xf940a3a1
-.word 0xf940a7af
-.word 0x910143a0
-.word 0xaa1703e2
-.word 0xd63f0060
-.word 0xf9402ba0
-.word 0xf90053a0
-.word 0xf9402fa0
-.word 0xf90057a0
-.word 0x1400002e
-.word 0xf9400320
-.word 0xb40004a0
-.word 0xf9400320
-.word 0xf900b3a0
-.word 0xf94093a0
-bl _p_428
-.word 0xaa0003e2
-.word 0xf940b3a0
-.word 0xf9400441
-bl _p_429
-.word 0xf900a3a0
-.word 0xb9800b20
-.word 0xf900a7a0
-.word 0xb9800f20
-.word 0xd29ffffe
-.word 0xf2affffe
-.word 0xa1e0000
-.word 0xf900aba0
-.word 0xd2800000
-.word 0xf90023a0
-.word 0xf90027a0
-.word 0xf94093a0
-bl _p_426
-.word 0xf900afa0
-.word 0xf94093a0
-bl _p_430
-.word 0xaa0003e4
-.word 0xf940a3a1
-.word 0xf940a7a2
-.word 0xf940aba3
-.word 0xf940afaf
-.word 0x910103a0
-.word 0xd63f0080
-.word 0xf94023a0
-.word 0xf90053a0
-.word 0xf94027a0
-.word 0xf90057a0
-.word 0x14000008
-.word 0xd2800000
-.word 0xf9004ba0
-.word 0xf9004fa0
-.word 0xf9404ba0
-.word 0xf90053a0
-.word 0xf9404fa0
-.word 0xf90057a0
-.word 0xf94093a0
-bl _p_426
-.word 0xf900a3a0
-.word 0x3940035e
-.word 0xf94093a0
-bl _p_435
-.word 0xaa0003e3
-.word 0xf940a3af
-.word 0xaa1a03e0
-.word 0xf94053a1
-.word 0xf94057a2
-.word 0xd63f0060
-.word 0xa94163b7
-.word 0xa9426bb9
-.word 0x910003bf
-.word 0xa8d77bfd
-.word 0xd65f03c0
-bl _p_369
-.word 0x17fffe6e
-bl _p_369
-.word 0x17fffeca
-bl _p_369
-.word 0x17ffff47
-bl _p_369
-.word 0x17ffffa3
-.word 0xd2802700
-.word 0xaa1103e1
-bl _p_16
-.word 0xd2802420
-.word 0xaa1103e1
-bl _p_16
-
-Lme_228:
-.text
-ut_553:
-add x0, x0, 16
-b System_Memory_1_T_BYTE_TryCopyTo_System_Memory_1_T_BYTE
-.text
-	.align 4
-	.no_dead_strip System_Memory_1_T_BYTE_TryCopyTo_System_Memory_1_T_BYTE
-System_Memory_1_T_BYTE_TryCopyTo_System_Memory_1_T_BYTE:
-.loc 36 325 0 prologue_end
-.word 0xa9a97bfd
-.word 0x910003fd
-.word 0xa90163b7
-.word 0xa9026bb9
-.word 0xf90093af
-.word 0xaa0003fa
-.word 0xf9001ba1
-.word 0xf9001fa2
-.word 0xd2800000
-.word 0xf90097a0
-.word 0xf9009ba0
-.word 0xf94093a0
-bl _p_417
-.word 0xaa1a03f9
-.word 0xd2800000
-.word 0xf90083a0
-.word 0xf90087a0
-.word 0xb9800b40
-.word 0x6b1f001f
-.word 0x540008aa
-.word 0xf940033a
-.word 0xf94093a0
-bl _p_425
-.word 0xaa0003f8
-.word 0xb400011a
-.word 0xf9400340
-.word 0xf9400000
-.word 0xf9400800
-.word 0xf9400400
-.word 0xeb18001f
-.word 0x10000011
-.word 0x540037c1
-.word 0x910403a0
-.word 0xf9009fa0
-.word 0xaa1a03e0
-.word 0xf9400341
-.word 0xf9405430
-.word 0xd63f0200
-.word 0xf9409fbe
-.word 0xf90003c0
-.word 0xf90007c1
-.word 0xb9800b20
-.word 0xd29ffffe
-.word 0xf2affffe
-.word 0xa1e0000
-.word 0xf900a7a0
-.word 0xb9800f20
-.word 0xf900a3a0
-.word 0xf94093a0
-bl _p_426
-.word 0xaa0003e2
-.word 0xf940a3a0
-.word 0xf940a7a1
-.word 0x910403ba
-.word 0xaa0103f9
-.word 0xaa0003f8
-.word 0xf9007fbf
-.word 0xb9810ba0
-.word 0x6b00033f
-.word 0x540032e8
-.word 0xb9800b40
-.word 0x4b190000
-.word 0x6b00031f
-.word 0x54003268
-.word 0xf9400340
-.word 0xf9007fa0
-.word 0xf9407fa0
-.word 0x8b190000
-.word 0xf900a3a0
-.word 0xd2800000
-.word 0xf90077a0
-.word 0xf9007ba0
-.word 0xf94093a0
-bl _p_426
-.word 0xf900a7a0
-.word 0xf94093a0
-bl _p_427
-.word 0xaa0003e3
-.word 0xf940a3a1
-.word 0xf940a7af
-.word 0x9103a3a0
-.word 0xaa1803e2
-.word 0xd63f0060
-.word 0xf94077a0
-.word 0xf9008ba0
-.word 0xf9407ba0
-.word 0xf9008fa0
-.word 0x1400008c
-.word 0xf94093a0
-bl _p_424
-
-adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
-add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
-ldr x1, [x16, #1672]
-.word 0xeb01001f
-.word 0x9a9f17e0
-.word 0x34000ae0
-.word 0xf940033a
-.word 0xaa1a03f8
-.word 0xeb1f035f
-.word 0x54000160
-.word 0xf9400340
-.word 0xf9400000
-.word 0xf9400800
-.word 0xf9400400
-
-adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
-add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
-ldr x1, [x16, #1680]
-.word 0xeb01001f
-.word 0x54000040
-.word 0xd2800018
-.word 0xaa1803fa
-.word 0xb40008f8
-.word 0x3940035e
-.word 0xeb1f035f
-.word 0x10000011
-.word 0x54002ce0
-.word 0x91005340
-.word 0xf900aba0
-.word 0xb9801340
-.word 0xf900afa0
-.word 0xd2800000
-.word 0xf9006fa0
-.word 0xf90073a0
-.word 0xf94093a0
-bl _p_426
-.word 0xf900b3a0
-.word 0xf94093a0
-bl _p_427
-.word 0xaa0003e3
-.word 0xf940aba1
-.word 0xf940afa2
-.word 0xf940b3af
-.word 0x910363a0
-.word 0xd63f0060
-.word 0xf9406fa0
-.word 0xf90083a0
-.word 0xf94073a0
-.word 0xf90087a0
-.word 0xb9800b20
-.word 0xf900a7a0
-.word 0xb9800f20
-.word 0xf900a3a0
-.word 0xf94093a0
-bl _p_426
-.word 0xaa0003e2
-.word 0xf940a3a0
-.word 0xf940a7a1
-.word 0x910403ba
-.word 0xaa0103f9
-.word 0xaa0003f8
-.word 0xf9006bbf
-.word 0xb9810ba0
-.word 0x6b00033f
-.word 0x54002768
-.word 0xb9800b40
-.word 0x4b190000
-.word 0x6b00031f
-.word 0x540026e8
-.word 0xf9400340
-.word 0xf9006ba0
-.word 0xf9406ba0
-.word 0x8b190000
-.word 0xf900a3a0
-.word 0xd2800000
-.word 0xf90063a0
-.word 0xf90067a0
-.word 0xf94093a0
-bl _p_426
-.word 0xf900a7a0
-.word 0xf94093a0
-bl _p_427
-.word 0xaa0003e3
-.word 0xf940a3a1
-.word 0xf940a7af
-.word 0x910303a0
-.word 0xaa1803e2
-.word 0xd63f0060
-.word 0xf94063a0
-.word 0xf9008ba0
-.word 0xf94067a0
-.word 0xf9008fa0
-.word 0x1400002e
-.word 0xf9400320
-.word 0xb40004a0
-.word 0xf9400320
-.word 0xf900b3a0
-.word 0xf94093a0
-bl _p_428
-.word 0xaa0003e2
-.word 0xf940b3a0
-.word 0xf9400441
-bl _p_429
-.word 0xf900a3a0
-.word 0xb9800b20
-.word 0xf900a7a0
-.word 0xb9800f20
-.word 0xd29ffffe
-.word 0xf2affffe
-.word 0xa1e0000
-.word 0xf900aba0
-.word 0xd2800000
-.word 0xf9005ba0
-.word 0xf9005fa0
-.word 0xf94093a0
-bl _p_426
-.word 0xf900afa0
-.word 0xf94093a0
-bl _p_430
-.word 0xaa0003e4
-.word 0xf940a3a1
-.word 0xf940a7a2
-.word 0xf940aba3
-.word 0xf940afaf
-.word 0x9102c3a0
-.word 0xd63f0080
-.word 0xf9405ba0
-.word 0xf9008ba0
-.word 0xf9405fa0
-.word 0xf9008fa0
-.word 0x14000008
-.word 0xd2800000
-.word 0xf90083a0
-.word 0xf90087a0
-.word 0xf94083a0
-.word 0xf9008ba0
-.word 0xf94087a0
-.word 0xf9008fa0
-.word 0xf9408ba0
-.word 0xf90097a0
-.word 0xf9408fa0
-.word 0xf9009ba0
-.word 0x9104a3ba
-.word 0xf94093a0
-bl _p_417
-.word 0x9100c3b9
-.word 0xd2800000
-.word 0xf9004ba0
-.word 0xf9004fa0
-.word 0xb9803ba0
-.word 0x6b1f001f
-.word 0x540008aa
-.word 0xf9400338
-.word 0xf94093a0
-bl _p_425
-.word 0xaa0003f7
-.word 0xb4000118
-.word 0xf9400300
-.word 0xf9400000
-.word 0xf9400800
-.word 0xf9400400
-.word 0xeb17001f
-.word 0x10000011
-.word 0x54001c21
-.word 0x910243a0
-.word 0xf9009fa0
-.word 0xaa1803e0
-.word 0xf9400301
-.word 0xf9405430
-.word 0xd63f0200
-.word 0xf9409fbe
-.word 0xf90003c0
-.word 0xf90007c1
-.word 0xb9800b20
-.word 0xd29ffffe
-.word 0xf2affffe
-.word 0xa1e0000
-.word 0xf900a7a0
-.word 0xb9800f20
-.word 0xf900a3a0
-.word 0xf94093a0
-bl _p_426
-.word 0xaa0003e2
-.word 0xf940a3a0
-.word 0xf940a7a1
-.word 0x910243b9
-.word 0xaa0103f8
-.word 0xaa0003f7
-.word 0xf90047bf
-.word 0xb9809ba0
-.word 0x6b00031f
-.word 0x540017c8
-.word 0xb9800b20
-.word 0x4b180000
-.word 0x6b0002ff
-.word 0x54001748
-.word 0xf9400320
-.word 0xf90047a0
-.word 0xf94047a0
-.word 0x8b180000
-.word 0xf900a3a0
-.word 0xd2800000
-.word 0xf9003fa0
-.word 0xf90043a0
-.word 0xf94093a0
-bl _p_426
-.word 0xf900a7a0
-.word 0xf94093a0
-bl _p_427
-.word 0xaa0003e3
-.word 0xf940a3a1
-.word 0xf940a7af
-.word 0x9101e3a0
-.word 0xaa1703e2
-.word 0xd63f0060
-.word 0xf9403fa0
-.word 0xf90053a0
-.word 0xf94043a0
-.word 0xf90057a0
-.word 0x1400008c
-.word 0xf94093a0
-bl _p_424
-
-adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
-add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
-ldr x1, [x16, #1672]
-.word 0xeb01001f
-.word 0x9a9f17e0
-.word 0x34000ae0
-.word 0xf9400338
-.word 0xaa1803f7
-.word 0xeb1f031f
-.word 0x54000160
-.word 0xf9400300
-.word 0xf9400000
-.word 0xf9400800
-.word 0xf9400400
-
-adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
-add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
-ldr x1, [x16, #1680]
-.word 0xeb01001f
-.word 0x54000040
-.word 0xd2800017
-.word 0xaa1703f8
-.word 0xb40008f7
-.word 0x3940031e
-.word 0xeb1f031f
-.word 0x10000011
-.word 0x54001140
-.word 0x91005300
-.word 0xf900aba0
-.word 0xb9801300
-.word 0xf900afa0
-.word 0xd2800000
-.word 0xf90037a0
-.word 0xf9003ba0
-.word 0xf94093a0
-bl _p_426
-.word 0xf900b3a0
-.word 0xf94093a0
-bl _p_427
-.word 0xaa0003e3
-.word 0xf940aba1
-.word 0xf940afa2
-.word 0xf940b3af
-.word 0x9101a3a0
-.word 0xd63f0060
-.word 0xf94037a0
-.word 0xf9004ba0
-.word 0xf9403ba0
-.word 0xf9004fa0
-.word 0xb9800b20
-.word 0xf900a7a0
-.word 0xb9800f20
-.word 0xf900a3a0
-.word 0xf94093a0
-bl _p_426
-.word 0xaa0003e2
-.word 0xf940a3a0
-.word 0xf940a7a1
-.word 0x910243b9
-.word 0xaa0103f8
-.word 0xaa0003f7
-.word 0xf90033bf
-.word 0xb9809ba0
-.word 0x6b00031f
-.word 0x54000c48
-.word 0xb9800b20
-.word 0x4b180000
-.word 0x6b0002ff
-.word 0x54000bc8
+.word 0x54000b68
 .word 0xf9400320
 .word 0xf90033a0
 .word 0xf94033a0
@@ -35570,17 +35969,13 @@ bl _p_436
 .word 0xa8d77bfd
 .word 0xd65f03c0
 bl _p_369
-.word 0x17fffe6d
 bl _p_369
-.word 0x17fffec9
 bl _p_369
-.word 0x17ffff46
 bl _p_369
-.word 0x17ffffa2
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_16
 
@@ -35876,10 +36271,10 @@ ldr x2, [x16, #16]
 .word 0x910003bf
 .word 0xa8d67bfd
 .word 0xd65f03c0
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_16
 
@@ -35922,7 +36317,7 @@ bl _p_425
 .word 0xf9400400
 .word 0xeb18001f
 .word 0x10000011
-.word 0x54001ba1
+.word 0x54001b61
 .word 0x9101e3a0
 .word 0xf9005ba0
 .word 0xaa1a03e0
@@ -36008,7 +36403,7 @@ ldr x1, [x16, #1680]
 .word 0x3940035e
 .word 0xeb1f035f
 .word 0x10000011
-.word 0x540010c0
+.word 0x54001080
 .word 0x91005340
 .word 0xf9006ba0
 .word 0xb9801340
@@ -36046,11 +36441,11 @@ bl _p_426
 .word 0xf90027bf
 .word 0xb98083a0
 .word 0x6b00033f
-.word 0x54000bc8
+.word 0x54000ba8
 .word 0xb9800b40
 .word 0x4b190000
 .word 0x6b00031f
-.word 0x54000b48
+.word 0x54000b28
 .word 0xf9400340
 .word 0xf90027a0
 .word 0xf94027a0
@@ -36139,13 +36534,11 @@ bl _p_440
 .word 0xa8cf7bfd
 .word 0xd65f03c0
 bl _p_369
-.word 0x17ffff4a
 bl _p_369
-.word 0x17ffffa6
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_16
 
@@ -36276,7 +36669,7 @@ bl _p_447
 .word 0x910003bf
 .word 0xa8c97bfd
 .word 0xd65f03c0
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_16
 
@@ -36485,8 +36878,9 @@ System_Threading_Tasks_ValueTask_1_TResult_INT__ctor_System_Threading_Tasks_Task
 .word 0xaa0003f9
 .word 0xf9000fa1
 .word 0xf9400fa0
-.word 0xb40002c0
+.word 0xb40002e0
 .loc 37 457 0
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000320
 .word 0xd349ff21
@@ -36516,7 +36910,7 @@ ldr x2, [x16, #16]
 .loc 37 454 0
 .word 0xd28004c0
 bl _p_51
-.word 0x17ffffe9
+.word 0x17ffffe8
 
 Lme_232:
 .text
@@ -36536,8 +36930,9 @@ System_Threading_Tasks_ValueTask_1_TResult_INT__ctor_System_Threading_Tasks_Sour
 .word 0xf9000fa1
 .word 0xf90013a2
 .word 0xf9400fa0
-.word 0xb40002e0
+.word 0xb4000300
 .loc 37 475 0
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000300
 .word 0xd349ff01
@@ -36568,7 +36963,7 @@ ldr x2, [x16, #16]
 .loc 37 472 0
 .word 0xd28004e0
 bl _p_51
-.word 0x17ffffe8
+.word 0x17ffffe7
 
 Lme_233:
 .text
@@ -36589,6 +36984,7 @@ System_Threading_Tasks_ValueTask_1_TResult_INT__ctor_object_TResult_INT_int16_bo
 .word 0xf90013a2
 .word 0xf90017a3
 .word 0xf9001ba4
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf90002c0
 .word 0xd349fec1
@@ -36742,7 +37138,7 @@ bl _p_454
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_16
 
@@ -37035,7 +37431,7 @@ bl _p_463
 .word 0xb9002ba0
 .loc 37 563 0
 .word 0xb9802ba0
-.word 0x340018e0
+.word 0x340019a0
 .loc 37 569 0
 .word 0x79801b20
 .word 0xf9008ba0
@@ -37066,7 +37462,7 @@ bl _p_458
 .word 0xf94087af
 .word 0xd63f0020
 .word 0xf9001ba0
-.word 0x140000bf
+.word 0x140000c5
 .word 0xf9002ba0
 .word 0xf9402ba0
 .loc 37 581 0
@@ -37075,7 +37471,7 @@ bl _p_458
 .word 0xb9802ba0
 .word 0xd280007e
 .word 0x6b1e001f
-.word 0x540011e1
+.word 0x540012a1
 .loc 37 586 0
 .word 0xf9401fa0
 .word 0xf90063a0
@@ -37144,7 +37540,7 @@ bl _p_309
 .word 0xb4000060
 .word 0xf9406ba0
 bl _p_9
-.word 0x14000078
+.word 0x1400007e
 .loc 37 594 0
 .word 0xf94013a0
 bl _p_468
@@ -37152,7 +37548,7 @@ bl _p_468
 .word 0xf90027a0
 .loc 37 595 0
 .word 0xf94027a0
-.word 0xb5000800
+.word 0xb50008c0
 .loc 37 602 0
 .word 0xf9003bbf
 .word 0x9101c3a0
@@ -37190,6 +37586,9 @@ ldr x0, [x16, #1712]
 .word 0xf90057a0
 .word 0xf94053a1
 .word 0xf94057a0
+.word 0xf9008fa0
+.word 0xd5033bbf
+.word 0xf9408fa0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -37206,20 +37605,23 @@ ldr x2, [x16, #16]
 .word 0xf9007ba0
 .word 0xf94013a0
 bl _p_469
-.word 0xf90087a0
+.word 0xf9008ba0
 .word 0xf94013a0
 bl _p_470
 .word 0xaa0003e1
-.word 0xf94087af
+.word 0xf9408baf
 .word 0xf9407ba0
 .word 0xd63f0020
 .word 0xf90027a0
 .loc 37 605 0
 .word 0xf94027a0
-.word 0xf90083a0
+.word 0xf90087a0
 .word 0xf94013a0
 bl _p_468
-.word 0xf94083a1
+.word 0xf90083a0
+.word 0xf94087a1
+.word 0xd5033bbf
+.word 0xf94083a0
 .word 0xf9000001
 .loc 37 607 0
 .word 0xf94027a0
@@ -38076,7 +38478,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
@@ -38143,7 +38545,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
@@ -38277,7 +38679,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
@@ -38350,7 +38752,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
@@ -38509,7 +38911,7 @@ bl _p_491
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -38518,7 +38920,7 @@ bl _p_9
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -38585,7 +38987,7 @@ bl _p_491
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -38594,7 +38996,7 @@ bl _p_9
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -38793,7 +39195,7 @@ bl _p_499
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
 
@@ -38971,7 +39373,7 @@ System_Threading_Tasks_Task_1_TResult_INT_get_Factory:
 .word 0xf9400ba0
 bl _p_505
 .word 0xf9400000
-.word 0xb5000460
+.word 0xb5000480
 .loc 38 517 0
 .word 0xf9400ba0
 bl _p_505
@@ -38987,9 +39389,10 @@ bl _p_507
 .word 0xf9401ba0
 .word 0xf90013a0
 .word 0xd63f0020
-.word 0xf94013a0
 .word 0xf94017a1
 .word 0xd2800002
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xc85f7c30
 .word 0xeb02021f
 .word 0x54000061
@@ -39383,7 +39786,7 @@ bl _p_519
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -39392,7 +39795,7 @@ bl _p_9
 .loc 38 729 0
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -39638,7 +40041,7 @@ bl _p_519
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -39647,7 +40050,7 @@ bl _p_9
 .loc 38 922 0
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -39864,11 +40267,12 @@ bl _p_522
 .word 0x92800bfe
 .word 0xf2bffffe
 .word 0xa1e0000
-.word 0x350004e0
+.word 0x35000520
 .loc 39 213 0
 .word 0xf9400ba0
 .word 0x91004002
 .word 0xaa0203e1
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000040
 .word 0xd349fc21
@@ -39885,6 +40289,7 @@ ldr x2, [x16, #16]
 .loc 39 214 0
 .word 0xf9400ba0
 .word 0x91006001
+.word 0xd5033bbf
 .word 0xf9401fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -39914,11 +40319,11 @@ ldr x2, [x16, #16]
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
-.word 0x17ffffd2
+.word 0x17ffffd0
 
 Lme_272:
 .text
@@ -39998,7 +40403,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
@@ -40074,7 +40479,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
@@ -40146,7 +40551,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
@@ -40228,7 +40633,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
@@ -40284,7 +40689,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
@@ -40362,7 +40767,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
@@ -40436,7 +40841,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
@@ -40520,7 +40925,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
@@ -40888,6 +41293,7 @@ bl _p_535
 .word 0xf9002ba0
 .word 0xf9402ba0
 .word 0x91004001
+.word 0xd5033bbf
 .word 0xf9400ba0
 .word 0xf9000020
 .word 0xd349fc21
@@ -40903,6 +41309,7 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .word 0xf9402ba0
 .word 0x91006001
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -40918,6 +41325,7 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .word 0xf9402ba0
 .word 0x91008001
+.word 0xd5033bbf
 .word 0xf94013a0
 .word 0xf9000020
 .word 0xd349fc21
@@ -40933,6 +41341,7 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .word 0xf9402ba0
 .word 0x9100e001
+.word 0xd5033bbf
 .word 0xf9401ba0
 .word 0xf9000020
 .word 0xd349fc21
@@ -40949,41 +41358,42 @@ ldr x2, [x16, #16]
 .loc 39 664 0
 .word 0xf9402ba0
 .word 0xf9400800
-.word 0xb4001e60
+.word 0xb4001f60
 .loc 39 667 0
 .word 0xf9402ba0
 .word 0xf9400c00
 .word 0xb5000080
 .word 0xf9402ba0
 .word 0xf9401000
-.word 0xb4001ba0
+.word 0xb4001ca0
 .loc 39 672 0
 .word 0xf9402ba0
 .word 0xf9401c00
-.word 0xb4001c40
+.word 0xb4001d40
 .loc 39 675 0
 .word 0xb9802ba0
 .word 0xd2800001
 bl _p_536
 .loc 39 677 0
 .word 0xf9402ba0
-.word 0xf9005fa0
+.word 0xf90063a0
 .word 0xf94023a0
 bl _p_524
 .word 0xd2800a01
 bl _p_26
-.word 0xf90063a0
+.word 0xf90067a0
 .word 0xf94023a0
 bl _p_537
 .word 0xaa0003e3
-.word 0xf94063a0
-.word 0xf9005ba0
+.word 0xf94067a0
+.word 0xf9005fa0
 .word 0xd2800001
 .word 0xb9802ba2
 .word 0xd63f0060
-.word 0xf9405ba0
-.word 0xf9405fa1
-.word 0x9100a021
+.word 0xf94063a0
+.word 0x9100a001
+.word 0xd5033bbf
+.word 0xf9405fa0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -41000,10 +41410,10 @@ ldr x2, [x16, #16]
 .word 0xf9402ba0
 .word 0xf90047a0
 .word 0xf9402ba0
-.word 0xf90057a0
+.word 0xf9005ba0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x540019c0
+.word 0x54001aa0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
@@ -41011,10 +41421,13 @@ ldr x0, [x16, #1800]
 .word 0xd2801001
 bl _p_26
 .word 0xaa0003e1
-.word 0xf94057a0
+.word 0xf9405ba0
+.word 0xf90057a0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54001820
+.word 0x540018e0
+.word 0xd5033bbf
+.word 0xf94057a0
 .word 0xf9001020
 .word 0xf90053a1
 .word 0x91008021
@@ -41065,9 +41478,10 @@ bl _p_26
 .word 0xd2800006
 .word 0xd2800007
 bl _p_489
+.word 0xf94047a0
+.word 0x9100c001
+.word 0xd5033bbf
 .word 0xf94043a0
-.word 0xf94047a1
-.word 0x9100c021
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -41104,7 +41518,7 @@ ldr x15, [x16, #1808]
 .word 0xd2800002
 .word 0x3940007e
 bl _p_540
-.word 0x14000050
+.word 0x14000053
 .word 0xf90033a0
 .word 0xf94033a0
 .loc 39 692 0
@@ -41121,7 +41535,7 @@ bl _p_309
 .word 0xb4000060
 .word 0xf9403fa0
 bl _p_9
-.word 0x14000040
+.word 0x14000043
 .loc 39 696 0
 .word 0xf9402ba0
 .word 0xf9400801
@@ -41137,10 +41551,10 @@ ldr x15, [x16, #1624]
 .word 0xd63f0200
 .word 0xf90043a0
 .word 0xf9402ba0
-.word 0xf9004fa0
+.word 0xf90053a0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x540009e0
+.word 0x54000a40
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
@@ -41148,10 +41562,13 @@ ldr x0, [x16, #1816]
 .word 0xd2801001
 bl _p_26
 .word 0xaa0003e1
-.word 0xf9404fa0
+.word 0xf94053a0
+.word 0xf9004fa0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54000840
+.word 0x54000880
+.word 0xd5033bbf
+.word 0xf9404fa0
 .word 0xf9001020
 .word 0xf9004ba1
 .word 0x91008021
@@ -41200,7 +41617,7 @@ bl _p_543
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -41209,7 +41626,7 @@ bl _p_9
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -41218,14 +41635,14 @@ bl _p_9
 .loc 39 665 0
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
-.word 0xd2801920
+.word 0xd2801940
 .word 0xaa1103e1
 bl _p_16
 
@@ -41318,17 +41735,18 @@ System_Threading_Tasks_TaskFactory_1_TResult_INT_FromAsyncImpl_System_Func_3_Sys
 bl _p_545
 .word 0xd2800501
 bl _p_26
-.word 0xf90057a0
+.word 0xf9005ba0
 .word 0xf9401fa0
 bl _p_546
 .word 0xaa0003e1
-.word 0xf94057a0
-.word 0xf90053a0
+.word 0xf9405ba0
+.word 0xf90057a0
 .word 0xd63f0020
-.word 0xf94053a0
+.word 0xf94057a0
 .word 0xf90023a0
 .word 0xf94023a0
 .word 0x91004001
+.word 0xd5033bbf
 .word 0xf94017a0
 .word 0xf9000020
 .word 0xd349fc21
@@ -41344,6 +41762,9 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .word 0xf94023a0
 .word 0x91006000
+.word 0xf90053a0
+.word 0xd5033bbf
+.word 0xf94053a0
 .word 0xf9000018
 .word 0xd349fc00
 .word 0xd29ffffe
@@ -41357,14 +41778,14 @@ ldr x1, [x16, #16]
 .word 0xd280003e
 .word 0x3900001e
 .loc 39 770 0
-.word 0xb4001b76
+.word 0xb4001bf6
 .loc 39 773 0
 .word 0xf94023a0
 .word 0xf9400800
 .word 0xb5000080
 .word 0xf94023a0
 .word 0xf9400c00
-.word 0xb40019a0
+.word 0xb4001a20
 .loc 39 778 0
 .word 0xaa1a03e0
 .word 0xd2800021
@@ -41385,9 +41806,10 @@ bl _p_537
 .word 0xf9401ba1
 .word 0xaa1a03e2
 .word 0xd63f0060
+.word 0xf94057a0
+.word 0x91008001
+.word 0xd5033bbf
 .word 0xf94053a0
-.word 0xf94057a1
-.word 0x91008021
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -41446,10 +41868,10 @@ bl _p_547
 .word 0x14000001
 .loc 39 788 0
 .word 0xf94023a0
-.word 0xf9005ba0
+.word 0xf9005fa0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x540012a0
+.word 0x54001300
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
@@ -41457,10 +41879,13 @@ ldr x0, [x16, #1832]
 .word 0xd2801001
 bl _p_26
 .word 0xaa0003e1
-.word 0xf9405ba0
+.word 0xf9405fa0
+.word 0xf9005ba0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54001100
+.word 0x54001140
+.word 0xd5033bbf
+.word 0xf9405ba0
 .word 0xf9001020
 .word 0xf90057a1
 .word 0x91008021
@@ -41598,7 +42023,7 @@ bl _p_210
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -41607,14 +42032,14 @@ bl _p_9
 .loc 39 771 0
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
-.word 0xd2801920
+.word 0xd2801940
 .word 0xaa1103e1
 bl _p_16
 
@@ -41712,7 +42137,7 @@ bl _p_552
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -41768,7 +42193,7 @@ bl _p_552
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -41825,7 +42250,7 @@ bl _p_552
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -41870,7 +42295,7 @@ bl _p_552
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -41894,10 +42319,10 @@ System_Threading_Tasks_TaskFactory_1_TResult_INT_ContinueWhenAllImpl_System_Thre
 .word 0xaa1903e0
 bl _p_522
 .loc 39 1672 0
-.word 0xb4001177
+.word 0xb40011d7
 .loc 39 1674 0
 .word 0xf94023a0
-.word 0xb4001020
+.word 0xb4001080
 .loc 39 1677 0
 .word 0xaa1703e0
 bl _p_553
@@ -41923,7 +42348,7 @@ bl _p_554
 .word 0xaa1903e0
 .word 0xf9402ba1
 .word 0xd63f0040
-.word 0x14000065
+.word 0x14000068
 .loc 39 1688 0
 .word 0xaa1703e0
 bl _p_555
@@ -41943,7 +42368,7 @@ bl _p_557
 .word 0xaa0203f7
 .loc 39 1691 0
 .word 0xaa0103f6
-.word 0xb5000860
+.word 0xb50008c0
 .word 0xf9402fa0
 bl _p_556
 .word 0x3980b410
@@ -41952,19 +42377,22 @@ bl _p_1
 .word 0xf9402fa0
 bl _p_557
 .word 0xf9400000
-.word 0xf90043a0
+.word 0xf90047a0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54000c20
+.word 0x54000c80
 .word 0xf9402fa0
 bl _p_558
 .word 0xd2801001
 bl _p_26
 .word 0xaa0003e1
-.word 0xf94043a0
+.word 0xf94047a0
+.word 0xf90043a0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54000aa0
+.word 0x54000ae0
+.word 0xd5033bbf
+.word 0xf94043a0
 .word 0xf9001020
 .word 0xf9003fa1
 .word 0x91008021
@@ -42005,10 +42433,10 @@ bl _p_556
 bl _p_1
 .word 0xf9402fa0
 bl _p_557
-.word 0xaa0003e1
-.word 0xf94033a0
 .word 0xf94037a2
-.word 0x91002021
+.word 0x91002001
+.word 0xd5033bbf
+.word 0xf94033a0
 .word 0xf9000022
 .word 0xaa0003f6
 .word 0xf9401ba0
@@ -42039,7 +42467,7 @@ bl _p_562
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -42048,14 +42476,14 @@ bl _p_9
 .loc 39 1672 0
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
-.word 0xd2801920
+.word 0xd2801940
 .word 0xaa1103e1
 bl _p_16
 
@@ -42078,10 +42506,10 @@ System_Threading_Tasks_TaskFactory_1_TResult_INT_ContinueWhenAllImpl_System_Thre
 .word 0xaa1903e0
 bl _p_522
 .loc 39 1709 0
-.word 0xb4001177
+.word 0xb40011d7
 .loc 39 1711 0
 .word 0xf94023a0
-.word 0xb4001020
+.word 0xb4001080
 .loc 39 1714 0
 .word 0xaa1703e0
 bl _p_553
@@ -42107,7 +42535,7 @@ bl _p_554
 .word 0xaa1903e0
 .word 0xf9402ba1
 .word 0xd63f0040
-.word 0x14000065
+.word 0x14000068
 .loc 39 1725 0
 .word 0xaa1703e0
 bl _p_555
@@ -42127,7 +42555,7 @@ bl _p_557
 .word 0xaa0203f7
 .loc 39 1728 0
 .word 0xaa0103f6
-.word 0xb5000860
+.word 0xb50008c0
 .word 0xf9402fa0
 bl _p_556
 .word 0x3980b410
@@ -42136,19 +42564,22 @@ bl _p_1
 .word 0xf9402fa0
 bl _p_557
 .word 0xf9400000
-.word 0xf90043a0
+.word 0xf90047a0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54000c20
+.word 0x54000c80
 .word 0xf9402fa0
 bl _p_558
 .word 0xd2801001
 bl _p_26
 .word 0xaa0003e1
-.word 0xf94043a0
+.word 0xf94047a0
+.word 0xf90043a0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54000aa0
+.word 0x54000ae0
+.word 0xd5033bbf
+.word 0xf94043a0
 .word 0xf9001020
 .word 0xf9003fa1
 .word 0x91008021
@@ -42189,10 +42620,10 @@ bl _p_556
 bl _p_1
 .word 0xf9402fa0
 bl _p_557
-.word 0xaa0003e1
-.word 0xf94033a0
 .word 0xf94037a2
-.word 0x91004021
+.word 0x91004001
+.word 0xd5033bbf
+.word 0xf94033a0
 .word 0xf9000022
 .word 0xaa0003f6
 .word 0xf9401ba0
@@ -42223,7 +42654,7 @@ bl _p_562
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -42232,14 +42663,14 @@ bl _p_9
 .loc 39 1709 0
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
-.word 0xd2801920
+.word 0xd2801940
 .word 0xaa1103e1
 bl _p_16
 
@@ -42297,7 +42728,7 @@ bl _p_565
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -42353,7 +42784,7 @@ bl _p_565
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -42410,7 +42841,7 @@ bl _p_565
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -42455,7 +42886,7 @@ bl _p_565
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -42479,13 +42910,13 @@ System_Threading_Tasks_TaskFactory_1_TResult_INT_ContinueWhenAnyImpl_System_Thre
 .word 0xaa1903e0
 bl _p_522
 .loc 39 2018 0
-.word 0xb40012d7
+.word 0xb4001337
 .loc 39 2019 0
 .word 0xb9801ae0
-.word 0x34000fe0
+.word 0x34001040
 .loc 39 2021 0
 .word 0xf94023a0
-.word 0xb4001140
+.word 0xb40011a0
 .loc 39 2024 0
 .word 0xaa1703e0
 bl _p_566
@@ -42511,7 +42942,7 @@ bl _p_554
 .word 0xaa1903e0
 .word 0xf9402ba1
 .word 0xd63f0040
-.word 0x14000061
+.word 0x14000064
 .loc 39 2036 0
 .word 0xf9402fa0
 bl _p_556
@@ -42524,7 +42955,7 @@ bl _p_557
 .word 0xaa0003e1
 .word 0xaa1703f6
 .word 0xaa0103f7
-.word 0xb5000860
+.word 0xb50008c0
 .word 0xf9402fa0
 bl _p_556
 .word 0x3980b410
@@ -42533,19 +42964,22 @@ bl _p_1
 .word 0xf9402fa0
 bl _p_557
 .word 0xf9400000
-.word 0xf90043a0
+.word 0xf90047a0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54000dc0
+.word 0x54000e20
 .word 0xf9402fa0
 bl _p_567
 .word 0xd2801001
 bl _p_26
 .word 0xaa0003e1
-.word 0xf94043a0
+.word 0xf94047a0
+.word 0xf90043a0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54000c40
+.word 0x54000c80
+.word 0xd5033bbf
+.word 0xf94043a0
 .word 0xf9001020
 .word 0xf9003fa1
 .word 0x91008021
@@ -42586,10 +43020,10 @@ bl _p_556
 bl _p_1
 .word 0xf9402fa0
 bl _p_557
-.word 0xaa0003e1
-.word 0xf94033a0
 .word 0xf94037a2
-.word 0x91006021
+.word 0x91006001
+.word 0xd5033bbf
+.word 0xf94033a0
 .word 0xf9000022
 .word 0xaa0003f7
 .word 0xf9401ba0
@@ -42625,7 +43059,7 @@ bl _p_384
 bl _p_384
 .word 0xaa0003e2
 .word 0xf94033a1
-.word 0xd2801920
+.word 0xd2801940
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_9
@@ -42634,7 +43068,7 @@ bl _p_9
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -42643,14 +43077,14 @@ bl _p_9
 .loc 39 2018 0
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
-.word 0xd2801920
+.word 0xd2801940
 .word 0xaa1103e1
 bl _p_16
 
@@ -42673,13 +43107,13 @@ System_Threading_Tasks_TaskFactory_1_TResult_INT_ContinueWhenAnyImpl_System_Thre
 .word 0xaa1903e0
 bl _p_522
 .loc 39 2052 0
-.word 0xb40012d7
+.word 0xb4001337
 .loc 39 2053 0
 .word 0xb9801ae0
-.word 0x34000fe0
+.word 0x34001040
 .loc 39 2055 0
 .word 0xf94023a0
-.word 0xb4001140
+.word 0xb40011a0
 .loc 39 2058 0
 .word 0xaa1703e0
 bl _p_566
@@ -42705,7 +43139,7 @@ bl _p_554
 .word 0xaa1903e0
 .word 0xf9402ba1
 .word 0xd63f0040
-.word 0x14000061
+.word 0x14000064
 .loc 39 2069 0
 .word 0xf9402fa0
 bl _p_556
@@ -42718,7 +43152,7 @@ bl _p_557
 .word 0xaa0003e1
 .word 0xaa1703f6
 .word 0xaa0103f7
-.word 0xb5000860
+.word 0xb50008c0
 .word 0xf9402fa0
 bl _p_556
 .word 0x3980b410
@@ -42727,19 +43161,22 @@ bl _p_1
 .word 0xf9402fa0
 bl _p_557
 .word 0xf9400000
-.word 0xf90043a0
+.word 0xf90047a0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54000dc0
+.word 0x54000e20
 .word 0xf9402fa0
 bl _p_567
 .word 0xd2801001
 bl _p_26
 .word 0xaa0003e1
-.word 0xf94043a0
+.word 0xf94047a0
+.word 0xf90043a0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54000c40
+.word 0x54000c80
+.word 0xd5033bbf
+.word 0xf94043a0
 .word 0xf9001020
 .word 0xf9003fa1
 .word 0x91008021
@@ -42780,10 +43217,10 @@ bl _p_556
 bl _p_1
 .word 0xf9402fa0
 bl _p_557
-.word 0xaa0003e1
-.word 0xf94033a0
 .word 0xf94037a2
-.word 0x91008021
+.word 0x91008001
+.word 0xd5033bbf
+.word 0xf94033a0
 .word 0xf9000022
 .word 0xaa0003f7
 .word 0xf9401ba0
@@ -42819,7 +43256,7 @@ bl _p_384
 bl _p_384
 .word 0xaa0003e2
 .word 0xf94033a1
-.word 0xd2801920
+.word 0xd2801940
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_9
@@ -42828,7 +43265,7 @@ bl _p_9
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -42837,14 +43274,14 @@ bl _p_9
 .loc 39 2052 0
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
-.word 0xd2801920
+.word 0xd2801940
 .word 0xaa1103e1
 bl _p_16
 
@@ -42859,7 +43296,7 @@ b System_Runtime_CompilerServices_AsyncValueTaskMethodBuilder_1_TResult_INT_Crea
 System_Runtime_CompilerServices_AsyncValueTaskMethodBuilder_1_TResult_INT_Create:
 .file 40 "/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/src/Xamarin.iOS/external/corefx/src/Common/src/CoreLib/System/Runtime/CompilerServices/AsyncValueTaskMethodBuilder.cs"
 .loc 40 137 0 prologue_end
-.word 0xa9bc7bfd
+.word 0xa9bb7bfd
 .word 0x910003fd
 .word 0xf9000ba8
 .word 0xf9001faf
@@ -42869,6 +43306,9 @@ System_Runtime_CompilerServices_AsyncValueTaskMethodBuilder_1_TResult_INT_Create
 .word 0xf90017a0
 .word 0xf9001ba0
 .word 0xf9400ba0
+.word 0xf90023a0
+.word 0xd5033bbf
+.word 0xf94023a0
 .word 0xf9400fa1
 .word 0xf9000001
 .word 0xd349fc02
@@ -42914,7 +43354,7 @@ ldr x3, [x16, #16]
 .word 0xf9401ba1
 .word 0xf9000001
 .word 0x910003bf
-.word 0xa8c47bfd
+.word 0xa8c57bfd
 .word 0xd65f03c0
 
 Lme_294:
@@ -43131,7 +43571,7 @@ b System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_INT_Create
 System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_INT_Create:
 .file 41 "/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/src/Xamarin.iOS/mcs/class/referencesource/mscorlib/system/runtime/compilerservices/AsyncMethodBuilder.cs"
 .loc 41 444 0 prologue_end
-.word 0xa9bc7bfd
+.word 0xa9bb7bfd
 .word 0x910003fd
 .word 0xf9000ba8
 .word 0xf9001baf
@@ -43140,6 +43580,9 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_INT_Create:
 .word 0xf90013a0
 .word 0xf90017a0
 .word 0xf9400ba0
+.word 0xf90023a0
+.word 0xd5033bbf
+.word 0xf94023a0
 .word 0xf9400fa1
 .word 0xf9000001
 .word 0xd349fc02
@@ -43182,7 +43625,7 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .word 0x910003bf
-.word 0xa8c47bfd
+.word 0xa8c57bfd
 .word 0xd65f03c0
 
 Lme_299:
@@ -43218,7 +43661,7 @@ b System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_INT_get_Task
 	.no_dead_strip System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_INT_get_Task
 System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_INT_get_Task:
 .loc 41 574 0 prologue_end
-.word 0xa9bc7bfd
+.word 0xa9bb7bfd
 .word 0x910003fd
 .word 0xa9016bb9
 .word 0xf90013af
@@ -43226,22 +43669,25 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_INT_get_Task:
 .word 0xf9400b59
 .loc 41 575 0
 .word 0xaa1903e0
-.word 0xb5000360
+.word 0xb50003c0
 .word 0xf94013a0
 bl _p_583
 .word 0xd2800a01
 bl _p_26
-.word 0xf9001fa0
+.word 0xf90023a0
 .word 0xf94013a0
 bl _p_584
 .word 0xaa0003e1
-.word 0xf9401fa0
-.word 0xf9001ba0
+.word 0xf94023a0
+.word 0xf9001fa0
 .word 0xd63f0020
-.word 0xf9401ba1
-.word 0xaa0103e0
-.word 0xaa0103f9
+.word 0xf9401fa0
+.word 0xaa0003e1
+.word 0xf9001ba1
+.word 0xaa0003f9
 .word 0x91004341
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -43258,7 +43704,7 @@ ldr x2, [x16, #16]
 .word 0xaa1903e0
 .word 0xa9416bb9
 .word 0x910003bf
-.word 0xa8c47bfd
+.word 0xa8c57bfd
 .word 0xd65f03c0
 
 Lme_29b:
@@ -43280,18 +43726,21 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_INT_SetResult_T
 .word 0xf9400b38
 .loc 41 591 0
 .word 0xaa1803e0
-.word 0xb50002e0
+.word 0xb5000340
 .loc 41 593 0
 .word 0xf94017a0
 bl _p_585
-.word 0xf9001ba0
+.word 0xf9001fa0
 .word 0xf94017a0
 bl _p_586
 .word 0xaa0003e1
-.word 0xf9401baf
+.word 0xf9401faf
 .word 0xb98023a0
 .word 0xd63f0020
+.word 0xf9001ba0
 .word 0x91004321
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -43352,7 +43801,7 @@ bl _p_590
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2802440
+.word 0xd2802460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -43375,9 +43824,10 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_INT_SetResult_S
 .word 0xf9000fa1
 .word 0xf9400b20
 .loc 41 629 0
-.word 0xb50001e0
+.word 0xb5000200
 .loc 41 631 0
 .word 0x91004321
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -43493,7 +43943,7 @@ bl _p_467
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -43502,7 +43952,7 @@ bl _p_9
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2802440
+.word 0xd2802460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -44055,10 +44505,10 @@ bl _p_598
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_16
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -44072,25 +44522,28 @@ b System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_INT__cctor
 	.no_dead_strip System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_INT__cctor
 System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_INT__cctor:
 .loc 41 427 0 prologue_end
-.word 0xa9bd7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xf9000baf
 .word 0xf9400ba0
 bl _p_599
-.word 0xf90017a0
+.word 0xf9001ba0
 .word 0xf9400ba0
 bl _p_600
 .word 0xaa0003e1
-.word 0xf94017af
+.word 0xf9401baf
 .word 0xd2800000
 .word 0xd63f0020
-.word 0xf90013a0
+.word 0xf90017a0
 .word 0xf9400ba0
 bl _p_597
-.word 0xf94013a1
+.word 0xf90013a0
+.word 0xf94017a1
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xf9000001
 .word 0x910003bf
-.word 0xa8c37bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
 
 Lme_2a2:
@@ -44116,8 +44569,9 @@ System_ReadOnlyMemory_1_T_BYTE__ctor_T_BYTE__:
 .word 0xf9000320
 .word 0xf9000720
 .loc 42 53 0
-.word 0x1400000f
+.word 0x14000010
 .loc 42 56 0
+.word 0xd5033bbf
 .word 0xf900033a
 .word 0xd349ff20
 .word 0xd29ffffe
@@ -44162,25 +44616,26 @@ System_ReadOnlyMemory_1_T_BYTE__ctor_T_BYTE___int_int:
 .word 0xf90017a3
 .word 0xb5000118
 .loc 42 78 0
-.word 0x35000459
+.word 0x35000479
 .word 0xb9802ba0
-.word 0x35000400
+.word 0x35000420
 .loc 42 80 0
 .word 0xd2800000
 .word 0xf90002e0
 .word 0xf90006e0
 .loc 42 81 0
-.word 0x14000017
+.word 0x14000018
 .loc 42 83 0
 .word 0xb9801b00
 .word 0x6b00033f
-.word 0x54000368
+.word 0x54000388
 .word 0xb9801b00
 .word 0x4b190001
 .word 0xb9802ba0
 .word 0x6b01001f
-.word 0x540002c8
+.word 0x540002e8
 .loc 42 86 0
+.word 0xd5033bbf
 .word 0xf90002f8
 .word 0xd349fee0
 .word 0xd29ffffe
@@ -44206,10 +44661,10 @@ ldr x1, [x16, #16]
 .word 0xd65f03c0
 .loc 42 79 0
 bl _p_369
-.word 0x17ffffe0
+.word 0x17ffffdf
 .loc 42 84 0
 bl _p_369
-.word 0x17ffffea
+.word 0x17ffffe9
 
 Lme_2a4:
 .text
@@ -44229,6 +44684,7 @@ System_ReadOnlyMemory_1_T_BYTE__ctor_object_int_int:
 .word 0xf9000fa1
 .word 0xf90013a2
 .word 0xf90017a3
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf90002e0
 .word 0xd349fee1
@@ -44746,7 +45202,7 @@ bl _p_613
 .word 0xf9400400
 .word 0xeb18001f
 .word 0x10000011
-.word 0x54001c21
+.word 0x54001be1
 .word 0x9102c3a0
 .word 0xf90063a0
 .word 0xaa1903e0
@@ -44849,7 +45305,7 @@ ldr x1, [x16, #1680]
 .word 0x3940033e
 .word 0xeb1f033f
 .word 0x10000011
-.word 0x54000f60
+.word 0x54000f20
 .word 0x91005320
 .word 0xf90073a0
 .word 0xb9801320
@@ -44887,11 +45343,11 @@ bl _p_610
 .word 0xf90037bf
 .word 0xb980aba0
 .word 0x6b00033f
-.word 0x54000a68
+.word 0x54000a48
 .word 0xb9800b40
 .word 0x4b190000
 .word 0x6b00031f
-.word 0x540009e8
+.word 0x540009c8
 .word 0xf9400340
 .word 0xf90037a0
 .word 0xf94037a0
@@ -44972,13 +45428,11 @@ bl _p_619
 .word 0xa8d07bfd
 .word 0xd65f03c0
 bl _p_369
-.word 0x17ffff46
 bl _p_369
-.word 0x17ffffb1
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_16
 
@@ -45039,7 +45493,7 @@ bl _p_613
 .word 0xf9400400
 .word 0xeb17001f
 .word 0x10000011
-.word 0x54001b81
+.word 0x54001b41
 .word 0x910243a0
 .word 0xf90067a0
 .word 0xaa1803e0
@@ -45125,7 +45579,288 @@ ldr x1, [x16, #1680]
 .word 0x3940031e
 .word 0xeb1f031f
 .word 0x10000011
-.word 0x540010a0
+.word 0x54001060
+.word 0x91005300
+.word 0xf90073a0
+.word 0xb9801300
+.word 0xf90077a0
+.word 0xd2800000
+.word 0xf90037a0
+.word 0xf9003ba0
+.word 0xf9405ba0
+bl _p_614
+.word 0xf9007ba0
+.word 0xf9405ba0
+bl _p_615
+.word 0xaa0003e3
+.word 0xf94073a1
+.word 0xf94077a2
+.word 0xf9407baf
+.word 0x9101a3a0
+.word 0xd63f0060
+.word 0xf94037a0
+.word 0xf9004ba0
+.word 0xf9403ba0
+.word 0xf9004fa0
+.word 0xb9800b20
+.word 0xf9006fa0
+.word 0xb9800f20
+.word 0xf9006ba0
+.word 0xf9405ba0
+bl _p_614
+.word 0xaa0003e2
+.word 0xf9406ba0
+.word 0xf9406fa1
+.word 0x910243b9
+.word 0xaa0103f8
+.word 0xaa0003f7
+.word 0xf90033bf
+.word 0xb9809ba0
+.word 0x6b00031f
+.word 0x54000b88
+.word 0xb9800b20
+.word 0x4b180000
+.word 0x6b0002ff
+.word 0x54000b08
+.word 0xf9400320
+.word 0xf90033a0
+.word 0xf94033a0
+.word 0x8b180000
+.word 0xf9006ba0
+.word 0xd2800000
+.word 0xf9002ba0
+.word 0xf9002fa0
+.word 0xf9405ba0
+bl _p_614
+.word 0xf9006fa0
+.word 0xf9405ba0
+bl _p_615
+.word 0xaa0003e3
+.word 0xf9406ba1
+.word 0xf9406faf
+.word 0x910143a0
+.word 0xaa1703e2
+.word 0xd63f0060
+.word 0xf9402ba0
+.word 0xf90053a0
+.word 0xf9402fa0
+.word 0xf90057a0
+.word 0x1400002e
+.word 0xf9400320
+.word 0xb40004a0
+.word 0xf9400320
+.word 0xf9007ba0
+.word 0xf9405ba0
+bl _p_618
+.word 0xaa0003e2
+.word 0xf9407ba0
+.word 0xf9400441
+bl _p_429
+.word 0xf9006ba0
+.word 0xb9800b20
+.word 0xf9006fa0
+.word 0xb9800f20
+.word 0xd29ffffe
+.word 0xf2affffe
+.word 0xa1e0000
+.word 0xf90073a0
+.word 0xd2800000
+.word 0xf90023a0
+.word 0xf90027a0
+.word 0xf9405ba0
+bl _p_614
+.word 0xf90077a0
+.word 0xf9405ba0
+bl _p_621
+.word 0xaa0003e4
+.word 0xf9406ba1
+.word 0xf9406fa2
+.word 0xf94073a3
+.word 0xf94077af
+.word 0x910103a0
+.word 0xd63f0080
+.word 0xf94023a0
+.word 0xf90053a0
+.word 0xf94027a0
+.word 0xf90057a0
+.word 0x14000008
+.word 0xd2800000
+.word 0xf9004ba0
+.word 0xf9004fa0
+.word 0xf9404ba0
+.word 0xf90053a0
+.word 0xf9404fa0
+.word 0xf90057a0
+.word 0xf9405ba0
+bl _p_610
+.word 0xf9006ba0
+.word 0x3940035e
+.word 0xf9405ba0
+bl _p_622
+.word 0xaa0003e3
+.word 0xf9406baf
+.word 0xaa1a03e0
+.word 0xf94053a1
+.word 0xf94057a2
+.word 0xd63f0060
+.word 0xa94163b7
+.word 0xa9426bb9
+.word 0x910003bf
+.word 0xa8d07bfd
+.word 0xd65f03c0
+bl _p_369
+bl _p_369
+.word 0xd2802720
+.word 0xaa1103e1
+bl _p_16
+.word 0xd2802440
+.word 0xaa1103e1
+bl _p_16
+
+Lme_2af:
+.text
+ut_688:
+add x0, x0, 16
+b System_ReadOnlyMemory_1_T_BYTE_TryCopyTo_System_Memory_1_T_BYTE
+.text
+	.align 4
+	.no_dead_strip System_ReadOnlyMemory_1_T_BYTE_TryCopyTo_System_Memory_1_T_BYTE
+System_ReadOnlyMemory_1_T_BYTE_TryCopyTo_System_Memory_1_T_BYTE:
+.loc 42 242 0 prologue_end
+.word 0xa9b07bfd
+.word 0x910003fd
+.word 0xa90163b7
+.word 0xa9026bb9
+.word 0xf9005baf
+.word 0xaa0003fa
+.word 0xf9001ba1
+.word 0xf9001fa2
+.word 0xd2800000
+.word 0xf9005fa0
+.word 0xf90063a0
+.word 0xf9405ba0
+bl _p_601
+.word 0xf9006ba0
+.word 0x3940035e
+.word 0xf9405ba0
+bl _p_609
+.word 0xaa0003e1
+.word 0xf9406baf
+.word 0x9102e3a0
+.word 0xf90067a0
+.word 0xaa1a03e0
+.word 0xd63f0020
+.word 0xf94067be
+.word 0xf90003c0
+.word 0xf90007c1
+.word 0x9102e3ba
+.word 0xf9405ba0
+bl _p_620
+.word 0x9100c3b9
+.word 0xd2800000
+.word 0xf9004ba0
+.word 0xf9004fa0
+.word 0xb9803ba0
+.word 0x6b1f001f
+.word 0x540008aa
+.word 0xf9400338
+.word 0xf9405ba0
+bl _p_613
+.word 0xaa0003f7
+.word 0xb4000118
+.word 0xf9400300
+.word 0xf9400000
+.word 0xf9400800
+.word 0xf9400400
+.word 0xeb17001f
+.word 0x10000011
+.word 0x54001b61
+.word 0x910243a0
+.word 0xf90067a0
+.word 0xaa1803e0
+.word 0xf9400301
+.word 0xf9405430
+.word 0xd63f0200
+.word 0xf94067be
+.word 0xf90003c0
+.word 0xf90007c1
+.word 0xb9800b20
+.word 0xd29ffffe
+.word 0xf2affffe
+.word 0xa1e0000
+.word 0xf9006fa0
+.word 0xb9800f20
+.word 0xf9006ba0
+.word 0xf9405ba0
+bl _p_614
+.word 0xaa0003e2
+.word 0xf9406ba0
+.word 0xf9406fa1
+.word 0x910243b9
+.word 0xaa0103f8
+.word 0xaa0003f7
+.word 0xf90047bf
+.word 0xb9809ba0
+.word 0x6b00031f
+.word 0x54001748
+.word 0xb9800b20
+.word 0x4b180000
+.word 0x6b0002ff
+.word 0x540016c8
+.word 0xf9400320
+.word 0xf90047a0
+.word 0xf94047a0
+.word 0x8b180000
+.word 0xf9006ba0
+.word 0xd2800000
+.word 0xf9003fa0
+.word 0xf90043a0
+.word 0xf9405ba0
+bl _p_614
+.word 0xf9006fa0
+.word 0xf9405ba0
+bl _p_615
+.word 0xaa0003e3
+.word 0xf9406ba1
+.word 0xf9406faf
+.word 0x9101e3a0
+.word 0xaa1703e2
+.word 0xd63f0060
+.word 0xf9403fa0
+.word 0xf90053a0
+.word 0xf94043a0
+.word 0xf90057a0
+.word 0x1400008c
+.word 0xf9405ba0
+bl _p_608
+
+adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
+add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
+ldr x1, [x16, #2064]
+.word 0xeb01001f
+.word 0x9a9f17e0
+.word 0x34000ae0
+.word 0xf9400338
+.word 0xaa1803f7
+.word 0xeb1f031f
+.word 0x54000160
+.word 0xf9400300
+.word 0xf9400000
+.word 0xf9400800
+.word 0xf9400400
+
+adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
+add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
+ldr x1, [x16, #1680]
+.word 0xeb01001f
+.word 0x54000040
+.word 0xd2800017
+.word 0xaa1703f8
+.word 0xb40008f7
+.word 0x3940031e
+.word 0xeb1f031f
+.word 0x10000011
+.word 0x54001080
 .word 0x91005300
 .word 0xf90073a0
 .word 0xb9801300
@@ -45242,289 +45977,6 @@ bl _p_610
 .word 0xf9006ba0
 .word 0x3940035e
 .word 0xf9405ba0
-bl _p_622
-.word 0xaa0003e3
-.word 0xf9406baf
-.word 0xaa1a03e0
-.word 0xf94053a1
-.word 0xf94057a2
-.word 0xd63f0060
-.word 0xa94163b7
-.word 0xa9426bb9
-.word 0x910003bf
-.word 0xa8d07bfd
-.word 0xd65f03c0
-bl _p_369
-.word 0x17ffff4b
-bl _p_369
-.word 0x17ffffa7
-.word 0xd2802700
-.word 0xaa1103e1
-bl _p_16
-.word 0xd2802420
-.word 0xaa1103e1
-bl _p_16
-
-Lme_2af:
-.text
-ut_688:
-add x0, x0, 16
-b System_ReadOnlyMemory_1_T_BYTE_TryCopyTo_System_Memory_1_T_BYTE
-.text
-	.align 4
-	.no_dead_strip System_ReadOnlyMemory_1_T_BYTE_TryCopyTo_System_Memory_1_T_BYTE
-System_ReadOnlyMemory_1_T_BYTE_TryCopyTo_System_Memory_1_T_BYTE:
-.loc 42 242 0 prologue_end
-.word 0xa9b07bfd
-.word 0x910003fd
-.word 0xa90163b7
-.word 0xa9026bb9
-.word 0xf9005baf
-.word 0xaa0003fa
-.word 0xf9001ba1
-.word 0xf9001fa2
-.word 0xd2800000
-.word 0xf9005fa0
-.word 0xf90063a0
-.word 0xf9405ba0
-bl _p_601
-.word 0xf9006ba0
-.word 0x3940035e
-.word 0xf9405ba0
-bl _p_609
-.word 0xaa0003e1
-.word 0xf9406baf
-.word 0x9102e3a0
-.word 0xf90067a0
-.word 0xaa1a03e0
-.word 0xd63f0020
-.word 0xf94067be
-.word 0xf90003c0
-.word 0xf90007c1
-.word 0x9102e3ba
-.word 0xf9405ba0
-bl _p_620
-.word 0x9100c3b9
-.word 0xd2800000
-.word 0xf9004ba0
-.word 0xf9004fa0
-.word 0xb9803ba0
-.word 0x6b1f001f
-.word 0x540008aa
-.word 0xf9400338
-.word 0xf9405ba0
-bl _p_613
-.word 0xaa0003f7
-.word 0xb4000118
-.word 0xf9400300
-.word 0xf9400000
-.word 0xf9400800
-.word 0xf9400400
-.word 0xeb17001f
-.word 0x10000011
-.word 0x54001ba1
-.word 0x910243a0
-.word 0xf90067a0
-.word 0xaa1803e0
-.word 0xf9400301
-.word 0xf9405430
-.word 0xd63f0200
-.word 0xf94067be
-.word 0xf90003c0
-.word 0xf90007c1
-.word 0xb9800b20
-.word 0xd29ffffe
-.word 0xf2affffe
-.word 0xa1e0000
-.word 0xf9006fa0
-.word 0xb9800f20
-.word 0xf9006ba0
-.word 0xf9405ba0
-bl _p_614
-.word 0xaa0003e2
-.word 0xf9406ba0
-.word 0xf9406fa1
-.word 0x910243b9
-.word 0xaa0103f8
-.word 0xaa0003f7
-.word 0xf90047bf
-.word 0xb9809ba0
-.word 0x6b00031f
-.word 0x54001748
-.word 0xb9800b20
-.word 0x4b180000
-.word 0x6b0002ff
-.word 0x540016c8
-.word 0xf9400320
-.word 0xf90047a0
-.word 0xf94047a0
-.word 0x8b180000
-.word 0xf9006ba0
-.word 0xd2800000
-.word 0xf9003fa0
-.word 0xf90043a0
-.word 0xf9405ba0
-bl _p_614
-.word 0xf9006fa0
-.word 0xf9405ba0
-bl _p_615
-.word 0xaa0003e3
-.word 0xf9406ba1
-.word 0xf9406faf
-.word 0x9101e3a0
-.word 0xaa1703e2
-.word 0xd63f0060
-.word 0xf9403fa0
-.word 0xf90053a0
-.word 0xf94043a0
-.word 0xf90057a0
-.word 0x1400008c
-.word 0xf9405ba0
-bl _p_608
-
-adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
-add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
-ldr x1, [x16, #2064]
-.word 0xeb01001f
-.word 0x9a9f17e0
-.word 0x34000ae0
-.word 0xf9400338
-.word 0xaa1803f7
-.word 0xeb1f031f
-.word 0x54000160
-.word 0xf9400300
-.word 0xf9400000
-.word 0xf9400800
-.word 0xf9400400
-
-adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
-add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
-ldr x1, [x16, #1680]
-.word 0xeb01001f
-.word 0x54000040
-.word 0xd2800017
-.word 0xaa1703f8
-.word 0xb40008f7
-.word 0x3940031e
-.word 0xeb1f031f
-.word 0x10000011
-.word 0x540010c0
-.word 0x91005300
-.word 0xf90073a0
-.word 0xb9801300
-.word 0xf90077a0
-.word 0xd2800000
-.word 0xf90037a0
-.word 0xf9003ba0
-.word 0xf9405ba0
-bl _p_614
-.word 0xf9007ba0
-.word 0xf9405ba0
-bl _p_615
-.word 0xaa0003e3
-.word 0xf94073a1
-.word 0xf94077a2
-.word 0xf9407baf
-.word 0x9101a3a0
-.word 0xd63f0060
-.word 0xf94037a0
-.word 0xf9004ba0
-.word 0xf9403ba0
-.word 0xf9004fa0
-.word 0xb9800b20
-.word 0xf9006fa0
-.word 0xb9800f20
-.word 0xf9006ba0
-.word 0xf9405ba0
-bl _p_614
-.word 0xaa0003e2
-.word 0xf9406ba0
-.word 0xf9406fa1
-.word 0x910243b9
-.word 0xaa0103f8
-.word 0xaa0003f7
-.word 0xf90033bf
-.word 0xb9809ba0
-.word 0x6b00031f
-.word 0x54000bc8
-.word 0xb9800b20
-.word 0x4b180000
-.word 0x6b0002ff
-.word 0x54000b48
-.word 0xf9400320
-.word 0xf90033a0
-.word 0xf94033a0
-.word 0x8b180000
-.word 0xf9006ba0
-.word 0xd2800000
-.word 0xf9002ba0
-.word 0xf9002fa0
-.word 0xf9405ba0
-bl _p_614
-.word 0xf9006fa0
-.word 0xf9405ba0
-bl _p_615
-.word 0xaa0003e3
-.word 0xf9406ba1
-.word 0xf9406faf
-.word 0x910143a0
-.word 0xaa1703e2
-.word 0xd63f0060
-.word 0xf9402ba0
-.word 0xf90053a0
-.word 0xf9402fa0
-.word 0xf90057a0
-.word 0x1400002e
-.word 0xf9400320
-.word 0xb40004a0
-.word 0xf9400320
-.word 0xf9007ba0
-.word 0xf9405ba0
-bl _p_618
-.word 0xaa0003e2
-.word 0xf9407ba0
-.word 0xf9400441
-bl _p_429
-.word 0xf9006ba0
-.word 0xb9800b20
-.word 0xf9006fa0
-.word 0xb9800f20
-.word 0xd29ffffe
-.word 0xf2affffe
-.word 0xa1e0000
-.word 0xf90073a0
-.word 0xd2800000
-.word 0xf90023a0
-.word 0xf90027a0
-.word 0xf9405ba0
-bl _p_614
-.word 0xf90077a0
-.word 0xf9405ba0
-bl _p_621
-.word 0xaa0003e4
-.word 0xf9406ba1
-.word 0xf9406fa2
-.word 0xf94073a3
-.word 0xf94077af
-.word 0x910103a0
-.word 0xd63f0080
-.word 0xf94023a0
-.word 0xf90053a0
-.word 0xf94027a0
-.word 0xf90057a0
-.word 0x14000008
-.word 0xd2800000
-.word 0xf9004ba0
-.word 0xf9004fa0
-.word 0xf9404ba0
-.word 0xf90053a0
-.word 0xf9404fa0
-.word 0xf90057a0
-.word 0xf9405ba0
-bl _p_610
-.word 0xf9006ba0
-.word 0x3940035e
-.word 0xf9405ba0
 bl _p_623
 .word 0xaa0003e3
 .word 0xf9406baf
@@ -45539,13 +45991,11 @@ bl _p_623
 .word 0xa8d07bfd
 .word 0xd65f03c0
 bl _p_369
-.word 0x17ffff4a
 bl _p_369
-.word 0x17ffffa6
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_16
 
@@ -45841,10 +46291,10 @@ ldr x2, [x16, #16]
 .word 0x910003bf
 .word 0xa8d67bfd
 .word 0xd65f03c0
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_16
 
@@ -46018,7 +46468,7 @@ bl _p_627
 .word 0x910003bf
 .word 0xa8c87bfd
 .word 0xd65f03c0
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_16
 
@@ -46278,14 +46728,8 @@ System_Nullable_1_System_IO_Compression_CompressionLevel_get_Value:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 .loc 43 46 0
-.word 0xd2938c80
-bl _p_384
-.word 0xaa0003e1
-.word 0xd2802440
-.word 0xf2a04000
-bl _mono_create_corlib_exception_1
-bl _p_9
-.word 0x17fffff4
+bl _p_630
+.word 0x17fffffa
 
 Lme_2bb:
 .text
@@ -46595,7 +47039,7 @@ bl _p_182
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_16
 
@@ -46671,11 +47115,11 @@ bl _p_182
 .word 0xa8c47bfd
 .word 0xd65f03c0
 .loc 44 70 0
-.word 0xd2802420
+.word 0xd2802440
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_16
 
@@ -46696,6 +47140,7 @@ System_Array_InternalEnumerator_1_T_INST__ctor_System_Array:
 .word 0xf90013af
 .word 0xaa0003f9
 .word 0xf9000fa1
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000320
 .word 0xd349ff21
@@ -46820,7 +47265,7 @@ System_Array_InternalEnumerator_1_T_INST_get_Current:
 .word 0x4b010000
 .word 0xf90027a0
 .word 0xf94017a0
-bl _p_630
+bl _p_631
 .word 0xaa0003e1
 .word 0xf9402fa0
 .word 0xf9002ba1
@@ -46828,7 +47273,7 @@ bl _p_630
 .word 0x3940001e
 .word 0xf90023a0
 .word 0xf94017a0
-bl _p_631
+bl _p_632
 .word 0xaa0003e2
 .word 0xf94023a0
 .word 0xf94027a1
@@ -46849,7 +47294,7 @@ bl _p_631
 .word 0xd2980c80
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2802440
+.word 0xd2802460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -46857,7 +47302,7 @@ bl _p_9
 .word 0xd2981740
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2802440
+.word 0xd2802460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -46900,14 +47345,14 @@ System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_get_Curr
 .word 0xf90017af
 .word 0xf9000ba0
 .word 0xf94017a0
-bl _p_632
-.word 0xf90023a0
+bl _p_633
+.word 0xf90027a0
 .word 0xf9400ba0
 .word 0x3940001e
 .word 0xf94017a0
-bl _p_633
+bl _p_634
 .word 0xaa0003e1
-.word 0xf94023af
+.word 0xf94027af
 .word 0x910063a0
 .word 0xf9001ba0
 .word 0xf9400ba0
@@ -46916,11 +47361,14 @@ bl _p_633
 .word 0xf90003c0
 .word 0xf90007c1
 .word 0xf94017a0
-bl _p_634
+bl _p_635
 .word 0xd2800401
 bl _p_26
+.word 0xf90023a0
 .word 0x91004003
 .word 0xaa0303e1
+.word 0xd5033bbf
+.word 0xf94023a0
 .word 0xf9400fa2
 .word 0xf9000062
 .word 0xd349fc23
@@ -46967,25 +47415,25 @@ System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST:
 .word 0x35000140
 .loc 45 85 0
 .word 0xf9401fa0
-bl _p_635
+bl _p_636
 .word 0x3980b410
 .word 0xb5000050
 bl _p_1
 .word 0xf9401fa0
-bl _p_636
+bl _p_637
 .word 0xf9400000
-.word 0x14000027
+.word 0x1400002a
 .loc 45 87 0
 .word 0xd2800000
 .word 0xf90017a0
 .word 0xf9001ba0
 .word 0xf9401fa0
-bl _p_637
-.word 0xf90023a0
-.word 0xf9401fa0
 bl _p_638
+.word 0xf90027a0
+.word 0xf9401fa0
+bl _p_639
 .word 0xaa0003e2
-.word 0xf94023af
+.word 0xf94027af
 .word 0x9100a3a0
 .word 0xf9400ba1
 .word 0xd63f0040
@@ -46994,11 +47442,14 @@ bl _p_638
 .word 0xf9401ba0
 .word 0xf90013a0
 .word 0xf9401fa0
-bl _p_637
+bl _p_638
 .word 0xd2800401
 bl _p_26
+.word 0xf90023a0
 .word 0x91004003
 .word 0xaa0303e1
+.word 0xd5033bbf
+.word 0xf94023a0
 .word 0xf9400fa2
 .word 0xf9000062
 .word 0xd349fc23
@@ -47036,7 +47487,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x35000720
+.word 0x35000740
 .word 0x14000001
 .word 0xf9403f38
 .word 0xaa1803e0
@@ -47050,14 +47501,15 @@ ldr x0, [x16, #48]
 .word 0xaa1a03e1
 .word 0xd63f0040
 .word 0x53001c00
-.word 0x14000020
+.word 0x14000021
 .word 0xf9401f20
 .word 0xf9400b21
 .word 0xaa1a03e0
 .word 0xd63f0020
 .word 0x53001c00
-.word 0x1400001a
-.word 0xb9801b19
+.word 0x1400001b
+.word 0xb9801b00
+.word 0xaa0003f9
 .word 0xd2800017
 .word 0x93407ee0
 .word 0xb9801b01
@@ -47093,11 +47545,11 @@ ldr x0, [x16, #48]
 .word 0xb900001e
 .word 0xaa1803e0
 bl _p_210
-bl _p_639
+bl _p_640
 .word 0xaa0003f8
 .word 0xb5ffff20
-.word 0x17ffffc6
-.word 0xd2802380
+.word 0x17ffffc5
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -47118,7 +47570,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x35000680
+.word 0x350006a0
 .word 0x14000001
 .word 0xf9403f38
 .word 0xaa1803e0
@@ -47131,13 +47583,14 @@ ldr x0, [x16, #48]
 .word 0xaa1803e0
 .word 0xaa1a03e1
 .word 0xd63f0040
-.word 0x1400001c
+.word 0x1400001d
 .word 0xf9401f20
 .word 0xf9400b21
 .word 0xaa1a03e0
 .word 0xd63f0020
-.word 0x14000017
-.word 0xb9801b19
+.word 0x14000018
+.word 0xb9801b00
+.word 0xaa0003f9
 .word 0xd2800017
 .word 0x93407ee0
 .word 0xb9801b01
@@ -47170,11 +47623,11 @@ ldr x0, [x16, #48]
 .word 0xb900001e
 .word 0xaa1803e0
 bl _p_210
-bl _p_639
+bl _p_640
 .word 0xaa0003f8
 .word 0xb5ffff20
-.word 0x17ffffcb
-.word 0xd2802380
+.word 0x17ffffca
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -47196,7 +47649,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x35000780
+.word 0x350007a0
 .word 0x14000001
 .word 0xf9403f17
 .word 0xaa1703e0
@@ -47211,15 +47664,16 @@ ldr x0, [x16, #48]
 .word 0xaa1a03e2
 .word 0xd63f0060
 .word 0x93407c00
-.word 0x14000022
+.word 0x14000023
 .word 0xf9401f00
 .word 0xf9400b02
 .word 0xaa1903e0
 .word 0xaa1a03e1
 .word 0xd63f0040
 .word 0x93407c00
-.word 0x1400001b
-.word 0xb9801af8
+.word 0x1400001c
+.word 0xb9801ae0
+.word 0xaa0003f8
 .word 0xd2800016
 .word 0x93407ec0
 .word 0xb9801ae1
@@ -47256,11 +47710,11 @@ ldr x0, [x16, #48]
 .word 0xb900001e
 .word 0xaa1703e0
 bl _p_210
-bl _p_639
+bl _p_640
 .word 0xaa0003f7
 .word 0xb5ffff20
-.word 0x17ffffc3
-.word 0xd2802380
+.word 0x17ffffc2
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -47332,14 +47786,8 @@ System_Nullable_1_long_get_Value:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 .loc 43 46 0
-.word 0xd2938c80
-bl _p_384
-.word 0xaa0003e1
-.word 0xd2802440
-.word 0xf2a04000
-bl _mono_create_corlib_exception_1
-bl _p_9
-.word 0x17fffff4
+bl _p_630
+.word 0x17fffffa
 
 Lme_2d4:
 .text
@@ -47415,7 +47863,7 @@ System_Nullable_1_long_Equals_object:
 .word 0xf9400ba0
 .word 0x91002000
 .word 0xf9400fa1
-bl _p_640
+bl _p_641
 .word 0x53001c00
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -47476,7 +47924,7 @@ ldr x0, [x16, #1744]
 .word 0x14000004
 .word 0xf9400ba0
 .word 0x91002000
-bl _p_641
+bl _p_642
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -47634,7 +48082,7 @@ bl _p_245
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_16
 
@@ -47714,11 +48162,11 @@ bl _p_245
 .word 0xa8c57bfd
 .word 0xd65f03c0
 .loc 44 70 0
-.word 0xd2802420
+.word 0xd2802440
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_16
 
@@ -47745,7 +48193,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x350008c0
+.word 0x350008e0
 .word 0x14000001
 .word 0xf9403e93
 .word 0xaa1303e0
@@ -47763,7 +48211,7 @@ ldr x0, [x16, #48]
 .word 0xaa1903e5
 .word 0xf9402ba6
 .word 0xd63f00e0
-.word 0x14000028
+.word 0x14000029
 .word 0xf9401e80
 .word 0xf9400a86
 .word 0xaa1503e0
@@ -47773,8 +48221,9 @@ ldr x0, [x16, #48]
 .word 0xaa1903e4
 .word 0xf9402ba5
 .word 0xd63f00c0
-.word 0x1400001e
-.word 0xb9801a74
+.word 0x1400001f
+.word 0xb9801a60
+.word 0xaa0003f4
 .word 0xb9005bbf
 .word 0xb9805ba0
 .word 0x93407c00
@@ -47815,11 +48264,11 @@ ldr x0, [x16, #48]
 .word 0xb900001e
 .word 0xaa1a03e0
 bl _p_210
-bl _p_639
+bl _p_640
 .word 0xaa0003fa
 .word 0xb5ffff20
-.word 0x17ffffb9
-.word 0xd2802380
+.word 0x17ffffb8
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -47838,6 +48287,7 @@ System_Array_InternalEnumerator_1_System_IO_Compression_ZipGenericExtraField__ct
 .word 0xf9000bb9
 .word 0xaa0003f9
 .word 0xf9000fa1
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000320
 .word 0xd349ff21
@@ -47963,7 +48413,7 @@ ldr x15, [x16, #2112]
 .word 0x3940001e
 .word 0x910063a2
 .word 0xf90017a2
-bl _p_642
+bl _p_643
 .word 0xf94017be
 .word 0xf90003c0
 .word 0xf90007c1
@@ -47977,7 +48427,7 @@ bl _p_642
 .word 0xd2980c80
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2802440
+.word 0xd2802460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -47985,7 +48435,7 @@ bl _p_9
 .word 0xd2981740
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2802440
+.word 0xd2802460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -48032,7 +48482,7 @@ ldr x15, [x16, #2120]
 .word 0x910063a0
 .word 0xf90017a0
 .word 0xf9400ba0
-bl _p_643
+bl _p_644
 .word 0xf94017be
 .word 0xf90003c0
 .word 0xf90007c1
@@ -48070,7 +48520,7 @@ Lme_2ea:
 	.no_dead_strip System_Array_InternalArray__IEnumerable_GetEnumerator_System_IO_Compression_ZipGenericExtraField
 System_Array_InternalArray__IEnumerable_GetEnumerator_System_IO_Compression_ZipGenericExtraField:
 .loc 45 84 0 prologue_end
-.word 0xa9bc7bfd
+.word 0xa9bb7bfd
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9400ba0
@@ -48082,7 +48532,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #2136]
 .word 0xf9400000
-.word 0x14000024
+.word 0x14000027
 .loc 45 87 0
 .word 0xd2800000
 .word 0xf90017a0
@@ -48093,7 +48543,7 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x15, [x16, #2120]
 .word 0x9100a3a0
 .word 0xf9400ba1
-bl _p_644
+bl _p_645
 .word 0xf94017a0
 .word 0xf9000fa0
 .word 0xf9401ba0
@@ -48104,8 +48554,11 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #2120]
 .word 0xd2800401
 bl _p_26
+.word 0xf90023a0
 .word 0x91004003
 .word 0xaa0303e1
+.word 0xd5033bbf
+.word 0xf94023a0
 .word 0xf9400fa2
 .word 0xf9000062
 .word 0xd349fc23
@@ -48123,7 +48576,7 @@ ldr x4, [x16, #16]
 .word 0xf94013a2
 .word 0xf9000022
 .word 0x910003bf
-.word 0xa8c47bfd
+.word 0xa8c57bfd
 .word 0xd65f03c0
 
 Lme_2eb:
@@ -48140,7 +48593,7 @@ System_Array_InternalArray__ICollection_Add_System_IO_Compression_ZipGenericExtr
 .word 0xd2974cc0
 bl _p_384
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -48162,7 +48615,7 @@ System_Array_InternalArray__ICollection_Remove_System_IO_Compression_ZipGenericE
 .word 0xd2974cc0
 bl _p_384
 .word 0xaa0003e1
-.word 0xd28026e0
+.word 0xd2802700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -48296,7 +48749,7 @@ ldr x4, [x16, #16]
 .word 0xd2975440
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2802940
+.word 0xd2802960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -48351,7 +48804,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x35000760
+.word 0x35000780
 .word 0x14000001
 .word 0xf9403f59
 .word 0xaa1903e0
@@ -48366,15 +48819,16 @@ ldr x0, [x16, #48]
 .word 0xf9401fa2
 .word 0xd63f0060
 .word 0x53001c00
-.word 0x14000022
+.word 0x14000023
 .word 0xf9401f40
 .word 0xf9400b42
 .word 0xf9401ba0
 .word 0xf9401fa1
 .word 0xd63f0040
 .word 0x53001c00
-.word 0x1400001b
-.word 0xb9801b3a
+.word 0x1400001c
+.word 0xb9801b20
+.word 0xaa0003fa
 .word 0xd2800018
 .word 0x93407f00
 .word 0xb9801b21
@@ -48410,11 +48864,11 @@ ldr x0, [x16, #48]
 .word 0xb900001e
 .word 0xaa1903e0
 bl _p_210
-bl _p_639
+bl _p_640
 .word 0xaa0003f9
 .word 0xb5ffff20
-.word 0x17ffffc4
-.word 0xd2802380
+.word 0x17ffffc3
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -48435,7 +48889,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x350006c0
+.word 0x350006e0
 .word 0x14000001
 .word 0xf9403f59
 .word 0xaa1903e0
@@ -48449,14 +48903,15 @@ ldr x0, [x16, #48]
 .word 0xf9401ba1
 .word 0xf9401fa2
 .word 0xd63f0060
-.word 0x1400001e
+.word 0x1400001f
 .word 0xf9401f40
 .word 0xf9400b42
 .word 0xf9401ba0
 .word 0xf9401fa1
 .word 0xd63f0040
-.word 0x14000018
-.word 0xb9801b3a
+.word 0x14000019
+.word 0xb9801b20
+.word 0xaa0003fa
 .word 0xd2800018
 .word 0x93407f00
 .word 0xb9801b21
@@ -48489,11 +48944,11 @@ ldr x0, [x16, #48]
 .word 0xb900001e
 .word 0xaa1903e0
 bl _p_210
-bl _p_639
+bl _p_640
 .word 0xaa0003f9
 .word 0xb5ffff20
-.word 0x17ffffc9
-.word 0xd2802380
+.word 0x17ffffc8
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -48516,7 +48971,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x35000820
+.word 0x35000840
 .word 0x14000001
 .word 0xf9403f59
 .word 0xaa1903e0
@@ -48533,7 +48988,7 @@ ldr x0, [x16, #48]
 .word 0xf94027a4
 .word 0xd63f00a0
 .word 0x93407c00
-.word 0x14000026
+.word 0x14000027
 .word 0xf9401f40
 .word 0xf9400b44
 .word 0xf9401ba0
@@ -48542,8 +48997,9 @@ ldr x0, [x16, #48]
 .word 0xf94027a3
 .word 0xd63f0080
 .word 0x93407c00
-.word 0x1400001d
-.word 0xb9801b3a
+.word 0x1400001e
+.word 0xb9801b20
+.word 0xaa0003fa
 .word 0xd2800018
 .word 0x93407f00
 .word 0xb9801b21
@@ -48581,11 +49037,11 @@ ldr x0, [x16, #48]
 .word 0xb900001e
 .word 0xaa1903e0
 bl _p_210
-bl _p_639
+bl _p_640
 .word 0xaa0003f9
 .word 0xb5ffff20
-.word 0x17ffffbe
-.word 0xd2802380
+.word 0x17ffffbd
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -48605,6 +49061,7 @@ System_Collections_Generic_List_1_Enumerator_System_IO_Compression_ZipGenericExt
 .word 0xa9016bb9
 .word 0xaa0003f9
 .word 0xaa0103fa
+.word 0xd5033bbf
 .word 0xf900033a
 .word 0xd349ff20
 .word 0xd29ffffe
@@ -48720,13 +49177,13 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x15, [x16, #1272]
 .word 0xaa1a03e0
-bl _p_645
+bl _p_646
 .word 0x53001c00
 .word 0xa9416bb9
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -48766,14 +49223,8 @@ System_Collections_Generic_List_1_Enumerator_System_IO_Compression_ZipGenericExt
 .word 0xa8c27bfd
 .word 0xd65f03c0
 .loc 46 1163 0
-.word 0xd2936d80
-bl _p_384
-.word 0xaa0003e1
-.word 0xd2802440
-.word 0xf2a04000
-bl _mono_create_corlib_exception_1
-bl _p_9
-.word 0x17ffffec
+bl _p_647
+.word 0x17fffff2
 
 Lme_30b:
 .text
@@ -48861,14 +49312,8 @@ ldr x3, [x16, #16]
 .word 0xa8c37bfd
 .word 0xd65f03c0
 .loc 46 1179 0
-.word 0xd2937d80
-bl _p_384
-.word 0xaa0003e1
-.word 0xd2802440
-.word 0xf2a04000
-bl _mono_create_corlib_exception_1
-bl _p_9
-.word 0x17ffffd7
+bl _p_648
+.word 0x17ffffdd
 
 Lme_30d:
 .text
@@ -48902,14 +49347,8 @@ System_Collections_Generic_List_1_Enumerator_System_IO_Compression_ZipGenericExt
 .word 0xa8c27bfd
 .word 0xd65f03c0
 .loc 46 1189 0
-.word 0xd2936d80
-bl _p_384
-.word 0xaa0003e1
-.word 0xd2802440
-.word 0xf2a04000
-bl _mono_create_corlib_exception_1
-bl _p_9
-.word 0x17fffff0
+bl _p_647
+.word 0x17fffff6
 
 Lme_30e:
 .text
@@ -48979,14 +49418,8 @@ System_Nullable_1_int_get_Value:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 .loc 43 46 0
-.word 0xd2938c80
-bl _p_384
-.word 0xaa0003e1
-.word 0xd2802440
-.word 0xf2a04000
-bl _mono_create_corlib_exception_1
-bl _p_9
-.word 0x17fffff4
+bl _p_630
+.word 0x17fffffa
 
 Lme_311:
 .text
@@ -49062,7 +49495,7 @@ System_Nullable_1_int_Equals_object:
 .word 0xf9400ba0
 .word 0x91001000
 .word 0xf9400fa1
-bl _p_646
+bl _p_649
 .word 0x53001c00
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -49118,7 +49551,7 @@ ldr x0, [x16, #1744]
 .word 0x14000004
 .word 0xf9400ba0
 .word 0x91001000
-bl _p_647
+bl _p_650
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -49269,7 +49702,7 @@ bl _p_291
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_16
 
@@ -49345,11 +49778,11 @@ bl _p_291
 .word 0xa8c47bfd
 .word 0xd65f03c0
 .loc 44 70 0
-.word 0xd2802420
+.word 0xd2802440
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_16
 
@@ -49364,13 +49797,16 @@ b System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_1_TResult_INT__ct
 System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_1_TResult_INT__ctor_System_Threading_Tasks_ValueTask_1_TResult_INT:
 .file 47 "/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/src/Xamarin.iOS/external/corefx/src/Common/src/CoreLib/System/Runtime/CompilerServices/ConfiguredValueTaskAwaitable.cs"
 .loc 47 137 0 prologue_end
-.word 0xa9bd7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xf90017af
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf90013a2
 .word 0xf9400ba0
+.word 0xf9001ba0
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9400fa1
 .word 0xf9000001
 .word 0xd349fc02
@@ -49388,7 +49824,7 @@ ldr x3, [x16, #16]
 .word 0xf94013a1
 .word 0xf9000001
 .word 0x910003bf
-.word 0xa8c37bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
 
 Lme_31c:
@@ -49414,10 +49850,10 @@ System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_1_TResult_INT_GetAw
 .word 0xf9001fa0
 .word 0xf90023a0
 .word 0xf94027a0
-bl _p_648
+bl _p_651
 .word 0xf9002ba0
 .word 0xf94027a0
-bl _p_649
+bl _p_652
 .word 0xaa0003e3
 .word 0xf9402baf
 .word 0x9100e3a0
@@ -49444,13 +49880,16 @@ b System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_1_ConfiguredValue
 	.no_dead_strip System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_1_ConfiguredValueTaskAwaiter_TResult_INT__ctor_System_Threading_Tasks_ValueTask_1_TResult_INT
 System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_1_ConfiguredValueTaskAwaiter_TResult_INT__ctor_System_Threading_Tasks_ValueTask_1_TResult_INT:
 .loc 47 156 0 prologue_end
-.word 0xa9bd7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xf90017af
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf90013a2
 .word 0xf9400ba0
+.word 0xf9001ba0
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9400fa1
 .word 0xf9000001
 .word 0xd349fc02
@@ -49468,7 +49907,7 @@ ldr x3, [x16, #16]
 .word 0xf94013a1
 .word 0xf9000001
 .word 0x910003bf
-.word 0xa8c37bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
 
 Lme_31e:
@@ -49495,7 +49934,7 @@ System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_1_ConfiguredValueTa
 .word 0xf9400740
 .word 0xf90023a0
 .word 0xf9401ba0
-bl _p_650
+bl _p_653
 .word 0x9100e3ba
 .word 0xf9401fb9
 .word 0xaa1903e0
@@ -49503,7 +49942,7 @@ bl _p_650
 .word 0xd280003a
 .word 0x1400002d
 .word 0xf9401ba0
-bl _p_651
+bl _p_654
 .word 0xaa0003f8
 .word 0xaa1903f7
 .word 0xeb1f033f
@@ -49534,7 +49973,7 @@ bl _p_651
 .word 0x79801b40
 .word 0xf9002ba0
 .word 0xf9401ba0
-bl _p_652
+bl _p_655
 .word 0xaa0003ef
 .word 0xf9402ba1
 .word 0xaa1903e0
@@ -49577,7 +50016,7 @@ System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_1_ConfiguredValueTa
 .word 0xf9400740
 .word 0xf90023a0
 .word 0xf9401ba0
-bl _p_650
+bl _p_653
 .word 0x9100e3ba
 .word 0xf9401fb9
 .word 0xaa1903e0
@@ -49585,7 +50024,7 @@ bl _p_650
 .word 0xb9800b5a
 .word 0x14000023
 .word 0xf9401ba0
-bl _p_651
+bl _p_654
 .word 0xaa0003f8
 .word 0xaa1903f7
 .word 0xeb1f033f
@@ -49607,7 +50046,7 @@ bl _p_331
 .word 0x79801b40
 .word 0xf9002ba0
 .word 0xf9401ba0
-bl _p_653
+bl _p_656
 .word 0xaa0003ef
 .word 0xf9402ba1
 .word 0xaa1903e0
@@ -49663,7 +50102,7 @@ System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_1_ConfiguredValueTa
 .loc 47 176 0
 .word 0xaa1803f7
 .word 0xf9406ba0
-bl _p_651
+bl _p_654
 .word 0xaa0003f6
 .word 0xaa1703f5
 .word 0xeb1f02ff
@@ -49689,10 +50128,10 @@ bl _p_651
 .word 0xf90053a0
 .word 0xf90057a0
 .word 0xf9406ba0
-bl _p_654
+bl _p_657
 .word 0xf9009ba0
 .word 0xf9406ba0
-bl _p_655
+bl _p_658
 .word 0xaa0003e3
 .word 0xf94097a2
 .word 0xf9409baf
@@ -49704,24 +50143,24 @@ bl _p_655
 .word 0xf94057a0
 .word 0xf9008ba0
 .word 0xf9406ba0
-bl _p_654
+bl _p_657
 .word 0x910423a0
 .word 0xf9400001
 .word 0xf9007fa1
 .word 0xf9400400
 .word 0xf90083a0
 .word 0xf9406ba0
-bl _p_656
+bl _p_659
 .word 0xf90093a0
 .word 0xf9406ba0
-bl _p_657
+bl _p_660
 .word 0xaa0003e2
 .word 0xf94093af
 .word 0x9103e3a0
 .word 0xaa1a03e1
 .word 0xd63f0040
 .loc 47 179 0
-.word 0x1400006c
+.word 0x14000072
 .loc 47 180 0
 .word 0xb4000518
 .loc 47 182 0
@@ -49752,7 +50191,7 @@ ldr x0, [x16, #2152]
 .word 0x2a1502c0
 .word 0xf90093a0
 .word 0xf9406ba0
-bl _p_658
+bl _p_661
 .word 0xaa0003ef
 .word 0xf94093a4
 .word 0xaa1903e0
@@ -49765,7 +50204,7 @@ bl _p_658
 .word 0xf87068b0
 .word 0xd63f0200
 .loc 47 185 0
-.word 0x14000044
+.word 0x1400004a
 .loc 47 188 0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -49778,38 +50217,44 @@ bl _p_1
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #352]
-.word 0xf9400002
+.word 0xf9400001
 .word 0xf9400320
 .word 0xf9003ba0
 .word 0xf9400720
 .word 0xf9003fa0
-.word 0x3941fba1
-.word 0x3940005e
+.word 0x3941fba0
+.word 0xf90097a0
+.word 0x3940003e
 .word 0xd2800000
 .word 0xf90033a0
 .word 0xf90037a0
 .word 0x910183a0
-.word 0xd2800003
-.word 0xf9002ba3
-.word 0xf9002fa3
-.word 0x910143a3
-.word 0xf9002ba2
-.word 0xd349fc63
+.word 0xf90093a0
+.word 0xd2800000
+.word 0xf9002ba0
+.word 0xf9002fa0
+.word 0x910143a2
+.word 0xd5033bbf
+.word 0xf94097a0
+.word 0xf9002ba1
+.word 0xd349fc42
 .word 0xd29ffffe
 .word 0xf2a00ffe
-.word 0x8a1e0063
+.word 0x8a1e0042
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
-ldr x4, [x16, #16]
-.word 0x8b040063
+ldr x3, [x16, #16]
+.word 0x8b030042
 .word 0xd280003e
-.word 0x3900007e
-.word 0x390163a1
-.word 0xf9402ba1
-.word 0xf90023a1
-.word 0xf9402fa1
-.word 0xf90027a1
+.word 0x3900005e
+.word 0x390163a0
+.word 0xf9402ba0
+.word 0xf90023a0
+.word 0xf9402fa0
+.word 0xf90027a0
+.word 0xd5033bbf
+.word 0xf94093a0
 .word 0xf94023a1
 .word 0xf90033a1
 .word 0xd349fc02
@@ -49884,7 +50329,7 @@ System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_1_ConfiguredValueTa
 .loc 47 198 0
 .word 0xaa1803f7
 .word 0xf9406ba0
-bl _p_651
+bl _p_654
 .word 0xaa0003f6
 .word 0xaa1703f5
 .word 0xeb1f02ff
@@ -49910,10 +50355,10 @@ bl _p_651
 .word 0xf90053a0
 .word 0xf90057a0
 .word 0xf9406ba0
-bl _p_654
+bl _p_657
 .word 0xf9009ba0
 .word 0xf9406ba0
-bl _p_655
+bl _p_658
 .word 0xaa0003e3
 .word 0xf94097a2
 .word 0xf9409baf
@@ -49925,24 +50370,24 @@ bl _p_655
 .word 0xf94057a0
 .word 0xf9008ba0
 .word 0xf9406ba0
-bl _p_654
+bl _p_657
 .word 0x910423a0
 .word 0xf9400001
 .word 0xf9007fa1
 .word 0xf9400400
 .word 0xf90083a0
 .word 0xf9406ba0
-bl _p_656
+bl _p_659
 .word 0xf90093a0
 .word 0xf9406ba0
-bl _p_659
+bl _p_662
 .word 0xaa0003e2
 .word 0xf94093af
 .word 0x9103e3a0
 .word 0xaa1a03e1
 .word 0xd63f0040
 .loc 47 201 0
-.word 0x14000069
+.word 0x1400006f
 .loc 47 202 0
 .word 0xb40004b8
 .loc 47 204 0
@@ -49970,7 +50415,7 @@ ldr x0, [x16, #2152]
 .word 0x14000002
 .word 0xd2800036
 .word 0xf9406ba0
-bl _p_658
+bl _p_661
 .word 0xaa0003ef
 .word 0xaa1903e0
 .word 0xaa1803e1
@@ -49983,7 +50428,7 @@ bl _p_658
 .word 0xf87068b0
 .word 0xd63f0200
 .loc 47 206 0
-.word 0x14000044
+.word 0x1400004a
 .loc 47 209 0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -49996,38 +50441,44 @@ bl _p_1
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #352]
-.word 0xf9400002
+.word 0xf9400001
 .word 0xf9400320
 .word 0xf9003ba0
 .word 0xf9400720
 .word 0xf9003fa0
-.word 0x3941fba1
-.word 0x3940005e
+.word 0x3941fba0
+.word 0xf90097a0
+.word 0x3940003e
 .word 0xd2800000
 .word 0xf90033a0
 .word 0xf90037a0
 .word 0x910183a0
-.word 0xd2800003
-.word 0xf9002ba3
-.word 0xf9002fa3
-.word 0x910143a3
-.word 0xf9002ba2
-.word 0xd349fc63
+.word 0xf90093a0
+.word 0xd2800000
+.word 0xf9002ba0
+.word 0xf9002fa0
+.word 0x910143a2
+.word 0xd5033bbf
+.word 0xf94097a0
+.word 0xf9002ba1
+.word 0xd349fc42
 .word 0xd29ffffe
 .word 0xf2a00ffe
-.word 0x8a1e0063
+.word 0x8a1e0042
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
-ldr x4, [x16, #16]
-.word 0x8b040063
+ldr x3, [x16, #16]
+.word 0x8b030042
 .word 0xd280003e
-.word 0x3900007e
-.word 0x390163a1
-.word 0xf9402ba1
-.word 0xf90023a1
-.word 0xf9402fa1
-.word 0xf90027a1
+.word 0x3900005e
+.word 0x390163a0
+.word 0xf9402ba0
+.word 0xf90023a0
+.word 0xf9402fa0
+.word 0xf90027a0
+.word 0xd5033bbf
+.word 0xf94093a0
 .word 0xf94023a1
 .word 0xf90033a1
 .word 0xd349fc02
@@ -50055,7 +50506,7 @@ ldr x3, [x16, #16]
 .word 0xf90073a0
 .word 0x910363a0
 .word 0xaa1a03e1
-bl _p_660
+bl _p_663
 .loc 47 211 0
 .word 0xa9415bb5
 .word 0xa94263b7
@@ -50085,12 +50536,12 @@ System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_TResult_INT__ctor_Syst
 .word 0xf9001fa0
 .word 0xf90023a0
 .word 0xf94027a0
-bl _p_661
-.word 0xf9002ba0
+bl _p_664
+.word 0xf9002fa0
 .word 0xf94027a0
-bl _p_662
+bl _p_665
 .word 0xaa0003e3
-.word 0xf9402baf
+.word 0xf9402faf
 .word 0x9100e3a0
 .word 0xf9400fa1
 .word 0x394083a2
@@ -50100,6 +50551,9 @@ bl _p_662
 .word 0xf94023a0
 .word 0xf9001ba0
 .word 0xf9400ba0
+.word 0xf9002ba0
+.word 0xd5033bbf
+.word 0xf9402ba0
 .word 0xf94017a1
 .word 0xf9000001
 .word 0xd349fc02
@@ -50163,6 +50617,7 @@ System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_
 .word 0xaa0003f8
 .word 0xf9000fa1
 .word 0xf90013a2
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000300
 .word 0xd349ff01
@@ -50239,7 +50694,7 @@ System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_
 .word 0x39402322
 .word 0xf9400fa1
 .word 0xd2800023
-bl _p_663
+bl _p_666
 .loc 48 584 0
 .word 0xf9400bb9
 .word 0x910003bf
@@ -50266,7 +50721,7 @@ System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_
 .word 0x39402322
 .word 0xf9400fa1
 .word 0xd2800003
-bl _p_663
+bl _p_666
 .loc 48 594 0
 .word 0xf9400bb9
 .word 0x910003bf
@@ -50317,7 +50772,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x35000680
+.word 0x350006a0
 .word 0x14000001
 .word 0xf9403f38
 .word 0xaa1803e0
@@ -50330,13 +50785,14 @@ ldr x0, [x16, #48]
 .word 0xaa1803e0
 .word 0xaa1a03e1
 .word 0xd63f0040
-.word 0x1400001c
+.word 0x1400001d
 .word 0xf9401f20
 .word 0xf9400b21
 .word 0xaa1a03e0
 .word 0xd63f0020
-.word 0x14000017
-.word 0xb9801b19
+.word 0x14000018
+.word 0xb9801b00
+.word 0xaa0003f9
 .word 0xd2800017
 .word 0x93407ee0
 .word 0xb9801b01
@@ -50369,11 +50825,11 @@ ldr x0, [x16, #48]
 .word 0xb900001e
 .word 0xaa1803e0
 bl _p_210
-bl _p_639
+bl _p_640
 .word 0xaa0003f8
 .word 0xb5ffff20
-.word 0x17ffffcb
-.word 0xd2802380
+.word 0x17ffffca
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -50395,7 +50851,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x35000720
+.word 0x35000740
 .word 0x14000001
 .word 0xf9403f17
 .word 0xaa1703e0
@@ -50409,14 +50865,15 @@ ldr x0, [x16, #48]
 .word 0xaa1903e1
 .word 0xaa1a03e2
 .word 0xd63f0060
-.word 0x14000020
+.word 0x14000021
 .word 0xf9401f00
 .word 0xf9400b02
 .word 0xaa1903e0
 .word 0xaa1a03e1
 .word 0xd63f0040
-.word 0x1400001a
-.word 0xb9801af8
+.word 0x1400001b
+.word 0xb9801ae0
+.word 0xaa0003f8
 .word 0xd2800016
 .word 0x93407ec0
 .word 0xb9801ae1
@@ -50452,11 +50909,11 @@ ldr x0, [x16, #48]
 .word 0xb900001e
 .word 0xaa1703e0
 bl _p_210
-bl _p_639
+bl _p_640
 .word 0xaa0003f7
 .word 0xb5ffff20
-.word 0x17ffffc6
-.word 0xd2802380
+.word 0x17ffffc5
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -50477,7 +50934,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x35000680
+.word 0x350006a0
 .word 0x14000001
 .word 0xf9403f38
 .word 0xaa1803e0
@@ -50490,13 +50947,14 @@ ldr x0, [x16, #48]
 .word 0xaa1803e0
 .word 0xaa1a03e1
 .word 0xd63f0040
-.word 0x1400001c
+.word 0x1400001d
 .word 0xf9401f20
 .word 0xf9400b21
 .word 0xaa1a03e0
 .word 0xd63f0020
-.word 0x14000017
-.word 0xb9801b19
+.word 0x14000018
+.word 0xb9801b00
+.word 0xaa0003f9
 .word 0xd2800017
 .word 0x93407ee0
 .word 0xb9801b01
@@ -50529,11 +50987,11 @@ ldr x0, [x16, #48]
 .word 0xb900001e
 .word 0xaa1803e0
 bl _p_210
-bl _p_639
+bl _p_640
 .word 0xaa0003f8
 .word 0xb5ffff20
-.word 0x17ffffcb
-.word 0xd2802380
+.word 0x17ffffca
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -50554,7 +51012,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x35000680
+.word 0x350006a0
 .word 0x14000001
 .word 0xf9403f38
 .word 0xaa1803e0
@@ -50567,13 +51025,14 @@ ldr x0, [x16, #48]
 .word 0xaa1803e0
 .word 0xaa1a03e1
 .word 0xd63f0040
-.word 0x1400001c
+.word 0x1400001d
 .word 0xf9401f20
 .word 0xf9400b21
 .word 0xaa1a03e0
 .word 0xd63f0020
-.word 0x14000017
-.word 0xb9801b19
+.word 0x14000018
+.word 0xb9801b00
+.word 0xaa0003f9
 .word 0xd2800017
 .word 0x93407ee0
 .word 0xb9801b01
@@ -50606,11 +51065,11 @@ ldr x0, [x16, #48]
 .word 0xb900001e
 .word 0xaa1803e0
 bl _p_210
-bl _p_639
+bl _p_640
 .word 0xaa0003f8
 .word 0xb5ffff20
-.word 0x17ffffcb
-.word 0xd2802380
+.word 0x17ffffca
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -50629,7 +51088,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x35000640
+.word 0x35000660
 .word 0x14000001
 .word 0xf9403f59
 .word 0xaa1903e0
@@ -50641,12 +51100,13 @@ ldr x0, [x16, #48]
 .word 0xf9400b41
 .word 0xaa1903e0
 .word 0xd63f0020
-.word 0x1400001c
+.word 0x1400001d
 .word 0xf9401f40
 .word 0xf9400b40
 .word 0xd63f0000
-.word 0x14000018
-.word 0xb9801b3a
+.word 0x14000019
+.word 0xb9801b20
+.word 0xaa0003fa
 .word 0xd2800018
 .word 0x93407f00
 .word 0xb9801b21
@@ -50679,11 +51139,11 @@ ldr x0, [x16, #48]
 .word 0xb900001e
 .word 0xaa1903e0
 bl _p_210
-bl _p_639
+bl _p_640
 .word 0xaa0003f9
 .word 0xb5ffff20
-.word 0x17ffffcd
-.word 0xd2802380
+.word 0x17ffffcc
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -50704,7 +51164,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x350006c0
+.word 0x350006e0
 .word 0x14000001
 .word 0xf9403f38
 .word 0xaa1803e0
@@ -50717,13 +51177,14 @@ ldr x0, [x16, #48]
 .word 0xaa1803e0
 .word 0xaa1a03e1
 .word 0xd63f0040
-.word 0x1400001e
+.word 0x1400001f
 .word 0xf9401f20
 .word 0xf9400b21
 .word 0xaa1a03e0
 .word 0xd63f0020
-.word 0x14000019
-.word 0xb9801b19
+.word 0x1400001a
+.word 0xb9801b00
+.word 0xaa0003f9
 .word 0xd2800017
 .word 0x93407ee0
 .word 0xb9801b01
@@ -50758,11 +51219,11 @@ ldr x0, [x16, #48]
 .word 0xb900001e
 .word 0xaa1803e0
 bl _p_210
-bl _p_639
+bl _p_640
 .word 0xaa0003f8
 .word 0xb5ffff20
-.word 0x17ffffc9
-.word 0xd2802380
+.word 0x17ffffc8
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -50783,7 +51244,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x35000680
+.word 0x350006a0
 .word 0x14000001
 .word 0xf9403f38
 .word 0xaa1803e0
@@ -50796,13 +51257,14 @@ ldr x0, [x16, #48]
 .word 0xaa1803e0
 .word 0xaa1a03e1
 .word 0xd63f0040
-.word 0x1400001c
+.word 0x1400001d
 .word 0xf9401f20
 .word 0xf9400b21
 .word 0xaa1a03e0
 .word 0xd63f0020
-.word 0x14000017
-.word 0xb9801b19
+.word 0x14000018
+.word 0xb9801b00
+.word 0xaa0003f9
 .word 0xd2800017
 .word 0x93407ee0
 .word 0xb9801b01
@@ -50835,11 +51297,11 @@ ldr x0, [x16, #48]
 .word 0xb900001e
 .word 0xaa1803e0
 bl _p_210
-bl _p_639
+bl _p_640
 .word 0xaa0003f8
 .word 0xb5ffff20
-.word 0x17ffffcb
-.word 0xd2802380
+.word 0x17ffffca
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -50861,7 +51323,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x350006e0
+.word 0x35000700
 .word 0x14000001
 .word 0xf9403f17
 .word 0xaa1703e0
@@ -50875,14 +51337,15 @@ ldr x0, [x16, #48]
 .word 0xaa1903e1
 .word 0xaa1a03e2
 .word 0xd63f0060
-.word 0x1400001e
+.word 0x1400001f
 .word 0xf9401f00
 .word 0xf9400b02
 .word 0xaa1903e0
 .word 0xaa1a03e1
 .word 0xd63f0040
-.word 0x14000018
-.word 0xb9801af8
+.word 0x14000019
+.word 0xb9801ae0
+.word 0xaa0003f8
 .word 0xd2800016
 .word 0x93407ec0
 .word 0xb9801ae1
@@ -50916,11 +51379,11 @@ ldr x0, [x16, #48]
 .word 0xb900001e
 .word 0xaa1703e0
 bl _p_210
-bl _p_639
+bl _p_640
 .word 0xaa0003f7
 .word 0xb5ffff20
-.word 0x17ffffc8
-.word 0xd2802380
+.word 0x17ffffc7
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -50941,7 +51404,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x350006c0
+.word 0x350006e0
 .word 0x14000001
 .word 0xf9403f38
 .word 0xaa1803e0
@@ -50954,13 +51417,14 @@ ldr x0, [x16, #48]
 .word 0xaa1803e0
 .word 0xaa1a03e1
 .word 0xd63f0040
-.word 0x1400001e
+.word 0x1400001f
 .word 0xf9401f20
 .word 0xf9400b21
 .word 0xaa1a03e0
 .word 0xd63f0020
-.word 0x14000019
-.word 0xb9801b19
+.word 0x1400001a
+.word 0xb9801b00
+.word 0xaa0003f9
 .word 0xd2800017
 .word 0x93407ee0
 .word 0xb9801b01
@@ -50995,11 +51459,11 @@ ldr x0, [x16, #48]
 .word 0xb900001e
 .word 0xaa1803e0
 bl _p_210
-bl _p_639
+bl _p_640
 .word 0xaa0003f8
 .word 0xb5ffff20
-.word 0x17ffffc9
-.word 0xd2802380
+.word 0x17ffffc8
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -51020,7 +51484,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x350006c0
+.word 0x350006e0
 .word 0x14000001
 .word 0xf9403f38
 .word 0xaa1803e0
@@ -51033,13 +51497,14 @@ ldr x0, [x16, #48]
 .word 0xaa1803e0
 .word 0xaa1a03e1
 .word 0xd63f0040
-.word 0x1400001e
+.word 0x1400001f
 .word 0xf9401f20
 .word 0xf9400b21
 .word 0xaa1a03e0
 .word 0xd63f0020
-.word 0x14000019
-.word 0xb9801b19
+.word 0x1400001a
+.word 0xb9801b00
+.word 0xaa0003f9
 .word 0xd2800017
 .word 0x93407ee0
 .word 0xb9801b01
@@ -51074,11 +51539,11 @@ ldr x0, [x16, #48]
 .word 0xb900001e
 .word 0xaa1803e0
 bl _p_210
-bl _p_639
+bl _p_640
 .word 0xaa0003f8
 .word 0xb5ffff20
-.word 0x17ffffc9
-.word 0xd2802380
+.word 0x17ffffc8
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -51099,7 +51564,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x350006c0
+.word 0x350006e0
 .word 0x14000001
 .word 0xf9403f38
 .word 0xaa1803e0
@@ -51112,13 +51577,14 @@ ldr x0, [x16, #48]
 .word 0xaa1803e0
 .word 0xaa1a03e1
 .word 0xd63f0040
-.word 0x1400001e
+.word 0x1400001f
 .word 0xf9401f20
 .word 0xf9400b21
 .word 0xaa1a03e0
 .word 0xd63f0020
-.word 0x14000019
-.word 0xb9801b19
+.word 0x1400001a
+.word 0xb9801b00
+.word 0xaa0003f9
 .word 0xd2800017
 .word 0x93407ee0
 .word 0xb9801b01
@@ -51153,11 +51619,11 @@ ldr x0, [x16, #48]
 .word 0xb900001e
 .word 0xaa1803e0
 bl _p_210
-bl _p_639
+bl _p_640
 .word 0xaa0003f8
 .word 0xb5ffff20
-.word 0x17ffffc9
-.word 0xd2802380
+.word 0x17ffffc8
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -51177,14 +51643,14 @@ wrapper_runtime_invoke__Module_runtime_invoke_object__this___object_Nullable_1_C
 .word 0xf90027bf
 .word 0xf9002bbf
 .word 0xf94017a0
-.word 0xb4000660
+.word 0xb40006c0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
 .word 0x34000120
-bl _p_664
+bl _p_667
 .word 0xaa0003f7
 .word 0xb40000c0
 .word 0x910222e0
@@ -51201,7 +51667,7 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x15, [x16, #856]
 .word 0x910103a1
 .word 0xf9002fa1
-bl _p_665
+bl _p_668
 .word 0xf9402fbe
 .word 0xf90003c0
 .word 0xf94043a1
@@ -51210,12 +51676,15 @@ bl _p_665
 .word 0xf9401ba3
 .word 0xd63f0060
 .word 0xf90027a0
-.word 0x14000012
+.word 0x14000015
 .word 0xf90033a0
 .word 0xf94033a0
 .word 0xf9002ba0
 .word 0xf94017a1
 .word 0xf9402ba0
+.word 0xf90043a0
+.word 0xd5033bbf
+.word 0xf94043a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -51247,7 +51716,7 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x15, [x16, #856]
 .word 0x9100e3a1
 .word 0xf9002fa1
-bl _p_665
+bl _p_668
 .word 0xf9402fbe
 .word 0xf90003c0
 .word 0xf94043a1
@@ -51262,7 +51731,7 @@ bl _p_665
 .word 0x910003bf
 .word 0xa8c97bfd
 .word 0xd65f03c0
-bl _p_664
+bl _p_667
 .word 0xaa0003f7
 .word 0xb4fffce0
 .word 0x910222e0
@@ -51276,7 +51745,7 @@ Lme_335:
 	.align 4
 	.no_dead_strip wrapper_runtime_invoke__Module_runtime_invoke_void__this___Nullable_1_long_intptr__intptr_intptr_intptr
 wrapper_runtime_invoke__Module_runtime_invoke_void__this___Nullable_1_long_intptr__intptr_intptr_intptr:
-.word 0xa9b77bfd
+.word 0xa9b67bfd
 .word 0x910003fd
 .word 0xf9000bb7
 .word 0xf9000fa0
@@ -51286,14 +51755,14 @@ wrapper_runtime_invoke__Module_runtime_invoke_void__this___Nullable_1_long_intpt
 .word 0xf9002fbf
 .word 0xf90033bf
 .word 0xf94017a0
-.word 0xb4000640
+.word 0xb40006a0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
 .word 0x34000120
-bl _p_664
+bl _p_667
 .word 0xaa0003f7
 .word 0xb40000c0
 .word 0x910222e0
@@ -51309,7 +51778,7 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x15, [x16, #976]
 .word 0x910123a1
 .word 0xf90037a1
-bl _p_666
+bl _p_669
 .word 0xf94037be
 .word 0xf90003c0
 .word 0xf90007c1
@@ -51318,12 +51787,15 @@ bl _p_666
 .word 0xf9402ba2
 .word 0xf9401ba3
 .word 0xd63f0060
-.word 0x14000012
+.word 0x14000015
 .word 0xf9003ba0
 .word 0xf9403ba0
 .word 0xf90033a0
 .word 0xf94017a1
 .word 0xf94033a0
+.word 0xf9004ba0
+.word 0xd5033bbf
+.word 0xf9404ba0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -51354,7 +51826,7 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x15, [x16, #976]
 .word 0x9100e3a1
 .word 0xf90037a1
-bl _p_666
+bl _p_669
 .word 0xf94037be
 .word 0xf90003c0
 .word 0xf90007c1
@@ -51366,9 +51838,9 @@ bl _p_666
 .word 0xf9402fa0
 .word 0xf9400bb7
 .word 0x910003bf
-.word 0xa8c97bfd
+.word 0xa8ca7bfd
 .word 0xd65f03c0
-bl _p_664
+bl _p_667
 .word 0xaa0003f7
 .word 0xb4fffd20
 .word 0x910222e0
@@ -51400,7 +51872,7 @@ wrapper_other_byte___Get_int:
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -51419,14 +51891,14 @@ wrapper_runtime_invoke__Module_runtime_invoke_byte__this___int_object_intptr_int
 .word 0xf9001fbf
 .word 0xf90023bf
 .word 0xf94017a0
-.word 0xb4000620
+.word 0xb4000680
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
 .word 0x34000120
-bl _p_664
+bl _p_667
 .word 0xaa0003f7
 .word 0xb40000c0
 .word 0x910222e0
@@ -51450,12 +51922,15 @@ bl _p_26
 .word 0xf94033a1
 .word 0x39004001
 .word 0xf9001fa0
-.word 0x14000012
+.word 0x14000015
 .word 0xf90027a0
 .word 0xf94027a0
 .word 0xf90023a0
 .word 0xf94017a1
 .word 0xf94023a0
+.word 0xf90033a0
+.word 0xd5033bbf
+.word 0xf94033a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -51499,7 +51974,7 @@ bl _p_26
 .word 0x910003bf
 .word 0xa8c77bfd
 .word 0xd65f03c0
-bl _p_664
+bl _p_667
 .word 0xaa0003f7
 .word 0xb4fffd40
 .word 0x910222e0
@@ -51533,7 +52008,7 @@ wrapper_other_byte___Set_int_byte:
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -51542,7 +52017,7 @@ Lme_339:
 	.align 4
 	.no_dead_strip wrapper_runtime_invoke__Module_runtime_invoke_void__this___int_byte_object_intptr_intptr_intptr
 wrapper_runtime_invoke__Module_runtime_invoke_void__this___int_byte_object_intptr_intptr_intptr:
-.word 0xa9ba7bfd
+.word 0xa9b97bfd
 .word 0x910003fd
 .word 0xf9000bb7
 .word 0xf9000fb9
@@ -51553,14 +52028,14 @@ wrapper_runtime_invoke__Module_runtime_invoke_void__this___int_byte_object_intpt
 .word 0xf9001fbf
 .word 0xf90023bf
 .word 0xf94017a0
-.word 0xb4000520
+.word 0xb4000580
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
 .word 0x34000120
-bl _p_664
+bl _p_667
 .word 0xaa0003f7
 .word 0xb40000c0
 .word 0x910222e0
@@ -51575,12 +52050,15 @@ bl _p_210
 .word 0xf94013a0
 .word 0xf9401ba3
 .word 0xd63f0060
-.word 0x14000012
+.word 0x14000015
 .word 0xf90027a0
 .word 0xf94027a0
 .word 0xf90023a0
 .word 0xf94017a1
 .word 0xf94023a0
+.word 0xf90033a0
+.word 0xd5033bbf
+.word 0xf94033a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -51614,9 +52092,9 @@ ldr x0, [x16, #48]
 .word 0xf9400bb7
 .word 0xf9400fb9
 .word 0x910003bf
-.word 0xa8c67bfd
+.word 0xa8c77bfd
 .word 0xd65f03c0
-bl _p_664
+bl _p_667
 .word 0xaa0003f7
 .word 0xb4fffe20
 .word 0x910222e0
@@ -51666,7 +52144,7 @@ bl _mono_threads_enter_gc_safe_region_unbalanced
 .word 0xf9400ba0
 .word 0xaa1903e1
 .word 0xaa1a03e2
-bl _p_667
+bl _p_670
 .word 0xaa0003e1
 .word 0xf9405fa0
 .word 0xf9005ba1
@@ -51680,7 +52158,7 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #2176]
 bl _p_266
 .word 0xf90053a0
-bl _p_668
+bl _p_671
 .word 0xf94053a0
 .word 0xf94057a1
 .word 0xaa0003fa
@@ -51707,7 +52185,7 @@ ldr x0, [x16, #48]
 .word 0xb900001e
 .word 0xaa1903e0
 bl _p_210
-bl _p_639
+bl _p_640
 .word 0xaa0003f9
 .word 0xb5ffff20
 .word 0x17fffff0
@@ -51752,7 +52230,7 @@ ldr x0, [x16, #80]
 .word 0x3902c3a0
 .word 0xaa1503e0
 .word 0x9102c3a1
-bl _p_669
+bl _p_672
 .word 0xf9400ab3
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -51767,7 +52245,7 @@ bl _mono_threads_enter_gc_safe_region_unbalanced
 .word 0xf94013a3
 .word 0xaa1903e4
 .word 0xf94017a5
-bl _p_670
+bl _p_673
 .word 0x93407c00
 .word 0xf90063a0
 .word 0xf9405fa0
@@ -51785,7 +52263,7 @@ ldr x0, [x16, #48]
 .word 0x3942c3a0
 .word 0x34000060
 .word 0xaa1503e0
-bl _p_671
+bl _p_674
 .word 0xf9401ba0
 .word 0xf9000280
 .word 0xaa1a03e0
@@ -51795,7 +52273,7 @@ bl _p_671
 .word 0x910003bf
 .word 0xa8cd7bfd
 .word 0xd65f03c0
-bl _p_639
+bl _p_640
 .word 0xaa0003f9
 .word 0xb4fffe20
 .word 0x91022320
@@ -51803,7 +52281,7 @@ bl _p_639
 .word 0xb900001e
 .word 0xaa1903e0
 bl _p_210
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -51851,7 +52329,7 @@ bl _mono_threads_enter_gc_safe_region_unbalanced
 .word 0xf9400fa1
 .word 0xaa1903e2
 .word 0xaa1a03e3
-bl _p_672
+bl _p_675
 .word 0xaa0003e1
 .word 0xf94057a0
 .word 0x53001c21
@@ -51880,7 +52358,7 @@ ldr x0, [x16, #48]
 .word 0xb900001e
 .word 0xaa1903e0
 bl _p_210
-bl _p_639
+bl _p_640
 .word 0xaa0003f9
 .word 0xb5ffff20
 .word 0x17fffff0
@@ -51922,7 +52400,7 @@ ldr x0, [x16, #2200]
 bl _mono_threads_enter_gc_safe_region_unbalanced
 .word 0xf9004ba0
 .word 0xaa1a03e0
-bl _p_673
+bl _p_676
 .word 0xf9404ba0
 .word 0x910223a1
 bl _mono_threads_exit_gc_safe_region_unbalanced
@@ -51944,7 +52422,7 @@ ldr x0, [x16, #48]
 .word 0xb900001e
 .word 0xaa1a03e0
 bl _p_210
-bl _p_639
+bl _p_640
 .word 0xaa0003fa
 .word 0xb5ffff20
 .word 0x17fffff2
@@ -51984,7 +52462,7 @@ ldr x0, [x16, #80]
 .word 0x390243a0
 .word 0xaa1a03e0
 .word 0x910243a1
-bl _p_669
+bl _p_672
 .word 0xf9400b58
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -51994,7 +52472,7 @@ ldr x0, [x16, #2208]
 bl _mono_threads_enter_gc_safe_region_unbalanced
 .word 0xaa0003f7
 .word 0xaa1803e0
-bl _p_674
+bl _p_677
 .word 0x53001c00
 .word 0xf90053a0
 .word 0xaa1703e0
@@ -52012,7 +52490,7 @@ ldr x0, [x16, #48]
 .word 0x394243a0
 .word 0x34000060
 .word 0xaa1a03e0
-bl _p_671
+bl _p_674
 .word 0xf9400ba0
 .word 0xf9000320
 .word 0xaa1803e0
@@ -52021,7 +52499,7 @@ bl _p_671
 .word 0x910003bf
 .word 0xa8cb7bfd
 .word 0xd65f03c0
-bl _p_639
+bl _p_640
 .word 0xaa0003f7
 .word 0xb4fffe40
 .word 0x910222e0
@@ -52029,7 +52507,7 @@ bl _p_639
 .word 0xb900001e
 .word 0xaa1703e0
 bl _p_210
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -52075,7 +52553,7 @@ bl _mono_threads_enter_gc_safe_region_unbalanced
 .word 0xf9400ba0
 .word 0xaa1903e1
 .word 0xaa1a03e2
-bl _p_675
+bl _p_678
 .word 0xaa0003e1
 .word 0xf9405fa0
 .word 0xf9005ba1
@@ -52089,7 +52567,7 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #2224]
 bl _p_266
 .word 0xf90053a0
-bl _p_676
+bl _p_679
 .word 0xf94053a0
 .word 0xf94057a1
 .word 0xaa0003fa
@@ -52116,7 +52594,7 @@ ldr x0, [x16, #48]
 .word 0xb900001e
 .word 0xaa1903e0
 bl _p_210
-bl _p_639
+bl _p_640
 .word 0xaa0003f9
 .word 0xb5ffff20
 .word 0x17fffff0
@@ -52158,7 +52636,7 @@ ldr x0, [x16, #80]
 .word 0x390243a0
 .word 0xaa1803e0
 .word 0x910243a1
-bl _p_669
+bl _p_672
 .word 0xf9400b16
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -52170,7 +52648,7 @@ bl _mono_threads_enter_gc_safe_region_unbalanced
 .word 0xaa1603e0
 .word 0xaa1903e1
 .word 0xaa1a03e2
-bl _p_677
+bl _p_680
 .word 0x53001c00
 .word 0xf90053a0
 .word 0xaa1503e0
@@ -52188,7 +52666,7 @@ ldr x0, [x16, #48]
 .word 0x394243a0
 .word 0x34000060
 .word 0xaa1803e0
-bl _p_671
+bl _p_674
 .word 0xf9400ba0
 .word 0xf90002e0
 .word 0xaa1a03e0
@@ -52198,7 +52676,7 @@ bl _p_671
 .word 0x910003bf
 .word 0xa8cb7bfd
 .word 0xd65f03c0
-bl _p_639
+bl _p_640
 .word 0xaa0003f9
 .word 0xb4fffe20
 .word 0x91022320
@@ -52206,7 +52684,7 @@ bl _p_639
 .word 0xb900001e
 .word 0xaa1903e0
 bl _p_210
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -52252,7 +52730,7 @@ ldr x0, [x16, #80]
 .word 0x3902e3a0
 .word 0xaa1403e0
 .word 0x9102e3a1
-bl _p_669
+bl _p_672
 .word 0xf9400a80
 .word 0xf90063a0
 
@@ -52269,7 +52747,7 @@ bl _mono_threads_enter_gc_safe_region_unbalanced
 .word 0xf94017a4
 .word 0xaa1903e5
 .word 0xf9401ba6
-bl _p_678
+bl _p_681
 .word 0x53001c00
 .word 0xf9006ba0
 .word 0xaa1a03e0
@@ -52287,7 +52765,7 @@ ldr x0, [x16, #48]
 .word 0x3942e3a0
 .word 0x34000060
 .word 0xaa1403e0
-bl _p_671
+bl _p_674
 .word 0xf9401fa0
 .word 0xf9000260
 .word 0xaa1a03e0
@@ -52296,7 +52774,7 @@ bl _p_671
 .word 0x910003bf
 .word 0xa8ce7bfd
 .word 0xd65f03c0
-bl _p_639
+bl _p_640
 .word 0xaa0003f9
 .word 0xb4fffe40
 .word 0x91022320
@@ -52304,7 +52782,7 @@ bl _p_639
 .word 0xb900001e
 .word 0xaa1903e0
 bl _p_210
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -52344,7 +52822,7 @@ ldr x0, [x16, #80]
 .word 0x390243a0
 .word 0xaa1a03e0
 .word 0x910243a1
-bl _p_669
+bl _p_672
 .word 0xf9400b58
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -52354,7 +52832,7 @@ ldr x0, [x16, #2248]
 bl _mono_threads_enter_gc_safe_region_unbalanced
 .word 0xaa0003f7
 .word 0xaa1803e0
-bl _p_679
+bl _p_682
 .word 0x53001c00
 .word 0xf90053a0
 .word 0xaa1703e0
@@ -52372,7 +52850,7 @@ ldr x0, [x16, #48]
 .word 0x394243a0
 .word 0x34000060
 .word 0xaa1a03e0
-bl _p_671
+bl _p_674
 .word 0xf9400ba0
 .word 0xf9000320
 .word 0xaa1803e0
@@ -52381,7 +52859,7 @@ bl _p_671
 .word 0x910003bf
 .word 0xa8cb7bfd
 .word 0xd65f03c0
-bl _p_639
+bl _p_640
 .word 0xaa0003f7
 .word 0xb4fffe40
 .word 0x910222e0
@@ -52389,7 +52867,7 @@ bl _p_639
 .word 0xb900001e
 .word 0xaa1703e0
 bl _p_210
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -52431,7 +52909,7 @@ ldr x0, [x16, #2256]
 bl _mono_threads_enter_gc_safe_region_unbalanced
 .word 0xf9004ba0
 .word 0xaa1a03e0
-bl _p_680
+bl _p_683
 .word 0xf9404ba0
 .word 0x910223a1
 bl _mono_threads_exit_gc_safe_region_unbalanced
@@ -52453,7 +52931,7 @@ ldr x0, [x16, #48]
 .word 0xb900001e
 .word 0xaa1a03e0
 bl _p_210
-bl _p_639
+bl _p_640
 .word 0xaa0003fa
 .word 0xb5ffff20
 .word 0x17fffff2
@@ -52507,7 +52985,7 @@ bl _mono_threads_enter_gc_safe_region_unbalanced
 .word 0xf9401ba4
 .word 0xaa1903e5
 .word 0xaa1a03e6
-bl _p_681
+bl _p_684
 .word 0xaa0003e1
 .word 0xf94067a0
 .word 0x53001c21
@@ -52536,7 +53014,7 @@ ldr x0, [x16, #48]
 .word 0xb900001e
 .word 0xaa1903e0
 bl _p_210
-bl _p_639
+bl _p_640
 .word 0xaa0003f9
 .word 0xb5ffff20
 .word 0x17fffff0
@@ -53207,10 +53685,10 @@ System_MemoryExtensions_AsSpan_T_BYTE_T_BYTE___int_int:
 .word 0xf9001fa0
 .word 0xf90023a0
 .word 0xf94027a0
-bl _p_682
+bl _p_685
 .word 0xf9002ba0
 .word 0xf94027a0
-bl _p_683
+bl _p_686
 .word 0xaa0003e4
 .word 0xf9402baf
 .word 0x9100e3a0
@@ -53312,6 +53790,7 @@ System_Runtime_CompilerServices_TaskAwaiter_1_TResult_INT__ctor_System_Threading
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf9400ba1
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -53384,7 +53863,7 @@ System_Runtime_CompilerServices_TaskAwaiter_1_TResult_INT_OnCompleted_System_Act
 .word 0xf9400fa1
 .word 0xd2800022
 .word 0xd2800023
-bl _p_663
+bl _p_666
 .loc 48 390 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -53410,7 +53889,7 @@ System_Runtime_CompilerServices_TaskAwaiter_1_TResult_INT_UnsafeOnCompleted_Syst
 .word 0xf9400fa1
 .word 0xd2800022
 .word 0xd2800003
-bl _p_663
+bl _p_666
 .loc 48 400 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -53517,10 +53996,10 @@ System_Threading_Tasks_Task_FromCanceled_TResult_INT_System_Threading_Cancellati
 .word 0xf90013af
 .word 0xf9000ba0
 .word 0xf94013a0
-bl _p_684
+bl _p_687
 .word 0xf9001ba0
 .word 0xf94013a0
-bl _p_685
+bl _p_688
 .word 0xaa0003e1
 .word 0xf9401baf
 .word 0xf9400ba0
@@ -53599,7 +54078,7 @@ bl _p_140
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -53611,10 +54090,10 @@ bl _p_9
 .word 0xf9004fa0
 .loc 41 470 0
 .word 0x910203a0
-bl _p_686
+bl _p_689
 .loc 41 471 0
 .word 0xf9400fa0
-bl _p_687
+bl _p_690
 .loc 41 472 0
 .word 0xf90053bf
 .word 0x94000005
@@ -53625,7 +54104,7 @@ bl _p_13
 .word 0xf90057be
 .loc 41 475 0
 .word 0x910203a0
-bl _p_688
+bl _p_691
 .loc 41 476 0
 .word 0xf94057be
 .word 0xd61f03c0
@@ -53832,7 +54311,7 @@ bl _p_140
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -53844,10 +54323,10 @@ bl _p_9
 .word 0xf9004ba0
 .loc 41 315 0
 .word 0x9101e3a0
-bl _p_686
+bl _p_689
 .loc 41 316 0
 .word 0xf9400fa0
-bl _p_689
+bl _p_692
 .loc 41 317 0
 .word 0xf9004fbf
 .word 0x94000005
@@ -53858,7 +54337,7 @@ bl _p_13
 .word 0xf90053be
 .loc 41 320 0
 .word 0x9101e3a0
-bl _p_688
+bl _p_691
 .loc 41 321 0
 .word 0xf94053be
 .word 0xd61f03c0
@@ -53972,7 +54451,7 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_System_IO_Compressi
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -53984,10 +54463,10 @@ bl _p_9
 .word 0xf90043a0
 .loc 41 315 0
 .word 0x9101a3a0
-bl _p_686
+bl _p_689
 .loc 41 316 0
 .word 0xf9400fa0
-bl _p_690
+bl _p_693
 .loc 41 317 0
 .word 0xf90047bf
 .word 0x94000005
@@ -53998,7 +54477,7 @@ bl _p_13
 .word 0xf9004bbe
 .loc 41 320 0
 .word 0x9101a3a0
-bl _p_688
+bl _p_691
 .loc 41 321 0
 .word 0xf9404bbe
 .word 0xd61f03c0
@@ -54653,12 +55132,12 @@ System_Threading_Tasks_Task_FromResult_TResult_INT_TResult_INT:
 .word 0xf9000faf
 .word 0xf9000ba0
 .word 0xf9400fa0
-bl _p_691
+bl _p_694
 .word 0xd2800a01
 bl _p_26
 .word 0xf90017a0
 .word 0xf9400fa0
-bl _p_692
+bl _p_695
 .word 0xaa0003e2
 .word 0xf94017a0
 .word 0xf90013a0
@@ -54697,7 +55176,7 @@ bl _p_140
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -54709,10 +55188,10 @@ bl _p_9
 .word 0xf9004ba0
 .loc 41 470 0
 .word 0x9101e3a0
-bl _p_686
+bl _p_689
 .loc 41 471 0
 .word 0xf9400fa0
-bl _p_693
+bl _p_696
 .loc 41 472 0
 .word 0xf9004fbf
 .word 0x94000005
@@ -54723,7 +55202,7 @@ bl _p_13
 .word 0xf90053be
 .loc 41 475 0
 .word 0x9101e3a0
-bl _p_688
+bl _p_691
 .loc 41 476 0
 .word 0xf94053be
 .word 0xd61f03c0
@@ -54816,7 +55295,7 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_System_IO_Compressi
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -54828,10 +55307,10 @@ bl _p_9
 .word 0xf90047a0
 .loc 41 315 0
 .word 0x9101c3a0
-bl _p_686
+bl _p_689
 .loc 41 316 0
 .word 0xf9400fa0
-bl _p_694
+bl _p_697
 .loc 41 317 0
 .word 0xf9004bbf
 .word 0x94000005
@@ -54842,7 +55321,7 @@ bl _p_13
 .word 0xf9004fbe
 .loc 41 320 0
 .word 0x9101c3a0
-bl _p_688
+bl _p_691
 .loc 41 321 0
 .word 0xf9404fbe
 .word 0xd61f03c0
@@ -56027,7 +56506,7 @@ System_Collections_Generic_List_1_System_IO_Compression_ZipGenericExtraField_Add
 .word 0xf9001ba0
 .word 0x11000401
 .word 0xaa1a03e0
-bl _p_695
+bl _p_698
 .word 0xf9401ba1
 .loc 46 232 0
 .word 0x11000420
@@ -56063,7 +56542,7 @@ ldr x2, [x16, #16]
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -56073,7 +56552,7 @@ Lme_3bb:
 	.no_dead_strip System_Collections_Generic_List_1_System_IO_Compression_ZipGenericExtraField__cctor
 System_Collections_Generic_List_1_System_IO_Compression_ZipGenericExtraField__cctor:
 .loc 46 34 0 prologue_end
-.word 0xa9bf7bfd
+.word 0xa9be7bfd
 .word 0x910003fd
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -56086,9 +56565,12 @@ bl _p_10
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #1264]
+.word 0xf9000ba0
+.word 0xd5033bbf
+.word 0xf9400ba0
 .word 0xf9000001
 .word 0x910003bf
-.word 0xa8c17bfd
+.word 0xa8c27bfd
 .word 0xd65f03c0
 
 Lme_3bc:
@@ -56097,7 +56579,7 @@ Lme_3bc:
 	.no_dead_strip System_Collections_Generic_List_1_System_IO_Compression_ZipGenericExtraField_GetEnumerator
 System_Collections_Generic_List_1_System_IO_Compression_ZipGenericExtraField_GetEnumerator:
 .loc 46 591 0 prologue_end
-.word 0xa9ba7bfd
+.word 0xa9b97bfd
 .word 0x910003fd
 .word 0xf9000ba8
 .word 0xf9000fa0
@@ -56112,7 +56594,7 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x15, [x16, #1272]
 .word 0x910103a0
 .word 0xf9400fa1
-bl _p_696
+bl _p_699
 .word 0xf94023a0
 .word 0xf90013a0
 .word 0xf94027a0
@@ -56122,6 +56604,9 @@ bl _p_696
 .word 0xf9402fa0
 .word 0xf9001fa0
 .word 0xf9400ba0
+.word 0xf90033a0
+.word 0xd5033bbf
+.word 0xf94033a0
 .word 0xf94013a1
 .word 0xf9000001
 .word 0xd349fc02
@@ -56156,7 +56641,7 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .word 0x910003bf
-.word 0xa8c67bfd
+.word 0xa8c77bfd
 .word 0xd65f03c0
 
 Lme_3bd:
@@ -56395,7 +56880,7 @@ System_Collections_Generic_List_1_System_IO_Compression_ZipGenericExtraField_Rem
 .word 0xf9400fa0
 .word 0xf94013a1
 .word 0xf94017a2
-bl _p_697
+bl _p_700
 .word 0x93407c00
 .word 0xaa0003f9
 .loc 46 856 0
@@ -56405,7 +56890,7 @@ bl _p_697
 .loc 46 858 0
 .word 0xf9400fa0
 .word 0xaa1903e1
-bl _p_698
+bl _p_701
 .loc 46 859 0
 .word 0xd2800020
 .word 0x14000002
@@ -56897,11 +57382,11 @@ System_Threading_Tasks_Task_1_TResult_REF_GetAwaiter:
 .word 0xf90017bf
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_699
+bl _p_702
 .word 0xaa0003ef
 .word 0xf9401ba1
 .word 0x9100a3a0
-bl _p_700
+bl _p_703
 .word 0xf94017a0
 .word 0xf9000ba0
 .word 0xf9400ba0
@@ -56959,7 +57444,7 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x15, [x16, #2280]
 .word 0xf9400fa1
 .word 0xf94013a2
-bl _p_701
+bl _p_704
 .loc 40 217 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -56987,7 +57472,7 @@ ldr x15, [x16, #2288]
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xf94013a2
-bl _p_702
+bl _p_705
 .loc 41 361 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -57015,7 +57500,7 @@ ldr x15, [x16, #2296]
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xf94013a2
-bl _p_703
+bl _p_706
 .loc 41 361 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -57059,7 +57544,7 @@ bl _p_102
 .word 0xaa1603e0
 .word 0xaa1703e1
 .word 0x910243a2
-bl _p_704
+bl _p_707
 .word 0xaa0003f7
 .loc 41 547 0
 .word 0xf9400300
@@ -57092,7 +57577,7 @@ bl _mono_gc_wbarrier_range_copy
 .word 0xf9404ba2
 .word 0xaa1803e0
 .word 0xaa1603e3
-bl _p_705
+bl _p_708
 .loc 41 559 0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -57100,14 +57585,14 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x15, [x16, #1576]
 .word 0xf94017a0
 .word 0xaa1703e1
-bl _p_706
+bl _p_709
 .loc 41 560 0
 .word 0x1400000c
 .word 0xf9004fa0
 .word 0xf9404fa0
 .loc 41 563 0
 .word 0xd2800001
-bl _p_707
+bl _p_710
 .loc 41 564 0
 bl _p_309
 .word 0xf9005ba0
@@ -57145,7 +57630,7 @@ ldr x15, [x16, #2312]
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xf94013a2
-bl _p_708
+bl _p_711
 .loc 41 361 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -57280,7 +57765,7 @@ System_Buffer_Memmove_T_BYTE_T_BYTE__T_BYTE__ulong:
 .word 0xaa0003e2
 .word 0xf9400ba0
 .word 0xf9400fa1
-bl _p_709
+bl _p_712
 .loc 52 256 0
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -58110,7 +58595,7 @@ System_Collections_Generic_EqualityComparer_1_T_INT_get_Default:
 .word 0xf9000bba
 .word 0xf9000faf
 .word 0xf9400fa0
-bl _p_710
+bl _p_713
 .word 0xf9400000
 .word 0xf90013a0
 .word 0xd5033bbf
@@ -58120,10 +58605,10 @@ bl _p_710
 .word 0xb5000240
 .loc 54 36 0
 .word 0xf9400fa0
-bl _p_711
+bl _p_714
 .word 0xf9001ba0
 .word 0xf9400fa0
-bl _p_712
+bl _p_715
 .word 0xf9401baf
 .word 0xd63f0000
 .word 0xaa0003fa
@@ -58131,7 +58616,7 @@ bl _p_712
 .word 0xaa1a03e0
 .word 0xf90017a0
 .word 0xf9400fa0
-bl _p_710
+bl _p_713
 .word 0xf90013a0
 .word 0xf94017a1
 .word 0xd5033bbf
@@ -58253,16 +58738,19 @@ System_Threading_Tasks_ValueTask_1_ValueTaskSourceAsTask_TResult_INT__ctor_Syste
 .word 0xf90013a2
 .word 0xf9400fa0
 .word 0x3940001e
-.word 0xf90023a0
+.word 0xf90027a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_713
+bl _p_716
 .word 0xaa0003e1
-.word 0xf94023a0
+.word 0xf94027a0
 .word 0xd63f0020
 .loc 37 688 0
 .word 0xf9400fa0
 .word 0x91014000
+.word 0xf90023a0
+.word 0xd5033bbf
+.word 0xf94023a0
 .word 0xf9000019
 .word 0xd349fc00
 .word 0xd29ffffe
@@ -58282,20 +58770,20 @@ ldr x1, [x16, #16]
 .loc 37 690 0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_714
+bl _p_717
 .word 0x3980b410
 .word 0xb5000050
 bl _p_1
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_715
+bl _p_718
 .word 0xf9400000
 .word 0xf9001ba0
 .word 0xf9400fa0
 .word 0xf9001fa0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_716
+bl _p_719
 .word 0xaa0003ef
 .word 0xf9401ba1
 .word 0xf9401fa2
@@ -58327,12 +58815,12 @@ System_Threading_Tasks_Task_FromException_TResult_INT_System_Exception:
 .word 0xb4000300
 .loc 50 4976 0
 .word 0xf9400fa0
-bl _p_717
+bl _p_720
 .word 0xd2800a01
 bl _p_26
 .word 0xf9001ba0
 .word 0xf9400fa0
-bl _p_718
+bl _p_721
 .word 0xaa0003e1
 .word 0xf9401ba0
 .word 0xf90017a0
@@ -58356,7 +58844,7 @@ bl _p_527
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -58372,13 +58860,16 @@ b System_Runtime_CompilerServices_ValueTaskAwaiter_1_TResult_INT__ctor_System_Th
 System_Runtime_CompilerServices_ValueTaskAwaiter_1_TResult_INT__ctor_System_Threading_Tasks_ValueTask_1_TResult_INT:
 .file 55 "/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/src/Xamarin.iOS/external/corefx/src/Common/src/CoreLib/System/Runtime/CompilerServices/ValueTaskAwaiter.cs"
 .loc 55 138 0 prologue_end
-.word 0xa9bd7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xf90017af
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf90013a2
 .word 0xf9400ba0
+.word 0xf9001ba0
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9400fa1
 .word 0xf9000001
 .word 0xd349fc02
@@ -58396,7 +58887,7 @@ ldr x3, [x16, #16]
 .word 0xf94013a1
 .word 0xf9000001
 .word 0x910003bf
-.word 0xa8c37bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
 
 Lme_405:
@@ -58990,7 +59481,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
@@ -59024,6 +59515,7 @@ bl _p_489
 .loc 56 132 0
 .word 0xf94013a0
 .word 0x91012001
+.word 0xd5033bbf
 .word 0xf94017a0
 .word 0xf9000020
 .word 0xd349fc21
@@ -59562,12 +60054,12 @@ bl _p_516
 .word 0xb9805ba0
 .word 0xf9003fa0
 .word 0xf94027a0
-bl _p_719
+bl _p_722
 .word 0xd2800b01
 bl _p_26
 .word 0xf90037a0
 .word 0xf94027a0
-bl _p_720
+bl _p_723
 .word 0xaa0003e6
 .word 0xf94037a0
 .word 0xf9403ba4
@@ -59597,7 +60089,7 @@ bl _p_519
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -59606,7 +60098,7 @@ bl _p_9
 .loc 38 1361 0
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -59626,7 +60118,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x35000640
+.word 0x35000660
 .word 0x14000001
 .word 0xf9403f59
 .word 0xaa1903e0
@@ -59638,12 +60130,13 @@ ldr x0, [x16, #48]
 .word 0xf9400b41
 .word 0xaa1903e0
 .word 0xd63f0020
-.word 0x1400001c
+.word 0x1400001d
 .word 0xf9401f40
 .word 0xf9400b40
 .word 0xd63f0000
-.word 0x14000018
-.word 0xb9801b3a
+.word 0x14000019
+.word 0xb9801b20
+.word 0xaa0003fa
 .word 0xd2800018
 .word 0x93407f00
 .word 0xb9801b21
@@ -59676,11 +60169,11 @@ ldr x0, [x16, #48]
 .word 0xb900001e
 .word 0xaa1903e0
 bl _p_210
-bl _p_639
+bl _p_640
 .word 0xaa0003f9
 .word 0xb5ffff20
-.word 0x17ffffcd
-.word 0xd2802380
+.word 0x17ffffcc
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -59701,7 +60194,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x350006c0
+.word 0x350006e0
 .word 0x14000001
 .word 0xf9403f38
 .word 0xaa1803e0
@@ -59714,13 +60207,14 @@ ldr x0, [x16, #48]
 .word 0xaa1803e0
 .word 0xaa1a03e1
 .word 0xd63f0040
-.word 0x1400001e
+.word 0x1400001f
 .word 0xf9401f20
 .word 0xf9400b21
 .word 0xaa1a03e0
 .word 0xd63f0020
-.word 0x14000019
-.word 0xb9801b19
+.word 0x1400001a
+.word 0xb9801b00
+.word 0xaa0003f9
 .word 0xd2800017
 .word 0x93407ee0
 .word 0xb9801b01
@@ -59755,11 +60249,11 @@ ldr x0, [x16, #48]
 .word 0xb900001e
 .word 0xaa1803e0
 bl _p_210
-bl _p_639
+bl _p_640
 .word 0xaa0003f8
 .word 0xb5ffff20
-.word 0x17ffffc9
-.word 0xd2802380
+.word 0x17ffffc8
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -59780,7 +60274,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x35000680
+.word 0x350006a0
 .word 0x14000001
 .word 0xf9403f38
 .word 0xaa1803e0
@@ -59793,13 +60287,14 @@ ldr x0, [x16, #48]
 .word 0xaa1803e0
 .word 0xaa1a03e1
 .word 0xd63f0040
-.word 0x1400001c
+.word 0x1400001d
 .word 0xf9401f20
 .word 0xf9400b21
 .word 0xaa1a03e0
 .word 0xd63f0020
-.word 0x14000017
-.word 0xb9801b19
+.word 0x14000018
+.word 0xb9801b00
+.word 0xaa0003f9
 .word 0xd2800017
 .word 0x93407ee0
 .word 0xb9801b01
@@ -59832,11 +60327,11 @@ ldr x0, [x16, #48]
 .word 0xb900001e
 .word 0xaa1803e0
 bl _p_210
-bl _p_639
+bl _p_640
 .word 0xaa0003f8
 .word 0xb5ffff20
-.word 0x17ffffcb
-.word 0xd2802380
+.word 0x17ffffca
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -59858,7 +60353,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x350006e0
+.word 0x35000700
 .word 0x14000001
 .word 0xf9403f17
 .word 0xaa1703e0
@@ -59872,14 +60367,15 @@ ldr x0, [x16, #48]
 .word 0xaa1903e1
 .word 0xaa1a03e2
 .word 0xd63f0060
-.word 0x1400001e
+.word 0x1400001f
 .word 0xf9401f00
 .word 0xf9400b02
 .word 0xaa1903e0
 .word 0xaa1a03e1
 .word 0xd63f0040
-.word 0x14000018
-.word 0xb9801af8
+.word 0x14000019
+.word 0xb9801ae0
+.word 0xaa0003f8
 .word 0xd2800016
 .word 0x93407ec0
 .word 0xb9801ae1
@@ -59913,11 +60409,11 @@ ldr x0, [x16, #48]
 .word 0xb900001e
 .word 0xaa1703e0
 bl _p_210
-bl _p_639
+bl _p_640
 .word 0xaa0003f7
 .word 0xb5ffff20
-.word 0x17ffffc8
-.word 0xd2802380
+.word 0x17ffffc7
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -59938,7 +60434,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x350006c0
+.word 0x350006e0
 .word 0x14000001
 .word 0xf9403f38
 .word 0xaa1803e0
@@ -59951,13 +60447,14 @@ ldr x0, [x16, #48]
 .word 0xaa1803e0
 .word 0xaa1a03e1
 .word 0xd63f0040
-.word 0x1400001e
+.word 0x1400001f
 .word 0xf9401f20
 .word 0xf9400b21
 .word 0xaa1a03e0
 .word 0xd63f0020
-.word 0x14000019
-.word 0xb9801b19
+.word 0x1400001a
+.word 0xb9801b00
+.word 0xaa0003f9
 .word 0xd2800017
 .word 0x93407ee0
 .word 0xb9801b01
@@ -59992,11 +60489,11 @@ ldr x0, [x16, #48]
 .word 0xb900001e
 .word 0xaa1803e0
 bl _p_210
-bl _p_639
+bl _p_640
 .word 0xaa0003f8
 .word 0xb5ffff20
-.word 0x17ffffc9
-.word 0xd2802380
+.word 0x17ffffc8
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -60017,7 +60514,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x350006c0
+.word 0x350006e0
 .word 0x14000001
 .word 0xf9403f38
 .word 0xaa1803e0
@@ -60030,13 +60527,14 @@ ldr x0, [x16, #48]
 .word 0xaa1803e0
 .word 0xaa1a03e1
 .word 0xd63f0040
-.word 0x1400001e
+.word 0x1400001f
 .word 0xf9401f20
 .word 0xf9400b21
 .word 0xaa1a03e0
 .word 0xd63f0020
-.word 0x14000019
-.word 0xb9801b19
+.word 0x1400001a
+.word 0xb9801b00
+.word 0xaa0003f9
 .word 0xd2800017
 .word 0x93407ee0
 .word 0xb9801b01
@@ -60071,11 +60569,11 @@ ldr x0, [x16, #48]
 .word 0xb900001e
 .word 0xaa1803e0
 bl _p_210
-bl _p_639
+bl _p_640
 .word 0xaa0003f8
 .word 0xb5ffff20
-.word 0x17ffffc9
-.word 0xd2802380
+.word 0x17ffffc8
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -60096,7 +60594,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x350006c0
+.word 0x350006e0
 .word 0x14000001
 .word 0xf9403f38
 .word 0xaa1803e0
@@ -60109,13 +60607,14 @@ ldr x0, [x16, #48]
 .word 0xaa1803e0
 .word 0xaa1a03e1
 .word 0xd63f0040
-.word 0x1400001e
+.word 0x1400001f
 .word 0xf9401f20
 .word 0xf9400b21
 .word 0xaa1a03e0
 .word 0xd63f0020
-.word 0x14000019
-.word 0xb9801b19
+.word 0x1400001a
+.word 0xb9801b00
+.word 0xaa0003f9
 .word 0xd2800017
 .word 0x93407ee0
 .word 0xb9801b01
@@ -60150,11 +60649,11 @@ ldr x0, [x16, #48]
 .word 0xb900001e
 .word 0xaa1803e0
 bl _p_210
-bl _p_639
+bl _p_640
 .word 0xaa0003f8
 .word 0xb5ffff20
-.word 0x17ffffc9
-.word 0xd2802380
+.word 0x17ffffc8
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -60282,12 +60781,12 @@ System_Runtime_CompilerServices_AsyncTaskCache_CreateCacheableTask_TResult_INT_T
 .word 0xf9000ba0
 .word 0xf9000fbf
 .word 0xf94013a0
-bl _p_721
+bl _p_724
 .word 0xd2800a01
 bl _p_26
 .word 0xf9001fa0
 .word 0xf94013a0
-bl _p_722
+bl _p_725
 .word 0xaa0003e5
 .word 0xf9401fa0
 .word 0xf9001ba0
@@ -60446,7 +60945,7 @@ Lme_439:
 	.no_dead_strip System_Array_InternalArray__get_Item_T_INST_int
 System_Array_InternalArray__get_Item_T_INST_int:
 .loc 45 189 0 prologue_end
-.word 0xa9ba7bfd
+.word 0xa9b97bfd
 .word 0x910003fd
 .word 0xf9002baf
 .word 0xf90013a0
@@ -60458,19 +60957,22 @@ System_Array_InternalArray__get_Item_T_INST_int:
 .word 0xb9801801
 .word 0xb9802ba0
 .word 0x6b01001f
-.word 0x540005c2
+.word 0x54000622
 .loc 45 193 0
 .word 0x910103a0
-.word 0xb9802ba1
-.word 0x93407c21
-.word 0xd37cec22
-.word 0xf94013a1
-.word 0x8b020021
-.word 0x91008021
-.word 0xf9400022
-.word 0xf9001ba2
-.word 0xf9400421
-.word 0xf9001fa1
+.word 0xf90033a0
+.word 0xb9802ba0
+.word 0x93407c00
+.word 0xd37cec01
+.word 0xf94013a0
+.word 0x8b010000
+.word 0x91008000
+.word 0xf9400001
+.word 0xf9001ba1
+.word 0xf9400400
+.word 0xf9001fa0
+.word 0xd5033bbf
+.word 0xf94033a0
 .word 0xf9401ba1
 .word 0xf90023a1
 .word 0xd349fc02
@@ -60506,13 +61008,13 @@ ldr x2, [x16, #16]
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0x910003bf
-.word 0xa8c67bfd
+.word 0xa8c77bfd
 .word 0xd65f03c0
 .loc 45 190 0
 .word 0xd2817340
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -60759,7 +61261,7 @@ System_Array_InternalArray__get_Item_System_IO_Compression_ZipGenericExtraField_
 .word 0xd2817340
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -60799,7 +61301,7 @@ Lme_443:
 	.no_dead_strip System_Array_EmptyInternalEnumerator_1_System_IO_Compression_ZipGenericExtraField__cctor
 System_Array_EmptyInternalEnumerator_1_System_IO_Compression_ZipGenericExtraField__cctor:
 .loc 45 292 0 prologue_end
-.word 0xa9bf7bfd
+.word 0xa9be7bfd
 .word 0x910003fd
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -60812,9 +61314,12 @@ bl _p_26
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #2136]
+.word 0xf9000ba0
+.word 0xd5033bbf
+.word 0xf9400ba0
 .word 0xf9000001
 .word 0x910003bf
-.word 0xa8c17bfd
+.word 0xa8c27bfd
 .word 0xd65f03c0
 
 Lme_444:
@@ -61050,12 +61555,12 @@ bl _p_32
 .word 0xf9400ba0
 .word 0xf90013a0
 .word 0xf94017a0
-bl _p_723
+bl _p_726
 .word 0xd2800a01
 bl _p_26
 .word 0xf9001fa0
 .word 0xf94017a0
-bl _p_724
+bl _p_727
 .word 0xaa0003e5
 .word 0xf9401fa0
 .word 0xf9001ba0
@@ -61073,7 +61578,7 @@ bl _p_724
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -61143,17 +61648,17 @@ System_Collections_Generic_List_1_System_IO_Compression_ZipGenericExtraField_Ens
 .word 0xf90013b9
 .word 0xaa0003f9
 .word 0xf90017a1
-.word 0xf9400b20
-.word 0xb9801800
+.word 0xf9400b21
+.word 0xb9801820
 .word 0xb9802ba1
 .word 0x6b01001f
 .word 0x540002ea
 .loc 46 417 0
-.word 0xf9400b20
-.word 0xb9801800
+.word 0xf9400b21
+.word 0xb9801820
 .word 0x340000a0
-.word 0xf9400b20
-.word 0xb9801800
+.word 0xf9400b21
+.word 0xb9801820
 .word 0x531f7818
 .word 0x14000002
 .word 0xd2800098
@@ -61173,7 +61678,7 @@ System_Collections_Generic_List_1_System_IO_Compression_ZipGenericExtraField_Ens
 .loc 46 426 0
 .word 0xaa1903e0
 .word 0xaa1703e1
-bl _p_725
+bl _p_728
 .loc 46 428 0
 .word 0xa94163b7
 .word 0xf94013b9
@@ -61287,9 +61792,9 @@ ldr x2, [x16, #16]
 .word 0xa8c47bfd
 .word 0xd65f03c0
 .loc 46 918 0
-bl _p_726
+bl _p_729
 .word 0x17ffffcb
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -61314,7 +61819,7 @@ ldr x15, [x16, #2328]
 .word 0xf9400fa1
 .word 0xf94013a2
 .word 0xd2800003
-bl _p_727
+bl _p_730
 .word 0x93407c00
 .word 0xf9400bba
 .word 0x910003bf
@@ -61337,6 +61842,7 @@ System_Runtime_CompilerServices_TaskAwaiter_1_TResult_REF__ctor_System_Threading
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf9400ba1
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -61393,7 +61899,7 @@ bl _p_102
 .word 0xaa1603e0
 .word 0xaa1703e1
 .word 0x910263a2
-bl _p_704
+bl _p_707
 .word 0xaa0003f7
 .loc 41 547 0
 .word 0xf9400300
@@ -61426,7 +61932,7 @@ bl _mono_gc_wbarrier_range_copy
 .word 0xf9404fa2
 .word 0xaa1803e0
 .word 0xaa1603e3
-bl _p_705
+bl _p_708
 .loc 41 559 0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -61434,14 +61940,14 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x15, [x16, #1496]
 .word 0xf94017a0
 .word 0xaa1703e1
-bl _p_728
+bl _p_731
 .loc 41 560 0
 .word 0x1400000c
 .word 0xf90053a0
 .word 0xf94053a0
 .loc 41 563 0
 .word 0xd2800001
-bl _p_707
+bl _p_710
 .loc 41 564 0
 bl _p_309
 .word 0xf9005fa0
@@ -61511,13 +62017,13 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x15, [x16, #2344]
 .word 0xaa1803e0
-bl _p_729
+bl _p_732
 .word 0xaa1703f6
 .word 0xaa0003f7
 .word 0xaa1603e0
 .word 0xaa1703e1
 .word 0x910243a2
-bl _p_704
+bl _p_707
 .word 0xaa0003f7
 .loc 41 547 0
 .word 0xf9400300
@@ -61528,7 +62034,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x15, [x16, #2344]
 .word 0xaa1803e0
-bl _p_729
+bl _p_732
 .word 0xaa0003f6
 .loc 41 556 0
 .word 0xf9401ba1
@@ -61550,18 +62056,18 @@ bl _mono_gc_wbarrier_range_copy
 .word 0xf9404ba2
 .word 0xaa1803e0
 .word 0xaa1603e3
-bl _p_705
+bl _p_708
 .loc 41 559 0
 .word 0xf94017a0
 .word 0xaa1703e1
-bl _p_730
+bl _p_733
 .loc 41 560 0
 .word 0x1400000c
 .word 0xf9004fa0
 .word 0xf9404fa0
 .loc 41 563 0
 .word 0xd2800001
-bl _p_707
+bl _p_710
 .loc 41 564 0
 bl _p_309
 .word 0xf9005ba0
@@ -61689,7 +62195,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System
 .word 0xd2800004
 .word 0xd2800005
 .word 0xd2800006
-bl _p_731
+bl _p_734
 .loc 38 131 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -61713,7 +62219,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System
 .word 0xd2800004
 .word 0xd2800005
 .word 0xd2800006
-bl _p_731
+bl _p_734
 .loc 38 152 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -61746,7 +62252,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
@@ -61775,7 +62281,7 @@ ldr x1, [x16, #1728]
 .word 0xb9802ba4
 .word 0xd2800005
 .word 0xd2800006
-bl _p_731
+bl _p_734
 .loc 38 175 0
 .word 0xa94167b8
 .word 0x910003bf
@@ -61809,7 +62315,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
@@ -61835,7 +62341,7 @@ ldr x1, [x16, #1728]
 .word 0xb9803ba4
 .word 0xd2800005
 .word 0xd2800006
-bl _p_731
+bl _p_734
 .loc 38 202 0
 .word 0xa94167b8
 .word 0x910003bf
@@ -61862,7 +62368,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System
 .word 0xd2800005
 .word 0xd2800006
 .word 0xd2800007
-bl _p_732
+bl _p_735
 .loc 38 219 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -61888,7 +62394,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System
 .word 0xd2800005
 .word 0xd2800006
 .word 0xd2800007
-bl _p_732
+bl _p_735
 .loc 38 240 0
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -61924,7 +62430,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
@@ -61954,7 +62460,7 @@ ldr x1, [x16, #1728]
 .word 0xb9803ba5
 .word 0xd2800006
 .word 0xd2800007
-bl _p_732
+bl _p_735
 .loc 38 265 0
 .word 0xa94163b7
 .word 0xf94013b9
@@ -61992,7 +62498,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
@@ -62019,7 +62525,7 @@ ldr x1, [x16, #1728]
 .word 0xb9804ba5
 .word 0xd2800006
 .word 0xd2800007
-bl _p_732
+bl _p_735
 .loc 38 295 0
 .word 0xa94163b7
 .word 0xf94013b9
@@ -62123,7 +62629,7 @@ bl _p_26
 .word 0xf94013a3
 .word 0xb98033a4
 .word 0xf94023a6
-bl _p_731
+bl _p_734
 .word 0xf9402fa2
 .loc 38 346 0
 .word 0xaa0203e0
@@ -62142,7 +62648,7 @@ bl _p_491
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -62151,7 +62657,7 @@ bl _p_9
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -62195,7 +62701,7 @@ bl _p_26
 .word 0xf94017a4
 .word 0xb9803ba5
 .word 0xf94027a7
-bl _p_732
+bl _p_735
 .word 0xf9402fa2
 .loc 38 366 0
 .word 0xaa0203e0
@@ -62214,7 +62720,7 @@ bl _p_491
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -62223,7 +62729,7 @@ bl _p_9
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -62409,7 +62915,7 @@ bl _p_499
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
 
@@ -62429,7 +62935,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_DangerousSet
 .loc 38 443 0
 .word 0xaa1a03e0
 .word 0xf9400fa1
-bl _p_733
+bl _p_736
 .loc 38 447 0
 .word 0x14000010
 .loc 38 450 0
@@ -62489,7 +62995,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_get_Result:
 .word 0xf90017a0
 .word 0xaa1a03e0
 .word 0xd2800021
-bl _p_734
+bl _p_737
 .word 0xf94017be
 .word 0xf90003c0
 .word 0xf9400bba
@@ -62585,7 +63091,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #2376]
 .word 0xf9400000
-.word 0xb5000400
+.word 0xb5000420
 .loc 38 517 0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -62599,10 +63105,11 @@ ldr x0, [x16, #2384]
 .word 0xd2800501
 bl _p_26
 .word 0xf9000ba0
-bl _p_735
-.word 0xf9400ba0
+bl _p_738
 .word 0xf9400fa1
 .word 0xd2800002
+.word 0xd5033bbf
+.word 0xf9400ba0
 .word 0xc85f7c30
 .word 0xeb02021f
 .word 0x54000061
@@ -62723,7 +63230,7 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x15, [x16, #2416]
 .word 0x9100a3a0
 .word 0xf94013a1
-bl _p_736
+bl _p_739
 .word 0xf94017a0
 .word 0xf9000ba0
 .word 0xf9400ba0
@@ -62751,7 +63258,7 @@ ldr x15, [x16, #2424]
 .word 0x9100c3a0
 .word 0xf94013a1
 .word 0x3940a3a2
-bl _p_737
+bl _p_740
 .word 0xf9401ba0
 .word 0xf9000ba0
 .word 0xf9401fa0
@@ -62779,7 +63286,7 @@ bl _p_514
 .word 0xf9400fa1
 .word 0xf94013a3
 .word 0xd2800004
-bl _p_738
+bl _p_741
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -62801,7 +63308,7 @@ bl _p_514
 .word 0xf9400fa1
 .word 0xf94013a3
 .word 0xd2800004
-bl _p_738
+bl _p_741
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -62823,7 +63330,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_ContinueWith
 .word 0xf94013a2
 .word 0xf94017a3
 .word 0xd2800004
-bl _p_738
+bl _p_741
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -62846,7 +63353,7 @@ bl _p_514
 .word 0xf9400fa1
 .word 0xf94017a3
 .word 0xb98023a4
-bl _p_738
+bl _p_741
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -62869,7 +63376,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_ContinueWith
 .word 0xf9401fa2
 .word 0xf94013a3
 .word 0xb98033a4
-bl _p_738
+bl _p_741
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
@@ -62916,7 +63423,7 @@ bl _p_26
 .word 0xf9400fa1
 .word 0xaa1803e2
 .word 0xd2800003
-bl _p_739
+bl _p_742
 .word 0xf9402ba0
 .word 0xaa0003f8
 .loc 38 751 0
@@ -62937,7 +63444,7 @@ bl _p_519
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -62946,7 +63453,7 @@ bl _p_9
 .loc 38 729 0
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -62970,7 +63477,7 @@ bl _p_514
 .word 0xf94013a2
 .word 0xf94017a4
 .word 0xd2800005
-bl _p_740
+bl _p_743
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -62994,7 +63501,7 @@ bl _p_514
 .word 0xf94013a2
 .word 0xf94017a4
 .word 0xd2800005
-bl _p_740
+bl _p_743
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
@@ -63018,7 +63525,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_ContinueWith
 .word 0xf94017a3
 .word 0xf9401ba4
 .word 0xd2800005
-bl _p_740
+bl _p_743
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
@@ -63043,7 +63550,7 @@ bl _p_514
 .word 0xf94013a2
 .word 0xf9401ba4
 .word 0xb9802ba5
-bl _p_740
+bl _p_743
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
@@ -63068,7 +63575,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_ContinueWith
 .word 0xf94023a3
 .word 0xf94017a4
 .word 0xb9803ba5
-bl _p_740
+bl _p_743
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
@@ -63117,7 +63624,7 @@ bl _p_26
 .word 0xf9400fa1
 .word 0xf94013a2
 .word 0xaa1803e3
-bl _p_739
+bl _p_742
 .word 0xf94033a0
 .word 0xaa0003f8
 .loc 38 944 0
@@ -63138,7 +63645,7 @@ bl _p_519
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -63147,7 +63654,7 @@ bl _p_9
 .loc 38 922 0
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -63241,7 +63748,7 @@ System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult__ctor
 .word 0xd2800002
 .word 0xd2800003
 .word 0xd2800004
-bl _p_741
+bl _p_744
 .loc 39 95 0
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -63262,7 +63769,7 @@ System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult__ctor
 .word 0xd2800002
 .word 0xd2800003
 .word 0xd2800004
-bl _p_741
+bl _p_744
 .loc 39 116 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -63284,7 +63791,7 @@ System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult__ctor
 .word 0xd2800002
 .word 0xd2800003
 .word 0xf9400fa4
-bl _p_741
+bl _p_744
 .loc 39 140 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -63307,7 +63814,7 @@ System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult__ctor
 .word 0xb9801ba2
 .word 0xb98023a3
 .word 0xd2800004
-bl _p_741
+bl _p_744
 .loc 39 171 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -63334,10 +63841,11 @@ bl _p_522
 .word 0x92800bfe
 .word 0xf2bffffe
 .word 0xa1e0000
-.word 0x35000480
+.word 0x350004c0
 .loc 39 213 0
 .word 0x910042e2
 .word 0xaa0203e1
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000040
 .word 0xd349fc21
@@ -63353,6 +63861,7 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .loc 39 214 0
 .word 0x910062e1
+.word 0xd5033bbf
 .word 0xf9401fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -63381,11 +63890,11 @@ ldr x2, [x16, #16]
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
-.word 0x17ffffd5
+.word 0x17ffffd3
 
 Lme_484:
 .text
@@ -63466,7 +63975,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
@@ -63494,7 +64003,7 @@ ldr x1, [x16, #1728]
 .word 0xb9802320
 .word 0xf9001fa0
 .word 0xaa1903e0
-bl _p_742
+bl _p_745
 .word 0xaa0003e5
 .word 0xf9401ba0
 .word 0xf9401fa3
@@ -63505,7 +64014,7 @@ ldr x15, [x16, #2360]
 .word 0xf9400fa1
 .word 0xf94013a2
 .word 0xd2800004
-bl _p_743
+bl _p_746
 .word 0xf9400bb9
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -63527,7 +64036,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
@@ -63552,7 +64061,7 @@ ldr x1, [x16, #1728]
 .word 0xf9400ba0
 .word 0xb9802002
 .word 0xf9001fa2
-bl _p_742
+bl _p_745
 .word 0xaa0003e5
 .word 0xf9401ba0
 .word 0xf9401fa3
@@ -63563,7 +64072,7 @@ ldr x15, [x16, #2360]
 .word 0xf9400fa1
 .word 0xf94013a2
 .word 0xd2800004
-bl _p_743
+bl _p_746
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
@@ -63584,7 +64093,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
@@ -63610,7 +64119,7 @@ ldr x1, [x16, #1728]
 .word 0x91004002
 .word 0xf9400042
 .word 0xf90017a2
-bl _p_742
+bl _p_745
 .word 0xaa0003e5
 .word 0xf9401ba0
 
@@ -63621,7 +64130,7 @@ ldr x15, [x16, #2360]
 .word 0xf94017a2
 .word 0xb98023a3
 .word 0xd2800004
-bl _p_743
+bl _p_746
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
@@ -63651,7 +64160,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
@@ -63680,7 +64189,7 @@ ldr x15, [x16, #2360]
 .word 0xb9803ba3
 .word 0xd2800004
 .word 0xf94023a5
-bl _p_743
+bl _p_746
 .word 0xf9400bb7
 .word 0x910003bf
 .word 0xa8c57bfd
@@ -63703,7 +64212,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
@@ -63731,7 +64240,7 @@ ldr x1, [x16, #1728]
 .word 0xb9802300
 .word 0xf9001fa0
 .word 0xaa1803e0
-bl _p_742
+bl _p_745
 .word 0xaa0003e6
 .word 0xf9401ba0
 .word 0xf9401fa4
@@ -63743,7 +64252,7 @@ ldr x15, [x16, #2360]
 .word 0xf94013a2
 .word 0xf94017a3
 .word 0xd2800005
-bl _p_744
+bl _p_747
 .word 0xf9400bb8
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -63766,7 +64275,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
@@ -63791,7 +64300,7 @@ ldr x1, [x16, #1728]
 .word 0xf9400ba0
 .word 0xb9802002
 .word 0xf90027a2
-bl _p_742
+bl _p_745
 .word 0xaa0003e6
 .word 0xf94023a0
 .word 0xf94027a4
@@ -63803,7 +64312,7 @@ ldr x15, [x16, #2360]
 .word 0xf94013a2
 .word 0xf94017a3
 .word 0xd2800005
-bl _p_744
+bl _p_747
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
@@ -63825,7 +64334,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
@@ -63851,7 +64360,7 @@ ldr x1, [x16, #1728]
 .word 0x91004002
 .word 0xf9400042
 .word 0xf9001ba2
-bl _p_742
+bl _p_745
 .word 0xaa0003e6
 .word 0xf94023a0
 
@@ -63863,7 +64372,7 @@ ldr x15, [x16, #2360]
 .word 0xf9401ba3
 .word 0xb9802ba4
 .word 0xd2800005
-bl _p_744
+bl _p_747
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
@@ -63894,7 +64403,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
@@ -63924,7 +64433,7 @@ ldr x15, [x16, #2360]
 .word 0xb98043a4
 .word 0xd2800005
 .word 0xf94027a6
-bl _p_744
+bl _p_747
 .word 0xf9400bb6
 .word 0x910003bf
 .word 0xa8c57bfd
@@ -64084,7 +64593,7 @@ bl _p_528
 .word 0xaa0203e0
 .word 0xf94023a1
 .word 0x3940005e
-bl _p_733
+bl _p_736
 .loc 39 566 0
 .word 0x14000008
 .loc 39 569 0
@@ -64094,7 +64603,7 @@ bl _p_733
 .word 0xaa0203e0
 .word 0xf9401fa1
 .word 0x3940005e
-bl _p_745
+bl _p_748
 .loc 39 572 0
 .word 0xf94077be
 .word 0xd61f03c0
@@ -64118,7 +64627,7 @@ System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_FromA
 .word 0xf9400ba0
 .word 0xb9802001
 .word 0xf9001ba1
-bl _p_746
+bl _p_749
 .word 0xaa0003e4
 .word 0xf9401ba3
 
@@ -64128,7 +64637,7 @@ ldr x15, [x16, #2384]
 .word 0xf9400fa0
 .word 0xf94013a1
 .word 0xd2800002
-bl _p_747
+bl _p_750
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
@@ -64146,7 +64655,7 @@ System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_FromA
 .word 0xf90013a2
 .word 0xf90017a3
 .word 0xf9400ba0
-bl _p_746
+bl _p_749
 .word 0xaa0003e4
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -64156,7 +64665,7 @@ ldr x15, [x16, #2384]
 .word 0xf94013a1
 .word 0xd2800002
 .word 0xb9802ba3
-bl _p_747
+bl _p_750
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -64183,7 +64692,7 @@ ldr x15, [x16, #2384]
 .word 0xd2800002
 .word 0xb9802ba3
 .word 0xf9401ba4
-bl _p_747
+bl _p_750
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
@@ -64194,7 +64703,7 @@ Lme_494:
 	.no_dead_strip System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_FromAsyncImpl_System_IAsyncResult_System_Func_2_System_IAsyncResult_System_Threading_Tasks_VoidTaskResult_System_Action_1_System_IAsyncResult_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskScheduler
 System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_FromAsyncImpl_System_IAsyncResult_System_Func_2_System_IAsyncResult_System_Threading_Tasks_VoidTaskResult_System_Action_1_System_IAsyncResult_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskScheduler:
 .loc 39 0 0 prologue_end
-.word 0xa9b57bfd
+.word 0xa9b47bfd
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
@@ -64213,6 +64722,7 @@ bl _p_26
 .word 0xf90027a0
 .word 0xf94027a0
 .word 0x91004001
+.word 0xd5033bbf
 .word 0xf9400ba0
 .word 0xf9000020
 .word 0xd349fc21
@@ -64228,6 +64738,7 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .word 0xf94027a0
 .word 0x91006001
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -64243,6 +64754,7 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .word 0xf94027a0
 .word 0x91008001
+.word 0xd5033bbf
 .word 0xf94013a0
 .word 0xf9000020
 .word 0xd349fc21
@@ -64258,6 +64770,7 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .word 0xf94027a0
 .word 0x9100e001
+.word 0xd5033bbf
 .word 0xf9401ba0
 .word 0xf9000020
 .word 0xd349fc21
@@ -64274,38 +64787,39 @@ ldr x2, [x16, #16]
 .loc 39 664 0
 .word 0xf94027a0
 .word 0xf9400800
-.word 0xb4001d40
+.word 0xb4001e00
 .loc 39 667 0
 .word 0xf94027a0
 .word 0xf9400c00
 .word 0xb5000080
 .word 0xf94027a0
 .word 0xf9401000
-.word 0xb4001a80
+.word 0xb4001b40
 .loc 39 672 0
 .word 0xf94027a0
 .word 0xf9401c00
-.word 0xb4001b20
+.word 0xb4001be0
 .loc 39 675 0
 .word 0xb9802ba0
 .word 0xd2800001
 bl _p_536
 .loc 39 677 0
 .word 0xf94027a0
-.word 0xf90057a0
+.word 0xf9005ba0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #2360]
 .word 0xd2800a01
 bl _p_26
-.word 0xf90053a0
+.word 0xf90057a0
 .word 0xd2800001
 .word 0xb9802ba2
-bl _p_748
-.word 0xf94053a0
-.word 0xf94057a1
-.word 0x9100a021
+bl _p_751
+.word 0xf9405ba0
+.word 0x9100a001
+.word 0xd5033bbf
+.word 0xf94057a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -64322,20 +64836,23 @@ ldr x2, [x16, #16]
 .word 0xf94027a0
 .word 0xf90047a0
 .word 0xf94027a0
-.word 0xf9004fa0
+.word 0xf90053a0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54001920
+.word 0x540019c0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #1800]
 .word 0xd2801001
 bl _p_26
-.word 0xf9404fa1
+.word 0xf9004fa0
+.word 0xf94053a1
 .word 0xeb1f003f
 .word 0x10000011
-.word 0x540017a0
+.word 0x54001820
+.word 0xd5033bbf
+.word 0xf9404fa0
 .word 0xf9001001
 .word 0x91008002
 .word 0xd349fc42
@@ -64387,9 +64904,10 @@ bl _p_26
 .word 0xd2800006
 .word 0xd2800007
 bl _p_489
+.word 0xf94047a0
+.word 0x9100c001
+.word 0xd5033bbf
 .word 0xf94043a0
-.word 0xf94047a1
-.word 0x9100c021
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -64426,7 +64944,7 @@ ldr x15, [x16, #1808]
 .word 0xd2800002
 .word 0x3940007e
 bl _p_540
-.word 0x1400004e
+.word 0x1400004f
 .word 0xf9002fa0
 .word 0xf9402fa0
 .loc 39 692 0
@@ -64443,7 +64961,7 @@ bl _p_309
 .word 0xb4000060
 .word 0xf9403ba0
 bl _p_9
-.word 0x1400003e
+.word 0x1400003f
 .loc 39 696 0
 .word 0xf94027a0
 .word 0xf9400801
@@ -64462,7 +64980,7 @@ ldr x15, [x16, #1624]
 .word 0xf90047a0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x540009a0
+.word 0x540009c0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
@@ -64470,11 +64988,12 @@ ldr x0, [x16, #1816]
 .word 0xd2801001
 bl _p_26
 .word 0xaa0003e1
-.word 0xf94043a0
 .word 0xf94047a2
 .word 0xeb1f005f
 .word 0x10000011
-.word 0x540007e0
+.word 0x54000820
+.word 0xd5033bbf
+.word 0xf94043a0
 .word 0xf9001022
 .word 0x91008023
 .word 0xd349fc63
@@ -64516,14 +65035,14 @@ bl _p_543
 .word 0xf94027a0
 .word 0xf9401400
 .word 0x910003bf
-.word 0xa8cb7bfd
+.word 0xa8cc7bfd
 .word 0xd65f03c0
 .loc 39 668 0
 .word 0xd288cd40
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -64532,7 +65051,7 @@ bl _p_9
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -64541,14 +65060,14 @@ bl _p_9
 .loc 39 665 0
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
-.word 0xd2801920
+.word 0xd2801940
 .word 0xaa1103e1
 bl _p_16
 
@@ -64574,7 +65093,7 @@ ldr x15, [x16, #2384]
 .word 0xf94013a1
 .word 0xd2800002
 .word 0xf94017a3
-bl _p_749
+bl _p_752
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -64601,7 +65120,7 @@ ldr x15, [x16, #2384]
 .word 0xd2800002
 .word 0xf94017a3
 .word 0xb98033a4
-bl _p_749
+bl _p_752
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
@@ -64633,6 +65152,7 @@ bl _p_26
 .word 0xf90023a0
 .word 0xf94023a0
 .word 0x91004001
+.word 0xd5033bbf
 .word 0xf94017a0
 .word 0xf9000020
 .word 0xd349fc21
@@ -64648,6 +65168,9 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .word 0xf94023a0
 .word 0x91006000
+.word 0xf90053a0
+.word 0xd5033bbf
+.word 0xf94053a0
 .word 0xf9000018
 .word 0xd349fc00
 .word 0xd29ffffe
@@ -64661,14 +65184,14 @@ ldr x1, [x16, #16]
 .word 0xd280003e
 .word 0x3900001e
 .loc 39 770 0
-.word 0xb4001916
+.word 0xb4001996
 .loc 39 773 0
 .word 0xf94023a0
 .word 0xf9400800
 .word 0xb5000080
 .word 0xf94023a0
 .word 0xf9400c00
-.word 0xb4001740
+.word 0xb40017c0
 .loc 39 778 0
 .word 0xaa1a03e0
 .word 0xd2800021
@@ -64685,10 +65208,11 @@ bl _p_26
 .word 0xf90053a0
 .word 0xf9401ba1
 .word 0xaa1a03e2
-bl _p_748
+bl _p_751
+.word 0xf94057a0
+.word 0x91008001
+.word 0xd5033bbf
 .word 0xf94053a0
-.word 0xf94057a1
-.word 0x91008021
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -64747,10 +65271,10 @@ bl _p_547
 .word 0x14000001
 .loc 39 788 0
 .word 0xf94023a0
-.word 0xf90053a0
+.word 0xf90057a0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x540010c0
+.word 0x54001120
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
@@ -64758,10 +65282,13 @@ ldr x0, [x16, #1832]
 .word 0xd2801001
 bl _p_26
 .word 0xaa0003e1
-.word 0xf94053a0
+.word 0xf94057a0
+.word 0xf90053a0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54000f20
+.word 0x54000f60
+.word 0xd5033bbf
+.word 0xf94053a0
 .word 0xf9001020
 .word 0x91008022
 .word 0xd349fc42
@@ -64826,7 +65353,7 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x15, [x16, #2384]
 .word 0xaa1a03e0
 .word 0xd2800004
-bl _p_750
+bl _p_753
 .loc 39 798 0
 .word 0x14000027
 .word 0xf9002ba0
@@ -64870,7 +65397,7 @@ bl _p_528
 .word 0xaa0203e0
 .word 0xf9404ba1
 .word 0x3940005e
-bl _p_733
+bl _p_736
 .loc 39 807 0
 .word 0xf9402ba0
 bl _p_210
@@ -64888,7 +65415,7 @@ bl _p_210
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -64897,14 +65424,14 @@ bl _p_9
 .loc 39 771 0
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
-.word 0xd2801920
+.word 0xd2801940
 .word 0xaa1103e1
 bl _p_16
 
@@ -64939,7 +65466,7 @@ bl _p_26
 .word 0xd2800021
 .word 0xf94017a2
 .word 0xf9400fa4
-bl _p_751
+bl _p_754
 .word 0xf94023a0
 .word 0x910003bf
 .word 0xa8c57bfd
@@ -64966,7 +65493,7 @@ System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_Conti
 .word 0xf9400000
 .word 0xf90017a0
 .word 0xaa1803e0
-bl _p_746
+bl _p_749
 .word 0xaa0003e4
 .word 0xf9401ba2
 
@@ -64976,7 +65503,7 @@ ldr x15, [x16, #2384]
 .word 0xf9400fa0
 .word 0xf94013a1
 .word 0xf94017a3
-bl _p_752
+bl _p_755
 .word 0xf9400bb8
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -64986,7 +65513,7 @@ bl _p_752
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -65009,7 +65536,7 @@ System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_Conti
 .word 0xf9400ba0
 .word 0xb9802401
 .word 0xf90023a1
-bl _p_746
+bl _p_749
 .word 0xaa0003e4
 .word 0xf94023a2
 
@@ -65019,7 +65546,7 @@ ldr x15, [x16, #2384]
 .word 0xf9400fa0
 .word 0xf94013a1
 .word 0xf94017a3
-bl _p_752
+bl _p_755
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
@@ -65028,7 +65555,7 @@ bl _p_752
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -65052,7 +65579,7 @@ System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_Conti
 .word 0x91004001
 .word 0xf9400021
 .word 0xf9001ba1
-bl _p_746
+bl _p_749
 .word 0xaa0003e4
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -65062,7 +65589,7 @@ ldr x15, [x16, #2384]
 .word 0xf94013a1
 .word 0xb9802ba2
 .word 0xf9401ba3
-bl _p_752
+bl _p_755
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
@@ -65071,7 +65598,7 @@ bl _p_752
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -65102,7 +65629,7 @@ ldr x15, [x16, #2384]
 .word 0xb9803ba2
 .word 0xf94017a3
 .word 0xf94023a4
-bl _p_752
+bl _p_755
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
@@ -65111,7 +65638,7 @@ bl _p_752
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -65122,7 +65649,7 @@ Lme_49d:
 	.no_dead_strip System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_ContinueWhenAllImpl_System_Threading_Tasks_Task___System_Func_2_System_Threading_Tasks_Task___System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskContinuationOptions_System_Threading_CancellationToken_System_Threading_Tasks_TaskScheduler
 System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_ContinueWhenAllImpl_System_Threading_Tasks_Task___System_Func_2_System_Threading_Tasks_Task___System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskContinuationOptions_System_Threading_CancellationToken_System_Threading_Tasks_TaskScheduler:
 .loc 39 1671 0 prologue_end
-.word 0xa9b97bfd
+.word 0xa9b87bfd
 .word 0x910003fd
 .word 0xa9015fb6
 .word 0xf90013b9
@@ -65134,10 +65661,10 @@ System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_Conti
 .word 0xaa1903e0
 bl _p_522
 .loc 39 1672 0
-.word 0xb4000db7
+.word 0xb4000e77
 .loc 39 1674 0
 .word 0xf94023a0
-.word 0xb4000c60
+.word 0xb4000d20
 .loc 39 1677 0
 .word 0xaa1703e0
 bl _p_553
@@ -65159,8 +65686,8 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x15, [x16, #2384]
 .word 0xaa1903e0
 .word 0xf9402ba1
-bl _p_753
-.word 0x1400004b
+bl _p_756
+.word 0x14000051
 .loc 39 1688 0
 .word 0xaa1703e0
 bl _p_555
@@ -65176,26 +65703,29 @@ ldr x0, [x16, #2528]
 .word 0xaa0203f7
 .loc 39 1691 0
 .word 0xaa0103f6
-.word 0xb5000660
+.word 0xb5000720
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #2536]
 .word 0xf9400000
-.word 0xf90033a0
+.word 0xf9003ba0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54000a00
+.word 0x54000ac0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #2544]
 .word 0xd2801001
 bl _p_26
-.word 0xf94033a1
+.word 0xf90037a0
+.word 0xf9403ba1
 .word 0xeb1f003f
 .word 0x10000011
-.word 0x54000880
+.word 0x54000920
+.word 0xd5033bbf
+.word 0xf94037a0
 .word 0xf9001001
 .word 0x91008002
 .word 0xd349fc42
@@ -65228,10 +65758,13 @@ ldr x1, [x16, #2568]
 .word 0xf9401021
 .word 0xf9000801
 .word 0x3901c01f
+.word 0xf90033a0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x1, [x16, #2528]
+.word 0xd5033bbf
+.word 0xf94033a0
 .word 0xf9000020
 .word 0xaa0003f6
 .word 0xf9401ba0
@@ -65247,18 +65780,18 @@ ldr x15, [x16, #2576]
 .word 0xf94023a3
 .word 0xf94027a4
 .word 0xaa1903e5
-bl _p_754
+bl _p_757
 .word 0xa9415fb6
 .word 0xf94013b9
 .word 0x910003bf
-.word 0xa8c77bfd
+.word 0xa8c87bfd
 .word 0xd65f03c0
 .loc 39 1674 0
 .word 0xd288b680
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -65267,14 +65800,14 @@ bl _p_9
 .loc 39 1672 0
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
-.word 0xd2801920
+.word 0xd2801940
 .word 0xaa1103e1
 bl _p_16
 
@@ -65284,7 +65817,7 @@ Lme_49e:
 	.no_dead_strip System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_ContinueWhenAllImpl_System_Threading_Tasks_Task___System_Action_1_System_Threading_Tasks_Task___System_Threading_Tasks_TaskContinuationOptions_System_Threading_CancellationToken_System_Threading_Tasks_TaskScheduler
 System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_ContinueWhenAllImpl_System_Threading_Tasks_Task___System_Action_1_System_Threading_Tasks_Task___System_Threading_Tasks_TaskContinuationOptions_System_Threading_CancellationToken_System_Threading_Tasks_TaskScheduler:
 .loc 39 1708 0 prologue_end
-.word 0xa9b97bfd
+.word 0xa9b87bfd
 .word 0x910003fd
 .word 0xa9015fb6
 .word 0xf90013b9
@@ -65296,10 +65829,10 @@ System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_Conti
 .word 0xaa1903e0
 bl _p_522
 .loc 39 1709 0
-.word 0xb4000db7
+.word 0xb4000e77
 .loc 39 1711 0
 .word 0xf94023a0
-.word 0xb4000c60
+.word 0xb4000d20
 .loc 39 1714 0
 .word 0xaa1703e0
 bl _p_553
@@ -65321,8 +65854,8 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x15, [x16, #2384]
 .word 0xaa1903e0
 .word 0xf9402ba1
-bl _p_753
-.word 0x1400004b
+bl _p_756
+.word 0x14000051
 .loc 39 1725 0
 .word 0xaa1703e0
 bl _p_555
@@ -65338,26 +65871,29 @@ ldr x0, [x16, #2584]
 .word 0xaa0203f7
 .loc 39 1728 0
 .word 0xaa0103f6
-.word 0xb5000660
+.word 0xb5000720
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #2536]
 .word 0xf9400000
-.word 0xf90033a0
+.word 0xf9003ba0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54000a00
+.word 0x54000ac0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #2544]
 .word 0xd2801001
 bl _p_26
-.word 0xf94033a1
+.word 0xf90037a0
+.word 0xf9403ba1
 .word 0xeb1f003f
 .word 0x10000011
-.word 0x54000880
+.word 0x54000920
+.word 0xd5033bbf
+.word 0xf94037a0
 .word 0xf9001001
 .word 0x91008002
 .word 0xd349fc42
@@ -65390,10 +65926,13 @@ ldr x1, [x16, #2608]
 .word 0xf9401021
 .word 0xf9000801
 .word 0x3901c01f
+.word 0xf90033a0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x1, [x16, #2584]
+.word 0xd5033bbf
+.word 0xf94033a0
 .word 0xf9000020
 .word 0xaa0003f6
 .word 0xf9401ba0
@@ -65409,18 +65948,18 @@ ldr x15, [x16, #2576]
 .word 0xf94023a3
 .word 0xf94027a4
 .word 0xaa1903e5
-bl _p_754
+bl _p_757
 .word 0xa9415fb6
 .word 0xf94013b9
 .word 0x910003bf
-.word 0xa8c77bfd
+.word 0xa8c87bfd
 .word 0xd65f03c0
 .loc 39 1711 0
 .word 0xd288b680
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -65429,14 +65968,14 @@ bl _p_9
 .loc 39 1709 0
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
-.word 0xd2801920
+.word 0xd2801940
 .word 0xaa1103e1
 bl _p_16
 
@@ -65461,7 +66000,7 @@ System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_Conti
 .word 0xf9400000
 .word 0xf90017a0
 .word 0xaa1803e0
-bl _p_746
+bl _p_749
 .word 0xaa0003e4
 .word 0xf9401ba2
 
@@ -65471,7 +66010,7 @@ ldr x15, [x16, #2384]
 .word 0xf9400fa0
 .word 0xf94013a1
 .word 0xf94017a3
-bl _p_755
+bl _p_758
 .word 0xf9400bb8
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -65481,7 +66020,7 @@ bl _p_755
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -65504,7 +66043,7 @@ System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_Conti
 .word 0xf9400ba0
 .word 0xb9802401
 .word 0xf90023a1
-bl _p_746
+bl _p_749
 .word 0xaa0003e4
 .word 0xf94023a2
 
@@ -65514,7 +66053,7 @@ ldr x15, [x16, #2384]
 .word 0xf9400fa0
 .word 0xf94013a1
 .word 0xf94017a3
-bl _p_755
+bl _p_758
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
@@ -65523,7 +66062,7 @@ bl _p_755
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -65547,7 +66086,7 @@ System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_Conti
 .word 0x91004001
 .word 0xf9400021
 .word 0xf9001ba1
-bl _p_746
+bl _p_749
 .word 0xaa0003e4
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -65557,7 +66096,7 @@ ldr x15, [x16, #2384]
 .word 0xf94013a1
 .word 0xb9802ba2
 .word 0xf9401ba3
-bl _p_755
+bl _p_758
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
@@ -65566,7 +66105,7 @@ bl _p_755
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -65597,7 +66136,7 @@ ldr x15, [x16, #2384]
 .word 0xb9803ba2
 .word 0xf94017a3
 .word 0xf94023a4
-bl _p_755
+bl _p_758
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
@@ -65606,7 +66145,7 @@ bl _p_755
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -65617,7 +66156,7 @@ Lme_4a3:
 	.no_dead_strip System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_ContinueWhenAnyImpl_System_Threading_Tasks_Task___System_Action_1_System_Threading_Tasks_Task_System_Threading_Tasks_TaskContinuationOptions_System_Threading_CancellationToken_System_Threading_Tasks_TaskScheduler
 System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_ContinueWhenAnyImpl_System_Threading_Tasks_Task___System_Action_1_System_Threading_Tasks_Task_System_Threading_Tasks_TaskContinuationOptions_System_Threading_CancellationToken_System_Threading_Tasks_TaskScheduler:
 .loc 39 2017 0 prologue_end
-.word 0xa9b97bfd
+.word 0xa9b87bfd
 .word 0x910003fd
 .word 0xa9015fb6
 .word 0xf90013b9
@@ -65629,13 +66168,13 @@ System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_Conti
 .word 0xaa1903e0
 bl _p_522
 .loc 39 2018 0
-.word 0xb4000f37
+.word 0xb4000ff7
 .loc 39 2019 0
 .word 0xb9801ae0
-.word 0x34000c40
+.word 0x34000d00
 .loc 39 2021 0
 .word 0xf94023a0
-.word 0xb4000da0
+.word 0xb4000e60
 .loc 39 2024 0
 .word 0xaa1703e0
 bl _p_566
@@ -65657,8 +66196,8 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x15, [x16, #2384]
 .word 0xaa1903e0
 .word 0xf9402ba1
-bl _p_753
-.word 0x14000048
+bl _p_756
+.word 0x1400004e
 .loc 39 2036 0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -65668,26 +66207,29 @@ ldr x0, [x16, #2616]
 .word 0xaa0003e1
 .word 0xaa1703f6
 .word 0xaa0103f7
-.word 0xb5000660
+.word 0xb5000720
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #2536]
 .word 0xf9400000
-.word 0xf90033a0
+.word 0xf9003ba0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54000ba0
+.word 0x54000c60
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #2624]
 .word 0xd2801001
 bl _p_26
-.word 0xf94033a1
+.word 0xf90037a0
+.word 0xf9403ba1
 .word 0xeb1f003f
 .word 0x10000011
-.word 0x54000a20
+.word 0x54000ac0
+.word 0xd5033bbf
+.word 0xf94037a0
 .word 0xf9001001
 .word 0x91008002
 .word 0xd349fc42
@@ -65720,10 +66262,13 @@ ldr x1, [x16, #2648]
 .word 0xf9401021
 .word 0xf9000801
 .word 0x3901c01f
+.word 0xf90033a0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x1, [x16, #2616]
+.word 0xd5033bbf
+.word 0xf94033a0
 .word 0xf9000020
 .word 0xaa0003f7
 .word 0xf9401ba0
@@ -65739,11 +66284,11 @@ ldr x15, [x16, #2656]
 .word 0xf94023a3
 .word 0xf94027a4
 .word 0xaa1903e5
-bl _p_756
+bl _p_759
 .word 0xa9415fb6
 .word 0xf94013b9
 .word 0x910003bf
-.word 0xa8c77bfd
+.word 0xa8c87bfd
 .word 0xd65f03c0
 .loc 39 2019 0
 .word 0xd288dd40
@@ -65755,7 +66300,7 @@ bl _p_384
 bl _p_384
 .word 0xaa0003e2
 .word 0xf94033a1
-.word 0xd2801920
+.word 0xd2801940
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_9
@@ -65764,7 +66309,7 @@ bl _p_9
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -65773,14 +66318,14 @@ bl _p_9
 .loc 39 2018 0
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
-.word 0xd2801920
+.word 0xd2801940
 .word 0xaa1103e1
 bl _p_16
 
@@ -65790,7 +66335,7 @@ Lme_4a4:
 	.no_dead_strip System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_ContinueWhenAnyImpl_System_Threading_Tasks_Task___System_Func_2_System_Threading_Tasks_Task_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskContinuationOptions_System_Threading_CancellationToken_System_Threading_Tasks_TaskScheduler
 System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_ContinueWhenAnyImpl_System_Threading_Tasks_Task___System_Func_2_System_Threading_Tasks_Task_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskContinuationOptions_System_Threading_CancellationToken_System_Threading_Tasks_TaskScheduler:
 .loc 39 2051 0 prologue_end
-.word 0xa9b97bfd
+.word 0xa9b87bfd
 .word 0x910003fd
 .word 0xa9015fb6
 .word 0xf90013b9
@@ -65802,13 +66347,13 @@ System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_Conti
 .word 0xaa1903e0
 bl _p_522
 .loc 39 2052 0
-.word 0xb4000f37
+.word 0xb4000ff7
 .loc 39 2053 0
 .word 0xb9801ae0
-.word 0x34000c40
+.word 0x34000d00
 .loc 39 2055 0
 .word 0xf94023a0
-.word 0xb4000da0
+.word 0xb4000e60
 .loc 39 2058 0
 .word 0xaa1703e0
 bl _p_566
@@ -65830,8 +66375,8 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x15, [x16, #2384]
 .word 0xaa1903e0
 .word 0xf9402ba1
-bl _p_753
-.word 0x14000048
+bl _p_756
+.word 0x1400004e
 .loc 39 2069 0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -65841,26 +66386,29 @@ ldr x0, [x16, #2664]
 .word 0xaa0003e1
 .word 0xaa1703f6
 .word 0xaa0103f7
-.word 0xb5000660
+.word 0xb5000720
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #2536]
 .word 0xf9400000
-.word 0xf90033a0
+.word 0xf9003ba0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54000ba0
+.word 0x54000c60
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #2624]
 .word 0xd2801001
 bl _p_26
-.word 0xf94033a1
+.word 0xf90037a0
+.word 0xf9403ba1
 .word 0xeb1f003f
 .word 0x10000011
-.word 0x54000a20
+.word 0x54000ac0
+.word 0xd5033bbf
+.word 0xf94037a0
 .word 0xf9001001
 .word 0x91008002
 .word 0xd349fc42
@@ -65893,10 +66441,13 @@ ldr x1, [x16, #2688]
 .word 0xf9401021
 .word 0xf9000801
 .word 0x3901c01f
+.word 0xf90033a0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x1, [x16, #2664]
+.word 0xd5033bbf
+.word 0xf94033a0
 .word 0xf9000020
 .word 0xaa0003f7
 .word 0xf9401ba0
@@ -65912,11 +66463,11 @@ ldr x15, [x16, #2656]
 .word 0xf94023a3
 .word 0xf94027a4
 .word 0xaa1903e5
-bl _p_756
+bl _p_759
 .word 0xa9415fb6
 .word 0xf94013b9
 .word 0x910003bf
-.word 0xa8c77bfd
+.word 0xa8c87bfd
 .word 0xd65f03c0
 .loc 39 2053 0
 .word 0xd288dd40
@@ -65928,7 +66479,7 @@ bl _p_384
 bl _p_384
 .word 0xaa0003e2
 .word 0xf94033a1
-.word 0xd2801920
+.word 0xd2801940
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_9
@@ -65937,7 +66488,7 @@ bl _p_9
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -65946,14 +66497,14 @@ bl _p_9
 .loc 39 2052 0
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_16
-.word 0xd2801920
+.word 0xd2801940
 .word 0xaa1103e1
 bl _p_16
 
@@ -65967,7 +66518,7 @@ b System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Task
 	.no_dead_strip System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_Create
 System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_Create:
 .loc 41 444 0 prologue_end
-.word 0xa9bd7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xf9000ba8
 .word 0xd2800000
@@ -65975,6 +66526,9 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_
 .word 0xf90013a0
 .word 0xf90017a0
 .word 0xf9400ba0
+.word 0xf9001ba0
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9400fa1
 .word 0xf9000001
 .word 0xd349fc02
@@ -66017,7 +66571,7 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .word 0x910003bf
-.word 0xa8c37bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
 
 Lme_4a6:
@@ -66059,19 +66613,22 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_
 .word 0xf9400b59
 .loc 41 575 0
 .word 0xaa1903e0
-.word 0xb50002e0
+.word 0xb5000340
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #2360]
 .word 0xd2800a01
 bl _p_26
-.word 0xf90013a0
-bl _p_757
-.word 0xf94013a1
-.word 0xaa0103e0
-.word 0xaa0103f9
+.word 0xf90017a0
+bl _p_760
+.word 0xf94017a0
+.word 0xaa0003e1
+.word 0xf90013a1
+.word 0xaa0003f9
 .word 0x91004341
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -66101,7 +66658,7 @@ b System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Task
 	.no_dead_strip System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_SetResult_System_Threading_Tasks_VoidTaskResult
 System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_SetResult_System_Threading_Tasks_VoidTaskResult:
 .loc 41 590 0 prologue_end
-.word 0xa9bd7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xa9016bb9
 .word 0xaa0003fa
@@ -66109,15 +66666,18 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_
 .word 0xf9400b59
 .loc 41 591 0
 .word 0xaa1903e0
-.word 0xb5000260
+.word 0xb50002c0
 .loc 41 593 0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x15, [x16, #2344]
 .word 0xf94013a0
-bl _p_758
+bl _p_761
+.word 0xf9001ba0
 .word 0x91004341
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -66162,20 +66722,20 @@ bl _p_589
 .word 0xaa1903e0
 .word 0xf94013a1
 .word 0x3940033e
-bl _p_733
+bl _p_736
 .word 0x53001c00
 .word 0x340000a0
 .loc 41 613 0
 .word 0xa9416bb9
 .word 0x910003bf
-.word 0xa8c37bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
 .loc 41 610 0
 .word 0xd29d2ae0
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2802440
+.word 0xd2802460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -66198,9 +66758,10 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_
 .word 0x3900a3bf
 .word 0xf9400b20
 .loc 41 629 0
-.word 0xb50001e0
+.word 0xb5000200
 .loc 41 631 0
 .word 0x91004321
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -66226,7 +66787,7 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x15, [x16, #2344]
 .word 0xaa1903e0
 .word 0xf94013a1
-bl _p_759
+bl _p_762
 .loc 41 638 0
 .word 0xf9400bb9
 .word 0x910003bf
@@ -66261,7 +66822,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x15, [x16, #2344]
 .word 0xaa1903e0
-bl _p_729
+bl _p_732
 .word 0xaa0003f8
 .loc 41 661 0
 .word 0xaa1a03f9
@@ -66310,7 +66871,7 @@ bl _p_467
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -66319,7 +66880,7 @@ bl _p_9
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2802440
+.word 0xd2802460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -66343,7 +66904,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x15, [x16, #2344]
 .word 0xf9400ba0
-bl _p_729
+bl _p_732
 .word 0xaa0003e2
 .word 0xaa0203e0
 .word 0x394063a1
@@ -66372,7 +66933,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x15, [x16, #2344]
 .word 0xf9400ba0
-bl _p_729
+bl _p_732
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -66917,16 +67478,16 @@ ldr x0, [x16, #2360]
 bl _p_26
 .word 0xf9001ba0
 .word 0xf9400fa1
-bl _p_760
+bl _p_763
 .word 0xf9401ba0
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_16
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -66940,7 +67501,7 @@ b System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Task
 	.no_dead_strip System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult__cctor
 System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult__cctor:
 .loc 41 427 0 prologue_end
-.word 0xa9be7bfd
+.word 0xa9bd7bfd
 .word 0x910003fd
 .word 0x390043bf
 
@@ -66948,15 +67509,18 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x15, [x16, #2816]
 .word 0xf9400ba0
-bl _p_761
+bl _p_764
 .word 0xaa0003e1
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #2808]
+.word 0xf90013a0
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xf9000001
 .word 0x910003bf
-.word 0xa8c27bfd
+.word 0xa8c37bfd
 .word 0xd65f03c0
 
 Lme_4af:
@@ -66991,13 +67555,13 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x15, [x16, #2344]
 .word 0xaa1803e0
-bl _p_729
+bl _p_732
 .word 0xaa1703f6
 .word 0xaa0003f7
 .word 0xaa1603e0
 .word 0xaa1703e1
 .word 0x910203a2
-bl _p_704
+bl _p_707
 .word 0xaa0003f7
 .loc 41 547 0
 .word 0xf9400300
@@ -67008,7 +67572,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x15, [x16, #2344]
 .word 0xaa1803e0
-bl _p_729
+bl _p_732
 .word 0xaa0003f6
 .loc 41 556 0
 .word 0xf9401ba0
@@ -67045,18 +67609,18 @@ bl _mono_gc_wbarrier_range_copy
 .word 0xf94043a2
 .word 0xaa1803e0
 .word 0xaa1603e3
-bl _p_705
+bl _p_708
 .loc 41 559 0
 .word 0xf94017a0
 .word 0xaa1703e1
-bl _p_730
+bl _p_733
 .loc 41 560 0
 .word 0x1400000c
 .word 0xf90047a0
 .word 0xf94047a0
 .loc 41 563 0
 .word 0xd2800001
-bl _p_707
+bl _p_710
 .loc 41 564 0
 bl _p_309
 .word 0xf90053a0
@@ -67104,13 +67668,13 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x15, [x16, #2344]
 .word 0xaa1803e0
-bl _p_729
+bl _p_732
 .word 0xaa1703f6
 .word 0xaa0003f7
 .word 0xaa1603e0
 .word 0xaa1703e1
 .word 0x910223a2
-bl _p_704
+bl _p_707
 .word 0xaa0003f7
 .loc 41 547 0
 .word 0xf9400300
@@ -67121,7 +67685,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x15, [x16, #2344]
 .word 0xaa1803e0
-bl _p_729
+bl _p_732
 .word 0xaa0003f6
 .loc 41 556 0
 .word 0xf9401ba0
@@ -67160,18 +67724,18 @@ bl _mono_gc_wbarrier_range_copy
 .word 0xf94047a2
 .word 0xaa1803e0
 .word 0xaa1603e3
-bl _p_705
+bl _p_708
 .loc 41 559 0
 .word 0xf94017a0
 .word 0xaa1703e1
-bl _p_660
+bl _p_663
 .loc 41 560 0
 .word 0x1400000c
 .word 0xf9004ba0
 .word 0xf9404ba0
 .loc 41 563 0
 .word 0xd2800001
-bl _p_707
+bl _p_710
 .loc 41 564 0
 bl _p_309
 .word 0xf90057a0
@@ -67222,7 +67786,7 @@ System_Collections_Generic_EqualityComparer_1_T_INT_CreateComparer:
 .word 0xf90013ba
 .word 0xf90017af
 .word 0xf94017a0
-bl _p_762
+bl _p_765
 .word 0xaa0003fa
 .word 0xb400017a
 .word 0xf9400340
@@ -67254,7 +67818,7 @@ ldr x0, [x16, #2856]
 bl _p_26
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_763
+bl _p_766
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -67283,7 +67847,7 @@ ldr x0, [x16, #2872]
 bl _p_26
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_763
+bl _p_766
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -67297,7 +67861,7 @@ bl _p_763
 .word 0x140000e6
 .loc 54 70 0
 .word 0xf94017a0
-bl _p_764
+bl _p_767
 .word 0xaa0003e2
 .word 0xaa0203e0
 .word 0xaa1903e1
@@ -67312,10 +67876,10 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #2880]
 .word 0xaa1903e1
-bl _p_765
+bl _p_768
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_763
+bl _p_766
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -67409,10 +67973,10 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #2912]
 .word 0xaa1803e1
-bl _p_765
+bl _p_768
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_763
+bl _p_766
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -67433,8 +67997,8 @@ bl _p_763
 .word 0x34000be0
 .loc 54 91 0
 .word 0xaa1903e0
-bl _p_766
-bl _p_767
+bl _p_769
+bl _p_770
 .word 0x93407c00
 .word 0xaa0003fa
 .word 0xaa1a03e0
@@ -67457,10 +68021,10 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #2928]
 .word 0xaa1903e1
-bl _p_765
+bl _p_768
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_763
+bl _p_766
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -67478,10 +68042,10 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #2936]
 .word 0xaa1903e1
-bl _p_765
+bl _p_768
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_763
+bl _p_766
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -67499,10 +68063,10 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #2944]
 .word 0xaa1903e1
-bl _p_765
+bl _p_768
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_763
+bl _p_766
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -67520,10 +68084,10 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #2952]
 .word 0xaa1903e1
-bl _p_765
+bl _p_768
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_763
+bl _p_766
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -67537,12 +68101,12 @@ bl _p_763
 .word 0x1400000d
 .loc 54 128 0
 .word 0xf94017a0
-bl _p_768
+bl _p_771
 .word 0xd2800201
 bl _p_26
 .word 0xf9001fa0
 .word 0xf94017a0
-bl _p_769
+bl _p_772
 .word 0xaa0003e1
 .word 0xf9401fa0
 .word 0xf9001ba0
@@ -67553,10 +68117,10 @@ bl _p_769
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_16
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -67625,7 +68189,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
@@ -67650,7 +68214,7 @@ ldr x1, [x16, #1728]
 .word 0x394002be
 .word 0xf94017a0
 .word 0xf9400000
-bl _p_770
+bl _p_773
 .word 0xaa0003e9
 .word 0xaa1503e0
 .word 0xf94033a1
@@ -67664,6 +68228,7 @@ bl _p_770
 .loc 56 179 0
 .word 0xf94017a0
 .word 0x91014001
+.word 0xd5033bbf
 .word 0xf9401ba0
 .word 0xf9000020
 .word 0xd349fc21
@@ -67787,7 +68352,7 @@ System_Array_EmptyInternalEnumerator_1_System_IO_Compression_ZipGenericExtraFiel
 .word 0xd2980c80
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2802440
+.word 0xd2802460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -67809,7 +68374,7 @@ System_Array_EmptyInternalEnumerator_1_System_IO_Compression_ZipGenericExtraFiel
 .word 0xd2980c80
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2802440
+.word 0xd2802460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -67875,22 +68440,22 @@ Lme_4bd:
 	.no_dead_strip System_Collections_Generic_List_1_System_IO_Compression_ZipGenericExtraField_set_Capacity_int
 System_Collections_Generic_List_1_System_IO_Compression_ZipGenericExtraField_set_Capacity_int:
 .loc 46 103 0 prologue_end
-.word 0xa9be7bfd
+.word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xa9016bb9
 .word 0xaa0003f9
 .word 0xaa0103fa
 .word 0xb9802320
 .word 0x6b00035f
-.word 0x540006eb
+.word 0x540007ab
 .loc 46 108 0
-.word 0xf9400b20
-.word 0xb9801800
+.word 0xf9400b21
+.word 0xb9801820
 .word 0x6b00035f
-.word 0x540005e0
+.word 0x540006a0
 .loc 46 110 0
 .word 0x6b1f035f
-.word 0x540003ad
+.word 0x5400040d
 .loc 46 112 0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -67912,6 +68477,9 @@ bl _p_10
 bl _p_143
 .loc 46 117 0
 .word 0x91004320
+.word 0xf90013a0
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xf900001a
 .word 0xd349fc00
 .word 0xd29ffffe
@@ -67925,14 +68493,17 @@ ldr x1, [x16, #16]
 .word 0xd280003e
 .word 0x3900001e
 .loc 46 118 0
-.word 0x14000011
+.word 0x14000014
 .loc 46 121 0
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #1264]
 .word 0xf9400000
+.word 0xf90013a0
 .word 0x91004321
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -67948,13 +68519,13 @@ ldr x2, [x16, #16]
 .loc 46 124 0
 .word 0xa9416bb9
 .word 0x910003bf
-.word 0xa8c27bfd
+.word 0xa8c37bfd
 .word 0xd65f03c0
 .loc 46 105 0
 .word 0xd28001e0
 .word 0xd28002a1
-bl _p_771
-.word 0x17ffffc7
+bl _p_774
+.word 0x17ffffc1
 
 Lme_4be:
 .text
@@ -67997,7 +68568,7 @@ ldr x15, [x16, #2960]
 .word 0xf94017a2
 .word 0xaa1903e3
 .word 0xb98033a4
-bl _p_772
+bl _p_775
 .word 0x93407c00
 .word 0xa94167b8
 .word 0x910003bf
@@ -68007,7 +68578,7 @@ bl _p_772
 .word 0xd293f7c0
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -68019,7 +68590,7 @@ bl _p_384
 bl _p_384
 .word 0xaa0003e2
 .word 0xf94023a1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_9
@@ -68031,7 +68602,7 @@ bl _p_384
 bl _p_384
 .word 0xaa0003e2
 .word 0xf94023a1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_9
@@ -68140,7 +68711,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x35000820
+.word 0x35000840
 .word 0x14000001
 .word 0xf9403f59
 .word 0xaa1903e0
@@ -68156,7 +68727,7 @@ ldr x0, [x16, #48]
 .word 0xd63f0020
 .word 0xf9402bbe
 .word 0xf90003c0
-.word 0x14000026
+.word 0x14000027
 .word 0xf9401f40
 .word 0xf9400b40
 .word 0x9100c3a1
@@ -68164,8 +68735,9 @@ ldr x0, [x16, #48]
 .word 0xd63f0000
 .word 0xf9402bbe
 .word 0xf90003c0
-.word 0x1400001e
-.word 0xb9801b3a
+.word 0x1400001f
+.word 0xb9801b20
+.word 0xaa0003fa
 .word 0xd2800018
 .word 0x93407f00
 .word 0xb9801b21
@@ -68205,11 +68777,11 @@ ldr x0, [x16, #48]
 .word 0xb900001e
 .word 0xaa1903e0
 bl _p_210
-bl _p_639
+bl _p_640
 .word 0xaa0003f9
 .word 0xb5ffff20
-.word 0x17ffffbe
-.word 0xd2802380
+.word 0x17ffffbd
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -68310,6 +68882,7 @@ System_Runtime_CompilerServices_TaskAwaiter_1_System_Threading_Tasks_VoidTaskRes
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf9400ba1
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -68380,7 +68953,7 @@ System_Runtime_CompilerServices_TaskAwaiter_1_System_Threading_Tasks_VoidTaskRes
 .word 0xf9400fa1
 .word 0xd2800022
 .word 0xd2800023
-bl _p_663
+bl _p_666
 .loc 48 390 0
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -68405,7 +68978,7 @@ System_Runtime_CompilerServices_TaskAwaiter_1_System_Threading_Tasks_VoidTaskRes
 .word 0xf9400fa1
 .word 0xd2800022
 .word 0xd2800003
-bl _p_663
+bl _p_666
 .loc 48 400 0
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -68450,7 +69023,7 @@ b System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_System_Threading_Tas
 	.no_dead_strip System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool
 System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool:
 .loc 48 534 0 prologue_end
-.word 0xa9bb7bfd
+.word 0xa9ba7bfd
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
@@ -68465,12 +69038,15 @@ ldr x15, [x16, #2968]
 .word 0x9100e3a0
 .word 0xf9400fa1
 .word 0x394083a2
-bl _p_773
+bl _p_776
 .word 0xf9401fa0
 .word 0xf90017a0
 .word 0xf94023a0
 .word 0xf9001ba0
 .word 0xf9400ba0
+.word 0xf9002ba0
+.word 0xd5033bbf
+.word 0xf9402ba0
 .word 0xf94017a1
 .word 0xf9000001
 .word 0xd349fc02
@@ -68489,7 +69065,7 @@ ldr x3, [x16, #16]
 .word 0xf9000001
 .loc 48 535 0
 .word 0x910003bf
-.word 0xa8c57bfd
+.word 0xa8c67bfd
 .word 0xd65f03c0
 
 Lme_4d0:
@@ -68532,6 +69108,7 @@ System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_
 .word 0xaa0003f8
 .word 0xf9000fa1
 .word 0xf90013a2
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000300
 .word 0xd349ff01
@@ -68606,7 +69183,7 @@ System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_
 .word 0x39402322
 .word 0xf9400fa1
 .word 0xd2800023
-bl _p_663
+bl _p_666
 .loc 48 584 0
 .word 0xf9400bb9
 .word 0x910003bf
@@ -68632,7 +69209,7 @@ System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_
 .word 0x39402322
 .word 0xf9400fa1
 .word 0xd2800003
-bl _p_663
+bl _p_666
 .loc 48 594 0
 .word 0xf9400bb9
 .word 0x910003bf
@@ -68685,7 +69262,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x35000680
+.word 0x350006a0
 .word 0x14000001
 .word 0xf9403f38
 .word 0xaa1803e0
@@ -68698,13 +69275,14 @@ ldr x0, [x16, #48]
 .word 0xaa1803e0
 .word 0xaa1a03e1
 .word 0xd63f0040
-.word 0x1400001c
+.word 0x1400001d
 .word 0xf9401f20
 .word 0xf9400b21
 .word 0xaa1a03e0
 .word 0xd63f0020
-.word 0x14000017
-.word 0xb9801b19
+.word 0x14000018
+.word 0xb9801b00
+.word 0xaa0003f9
 .word 0xd2800017
 .word 0x93407ee0
 .word 0xb9801b01
@@ -68737,11 +69315,11 @@ ldr x0, [x16, #48]
 .word 0xb900001e
 .word 0xaa1803e0
 bl _p_210
-bl _p_639
+bl _p_640
 .word 0xaa0003f8
 .word 0xb5ffff20
-.word 0x17ffffcb
-.word 0xd2802380
+.word 0x17ffffca
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -68777,7 +69355,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
@@ -68811,6 +69389,7 @@ bl _p_489
 .loc 56 132 0
 .word 0xf94013a0
 .word 0x91012001
+.word 0xd5033bbf
 .word 0xf94017a0
 .word 0xf9000020
 .word 0xd349fc21
@@ -68916,7 +69495,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x350006e0
+.word 0x35000700
 .word 0x14000001
 .word 0xf9403f17
 .word 0xaa1703e0
@@ -68930,14 +69509,15 @@ ldr x0, [x16, #48]
 .word 0xaa1903e1
 .word 0xaa1a03e2
 .word 0xd63f0060
-.word 0x1400001e
+.word 0x1400001f
 .word 0xf9401f00
 .word 0xf9400b02
 .word 0xaa1903e0
 .word 0xaa1a03e1
 .word 0xd63f0040
-.word 0x14000018
-.word 0xb9801af8
+.word 0x14000019
+.word 0xb9801ae0
+.word 0xaa0003f8
 .word 0xd2800016
 .word 0x93407ec0
 .word 0xb9801ae1
@@ -68971,11 +69551,11 @@ ldr x0, [x16, #48]
 .word 0xb900001e
 .word 0xaa1703e0
 bl _p_210
-bl _p_639
+bl _p_640
 .word 0xaa0003f7
 .word 0xb5ffff20
-.word 0x17ffffc8
-.word 0xd2802380
+.word 0x17ffffc7
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -68997,7 +69577,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x350008a0
+.word 0x350008c0
 .word 0x14000001
 .word 0xf9403f38
 .word 0xaa1803e0
@@ -69014,7 +69594,7 @@ ldr x0, [x16, #48]
 .word 0xd63f0040
 .word 0xf9402fbe
 .word 0xf90003c0
-.word 0x14000028
+.word 0x14000029
 .word 0xf9401f20
 .word 0xf9400b21
 .word 0x9100e3a0
@@ -69023,8 +69603,9 @@ ldr x0, [x16, #48]
 .word 0xd63f0020
 .word 0xf9402fbe
 .word 0xf90003c0
-.word 0x1400001f
-.word 0xb9801b19
+.word 0x14000020
+.word 0xb9801b00
+.word 0xaa0003f9
 .word 0xd2800017
 .word 0x93407ee0
 .word 0xb9801b01
@@ -69066,11 +69647,11 @@ ldr x0, [x16, #48]
 .word 0xb900001e
 .word 0xaa1803e0
 bl _p_210
-bl _p_639
+bl _p_640
 .word 0xaa0003f8
 .word 0xb5ffff20
-.word 0x17ffffba
-.word 0xd2802380
+.word 0x17ffffb9
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -69092,7 +69673,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x350008a0
+.word 0x350008c0
 .word 0x14000001
 .word 0xf9403f38
 .word 0xaa1803e0
@@ -69109,7 +69690,7 @@ ldr x0, [x16, #48]
 .word 0xd63f0040
 .word 0xf9402fbe
 .word 0xf90003c0
-.word 0x14000028
+.word 0x14000029
 .word 0xf9401f20
 .word 0xf9400b21
 .word 0x9100e3a0
@@ -69118,8 +69699,9 @@ ldr x0, [x16, #48]
 .word 0xd63f0020
 .word 0xf9402fbe
 .word 0xf90003c0
-.word 0x1400001f
-.word 0xb9801b19
+.word 0x14000020
+.word 0xb9801b00
+.word 0xaa0003f9
 .word 0xd2800017
 .word 0x93407ee0
 .word 0xb9801b01
@@ -69161,11 +69743,11 @@ ldr x0, [x16, #48]
 .word 0xb900001e
 .word 0xaa1803e0
 bl _p_210
-bl _p_639
+bl _p_640
 .word 0xaa0003f8
 .word 0xb5ffff20
-.word 0x17ffffba
-.word 0xd2802380
+.word 0x17ffffb9
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -69201,7 +69783,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x15, [x16, #2384]
 .word 0xd2800024
-bl _p_750
+bl _p_753
 .loc 39 685 0
 .word 0xf9400bba
 .word 0x910003bf
@@ -69296,7 +69878,7 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x15, [x16, #2384]
 .word 0xaa1a03e0
 .word 0xd2800024
-bl _p_750
+bl _p_753
 .loc 39 792 0
 .word 0xa9416bb9
 .word 0x910003bf
@@ -69321,7 +69903,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x350008a0
+.word 0x350008c0
 .word 0x14000001
 .word 0xf9403f38
 .word 0xaa1803e0
@@ -69338,7 +69920,7 @@ ldr x0, [x16, #48]
 .word 0xd63f0040
 .word 0xf9402fbe
 .word 0xf90003c0
-.word 0x14000028
+.word 0x14000029
 .word 0xf9401f20
 .word 0xf9400b21
 .word 0x9100e3a0
@@ -69347,8 +69929,9 @@ ldr x0, [x16, #48]
 .word 0xd63f0020
 .word 0xf9402fbe
 .word 0xf90003c0
-.word 0x1400001f
-.word 0xb9801b19
+.word 0x14000020
+.word 0xb9801b00
+.word 0xaa0003f9
 .word 0xd2800017
 .word 0x93407ee0
 .word 0xb9801b01
@@ -69390,11 +69973,11 @@ ldr x0, [x16, #48]
 .word 0xb900001e
 .word 0xaa1803e0
 bl _p_210
-bl _p_639
+bl _p_640
 .word 0xaa0003f8
 .word 0xb5ffff20
-.word 0x17ffffba
-.word 0xd2802380
+.word 0x17ffffb9
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -69442,7 +70025,7 @@ bl _p_26
 .word 0xf9400fa1
 .word 0xf94013a2
 .word 0xaa1803e3
-bl _p_774
+bl _p_777
 .word 0xf94033a0
 .word 0xaa0003f8
 .loc 38 1383 0
@@ -69463,7 +70046,7 @@ bl _p_519
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -69472,7 +70055,7 @@ bl _p_9
 .loc 38 1361 0
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -69496,7 +70079,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x35000900
+.word 0x35000920
 .word 0x14000001
 .word 0xf9403f17
 .word 0xaa1703e0
@@ -69514,7 +70097,7 @@ ldr x0, [x16, #48]
 .word 0xd63f0060
 .word 0xf94033be
 .word 0xf90003c0
-.word 0x1400002a
+.word 0x1400002b
 .word 0xf9401f00
 .word 0xf9400b02
 .word 0x910103a0
@@ -69524,8 +70107,9 @@ ldr x0, [x16, #48]
 .word 0xd63f0040
 .word 0xf94033be
 .word 0xf90003c0
-.word 0x14000020
-.word 0xb9801af8
+.word 0x14000021
+.word 0xb9801ae0
+.word 0xaa0003f8
 .word 0xd2800016
 .word 0x93407ec0
 .word 0xb9801ae1
@@ -69568,11 +70152,11 @@ ldr x0, [x16, #48]
 .word 0xb900001e
 .word 0xaa1703e0
 bl _p_210
-bl _p_639
+bl _p_640
 .word 0xaa0003f7
 .word 0xb5ffff20
-.word 0x17ffffb7
-.word 0xd2802380
+.word 0x17ffffb6
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -69581,7 +70165,7 @@ Lme_4f4:
 	.align 4
 	.no_dead_strip System_Threading_Tasks_TaskFactory_1__c_System_Threading_Tasks_VoidTaskResult__cctor
 System_Threading_Tasks_TaskFactory_1__c_System_Threading_Tasks_VoidTaskResult__cctor:
-.word 0xa9bf7bfd
+.word 0xa9be7bfd
 .word 0x910003fd
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
@@ -69594,9 +70178,12 @@ bl _p_26
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #2536]
+.word 0xf9000ba0
+.word 0xd5033bbf
+.word 0xf9400ba0
 .word 0xf9000001
 .word 0x910003bf
-.word 0xa8c17bfd
+.word 0xa8c27bfd
 .word 0xd65f03c0
 
 Lme_4f5:
@@ -69617,7 +70204,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x350008a0
+.word 0x350008c0
 .word 0x14000001
 .word 0xf9403f38
 .word 0xaa1803e0
@@ -69634,7 +70221,7 @@ ldr x0, [x16, #48]
 .word 0xd63f0040
 .word 0xf9402fbe
 .word 0xf90003c0
-.word 0x14000028
+.word 0x14000029
 .word 0xf9401f20
 .word 0xf9400b21
 .word 0x9100e3a0
@@ -69643,8 +70230,9 @@ ldr x0, [x16, #48]
 .word 0xd63f0020
 .word 0xf9402fbe
 .word 0xf90003c0
-.word 0x1400001f
-.word 0xb9801b19
+.word 0x14000020
+.word 0xb9801b00
+.word 0xaa0003f9
 .word 0xd2800017
 .word 0x93407ee0
 .word 0xb9801b01
@@ -69686,11 +70274,11 @@ ldr x0, [x16, #48]
 .word 0xb900001e
 .word 0xaa1803e0
 bl _p_210
-bl _p_639
+bl _p_640
 .word 0xaa0003f8
 .word 0xb5ffff20
-.word 0x17ffffba
-.word 0xd2802380
+.word 0x17ffffb9
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -69738,7 +70326,7 @@ bl _p_26
 .word 0xf9400fa1
 .word 0xf94013a2
 .word 0xaa1803e3
-bl _p_775
+bl _p_778
 .word 0xf94033a0
 .word 0xaa0003f8
 .loc 38 1383 0
@@ -69759,7 +70347,7 @@ bl _p_519
 .word 0xf2a00020
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -69768,7 +70356,7 @@ bl _p_9
 .loc 38 1361 0
 bl _p_384
 .word 0xaa0003e1
-.word 0xd2801940
+.word 0xd2801960
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -69792,7 +70380,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x35000900
+.word 0x35000920
 .word 0x14000001
 .word 0xf9403f17
 .word 0xaa1703e0
@@ -69810,7 +70398,7 @@ ldr x0, [x16, #48]
 .word 0xd63f0060
 .word 0xf94033be
 .word 0xf90003c0
-.word 0x1400002a
+.word 0x1400002b
 .word 0xf9401f00
 .word 0xf9400b02
 .word 0x910103a0
@@ -69820,8 +70408,9 @@ ldr x0, [x16, #48]
 .word 0xd63f0040
 .word 0xf94033be
 .word 0xf90003c0
-.word 0x14000020
-.word 0xb9801af8
+.word 0x14000021
+.word 0xb9801ae0
+.word 0xaa0003f8
 .word 0xd2800016
 .word 0x93407ec0
 .word 0xb9801ae1
@@ -69864,11 +70453,11 @@ ldr x0, [x16, #48]
 .word 0xb900001e
 .word 0xaa1703e0
 bl _p_210
-bl _p_639
+bl _p_640
 .word 0xaa0003f7
 .word 0xb5ffff20
-.word 0x17ffffb7
-.word 0xd2802380
+.word 0x17ffffb6
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -69918,7 +70507,7 @@ bl _p_26
 .word 0xf9400ba2
 .word 0xd2880003
 .word 0xf94013a4
-bl _p_751
+bl _p_754
 .word 0xf9401ba0
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -69968,7 +70557,7 @@ ldr x0, [x16, #3040]
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x15, [x16, #3032]
-bl _p_776
+bl _p_779
 .word 0xaa0003f7
 .word 0xaa1703e1
 
@@ -70093,7 +70682,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
@@ -70123,10 +70712,11 @@ ldr x1, [x16, #1728]
 .word 0xb9803ba5
 .word 0xb98043a6
 .word 0xd2800007
-bl _p_732
+bl _p_735
 .loc 56 179 0
 .word 0xf94013a0
 .word 0x91014001
+.word 0xd5033bbf
 .word 0xf94017a0
 .word 0xf9000020
 .word 0xd349fc21
@@ -70301,7 +70891,7 @@ bl _p_429
 .word 0xf9002fa0
 .word 0xaa1903e0
 .word 0x3940033e
-bl _p_777
+bl _p_780
 .word 0xaa0003e1
 .word 0xf9402fa2
 .word 0x9100e3a0
@@ -70350,7 +70940,7 @@ bl _p_429
 .word 0xf90027a0
 .word 0xaa1903e0
 .word 0x3940033e
-bl _p_777
+bl _p_780
 .word 0xaa0003e1
 .word 0xf94027a2
 .word 0xaa0203e0
@@ -70390,7 +70980,7 @@ bl _p_429
 .word 0xf94017a0
 .word 0xf94017a1
 .word 0x3940003e
-bl _p_778
+bl _p_781
 .word 0xaa0003e1
 .word 0xf94027a2
 .word 0xaa0203e0
@@ -70429,7 +71019,7 @@ bl _p_429
 .word 0xf94017a0
 .word 0xf94017a1
 .word 0x3940003e
-bl _p_778
+bl _p_781
 .word 0xaa0003e1
 .word 0xf9402fa2
 .word 0x9100e3a0
@@ -70480,7 +71070,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
@@ -70510,10 +71100,11 @@ ldr x1, [x16, #1728]
 .word 0xb9803ba5
 .word 0xb98043a6
 .word 0xd2800007
-bl _p_732
+bl _p_735
 .loc 56 179 0
 .word 0xf94013a0
 .word 0x91014001
+.word 0xd5033bbf
 .word 0xf94017a0
 .word 0xf9000020
 .word 0xd349fc21
@@ -70720,7 +71311,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #3216]
 .word 0xaa1903e1
-bl _p_765
+bl _p_768
 .word 0xaa0003fa
 .word 0xb400017a
 .word 0xf9400340
@@ -70818,7 +71409,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #3240]
 .word 0xaa1803e1
-bl _p_765
+bl _p_768
 .word 0xaa0003fa
 .word 0xb400017a
 .word 0xf9400340
@@ -70843,8 +71434,8 @@ ldr x1, [x16, #3192]
 .word 0x34000be0
 .loc 54 91 0
 .word 0xaa1903e0
-bl _p_766
-bl _p_767
+bl _p_769
+bl _p_770
 .word 0x93407c00
 .word 0xaa0003fa
 .word 0xaa1a03e0
@@ -70867,7 +71458,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #3256]
 .word 0xaa1903e1
-bl _p_765
+bl _p_768
 .word 0xaa0003fa
 .word 0xb400017a
 .word 0xf9400340
@@ -70889,7 +71480,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #3264]
 .word 0xaa1903e1
-bl _p_765
+bl _p_768
 .word 0xaa0003fa
 .word 0xb400017a
 .word 0xf9400340
@@ -70911,7 +71502,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #3272]
 .word 0xaa1903e1
-bl _p_765
+bl _p_768
 .word 0xaa0003fa
 .word 0xb400017a
 .word 0xf9400340
@@ -70933,7 +71524,7 @@ adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x0, [x16, #3280]
 .word 0xaa1903e1
-bl _p_765
+bl _p_768
 .word 0xaa0003fa
 .word 0xb400017a
 .word 0xf9400340
@@ -70961,10 +71552,10 @@ bl _p_26
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_16
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -70993,7 +71584,7 @@ ldr x0, [x16, #3040]
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+0
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x15, [x16, #3032]
-bl _p_776
+bl _p_779
 .word 0xaa0003fa
 .loc 54 37 0
 .word 0xaa1a03e1
@@ -71072,7 +71663,7 @@ System_Collections_Generic_EqualityComparer_1_System_IO_Compression_ZipGenericEx
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -71137,7 +71728,7 @@ System_Collections_Generic_EqualityComparer_1_System_IO_Compression_ZipGenericEx
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -71202,7 +71793,7 @@ ldr x1, [x16, #3296]
 .word 0x14000004
 .loc 54 155 0
 .word 0xd2800040
-bl _p_779
+bl _p_782
 .loc 54 156 0
 .word 0xd2800000
 .word 0xf9400bb8
@@ -71210,7 +71801,7 @@ bl _p_779
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_16
 
@@ -71318,7 +71909,7 @@ ldr x1, [x16, #3296]
 .word 0x14000004
 .loc 54 163 0
 .word 0xd2800040
-bl _p_779
+bl _p_782
 .loc 54 164 0
 .word 0xd2800000
 .word 0xf9400bb7
@@ -71326,7 +71917,7 @@ bl _p_779
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_16
 
@@ -71632,7 +72223,7 @@ ldr x4, [x16, #16]
 .word 0x910003bf
 .word 0xa8c97bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -71784,7 +72375,7 @@ ldr x4, [x16, #16]
 .word 0x910003bf
 .word 0xa8c97bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_16
 
@@ -73681,111 +74272,114 @@ unwind_info:
 
 	.byte 0,13,12,31,0,68,14,48,157,6,158,5,68,13,29,13,12,31,0,68,14,32,157,4,158,3,68,13,29,13,12,31
 	.byte 0,68,14,80,157,10,158,9,68,13,29,13,12,31,0,68,14,96,157,12,158,11,68,13,29,18,12,31,0,68,14,64
-	.byte 157,8,158,7,68,13,29,68,151,6,152,5,13,12,31,0,68,14,64,157,8,158,7,68,13,29,16,12,31,0,68,14
-	.byte 32,157,4,158,3,68,13,29,68,154,2,13,12,31,0,68,14,16,157,2,158,1,68,13,29,22,12,31,0,68,14,128
-	.byte 2,157,32,158,31,68,13,29,68,152,30,153,29,68,154,28,14,12,31,0,68,14,128,1,157,16,158,15,68,13,29,16
-	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29,68,154,12,14,12,31,0,68,14,240,1,157,30,158,29,68,13,29,27
-	.byte 12,31,0,68,14,128,2,157,32,158,31,68,13,29,68,150,30,151,29,68,152,28,153,27,68,154,26,22,12,31,0,68
-	.byte 14,128,1,157,16,158,15,68,13,29,68,152,14,153,13,68,154,12,14,12,31,0,68,14,192,1,157,24,158,23,68,13
-	.byte 29,24,12,31,0,68,14,192,1,157,24,158,23,68,13,29,68,151,22,152,21,68,153,20,154,19,16,12,31,0,68,14
-	.byte 64,157,8,158,7,68,13,29,68,154,6,14,12,31,0,68,14,160,1,157,20,158,19,68,13,29,27,12,31,0,68,14
-	.byte 224,1,157,28,158,27,68,13,29,68,150,26,151,25,68,152,24,153,23,68,154,22,14,12,31,0,68,14,144,1,157,18
-	.byte 158,17,68,13,29,16,12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4,19,12,31,0,68,14,128,1,157,16
-	.byte 158,15,68,13,29,68,153,14,154,13,21,12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4,153,3,68,154,2
+	.byte 157,8,158,7,68,13,29,68,151,6,152,5,16,12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6,16,12,31
+	.byte 0,68,14,32,157,4,158,3,68,13,29,68,154,2,13,12,31,0,68,14,16,157,2,158,1,68,13,29,22,12,31,0
+	.byte 68,14,128,2,157,32,158,31,68,13,29,68,152,30,153,29,68,154,28,14,12,31,0,68,14,128,1,157,16,158,15,68
+	.byte 13,29,16,12,31,0,68,14,112,157,14,158,13,68,13,29,68,154,12,14,12,31,0,68,14,128,2,157,32,158,31,68
+	.byte 13,29,13,12,31,0,68,14,64,157,8,158,7,68,13,29,27,12,31,0,68,14,128,2,157,32,158,31,68,13,29,68
+	.byte 150,30,151,29,68,152,28,153,27,68,154,26,22,12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,152,14,153,13
+	.byte 68,154,12,14,12,31,0,68,14,208,1,157,26,158,25,68,13,29,24,12,31,0,68,14,192,1,157,24,158,23,68,13
+	.byte 29,68,151,22,152,21,68,153,20,154,19,16,12,31,0,68,14,64,157,8,158,7,68,13,29,68,154,6,14,12,31,0
+	.byte 68,14,176,1,157,22,158,21,68,13,29,16,12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4,27,12,31,0
+	.byte 68,14,224,1,157,28,158,27,68,13,29,68,150,26,151,25,68,152,24,153,23,68,154,22,14,12,31,0,68,14,144,1
+	.byte 157,18,158,17,68,13,29,19,12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,153,14,154,13,21,12,31,0,68
+	.byte 14,48,157,6,158,5,68,13,29,68,152,4,153,3,68,154,2,14,12,31,0,68,14,240,1,157,30,158,29,68,13,29
 	.byte 22,12,31,0,68,14,176,1,157,22,158,21,68,13,29,68,151,20,152,19,68,154,18,29,12,31,0,68,14,224,1,157
 	.byte 28,158,27,68,13,29,68,149,26,150,25,68,151,24,152,23,68,153,22,154,21,22,12,31,0,68,14,224,1,157,28,158
 	.byte 27,68,13,29,68,151,26,68,153,25,154,24,23,12,31,0,68,14,64,157,8,158,7,68,13,29,68,149,6,150,5,68
-	.byte 152,4,153,3,16,12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4,16,12,31,0,68,14,32,157,4,158,3
-	.byte 68,13,29,68,153,2,16,12,31,0,68,14,64,157,8,158,7,68,13,29,68,153,6,24,12,31,0,68,14,96,157,12
-	.byte 158,11,68,13,29,68,149,10,150,9,68,151,8,68,154,7,26,12,31,0,68,14,80,157,10,158,9,68,13,29,68,149
-	.byte 8,150,7,68,151,6,152,5,68,153,4,20,12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,151,14,68,154,13
-	.byte 14,12,31,0,68,14,208,1,157,26,158,25,68,13,29,16,12,31,0,68,14,48,157,6,158,5,68,13,29,68,151,4
+	.byte 152,4,153,3,16,12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,16,12,31,0,68,14,64,157,8,158,7
+	.byte 68,13,29,68,153,6,24,12,31,0,68,14,112,157,14,158,13,68,13,29,68,149,12,150,11,68,151,10,68,154,9,26
+	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,149,8,150,7,68,151,6,152,5,68,153,4,16,12,31,0,68,14
+	.byte 48,157,6,158,5,68,13,29,68,152,4,20,12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,151,14,68,154,13
+	.byte 14,12,31,0,68,14,224,1,157,28,158,27,68,13,29,16,12,31,0,68,14,48,157,6,158,5,68,13,29,68,151,4
 	.byte 18,12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,154,1,18,12,31,0,68,14,64,157,8,158,7,68,13
-	.byte 29,68,150,6,151,5,18,12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4,154,3,16,12,31,0,68,14,80
-	.byte 157,10,158,9,68,13,29,68,151,8,19,12,31,0,68,14,48,157,6,158,5,68,13,29,68,151,4,68,154,3,18,12
-	.byte 31,0,68,14,112,157,14,158,13,68,13,29,68,153,12,154,11,29,12,31,0,68,14,96,157,12,158,11,68,13,29,68
-	.byte 147,10,68,149,9,68,151,8,152,7,68,153,6,154,5,21,12,31,0,68,14,64,157,8,158,7,68,13,29,68,151,6
-	.byte 152,5,68,154,4,23,12,31,0,68,14,48,157,6,158,5,68,13,29,68,151,4,152,3,68,153,2,154,1,18,12,31
-	.byte 0,68,14,48,157,6,158,5,68,13,29,68,152,4,153,3,26,12,31,0,68,14,96,157,12,158,11,68,13,29,68,148
-	.byte 10,68,151,9,152,8,68,153,7,154,6,28,12,31,0,68,14,96,157,12,158,11,68,13,29,68,147,10,148,9,68,149
-	.byte 8,150,7,68,151,6,152,5,26,12,31,0,68,14,64,157,8,158,7,68,13,29,68,150,6,151,5,68,152,4,153,3
-	.byte 68,154,2,33,12,31,0,68,14,112,157,14,158,13,68,13,29,68,147,12,148,11,68,149,10,150,9,68,151,8,152,7
-	.byte 68,153,6,154,5,26,12,31,0,68,14,80,157,10,158,9,68,13,29,68,150,8,151,7,68,152,6,153,5,68,154,4
-	.byte 21,12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6,153,5,68,154,4,28,12,31,0,68,14,64,157,8,158
-	.byte 7,68,13,29,68,149,6,150,5,68,151,4,152,3,68,153,2,154,1,18,12,31,0,68,14,64,157,8,158,7,68,13
-	.byte 29,68,153,6,154,5,18,12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6,153,5,21,12,31,0,68,14,64
-	.byte 157,8,158,7,68,13,29,68,151,6,152,5,68,153,4,19,12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4
-	.byte 68,154,3,28,12,31,0,68,14,80,157,10,158,9,68,13,29,68,148,8,149,7,68,150,6,151,5,68,153,4,154,3
-	.byte 16,12,31,0,68,14,64,157,8,158,7,68,13,29,68,149,6,16,12,31,0,68,14,64,157,8,158,7,68,13,29,68
-	.byte 151,6,16,12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4,21,12,31,0,68,14,80,157,10,158,9,68,13
-	.byte 29,68,152,8,153,7,68,154,6,22,12,31,0,68,14,128,3,157,48,158,47,68,13,29,68,152,46,153,45,68,154,44
-	.byte 19,12,31,0,68,14,240,1,157,30,158,29,68,13,29,68,153,28,154,27,16,12,31,0,68,14,96,157,12,158,11,68
-	.byte 13,29,68,153,10,16,12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6,16,12,31,0,68,14,96,157,12,158
-	.byte 11,68,13,29,68,154,10,16,12,31,0,68,14,80,157,10,158,9,68,13,29,68,154,8,13,12,31,0,68,14,112,157
-	.byte 14,158,13,68,13,29,18,12,31,0,68,14,48,157,6,158,5,68,13,29,68,151,4,152,3,34,12,31,0,68,14,160
-	.byte 2,157,36,158,35,68,13,29,68,147,34,148,33,68,149,32,150,31,68,151,30,152,29,68,153,28,154,27,28,12,31,0
-	.byte 68,14,80,157,10,158,9,68,13,29,68,149,8,150,7,68,151,6,152,5,68,153,4,154,3,18,12,31,0,68,14,80
-	.byte 157,10,158,9,68,13,29,68,153,8,154,7,21,12,31,0,68,14,96,157,12,158,11,68,13,29,68,150,10,68,153,9
-	.byte 154,8,21,12,31,0,68,14,64,157,8,158,7,68,13,29,68,151,6,68,153,5,154,4,34,12,31,0,68,14,240,1
-	.byte 157,30,158,29,68,13,29,68,147,28,148,27,68,149,26,150,25,68,151,24,152,23,68,153,22,154,21,23,12,31,0,68
-	.byte 14,96,157,12,158,11,68,13,29,68,151,10,152,9,68,153,8,154,7,28,12,31,0,68,14,96,157,12,158,11,68,13
-	.byte 29,68,148,10,149,9,68,150,8,151,7,68,152,6,153,5,27,12,31,0,68,14,160,1,157,20,158,19,68,13,29,68
-	.byte 150,18,151,17,68,152,16,153,15,68,154,14,16,12,31,0,68,14,112,157,14,158,13,68,13,29,68,153,12,27,12,31
-	.byte 0,68,14,208,2,157,42,158,41,68,13,29,68,150,40,151,39,68,152,38,153,37,68,154,36,20,12,31,0,68,14,192
-	.byte 2,157,40,158,39,68,13,29,68,149,38,68,154,37,34,12,31,0,68,14,160,3,157,52,158,51,68,13,29,68,147,50
-	.byte 148,49,68,149,48,150,47,68,151,46,152,45,68,153,44,154,43,34,12,31,0,68,14,144,2,157,34,158,33,68,13,29
-	.byte 68,147,32,148,31,68,149,30,150,29,68,151,28,152,27,68,153,26,154,25,16,12,31,0,68,14,64,157,8,158,7,68
-	.byte 13,29,68,150,6,16,12,31,0,68,14,80,157,10,158,9,68,13,29,68,148,8,23,12,31,0,68,14,64,157,8,158
-	.byte 7,68,13,29,68,151,6,152,5,68,153,4,154,3,17,12,31,0,68,14,160,1,157,20,158,19,68,13,29,68,154,18
-	.byte 21,12,31,0,68,14,48,157,6,158,5,68,13,29,68,151,4,152,3,68,153,2,33,12,31,0,68,14,80,157,10,158
-	.byte 9,68,13,29,68,147,8,148,7,68,149,6,150,5,68,151,4,152,3,68,153,2,154,1,17,12,31,0,68,14,144,1
-	.byte 157,18,158,17,68,13,29,68,152,16,24,12,31,0,84,14,192,4,157,72,158,71,68,13,29,68,151,70,152,69,68,153
-	.byte 68,154,67,24,12,31,0,68,14,208,3,157,58,158,57,68,13,29,68,151,56,152,55,68,153,54,154,53,24,12,31,0
-	.byte 68,14,224,3,157,60,158,59,68,13,29,68,151,58,152,57,68,153,56,154,55,19,12,31,0,68,14,208,1,157,26,158
-	.byte 25,68,13,29,68,153,24,154,23,14,12,31,0,68,14,224,1,157,28,158,27,68,13,29,26,12,31,0,68,14,112,157
-	.byte 14,158,13,68,13,29,68,150,12,151,11,68,152,10,153,9,68,154,8,21,12,31,0,68,14,96,157,12,158,11,68,13
-	.byte 29,68,151,10,152,9,68,153,8,16,12,31,0,68,14,96,157,12,158,11,68,13,29,68,152,10,18,12,31,0,68,14
-	.byte 96,157,12,158,11,68,13,29,68,153,10,154,9,16,12,31,0,68,14,112,157,14,158,13,68,13,29,68,152,12,21,12
-	.byte 31,0,68,14,80,157,10,158,9,68,13,29,68,151,8,152,7,68,153,6,22,12,31,0,68,14,240,1,157,30,158,29
-	.byte 68,13,29,68,152,28,153,27,68,154,26,18,12,31,0,68,14,112,157,14,158,13,68,13,29,68,152,12,153,11,22,12
-	.byte 31,0,68,14,128,1,157,16,158,15,68,13,29,68,150,14,151,13,68,152,12,22,12,31,0,68,14,224,1,157,28,158
-	.byte 27,68,13,29,68,152,26,153,25,68,154,24,24,12,31,0,68,14,240,2,157,46,158,45,68,13,29,68,151,44,152,43
-	.byte 68,153,42,154,41,22,12,31,0,68,14,224,2,157,44,158,43,68,13,29,68,152,42,153,41,68,154,40,19,12,31,0
-	.byte 68,14,144,1,157,18,158,17,68,13,29,68,153,16,154,15,23,12,31,0,68,14,80,157,10,158,9,68,13,29,68,151
-	.byte 8,152,7,68,153,6,154,5,19,12,31,0,68,14,160,2,157,36,158,35,68,13,29,68,153,34,154,33,17,12,31,0
-	.byte 68,14,160,1,157,20,158,19,68,13,29,68,153,18,26,12,31,0,68,14,96,157,12,158,11,68,13,29,68,150,10,151
-	.byte 9,68,152,8,153,7,68,154,6,18,12,31,0,68,14,80,157,10,158,9,68,13,29,68,152,8,153,7,17,12,31,0
-	.byte 68,14,128,1,157,16,158,15,68,13,29,68,152,14,16,12,31,0,68,14,96,157,12,158,11,68,13,29,68,151,10,16
-	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,150,10,19,12,31,0,68,14,128,2,157,32,158,31,68,13,29,68
-	.byte 153,30,154,29,23,12,31,0,68,14,192,1,157,24,158,23,68,13,29,68,150,22,68,152,21,68,154,20,22,12,31,0
-	.byte 68,14,144,1,157,18,158,17,68,13,29,68,150,16,151,15,68,153,14,21,12,31,0,68,14,112,157,14,158,13,68,13
-	.byte 29,68,152,12,153,11,68,154,10,20,12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,150,14,68,152,13,24,12
-	.byte 31,0,68,14,128,2,157,32,158,31,68,13,29,68,151,30,152,29,68,153,28,154,27,19,12,31,0,68,14,64,157,8
-	.byte 158,7,68,13,29,68,150,6,68,152,5,29,12,31,0,68,14,192,2,157,40,158,39,68,13,29,68,149,38,150,37,68
-	.byte 151,36,152,35,68,153,34,154,33,20,12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,151,16,68,153,15,17,12
-	.byte 31,0,68,14,144,1,157,18,158,17,68,13,29,68,151,16,16,12,31,0,68,14,112,157,14,158,13,68,13,29,68,151
-	.byte 12,19,12,31,0,68,14,96,157,12,158,11,68,13,29,68,151,10,68,153,9,39,12,31,0,68,14,192,1,157,24,158
-	.byte 23,68,13,29,76,147,18,148,17,68,149,16,150,15,68,151,14,152,13,68,153,12,154,11,68,155,10,156,9,39,12,31
-	.byte 0,68,14,208,1,157,26,158,25,68,13,29,76,147,17,148,16,68,149,15,150,14,68,151,13,152,12,68,153,11,154,10
-	.byte 68,155,9,156,8,39,12,31,0,68,14,176,1,157,22,158,21,68,13,29,76,147,15,148,14,68,149,13,150,12,68,151
-	.byte 11,152,10,68,153,9,154,8,68,155,7,156,6,39,12,31,0,68,14,160,1,157,20,158,19,68,13,29,76,147,15,148
-	.byte 14,68,149,13,150,12,68,151,11,152,10,68,153,9,154,8,68,155,7,156,6,39,12,31,0,68,14,176,1,157,22,158
-	.byte 21,68,13,29,76,147,17,148,16,68,149,15,150,14,68,151,13,152,12,68,153,11,154,10,68,155,9,156,8,39,12,31
-	.byte 0,68,14,224,1,157,28,158,27,68,13,29,76,147,18,148,17,68,149,16,150,15,68,151,14,152,13,68,153,12,154,11
-	.byte 68,155,10,156,9,39,12,31,0,68,14,208,1,157,26,158,25,68,13,29,76,147,16,148,15,68,149,14,150,13,68,151
-	.byte 12,152,11,68,153,10,154,9,68,155,8,156,7,14,12,31,0,68,14,176,1,157,22,158,21,68,13,29,22,12,31,0
-	.byte 68,14,208,1,157,26,158,25,68,13,29,68,150,24,151,23,68,152,22,16,12,31,0,68,14,80,157,10,158,9,68,13
-	.byte 29,68,153,8,16,12,31,0,68,14,96,157,12,158,11,68,13,29,84,156,10,16,12,31,0,68,14,96,157,12,158,11
-	.byte 68,13,29,68,156,10,18,12,31,0,68,14,112,157,14,158,13,68,13,29,68,151,12,152,11,16,12,31,0,68,14,80
-	.byte 157,10,158,9,68,13,29,68,150,8,19,12,31,0,68,14,144,2,157,34,158,33,68,13,29,68,153,32,154,31,23,12
-	.byte 31,0,68,14,176,1,157,22,158,21,68,13,29,68,150,20,68,152,19,68,154,18,21,12,31,0,68,14,112,157,14,158
-	.byte 13,68,13,29,68,150,12,151,11,68,153,10,22,12,31,0,68,14,192,1,157,24,158,23,68,13,29,68,150,22,151,21
-	.byte 68,152,20,21,12,31,0,68,14,112,157,14,158,13,68,13,29,68,149,12,68,151,11,152,10,23,12,31,0,68,14,112
-	.byte 157,14,158,13,68,13,29,68,151,12,152,11,68,153,10,154,9,29,12,31,0,68,14,128,1,157,16,158,15,68,13,29
-	.byte 68,149,14,150,13,68,151,12,152,11,68,153,10,154,9,24,12,31,0,68,14,96,157,12,158,11,68,13,29,68,150,10
-	.byte 151,9,68,152,8,68,154,7,19,12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6,68,154,5,21,12,31,0
-	.byte 68,14,80,157,10,158,9,68,13,29,68,151,8,68,153,7,154,6,22,12,31,0,68,14,144,1,157,18,158,17,68,13
-	.byte 29,68,151,16,152,15,68,154,14
+	.byte 29,68,150,6,151,5,18,12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4,154,3,14,12,31,0,68,14,160
+	.byte 1,157,20,158,19,68,13,29,16,12,31,0,68,14,80,157,10,158,9,68,13,29,68,151,8,19,12,31,0,68,14,48
+	.byte 157,6,158,5,68,13,29,68,151,4,68,154,3,29,12,31,0,68,14,96,157,12,158,11,68,13,29,68,147,10,68,149
+	.byte 9,68,151,8,152,7,68,153,6,154,5,21,12,31,0,68,14,64,157,8,158,7,68,13,29,68,151,6,152,5,68,154
+	.byte 4,23,12,31,0,68,14,48,157,6,158,5,68,13,29,68,151,4,152,3,68,153,2,154,1,18,12,31,0,68,14,48
+	.byte 157,6,158,5,68,13,29,68,152,4,153,3,26,12,31,0,68,14,96,157,12,158,11,68,13,29,68,148,10,68,151,9
+	.byte 152,8,68,153,7,154,6,28,12,31,0,68,14,96,157,12,158,11,68,13,29,68,147,10,148,9,68,149,8,150,7,68
+	.byte 151,6,152,5,26,12,31,0,68,14,64,157,8,158,7,68,13,29,68,150,6,151,5,68,152,4,153,3,68,154,2,33
+	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29,68,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6,154
+	.byte 5,26,12,31,0,68,14,80,157,10,158,9,68,13,29,68,150,8,151,7,68,152,6,153,5,68,154,4,21,12,31,0
+	.byte 68,14,96,157,12,158,11,68,13,29,68,152,10,153,9,68,154,8,28,12,31,0,68,14,64,157,8,158,7,68,13,29
+	.byte 68,149,6,150,5,68,151,4,152,3,68,153,2,154,1,18,12,31,0,68,14,64,157,8,158,7,68,13,29,68,153,6
+	.byte 154,5,18,12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6,153,5,21,12,31,0,68,14,64,157,8,158,7
+	.byte 68,13,29,68,151,6,152,5,68,153,4,19,12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4,68,154,3,28
+	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,148,8,149,7,68,150,6,151,5,68,153,4,154,3,16,12,31,0
+	.byte 68,14,64,157,8,158,7,68,13,29,68,149,6,16,12,31,0,68,14,64,157,8,158,7,68,13,29,68,151,6,16,12
+	.byte 31,0,68,14,48,157,6,158,5,68,13,29,68,153,4,21,12,31,0,68,14,80,157,10,158,9,68,13,29,68,152,8
+	.byte 153,7,68,154,6,24,12,31,0,68,14,208,1,157,26,158,25,68,13,29,68,151,24,152,23,68,153,22,154,21,22,12
+	.byte 31,0,68,14,128,3,157,48,158,47,68,13,29,68,152,46,153,45,68,154,44,19,12,31,0,68,14,240,1,157,30,158
+	.byte 29,68,13,29,68,153,28,154,27,29,12,31,0,68,14,240,1,157,30,158,29,68,13,29,68,149,28,150,27,68,151,26
+	.byte 152,25,68,153,24,154,23,16,12,31,0,68,14,112,157,14,158,13,68,13,29,68,153,12,16,12,31,0,68,14,96,157
+	.byte 12,158,11,68,13,29,68,154,10,16,12,31,0,68,14,80,157,10,158,9,68,13,29,68,154,8,13,12,31,0,68,14
+	.byte 112,157,14,158,13,68,13,29,18,12,31,0,68,14,48,157,6,158,5,68,13,29,68,151,4,152,3,34,12,31,0,68
+	.byte 14,160,2,157,36,158,35,68,13,29,68,147,34,148,33,68,149,32,150,31,68,151,30,152,29,68,153,28,154,27,28,12
+	.byte 31,0,68,14,96,157,12,158,11,68,13,29,68,149,10,150,9,68,151,8,152,7,68,153,6,154,5,18,12,31,0,68
+	.byte 14,80,157,10,158,9,68,13,29,68,153,8,154,7,21,12,31,0,68,14,96,157,12,158,11,68,13,29,68,150,10,68
+	.byte 153,9,154,8,21,12,31,0,68,14,80,157,10,158,9,68,13,29,68,151,8,68,153,7,154,6,34,12,31,0,68,14
+	.byte 240,1,157,30,158,29,68,13,29,68,147,28,148,27,68,149,26,150,25,68,151,24,152,23,68,153,22,154,21,23,12,31
+	.byte 0,68,14,96,157,12,158,11,68,13,29,68,151,10,152,9,68,153,8,154,7,28,12,31,0,68,14,96,157,12,158,11
+	.byte 68,13,29,68,148,10,149,9,68,150,8,151,7,68,152,6,153,5,19,12,31,0,68,14,64,157,8,158,7,68,13,29
+	.byte 68,152,6,68,154,5,27,12,31,0,68,14,160,1,157,20,158,19,68,13,29,68,150,18,151,17,68,152,16,153,15,68
+	.byte 154,14,27,12,31,0,68,14,208,2,157,42,158,41,68,13,29,68,150,40,151,39,68,152,38,153,37,68,154,36,20,12
+	.byte 31,0,68,14,192,2,157,40,158,39,68,13,29,68,149,38,68,154,37,34,12,31,0,68,14,176,3,157,54,158,53,68
+	.byte 13,29,68,147,52,148,51,68,149,50,150,49,68,151,48,152,47,68,153,46,154,45,27,12,31,0,68,14,240,1,157,30
+	.byte 158,29,68,13,29,68,150,28,151,27,68,152,26,153,25,68,154,24,21,12,31,0,68,14,64,157,8,158,7,68,13,29
+	.byte 68,152,6,153,5,68,154,4,28,12,31,0,68,14,80,157,10,158,9,68,13,29,68,149,8,150,7,68,151,6,152,5
+	.byte 68,153,4,154,3,16,12,31,0,68,14,64,157,8,158,7,68,13,29,68,150,6,16,12,31,0,68,14,80,157,10,158
+	.byte 9,68,13,29,68,148,8,23,12,31,0,68,14,64,157,8,158,7,68,13,29,68,151,6,152,5,68,153,4,154,3,17
+	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29,68,154,18,21,12,31,0,68,14,48,157,6,158,5,68,13,29,68
+	.byte 151,4,152,3,68,153,2,33,12,31,0,68,14,80,157,10,158,9,68,13,29,68,147,8,148,7,68,149,6,150,5,68
+	.byte 151,4,152,3,68,153,2,154,1,17,12,31,0,68,14,176,1,157,22,158,21,68,13,29,68,152,20,24,12,31,0,84
+	.byte 14,192,4,157,72,158,71,68,13,29,68,151,70,152,69,68,153,68,154,67,24,12,31,0,68,14,224,3,157,60,158,59
+	.byte 68,13,29,68,151,58,152,57,68,153,56,154,55,24,12,31,0,68,14,240,3,157,62,158,61,68,13,29,68,151,60,152
+	.byte 59,68,153,58,154,57,19,12,31,0,68,14,208,1,157,26,158,25,68,13,29,68,153,24,154,23,26,12,31,0,68,14
+	.byte 112,157,14,158,13,68,13,29,68,150,12,151,11,68,152,10,153,9,68,154,8,21,12,31,0,68,14,96,157,12,158,11
+	.byte 68,13,29,68,151,10,152,9,68,153,8,18,12,31,0,68,14,96,157,12,158,11,68,13,29,68,153,10,154,9,16,12
+	.byte 31,0,68,14,112,157,14,158,13,68,13,29,68,152,12,21,12,31,0,68,14,80,157,10,158,9,68,13,29,68,151,8
+	.byte 152,7,68,153,6,22,12,31,0,68,14,240,1,157,30,158,29,68,13,29,68,152,28,153,27,68,154,26,18,12,31,0
+	.byte 68,14,112,157,14,158,13,68,13,29,68,152,12,153,11,22,12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,150
+	.byte 14,151,13,68,152,12,22,12,31,0,68,14,224,1,157,28,158,27,68,13,29,68,152,26,153,25,68,154,24,24,12,31
+	.byte 0,68,14,240,2,157,46,158,45,68,13,29,68,151,44,152,43,68,153,42,154,41,22,12,31,0,68,14,224,2,157,44
+	.byte 158,43,68,13,29,68,152,42,153,41,68,154,40,19,12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,153,16,154
+	.byte 15,18,12,31,0,68,14,112,157,14,158,13,68,13,29,68,153,12,154,11,23,12,31,0,68,14,80,157,10,158,9,68
+	.byte 13,29,68,151,8,152,7,68,153,6,154,5,19,12,31,0,68,14,160,2,157,36,158,35,68,13,29,68,153,34,154,33
+	.byte 17,12,31,0,68,14,160,1,157,20,158,19,68,13,29,68,153,18,26,12,31,0,68,14,96,157,12,158,11,68,13,29
+	.byte 68,150,10,151,9,68,152,8,153,7,68,154,6,18,12,31,0,68,14,80,157,10,158,9,68,13,29,68,152,8,153,7
+	.byte 17,12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,152,14,17,12,31,0,68,14,144,1,157,18,158,17,68,13
+	.byte 29,68,152,16,16,12,31,0,68,14,96,157,12,158,11,68,13,29,68,151,10,16,12,31,0,68,14,96,157,12,158,11
+	.byte 68,13,29,68,150,10,19,12,31,0,68,14,128,2,157,32,158,31,68,13,29,68,153,30,154,29,23,12,31,0,68,14
+	.byte 192,1,157,24,158,23,68,13,29,68,150,22,68,152,21,68,154,20,22,12,31,0,68,14,144,1,157,18,158,17,68,13
+	.byte 29,68,150,16,151,15,68,153,14,21,12,31,0,68,14,112,157,14,158,13,68,13,29,68,152,12,153,11,68,154,10,20
+	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,150,14,68,152,13,24,12,31,0,68,14,128,2,157,32,158,31
+	.byte 68,13,29,68,151,30,152,29,68,153,28,154,27,19,12,31,0,68,14,64,157,8,158,7,68,13,29,68,150,6,68,152
+	.byte 5,29,12,31,0,68,14,192,2,157,40,158,39,68,13,29,68,149,38,150,37,68,151,36,152,35,68,153,34,154,33,20
+	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,151,16,68,153,15,17,12,31,0,68,14,160,1,157,20,158,19
+	.byte 68,13,29,68,151,18,16,12,31,0,68,14,112,157,14,158,13,68,13,29,68,151,12,19,12,31,0,68,14,112,157,14
+	.byte 158,13,68,13,29,68,151,12,68,153,11,39,12,31,0,68,14,192,1,157,24,158,23,68,13,29,76,147,18,148,17,68
+	.byte 149,16,150,15,68,151,14,152,13,68,153,12,154,11,68,155,10,156,9,39,12,31,0,68,14,208,1,157,26,158,25,68
+	.byte 13,29,76,147,17,148,16,68,149,15,150,14,68,151,13,152,12,68,153,11,154,10,68,155,9,156,8,39,12,31,0,68
+	.byte 14,176,1,157,22,158,21,68,13,29,76,147,15,148,14,68,149,13,150,12,68,151,11,152,10,68,153,9,154,8,68,155
+	.byte 7,156,6,39,12,31,0,68,14,160,1,157,20,158,19,68,13,29,76,147,15,148,14,68,149,13,150,12,68,151,11,152
+	.byte 10,68,153,9,154,8,68,155,7,156,6,39,12,31,0,68,14,176,1,157,22,158,21,68,13,29,76,147,17,148,16,68
+	.byte 149,15,150,14,68,151,13,152,12,68,153,11,154,10,68,155,9,156,8,39,12,31,0,68,14,224,1,157,28,158,27,68
+	.byte 13,29,76,147,18,148,17,68,149,16,150,15,68,151,14,152,13,68,153,12,154,11,68,155,10,156,9,39,12,31,0,68
+	.byte 14,208,1,157,26,158,25,68,13,29,76,147,16,148,15,68,149,14,150,13,68,151,12,152,11,68,153,10,154,9,68,155
+	.byte 8,156,7,14,12,31,0,68,14,192,1,157,24,158,23,68,13,29,22,12,31,0,68,14,208,1,157,26,158,25,68,13
+	.byte 29,68,150,24,151,23,68,152,22,16,12,31,0,68,14,80,157,10,158,9,68,13,29,68,153,8,16,12,31,0,68,14
+	.byte 96,157,12,158,11,68,13,29,84,156,10,16,12,31,0,68,14,96,157,12,158,11,68,13,29,68,156,10,18,12,31,0
+	.byte 68,14,112,157,14,158,13,68,13,29,68,151,12,152,11,16,12,31,0,68,14,80,157,10,158,9,68,13,29,68,150,8
+	.byte 19,12,31,0,68,14,144,2,157,34,158,33,68,13,29,68,153,32,154,31,23,12,31,0,68,14,176,1,157,22,158,21
+	.byte 68,13,29,68,150,20,68,152,19,68,154,18,22,12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,150,14,151,13
+	.byte 68,153,12,22,12,31,0,68,14,192,1,157,24,158,23,68,13,29,68,150,22,151,21,68,152,20,21,12,31,0,68,14
+	.byte 112,157,14,158,13,68,13,29,68,149,12,68,151,11,152,10,23,12,31,0,68,14,112,157,14,158,13,68,13,29,68,151
+	.byte 12,152,11,68,153,10,154,9,29,12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,149,14,150,13,68,151,12,152
+	.byte 11,68,153,10,154,9,16,12,31,0,68,14,96,157,12,158,11,68,13,29,68,153,10,24,12,31,0,68,14,96,157,12
+	.byte 158,11,68,13,29,68,150,10,151,9,68,152,8,68,154,7,22,12,31,0,68,14,144,1,157,18,158,17,68,13,29,68
+	.byte 151,16,152,15,68,154,14
 
 .text
 	.align 4
@@ -78823,1210 +79417,1234 @@ add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #152]
 br x16
 .word 26276
-	.no_dead_strip plt__rgctx_fetch_227
-plt__rgctx_fetch_227:
+	.no_dead_strip plt_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_NoValue
+plt_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_NoValue:
 _p_630:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #160]
 br x16
 .word 26286
-	.no_dead_strip plt__rgctx_fetch_228
-plt__rgctx_fetch_228:
+	.no_dead_strip plt__rgctx_fetch_227
+plt__rgctx_fetch_227:
 _p_631:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #168]
 br x16
-.word 26306
-	.no_dead_strip plt__rgctx_fetch_229
-plt__rgctx_fetch_229:
+.word 26291
+	.no_dead_strip plt__rgctx_fetch_228
+plt__rgctx_fetch_228:
 _p_632:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #176]
 br x16
-.word 26326
-	.no_dead_strip plt__rgctx_fetch_230
-plt__rgctx_fetch_230:
+.word 26311
+	.no_dead_strip plt__rgctx_fetch_229
+plt__rgctx_fetch_229:
 _p_633:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #184]
 br x16
-.word 26334
-	.no_dead_strip plt__rgctx_fetch_231
-plt__rgctx_fetch_231:
+.word 26331
+	.no_dead_strip plt__rgctx_fetch_230
+plt__rgctx_fetch_230:
 _p_634:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #192]
 br x16
-.word 26353
-	.no_dead_strip plt__rgctx_fetch_232
-plt__rgctx_fetch_232:
+.word 26339
+	.no_dead_strip plt__rgctx_fetch_231
+plt__rgctx_fetch_231:
 _p_635:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #200]
 br x16
-.word 26383
-	.no_dead_strip plt__rgctx_fetch_233
-plt__rgctx_fetch_233:
+.word 26358
+	.no_dead_strip plt__rgctx_fetch_232
+plt__rgctx_fetch_232:
 _p_636:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #208]
 br x16
-.word 26395
-	.no_dead_strip plt__rgctx_fetch_234
-plt__rgctx_fetch_234:
+.word 26388
+	.no_dead_strip plt__rgctx_fetch_233
+plt__rgctx_fetch_233:
 _p_637:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #216]
 br x16
-.word 26414
-	.no_dead_strip plt__rgctx_fetch_235
-plt__rgctx_fetch_235:
+.word 26400
+	.no_dead_strip plt__rgctx_fetch_234
+plt__rgctx_fetch_234:
 _p_638:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #224]
 br x16
-.word 26426
-	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
-plt__jit_icall_mono_thread_interruption_checkpoint:
+.word 26419
+	.no_dead_strip plt__rgctx_fetch_235
+plt__rgctx_fetch_235:
 _p_639:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #232]
 br x16
-.word 26449
-	.no_dead_strip plt_long_Equals_object
-plt_long_Equals_object:
+.word 26431
+	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
+plt__jit_icall_mono_thread_interruption_checkpoint:
 _p_640:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #240]
 br x16
-.word 26452
-	.no_dead_strip plt_long_ToString
-plt_long_ToString:
+.word 26454
+	.no_dead_strip plt_long_Equals_object
+plt_long_Equals_object:
 _p_641:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #248]
 br x16
 .word 26457
-	.no_dead_strip plt_System_Array_InternalArray__get_Item_System_IO_Compression_ZipGenericExtraField_int
-plt_System_Array_InternalArray__get_Item_System_IO_Compression_ZipGenericExtraField_int:
+	.no_dead_strip plt_long_ToString
+plt_long_ToString:
 _p_642:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #256]
 br x16
 .word 26462
-	.no_dead_strip plt_System_Array_InternalEnumerator_1_System_IO_Compression_ZipGenericExtraField_get_Current
-plt_System_Array_InternalEnumerator_1_System_IO_Compression_ZipGenericExtraField_get_Current:
+	.no_dead_strip plt_System_Array_InternalArray__get_Item_System_IO_Compression_ZipGenericExtraField_int
+plt_System_Array_InternalArray__get_Item_System_IO_Compression_ZipGenericExtraField_int:
 _p_643:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #264]
 br x16
-.word 26478
-	.no_dead_strip plt_System_Array_InternalEnumerator_1_System_IO_Compression_ZipGenericExtraField__ctor_System_Array
-plt_System_Array_InternalEnumerator_1_System_IO_Compression_ZipGenericExtraField__ctor_System_Array:
+.word 26467
+	.no_dead_strip plt_System_Array_InternalEnumerator_1_System_IO_Compression_ZipGenericExtraField_get_Current
+plt_System_Array_InternalEnumerator_1_System_IO_Compression_ZipGenericExtraField_get_Current:
 _p_644:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #272]
 br x16
-.word 26493
-	.no_dead_strip plt_System_Collections_Generic_List_1_Enumerator_System_IO_Compression_ZipGenericExtraField_MoveNextRare
-plt_System_Collections_Generic_List_1_Enumerator_System_IO_Compression_ZipGenericExtraField_MoveNextRare:
+.word 26483
+	.no_dead_strip plt_System_Array_InternalEnumerator_1_System_IO_Compression_ZipGenericExtraField__ctor_System_Array
+plt_System_Array_InternalEnumerator_1_System_IO_Compression_ZipGenericExtraField__ctor_System_Array:
 _p_645:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #280]
 br x16
-.word 26508
-	.no_dead_strip plt_int_Equals_object
-plt_int_Equals_object:
+.word 26498
+	.no_dead_strip plt_System_Collections_Generic_List_1_Enumerator_System_IO_Compression_ZipGenericExtraField_MoveNextRare
+plt_System_Collections_Generic_List_1_Enumerator_System_IO_Compression_ZipGenericExtraField_MoveNextRare:
 _p_646:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #288]
 br x16
-.word 26527
-	.no_dead_strip plt_int_ToString
-plt_int_ToString:
+.word 26513
+	.no_dead_strip plt_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_EnumFailedVersion
+plt_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_EnumFailedVersion:
 _p_647:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #296]
 br x16
 .word 26532
-	.no_dead_strip plt__rgctx_fetch_236
-plt__rgctx_fetch_236:
+	.no_dead_strip plt_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_EnumOpCantHappen
+plt_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_EnumOpCantHappen:
 _p_648:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #304]
 br x16
-.word 26544
-	.no_dead_strip plt__rgctx_fetch_237
-plt__rgctx_fetch_237:
+.word 26537
+	.no_dead_strip plt_int_Equals_object
+plt_int_Equals_object:
 _p_649:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #312]
 br x16
-.word 26554
-	.no_dead_strip plt__rgctx_fetch_238
-plt__rgctx_fetch_238:
+.word 26542
+	.no_dead_strip plt_int_ToString
+plt_int_ToString:
 _p_650:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #320]
 br x16
-.word 26582
-	.no_dead_strip plt__rgctx_fetch_239
-plt__rgctx_fetch_239:
+.word 26547
+	.no_dead_strip plt__rgctx_fetch_236
+plt__rgctx_fetch_236:
 _p_651:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #328]
 br x16
-.word 26599
-	.no_dead_strip plt__rgctx_fetch_240
-plt__rgctx_fetch_240:
+.word 26559
+	.no_dead_strip plt__rgctx_fetch_237
+plt__rgctx_fetch_237:
 _p_652:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #336]
 br x16
-.word 26616
-	.no_dead_strip plt__rgctx_fetch_241
-plt__rgctx_fetch_241:
+.word 26569
+	.no_dead_strip plt__rgctx_fetch_238
+plt__rgctx_fetch_238:
 _p_653:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #344]
 br x16
-.word 26637
-	.no_dead_strip plt__rgctx_fetch_242
-plt__rgctx_fetch_242:
+.word 26597
+	.no_dead_strip plt__rgctx_fetch_239
+plt__rgctx_fetch_239:
 _p_654:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #352]
 br x16
-.word 26665
-	.no_dead_strip plt__rgctx_fetch_243
-plt__rgctx_fetch_243:
+.word 26614
+	.no_dead_strip plt__rgctx_fetch_240
+plt__rgctx_fetch_240:
 _p_655:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #360]
 br x16
-.word 26675
-	.no_dead_strip plt__rgctx_fetch_244
-plt__rgctx_fetch_244:
+.word 26631
+	.no_dead_strip plt__rgctx_fetch_241
+plt__rgctx_fetch_241:
 _p_656:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #368]
 br x16
-.word 26703
-	.no_dead_strip plt__rgctx_fetch_245
-plt__rgctx_fetch_245:
+.word 26652
+	.no_dead_strip plt__rgctx_fetch_242
+plt__rgctx_fetch_242:
 _p_657:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #376]
 br x16
-.word 26713
-	.no_dead_strip plt__rgctx_fetch_246
-plt__rgctx_fetch_246:
+.word 26680
+	.no_dead_strip plt__rgctx_fetch_243
+plt__rgctx_fetch_243:
 _p_658:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #384]
 br x16
-.word 26734
-	.no_dead_strip plt__rgctx_fetch_247
-plt__rgctx_fetch_247:
+.word 26690
+	.no_dead_strip plt__rgctx_fetch_244
+plt__rgctx_fetch_244:
 _p_659:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #392]
 br x16
-.word 26755
-	.no_dead_strip plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_ConfiguredTaskAwaiter_UnsafeOnCompleted_System_Action
-plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_ConfiguredTaskAwaiter_UnsafeOnCompleted_System_Action:
+.word 26718
+	.no_dead_strip plt__rgctx_fetch_245
+plt__rgctx_fetch_245:
 _p_660:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #400]
 br x16
-.word 26776
-	.no_dead_strip plt__rgctx_fetch_248
-plt__rgctx_fetch_248:
+.word 26728
+	.no_dead_strip plt__rgctx_fetch_246
+plt__rgctx_fetch_246:
 _p_661:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #408]
 br x16
-.word 26788
-	.no_dead_strip plt__rgctx_fetch_249
-plt__rgctx_fetch_249:
+.word 26749
+	.no_dead_strip plt__rgctx_fetch_247
+plt__rgctx_fetch_247:
 _p_662:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #416]
 br x16
-.word 26798
-	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_OnCompletedInternal_System_Threading_Tasks_Task_System_Action_bool_bool
-plt_System_Runtime_CompilerServices_TaskAwaiter_OnCompletedInternal_System_Threading_Tasks_Task_System_Action_bool_bool:
+.word 26770
+	.no_dead_strip plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_ConfiguredTaskAwaiter_UnsafeOnCompleted_System_Action
+plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_ConfiguredTaskAwaiter_UnsafeOnCompleted_System_Action:
 _p_663:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #424]
 br x16
-.word 26819
-	.no_dead_strip plt__jit_icall_mono_thread_force_interruption_checkpoint_noraise
-plt__jit_icall_mono_thread_force_interruption_checkpoint_noraise:
+.word 26791
+	.no_dead_strip plt__rgctx_fetch_248
+plt__rgctx_fetch_248:
 _p_664:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #432]
 br x16
-.word 26824
-	.no_dead_strip plt_System_Nullable_1_System_IO_Compression_CompressionLevel_UnboxExact_object
-plt_System_Nullable_1_System_IO_Compression_CompressionLevel_UnboxExact_object:
+.word 26803
+	.no_dead_strip plt__rgctx_fetch_249
+plt__rgctx_fetch_249:
 _p_665:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #440]
 br x16
-.word 26827
-	.no_dead_strip plt_System_Nullable_1_long_Unbox_object
-plt_System_Nullable_1_long_Unbox_object:
+.word 26813
+	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_OnCompletedInternal_System_Threading_Tasks_Task_System_Action_bool_bool
+plt_System_Runtime_CompilerServices_TaskAwaiter_OnCompletedInternal_System_Threading_Tasks_Task_System_Action_bool_bool:
 _p_666:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #448]
 br x16
-.word 26844
-	.no_dead_strip plt__icall_native_Interop_Brotli_BrotliDecoderCreateInstance_intptr_intptr_intptr
-plt__icall_native_Interop_Brotli_BrotliDecoderCreateInstance_intptr_intptr_intptr:
+.word 26834
+	.no_dead_strip plt__jit_icall_mono_thread_force_interruption_checkpoint_noraise
+plt__jit_icall_mono_thread_force_interruption_checkpoint_noraise:
 _p_667:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #456]
 br x16
-.word 26861
-	.no_dead_strip plt_Microsoft_Win32_SafeHandles_SafeBrotliDecoderHandle__ctor
-plt_Microsoft_Win32_SafeHandles_SafeBrotliDecoderHandle__ctor:
+.word 26839
+	.no_dead_strip plt_System_Nullable_1_System_IO_Compression_CompressionLevel_UnboxExact_object
+plt_System_Nullable_1_System_IO_Compression_CompressionLevel_UnboxExact_object:
 _p_668:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #464]
 br x16
-.word 26864
-	.no_dead_strip plt_System_Runtime_InteropServices_SafeHandle_DangerousAddRef_bool_
-plt_System_Runtime_InteropServices_SafeHandle_DangerousAddRef_bool_:
+.word 26842
+	.no_dead_strip plt_System_Nullable_1_long_Unbox_object
+plt_System_Nullable_1_long_Unbox_object:
 _p_669:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #472]
 br x16
-.word 26867
-	.no_dead_strip plt__icall_native_Interop_Brotli_BrotliDecoderDecompressStream_Microsoft_Win32_SafeHandles_SafeBrotliDecoderHandle_intptr__byte___intptr__byte___intptr_
-plt__icall_native_Interop_Brotli_BrotliDecoderDecompressStream_Microsoft_Win32_SafeHandles_SafeBrotliDecoderHandle_intptr__byte___intptr__byte___intptr_:
+.word 26859
+	.no_dead_strip plt__icall_native_Interop_Brotli_BrotliDecoderCreateInstance_intptr_intptr_intptr
+plt__icall_native_Interop_Brotli_BrotliDecoderCreateInstance_intptr_intptr_intptr:
 _p_670:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #480]
 br x16
-.word 26872
-	.no_dead_strip plt_System_Runtime_InteropServices_SafeHandle_DangerousRelease
-plt_System_Runtime_InteropServices_SafeHandle_DangerousRelease:
+.word 26876
+	.no_dead_strip plt_Microsoft_Win32_SafeHandles_SafeBrotliDecoderHandle__ctor
+plt_Microsoft_Win32_SafeHandles_SafeBrotliDecoderHandle__ctor:
 _p_671:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #488]
 br x16
-.word 26875
-	.no_dead_strip plt__icall_native_Interop_Brotli_BrotliDecoderDecompress_intptr_byte__intptr__byte_
-plt__icall_native_Interop_Brotli_BrotliDecoderDecompress_intptr_byte__intptr__byte_:
+.word 26879
+	.no_dead_strip plt_System_Runtime_InteropServices_SafeHandle_DangerousAddRef_bool_
+plt_System_Runtime_InteropServices_SafeHandle_DangerousAddRef_bool_:
 _p_672:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #496]
 br x16
-.word 26880
-	.no_dead_strip plt__icall_native_Interop_Brotli_BrotliDecoderDestroyInstance_intptr
-plt__icall_native_Interop_Brotli_BrotliDecoderDestroyInstance_intptr:
+.word 26882
+	.no_dead_strip plt__icall_native_Interop_Brotli_BrotliDecoderDecompressStream_Microsoft_Win32_SafeHandles_SafeBrotliDecoderHandle_intptr__byte___intptr__byte___intptr_
+plt__icall_native_Interop_Brotli_BrotliDecoderDecompressStream_Microsoft_Win32_SafeHandles_SafeBrotliDecoderHandle_intptr__byte___intptr__byte___intptr_:
 _p_673:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #504]
 br x16
-.word 26883
-	.no_dead_strip plt__icall_native_Interop_Brotli_BrotliDecoderIsFinished_Microsoft_Win32_SafeHandles_SafeBrotliDecoderHandle
-plt__icall_native_Interop_Brotli_BrotliDecoderIsFinished_Microsoft_Win32_SafeHandles_SafeBrotliDecoderHandle:
+.word 26887
+	.no_dead_strip plt_System_Runtime_InteropServices_SafeHandle_DangerousRelease
+plt_System_Runtime_InteropServices_SafeHandle_DangerousRelease:
 _p_674:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #512]
 br x16
-.word 26886
-	.no_dead_strip plt__icall_native_Interop_Brotli_BrotliEncoderCreateInstance_intptr_intptr_intptr
-plt__icall_native_Interop_Brotli_BrotliEncoderCreateInstance_intptr_intptr_intptr:
+.word 26890
+	.no_dead_strip plt__icall_native_Interop_Brotli_BrotliDecoderDecompress_intptr_byte__intptr__byte_
+plt__icall_native_Interop_Brotli_BrotliDecoderDecompress_intptr_byte__intptr__byte_:
 _p_675:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #520]
 br x16
-.word 26889
-	.no_dead_strip plt_Microsoft_Win32_SafeHandles_SafeBrotliEncoderHandle__ctor
-plt_Microsoft_Win32_SafeHandles_SafeBrotliEncoderHandle__ctor:
+.word 26895
+	.no_dead_strip plt__icall_native_Interop_Brotli_BrotliDecoderDestroyInstance_intptr
+plt__icall_native_Interop_Brotli_BrotliDecoderDestroyInstance_intptr:
 _p_676:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #528]
 br x16
-.word 26892
-	.no_dead_strip plt__icall_native_Interop_Brotli_BrotliEncoderSetParameter_Microsoft_Win32_SafeHandles_SafeBrotliEncoderHandle_System_IO_Compression_BrotliEncoderParameter_uint
-plt__icall_native_Interop_Brotli_BrotliEncoderSetParameter_Microsoft_Win32_SafeHandles_SafeBrotliEncoderHandle_System_IO_Compression_BrotliEncoderParameter_uint:
+.word 26898
+	.no_dead_strip plt__icall_native_Interop_Brotli_BrotliDecoderIsFinished_Microsoft_Win32_SafeHandles_SafeBrotliDecoderHandle
+plt__icall_native_Interop_Brotli_BrotliDecoderIsFinished_Microsoft_Win32_SafeHandles_SafeBrotliDecoderHandle:
 _p_677:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #536]
 br x16
-.word 26895
-	.no_dead_strip plt__icall_native_Interop_Brotli_BrotliEncoderCompressStream_Microsoft_Win32_SafeHandles_SafeBrotliEncoderHandle_System_IO_Compression_BrotliEncoderOperation_intptr__byte___intptr__byte___intptr_
-plt__icall_native_Interop_Brotli_BrotliEncoderCompressStream_Microsoft_Win32_SafeHandles_SafeBrotliEncoderHandle_System_IO_Compression_BrotliEncoderOperation_intptr__byte___intptr__byte___intptr_:
+.word 26901
+	.no_dead_strip plt__icall_native_Interop_Brotli_BrotliEncoderCreateInstance_intptr_intptr_intptr
+plt__icall_native_Interop_Brotli_BrotliEncoderCreateInstance_intptr_intptr_intptr:
 _p_678:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #544]
 br x16
-.word 26898
-	.no_dead_strip plt__icall_native_Interop_Brotli_BrotliEncoderHasMoreOutput_Microsoft_Win32_SafeHandles_SafeBrotliEncoderHandle
-plt__icall_native_Interop_Brotli_BrotliEncoderHasMoreOutput_Microsoft_Win32_SafeHandles_SafeBrotliEncoderHandle:
+.word 26904
+	.no_dead_strip plt_Microsoft_Win32_SafeHandles_SafeBrotliEncoderHandle__ctor
+plt_Microsoft_Win32_SafeHandles_SafeBrotliEncoderHandle__ctor:
 _p_679:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #552]
 br x16
-.word 26901
-	.no_dead_strip plt__icall_native_Interop_Brotli_BrotliEncoderDestroyInstance_intptr
-plt__icall_native_Interop_Brotli_BrotliEncoderDestroyInstance_intptr:
+.word 26907
+	.no_dead_strip plt__icall_native_Interop_Brotli_BrotliEncoderSetParameter_Microsoft_Win32_SafeHandles_SafeBrotliEncoderHandle_System_IO_Compression_BrotliEncoderParameter_uint
+plt__icall_native_Interop_Brotli_BrotliEncoderSetParameter_Microsoft_Win32_SafeHandles_SafeBrotliEncoderHandle_System_IO_Compression_BrotliEncoderParameter_uint:
 _p_680:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #560]
 br x16
-.word 26904
-	.no_dead_strip plt__icall_native_Interop_Brotli_BrotliEncoderCompress_int_int_int_intptr_byte__intptr__byte_
-plt__icall_native_Interop_Brotli_BrotliEncoderCompress_int_int_int_intptr_byte__intptr__byte_:
+.word 26910
+	.no_dead_strip plt__icall_native_Interop_Brotli_BrotliEncoderCompressStream_Microsoft_Win32_SafeHandles_SafeBrotliEncoderHandle_System_IO_Compression_BrotliEncoderOperation_intptr__byte___intptr__byte___intptr_
+plt__icall_native_Interop_Brotli_BrotliEncoderCompressStream_Microsoft_Win32_SafeHandles_SafeBrotliEncoderHandle_System_IO_Compression_BrotliEncoderOperation_intptr__byte___intptr__byte___intptr_:
 _p_681:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #568]
 br x16
-.word 26907
-	.no_dead_strip plt__rgctx_fetch_250
-plt__rgctx_fetch_250:
+.word 26913
+	.no_dead_strip plt__icall_native_Interop_Brotli_BrotliEncoderHasMoreOutput_Microsoft_Win32_SafeHandles_SafeBrotliEncoderHandle
+plt__icall_native_Interop_Brotli_BrotliEncoderHasMoreOutput_Microsoft_Win32_SafeHandles_SafeBrotliEncoderHandle:
 _p_682:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #576]
 br x16
-.word 26932
-	.no_dead_strip plt__rgctx_fetch_251
-plt__rgctx_fetch_251:
+.word 26916
+	.no_dead_strip plt__icall_native_Interop_Brotli_BrotliEncoderDestroyInstance_intptr
+plt__icall_native_Interop_Brotli_BrotliEncoderDestroyInstance_intptr:
 _p_683:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #584]
 br x16
-.word 26944
-	.no_dead_strip plt__rgctx_fetch_252
-plt__rgctx_fetch_252:
+.word 26919
+	.no_dead_strip plt__icall_native_Interop_Brotli_BrotliEncoderCompress_int_int_int_intptr_byte__intptr__byte_
+plt__icall_native_Interop_Brotli_BrotliEncoderCompress_int_int_int_intptr_byte__intptr__byte_:
 _p_684:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #592]
 br x16
-.word 26982
-	.no_dead_strip plt__rgctx_fetch_253
-plt__rgctx_fetch_253:
+.word 26922
+	.no_dead_strip plt__rgctx_fetch_250
+plt__rgctx_fetch_250:
 _p_685:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #600]
 br x16
-.word 27004
-	.no_dead_strip plt_System_Threading_ExecutionContext_EstablishCopyOnWriteScope_System_Threading_ExecutionContextSwitcher_
-plt_System_Threading_ExecutionContext_EstablishCopyOnWriteScope_System_Threading_ExecutionContextSwitcher_:
+.word 26947
+	.no_dead_strip plt__rgctx_fetch_251
+plt__rgctx_fetch_251:
 _p_686:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #608]
 br x16
-.word 27026
-	.no_dead_strip plt_System_IO_Compression_BrotliStream__FinishReadAsyncMemoryd__41_MoveNext
-plt_System_IO_Compression_BrotliStream__FinishReadAsyncMemoryd__41_MoveNext:
+.word 26959
+	.no_dead_strip plt__rgctx_fetch_252
+plt__rgctx_fetch_252:
 _p_687:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #616]
 br x16
-.word 27031
-	.no_dead_strip plt_System_Threading_ExecutionContextSwitcher_Undo
-plt_System_Threading_ExecutionContextSwitcher_Undo:
+.word 26997
+	.no_dead_strip plt__rgctx_fetch_253
+plt__rgctx_fetch_253:
 _p_688:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #624]
 br x16
-.word 27034
-	.no_dead_strip plt_System_IO_Compression_BrotliStream__WriteAsyncMemoryCored__52_MoveNext
-plt_System_IO_Compression_BrotliStream__WriteAsyncMemoryCored__52_MoveNext:
+.word 27019
+	.no_dead_strip plt_System_Threading_ExecutionContext_EstablishCopyOnWriteScope_System_Threading_ExecutionContextSwitcher_
+plt_System_Threading_ExecutionContext_EstablishCopyOnWriteScope_System_Threading_ExecutionContextSwitcher_:
 _p_689:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #632]
 br x16
-.word 27039
-	.no_dead_strip plt_System_IO_Compression_BrotliStream__FlushAsyncCored__55_MoveNext
-plt_System_IO_Compression_BrotliStream__FlushAsyncCored__55_MoveNext:
+.word 27041
+	.no_dead_strip plt_System_IO_Compression_BrotliStream__FinishReadAsyncMemoryd__41_MoveNext
+plt_System_IO_Compression_BrotliStream__FinishReadAsyncMemoryd__41_MoveNext:
 _p_690:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #640]
 br x16
-.word 27042
-	.no_dead_strip plt__rgctx_fetch_254
-plt__rgctx_fetch_254:
+.word 27046
+	.no_dead_strip plt_System_Threading_ExecutionContextSwitcher_Undo
+plt_System_Threading_ExecutionContextSwitcher_Undo:
 _p_691:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #648]
 br x16
-.word 27067
-	.no_dead_strip plt__rgctx_fetch_255
-plt__rgctx_fetch_255:
+.word 27049
+	.no_dead_strip plt_System_IO_Compression_BrotliStream__WriteAsyncMemoryCored__52_MoveNext
+plt_System_IO_Compression_BrotliStream__WriteAsyncMemoryCored__52_MoveNext:
 _p_692:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #656]
 br x16
-.word 27079
-	.no_dead_strip plt_System_IO_Compression_DeflateManagedStream__ReadAsyncCored__40_MoveNext
-plt_System_IO_Compression_DeflateManagedStream__ReadAsyncCored__40_MoveNext:
+.word 27054
+	.no_dead_strip plt_System_IO_Compression_BrotliStream__FlushAsyncCored__55_MoveNext
+plt_System_IO_Compression_BrotliStream__FlushAsyncCored__55_MoveNext:
 _p_693:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #664]
 br x16
-.word 27102
-	.no_dead_strip plt_System_IO_Compression_DeflateManagedStream__WriteAsyncCored__47_MoveNext
-plt_System_IO_Compression_DeflateManagedStream__WriteAsyncCored__47_MoveNext:
+.word 27057
+	.no_dead_strip plt__rgctx_fetch_254
+plt__rgctx_fetch_254:
 _p_694:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #672]
 br x16
-.word 27105
-	.no_dead_strip plt_System_Collections_Generic_List_1_System_IO_Compression_ZipGenericExtraField_EnsureCapacity_int
-plt_System_Collections_Generic_List_1_System_IO_Compression_ZipGenericExtraField_EnsureCapacity_int:
+.word 27082
+	.no_dead_strip plt__rgctx_fetch_255
+plt__rgctx_fetch_255:
 _p_695:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #680]
 br x16
-.word 27108
-	.no_dead_strip plt_System_Collections_Generic_List_1_Enumerator_System_IO_Compression_ZipGenericExtraField__ctor_System_Collections_Generic_List_1_System_IO_Compression_ZipGenericExtraField
-plt_System_Collections_Generic_List_1_Enumerator_System_IO_Compression_ZipGenericExtraField__ctor_System_Collections_Generic_List_1_System_IO_Compression_ZipGenericExtraField:
+.word 27094
+	.no_dead_strip plt_System_IO_Compression_DeflateManagedStream__ReadAsyncCored__40_MoveNext
+plt_System_IO_Compression_DeflateManagedStream__ReadAsyncCored__40_MoveNext:
 _p_696:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #688]
 br x16
-.word 27127
-	.no_dead_strip plt_System_Collections_Generic_List_1_System_IO_Compression_ZipGenericExtraField_IndexOf_System_IO_Compression_ZipGenericExtraField
-plt_System_Collections_Generic_List_1_System_IO_Compression_ZipGenericExtraField_IndexOf_System_IO_Compression_ZipGenericExtraField:
+.word 27117
+	.no_dead_strip plt_System_IO_Compression_DeflateManagedStream__WriteAsyncCored__47_MoveNext
+plt_System_IO_Compression_DeflateManagedStream__WriteAsyncCored__47_MoveNext:
 _p_697:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #696]
 br x16
-.word 27146
-	.no_dead_strip plt_System_Collections_Generic_List_1_System_IO_Compression_ZipGenericExtraField_RemoveAt_int
-plt_System_Collections_Generic_List_1_System_IO_Compression_ZipGenericExtraField_RemoveAt_int:
+.word 27120
+	.no_dead_strip plt_System_Collections_Generic_List_1_System_IO_Compression_ZipGenericExtraField_EnsureCapacity_int
+plt_System_Collections_Generic_List_1_System_IO_Compression_ZipGenericExtraField_EnsureCapacity_int:
 _p_698:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #704]
 br x16
-.word 27165
-	.no_dead_strip plt__rgctx_fetch_256
-plt__rgctx_fetch_256:
+.word 27123
+	.no_dead_strip plt_System_Collections_Generic_List_1_Enumerator_System_IO_Compression_ZipGenericExtraField__ctor_System_Collections_Generic_List_1_System_IO_Compression_ZipGenericExtraField
+plt_System_Collections_Generic_List_1_Enumerator_System_IO_Compression_ZipGenericExtraField__ctor_System_Collections_Generic_List_1_System_IO_Compression_ZipGenericExtraField:
 _p_699:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #712]
 br x16
-.word 27191
-	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_1_TResult_REF__ctor_System_Threading_Tasks_Task_1_TResult_REF
-plt_System_Runtime_CompilerServices_TaskAwaiter_1_TResult_REF__ctor_System_Threading_Tasks_Task_1_TResult_REF:
+.word 27142
+	.no_dead_strip plt_System_Collections_Generic_List_1_System_IO_Compression_ZipGenericExtraField_IndexOf_System_IO_Compression_ZipGenericExtraField
+plt_System_Collections_Generic_List_1_System_IO_Compression_ZipGenericExtraField_IndexOf_System_IO_Compression_ZipGenericExtraField:
 _p_700:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #720]
 br x16
-.word 27201
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_int_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_1_ConfiguredValueTaskAwaiter_int_System_IO_Compression_BrotliStream__FinishReadAsyncMemoryd__41_System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_1_ConfiguredValueTaskAwaiter_int__System_IO_Compression_BrotliStream__FinishReadAsyncMemoryd__41_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_int_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_1_ConfiguredValueTaskAwaiter_int_System_IO_Compression_BrotliStream__FinishReadAsyncMemoryd__41_System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_1_ConfiguredValueTaskAwaiter_int__System_IO_Compression_BrotliStream__FinishReadAsyncMemoryd__41_:
+.word 27161
+	.no_dead_strip plt_System_Collections_Generic_List_1_System_IO_Compression_ZipGenericExtraField_RemoveAt_int
+plt_System_Collections_Generic_List_1_System_IO_Compression_ZipGenericExtraField_RemoveAt_int:
 _p_701:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #728]
 br x16
-.word 27218
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_ConfiguredValueTaskAwaiter_System_IO_Compression_BrotliStream__WriteAsyncMemoryCored__52_System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_ConfiguredValueTaskAwaiter__System_IO_Compression_BrotliStream__WriteAsyncMemoryCored__52_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_ConfiguredValueTaskAwaiter_System_IO_Compression_BrotliStream__WriteAsyncMemoryCored__52_System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_ConfiguredValueTaskAwaiter__System_IO_Compression_BrotliStream__WriteAsyncMemoryCored__52_:
+.word 27180
+	.no_dead_strip plt__rgctx_fetch_256
+plt__rgctx_fetch_256:
 _p_702:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #736]
 br x16
-.word 27237
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_ConfiguredValueTaskAwaiter_System_IO_Compression_BrotliStream__FlushAsyncCored__55_System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_ConfiguredValueTaskAwaiter__System_IO_Compression_BrotliStream__FlushAsyncCored__55_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_ConfiguredValueTaskAwaiter_System_IO_Compression_BrotliStream__FlushAsyncCored__55_System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_ConfiguredValueTaskAwaiter__System_IO_Compression_BrotliStream__FlushAsyncCored__55_:
+.word 27206
+	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_1_TResult_REF__ctor_System_Threading_Tasks_Task_1_TResult_REF
+plt_System_Runtime_CompilerServices_TaskAwaiter_1_TResult_REF__ctor_System_Threading_Tasks_Task_1_TResult_REF:
 _p_703:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #744]
 br x16
-.word 27254
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_GetCompletionAction_System_Threading_Tasks_Task_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_
-plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_GetCompletionAction_System_Threading_Tasks_Task_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_:
+.word 27216
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_int_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_1_ConfiguredValueTaskAwaiter_int_System_IO_Compression_BrotliStream__FinishReadAsyncMemoryd__41_System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_1_ConfiguredValueTaskAwaiter_int__System_IO_Compression_BrotliStream__FinishReadAsyncMemoryd__41_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_int_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_1_ConfiguredValueTaskAwaiter_int_System_IO_Compression_BrotliStream__FinishReadAsyncMemoryd__41_System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_1_ConfiguredValueTaskAwaiter_int__System_IO_Compression_BrotliStream__FinishReadAsyncMemoryd__41_:
 _p_704:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #752]
 br x16
-.word 27271
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_PostBoxInitialization_System_Runtime_CompilerServices_IAsyncStateMachine_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_System_Threading_Tasks_Task
-plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_PostBoxInitialization_System_Runtime_CompilerServices_IAsyncStateMachine_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_System_Threading_Tasks_Task:
+.word 27233
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_ConfiguredValueTaskAwaiter_System_IO_Compression_BrotliStream__WriteAsyncMemoryCored__52_System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_ConfiguredValueTaskAwaiter__System_IO_Compression_BrotliStream__WriteAsyncMemoryCored__52_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_ConfiguredValueTaskAwaiter_System_IO_Compression_BrotliStream__WriteAsyncMemoryCored__52_System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_ConfiguredValueTaskAwaiter__System_IO_Compression_BrotliStream__WriteAsyncMemoryCored__52_:
 _p_705:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #760]
 br x16
-.word 27276
-	.no_dead_strip plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_int_UnsafeOnCompleted_System_Action
-plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_int_UnsafeOnCompleted_System_Action:
+.word 27252
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_ConfiguredValueTaskAwaiter_System_IO_Compression_BrotliStream__FlushAsyncCored__55_System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_ConfiguredValueTaskAwaiter__System_IO_Compression_BrotliStream__FlushAsyncCored__55_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_ConfiguredValueTaskAwaiter_System_IO_Compression_BrotliStream__FlushAsyncCored__55_System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_ConfiguredValueTaskAwaiter__System_IO_Compression_BrotliStream__FlushAsyncCored__55_:
 _p_706:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #768]
 br x16
-.word 27281
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_ThrowAsync_System_Exception_System_Threading_SynchronizationContext
-plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_ThrowAsync_System_Exception_System_Threading_SynchronizationContext:
+.word 27269
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_GetCompletionAction_System_Threading_Tasks_Task_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_
+plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_GetCompletionAction_System_Threading_Tasks_Task_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_:
 _p_707:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #776]
 br x16
-.word 27298
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_ConfiguredTaskAwaiter_System_IO_Compression_DeflateManagedStream__WriteAsyncCored__47_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_ConfiguredTaskAwaiter__System_IO_Compression_DeflateManagedStream__WriteAsyncCored__47_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_ConfiguredTaskAwaiter_System_IO_Compression_DeflateManagedStream__WriteAsyncCored__47_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_ConfiguredTaskAwaiter__System_IO_Compression_DeflateManagedStream__WriteAsyncCored__47_:
+.word 27286
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_PostBoxInitialization_System_Runtime_CompilerServices_IAsyncStateMachine_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_System_Threading_Tasks_Task
+plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_PostBoxInitialization_System_Runtime_CompilerServices_IAsyncStateMachine_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_System_Threading_Tasks_Task:
 _p_708:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #784]
 br x16
-.word 27303
-	.no_dead_strip plt_System_Buffer_Memmove_byte__byte__uint
-plt_System_Buffer_Memmove_byte__byte__uint:
+.word 27291
+	.no_dead_strip plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_int_UnsafeOnCompleted_System_Action
+plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_int_UnsafeOnCompleted_System_Action:
 _p_709:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #792]
 br x16
-.word 27320
-	.no_dead_strip plt__rgctx_fetch_257
-plt__rgctx_fetch_257:
+.word 27296
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_ThrowAsync_System_Exception_System_Threading_SynchronizationContext
+plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_ThrowAsync_System_Exception_System_Threading_SynchronizationContext:
 _p_710:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #800]
 br x16
-.word 27325
-	.no_dead_strip plt__rgctx_fetch_258
-plt__rgctx_fetch_258:
+.word 27313
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_ConfiguredTaskAwaiter_System_IO_Compression_DeflateManagedStream__WriteAsyncCored__47_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_ConfiguredTaskAwaiter__System_IO_Compression_DeflateManagedStream__WriteAsyncCored__47_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_ConfiguredTaskAwaiter_System_IO_Compression_DeflateManagedStream__WriteAsyncCored__47_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_ConfiguredTaskAwaiter__System_IO_Compression_DeflateManagedStream__WriteAsyncCored__47_:
 _p_711:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #808]
 br x16
-.word 27333
-	.no_dead_strip plt__rgctx_fetch_259
-plt__rgctx_fetch_259:
+.word 27318
+	.no_dead_strip plt_System_Buffer_Memmove_byte__byte__uint
+plt_System_Buffer_Memmove_byte__byte__uint:
 _p_712:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #816]
 br x16
-.word 27341
-	.no_dead_strip plt__rgctx_fetch_260
-plt__rgctx_fetch_260:
+.word 27335
+	.no_dead_strip plt__rgctx_fetch_257
+plt__rgctx_fetch_257:
 _p_713:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #824]
 br x16
-.word 27369
-	.no_dead_strip plt__rgctx_fetch_261
-plt__rgctx_fetch_261:
+.word 27340
+	.no_dead_strip plt__rgctx_fetch_258
+plt__rgctx_fetch_258:
 _p_714:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #832]
 br x16
-.word 27390
-	.no_dead_strip plt__rgctx_fetch_262
-plt__rgctx_fetch_262:
+.word 27348
+	.no_dead_strip plt__rgctx_fetch_259
+plt__rgctx_fetch_259:
 _p_715:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #840]
 br x16
-.word 27398
-	.no_dead_strip plt__rgctx_fetch_263
-plt__rgctx_fetch_263:
+.word 27356
+	.no_dead_strip plt__rgctx_fetch_260
+plt__rgctx_fetch_260:
 _p_716:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #848]
 br x16
-.word 27413
-	.no_dead_strip plt__rgctx_fetch_264
-plt__rgctx_fetch_264:
+.word 27384
+	.no_dead_strip plt__rgctx_fetch_261
+plt__rgctx_fetch_261:
 _p_717:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #856]
 br x16
-.word 27456
-	.no_dead_strip plt__rgctx_fetch_265
-plt__rgctx_fetch_265:
+.word 27405
+	.no_dead_strip plt__rgctx_fetch_262
+plt__rgctx_fetch_262:
 _p_718:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #864]
 br x16
-.word 27468
-	.no_dead_strip plt__rgctx_fetch_266
-plt__rgctx_fetch_266:
+.word 27413
+	.no_dead_strip plt__rgctx_fetch_263
+plt__rgctx_fetch_263:
 _p_719:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #872]
 br x16
-.word 27523
-	.no_dead_strip plt__rgctx_fetch_267
-plt__rgctx_fetch_267:
+.word 27428
+	.no_dead_strip plt__rgctx_fetch_264
+plt__rgctx_fetch_264:
 _p_720:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #880]
 br x16
-.word 27535
-	.no_dead_strip plt__rgctx_fetch_268
-plt__rgctx_fetch_268:
+.word 27471
+	.no_dead_strip plt__rgctx_fetch_265
+plt__rgctx_fetch_265:
 _p_721:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #888]
 br x16
-.word 27582
-	.no_dead_strip plt__rgctx_fetch_269
-plt__rgctx_fetch_269:
+.word 27483
+	.no_dead_strip plt__rgctx_fetch_266
+plt__rgctx_fetch_266:
 _p_722:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #896]
 br x16
-.word 27594
-	.no_dead_strip plt__rgctx_fetch_270
-plt__rgctx_fetch_270:
+.word 27538
+	.no_dead_strip plt__rgctx_fetch_267
+plt__rgctx_fetch_267:
 _p_723:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #904]
 br x16
-.word 27639
-	.no_dead_strip plt__rgctx_fetch_271
-plt__rgctx_fetch_271:
+.word 27550
+	.no_dead_strip plt__rgctx_fetch_268
+plt__rgctx_fetch_268:
 _p_724:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #912]
 br x16
-.word 27651
-	.no_dead_strip plt_System_Collections_Generic_List_1_System_IO_Compression_ZipGenericExtraField_set_Capacity_int
-plt_System_Collections_Generic_List_1_System_IO_Compression_ZipGenericExtraField_set_Capacity_int:
+.word 27597
+	.no_dead_strip plt__rgctx_fetch_269
+plt__rgctx_fetch_269:
 _p_725:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #920]
 br x16
-.word 27674
-	.no_dead_strip plt_System_ThrowHelper_ThrowArgumentOutOfRange_IndexException
-plt_System_ThrowHelper_ThrowArgumentOutOfRange_IndexException:
+.word 27609
+	.no_dead_strip plt__rgctx_fetch_270
+plt__rgctx_fetch_270:
 _p_726:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #928]
 br x16
-.word 27693
-	.no_dead_strip plt_System_Array_IndexOf_System_IO_Compression_ZipGenericExtraField_System_IO_Compression_ZipGenericExtraField___System_IO_Compression_ZipGenericExtraField_int_int
-plt_System_Array_IndexOf_System_IO_Compression_ZipGenericExtraField_System_IO_Compression_ZipGenericExtraField___System_IO_Compression_ZipGenericExtraField_int_int:
+.word 27654
+	.no_dead_strip plt__rgctx_fetch_271
+plt__rgctx_fetch_271:
 _p_727:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #936]
 br x16
-.word 27698
-	.no_dead_strip plt_System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_1_ConfiguredValueTaskAwaiter_int_UnsafeOnCompleted_System_Action
-plt_System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_1_ConfiguredValueTaskAwaiter_int_UnsafeOnCompleted_System_Action:
+.word 27666
+	.no_dead_strip plt_System_Collections_Generic_List_1_System_IO_Compression_ZipGenericExtraField_set_Capacity_int
+plt_System_Collections_Generic_List_1_System_IO_Compression_ZipGenericExtraField_set_Capacity_int:
 _p_728:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #944]
 br x16
-.word 27714
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_get_Task
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_get_Task:
+.word 27689
+	.no_dead_strip plt_System_ThrowHelper_ThrowArgumentOutOfRange_IndexException
+plt_System_ThrowHelper_ThrowArgumentOutOfRange_IndexException:
 _p_729:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #952]
 br x16
-.word 27731
-	.no_dead_strip plt_System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_ConfiguredValueTaskAwaiter_UnsafeOnCompleted_System_Action
-plt_System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_ConfiguredValueTaskAwaiter_UnsafeOnCompleted_System_Action:
+.word 27708
+	.no_dead_strip plt_System_Array_IndexOf_System_IO_Compression_ZipGenericExtraField_System_IO_Compression_ZipGenericExtraField___System_IO_Compression_ZipGenericExtraField_int_int
+plt_System_Array_IndexOf_System_IO_Compression_ZipGenericExtraField_System_IO_Compression_ZipGenericExtraField___System_IO_Compression_ZipGenericExtraField_int_int:
 _p_730:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #960]
 br x16
-.word 27742
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler:
+.word 27713
+	.no_dead_strip plt_System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_1_ConfiguredValueTaskAwaiter_int_UnsafeOnCompleted_System_Action
+plt_System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_1_ConfiguredValueTaskAwaiter_int_UnsafeOnCompleted_System_Action:
 _p_731:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #968]
 br x16
-.word 27747
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler:
+.word 27729
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_get_Task
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_get_Task:
 _p_732:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #976]
 br x16
-.word 27762
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_TrySetResult_System_Threading_Tasks_VoidTaskResult
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_TrySetResult_System_Threading_Tasks_VoidTaskResult:
+.word 27746
+	.no_dead_strip plt_System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_ConfiguredValueTaskAwaiter_UnsafeOnCompleted_System_Action
+plt_System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_ConfiguredValueTaskAwaiter_UnsafeOnCompleted_System_Action:
 _p_733:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #984]
 br x16
-.word 27777
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_GetResultCore_bool
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_GetResultCore_bool:
+.word 27757
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler:
 _p_734:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #992]
 br x16
-.word 27792
-	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult__ctor
-plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult__ctor:
+.word 27762
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler:
 _p_735:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1000]
 br x16
-.word 27807
-	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult
-plt_System_Runtime_CompilerServices_TaskAwaiter_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult:
+.word 27777
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_TrySetResult_System_Threading_Tasks_VoidTaskResult
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_TrySetResult_System_Threading_Tasks_VoidTaskResult:
 _p_736:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1008]
 br x16
-.word 27822
-	.no_dead_strip plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool
-plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool:
+.word 27792
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_GetResultCore_bool
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_GetResultCore_bool:
 _p_737:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1016]
 br x16
-.word 27837
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions:
+.word 27807
+	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult__ctor
+plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult__ctor:
 _p_738:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1024]
 br x16
-.word 27852
-	.no_dead_strip plt_System_Threading_Tasks_ContinuationTaskFromResultTask_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions
-plt_System_Threading_Tasks_ContinuationTaskFromResultTask_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions:
+.word 27822
+	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult
+plt_System_Runtime_CompilerServices_TaskAwaiter_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult:
 _p_739:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1032]
 br x16
-.word 27867
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_ContinueWith_System_Action_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_object_object_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_ContinueWith_System_Action_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_object_object_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions:
+.word 27837
+	.no_dead_strip plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool
+plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool:
 _p_740:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1040]
 br x16
-.word 27882
-	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskScheduler
-plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskScheduler:
+.word 27852
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions:
 _p_741:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1048]
 br x16
-.word 27897
-	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_GetDefaultScheduler_System_Threading_Tasks_Task
-plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_GetDefaultScheduler_System_Threading_Tasks_Task:
+.word 27867
+	.no_dead_strip plt_System_Threading_Tasks_ContinuationTaskFromResultTask_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions
+plt_System_Threading_Tasks_ContinuationTaskFromResultTask_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions:
 _p_742:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1056]
 br x16
-.word 27912
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_StartNew_System_Threading_Tasks_Task_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_StartNew_System_Threading_Tasks_Task_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler:
+.word 27882
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_ContinueWith_System_Action_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_object_object_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_ContinueWith_System_Action_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_object_object_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions:
 _p_743:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1064]
 br x16
-.word 27927
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_StartNew_System_Threading_Tasks_Task_System_Func_2_object_System_Threading_Tasks_VoidTaskResult_object_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_StartNew_System_Threading_Tasks_Task_System_Func_2_object_System_Threading_Tasks_VoidTaskResult_object_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler:
+.word 27897
+	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskScheduler
+plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskScheduler:
 _p_744:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1072]
 br x16
-.word 27942
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_DangerousSetResult_System_Threading_Tasks_VoidTaskResult
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_DangerousSetResult_System_Threading_Tasks_VoidTaskResult:
+.word 27912
+	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_GetDefaultScheduler_System_Threading_Tasks_Task
+plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_GetDefaultScheduler_System_Threading_Tasks_Task:
 _p_745:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1080]
 br x16
-.word 27957
-	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_get_DefaultScheduler
-plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_get_DefaultScheduler:
+.word 27927
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_StartNew_System_Threading_Tasks_Task_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_StartNew_System_Threading_Tasks_Task_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler:
 _p_746:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1088]
 br x16
-.word 27972
-	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_FromAsyncImpl_System_IAsyncResult_System_Func_2_System_IAsyncResult_System_Threading_Tasks_VoidTaskResult_System_Action_1_System_IAsyncResult_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskScheduler
-plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_FromAsyncImpl_System_IAsyncResult_System_Func_2_System_IAsyncResult_System_Threading_Tasks_VoidTaskResult_System_Action_1_System_IAsyncResult_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskScheduler:
+.word 27942
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_StartNew_System_Threading_Tasks_Task_System_Func_2_object_System_Threading_Tasks_VoidTaskResult_object_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_StartNew_System_Threading_Tasks_Task_System_Func_2_object_System_Threading_Tasks_VoidTaskResult_object_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler:
 _p_747:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1096]
 br x16
-.word 27987
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_object_System_Threading_Tasks_TaskCreationOptions
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_object_System_Threading_Tasks_TaskCreationOptions:
+.word 27957
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_DangerousSetResult_System_Threading_Tasks_VoidTaskResult
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_DangerousSetResult_System_Threading_Tasks_VoidTaskResult:
 _p_748:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1104]
 br x16
-.word 28002
-	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_FromAsyncImpl_System_Func_3_System_AsyncCallback_object_System_IAsyncResult_System_Func_2_System_IAsyncResult_System_Threading_Tasks_VoidTaskResult_System_Action_1_System_IAsyncResult_object_System_Threading_Tasks_TaskCreationOptions
-plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_FromAsyncImpl_System_Func_3_System_AsyncCallback_object_System_IAsyncResult_System_Func_2_System_IAsyncResult_System_Threading_Tasks_VoidTaskResult_System_Action_1_System_IAsyncResult_object_System_Threading_Tasks_TaskCreationOptions:
+.word 27972
+	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_get_DefaultScheduler
+plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_get_DefaultScheduler:
 _p_749:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1112]
 br x16
-.word 28017
-	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_FromAsyncCoreLogic_System_IAsyncResult_System_Func_2_System_IAsyncResult_System_Threading_Tasks_VoidTaskResult_System_Action_1_System_IAsyncResult_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool
-plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_FromAsyncCoreLogic_System_IAsyncResult_System_Func_2_System_IAsyncResult_System_Threading_Tasks_VoidTaskResult_System_Action_1_System_IAsyncResult_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool:
+.word 27987
+	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_FromAsyncImpl_System_IAsyncResult_System_Func_2_System_IAsyncResult_System_Threading_Tasks_VoidTaskResult_System_Action_1_System_IAsyncResult_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskScheduler
+plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_FromAsyncImpl_System_IAsyncResult_System_Func_2_System_IAsyncResult_System_Threading_Tasks_VoidTaskResult_System_Action_1_System_IAsyncResult_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskScheduler:
 _p_750:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1120]
 br x16
-.word 28032
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_bool_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_bool_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken:
+.word 28002
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_object_System_Threading_Tasks_TaskCreationOptions
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_object_System_Threading_Tasks_TaskCreationOptions:
 _p_751:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1128]
 br x16
-.word 28047
-	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_ContinueWhenAllImpl_System_Threading_Tasks_Task___System_Func_2_System_Threading_Tasks_Task___System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskContinuationOptions_System_Threading_CancellationToken_System_Threading_Tasks_TaskScheduler
-plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_ContinueWhenAllImpl_System_Threading_Tasks_Task___System_Func_2_System_Threading_Tasks_Task___System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskContinuationOptions_System_Threading_CancellationToken_System_Threading_Tasks_TaskScheduler:
+.word 28017
+	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_FromAsyncImpl_System_Func_3_System_AsyncCallback_object_System_IAsyncResult_System_Func_2_System_IAsyncResult_System_Threading_Tasks_VoidTaskResult_System_Action_1_System_IAsyncResult_object_System_Threading_Tasks_TaskCreationOptions
+plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_FromAsyncImpl_System_Func_3_System_AsyncCallback_object_System_IAsyncResult_System_Func_2_System_IAsyncResult_System_Threading_Tasks_VoidTaskResult_System_Action_1_System_IAsyncResult_object_System_Threading_Tasks_TaskCreationOptions:
 _p_752:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1136]
 br x16
-.word 28062
-	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_CreateCanceledTask_System_Threading_Tasks_TaskContinuationOptions_System_Threading_CancellationToken
-plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_CreateCanceledTask_System_Threading_Tasks_TaskContinuationOptions_System_Threading_CancellationToken:
+.word 28032
+	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_FromAsyncCoreLogic_System_IAsyncResult_System_Func_2_System_IAsyncResult_System_Threading_Tasks_VoidTaskResult_System_Action_1_System_IAsyncResult_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool
+plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_FromAsyncCoreLogic_System_IAsyncResult_System_Func_2_System_IAsyncResult_System_Threading_Tasks_VoidTaskResult_System_Action_1_System_IAsyncResult_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool:
 _p_753:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1144]
 br x16
-.word 28077
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task___ContinueWith_System_Threading_Tasks_VoidTaskResult_System_Func_3_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task___object_System_Threading_Tasks_VoidTaskResult_object_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task___ContinueWith_System_Threading_Tasks_VoidTaskResult_System_Func_3_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task___object_System_Threading_Tasks_VoidTaskResult_object_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions:
+.word 28047
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_bool_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_bool_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken:
 _p_754:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1152]
 br x16
-.word 28092
-	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_ContinueWhenAnyImpl_System_Threading_Tasks_Task___System_Func_2_System_Threading_Tasks_Task_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskContinuationOptions_System_Threading_CancellationToken_System_Threading_Tasks_TaskScheduler
-plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_ContinueWhenAnyImpl_System_Threading_Tasks_Task___System_Func_2_System_Threading_Tasks_Task_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskContinuationOptions_System_Threading_CancellationToken_System_Threading_Tasks_TaskScheduler:
+.word 28062
+	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_ContinueWhenAllImpl_System_Threading_Tasks_Task___System_Func_2_System_Threading_Tasks_Task___System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskContinuationOptions_System_Threading_CancellationToken_System_Threading_Tasks_TaskScheduler
+plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_ContinueWhenAllImpl_System_Threading_Tasks_Task___System_Func_2_System_Threading_Tasks_Task___System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskContinuationOptions_System_Threading_CancellationToken_System_Threading_Tasks_TaskScheduler:
 _p_755:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1160]
 br x16
-.word 28109
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_ContinueWith_System_Threading_Tasks_VoidTaskResult_System_Func_3_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_object_System_Threading_Tasks_VoidTaskResult_object_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_ContinueWith_System_Threading_Tasks_VoidTaskResult_System_Func_3_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_object_System_Threading_Tasks_VoidTaskResult_object_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions:
+.word 28077
+	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_CreateCanceledTask_System_Threading_Tasks_TaskContinuationOptions_System_Threading_CancellationToken
+plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_CreateCanceledTask_System_Threading_Tasks_TaskContinuationOptions_System_Threading_CancellationToken:
 _p_756:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1168]
 br x16
-.word 28124
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor:
+.word 28092
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task___ContinueWith_System_Threading_Tasks_VoidTaskResult_System_Func_3_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task___object_System_Threading_Tasks_VoidTaskResult_object_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task___ContinueWith_System_Threading_Tasks_VoidTaskResult_System_Func_3_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task___object_System_Threading_Tasks_VoidTaskResult_object_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions:
 _p_757:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1176]
 br x16
-.word 28141
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_GetTaskForResult_System_Threading_Tasks_VoidTaskResult
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_GetTaskForResult_System_Threading_Tasks_VoidTaskResult:
+.word 28107
+	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_ContinueWhenAnyImpl_System_Threading_Tasks_Task___System_Func_2_System_Threading_Tasks_Task_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskContinuationOptions_System_Threading_CancellationToken_System_Threading_Tasks_TaskScheduler
+plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_ContinueWhenAnyImpl_System_Threading_Tasks_Task___System_Func_2_System_Threading_Tasks_Task_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskContinuationOptions_System_Threading_CancellationToken_System_Threading_Tasks_TaskScheduler:
 _p_758:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1184]
 br x16
-.word 28156
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_SetResult_System_Threading_Tasks_VoidTaskResult
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_SetResult_System_Threading_Tasks_VoidTaskResult:
+.word 28124
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_ContinueWith_System_Threading_Tasks_VoidTaskResult_System_Func_3_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_object_System_Threading_Tasks_VoidTaskResult_object_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_ContinueWith_System_Threading_Tasks_VoidTaskResult_System_Func_3_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_object_System_Threading_Tasks_VoidTaskResult_object_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions:
 _p_759:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1192]
 br x16
-.word 28171
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_VoidTaskResult
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_VoidTaskResult:
+.word 28139
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor:
 _p_760:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1200]
 br x16
-.word 28186
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskCache_CreateCacheableTask_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult
-plt_System_Runtime_CompilerServices_AsyncTaskCache_CreateCacheableTask_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult:
+.word 28156
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_GetTaskForResult_System_Threading_Tasks_VoidTaskResult
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_GetTaskForResult_System_Threading_Tasks_VoidTaskResult:
 _p_761:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1208]
 br x16
-.word 28201
-	.no_dead_strip plt__rgctx_fetch_272
-plt__rgctx_fetch_272:
+.word 28171
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_SetResult_System_Threading_Tasks_VoidTaskResult
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_SetResult_System_Threading_Tasks_VoidTaskResult:
 _p_762:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1216]
 br x16
-.word 28217
-	.no_dead_strip plt__rgctx_fetch_273
-plt__rgctx_fetch_273:
+.word 28186
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_VoidTaskResult
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_VoidTaskResult:
 _p_763:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1224]
 br x16
-.word 28225
-	.no_dead_strip plt__rgctx_fetch_274
-plt__rgctx_fetch_274:
+.word 28201
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskCache_CreateCacheableTask_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult
+plt_System_Runtime_CompilerServices_AsyncTaskCache_CreateCacheableTask_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult:
 _p_764:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1232]
 br x16
-.word 28240
-	.no_dead_strip plt_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType
-plt_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType:
+.word 28216
+	.no_dead_strip plt__rgctx_fetch_272
+plt__rgctx_fetch_272:
 _p_765:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1240]
 br x16
-.word 28250
-	.no_dead_strip plt_System_Enum_GetUnderlyingType_System_Type
-plt_System_Enum_GetUnderlyingType_System_Type:
+.word 28232
+	.no_dead_strip plt__rgctx_fetch_273
+plt__rgctx_fetch_273:
 _p_766:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1248]
 br x16
-.word 28255
-	.no_dead_strip plt_System_Type_GetTypeCode_System_Type
-plt_System_Type_GetTypeCode_System_Type:
+.word 28240
+	.no_dead_strip plt__rgctx_fetch_274
+plt__rgctx_fetch_274:
 _p_767:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1256]
 br x16
-.word 28260
-	.no_dead_strip plt__rgctx_fetch_275
-plt__rgctx_fetch_275:
+.word 28255
+	.no_dead_strip plt_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType
+plt_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType:
 _p_768:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1264]
 br x16
-.word 28272
-	.no_dead_strip plt__rgctx_fetch_276
-plt__rgctx_fetch_276:
+.word 28265
+	.no_dead_strip plt_System_Enum_GetUnderlyingType_System_Type
+plt_System_Enum_GetUnderlyingType_System_Type:
 _p_769:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1272]
 br x16
-.word 28282
-	.no_dead_strip plt__rgctx_fetch_277
-plt__rgctx_fetch_277:
+.word 28270
+	.no_dead_strip plt_System_Type_GetTypeCode_System_Type
+plt_System_Type_GetTypeCode_System_Type:
 _p_770:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1280]
 br x16
-.word 28318
-	.no_dead_strip plt_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_System_ExceptionResource
-plt_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_System_ExceptionResource:
+.word 28275
+	.no_dead_strip plt__rgctx_fetch_275
+plt__rgctx_fetch_275:
 _p_771:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1288]
 br x16
-.word 28341
-	.no_dead_strip plt_System_Array_IndexOfImpl_System_IO_Compression_ZipGenericExtraField_System_IO_Compression_ZipGenericExtraField___System_IO_Compression_ZipGenericExtraField_int_int
-plt_System_Array_IndexOfImpl_System_IO_Compression_ZipGenericExtraField_System_IO_Compression_ZipGenericExtraField___System_IO_Compression_ZipGenericExtraField_int_int:
+.word 28287
+	.no_dead_strip plt__rgctx_fetch_276
+plt__rgctx_fetch_276:
 _p_772:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1296]
 br x16
-.word 28346
-	.no_dead_strip plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool
-plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool:
+.word 28297
+	.no_dead_strip plt__rgctx_fetch_277
+plt__rgctx_fetch_277:
 _p_773:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1304]
 br x16
-.word 28362
-	.no_dead_strip plt_System_Threading_Tasks_ContinuationResultTaskFromResultTask_2_System_Threading_Tasks_Task___System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task___System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions
-plt_System_Threading_Tasks_ContinuationResultTaskFromResultTask_2_System_Threading_Tasks_Task___System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task___System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions:
+.word 28333
+	.no_dead_strip plt_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_System_ExceptionResource
+plt_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_System_ExceptionResource:
 _p_774:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1312]
 br x16
-.word 28377
-	.no_dead_strip plt_System_Threading_Tasks_ContinuationResultTaskFromResultTask_2_System_Threading_Tasks_Task_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions
-plt_System_Threading_Tasks_ContinuationResultTaskFromResultTask_2_System_Threading_Tasks_Task_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions:
+.word 28356
+	.no_dead_strip plt_System_Array_IndexOfImpl_System_IO_Compression_ZipGenericExtraField_System_IO_Compression_ZipGenericExtraField___System_IO_Compression_ZipGenericExtraField_int_int
+plt_System_Array_IndexOfImpl_System_IO_Compression_ZipGenericExtraField_System_IO_Compression_ZipGenericExtraField___System_IO_Compression_ZipGenericExtraField_int_int:
 _p_775:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1320]
 br x16
-.word 28394
-	.no_dead_strip plt_System_Collections_Generic_EqualityComparer_1_System_IO_Compression_ZipGenericExtraField_CreateComparer
-plt_System_Collections_Generic_EqualityComparer_1_System_IO_Compression_ZipGenericExtraField_CreateComparer:
+.word 28361
+	.no_dead_strip plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool
+plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool:
 _p_776:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1328]
 br x16
-.word 28413
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task___get_Result
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task___get_Result:
+.word 28377
+	.no_dead_strip plt_System_Threading_Tasks_ContinuationResultTaskFromResultTask_2_System_Threading_Tasks_Task___System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task___System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions
+plt_System_Threading_Tasks_ContinuationResultTaskFromResultTask_2_System_Threading_Tasks_Task___System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task___System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions:
 _p_777:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1336]
 br x16
-.word 28432
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_get_Result
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_get_Result:
+.word 28392
+	.no_dead_strip plt_System_Threading_Tasks_ContinuationResultTaskFromResultTask_2_System_Threading_Tasks_Task_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions
+plt_System_Threading_Tasks_ContinuationResultTaskFromResultTask_2_System_Threading_Tasks_Task_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions:
 _p_778:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1344]
 br x16
-.word 28447
-	.no_dead_strip plt_System_ThrowHelper_ThrowArgumentException_System_ExceptionResource
-plt_System_ThrowHelper_ThrowArgumentException_System_ExceptionResource:
+.word 28409
+	.no_dead_strip plt_System_Collections_Generic_EqualityComparer_1_System_IO_Compression_ZipGenericExtraField_CreateComparer
+plt_System_Collections_Generic_EqualityComparer_1_System_IO_Compression_ZipGenericExtraField_CreateComparer:
 _p_779:
 adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
 add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
 ldr x16, [x16, #1352]
 br x16
+.word 28428
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task___get_Result
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task___get_Result:
+_p_780:
+adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
+add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
+ldr x16, [x16, #1360]
+br x16
+.word 28447
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_get_Result
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_get_Result:
+_p_781:
+adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
+add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
+ldr x16, [x16, #1368]
+br x16
 .word 28462
+	.no_dead_strip plt_System_ThrowHelper_ThrowArgumentException_System_ExceptionResource
+plt_System_ThrowHelper_ThrowArgumentException_System_ExceptionResource:
+_p_782:
+adrp x16, mono_aot_System_IO_Compression_got@PAGE+8192
+add x16, x16, mono_aot_System_IO_Compression_got@PAGEOFF
+ldr x16, [x16, #1376]
+br x16
+.word 28477
 plt_end:
 .section __DATA, __bss
 	.align 3
-.lcomm mono_aot_System_IO_Compression_got, 9552
+.lcomm mono_aot_System_IO_Compression_got, 9576
 got_end:
 .section __TEXT, __const
 	.align 3
@@ -80057,7 +80675,7 @@ runtime_version:
 .section __TEXT, __const
 	.align 2
 assembly_guid:
-	.asciz "602673C5-62E3-4BCB-9A4B-B17562CC9FA5"
+	.asciz "04E94A58-6059-45D8-B66C-33B9FDA335F3"
 .section __TEXT, __const
 	.align 2
 assembly_name:
@@ -80066,7 +80684,7 @@ assembly_name:
 	.align 3
 _mono_aot_file_info:
 
-	.long 170,0
+	.long 171,0
 	.align 3
 	.quad mono_aot_System_IO_Compression_got
 	.align 3
@@ -80144,14 +80762,14 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 414,9552,780,1316,282,354,387000831,0
-	.long 149213,128,8,8,8,9,8388607,0
-	.long 4,25,179856,0,0,30632,30336,26552
-	.long 0,27912,30192,27264,0,19896,1792,30624
+	.long 414,9576,783,1316,282,354,387000831,0
+	.long 150208,128,8,8,8,9,8388607,0
+	.long 4,25,180856,0,0,30640,30344,26552
+	.long 0,27912,30200,27264,0,19896,1792,30632
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
-	.byte 126,229,227,202,177,135,60,100,102,214,204,69,110,6,242,62
+	.byte 139,21,25,14,213,157,184,144,167,237,227,208,45,161,75,167
 	.globl _mono_aot_module_System_IO_Compression_info
 	.align 3
 _mono_aot_module_System_IO_Compression_info:
@@ -84409,7 +85027,7 @@ Lfde14_end:
 
 LDIFF_SYM731=LDIE_SZARRAY - Ldebug_info_start
 	.long LDIFF_SYM731
-	.byte 2,141,16,3
+	.byte 1,104,3
 	.asciz "offset"
 
 LDIFF_SYM732=LDIE_I4 - Ldebug_info_start
@@ -84434,7 +85052,7 @@ Lfde15_start:
 LDIFF_SYM735=Lme_f - System_IO_Compression_BrotliStream_ValidateParameters_byte___int_int
 	.long LDIFF_SYM735
 	.long 0
-	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6
 	.align 3
 Lfde15_end:
 
@@ -85410,7 +86028,7 @@ Lfde36_start:
 LDIFF_SYM844=Lme_24 - System_IO_Compression_BrotliStream_FinishReadAsyncMemory_System_Memory_1_byte_System_Threading_CancellationToken
 	.long LDIFF_SYM844
 	.long 0
-	.byte 12,31,0,68,14,240,1,157,30,158,29,68,13,29
+	.byte 12,31,0,68,14,128,2,157,32,158,31,68,13,29
 	.align 3
 Lfde36_end:
 
@@ -85941,7 +86559,7 @@ Lfde46_start:
 LDIFF_SYM910=Lme_2e - System_IO_Compression_BrotliStream_WriteAsyncMemoryCore_System_ReadOnlyMemory_1_byte_System_Threading_CancellationToken
 	.long LDIFF_SYM910
 	.long 0
-	.byte 12,31,0,68,14,192,1,157,24,158,23,68,13,29
+	.byte 12,31,0,68,14,208,1,157,26,158,25,68,13,29
 	.align 3
 Lfde46_end:
 
@@ -86078,7 +86696,7 @@ Lfde49_start:
 LDIFF_SYM926=Lme_31 - System_IO_Compression_BrotliStream_FlushAsyncCore_System_Threading_CancellationToken
 	.long LDIFF_SYM926
 	.long 0
-	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29
+	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29
 	.align 3
 Lfde49_end:
 
@@ -86201,7 +86819,7 @@ Lfde51_start:
 LDIFF_SYM942=Lme_33 - System_IO_Compression_BrotliDecoder_InitializeDecoder
 	.long LDIFF_SYM942
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4
 	.align 3
 Lfde51_end:
 
@@ -86597,7 +87215,7 @@ Lfde57_start:
 LDIFF_SYM997=Lme_39 - System_IO_Compression_BrotliEncoder__ctor_int_int
 	.long LDIFF_SYM997
 	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6
 	.align 3
 Lfde57_end:
 
@@ -86631,7 +87249,7 @@ Lfde58_start:
 LDIFF_SYM1000=Lme_3a - System_IO_Compression_BrotliEncoder_InitializeEncoder
 	.long LDIFF_SYM1000
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4
 	.align 3
 Lfde58_end:
 
@@ -88927,7 +89545,7 @@ Lfde86_start:
 LDIFF_SYM1312=Lme_56 - System_IO_Compression_DeflateManagedStream_InitializeInflater_System_IO_Stream_bool_System_IO_Compression_IFileFormatReader_System_IO_Compression_ZipArchiveEntry_CompressionMethodValues
 	.long LDIFF_SYM1312
 	.long 0
-	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,149,10,150,9,68,151,8,68,154,7
+	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29,68,149,12,150,11,68,151,10,68,154,9
 	.align 3
 Lfde86_end:
 
@@ -89424,7 +90042,7 @@ LDIFF_SYM1362=LDIE_I4 - Ldebug_info_start
 
 LDIFF_SYM1363=LDIE_SZARRAY - Ldebug_info_start
 	.long LDIFF_SYM1363
-	.byte 2,141,24,3
+	.byte 1,104,3
 	.asciz "offset"
 
 LDIFF_SYM1364=LDIE_I4 - Ldebug_info_start
@@ -89449,7 +90067,7 @@ Lfde99_start:
 LDIFF_SYM1367=Lme_63 - System_IO_Compression_DeflateManagedStream_ValidateParameters_byte___int_int
 	.long LDIFF_SYM1367
 	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4
 	.align 3
 Lfde99_end:
 
@@ -89874,7 +90492,7 @@ Lfde109_start:
 LDIFF_SYM1414=Lme_6d - System_IO_Compression_DeflateManagedStream_ReadAsyncCore_System_Threading_Tasks_Task_1_int_byte___int_int_System_Threading_CancellationToken
 	.long LDIFF_SYM1414
 	.long 0
-	.byte 12,31,0,68,14,208,1,157,26,158,25,68,13,29
+	.byte 12,31,0,68,14,224,1,157,28,158,27,68,13,29
 	.align 3
 Lfde109_end:
 
@@ -90237,7 +90855,7 @@ Lfde116_start:
 LDIFF_SYM1460=Lme_74 - System_IO_Compression_DeflateManagedStream_WriteAsyncCore_byte___int_int_System_Threading_CancellationToken
 	.long LDIFF_SYM1460
 	.long 0
-	.byte 12,31,0,68,14,192,1,157,24,158,23,68,13,29
+	.byte 12,31,0,68,14,208,1,157,26,158,25,68,13,29
 	.align 3
 Lfde116_end:
 
@@ -90423,7 +91041,7 @@ Lfde120_start:
 LDIFF_SYM1482=Lme_78 - System_IO_Compression_DeflaterManaged__ctor
 	.long LDIFF_SYM1482
 	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,154,6
 	.align 3
 Lfde120_end:
 
@@ -90575,7 +91193,7 @@ Lfde123_start:
 LDIFF_SYM1501=Lme_7b - System_IO_Compression_DeflaterManaged_GetDeflateOutput_byte__
 	.long LDIFF_SYM1501
 	.long 0
-	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29,68,153,12,154,11
+	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,153,14,154,13
 	.align 3
 Lfde123_end:
 
@@ -90619,7 +91237,7 @@ Lfde124_start:
 LDIFF_SYM1506=Lme_7c - System_IO_Compression_DeflaterManaged_Finish_byte___int_
 	.long LDIFF_SYM1506
 	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6
 	.align 3
 Lfde124_end:
 
@@ -91649,7 +92267,7 @@ Lfde149_start:
 LDIFF_SYM1617=Lme_95 - System_IO_Compression_FastEncoderStatics__cctor
 	.long LDIFF_SYM1617
 	.long 0
-	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29
+	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29
 	.align 3
 Lfde149_end:
 
@@ -91751,7 +92369,7 @@ Lfde152_start:
 LDIFF_SYM1626=Lme_98 - System_IO_Compression_FastEncoderWindow_get_UnprocessedInput
 	.long LDIFF_SYM1626
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4
 	.align 3
 Lfde152_end:
 
@@ -91819,7 +92437,7 @@ Lfde154_start:
 LDIFF_SYM1632=Lme_9a - System_IO_Compression_FastEncoderWindow_ResetWindow
 	.long LDIFF_SYM1632
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,154,6
 	.align 3
 Lfde154_end:
 
@@ -92416,7 +93034,7 @@ Lfde167_start:
 LDIFF_SYM1702=Lme_ae - System_IO_Compression_HuffmanTree__ctor_byte__
 	.long LDIFF_SYM1702
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,153,6
 	.align 3
 Lfde167_end:
 
@@ -92808,7 +93426,7 @@ Lfde173_start:
 LDIFF_SYM1757=Lme_b4 - System_IO_Compression_HuffmanTree__cctor
 	.long LDIFF_SYM1757
 	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
 	.align 3
 Lfde173_end:
 
@@ -92852,7 +93470,7 @@ Lfde174_start:
 LDIFF_SYM1762=Lme_b5 - System_IO_Compression_InflaterManaged__ctor_System_IO_Compression_IFileFormatReader_bool
 	.long LDIFF_SYM1762
 	.long 0
-	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6,153,5,68,154,4
+	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,152,10,153,9,68,154,8
 	.align 3
 Lfde174_end:
 
@@ -93386,7 +94004,7 @@ Lfde185_start:
 LDIFF_SYM1827=Lme_c0 - System_IO_Compression_InflaterManaged__cctor
 	.long LDIFF_SYM1827
 	.long 0
-	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
+	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29
 	.align 3
 Lfde185_end:
 
@@ -95040,7 +95658,7 @@ Lfde226_start:
 LDIFF_SYM2002=Lme_e9 - System_IO_Compression_OutputWindow__ctor
 	.long LDIFF_SYM2002
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
 Lfde226_end:
 
@@ -98082,7 +98700,7 @@ Lfde276_start:
 LDIFF_SYM2400=Lme_11b - System_IO_Compression_ZipArchive_Init_System_IO_Stream_System_IO_Compression_ZipArchiveMode_bool
 	.long LDIFF_SYM2400
 	.long 0
-	.byte 12,31,0,68,14,192,1,157,24,158,23,68,13,29,68,151,22,152,21,68,153,20,154,19
+	.byte 12,31,0,68,14,208,1,157,26,158,25,68,13,29,68,151,24,152,23,68,153,22,154,21
 	.align 3
 Lfde276_end:
 
@@ -98332,7 +98950,7 @@ Lfde279_start:
 LDIFF_SYM2437=Lme_11e - System_IO_Compression_ZipArchive_WriteFile
 	.long LDIFF_SYM2437
 	.long 0
-	.byte 12,31,0,68,14,224,1,157,28,158,27,68,13,29,68,149,26,150,25,68,151,24,152,23,68,153,22,154,21
+	.byte 12,31,0,68,14,240,1,157,30,158,29,68,13,29,68,149,28,150,27,68,151,26,152,25,68,153,24,154,23
 	.align 3
 Lfde279_end:
 
@@ -98425,7 +99043,7 @@ Lfde281_start:
 LDIFF_SYM2448=Lme_120 - System_IO_Compression_ZipArchiveEntry__ctor_System_IO_Compression_ZipArchive_System_IO_Compression_ZipCentralDirectoryFileHeader
 	.long LDIFF_SYM2448
 	.long 0
-	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,153,10
+	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29,68,153,12
 	.align 3
 Lfde281_end:
 
@@ -98771,7 +99389,7 @@ Lfde290_start:
 LDIFF_SYM2483=Lme_129 - System_IO_Compression_ZipArchiveEntry_set_FullName_string
 	.long LDIFF_SYM2483
 	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4,154,3
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,153,6,154,5
 	.align 3
 Lfde290_end:
 
@@ -99809,7 +100427,7 @@ Lfde309_start:
 LDIFF_SYM2615=Lme_13c - System_IO_Compression_ZipArchiveEntry_GetDataCompressor_System_IO_Stream_bool_System_EventHandler
 	.long LDIFF_SYM2615
 	.long 0
-	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,149,8,150,7,68,151,6,152,5,68,153,4,154,3
+	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,149,10,150,9,68,151,8,152,7,68,153,6,154,5
 	.align 3
 Lfde309_end:
 
@@ -100080,7 +100698,7 @@ Lfde313_start:
 LDIFF_SYM2653=Lme_140 - System_IO_Compression_ZipArchiveEntry_OpenInUpdateMode
 	.long LDIFF_SYM2653
 	.long 0
-	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,154,6
+	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,154,8
 	.align 3
 Lfde313_end:
 
@@ -100139,7 +100757,7 @@ Lfde314_start:
 LDIFF_SYM2661=Lme_141 - System_IO_Compression_ZipArchiveEntry_IsOpenable_bool_bool_string_
 	.long LDIFF_SYM2661
 	.long 0
-	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,151,6,68,153,5,154,4
+	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,151,8,68,153,7,154,6
 	.align 3
 Lfde314_end:
 
@@ -100919,7 +101537,7 @@ Lfde332_start:
 LDIFF_SYM2748=Lme_153 - System_IO_Compression_ZipGenericExtraField_TryReadBlock_System_IO_BinaryReader_long_System_IO_Compression_ZipGenericExtraField_
 	.long LDIFF_SYM2748
 	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4,68,154,3
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6,68,154,5
 	.align 3
 Lfde332_end:
 
@@ -101691,8 +102309,8 @@ Lfde347_start:
 LDIFF_SYM2845=Lme_162 - System_IO_Compression_Zip64ExtraField_GetAndRemoveZip64Block_System_Collections_Generic_List_1_System_IO_Compression_ZipGenericExtraField_bool_bool_bool_bool
 	.long LDIFF_SYM2845
 	.long 0
-	.byte 12,31,0,68,14,160,3,157,52,158,51,68,13,29,68,147,50,148,49,68,149,48,150,47,68,151,46,152,45,68,153,44
-	.byte 154,43
+	.byte 12,31,0,68,14,176,3,157,54,158,53,68,13,29,68,147,52,148,51,68,149,50,150,49,68,151,48,152,47,68,153,46
+	.byte 154,45
 	.align 3
 Lfde347_end:
 
@@ -101746,7 +102364,7 @@ Lfde348_start:
 LDIFF_SYM2852=Lme_163 - System_IO_Compression_Zip64ExtraField_RemoveZip64Blocks_System_Collections_Generic_List_1_System_IO_Compression_ZipGenericExtraField
 	.long LDIFF_SYM2852
 	.long 0
-	.byte 12,31,0,68,14,224,1,157,28,158,27,68,13,29,68,150,26,151,25,68,152,24,153,23,68,154,22
+	.byte 12,31,0,68,14,240,1,157,30,158,29,68,13,29,68,150,28,151,27,68,152,26,153,25,68,154,24
 	.align 3
 Lfde348_end:
 
@@ -102412,8 +103030,8 @@ Lfde356_start:
 LDIFF_SYM2953=Lme_16b - System_IO_Compression_ZipCentralDirectoryFileHeader_TryReadBlock_System_IO_BinaryReader_bool_System_IO_Compression_ZipCentralDirectoryFileHeader_
 	.long LDIFF_SYM2953
 	.long 0
-	.byte 12,31,0,68,14,144,2,157,34,158,33,68,13,29,68,147,32,148,31,68,149,30,150,29,68,151,28,152,27,68,153,26
-	.byte 154,25
+	.byte 12,31,0,68,14,160,2,157,36,158,35,68,13,29,68,147,34,148,33,68,149,32,150,31,68,151,30,152,29,68,153,28
+	.byte 154,27
 	.align 3
 Lfde356_end:
 
@@ -102593,7 +103211,7 @@ Lfde358_start:
 LDIFF_SYM2981=Lme_16d - System_IO_Compression_ZipEndOfCentralDirectoryBlock_TryReadBlock_System_IO_BinaryReader_System_IO_Compression_ZipEndOfCentralDirectoryBlock_
 	.long LDIFF_SYM2981
 	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4,154,3
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,153,6,154,5
 	.align 3
 Lfde358_end:
 
@@ -105177,7 +105795,7 @@ Lfde417_start:
 LDIFF_SYM3272=Lme_1a8 - System_IO_Compression_Crc32Helper__cctor
 	.long LDIFF_SYM3272
 	.long 0
-	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29
+	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29
 	.align 3
 Lfde417_end:
 
@@ -105317,7 +105935,7 @@ Lfde419_start:
 LDIFF_SYM3292=Lme_1aa - System_Threading_Tasks_TaskToApm_End_System_IAsyncResult
 	.long LDIFF_SYM3292
 	.long 0
-	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6,153,5,68,154,4
+	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,152,8,153,7,68,154,6
 	.align 3
 Lfde419_end:
 
@@ -105484,7 +106102,7 @@ Lfde421_start:
 LDIFF_SYM3317=Lme_1ac - System_Threading_Tasks_TaskToApm_InvokeCallbackWhenTaskCompletes_System_Threading_Tasks_Task_System_AsyncCallback_System_IAsyncResult
 	.long LDIFF_SYM3317
 	.long 0
-	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,152,16
+	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,68,152,20
 	.align 3
 Lfde421_end:
 
@@ -106043,7 +106661,7 @@ Lfde430_start:
 LDIFF_SYM3393=Lme_1c0 - System_IO_Compression_BrotliStream__WriteAsyncMemoryCored__52_MoveNext
 	.long LDIFF_SYM3393
 	.long 0
-	.byte 12,31,0,68,14,208,3,157,58,158,57,68,13,29,68,151,56,152,55,68,153,54,154,53
+	.byte 12,31,0,68,14,224,3,157,60,158,59,68,13,29,68,151,58,152,57,68,153,56,154,55
 	.align 3
 Lfde430_end:
 
@@ -106208,7 +106826,7 @@ Lfde432_start:
 LDIFF_SYM3418=Lme_1c2 - System_IO_Compression_BrotliStream__FlushAsyncCored__55_MoveNext
 	.long LDIFF_SYM3418
 	.long 0
-	.byte 12,31,0,68,14,224,3,157,60,158,59,68,13,29,68,151,58,152,57,68,153,56,154,55
+	.byte 12,31,0,68,14,240,3,157,62,158,61,68,13,29,68,151,60,152,59,68,153,58,154,57
 	.align 3
 Lfde432_end:
 
@@ -106619,7 +107237,7 @@ Lfde437_start:
 LDIFF_SYM3480=Lme_1c7 - System_IO_Compression_DeflateManagedStream__WriteAsyncCored__47_MoveNext
 	.long LDIFF_SYM3480
 	.long 0
-	.byte 12,31,0,68,14,224,1,157,28,158,27,68,13,29
+	.byte 12,31,0,68,14,240,1,157,30,158,29,68,13,29
 	.align 3
 Lfde437_end:
 
@@ -107371,7 +107989,7 @@ Lfde454_start:
 LDIFF_SYM3565=Lme_1d8 - System_IO_Compression_ZipArchiveEntry__c__cctor
 	.long LDIFF_SYM3565
 	.long 0
-	.byte 12,31,0,68,14,16,157,2,158,1,68,13,29
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
 Lfde454_end:
 
@@ -108170,7 +108788,7 @@ Lfde470_start:
 LDIFF_SYM3662=Lme_1e9 - System_ReadOnlySpan_1_T_BYTE__ctor_void__int
 	.long LDIFF_SYM3662
 	.long 0
-	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,152,10
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6
 	.align 3
 Lfde470_end:
 
@@ -109200,7 +109818,7 @@ Lfde494_start:
 LDIFF_SYM3776=Lme_201 - System_Span_1_T_BYTE__ctor_void__int
 	.long LDIFF_SYM3776
 	.long 0
-	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,152,10
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6
 	.align 3
 Lfde494_end:
 
@@ -116826,7 +117444,7 @@ Lfde641_start:
 LDIFF_SYM4710=Lme_294 - System_Runtime_CompilerServices_AsyncValueTaskMethodBuilder_1_TResult_INT_Create
 	.long LDIFF_SYM4710
 	.long 0
-	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
+	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29
 	.align 3
 Lfde641_end:
 
@@ -117053,7 +117671,7 @@ Lfde646_start:
 LDIFF_SYM4736=Lme_299 - System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_INT_Create
 	.long LDIFF_SYM4736
 	.long 0
-	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
+	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29
 	.align 3
 Lfde646_end:
 
@@ -117191,7 +117809,7 @@ Lfde648_start:
 LDIFF_SYM4755=Lme_29b - System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_INT_get_Task
 	.long LDIFF_SYM4755
 	.long 0
-	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,153,6,154,5
+	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,153,8,154,7
 	.align 3
 Lfde648_end:
 
@@ -117479,7 +118097,7 @@ Lfde655_start:
 LDIFF_SYM4786=Lme_2a2 - System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_INT__cctor
 	.long LDIFF_SYM4786
 	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
 	.align 3
 Lfde655_end:
 
@@ -120386,7 +121004,7 @@ Lfde721_start:
 LDIFF_SYM5113=Lme_2eb - System_Array_InternalArray__IEnumerable_GetEnumerator_System_IO_Compression_ZipGenericExtraField
 	.long LDIFF_SYM5113
 	.long 0
-	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
+	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29
 	.align 3
 Lfde721_end:
 
@@ -121690,7 +122308,7 @@ Lfde749_start:
 LDIFF_SYM5265=Lme_31c - System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_1_TResult_INT__ctor_System_Threading_Tasks_ValueTask_1_TResult_INT
 	.long LDIFF_SYM5265
 	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
 	.align 3
 Lfde749_end:
 
@@ -121790,7 +122408,7 @@ Lfde751_start:
 LDIFF_SYM5277=Lme_31e - System_Runtime_CompilerServices_ConfiguredValueTaskAwaitable_1_ConfiguredValueTaskAwaiter_TResult_INT__ctor_System_Threading_Tasks_ValueTask_1_TResult_INT
 	.long LDIFF_SYM5277
 	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
 	.align 3
 Lfde751_end:
 
@@ -123450,7 +124068,7 @@ Lfde775_start:
 LDIFF_SYM5512=Lme_336 - wrapper_runtime_invoke__Module_runtime_invoke_void__this___Nullable_1_long_intptr__intptr_intptr_intptr
 	.long LDIFF_SYM5512
 	.long 0
-	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,151,16
+	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29,68,151,18
 	.align 3
 Lfde775_end:
 
@@ -123651,7 +124269,7 @@ Lfde779_start:
 LDIFF_SYM5537=Lme_33a - wrapper_runtime_invoke__Module_runtime_invoke_void__this___int_byte_object_intptr_intptr_intptr
 	.long LDIFF_SYM5537
 	.long 0
-	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,151,10,68,153,9
+	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29,68,151,12,68,153,11
 	.align 3
 Lfde779_end:
 
@@ -130717,7 +131335,7 @@ Lfde909_start:
 LDIFF_SYM6445=Lme_3bc - System_Collections_Generic_List_1_System_IO_Compression_ZipGenericExtraField__cctor
 	.long LDIFF_SYM6445
 	.long 0
-	.byte 12,31,0,68,14,16,157,2,158,1,68,13,29
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
 Lfde909_end:
 
@@ -130751,7 +131369,7 @@ Lfde910_start:
 LDIFF_SYM6448=Lme_3bd - System_Collections_Generic_List_1_System_IO_Compression_ZipGenericExtraField_GetEnumerator
 	.long LDIFF_SYM6448
 	.long 0
-	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29
+	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29
 	.align 3
 Lfde910_end:
 
@@ -134780,7 +135398,7 @@ Lfde982_start:
 LDIFF_SYM6971=Lme_405 - System_Runtime_CompilerServices_ValueTaskAwaiter_1_TResult_INT__ctor_System_Threading_Tasks_ValueTask_1_TResult_INT
 	.long LDIFF_SYM6971
 	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
 	.align 3
 Lfde982_end:
 
@@ -138250,7 +138868,7 @@ Lfde1035_start:
 LDIFF_SYM7455=Lme_43a - System_Array_InternalArray__get_Item_T_INST_int
 	.long LDIFF_SYM7455
 	.long 0
-	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29
+	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29
 	.align 3
 Lfde1035_end:
 
@@ -138690,7 +139308,7 @@ Lfde1045_start:
 LDIFF_SYM7505=Lme_444 - System_Array_EmptyInternalEnumerator_1_System_IO_Compression_ZipGenericExtraField__cctor
 	.long LDIFF_SYM7505
 	.long 0
-	.byte 12,31,0,68,14,16,157,2,158,1,68,13,29
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
 Lfde1045_end:
 
@@ -142818,7 +143436,7 @@ Lfde1126_start:
 LDIFF_SYM8019=Lme_495 - System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_FromAsyncImpl_System_IAsyncResult_System_Func_2_System_IAsyncResult_System_Threading_Tasks_VoidTaskResult_System_Action_1_System_IAsyncResult_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskScheduler
 	.long LDIFF_SYM8019
 	.long 0
-	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29
+	.byte 12,31,0,68,14,192,1,157,24,158,23,68,13,29
 	.align 3
 Lfde1126_end:
 
@@ -143363,7 +143981,7 @@ Lfde1135_start:
 LDIFF_SYM8093=Lme_49e - System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_ContinueWhenAllImpl_System_Threading_Tasks_Task___System_Func_2_System_Threading_Tasks_Task___System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskContinuationOptions_System_Threading_CancellationToken_System_Threading_Tasks_TaskScheduler
 	.long LDIFF_SYM8093
 	.long 0
-	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29,68,150,12,151,11,68,153,10
+	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,150,14,151,13,68,153,12
 	.align 3
 Lfde1135_end:
 
@@ -143422,7 +144040,7 @@ Lfde1136_start:
 LDIFF_SYM8101=Lme_49f - System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_ContinueWhenAllImpl_System_Threading_Tasks_Task___System_Action_1_System_Threading_Tasks_Task___System_Threading_Tasks_TaskContinuationOptions_System_Threading_CancellationToken_System_Threading_Tasks_TaskScheduler
 	.long LDIFF_SYM8101
 	.long 0
-	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29,68,150,12,151,11,68,153,10
+	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,150,14,151,13,68,153,12
 	.align 3
 Lfde1136_end:
 
@@ -143704,7 +144322,7 @@ Lfde1141_start:
 LDIFF_SYM8138=Lme_4a4 - System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_ContinueWhenAnyImpl_System_Threading_Tasks_Task___System_Action_1_System_Threading_Tasks_Task_System_Threading_Tasks_TaskContinuationOptions_System_Threading_CancellationToken_System_Threading_Tasks_TaskScheduler
 	.long LDIFF_SYM8138
 	.long 0
-	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29,68,150,12,151,11,68,153,10
+	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,150,14,151,13,68,153,12
 	.align 3
 Lfde1141_end:
 
@@ -143763,7 +144381,7 @@ Lfde1142_start:
 LDIFF_SYM8146=Lme_4a5 - System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_ContinueWhenAnyImpl_System_Threading_Tasks_Task___System_Func_2_System_Threading_Tasks_Task_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskContinuationOptions_System_Threading_CancellationToken_System_Threading_Tasks_TaskScheduler
 	.long LDIFF_SYM8146
 	.long 0
-	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29,68,150,12,151,11,68,153,10
+	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,150,14,151,13,68,153,12
 	.align 3
 Lfde1142_end:
 
@@ -143797,7 +144415,7 @@ Lfde1143_start:
 LDIFF_SYM8149=Lme_4a6 - System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_Create
 	.long LDIFF_SYM8149
 	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
 	.align 3
 Lfde1143_end:
 
@@ -143919,7 +144537,7 @@ Lfde1146_start:
 LDIFF_SYM8162=Lme_4a9 - System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_SetResult_System_Threading_Tasks_VoidTaskResult
 	.long LDIFF_SYM8162
 	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4,154,3
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,153,6,154,5
 	.align 3
 Lfde1146_end:
 
@@ -144163,7 +144781,7 @@ Lfde1152_start:
 LDIFF_SYM8188=Lme_4af - System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult__cctor
 	.long LDIFF_SYM8188
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
 Lfde1152_end:
 
@@ -145029,7 +145647,7 @@ Lfde1167_start:
 LDIFF_SYM8291=Lme_4be - System_Collections_Generic_List_1_System_IO_Compression_ZipGenericExtraField_set_Capacity_int
 	.long LDIFF_SYM8291
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,154,1
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4,154,3
 	.align 3
 Lfde1167_end:
 
@@ -145741,7 +146359,7 @@ Lfde1181_start:
 LDIFF_SYM8379=Lme_4d0 - System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool
 	.long LDIFF_SYM8379
 	.long 0
-	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29
+	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29
 	.align 3
 Lfde1181_end:
 
@@ -146871,7 +147489,7 @@ Lfde1202_start:
 LDIFF_SYM8524=Lme_4f5 - System_Threading_Tasks_TaskFactory_1__c_System_Threading_Tasks_VoidTaskResult__cctor
 	.long LDIFF_SYM8524
 	.long 0
-	.byte 12,31,0,68,14,16,157,2,158,1,68,13,29
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
 Lfde1202_end:
 

@@ -6,18 +6,18 @@
              mc:Ignorable="d" x:Class="seeturtle.App">
     <Application.Resources>
         <OnPlatform x:Key="HeaderFont" x:TypeArguments="x:String">
-            <On Platform="Android" Value="Montserrat-Bold.ttf#Montserrat-Bold" />
-            <On Platform="iOS" Value="Montserrat-Bold" />
+            <On Platform="Android" Value="Poppins-Bold.otf#Poppins-Bold" />
+            <On Platform="iOS" Value="Poppins-Bold" />
         </OnPlatform>
 
         <OnPlatform x:Key="SubHeaderFont" x:TypeArguments="x:String">
-            <On Platform="Android" Value="Montserrat-Medium.ttf#Montserrat-Medium" />
-            <On Platform="iOS" Value="Montserrat-Medium" />
+            <On Platform="Android" Value="Poppins-Medium.otf#Poppins-Medium" />
+            <On Platform="iOS" Value="Poppins-Medium" />
         </OnPlatform>
 
        <OnPlatform x:Key="BodyFont" x:TypeArguments="x:String">
-            <On Platform="Android" Value="Montserrat-Regular.ttf#Montserrat-Regular" />
-            <On Platform="iOS" Value="Montserrat-Regular" />
+            <On Platform="Android" Value="Poppins-Regular.otf#Poppins-Regular" />
+            <On Platform="iOS" Value="Poppins-Regular" />
         </OnPlatform>
 
         <Style x:Key="HeaderWhite" TargetType="Label">
@@ -33,7 +33,7 @@
             <Setter Property="FontSize" Value="40" />
             <Setter Property="LineHeight" Value="1" />
             <Setter Property="TextColor" Value="Black" />
-            <Setter Property="Margin" Value="35,30,0, -5" />
+            <Setter Property="Margin" Value="35,30, 0, -5" />
         </Style>
 
          <Style x:Key="ManualHeader" TargetType="Label">
@@ -46,7 +46,7 @@
 
          <Style x:Key="Body" TargetType="Label">
             <Setter Property="FontFamily" Value="{StaticResource BodyFont}" />
-            <Setter Property="FontSize" Value="16" />
+            <Setter Property="FontSize" Value="15" />
             <Setter Property="LineHeight" Value="1.2" />
             <Setter Property="TextColor" Value="Black" />
             <Setter Property="Margin" Value="35, 0, 35, 10" />
@@ -55,7 +55,7 @@
         <Style x:Key="BodyWhite" TargetType="Label">
             <Setter Property="FontFamily" Value="{StaticResource BodyFont}" />
             <Setter Property="FontSize" Value="16" />
-            <Setter Property="LineHeight" Value="1.2" />
+            <Setter Property="LineHeight" Value="1" />
             <Setter Property="TextColor" Value="White" />
             <Setter Property="Margin" Value="35, 0, 35, 10" />
         </Style>
@@ -65,7 +65,7 @@
             <Setter Property="FontSize" Value="20" />
             <Setter Property="LineHeight" Value="1.2" />
             <Setter Property="TextColor" Value="Black" />
-            <Setter Property="Margin" Value="35,0, 35, 10" />
+            <Setter Property="Margin" Value="35, -15, 35, 10" />
         </Style>
 
           <Style x:Key="SubHeaderWhite" TargetType="Label">
@@ -80,9 +80,9 @@
                 <Setter Property="HorizontalOptions" Value="Center" />
                 <Setter Property="VerticalOptions" Value="CenterAndExpand" />
                 <Setter Property="BackgroundColor" Value="#f4315d" />
-                <Setter Property="FontFamily" Value="{StaticResource SubHeaderFont}"/>
+                <Setter Property="FontFamily" Value="{StaticResource BodyFont}"/>
                 <Setter Property="BorderRadius" Value="30" />
-                <Setter Property="FontSize" Value="18" />
+                <Setter Property="FontSize" Value="16" />
                 <Setter Property="CharacterSpacing" Value="0.1" />
                 <Setter Property="WidthRequest" Value="220" />
                 <Setter Property="HeightRequest" Value="60" />

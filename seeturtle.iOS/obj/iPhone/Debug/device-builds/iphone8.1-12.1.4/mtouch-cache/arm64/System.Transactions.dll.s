@@ -21,7 +21,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 8,1
-	.asciz "Mono AOT Compiler 6.6.0 (2019-08/fd9f379d294 Wed Dec 18 16:32:17 EST 2019)"
+	.asciz "Mono AOT Compiler 6.8.0 (2019-10/c0c5c78e2bd Tue Feb 18 13:51:26 EST 2020)"
 	.asciz "System.Transactions.dll"
 	.asciz ""
 
@@ -187,6 +187,7 @@ System_MonoTODOAttribute__ctor_string:
 .word 0xf9000fa1
 .word 0xf9400ba0
 .word 0x91004001
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -232,6 +233,7 @@ System_MonoDocumentationNoteAttribute__ctor_string:
 .word 0xf9000fa1
 .word 0xf9400ba0
 .word 0x91004001
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -262,6 +264,7 @@ System_MonoExtensionAttribute__ctor_string:
 .word 0xf9000fa1
 .word 0xf9400ba0
 .word 0x91004001
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -292,6 +295,7 @@ System_MonoInternalNoteAttribute__ctor_string:
 .word 0xf9000fa1
 .word 0xf9400ba0
 .word 0x91004001
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -322,6 +326,7 @@ System_MonoLimitationAttribute__ctor_string:
 .word 0xf9000fa1
 .word 0xf9400ba0
 .word 0x91004001
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -352,6 +357,7 @@ System_MonoNotSupportedAttribute__ctor_string:
 .word 0xf9000fa1
 .word 0xf9400ba0
 .word 0x91004001
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -427,7 +433,7 @@ bl _p_3
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_4
 
@@ -467,7 +473,7 @@ Lme_d:
 	.no_dead_strip System_Transactions_CommittableTransaction_BeginCommit_System_AsyncCallback_object
 System_Transactions_CommittableTransaction_BeginCommit_System_AsyncCallback_object:
 .loc 3 49 0 prologue_end
-.word 0xa9bd7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xf9000bb8
 .word 0xf9000fba
@@ -475,6 +481,7 @@ System_Transactions_CommittableTransaction_BeginCommit_System_AsyncCallback_obje
 .word 0xf90013a1
 .word 0xaa0203fa
 .word 0x9101c301
+.word 0xd5033bbf
 .word 0xf94013a0
 .word 0xf9000020
 .word 0xd349fc21
@@ -488,8 +495,11 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
+.word 0xf9001ba0
 .loc 3 50 0
 .word 0x9101e301
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf900003a
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -505,20 +515,23 @@ ldr x2, [x16, #16]
 .loc 3 52 0
 .word 0xd280001a
 .loc 3 53 0
-.word 0xb4000520
+.word 0xb4000580
 .loc 3 54 0
 .word 0xeb1f031f
 .word 0x10000011
-.word 0x540007c0
+.word 0x54000880
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x0, [x16, #200]
 .word 0xd2801001
 bl _p_5
+.word 0xf9001ba0
 .word 0xeb1f031f
 .word 0x10000011
-.word 0x54000660
+.word 0x54000700
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9001018
 .word 0x91008001
 .word 0xd349fc21
@@ -556,7 +569,10 @@ ldr x1, [x16, #224]
 .word 0xaa1803e0
 .word 0xaa1a03e1
 bl _p_6
+.word 0xf9001ba0
 .word 0x91020301
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -574,12 +590,12 @@ ldr x2, [x16, #16]
 .word 0xf9400bb8
 .word 0xf9400fba
 .word 0x910003bf
-.word 0xa8c37bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_4
-.word 0xd2801920
+.word 0xd2801940
 .word 0xaa1103e1
 bl _p_4
 
@@ -622,7 +638,7 @@ ldr x0, [x16, #0]
 bl _p_8
 .word 0xaa0003e2
 .word 0xf94013a1
-.word 0xd2801920
+.word 0xd2801940
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_9
@@ -639,7 +655,7 @@ System_Transactions_CommittableTransaction_CommitCallback_System_IAsyncResult:
 .word 0xaa0003f9
 .word 0xaa0103fa
 .word 0xf9404320
-.word 0xb5000300
+.word 0xb5000360
 .word 0xaa1a03e0
 .word 0xf9400341
 
@@ -651,9 +667,12 @@ ldr x15, [x16, #232]
 .word 0xf8706830
 .word 0xd63f0200
 .word 0x53001c00
-.word 0x340001a0
+.word 0x34000200
 .loc 3 71 0
 .word 0x91020320
+.word 0xf90013a0
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xf900001a
 .word 0xd349fc00
 .word 0xd29ffffe
@@ -708,7 +727,7 @@ System_Transactions_CommittableTransaction_System_Runtime_Serialization_ISeriali
 .word 0xf9000fa1
 .word 0xf90013a2
 .word 0xf90017a3
-.word 0xd28026c0
+.word 0xd28026e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -857,7 +876,7 @@ System_Transactions_DependentTransaction_Complete:
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
-.word 0xd28026c0
+.word 0xd28026e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -962,6 +981,7 @@ System_Transactions_PreparingEnlistment__ctor_System_Transactions_Transaction_Sy
 .word 0x3900431f
 .loc 6 27 0
 .word 0x91006301
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -977,6 +997,7 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .loc 6 28 0
 .word 0x91008301
+.word 0xd5033bbf
 .word 0xf94013a0
 .word 0xf9000020
 .word 0xd349fc21
@@ -1000,8 +1021,9 @@ bl _p_5
 .word 0xf9001ba0
 .word 0xd2800001
 bl _p_13
-.word 0xf9401ba0
 .word 0x9100a301
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -1092,7 +1114,7 @@ bl _p_17
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_4
 
@@ -1130,7 +1152,7 @@ bl _p_17
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_4
 
@@ -1143,7 +1165,7 @@ System_Transactions_PreparingEnlistment_RecoveryInformation:
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
-.word 0xd28026c0
+.word 0xd28026e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -1223,6 +1245,7 @@ System_Transactions_PreparingEnlistment_set_Exception_System_Exception:
 .word 0xf9000fa1
 .word 0xf9400ba0
 .word 0x9100c001
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -1271,6 +1294,7 @@ System_Transactions_SinglePhaseEnlistment__ctor_System_Transactions_Transaction_
 .word 0x3900431f
 .loc 7 29 0
 .word 0x91006301
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -1286,6 +1310,7 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .loc 7 30 0
 .word 0x91008301
+.word 0xd5033bbf
 .word 0xf94013a0
 .word 0xf9000020
 .word 0xd349fc21
@@ -1373,7 +1398,7 @@ System_Transactions_SinglePhaseEnlistment_InDoubt:
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
-.word 0xd28026c0
+.word 0xd28026e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -1391,7 +1416,7 @@ System_Transactions_SinglePhaseEnlistment_InDoubt_System_Exception:
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xd28026c0
+.word 0xd28026e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -1415,7 +1440,7 @@ System_Transactions_SubordinateTransaction__ctor_System_Transactions_IsolationLe
 .word 0xb9801ba1
 bl _p_3
 .loc 8 21 0
-.word 0xd28026c0
+.word 0xd28026e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -1430,12 +1455,12 @@ Lme_49:
 System_Transactions_Transaction_get_Volatiles:
 .file 9 "/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/src/Xamarin.iOS/mcs/class/System.Transactions/System.Transactions/Transaction.cs"
 .loc 9 56 0 prologue_end
-.word 0xa9be7bfd
+.word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000bba
 .word 0xaa0003fa
 .word 0xf9401340
-.word 0xb5000440
+.word 0xb5000500
 .loc 9 57 0
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
@@ -1448,20 +1473,26 @@ adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x1, [x16, #288]
 .word 0xf9400021
-.word 0x91004002
-.word 0xf9000041
-.word 0xd349fc42
+.word 0xf90017a1
+.word 0xf90013a0
+.word 0x91004001
+.word 0xd5033bbf
+.word 0xf94017a0
+.word 0xf9000020
+.word 0xd349fc21
 .word 0xd29ffffe
 .word 0xf2a00ffe
-.word 0x8a1e0042
+.word 0x8a1e0021
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
-ldr x3, [x16, #16]
-.word 0x8b030042
+ldr x2, [x16, #16]
+.word 0x8b020021
 .word 0xd280003e
-.word 0x3900005e
+.word 0x3900003e
 .word 0x91008341
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -1478,7 +1509,7 @@ ldr x2, [x16, #16]
 .word 0xf9401340
 .word 0xf9400bba
 .word 0x910003bf
-.word 0xa8c27bfd
+.word 0xa8c37bfd
 .word 0xd65f03c0
 
 Lme_4a:
@@ -1487,12 +1518,12 @@ Lme_4a:
 	.no_dead_strip System_Transactions_Transaction_get_Durables
 System_Transactions_Transaction_get_Durables:
 .loc 9 64 0 prologue_end
-.word 0xa9be7bfd
+.word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000bba
 .word 0xaa0003fa
 .word 0xf9401740
-.word 0xb5000440
+.word 0xb5000500
 .loc 9 65 0
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
@@ -1505,20 +1536,26 @@ adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x1, [x16, #304]
 .word 0xf9400021
-.word 0x91004002
-.word 0xf9000041
-.word 0xd349fc42
+.word 0xf90017a1
+.word 0xf90013a0
+.word 0x91004001
+.word 0xd5033bbf
+.word 0xf94017a0
+.word 0xf9000020
+.word 0xd349fc21
 .word 0xd29ffffe
 .word 0xf2a00ffe
-.word 0x8a1e0042
+.word 0x8a1e0021
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
-ldr x3, [x16, #16]
-.word 0x8b030042
+ldr x2, [x16, #16]
+.word 0x8b020021
 .word 0xd280003e
-.word 0x3900005e
+.word 0x3900003e
 .word 0x9100a341
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -1535,7 +1572,7 @@ ldr x2, [x16, #16]
 .word 0xf9401740
 .word 0xf9400bba
 .word 0x910003bf
-.word 0xa8c27bfd
+.word 0xa8c37bfd
 .word 0xd65f03c0
 
 Lme_4b:
@@ -1559,7 +1596,7 @@ Lme_4c:
 	.no_dead_strip System_Transactions_Transaction__ctor_System_Transactions_IsolationLevel
 System_Transactions_Transaction__ctor_System_Transactions_IsolationLevel:
 .loc 9 29 0 prologue_end
-.word 0xa9bb7bfd
+.word 0xa9ba7bfd
 .word 0x910003fd
 .word 0xf9000bb9
 .word 0xaa0003f9
@@ -1570,7 +1607,7 @@ add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x0, [x16, #312]
 .word 0xd2800501
 bl _p_5
-.word 0xf90027a0
+.word 0xf9002fa0
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
@@ -1582,26 +1619,32 @@ ldr x0, [x16, #328]
 .word 0x3980b410
 .word 0xb5000050
 bl _p_20
-.word 0xf94027a0
+.word 0xf9402fa0
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x1, [x16, #336]
 .word 0xf9400021
-.word 0x91004002
-.word 0xf9000041
-.word 0xd349fc42
+.word 0xf9002ba1
+.word 0xf90027a0
+.word 0x91004001
+.word 0xd5033bbf
+.word 0xf9402ba0
+.word 0xf9000020
+.word 0xd349fc21
 .word 0xd29ffffe
 .word 0xf2a00ffe
-.word 0x8a1e0042
+.word 0x8a1e0021
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
-ldr x3, [x16, #16]
-.word 0x8b030042
+ldr x2, [x16, #16]
+.word 0x8b020021
 .word 0xd280003e
-.word 0x3900005e
+.word 0x3900003e
 .word 0x91006321
+.word 0xd5033bbf
+.word 0xf94027a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -1639,8 +1682,9 @@ ldr x0, [x16, #344]
 bl _p_5
 .word 0xf90023a0
 bl _p_22
-.word 0xf94023a0
 .word 0x91004321
+.word 0xd5033bbf
+.word 0xf94023a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -1659,7 +1703,7 @@ ldr x2, [x16, #16]
 .loc 9 76 0
 .word 0xf9400bb9
 .word 0x910003bf
-.word 0xa8c57bfd
+.word 0xa8c67bfd
 .word 0xd65f03c0
 
 Lme_4d:
@@ -1668,7 +1712,7 @@ Lme_4d:
 	.no_dead_strip System_Transactions_Transaction__ctor_System_Transactions_Transaction
 System_Transactions_Transaction__ctor_System_Transactions_Transaction:
 .loc 9 29 0 prologue_end
-.word 0xa9bb7bfd
+.word 0xa9b87bfd
 .word 0x910003fd
 .word 0xa9016bb9
 .word 0xaa0003f9
@@ -1679,7 +1723,7 @@ add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x0, [x16, #312]
 .word 0xd2800501
 bl _p_5
-.word 0xf90023a0
+.word 0xf9003fa0
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
@@ -1691,26 +1735,32 @@ ldr x0, [x16, #328]
 .word 0x3980b410
 .word 0xb5000050
 bl _p_20
-.word 0xf94023a0
+.word 0xf9403fa0
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x1, [x16, #336]
 .word 0xf9400021
-.word 0x91004002
-.word 0xf9000041
-.word 0xd349fc42
+.word 0xf9003ba1
+.word 0xf90037a0
+.word 0x91004001
+.word 0xd5033bbf
+.word 0xf9403ba0
+.word 0xf9000020
+.word 0xd349fc21
 .word 0xd29ffffe
 .word 0xf2a00ffe
-.word 0x8a1e0042
+.word 0x8a1e0021
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
-ldr x3, [x16, #16]
-.word 0x8b030042
+ldr x2, [x16, #16]
+.word 0x8b020021
 .word 0xd280003e
-.word 0x3900005e
+.word 0x3900003e
 .word 0x91006321
+.word 0xd5033bbf
+.word 0xf94037a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -1744,7 +1794,10 @@ bl _p_21
 .word 0xb9005b20
 .loc 9 81 0
 .word 0xf9400b40
+.word 0xf90033a0
 .word 0x91004321
+.word 0xd5033bbf
+.word 0xf94033a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -1759,7 +1812,10 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .loc 9 82 0
 .word 0xf9400f40
+.word 0xf9002fa0
 .word 0x91006321
+.word 0xd5033bbf
+.word 0xf9402fa0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -1776,7 +1832,10 @@ ldr x2, [x16, #16]
 .word 0xaa1a03e0
 .word 0x3940035e
 bl _p_23
+.word 0xf9002ba0
 .word 0x91008321
+.word 0xd5033bbf
+.word 0xf9402ba0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -1793,7 +1852,10 @@ ldr x2, [x16, #16]
 .word 0xaa1a03e0
 .word 0x3940035e
 bl _p_24
+.word 0xf90027a0
 .word 0x9100a321
+.word 0xd5033bbf
+.word 0xf94027a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -1809,7 +1871,10 @@ ldr x2, [x16, #16]
 .loc 9 85 0
 .word 0x3940035e
 .word 0xf9401b40
+.word 0xf90023a0
 .word 0x9100c321
+.word 0xd5033bbf
+.word 0xf94023a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -1825,7 +1890,7 @@ ldr x2, [x16, #16]
 .loc 9 86 0
 .word 0xa9416bb9
 .word 0x910003bf
-.word 0xa8c57bfd
+.word 0xa8c87bfd
 .word 0xd65f03c0
 
 Lme_4e:
@@ -1840,7 +1905,7 @@ System_Transactions_Transaction_System_Runtime_Serialization_ISerializable_GetOb
 .word 0xf9000fa1
 .word 0xf90013a2
 .word 0xf90017a3
-.word 0xd28026c0
+.word 0xd28026e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -1877,12 +1942,13 @@ add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x1, [x16, #352]
 .word 0xeb01001f
 .word 0x10000011
-.word 0x54000461
+.word 0x54000481
 .word 0xaa1603f5
 .word 0xeb1f033f
 .word 0x10000011
-.word 0x54000380
+.word 0x540003a0
 .word 0x91014321
+.word 0xd5033bbf
 .word 0xc85f7c30
 .word 0xeb18021f
 .word 0x54000061
@@ -1903,17 +1969,17 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .word 0xaa0003f8
 .word 0xeb17001f
-.word 0x54fffb01
+.word 0x54fffae1
 .word 0xa9415bb5
 .word 0xa94263b7
 .word 0xa9436bb9
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_4
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_4
 
@@ -1946,12 +2012,13 @@ add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x1, [x16, #352]
 .word 0xeb01001f
 .word 0x10000011
-.word 0x54000461
+.word 0x54000481
 .word 0xaa1603f5
 .word 0xeb1f033f
 .word 0x10000011
-.word 0x54000380
+.word 0x540003a0
 .word 0x91014321
+.word 0xd5033bbf
 .word 0xc85f7c30
 .word 0xeb18021f
 .word 0x54000061
@@ -1972,17 +2039,17 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .word 0xaa0003f8
 .word 0xeb17001f
-.word 0x54fffb01
+.word 0x54fffae1
 .word 0xa9415bb5
 .word 0xa94263b7
 .word 0xa9436bb9
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_4
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_4
 
@@ -2001,7 +2068,7 @@ adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
@@ -2030,7 +2097,7 @@ Lme_52:
 	.no_dead_strip System_Transactions_Transaction_set_Current_System_Transactions_Transaction
 System_Transactions_Transaction_set_Current_System_Transactions_Transaction:
 .loc 9 103 0 prologue_end
-.word 0xa9be7bfd
+.word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000ba0
 bl _p_27
@@ -2040,7 +2107,7 @@ adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
@@ -2058,11 +2125,14 @@ ldr x1, [x16, #360]
 .word 0xf2a03ffe
 .word 0xa1e0021
 .word 0x8b010000
+.word 0xf90013a0
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xf9400ba1
 .word 0xf9000001
 .loc 9 105 0
 .word 0x910003bf
-.word 0xa8c27bfd
+.word 0xa8c37bfd
 .word 0xd65f03c0
 
 Lme_53:
@@ -2078,7 +2148,7 @@ adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
@@ -2107,7 +2177,7 @@ Lme_54:
 	.no_dead_strip System_Transactions_Transaction_set_CurrentInternal_System_Transactions_Transaction
 System_Transactions_Transaction_set_CurrentInternal_System_Transactions_Transaction:
 .loc 9 110 0 prologue_end
-.word 0xa9be7bfd
+.word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000ba0
 
@@ -2115,7 +2185,7 @@ adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
@@ -2133,10 +2203,13 @@ ldr x1, [x16, #360]
 .word 0xf2a03ffe
 .word 0xa1e0021
 .word 0x8b010000
+.word 0xf90013a0
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xf9400ba1
 .word 0xf9000001
 .word 0x910003bf
-.word 0xa8c27bfd
+.word 0xa8c37bfd
 .word 0xd65f03c0
 
 Lme_55:
@@ -2276,7 +2349,7 @@ ldr x0, [x16, #0]
 .word 0xd2801a41
 bl _p_8
 .word 0xaa0003e1
-.word 0xd28026c0
+.word 0xd28026e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -2360,7 +2433,7 @@ ldr x0, [x16, #0]
 .word 0xd2802ee1
 bl _p_8
 .word 0xaa0003e1
-.word 0xd28026c0
+.word 0xd28026e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -2372,7 +2445,7 @@ ldr x0, [x16, #0]
 .word 0xd2804081
 bl _p_8
 .word 0xaa0003e1
-.word 0xd28026c0
+.word 0xd28026e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -2401,9 +2474,10 @@ bl _p_24
 .word 0x5400006d
 .loc 9 184 0
 .word 0xd2800000
-.word 0x14000019
+.word 0x1400001a
 .loc 9 186 0
 .word 0x9100c321
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -2448,7 +2522,7 @@ System_Transactions_Transaction_SetDistributedTransactionIdentifier_System_Trans
 .word 0xf9000fa1
 .word 0xf90013a2
 .word 0xf90017a3
-.word 0xd28026c0
+.word 0xd28026e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -2468,7 +2542,7 @@ System_Transactions_Transaction_EnlistPromotableSinglePhase_System_Transactions_
 .word 0xf9000fa1
 .word 0xf90013a2
 .word 0xf90017a3
-.word 0xd28026c0
+.word 0xd28026e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -2485,7 +2559,7 @@ System_Transactions_Transaction_GetPromotedToken:
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
-.word 0xd28026c0
+.word 0xd28026e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -2502,7 +2576,7 @@ System_Transactions_Transaction_get_PromoterType:
 .word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf90013a0
-.word 0xd28026c0
+.word 0xd28026e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -2626,7 +2700,7 @@ ldr x0, [x16, #0]
 .word 0xd2802ee1
 bl _p_8
 .word 0xaa0003e1
-.word 0xd28026c0
+.word 0xd28026e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -2852,7 +2926,7 @@ System_Transactions_Transaction_Rollback_System_Exception_object:
 .word 0xaa1803e0
 bl _p_38
 .loc 9 301 0
-.word 0x1400007c
+.word 0x1400007f
 .loc 9 305 0
 .word 0xf9400b00
 .word 0xaa0003e1
@@ -2860,9 +2934,12 @@ bl _p_38
 .word 0xb9803000
 .word 0xd280003e
 .word 0x6b1e001f
-.word 0x54000f40
+.word 0x54000fa0
 .loc 9 309 0
 .word 0x91012300
+.word 0xf9003ba0
+.word 0xd5033bbf
+.word 0xf9403ba0
 .word 0xf9000019
 .word 0xd349fc00
 .word 0xd29ffffe
@@ -3093,6 +3170,7 @@ System_Transactions_Transaction_set_Scope_System_Transactions_TransactionScope:
 .word 0xf9000fa1
 .word 0xf9400ba0
 .word 0x91010001
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -3116,31 +3194,34 @@ Lme_71:
 	.no_dead_strip System_Transactions_Transaction_BeginCommitInternal_System_AsyncCallback
 System_Transactions_Transaction_BeginCommitInternal_System_AsyncCallback:
 .loc 9 344 0 prologue_end
-.word 0xa9be7bfd
+.word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000bb9
 .word 0xaa0003f9
 .word 0xf9000fa1
 .word 0x39417720
-.word 0x35000840
+.word 0x35000900
 .word 0x39417320
-.word 0x35000800
+.word 0x350008c0
 .loc 9 347 0
 .word 0xd280003e
 .word 0x3901733e
 .loc 9 349 0
 .word 0xeb1f033f
 .word 0x10000011
-.word 0x54000900
+.word 0x540009c0
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x0, [x16, #448]
 .word 0xd2801001
 bl _p_5
+.word 0xf90017a0
 .word 0xeb1f033f
 .word 0x10000011
-.word 0x540007a0
+.word 0x54000840
+.word 0xd5033bbf
+.word 0xf94017a0
 .word 0xf9001019
 .word 0x91008001
 .word 0xd349fc21
@@ -3173,7 +3254,10 @@ ldr x1, [x16, #472]
 .word 0xf9401021
 .word 0xf9000801
 .word 0x3901c01f
+.word 0xf90013a0
 .word 0x9100e321
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -3195,7 +3279,7 @@ ldr x2, [x16, #16]
 bl _p_45
 .word 0xf9400bb9
 .word 0x910003bf
-.word 0xa8c27bfd
+.word 0xa8c37bfd
 .word 0xd65f03c0
 .loc 9 345 0
 
@@ -3205,14 +3289,14 @@ ldr x0, [x16, #0]
 .word 0xd2805e61
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2802440
+.word 0xd2802460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_4
-.word 0xd2801920
+.word 0xd2801940
 .word 0xaa1103e1
 bl _p_4
 
@@ -3304,7 +3388,7 @@ ldr x0, [x16, #0]
 .word 0xd2805e61
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2802440
+.word 0xd2802460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -3485,9 +3569,10 @@ System_Transactions_Transaction_InitScope_System_Transactions_TransactionScope:
 bl _p_50
 .loc 9 433 0
 .word 0x39417720
-.word 0x35000240
+.word 0x35000260
 .loc 9 436 0
 .word 0x91010321
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -3514,7 +3599,7 @@ ldr x0, [x16, #0]
 .word 0xd2807061
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2802440
+.word 0xd2802460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -3525,7 +3610,7 @@ Lme_77:
 	.no_dead_strip System_Transactions_Transaction_PrepareCallbackWrapper_object
 System_Transactions_Transaction_PrepareCallbackWrapper_object:
 .loc 9 441 0 prologue_end
-.word 0xa9b77bfd
+.word 0xa9b67bfd
 .word 0x910003fd
 .word 0xf9000bb9
 .word 0xf9000fa0
@@ -3565,7 +3650,7 @@ ldr x15, [x16, #504]
 .word 0xf8706850
 .word 0xd63f0200
 .loc 9 446 0
-.word 0x14000043
+.word 0x14000046
 .word 0xf9001ba0
 .word 0xf9401ba0
 .loc 9 447 0
@@ -3577,9 +3662,12 @@ ldr x15, [x16, #504]
 .word 0xf90023a0
 .word 0xf9401fa0
 .word 0x3940001e
-.word 0xf9401fa1
-.word 0xf94023a0
-.word 0x9100c021
+.word 0xf9401fa0
+.word 0xf94023a1
+.word 0xf9004ba1
+.word 0x9100c001
+.word 0xd5033bbf
+.word 0xf9404ba0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -3642,9 +3730,9 @@ bl _p_9
 .loc 9 462 0
 .word 0xf9400bb9
 .word 0x910003bf
-.word 0xa8c97bfd
+.word 0xa8ca7bfd
 .word 0xd65f03c0
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_4
 
@@ -3670,7 +3758,7 @@ bl _p_23
 .word 0xaa0103e0
 .word 0x3940003e
 bl _p_39
-.word 0x14000075
+.word 0x14000078
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
@@ -3757,18 +3845,21 @@ ldr x0, [x16, #0]
 .word 0xd2807d61
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2802dc0
+.word 0xd2802de0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
 .loc 9 482 0
 .word 0x3940033e
 .word 0xf9401b20
-.word 0xb4000300
+.word 0xb4000360
 .loc 9 484 0
 .word 0x3940033e
 .word 0xf9401b20
+.word 0xf9003ba0
 .word 0x91012341
+.word 0xd5033bbf
+.word 0xf9403ba0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -3816,7 +3907,7 @@ ldr x15, [x16, #416]
 .word 0x9100c3a0
 bl _p_40
 .word 0x53001c00
-.word 0x35fff0c0
+.word 0x35fff060
 .word 0xf90027bf
 .word 0x94000005
 .word 0xf94027a0
@@ -4053,15 +4144,15 @@ Lme_7d:
 	.no_dead_strip System_Transactions_Transaction_FireCompleted
 System_Transactions_Transaction_FireCompleted:
 .loc 9 538 0 prologue_end
-.word 0xa9bd7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xf9000bba
 .word 0xaa0003fa
 .word 0xf9402b40
-.word 0xb4000380
+.word 0xb40003e0
 .loc 9 539 0
 .word 0xf9402b40
-.word 0xf90017a0
+.word 0xf9001ba0
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
@@ -4069,8 +4160,11 @@ ldr x0, [x16, #576]
 .word 0xd2800301
 bl _p_5
 .word 0xaa0003e2
-.word 0xf94017a3
+.word 0xf9401ba3
 .word 0x91004040
+.word 0xf90017a0
+.word 0xd5033bbf
+.word 0xf94017a0
 .word 0xf900001a
 .word 0xd349fc00
 .word 0xd29ffffe
@@ -4092,7 +4186,7 @@ ldr x1, [x16, #16]
 .loc 9 540 0
 .word 0xf9400bba
 .word 0x910003bf
-.word 0xa8c37bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
 
 Lme_7e:
@@ -4108,7 +4202,7 @@ adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
@@ -4137,7 +4231,7 @@ adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
@@ -4165,7 +4259,7 @@ adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
@@ -4204,7 +4298,7 @@ ldr x0, [x16, #0]
 .word 0xd28088a1
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2802440
+.word 0xd2802460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -4312,6 +4406,7 @@ System_Transactions_TransactionEventArgs__ctor_System_Transactions_Transaction:
 .word 0xf9000fa1
 .word 0xf9400ba0
 .word 0x91004001
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -4506,7 +4601,7 @@ Lme_8e:
 System_Transactions_TransactionInformation__ctor:
 .file 14 "/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/src/Xamarin.iOS/mcs/class/System.Transactions/System.Transactions/TransactionInformation.cs"
 .loc 14 16 0 prologue_end
-.word 0xa9bb7bfd
+.word 0xa9ba7bfd
 .word 0x910003fd
 .word 0xf9000bba
 .word 0xaa0003fa
@@ -4567,7 +4662,10 @@ adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x1, [x16, #592]
 bl _p_72
+.word 0xf9002ba0
 .word 0x91004341
+.word 0xd5033bbf
+.word 0xf9402ba0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -4583,7 +4681,7 @@ ldr x2, [x16, #16]
 .loc 14 25 0
 .word 0xf9400bba
 .word 0x910003bf
-.word 0xa8c57bfd
+.word 0xa8c67bfd
 .word 0xd65f03c0
 
 Lme_8f:
@@ -4592,7 +4690,7 @@ Lme_8f:
 	.no_dead_strip System_Transactions_TransactionInformation__ctor_System_Transactions_TransactionInformation
 System_Transactions_TransactionInformation__ctor_System_Transactions_TransactionInformation:
 .loc 14 16 0 prologue_end
-.word 0xa9bb7bfd
+.word 0xa9ba7bfd
 .word 0x910003fd
 .word 0xa9016bb9
 .word 0xaa0003f9
@@ -4620,7 +4718,10 @@ ldr x0, [x16, #584]
 .word 0xb9000c01
 .loc 14 29 0
 .word 0xf9400b40
+.word 0xf9002ba0
 .word 0x91004321
+.word 0xd5033bbf
+.word 0xf9402ba0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -4665,7 +4766,7 @@ ldr x2, [x16, #16]
 .loc 14 33 0
 .word 0xa9416bb9
 .word 0x910003bf
-.word 0xa8c57bfd
+.word 0xa8c67bfd
 .word 0xd65f03c0
 
 Lme_90:
@@ -4817,7 +4918,7 @@ System_Transactions_TransactionInterop_GetDtcTransaction_System_Transactions_Tra
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
-.word 0xd28026c0
+.word 0xd28026e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -4835,7 +4936,7 @@ System_Transactions_TransactionInterop_GetExportCookie_System_Transactions_Trans
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xd28026c0
+.word 0xd28026e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -4852,7 +4953,7 @@ System_Transactions_TransactionInterop_GetTransactionFromDtcTransaction_System_T
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
-.word 0xd28026c0
+.word 0xd28026e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -4869,7 +4970,7 @@ System_Transactions_TransactionInterop_GetTransactionFromExportCookie_byte__:
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
-.word 0xd28026c0
+.word 0xd28026e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -4886,7 +4987,7 @@ System_Transactions_TransactionInterop_GetTransactionFromTransmitterPropagationT
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
-.word 0xd28026c0
+.word 0xd28026e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -4903,7 +5004,7 @@ System_Transactions_TransactionInterop_GetTransmitterPropagationToken_System_Tra
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
-.word 0xd28026c0
+.word 0xd28026e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -4919,7 +5020,7 @@ System_Transactions_TransactionInterop_GetWhereabouts:
 .loc 15 63 0 prologue_end
 .word 0xa9bf7bfd
 .word 0x910003fd
-.word 0xd28026c0
+.word 0xd28026e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -5046,7 +5147,7 @@ System_Transactions_TransactionManager_get_HostCurrentCallback:
 .loc 16 54 0 prologue_end
 .word 0xa9bf7bfd
 .word 0x910003fd
-.word 0xd28026c0
+.word 0xd28026e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -5063,7 +5164,7 @@ System_Transactions_TransactionManager_set_HostCurrentCallback_System_Transactio
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
-.word 0xd28026c0
+.word 0xd28026e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -5107,7 +5208,7 @@ System_Transactions_TransactionManager_RecoveryComplete_System_Guid:
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xd28026c0
+.word 0xd28026e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -5127,7 +5228,7 @@ System_Transactions_TransactionManager_Reenlist_System_Guid_byte___System_Transa
 .word 0xf9000fa1
 .word 0xf90013a2
 .word 0xf90017a3
-.word 0xd28026c0
+.word 0xd28026e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -5174,7 +5275,7 @@ add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x1, [x16, #648]
 .word 0xeb01001f
 .word 0x10000011
-.word 0x540004a1
+.word 0x540004c1
 .word 0xaa1703f6
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
@@ -5187,6 +5288,7 @@ bl _p_20
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x1, [x16, #640]
+.word 0xd5033bbf
 .word 0xc85f7c30
 .word 0xeb19021f
 .word 0x54000061
@@ -5207,14 +5309,14 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .word 0xaa0003f9
 .word 0xeb18001f
-.word 0x54fffa61
+.word 0x54fffa41
 .word 0xa9415fb6
 .word 0xa94267b8
 .word 0xf9401bba
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_4
 
@@ -5257,7 +5359,7 @@ add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x1, [x16, #648]
 .word 0xeb01001f
 .word 0x10000011
-.word 0x540004a1
+.word 0x540004c1
 .word 0xaa1703f6
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
@@ -5270,6 +5372,7 @@ bl _p_20
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x1, [x16, #640]
+.word 0xd5033bbf
 .word 0xc85f7c30
 .word 0xeb19021f
 .word 0x54000061
@@ -5290,14 +5393,14 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .word 0xaa0003f9
 .word 0xeb18001f
-.word 0x54fffa61
+.word 0x54fffa41
 .word 0xa9415fb6
 .word 0xa94267b8
 .word 0xf9401bba
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_4
 
@@ -5656,7 +5759,7 @@ bl _p_76
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_4
 
@@ -6065,7 +6168,7 @@ System_Transactions_TransactionScope__ctor_System_Transactions_Transaction_Syste
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf90013a2
-.word 0xd28026c0
+.word 0xd28026e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -6085,7 +6188,7 @@ System_Transactions_TransactionScope__ctor_System_Transactions_Transaction_Syste
 .word 0xf9000fa1
 .word 0xf90013a2
 .word 0xf9001ba3
-.word 0xd28026c0
+.word 0xd28026e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -6106,7 +6209,7 @@ System_Transactions_TransactionScope__ctor_System_Transactions_TransactionScopeO
 .word 0xf90013a2
 .word 0xf90017a3
 .word 0xf9001ba4
-.word 0xd28026c0
+.word 0xd28026e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -6120,7 +6223,7 @@ Lme_c7:
 	.no_dead_strip System_Transactions_TransactionScope_Initialize_System_Transactions_TransactionScopeOption_System_Transactions_Transaction_System_Transactions_TransactionOptions_System_Transactions_EnterpriseServicesInteropOption_System_TimeSpan_System_Transactions_TransactionScopeAsyncFlowOption
 System_Transactions_TransactionScope_Initialize_System_Transactions_TransactionScopeOption_System_Transactions_Transaction_System_Transactions_TransactionOptions_System_Transactions_EnterpriseServicesInteropOption_System_TimeSpan_System_Transactions_TransactionScopeAsyncFlowOption:
 .loc 20 129 0 prologue_end
-.word 0xa9b77bfd
+.word 0xa9b67bfd
 .word 0x910003fd
 .word 0xf9000bb7
 .word 0xaa0003f7
@@ -6158,7 +6261,7 @@ ldr x0, [x16, #672]
 .word 0xeb01001f
 .word 0x9a9fa7e0
 .word 0x53001c00
-.word 0x35000d00
+.word 0x35000e00
 .loc 20 137 0
 .word 0x9100a2e0
 .word 0xf94023a1
@@ -6169,7 +6272,7 @@ adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
@@ -6188,7 +6291,10 @@ ldr x1, [x16, #360]
 .word 0xa1e0021
 .word 0x8b010000
 .word 0xf9400000
+.word 0xf9004fa0
 .word 0x910062e1
+.word 0xd5033bbf
+.word 0xf9404fa0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -6209,10 +6315,12 @@ ldr x2, [x16, #16]
 .word 0xf9401ba4
 bl _p_83
 .word 0xaa0003e1
-.word 0xaa0103e0
-.word 0xf90043a1
-.word 0xf9003ba1
+.word 0xf9004ba1
+.word 0xf90047a0
+.word 0xf9003ba0
 .word 0x910042e1
+.word 0xd5033bbf
+.word 0xf9404ba0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -6230,8 +6338,8 @@ adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf94043a1
-.word 0xf9402c00
+.word 0xf94047a1
+.word 0xf9403400
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
@@ -6249,6 +6357,9 @@ ldr x2, [x16, #360]
 .word 0xf2a03ffe
 .word 0xa1e0042
 .word 0x8b020000
+.word 0xf90043a0
+.word 0xd5033bbf
+.word 0xf94043a0
 .word 0xf9000001
 .loc 20 142 0
 .word 0xf9400ae0
@@ -6274,7 +6385,7 @@ bl _p_84
 .loc 20 146 0
 .word 0xf9400bb7
 .word 0x910003bf
-.word 0xa8c97bfd
+.word 0xa8ca7bfd
 .word 0xd65f03c0
 .loc 20 135 0
 
@@ -6284,7 +6395,7 @@ ldr x0, [x16, #0]
 .word 0xd2809ee1
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2801960
+.word 0xd2801980
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -6310,19 +6421,19 @@ bl _p_19
 .word 0x34000060
 .loc 20 151 0
 .word 0xf9400fa0
-.word 0x140000f8
+.word 0x14000101
 .loc 20 153 0
 .word 0xb98023a0
 .word 0xd280005e
 .word 0x6b1e001f
-.word 0x54000841
+.word 0x540008a1
 .loc 20 154 0
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
@@ -6344,14 +6455,14 @@ ldr x1, [x16, #360]
 .word 0xd2800001
 bl _p_19
 .word 0x53001c00
-.word 0x340004c0
+.word 0x34000520
 .loc 20 155 0
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
@@ -6373,7 +6484,10 @@ ldr x1, [x16, #360]
 .word 0xaa0003e1
 .word 0x3940003e
 .word 0xf9402000
+.word 0xf90023a0
 .word 0x91008301
+.word 0xd5033bbf
+.word 0xf94023a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -6388,17 +6502,17 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .loc 20 156 0
 .word 0xd2800000
-.word 0x140000b3
+.word 0x140000b9
 .loc 20 159 0
 .word 0xb98023a0
-.word 0x35000ca0
+.word 0x35000d00
 .loc 20 160 0
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
@@ -6437,14 +6551,14 @@ bl _p_5
 .word 0xf90023a0
 bl _p_3
 .word 0xf94023a0
-.word 0x14000089
+.word 0x1400008f
 .loc 20 165 0
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
@@ -6466,7 +6580,10 @@ ldr x1, [x16, #360]
 .word 0xaa0003e1
 .word 0x3940003e
 .word 0xf9402000
+.word 0xf90023a0
 .word 0x91008301
+.word 0xd5033bbf
+.word 0xf94023a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -6485,7 +6602,7 @@ adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
@@ -6504,14 +6621,14 @@ ldr x1, [x16, #360]
 .word 0xa1e0021
 .word 0x8b010000
 .word 0xf9400000
-.word 0x1400004d
+.word 0x14000050
 .loc 20 170 0
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
@@ -6533,14 +6650,14 @@ ldr x1, [x16, #360]
 .word 0xd2800001
 bl _p_19
 .word 0x53001c00
-.word 0x340004c0
+.word 0x34000520
 .loc 20 171 0
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
@@ -6562,7 +6679,10 @@ ldr x1, [x16, #360]
 .word 0xaa0003e1
 .word 0x3940003e
 .word 0xf9402000
+.word 0xf90023a0
 .word 0x91008301
+.word 0xd5033bbf
+.word 0xf94023a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -6624,7 +6744,7 @@ ldr x0, [x16, #0]
 .word 0xd280a221
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2802440
+.word 0xd2802460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -6668,12 +6788,12 @@ Lme_cc:
 	.no_dead_strip System_Transactions_TransactionScope_Dispose
 System_Transactions_TransactionScope_Dispose:
 .loc 20 195 0 prologue_end
-.word 0xa9bd7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xa9016bb9
 .word 0xaa0003fa
 .word 0x3940d340
-.word 0x35002b40
+.word 0x35002de0
 .loc 20 198 0
 .word 0xd280003e
 .word 0x3900d35e
@@ -6689,14 +6809,14 @@ System_Transactions_TransactionScope_Dispose:
 .loc 20 203 0
 .word 0xb9803340
 .word 0x6b1f001f
-.word 0x54002a4c
+.word 0x54002cec
 .loc 20 208 0
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
@@ -6738,7 +6858,7 @@ adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
@@ -6767,7 +6887,7 @@ adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
@@ -6798,24 +6918,27 @@ ldr x0, [x16, #0]
 .word 0xd280c201
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2802440
+.word 0xd2802460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
 .loc 20 217 0
 .word 0x3940df40
-.word 0x34001000
+.word 0x34001180
 .loc 20 218 0
 .word 0xf9400f40
 .word 0xd2800001
 bl _p_19
 .word 0x53001c00
-.word 0x34000200
+.word 0x34000260
 .loc 20 219 0
-.word 0xf9400f41
-.word 0xf9401340
-.word 0x3940003e
-.word 0x91010021
+.word 0xf9400f40
+.word 0xf9401341
+.word 0xf90013a1
+.word 0x3940001e
+.word 0x91010001
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -6834,7 +6957,7 @@ adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
@@ -6863,11 +6986,14 @@ bl _p_36
 .word 0xd2800001
 bl _p_36
 .word 0x53001c00
-.word 0x350016a0
+.word 0x350018e0
 .loc 20 227 0
 .word 0xf9401340
+.word 0xf9001fa0
 .word 0x3940033e
 .word 0x91010321
+.word 0xd5033bbf
+.word 0xf9401fa0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -6882,14 +7008,14 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .loc 20 228 0
 .word 0xf9400f40
-.word 0xf90013a0
+.word 0xf9001ba0
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf94013a1
-.word 0xf9402c00
+.word 0xf9401ba1
+.word 0xf9403400
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
@@ -6907,12 +7033,18 @@ ldr x2, [x16, #360]
 .word 0xf2a03ffe
 .word 0xa1e0042
 .word 0x8b020000
+.word 0xf90017a0
+.word 0xd5033bbf
+.word 0xf94017a0
 .word 0xf9000001
 .loc 20 230 0
-.word 0xf9400b41
-.word 0x3940003e
-.word 0xd2800000
-.word 0x91010021
+.word 0xf9400b40
+.word 0x3940001e
+.word 0xd2800001
+.word 0xf90013a1
+.word 0x91010001
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xf900003f
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -6939,10 +7071,10 @@ bl _p_30
 .word 0x3940033e
 bl _p_30
 .loc 20 235 0
-.word 0x14000074
+.word 0x1400007d
 .loc 20 238 0
 .word 0x3940db40
-.word 0x34000e40
+.word 0x34000f60
 .loc 20 242 0
 .word 0xaa1903e0
 .word 0x3940033e
@@ -6953,14 +7085,14 @@ bl _p_10
 .word 0x3940003e
 bl _p_10
 .loc 20 244 0
-.word 0x1400006a
+.word 0x14000073
 .loc 20 245 0
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf9402c00
+.word 0xf9403400
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
@@ -6982,17 +7114,20 @@ ldr x1, [x16, #360]
 .word 0xf9400f41
 bl _p_36
 .word 0x53001c00
-.word 0x340002a0
+.word 0x34000300
 .word 0xf9400f40
 .word 0xd2800001
 bl _p_19
 .word 0x53001c00
-.word 0x34000200
+.word 0x34000260
 .loc 20 246 0
-.word 0xf9400f41
-.word 0xf9401340
-.word 0x3940003e
-.word 0x91010021
+.word 0xf9400f40
+.word 0xf9401341
+.word 0xf90013a1
+.word 0x3940001e
+.word 0x91010001
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -7007,14 +7142,14 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .loc 20 248 0
 .word 0xf9400f40
-.word 0xf90013a0
+.word 0xf90017a0
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x0, [x16, #96]
 .word 0xd63f0000
-.word 0xf94013a1
-.word 0xf9402c00
+.word 0xf94017a1
+.word 0xf9403400
 
 adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
@@ -7032,18 +7167,24 @@ ldr x2, [x16, #360]
 .word 0xf2a03ffe
 .word 0xa1e0042
 .word 0x8b020000
+.word 0xf90013a0
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xf9000001
 .loc 20 250 0
 .word 0xf9400b40
 .word 0xd2800001
 bl _p_36
 .word 0x53001c00
-.word 0x350003c0
+.word 0x35000420
 .loc 20 254 0
-.word 0xf9400b41
-.word 0x3940003e
-.word 0xd2800000
-.word 0x91010021
+.word 0xf9400b40
+.word 0x3940001e
+.word 0xd2800001
+.word 0xf90013a1
+.word 0x91010001
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xf900003f
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -7078,7 +7219,7 @@ bl _p_10
 .loc 20 269 0
 .word 0xa9416bb9
 .word 0x910003bf
-.word 0xa8c37bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
 .loc 20 204 0
 .word 0xf9400b41
@@ -7093,7 +7234,7 @@ ldr x0, [x16, #0]
 .word 0xd280b901
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2802440
+.word 0xd2802460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -7152,7 +7293,7 @@ adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x35000720
+.word 0x35000740
 .word 0x14000001
 .word 0xf9403f38
 .word 0xaa1803e0
@@ -7166,14 +7307,15 @@ ldr x0, [x16, #48]
 .word 0xaa1a03e1
 .word 0xd63f0040
 .word 0x53001c00
-.word 0x14000020
+.word 0x14000021
 .word 0xf9401f20
 .word 0xf9400b21
 .word 0xaa1a03e0
 .word 0xd63f0020
 .word 0x53001c00
-.word 0x1400001a
-.word 0xb9801b19
+.word 0x1400001b
+.word 0xb9801b00
+.word 0xaa0003f9
 .word 0xd2800017
 .word 0x93407ee0
 .word 0xb9801b01
@@ -7212,8 +7354,8 @@ bl _p_48
 bl _p_85
 .word 0xaa0003f8
 .word 0xb5ffff20
-.word 0x17ffffc6
-.word 0xd2802380
+.word 0x17ffffc5
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_4
 
@@ -7234,7 +7376,7 @@ adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x35000680
+.word 0x350006a0
 .word 0x14000001
 .word 0xf9403f38
 .word 0xaa1803e0
@@ -7247,13 +7389,14 @@ ldr x0, [x16, #48]
 .word 0xaa1803e0
 .word 0xaa1a03e1
 .word 0xd63f0040
-.word 0x1400001c
+.word 0x1400001d
 .word 0xf9401f20
 .word 0xf9400b21
 .word 0xaa1a03e0
 .word 0xd63f0020
-.word 0x14000017
-.word 0xb9801b19
+.word 0x14000018
+.word 0xb9801b00
+.word 0xaa0003f9
 .word 0xd2800017
 .word 0x93407ee0
 .word 0xb9801b01
@@ -7289,8 +7432,8 @@ bl _p_48
 bl _p_85
 .word 0xaa0003f8
 .word 0xb5ffff20
-.word 0x17ffffcb
-.word 0xd2802380
+.word 0x17ffffca
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_4
 
@@ -7312,7 +7455,7 @@ adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x35000780
+.word 0x350007a0
 .word 0x14000001
 .word 0xf9403f17
 .word 0xaa1703e0
@@ -7327,15 +7470,16 @@ ldr x0, [x16, #48]
 .word 0xaa1a03e2
 .word 0xd63f0060
 .word 0x93407c00
-.word 0x14000022
+.word 0x14000023
 .word 0xf9401f00
 .word 0xf9400b02
 .word 0xaa1903e0
 .word 0xaa1a03e1
 .word 0xd63f0040
 .word 0x93407c00
-.word 0x1400001b
-.word 0xb9801af8
+.word 0x1400001c
+.word 0xb9801ae0
+.word 0xaa0003f8
 .word 0xd2800016
 .word 0x93407ec0
 .word 0xb9801ae1
@@ -7375,8 +7519,8 @@ bl _p_48
 bl _p_85
 .word 0xaa0003f7
 .word 0xb5ffff20
-.word 0x17ffffc3
-.word 0xd2802380
+.word 0x17ffffc2
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_4
 
@@ -7397,7 +7541,7 @@ adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x35000720
+.word 0x35000740
 .word 0x14000001
 .word 0xf9403f38
 .word 0xaa1803e0
@@ -7411,14 +7555,15 @@ ldr x0, [x16, #48]
 .word 0xaa1a03e1
 .word 0xd63f0040
 .word 0x53001c00
-.word 0x14000020
+.word 0x14000021
 .word 0xf9401f20
 .word 0xf9400b21
 .word 0xaa1a03e0
 .word 0xd63f0020
 .word 0x53001c00
-.word 0x1400001a
-.word 0xb9801b19
+.word 0x1400001b
+.word 0xb9801b00
+.word 0xaa0003f9
 .word 0xd2800017
 .word 0x93407ee0
 .word 0xb9801b01
@@ -7457,8 +7602,8 @@ bl _p_48
 bl _p_85
 .word 0xaa0003f8
 .word 0xb5ffff20
-.word 0x17ffffc6
-.word 0xd2802380
+.word 0x17ffffc5
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_4
 
@@ -7479,7 +7624,7 @@ adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x35000680
+.word 0x350006a0
 .word 0x14000001
 .word 0xf9403f38
 .word 0xaa1803e0
@@ -7492,13 +7637,14 @@ ldr x0, [x16, #48]
 .word 0xaa1803e0
 .word 0xaa1a03e1
 .word 0xd63f0040
-.word 0x1400001c
+.word 0x1400001d
 .word 0xf9401f20
 .word 0xf9400b21
 .word 0xaa1a03e0
 .word 0xd63f0020
-.word 0x14000017
-.word 0xb9801b19
+.word 0x14000018
+.word 0xb9801b00
+.word 0xaa0003f9
 .word 0xd2800017
 .word 0x93407ee0
 .word 0xb9801b01
@@ -7534,8 +7680,8 @@ bl _p_48
 bl _p_85
 .word 0xaa0003f8
 .word 0xb5ffff20
-.word 0x17ffffcb
-.word 0xd2802380
+.word 0x17ffffca
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_4
 
@@ -7557,7 +7703,7 @@ adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x35000780
+.word 0x350007a0
 .word 0x14000001
 .word 0xf9403f17
 .word 0xaa1703e0
@@ -7572,15 +7718,16 @@ ldr x0, [x16, #48]
 .word 0xaa1a03e2
 .word 0xd63f0060
 .word 0x93407c00
-.word 0x14000022
+.word 0x14000023
 .word 0xf9401f00
 .word 0xf9400b02
 .word 0xaa1903e0
 .word 0xaa1a03e1
 .word 0xd63f0040
 .word 0x93407c00
-.word 0x1400001b
-.word 0xb9801af8
+.word 0x1400001c
+.word 0xb9801ae0
+.word 0xaa0003f8
 .word 0xd2800016
 .word 0x93407ec0
 .word 0xb9801ae1
@@ -7620,8 +7767,8 @@ bl _p_48
 bl _p_85
 .word 0xaa0003f7
 .word 0xb5ffff20
-.word 0x17ffffc3
-.word 0xd2802380
+.word 0x17ffffc2
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_4
 
@@ -7640,7 +7787,7 @@ adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x35000640
+.word 0x35000660
 .word 0x14000001
 .word 0xf9403f59
 .word 0xaa1903e0
@@ -7652,12 +7799,13 @@ ldr x0, [x16, #48]
 .word 0xf9400b41
 .word 0xaa1903e0
 .word 0xd63f0020
-.word 0x1400001c
+.word 0x1400001d
 .word 0xf9401f40
 .word 0xf9400b40
 .word 0xd63f0000
-.word 0x14000018
-.word 0xb9801b3a
+.word 0x14000019
+.word 0xb9801b20
+.word 0xaa0003fa
 .word 0xd2800018
 .word 0x93407f00
 .word 0xb9801b21
@@ -7693,8 +7841,8 @@ bl _p_48
 bl _p_85
 .word 0xaa0003f9
 .word 0xb5ffff20
-.word 0x17ffffcd
-.word 0xd2802380
+.word 0x17ffffcc
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_4
 
@@ -7799,7 +7947,7 @@ adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x350006e0
+.word 0x35000700
 .word 0x14000001
 .word 0xf9403f17
 .word 0xaa1703e0
@@ -7813,14 +7961,15 @@ ldr x0, [x16, #48]
 .word 0xaa1903e1
 .word 0xaa1a03e2
 .word 0xd63f0060
-.word 0x1400001e
+.word 0x1400001f
 .word 0xf9401f00
 .word 0xf9400b02
 .word 0xaa1903e0
 .word 0xaa1a03e1
 .word 0xd63f0040
-.word 0x14000018
-.word 0xb9801af8
+.word 0x14000019
+.word 0xb9801ae0
+.word 0xaa0003f8
 .word 0xd2800016
 .word 0x93407ec0
 .word 0xb9801ae1
@@ -7857,8 +8006,8 @@ bl _p_48
 bl _p_85
 .word 0xaa0003f7
 .word 0xb5ffff20
-.word 0x17ffffc8
-.word 0xd2802380
+.word 0x17ffffc7
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_4
 
@@ -7968,7 +8117,7 @@ adrp x16, mono_aot_System_Transactions_got@PAGE+0
 add x16, x16, mono_aot_System_Transactions_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x35000600
+.word 0x35000620
 .word 0x14000001
 .word 0xf9403f59
 .word 0xaa1903e0
@@ -7980,12 +8129,13 @@ ldr x0, [x16, #48]
 .word 0xf9400b41
 .word 0xaa1903e0
 .word 0xd63f0020
-.word 0x1400001a
+.word 0x1400001b
 .word 0xf9401f40
 .word 0xf9400b40
 .word 0xd63f0000
-.word 0x14000016
-.word 0xb9801b3a
+.word 0x14000017
+.word 0xb9801b20
+.word 0xaa0003fa
 .word 0xd2800018
 .word 0x93407f00
 .word 0xb9801b21
@@ -8019,8 +8169,8 @@ bl _p_48
 bl _p_85
 .word 0xaa0003f9
 .word 0xb5ffff20
-.word 0x17ffffcf
-.word 0xd2802380
+.word 0x17ffffce
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_4
 
@@ -9650,25 +9800,25 @@ unwind_info:
 
 	.byte 0,13,12,31,0,68,14,32,157,4,158,3,68,13,29,13,12,31,0,68,14,48,157,6,158,5,68,13,29,16,12,31
 	.byte 0,68,14,48,157,6,158,5,68,13,29,68,154,4,13,12,31,0,68,14,64,157,8,158,7,68,13,29,19,12,31,0
-	.byte 68,14,48,157,6,158,5,68,13,29,68,152,4,68,154,3,16,12,31,0,68,14,48,157,6,158,5,68,13,29,68,153
+	.byte 68,14,64,157,8,158,7,68,13,29,68,152,6,68,154,5,16,12,31,0,68,14,48,157,6,158,5,68,13,29,68,153
 	.byte 4,18,12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4,154,3,16,12,31,0,68,14,32,157,4,158,3,68
 	.byte 13,29,68,154,2,16,12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6,18,12,31,0,68,14,32,157,4,158
 	.byte 3,68,13,29,68,153,2,154,1,16,12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4,16,12,31,0,68,14
-	.byte 32,157,4,158,3,68,13,29,68,153,2,16,12,31,0,68,14,80,157,10,158,9,68,13,29,68,153,8,18,12,31,0
-	.byte 68,14,80,157,10,158,9,68,13,29,68,153,8,154,7,28,12,31,0,68,14,64,157,8,158,7,68,13,29,68,149,6
-	.byte 150,5,68,151,4,152,3,68,153,2,154,1,13,12,31,0,68,14,16,157,2,158,1,68,13,29,23,12,31,0,68,14
-	.byte 64,157,8,158,7,68,13,29,68,151,6,152,5,68,153,4,154,3,24,12,31,0,68,14,128,1,157,16,158,15,68,13
-	.byte 29,68,151,14,152,13,68,153,12,154,11,16,12,31,0,68,14,112,157,14,158,13,68,13,29,68,154,12,17,12,31,0
-	.byte 68,14,144,1,157,18,158,17,68,13,29,68,153,16,19,12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,153,14
-	.byte 154,13,16,12,31,0,68,14,96,157,12,158,11,68,13,29,68,154,10,16,12,31,0,68,14,64,157,8,158,7,68,13
-	.byte 29,68,154,6,16,12,31,0,68,14,80,157,10,158,9,68,13,29,68,154,8,26,12,31,0,68,14,64,157,8,158,7
-	.byte 68,13,29,68,150,6,151,5,68,152,4,153,3,68,154,2,13,12,31,0,68,14,80,157,10,158,9,68,13,29,19,12
-	.byte 31,0,68,14,80,157,10,158,9,68,13,29,68,152,8,68,154,7,17,12,31,0,68,14,144,1,157,18,158,17,68,13
-	.byte 29,68,151,16,16,12,31,0,68,14,80,157,10,158,9,68,13,29,68,152,8,26,12,31,0,68,14,80,157,10,158,9
-	.byte 68,13,29,68,150,8,151,7,68,152,6,153,5,68,154,4,28,12,31,0,68,14,80,157,10,158,9,68,13,29,68,149
-	.byte 8,150,7,68,151,6,152,5,68,153,4,154,3,18,12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6,153,5
-	.byte 18,12,31,0,68,14,80,157,10,158,9,68,13,29,68,152,8,153,7,13,12,31,0,68,14,96,157,12,158,11,68,13
-	.byte 29,13,12,31,0,68,14,112,157,14,158,13,68,13,29
+	.byte 32,157,4,158,3,68,13,29,68,153,2,16,12,31,0,68,14,96,157,12,158,11,68,13,29,68,153,10,19,12,31,0
+	.byte 68,14,128,1,157,16,158,15,68,13,29,68,153,14,154,13,28,12,31,0,68,14,64,157,8,158,7,68,13,29,68,149
+	.byte 6,150,5,68,151,4,152,3,68,153,2,154,1,13,12,31,0,68,14,16,157,2,158,1,68,13,29,23,12,31,0,68
+	.byte 14,64,157,8,158,7,68,13,29,68,151,6,152,5,68,153,4,154,3,24,12,31,0,68,14,128,1,157,16,158,15,68
+	.byte 13,29,68,151,14,152,13,68,153,12,154,11,16,12,31,0,68,14,112,157,14,158,13,68,13,29,68,154,12,17,12,31
+	.byte 0,68,14,160,1,157,20,158,19,68,13,29,68,153,18,16,12,31,0,68,14,96,157,12,158,11,68,13,29,68,154,10
+	.byte 16,12,31,0,68,14,64,157,8,158,7,68,13,29,68,154,6,18,12,31,0,68,14,96,157,12,158,11,68,13,29,68
+	.byte 153,10,154,9,26,12,31,0,68,14,64,157,8,158,7,68,13,29,68,150,6,151,5,68,152,4,153,3,68,154,2,13
+	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,19,12,31,0,68,14,80,157,10,158,9,68,13,29,68,152,8,68,154
+	.byte 7,17,12,31,0,68,14,160,1,157,20,158,19,68,13,29,68,151,18,16,12,31,0,68,14,80,157,10,158,9,68,13
+	.byte 29,68,152,8,18,12,31,0,68,14,64,157,8,158,7,68,13,29,68,153,6,154,5,26,12,31,0,68,14,80,157,10
+	.byte 158,9,68,13,29,68,150,8,151,7,68,152,6,153,5,68,154,4,28,12,31,0,68,14,80,157,10,158,9,68,13,29
+	.byte 68,149,8,150,7,68,151,6,152,5,68,153,4,154,3,18,12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6
+	.byte 153,5,18,12,31,0,68,14,80,157,10,158,9,68,13,29,68,152,8,153,7,13,12,31,0,68,14,96,157,12,158,11
+	.byte 68,13,29,13,12,31,0,68,14,112,157,14,158,13,68,13,29
 
 .text
 	.align 4
@@ -10404,7 +10554,7 @@ runtime_version:
 .section __TEXT, __const
 	.align 2
 assembly_guid:
-	.asciz "997870F6-B485-4C91-A05A-C0BB9C060117"
+	.asciz "FA41B445-E789-49A2-B34C-E8B98E7C5147"
 .section __TEXT, __const
 	.align 2
 assembly_name:
@@ -10413,7 +10563,7 @@ assembly_name:
 	.align 3
 _mono_aot_file_info:
 
-	.long 170,0
+	.long 171,0
 	.align 3
 	.quad mono_aot_System_Transactions_got
 	.align 3
@@ -10492,13 +10642,13 @@ _mono_aot_file_info:
 	.quad unbox_trampoline_addresses
 
 	.long 85,1384,88,273,61,354,387000831,0
-	.long 17338,128,8,8,8,9,8388607,0
-	.long 4,25,21016,0,0,3672,3472,2512
-	.long 0,2984,3392,2848,0,2016,376,3664
+	.long 17466,128,8,8,8,9,8388607,0
+	.long 4,25,21152,0,0,3680,3480,2512
+	.long 0,2984,3392,2848,0,2016,376,3672
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
-	.byte 68,126,91,15,79,70,132,11,217,80,45,3,69,192,142,164
+	.byte 129,69,244,37,103,39,216,19,214,110,191,158,11,13,79,96
 	.globl _mono_aot_module_System_Transactions_info
 	.align 3
 _mono_aot_module_System_Transactions_info:
@@ -12791,7 +12941,7 @@ Lfde14_start:
 LDIFF_SYM367=Lme_e - System_Transactions_CommittableTransaction_BeginCommit_System_AsyncCallback_object
 	.long LDIFF_SYM367
 	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4,68,154,3
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6,68,154,5
 	.align 3
 Lfde14_end:
 
@@ -14473,7 +14623,7 @@ Lfde49_start:
 LDIFF_SYM561=Lme_4a - System_Transactions_Transaction_get_Volatiles
 	.long LDIFF_SYM561
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4
 	.align 3
 Lfde49_end:
 
@@ -14507,7 +14657,7 @@ Lfde50_start:
 LDIFF_SYM564=Lme_4b - System_Transactions_Transaction_get_Durables
 	.long LDIFF_SYM564
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4
 	.align 3
 Lfde50_end:
 
@@ -14580,7 +14730,7 @@ Lfde52_start:
 LDIFF_SYM571=Lme_4d - System_Transactions_Transaction__ctor_System_Transactions_IsolationLevel
 	.long LDIFF_SYM571
 	.long 0
-	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,153,8
+	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,153,10
 	.align 3
 Lfde52_end:
 
@@ -14619,7 +14769,7 @@ Lfde53_start:
 LDIFF_SYM575=Lme_4e - System_Transactions_Transaction__ctor_System_Transactions_Transaction
 	.long LDIFF_SYM575
 	.long 0
-	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,153,8,154,7
+	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,153,14,154,13
 	.align 3
 Lfde53_end:
 
@@ -14834,7 +14984,7 @@ Lfde58_start:
 LDIFF_SYM599=Lme_53 - System_Transactions_Transaction_set_Current_System_Transactions_Transaction
 	.long LDIFF_SYM599
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
 Lfde58_end:
 
@@ -14897,7 +15047,7 @@ Lfde60_start:
 LDIFF_SYM604=Lme_55 - System_Transactions_Transaction_set_CurrentInternal_System_Transactions_Transaction
 	.long LDIFF_SYM604
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
 Lfde60_end:
 
@@ -16115,7 +16265,7 @@ Lfde89_start:
 LDIFF_SYM735=Lme_72 - System_Transactions_Transaction_BeginCommitInternal_System_AsyncCallback
 	.long LDIFF_SYM735
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4
 	.align 3
 Lfde89_end:
 
@@ -16359,7 +16509,7 @@ Lfde95_start:
 LDIFF_SYM761=Lme_78 - System_Transactions_Transaction_PrepareCallbackWrapper_object
 	.long LDIFF_SYM761
 	.long 0
-	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,153,16
+	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29,68,153,18
 	.align 3
 Lfde95_end:
 
@@ -16603,7 +16753,7 @@ Lfde101_start:
 LDIFF_SYM787=Lme_7e - System_Transactions_Transaction_FireCompleted
 	.long LDIFF_SYM787
 	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,154,6
 	.align 3
 Lfde101_end:
 
@@ -17406,7 +17556,7 @@ Lfde118_start:
 LDIFF_SYM880=Lme_8f - System_Transactions_TransactionInformation__ctor
 	.long LDIFF_SYM880
 	.long 0
-	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,154,8
+	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,154,10
 	.align 3
 Lfde118_end:
 
@@ -17445,7 +17595,7 @@ Lfde119_start:
 LDIFF_SYM884=Lme_90 - System_Transactions_TransactionInformation__ctor_System_Transactions_TransactionInformation
 	.long LDIFF_SYM884
 	.long 0
-	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,153,8,154,7
+	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,153,10,154,9
 	.align 3
 Lfde119_end:
 
@@ -19868,7 +20018,7 @@ Lfde175_start:
 LDIFF_SYM1147=Lme_c8 - System_Transactions_TransactionScope_Initialize_System_Transactions_TransactionScopeOption_System_Transactions_Transaction_System_Transactions_TransactionOptions_System_Transactions_EnterpriseServicesInteropOption_System_TimeSpan_System_Transactions_TransactionScopeAsyncFlowOption
 	.long LDIFF_SYM1147
 	.long 0
-	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,151,16
+	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29,68,151,18
 	.align 3
 Lfde175_end:
 
@@ -20058,7 +20208,7 @@ Lfde180_start:
 LDIFF_SYM1166=Lme_cd - System_Transactions_TransactionScope_Dispose
 	.long LDIFF_SYM1166
 	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4,154,3
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,153,6,154,5
 	.align 3
 Lfde180_end:
 

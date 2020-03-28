@@ -21,7 +21,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 8,1
-	.asciz "Mono AOT Compiler 6.6.0 (2019-08/fd9f379d294 Wed Dec 18 16:32:17 EST 2019)"
+	.asciz "Mono AOT Compiler 6.8.0 (2019-10/c0c5c78e2bd Tue Feb 18 13:51:26 EST 2020)"
 	.asciz "Xamarin.Forms.Platform.dll"
 	.asciz ""
 
@@ -131,10 +131,10 @@ adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
 ldr x16, [x16, #200]
 .word 0xf9000fb0
-.word 0xf9400a11
+.word 0xf9400211
 .word 0xf90013b1
 .word 0xf9400fb1
-.word 0xf9403231
+.word 0xf9402a31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf94013b1
@@ -142,20 +142,20 @@ ldr x16, [x16, #200]
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9400fb1
-.word 0xf9405231
+.word 0xf9404a31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9400ba0
 .word 0xf9400fb1
-.word 0xf9406631
+.word 0xf9405e31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9400fb1
-.word 0xf9407631
+.word 0xf9406e31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9400fb1
-.word 0xf9408631
+.word 0xf9407e31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0x910003bf
@@ -163,1436 +163,6 @@ ldr x16, [x16, #200]
 .word 0xd65f03c0
 
 Lme_0:
-.text
-	.align 4
-	.no_dead_strip Xamarin_Forms_Platform_Loader_Load
-Xamarin_Forms_Platform_Loader_Load:
-.loc 1 1 0
-.word 0xa9bd7bfd
-.word 0x910003fd
-
-adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
-add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
-ldr x16, [x16, #208]
-.word 0xf9000bb0
-.word 0xf9400a11
-.word 0xf9000fb1
-.word 0xf9400bb1
-.word 0xf9402e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9400231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400bb1
-.word 0xf9404e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400bb1
-.word 0xf9405e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0x910003bf
-.word 0xa8c37bfd
-.word 0xd65f03c0
-
-Lme_1:
-.text
-	.align 4
-	.no_dead_strip Xamarin_Forms_Platform__BoxViewRenderer__ctor
-Xamarin_Forms_Platform__BoxViewRenderer__ctor:
-.loc 1 1 0
-.word 0xa9bd7bfd
-.word 0x910003fd
-.word 0xf9000ba0
-
-adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
-add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
-ldr x16, [x16, #216]
-.word 0xf9000fb0
-.word 0xf9400a11
-.word 0xf90013b1
-.word 0xf9400fb1
-.word 0xf9403231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9400231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9405231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400ba0
-.word 0xf9400fb1
-.word 0xf9406631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9407631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9408631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0x910003bf
-.word 0xa8c37bfd
-.word 0xd65f03c0
-
-Lme_2:
-.text
-	.align 4
-	.no_dead_strip Xamarin_Forms_Platform__EntryRenderer__ctor
-Xamarin_Forms_Platform__EntryRenderer__ctor:
-.loc 1 1 0
-.word 0xa9bd7bfd
-.word 0x910003fd
-.word 0xf9000ba0
-
-adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
-add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
-ldr x16, [x16, #224]
-.word 0xf9000fb0
-.word 0xf9400a11
-.word 0xf90013b1
-.word 0xf9400fb1
-.word 0xf9403231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9400231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9405231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400ba0
-.word 0xf9400fb1
-.word 0xf9406631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9407631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9408631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0x910003bf
-.word 0xa8c37bfd
-.word 0xd65f03c0
-
-Lme_3:
-.text
-	.align 4
-	.no_dead_strip Xamarin_Forms_Platform__EditorRenderer__ctor
-Xamarin_Forms_Platform__EditorRenderer__ctor:
-.loc 1 1 0
-.word 0xa9bd7bfd
-.word 0x910003fd
-.word 0xf9000ba0
-
-adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
-add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
-ldr x16, [x16, #232]
-.word 0xf9000fb0
-.word 0xf9400a11
-.word 0xf90013b1
-.word 0xf9400fb1
-.word 0xf9403231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9400231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9405231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400ba0
-.word 0xf9400fb1
-.word 0xf9406631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9407631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9408631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0x910003bf
-.word 0xa8c37bfd
-.word 0xd65f03c0
-
-Lme_4:
-.text
-	.align 4
-	.no_dead_strip Xamarin_Forms_Platform__LabelRenderer__ctor
-Xamarin_Forms_Platform__LabelRenderer__ctor:
-.loc 1 1 0
-.word 0xa9bd7bfd
-.word 0x910003fd
-.word 0xf9000ba0
-
-adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
-add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
-ldr x16, [x16, #240]
-.word 0xf9000fb0
-.word 0xf9400a11
-.word 0xf90013b1
-.word 0xf9400fb1
-.word 0xf9403231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9400231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9405231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400ba0
-.word 0xf9400fb1
-.word 0xf9406631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9407631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9408631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0x910003bf
-.word 0xa8c37bfd
-.word 0xd65f03c0
-
-Lme_5:
-.text
-	.align 4
-	.no_dead_strip Xamarin_Forms_Platform__ImageRenderer__ctor
-Xamarin_Forms_Platform__ImageRenderer__ctor:
-.loc 1 1 0
-.word 0xa9bd7bfd
-.word 0x910003fd
-.word 0xf9000ba0
-
-adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
-add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
-ldr x16, [x16, #248]
-.word 0xf9000fb0
-.word 0xf9400a11
-.word 0xf90013b1
-.word 0xf9400fb1
-.word 0xf9403231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9400231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9405231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400ba0
-.word 0xf9400fb1
-.word 0xf9406631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9407631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9408631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0x910003bf
-.word 0xa8c37bfd
-.word 0xd65f03c0
-
-Lme_6:
-.text
-	.align 4
-	.no_dead_strip Xamarin_Forms_Platform__ButtonRenderer__ctor
-Xamarin_Forms_Platform__ButtonRenderer__ctor:
-.loc 1 1 0
-.word 0xa9bd7bfd
-.word 0x910003fd
-.word 0xf9000ba0
-
-adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
-add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
-ldr x16, [x16, #256]
-.word 0xf9000fb0
-.word 0xf9400a11
-.word 0xf90013b1
-.word 0xf9400fb1
-.word 0xf9403231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9400231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9405231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400ba0
-.word 0xf9400fb1
-.word 0xf9406631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9407631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9408631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0x910003bf
-.word 0xa8c37bfd
-.word 0xd65f03c0
-
-Lme_7:
-.text
-	.align 4
-	.no_dead_strip Xamarin_Forms_Platform__ImageButtonRenderer__ctor
-Xamarin_Forms_Platform__ImageButtonRenderer__ctor:
-.loc 1 1 0
-.word 0xa9bd7bfd
-.word 0x910003fd
-.word 0xf9000ba0
-
-adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
-add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
-ldr x16, [x16, #264]
-.word 0xf9000fb0
-.word 0xf9400a11
-.word 0xf90013b1
-.word 0xf9400fb1
-.word 0xf9403231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9400231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9405231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400ba0
-.word 0xf9400fb1
-.word 0xf9406631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9407631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9408631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0x910003bf
-.word 0xa8c37bfd
-.word 0xd65f03c0
-
-Lme_8:
-.text
-	.align 4
-	.no_dead_strip Xamarin_Forms_Platform__TableViewRenderer__ctor
-Xamarin_Forms_Platform__TableViewRenderer__ctor:
-.loc 1 1 0
-.word 0xa9bd7bfd
-.word 0x910003fd
-.word 0xf9000ba0
-
-adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
-add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
-ldr x16, [x16, #272]
-.word 0xf9000fb0
-.word 0xf9400a11
-.word 0xf90013b1
-.word 0xf9400fb1
-.word 0xf9403231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9400231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9405231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400ba0
-.word 0xf9400fb1
-.word 0xf9406631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9407631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9408631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0x910003bf
-.word 0xa8c37bfd
-.word 0xd65f03c0
-
-Lme_9:
-.text
-	.align 4
-	.no_dead_strip Xamarin_Forms_Platform__ListViewRenderer__ctor
-Xamarin_Forms_Platform__ListViewRenderer__ctor:
-.loc 1 1 0
-.word 0xa9bd7bfd
-.word 0x910003fd
-.word 0xf9000ba0
-
-adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
-add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
-ldr x16, [x16, #280]
-.word 0xf9000fb0
-.word 0xf9400a11
-.word 0xf90013b1
-.word 0xf9400fb1
-.word 0xf9403231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9400231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9405231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400ba0
-.word 0xf9400fb1
-.word 0xf9406631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9407631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9408631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0x910003bf
-.word 0xa8c37bfd
-.word 0xd65f03c0
-
-Lme_a:
-.text
-	.align 4
-	.no_dead_strip Xamarin_Forms_Platform__CollectionViewRenderer__ctor
-Xamarin_Forms_Platform__CollectionViewRenderer__ctor:
-.loc 1 1 0
-.word 0xa9bd7bfd
-.word 0x910003fd
-.word 0xf9000ba0
-
-adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
-add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
-ldr x16, [x16, #288]
-.word 0xf9000fb0
-.word 0xf9400a11
-.word 0xf90013b1
-.word 0xf9400fb1
-.word 0xf9403231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9400231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9405231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400ba0
-.word 0xf9400fb1
-.word 0xf9406631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9407631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9408631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0x910003bf
-.word 0xa8c37bfd
-.word 0xd65f03c0
-
-Lme_b:
-.text
-	.align 4
-	.no_dead_strip Xamarin_Forms_Platform__CarouselViewRenderer__ctor
-Xamarin_Forms_Platform__CarouselViewRenderer__ctor:
-.loc 1 1 0
-.word 0xa9bd7bfd
-.word 0x910003fd
-.word 0xf9000ba0
-
-adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
-add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
-ldr x16, [x16, #296]
-.word 0xf9000fb0
-.word 0xf9400a11
-.word 0xf90013b1
-.word 0xf9400fb1
-.word 0xf9403231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9400231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9405231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400ba0
-.word 0xf9400fb1
-.word 0xf9406631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9407631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9408631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0x910003bf
-.word 0xa8c37bfd
-.word 0xd65f03c0
-
-Lme_c:
-.text
-	.align 4
-	.no_dead_strip Xamarin_Forms_Platform__SliderRenderer__ctor
-Xamarin_Forms_Platform__SliderRenderer__ctor:
-.loc 1 1 0
-.word 0xa9bd7bfd
-.word 0x910003fd
-.word 0xf9000ba0
-
-adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
-add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
-ldr x16, [x16, #304]
-.word 0xf9000fb0
-.word 0xf9400a11
-.word 0xf90013b1
-.word 0xf9400fb1
-.word 0xf9403231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9400231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9405231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400ba0
-.word 0xf9400fb1
-.word 0xf9406631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9407631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9408631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0x910003bf
-.word 0xa8c37bfd
-.word 0xd65f03c0
-
-Lme_d:
-.text
-	.align 4
-	.no_dead_strip Xamarin_Forms_Platform__WebViewRenderer__ctor
-Xamarin_Forms_Platform__WebViewRenderer__ctor:
-.loc 1 1 0
-.word 0xa9bd7bfd
-.word 0x910003fd
-.word 0xf9000ba0
-
-adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
-add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
-ldr x16, [x16, #312]
-.word 0xf9000fb0
-.word 0xf9400a11
-.word 0xf90013b1
-.word 0xf9400fb1
-.word 0xf9403231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9400231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9405231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400ba0
-.word 0xf9400fb1
-.word 0xf9406631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9407631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9408631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0x910003bf
-.word 0xa8c37bfd
-.word 0xd65f03c0
-
-Lme_e:
-.text
-	.align 4
-	.no_dead_strip Xamarin_Forms_Platform__SearchBarRenderer__ctor
-Xamarin_Forms_Platform__SearchBarRenderer__ctor:
-.loc 1 1 0
-.word 0xa9bd7bfd
-.word 0x910003fd
-.word 0xf9000ba0
-
-adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
-add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
-ldr x16, [x16, #320]
-.word 0xf9000fb0
-.word 0xf9400a11
-.word 0xf90013b1
-.word 0xf9400fb1
-.word 0xf9403231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9400231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9405231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400ba0
-.word 0xf9400fb1
-.word 0xf9406631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9407631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9408631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0x910003bf
-.word 0xa8c37bfd
-.word 0xd65f03c0
-
-Lme_f:
-.text
-	.align 4
-	.no_dead_strip Xamarin_Forms_Platform__SwitchRenderer__ctor
-Xamarin_Forms_Platform__SwitchRenderer__ctor:
-.loc 1 1 0
-.word 0xa9bd7bfd
-.word 0x910003fd
-.word 0xf9000ba0
-
-adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
-add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
-ldr x16, [x16, #328]
-.word 0xf9000fb0
-.word 0xf9400a11
-.word 0xf90013b1
-.word 0xf9400fb1
-.word 0xf9403231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9400231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9405231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400ba0
-.word 0xf9400fb1
-.word 0xf9406631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9407631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9408631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0x910003bf
-.word 0xa8c37bfd
-.word 0xd65f03c0
-
-Lme_10:
-.text
-	.align 4
-	.no_dead_strip Xamarin_Forms_Platform__DatePickerRenderer__ctor
-Xamarin_Forms_Platform__DatePickerRenderer__ctor:
-.loc 1 1 0
-.word 0xa9bd7bfd
-.word 0x910003fd
-.word 0xf9000ba0
-
-adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
-add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
-ldr x16, [x16, #336]
-.word 0xf9000fb0
-.word 0xf9400a11
-.word 0xf90013b1
-.word 0xf9400fb1
-.word 0xf9403231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9400231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9405231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400ba0
-.word 0xf9400fb1
-.word 0xf9406631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9407631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9408631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0x910003bf
-.word 0xa8c37bfd
-.word 0xd65f03c0
-
-Lme_11:
-.text
-	.align 4
-	.no_dead_strip Xamarin_Forms_Platform__TimePickerRenderer__ctor
-Xamarin_Forms_Platform__TimePickerRenderer__ctor:
-.loc 1 1 0
-.word 0xa9bd7bfd
-.word 0x910003fd
-.word 0xf9000ba0
-
-adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
-add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
-ldr x16, [x16, #344]
-.word 0xf9000fb0
-.word 0xf9400a11
-.word 0xf90013b1
-.word 0xf9400fb1
-.word 0xf9403231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9400231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9405231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400ba0
-.word 0xf9400fb1
-.word 0xf9406631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9407631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9408631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0x910003bf
-.word 0xa8c37bfd
-.word 0xd65f03c0
-
-Lme_12:
-.text
-	.align 4
-	.no_dead_strip Xamarin_Forms_Platform__PickerRenderer__ctor
-Xamarin_Forms_Platform__PickerRenderer__ctor:
-.loc 1 1 0
-.word 0xa9bd7bfd
-.word 0x910003fd
-.word 0xf9000ba0
-
-adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
-add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
-ldr x16, [x16, #352]
-.word 0xf9000fb0
-.word 0xf9400a11
-.word 0xf90013b1
-.word 0xf9400fb1
-.word 0xf9403231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9400231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9405231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400ba0
-.word 0xf9400fb1
-.word 0xf9406631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9407631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9408631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0x910003bf
-.word 0xa8c37bfd
-.word 0xd65f03c0
-
-Lme_13:
-.text
-	.align 4
-	.no_dead_strip Xamarin_Forms_Platform__StepperRenderer__ctor
-Xamarin_Forms_Platform__StepperRenderer__ctor:
-.loc 1 1 0
-.word 0xa9bd7bfd
-.word 0x910003fd
-.word 0xf9000ba0
-
-adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
-add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
-ldr x16, [x16, #360]
-.word 0xf9000fb0
-.word 0xf9400a11
-.word 0xf90013b1
-.word 0xf9400fb1
-.word 0xf9403231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9400231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9405231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400ba0
-.word 0xf9400fb1
-.word 0xf9406631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9407631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9408631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0x910003bf
-.word 0xa8c37bfd
-.word 0xd65f03c0
-
-Lme_14:
-.text
-	.align 4
-	.no_dead_strip Xamarin_Forms_Platform__ProgressBarRenderer__ctor
-Xamarin_Forms_Platform__ProgressBarRenderer__ctor:
-.loc 1 1 0
-.word 0xa9bd7bfd
-.word 0x910003fd
-.word 0xf9000ba0
-
-adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
-add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
-ldr x16, [x16, #368]
-.word 0xf9000fb0
-.word 0xf9400a11
-.word 0xf90013b1
-.word 0xf9400fb1
-.word 0xf9403231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9400231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9405231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400ba0
-.word 0xf9400fb1
-.word 0xf9406631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9407631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9408631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0x910003bf
-.word 0xa8c37bfd
-.word 0xd65f03c0
-
-Lme_15:
-.text
-	.align 4
-	.no_dead_strip Xamarin_Forms_Platform__ScrollViewRenderer__ctor
-Xamarin_Forms_Platform__ScrollViewRenderer__ctor:
-.loc 1 1 0
-.word 0xa9bd7bfd
-.word 0x910003fd
-.word 0xf9000ba0
-
-adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
-add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
-ldr x16, [x16, #376]
-.word 0xf9000fb0
-.word 0xf9400a11
-.word 0xf90013b1
-.word 0xf9400fb1
-.word 0xf9403231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9400231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9405231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400ba0
-.word 0xf9400fb1
-.word 0xf9406631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9407631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9408631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0x910003bf
-.word 0xa8c37bfd
-.word 0xd65f03c0
-
-Lme_16:
-.text
-	.align 4
-	.no_dead_strip Xamarin_Forms_Platform__ActivityIndicatorRenderer__ctor
-Xamarin_Forms_Platform__ActivityIndicatorRenderer__ctor:
-.loc 1 1 0
-.word 0xa9bd7bfd
-.word 0x910003fd
-.word 0xf9000ba0
-
-adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
-add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
-ldr x16, [x16, #384]
-.word 0xf9000fb0
-.word 0xf9400a11
-.word 0xf90013b1
-.word 0xf9400fb1
-.word 0xf9403231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9400231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9405231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400ba0
-.word 0xf9400fb1
-.word 0xf9406631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9407631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9408631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0x910003bf
-.word 0xa8c37bfd
-.word 0xd65f03c0
-
-Lme_17:
-.text
-	.align 4
-	.no_dead_strip Xamarin_Forms_Platform__FrameRenderer__ctor
-Xamarin_Forms_Platform__FrameRenderer__ctor:
-.loc 1 1 0
-.word 0xa9bd7bfd
-.word 0x910003fd
-.word 0xf9000ba0
-
-adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
-add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
-ldr x16, [x16, #392]
-.word 0xf9000fb0
-.word 0xf9400a11
-.word 0xf90013b1
-.word 0xf9400fb1
-.word 0xf9403231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9400231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9405231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400ba0
-.word 0xf9400fb1
-.word 0xf9406631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9407631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9408631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0x910003bf
-.word 0xa8c37bfd
-.word 0xd65f03c0
-
-Lme_18:
-.text
-	.align 4
-	.no_dead_strip Xamarin_Forms_Platform__CheckBoxRenderer__ctor
-Xamarin_Forms_Platform__CheckBoxRenderer__ctor:
-.loc 1 1 0
-.word 0xa9bd7bfd
-.word 0x910003fd
-.word 0xf9000ba0
-
-adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
-add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
-ldr x16, [x16, #400]
-.word 0xf9000fb0
-.word 0xf9400a11
-.word 0xf90013b1
-.word 0xf9400fb1
-.word 0xf9403231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9400231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9405231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400ba0
-.word 0xf9400fb1
-.word 0xf9406631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9407631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9408631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0x910003bf
-.word 0xa8c37bfd
-.word 0xd65f03c0
-
-Lme_19:
-.text
-	.align 4
-	.no_dead_strip Xamarin_Forms_Platform__OpenGLViewRenderer__ctor
-Xamarin_Forms_Platform__OpenGLViewRenderer__ctor:
-.loc 1 1 0
-.word 0xa9bd7bfd
-.word 0x910003fd
-.word 0xf9000ba0
-
-adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
-add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
-ldr x16, [x16, #408]
-.word 0xf9000fb0
-.word 0xf9400a11
-.word 0xf90013b1
-.word 0xf9400fb1
-.word 0xf9403231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9400231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9405231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400ba0
-.word 0xf9400fb1
-.word 0xf9406631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9407631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9408631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0x910003bf
-.word 0xa8c37bfd
-.word 0xd65f03c0
-
-Lme_1a:
-.text
-	.align 4
-	.no_dead_strip Xamarin_Forms_Platform__TabbedPageRenderer__ctor
-Xamarin_Forms_Platform__TabbedPageRenderer__ctor:
-.loc 1 1 0
-.word 0xa9bd7bfd
-.word 0x910003fd
-.word 0xf9000ba0
-
-adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
-add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
-ldr x16, [x16, #416]
-.word 0xf9000fb0
-.word 0xf9400a11
-.word 0xf90013b1
-.word 0xf9400fb1
-.word 0xf9403231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9400231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9405231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400ba0
-.word 0xf9400fb1
-.word 0xf9406631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9407631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9408631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0x910003bf
-.word 0xa8c37bfd
-.word 0xd65f03c0
-
-Lme_1b:
-.text
-	.align 4
-	.no_dead_strip Xamarin_Forms_Platform__NavigationPageRenderer__ctor
-Xamarin_Forms_Platform__NavigationPageRenderer__ctor:
-.loc 1 1 0
-.word 0xa9bd7bfd
-.word 0x910003fd
-.word 0xf9000ba0
-
-adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
-add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
-ldr x16, [x16, #424]
-.word 0xf9000fb0
-.word 0xf9400a11
-.word 0xf90013b1
-.word 0xf9400fb1
-.word 0xf9403231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9400231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9405231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400ba0
-.word 0xf9400fb1
-.word 0xf9406631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9407631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9408631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0x910003bf
-.word 0xa8c37bfd
-.word 0xd65f03c0
-
-Lme_1c:
-.text
-	.align 4
-	.no_dead_strip Xamarin_Forms_Platform__CarouselPageRenderer__ctor
-Xamarin_Forms_Platform__CarouselPageRenderer__ctor:
-.loc 1 1 0
-.word 0xa9bd7bfd
-.word 0x910003fd
-.word 0xf9000ba0
-
-adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
-add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
-ldr x16, [x16, #432]
-.word 0xf9000fb0
-.word 0xf9400a11
-.word 0xf90013b1
-.word 0xf9400fb1
-.word 0xf9403231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9400231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9405231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400ba0
-.word 0xf9400fb1
-.word 0xf9406631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9407631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9408631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0x910003bf
-.word 0xa8c37bfd
-.word 0xd65f03c0
-
-Lme_1d:
-.text
-	.align 4
-	.no_dead_strip Xamarin_Forms_Platform__PageRenderer__ctor
-Xamarin_Forms_Platform__PageRenderer__ctor:
-.loc 1 1 0
-.word 0xa9bd7bfd
-.word 0x910003fd
-.word 0xf9000ba0
-
-adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
-add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
-ldr x16, [x16, #440]
-.word 0xf9000fb0
-.word 0xf9400a11
-.word 0xf90013b1
-.word 0xf9400fb1
-.word 0xf9403231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9400231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9405231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400ba0
-.word 0xf9400fb1
-.word 0xf9406631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9407631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9408631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0x910003bf
-.word 0xa8c37bfd
-.word 0xd65f03c0
-
-Lme_1e:
-.text
-	.align 4
-	.no_dead_strip Xamarin_Forms_Platform__MasterDetailPageRenderer__ctor
-Xamarin_Forms_Platform__MasterDetailPageRenderer__ctor:
-.loc 1 1 0
-.word 0xa9bd7bfd
-.word 0x910003fd
-.word 0xf9000ba0
-
-adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
-add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
-ldr x16, [x16, #448]
-.word 0xf9000fb0
-.word 0xf9400a11
-.word 0xf90013b1
-.word 0xf9400fb1
-.word 0xf9403231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9400231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9405231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400ba0
-.word 0xf9400fb1
-.word 0xf9406631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9407631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9408631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0x910003bf
-.word 0xa8c37bfd
-.word 0xd65f03c0
-
-Lme_1f:
-.text
-	.align 4
-	.no_dead_strip Xamarin_Forms_Platform__RefreshViewRenderer__ctor
-Xamarin_Forms_Platform__RefreshViewRenderer__ctor:
-.loc 1 1 0
-.word 0xa9bd7bfd
-.word 0x910003fd
-.word 0xf9000ba0
-
-adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
-add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
-ldr x16, [x16, #456]
-.word 0xf9000fb0
-.word 0xf9400a11
-.word 0xf90013b1
-.word 0xf9400fb1
-.word 0xf9403231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9400231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9405231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400ba0
-.word 0xf9400fb1
-.word 0xf9406631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9407631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9408631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0x910003bf
-.word 0xa8c37bfd
-.word 0xd65f03c0
-
-Lme_20:
 .text
 	.align 4
 	.no_dead_strip ThisAssembly_Git__ctor
@@ -1604,12 +174,12 @@ ThisAssembly_Git__ctor:
 
 adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
-ldr x16, [x16, #464]
+ldr x16, [x16, #208]
 .word 0xf9000fb0
-.word 0xf9400a11
+.word 0xf9400211
 .word 0xf90013b1
 .word 0xf9400fb1
-.word 0xf9403231
+.word 0xf9402a31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf94013b1
@@ -1617,27 +187,27 @@ ldr x16, [x16, #464]
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9400fb1
-.word 0xf9405231
+.word 0xf9404a31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9400ba0
 .word 0xf9400fb1
-.word 0xf9406631
+.word 0xf9405e31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9400fb1
-.word 0xf9407631
+.word 0xf9406e31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9400fb1
-.word 0xf9408631
+.word 0xf9407e31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_21:
+Lme_1:
 .text
 	.align 4
 	.no_dead_strip ThisAssembly_Git_BaseVersion__ctor
@@ -1649,12 +219,12 @@ ThisAssembly_Git_BaseVersion__ctor:
 
 adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
-ldr x16, [x16, #472]
+ldr x16, [x16, #216]
 .word 0xf9000fb0
-.word 0xf9400a11
+.word 0xf9400211
 .word 0xf90013b1
 .word 0xf9400fb1
-.word 0xf9403231
+.word 0xf9402a31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf94013b1
@@ -1662,27 +232,27 @@ ldr x16, [x16, #472]
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9400fb1
-.word 0xf9405231
+.word 0xf9404a31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9400ba0
 .word 0xf9400fb1
-.word 0xf9406631
+.word 0xf9405e31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9400fb1
-.word 0xf9407631
+.word 0xf9406e31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9400fb1
-.word 0xf9408631
+.word 0xf9407e31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_22:
+Lme_2:
 .text
 	.align 4
 	.no_dead_strip ThisAssembly_Git_SemVer__ctor
@@ -1694,12 +264,12 @@ ThisAssembly_Git_SemVer__ctor:
 
 adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
-ldr x16, [x16, #480]
+ldr x16, [x16, #224]
 .word 0xf9000fb0
-.word 0xf9400a11
+.word 0xf9400211
 .word 0xf90013b1
 .word 0xf9400fb1
-.word 0xf9403231
+.word 0xf9402a31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf94013b1
@@ -1707,20 +277,1450 @@ ldr x16, [x16, #480]
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9400fb1
-.word 0xf9405231
+.word 0xf9404a31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9400ba0
 .word 0xf9400fb1
-.word 0xf9406631
+.word 0xf9405e31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9400fb1
-.word 0xf9407631
+.word 0xf9406e31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9400fb1
-.word 0xf9408631
+.word 0xf9407e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_3:
+.text
+	.align 4
+	.no_dead_strip Xamarin_Forms_Platform_Loader_Load
+Xamarin_Forms_Platform_Loader_Load:
+.loc 1 1 0
+.word 0xa9bd7bfd
+.word 0x910003fd
+
+adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
+ldr x16, [x16, #232]
+.word 0xf9000bb0
+.word 0xf9400211
+.word 0xf9000fb1
+.word 0xf9400bb1
+.word 0xf9402631
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400bb1
+.word 0xf9404631
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400bb1
+.word 0xf9405631
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_4:
+.text
+	.align 4
+	.no_dead_strip Xamarin_Forms_Platform__BoxViewRenderer__ctor
+Xamarin_Forms_Platform__BoxViewRenderer__ctor:
+.loc 1 1 0
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+
+adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
+ldr x16, [x16, #240]
+.word 0xf9000fb0
+.word 0xf9400211
+.word 0xf90013b1
+.word 0xf9400fb1
+.word 0xf9402a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013b1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9404a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400ba0
+.word 0xf9400fb1
+.word 0xf9405e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9406e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9407e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_5:
+.text
+	.align 4
+	.no_dead_strip Xamarin_Forms_Platform__EntryRenderer__ctor
+Xamarin_Forms_Platform__EntryRenderer__ctor:
+.loc 1 1 0
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+
+adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
+ldr x16, [x16, #248]
+.word 0xf9000fb0
+.word 0xf9400211
+.word 0xf90013b1
+.word 0xf9400fb1
+.word 0xf9402a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013b1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9404a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400ba0
+.word 0xf9400fb1
+.word 0xf9405e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9406e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9407e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_6:
+.text
+	.align 4
+	.no_dead_strip Xamarin_Forms_Platform__EditorRenderer__ctor
+Xamarin_Forms_Platform__EditorRenderer__ctor:
+.loc 1 1 0
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+
+adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
+ldr x16, [x16, #256]
+.word 0xf9000fb0
+.word 0xf9400211
+.word 0xf90013b1
+.word 0xf9400fb1
+.word 0xf9402a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013b1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9404a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400ba0
+.word 0xf9400fb1
+.word 0xf9405e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9406e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9407e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_7:
+.text
+	.align 4
+	.no_dead_strip Xamarin_Forms_Platform__LabelRenderer__ctor
+Xamarin_Forms_Platform__LabelRenderer__ctor:
+.loc 1 1 0
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+
+adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
+ldr x16, [x16, #264]
+.word 0xf9000fb0
+.word 0xf9400211
+.word 0xf90013b1
+.word 0xf9400fb1
+.word 0xf9402a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013b1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9404a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400ba0
+.word 0xf9400fb1
+.word 0xf9405e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9406e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9407e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_8:
+.text
+	.align 4
+	.no_dead_strip Xamarin_Forms_Platform__ImageRenderer__ctor
+Xamarin_Forms_Platform__ImageRenderer__ctor:
+.loc 1 1 0
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+
+adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
+ldr x16, [x16, #272]
+.word 0xf9000fb0
+.word 0xf9400211
+.word 0xf90013b1
+.word 0xf9400fb1
+.word 0xf9402a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013b1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9404a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400ba0
+.word 0xf9400fb1
+.word 0xf9405e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9406e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9407e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_9:
+.text
+	.align 4
+	.no_dead_strip Xamarin_Forms_Platform__ButtonRenderer__ctor
+Xamarin_Forms_Platform__ButtonRenderer__ctor:
+.loc 1 1 0
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+
+adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
+ldr x16, [x16, #280]
+.word 0xf9000fb0
+.word 0xf9400211
+.word 0xf90013b1
+.word 0xf9400fb1
+.word 0xf9402a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013b1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9404a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400ba0
+.word 0xf9400fb1
+.word 0xf9405e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9406e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9407e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_a:
+.text
+	.align 4
+	.no_dead_strip Xamarin_Forms_Platform__ImageButtonRenderer__ctor
+Xamarin_Forms_Platform__ImageButtonRenderer__ctor:
+.loc 1 1 0
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+
+adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
+ldr x16, [x16, #288]
+.word 0xf9000fb0
+.word 0xf9400211
+.word 0xf90013b1
+.word 0xf9400fb1
+.word 0xf9402a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013b1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9404a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400ba0
+.word 0xf9400fb1
+.word 0xf9405e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9406e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9407e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_b:
+.text
+	.align 4
+	.no_dead_strip Xamarin_Forms_Platform__TableViewRenderer__ctor
+Xamarin_Forms_Platform__TableViewRenderer__ctor:
+.loc 1 1 0
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+
+adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
+ldr x16, [x16, #296]
+.word 0xf9000fb0
+.word 0xf9400211
+.word 0xf90013b1
+.word 0xf9400fb1
+.word 0xf9402a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013b1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9404a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400ba0
+.word 0xf9400fb1
+.word 0xf9405e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9406e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9407e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_c:
+.text
+	.align 4
+	.no_dead_strip Xamarin_Forms_Platform__ListViewRenderer__ctor
+Xamarin_Forms_Platform__ListViewRenderer__ctor:
+.loc 1 1 0
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+
+adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
+ldr x16, [x16, #304]
+.word 0xf9000fb0
+.word 0xf9400211
+.word 0xf90013b1
+.word 0xf9400fb1
+.word 0xf9402a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013b1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9404a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400ba0
+.word 0xf9400fb1
+.word 0xf9405e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9406e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9407e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_d:
+.text
+	.align 4
+	.no_dead_strip Xamarin_Forms_Platform__CollectionViewRenderer__ctor
+Xamarin_Forms_Platform__CollectionViewRenderer__ctor:
+.loc 1 1 0
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+
+adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
+ldr x16, [x16, #312]
+.word 0xf9000fb0
+.word 0xf9400211
+.word 0xf90013b1
+.word 0xf9400fb1
+.word 0xf9402a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013b1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9404a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400ba0
+.word 0xf9400fb1
+.word 0xf9405e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9406e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9407e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_e:
+.text
+	.align 4
+	.no_dead_strip Xamarin_Forms_Platform__CarouselViewRenderer__ctor
+Xamarin_Forms_Platform__CarouselViewRenderer__ctor:
+.loc 1 1 0
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+
+adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
+ldr x16, [x16, #320]
+.word 0xf9000fb0
+.word 0xf9400211
+.word 0xf90013b1
+.word 0xf9400fb1
+.word 0xf9402a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013b1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9404a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400ba0
+.word 0xf9400fb1
+.word 0xf9405e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9406e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9407e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_f:
+.text
+	.align 4
+	.no_dead_strip Xamarin_Forms_Platform__SliderRenderer__ctor
+Xamarin_Forms_Platform__SliderRenderer__ctor:
+.loc 1 1 0
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+
+adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
+ldr x16, [x16, #328]
+.word 0xf9000fb0
+.word 0xf9400211
+.word 0xf90013b1
+.word 0xf9400fb1
+.word 0xf9402a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013b1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9404a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400ba0
+.word 0xf9400fb1
+.word 0xf9405e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9406e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9407e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_10:
+.text
+	.align 4
+	.no_dead_strip Xamarin_Forms_Platform__WebViewRenderer__ctor
+Xamarin_Forms_Platform__WebViewRenderer__ctor:
+.loc 1 1 0
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+
+adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
+ldr x16, [x16, #336]
+.word 0xf9000fb0
+.word 0xf9400211
+.word 0xf90013b1
+.word 0xf9400fb1
+.word 0xf9402a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013b1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9404a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400ba0
+.word 0xf9400fb1
+.word 0xf9405e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9406e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9407e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_11:
+.text
+	.align 4
+	.no_dead_strip Xamarin_Forms_Platform__SearchBarRenderer__ctor
+Xamarin_Forms_Platform__SearchBarRenderer__ctor:
+.loc 1 1 0
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+
+adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
+ldr x16, [x16, #344]
+.word 0xf9000fb0
+.word 0xf9400211
+.word 0xf90013b1
+.word 0xf9400fb1
+.word 0xf9402a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013b1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9404a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400ba0
+.word 0xf9400fb1
+.word 0xf9405e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9406e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9407e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_12:
+.text
+	.align 4
+	.no_dead_strip Xamarin_Forms_Platform__SwitchRenderer__ctor
+Xamarin_Forms_Platform__SwitchRenderer__ctor:
+.loc 1 1 0
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+
+adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
+ldr x16, [x16, #352]
+.word 0xf9000fb0
+.word 0xf9400211
+.word 0xf90013b1
+.word 0xf9400fb1
+.word 0xf9402a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013b1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9404a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400ba0
+.word 0xf9400fb1
+.word 0xf9405e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9406e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9407e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_13:
+.text
+	.align 4
+	.no_dead_strip Xamarin_Forms_Platform__DatePickerRenderer__ctor
+Xamarin_Forms_Platform__DatePickerRenderer__ctor:
+.loc 1 1 0
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+
+adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
+ldr x16, [x16, #360]
+.word 0xf9000fb0
+.word 0xf9400211
+.word 0xf90013b1
+.word 0xf9400fb1
+.word 0xf9402a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013b1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9404a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400ba0
+.word 0xf9400fb1
+.word 0xf9405e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9406e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9407e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_14:
+.text
+	.align 4
+	.no_dead_strip Xamarin_Forms_Platform__TimePickerRenderer__ctor
+Xamarin_Forms_Platform__TimePickerRenderer__ctor:
+.loc 1 1 0
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+
+adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
+ldr x16, [x16, #368]
+.word 0xf9000fb0
+.word 0xf9400211
+.word 0xf90013b1
+.word 0xf9400fb1
+.word 0xf9402a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013b1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9404a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400ba0
+.word 0xf9400fb1
+.word 0xf9405e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9406e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9407e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_15:
+.text
+	.align 4
+	.no_dead_strip Xamarin_Forms_Platform__PickerRenderer__ctor
+Xamarin_Forms_Platform__PickerRenderer__ctor:
+.loc 1 1 0
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+
+adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
+ldr x16, [x16, #376]
+.word 0xf9000fb0
+.word 0xf9400211
+.word 0xf90013b1
+.word 0xf9400fb1
+.word 0xf9402a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013b1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9404a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400ba0
+.word 0xf9400fb1
+.word 0xf9405e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9406e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9407e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_16:
+.text
+	.align 4
+	.no_dead_strip Xamarin_Forms_Platform__StepperRenderer__ctor
+Xamarin_Forms_Platform__StepperRenderer__ctor:
+.loc 1 1 0
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+
+adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
+ldr x16, [x16, #384]
+.word 0xf9000fb0
+.word 0xf9400211
+.word 0xf90013b1
+.word 0xf9400fb1
+.word 0xf9402a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013b1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9404a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400ba0
+.word 0xf9400fb1
+.word 0xf9405e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9406e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9407e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_17:
+.text
+	.align 4
+	.no_dead_strip Xamarin_Forms_Platform__ProgressBarRenderer__ctor
+Xamarin_Forms_Platform__ProgressBarRenderer__ctor:
+.loc 1 1 0
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+
+adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
+ldr x16, [x16, #392]
+.word 0xf9000fb0
+.word 0xf9400211
+.word 0xf90013b1
+.word 0xf9400fb1
+.word 0xf9402a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013b1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9404a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400ba0
+.word 0xf9400fb1
+.word 0xf9405e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9406e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9407e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_18:
+.text
+	.align 4
+	.no_dead_strip Xamarin_Forms_Platform__ScrollViewRenderer__ctor
+Xamarin_Forms_Platform__ScrollViewRenderer__ctor:
+.loc 1 1 0
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+
+adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
+ldr x16, [x16, #400]
+.word 0xf9000fb0
+.word 0xf9400211
+.word 0xf90013b1
+.word 0xf9400fb1
+.word 0xf9402a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013b1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9404a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400ba0
+.word 0xf9400fb1
+.word 0xf9405e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9406e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9407e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_19:
+.text
+	.align 4
+	.no_dead_strip Xamarin_Forms_Platform__ActivityIndicatorRenderer__ctor
+Xamarin_Forms_Platform__ActivityIndicatorRenderer__ctor:
+.loc 1 1 0
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+
+adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
+ldr x16, [x16, #408]
+.word 0xf9000fb0
+.word 0xf9400211
+.word 0xf90013b1
+.word 0xf9400fb1
+.word 0xf9402a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013b1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9404a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400ba0
+.word 0xf9400fb1
+.word 0xf9405e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9406e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9407e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_1a:
+.text
+	.align 4
+	.no_dead_strip Xamarin_Forms_Platform__FrameRenderer__ctor
+Xamarin_Forms_Platform__FrameRenderer__ctor:
+.loc 1 1 0
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+
+adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
+ldr x16, [x16, #416]
+.word 0xf9000fb0
+.word 0xf9400211
+.word 0xf90013b1
+.word 0xf9400fb1
+.word 0xf9402a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013b1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9404a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400ba0
+.word 0xf9400fb1
+.word 0xf9405e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9406e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9407e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_1b:
+.text
+	.align 4
+	.no_dead_strip Xamarin_Forms_Platform__IndicatorViewRenderer__ctor
+Xamarin_Forms_Platform__IndicatorViewRenderer__ctor:
+.loc 1 1 0
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+
+adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
+ldr x16, [x16, #424]
+.word 0xf9000fb0
+.word 0xf9400211
+.word 0xf90013b1
+.word 0xf9400fb1
+.word 0xf9402a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013b1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9404a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400ba0
+.word 0xf9400fb1
+.word 0xf9405e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9406e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9407e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_1c:
+.text
+	.align 4
+	.no_dead_strip Xamarin_Forms_Platform__CheckBoxRenderer__ctor
+Xamarin_Forms_Platform__CheckBoxRenderer__ctor:
+.loc 1 1 0
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+
+adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
+ldr x16, [x16, #432]
+.word 0xf9000fb0
+.word 0xf9400211
+.word 0xf90013b1
+.word 0xf9400fb1
+.word 0xf9402a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013b1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9404a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400ba0
+.word 0xf9400fb1
+.word 0xf9405e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9406e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9407e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_1d:
+.text
+	.align 4
+	.no_dead_strip Xamarin_Forms_Platform__OpenGLViewRenderer__ctor
+Xamarin_Forms_Platform__OpenGLViewRenderer__ctor:
+.loc 1 1 0
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+
+adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
+ldr x16, [x16, #440]
+.word 0xf9000fb0
+.word 0xf9400211
+.word 0xf90013b1
+.word 0xf9400fb1
+.word 0xf9402a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013b1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9404a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400ba0
+.word 0xf9400fb1
+.word 0xf9405e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9406e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9407e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_1e:
+.text
+	.align 4
+	.no_dead_strip Xamarin_Forms_Platform__TabbedPageRenderer__ctor
+Xamarin_Forms_Platform__TabbedPageRenderer__ctor:
+.loc 1 1 0
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+
+adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
+ldr x16, [x16, #448]
+.word 0xf9000fb0
+.word 0xf9400211
+.word 0xf90013b1
+.word 0xf9400fb1
+.word 0xf9402a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013b1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9404a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400ba0
+.word 0xf9400fb1
+.word 0xf9405e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9406e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9407e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_1f:
+.text
+	.align 4
+	.no_dead_strip Xamarin_Forms_Platform__NavigationPageRenderer__ctor
+Xamarin_Forms_Platform__NavigationPageRenderer__ctor:
+.loc 1 1 0
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+
+adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
+ldr x16, [x16, #456]
+.word 0xf9000fb0
+.word 0xf9400211
+.word 0xf90013b1
+.word 0xf9400fb1
+.word 0xf9402a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013b1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9404a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400ba0
+.word 0xf9400fb1
+.word 0xf9405e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9406e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9407e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_20:
+.text
+	.align 4
+	.no_dead_strip Xamarin_Forms_Platform__CarouselPageRenderer__ctor
+Xamarin_Forms_Platform__CarouselPageRenderer__ctor:
+.loc 1 1 0
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+
+adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
+ldr x16, [x16, #464]
+.word 0xf9000fb0
+.word 0xf9400211
+.word 0xf90013b1
+.word 0xf9400fb1
+.word 0xf9402a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013b1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9404a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400ba0
+.word 0xf9400fb1
+.word 0xf9405e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9406e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9407e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_21:
+.text
+	.align 4
+	.no_dead_strip Xamarin_Forms_Platform__PageRenderer__ctor
+Xamarin_Forms_Platform__PageRenderer__ctor:
+.loc 1 1 0
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+
+adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
+ldr x16, [x16, #472]
+.word 0xf9000fb0
+.word 0xf9400211
+.word 0xf90013b1
+.word 0xf9400fb1
+.word 0xf9402a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013b1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9404a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400ba0
+.word 0xf9400fb1
+.word 0xf9405e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9406e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9407e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_22:
+.text
+	.align 4
+	.no_dead_strip Xamarin_Forms_Platform__MasterDetailPageRenderer__ctor
+Xamarin_Forms_Platform__MasterDetailPageRenderer__ctor:
+.loc 1 1 0
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+
+adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
+ldr x16, [x16, #480]
+.word 0xf9000fb0
+.word 0xf9400211
+.word 0xf90013b1
+.word 0xf9400fb1
+.word 0xf9402a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013b1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9404a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400ba0
+.word 0xf9400fb1
+.word 0xf9405e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9406e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9407e31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0x910003bf
@@ -1728,6 +1728,141 @@ ldr x16, [x16, #480]
 .word 0xd65f03c0
 
 Lme_23:
+.text
+	.align 4
+	.no_dead_strip Xamarin_Forms_Platform__MediaElementRenderer__ctor
+Xamarin_Forms_Platform__MediaElementRenderer__ctor:
+.loc 1 1 0
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+
+adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
+ldr x16, [x16, #488]
+.word 0xf9000fb0
+.word 0xf9400211
+.word 0xf90013b1
+.word 0xf9400fb1
+.word 0xf9402a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013b1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9404a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400ba0
+.word 0xf9400fb1
+.word 0xf9405e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9406e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9407e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_24:
+.text
+	.align 4
+	.no_dead_strip Xamarin_Forms_Platform__RefreshViewRenderer__ctor
+Xamarin_Forms_Platform__RefreshViewRenderer__ctor:
+.loc 1 1 0
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+
+adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
+ldr x16, [x16, #496]
+.word 0xf9000fb0
+.word 0xf9400211
+.word 0xf90013b1
+.word 0xf9400fb1
+.word 0xf9402a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013b1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9404a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400ba0
+.word 0xf9400fb1
+.word 0xf9405e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9406e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9407e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_25:
+.text
+	.align 4
+	.no_dead_strip Xamarin_Forms_Platform__SwipeViewRenderer__ctor
+Xamarin_Forms_Platform__SwipeViewRenderer__ctor:
+.loc 1 1 0
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+
+adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
+add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
+ldr x16, [x16, #504]
+.word 0xf9000fb0
+.word 0xf9400211
+.word 0xf90013b1
+.word 0xf9400fb1
+.word 0xf9402a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013b1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9404a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400ba0
+.word 0xf9400fb1
+.word 0xf9405e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9406e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9407e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_26:
 .text
 	.align 4
 	.no_dead_strip wrapper_other_object_gsharedvt_out_sig_intptr
@@ -1740,12 +1875,12 @@ wrapper_other_object_gsharedvt_out_sig_intptr:
 
 adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
-ldr x16, [x16, #488]
+ldr x16, [x16, #512]
 .word 0xf90013b0
-.word 0xf9400a11
+.word 0xf9400211
 .word 0xf90017b1
 .word 0xf94013b1
-.word 0xf9403a31
+.word 0xf9403231
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9400fa0
@@ -1758,7 +1893,7 @@ ldr x16, [x16, #488]
 .word 0xf9400342
 .word 0xd63f0040
 .word 0xf94013b1
-.word 0xf9406e31
+.word 0xf9406631
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9400bba
@@ -1766,7 +1901,7 @@ ldr x16, [x16, #488]
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_25:
+Lme_28:
 .text
 	.align 4
 	.no_dead_strip wrapper_other_object_gsharedvt_out_sig_intptr_0
@@ -1778,12 +1913,12 @@ wrapper_other_object_gsharedvt_out_sig_intptr_0:
 
 adrp x16, mono_aot_Xamarin_Forms_Platform_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Forms_Platform_got@PAGEOFF
-ldr x16, [x16, #496]
+ldr x16, [x16, #520]
 .word 0xf9000fb0
-.word 0xf9400a11
+.word 0xf9400211
 .word 0xf90013b1
 .word 0xf9400fb1
-.word 0xf9403631
+.word 0xf9402e31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xaa1a03e0
@@ -1795,7 +1930,7 @@ ldr x16, [x16, #496]
 .word 0xf9400341
 .word 0xd63f0020
 .word 0xf9400fb1
-.word 0xf9406631
+.word 0xf9405e31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9400bba
@@ -1803,7 +1938,7 @@ ldr x16, [x16, #496]
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_26:
+Lme_29:
 .text
 	.align 3
 jit_code_end:
@@ -1814,6 +1949,9 @@ jit_code_end:
 method_addresses:
 	.no_dead_strip method_addresses
 bl ThisAssembly__ctor
+bl ThisAssembly_Git__ctor
+bl ThisAssembly_Git_BaseVersion__ctor
+bl ThisAssembly_Git_SemVer__ctor
 bl Xamarin_Forms_Platform_Loader_Load
 bl Xamarin_Forms_Platform__BoxViewRenderer__ctor
 bl Xamarin_Forms_Platform__EntryRenderer__ctor
@@ -1838,6 +1976,7 @@ bl Xamarin_Forms_Platform__ProgressBarRenderer__ctor
 bl Xamarin_Forms_Platform__ScrollViewRenderer__ctor
 bl Xamarin_Forms_Platform__ActivityIndicatorRenderer__ctor
 bl Xamarin_Forms_Platform__FrameRenderer__ctor
+bl Xamarin_Forms_Platform__IndicatorViewRenderer__ctor
 bl Xamarin_Forms_Platform__CheckBoxRenderer__ctor
 bl Xamarin_Forms_Platform__OpenGLViewRenderer__ctor
 bl Xamarin_Forms_Platform__TabbedPageRenderer__ctor
@@ -1845,10 +1984,9 @@ bl Xamarin_Forms_Platform__NavigationPageRenderer__ctor
 bl Xamarin_Forms_Platform__CarouselPageRenderer__ctor
 bl Xamarin_Forms_Platform__PageRenderer__ctor
 bl Xamarin_Forms_Platform__MasterDetailPageRenderer__ctor
+bl Xamarin_Forms_Platform__MediaElementRenderer__ctor
 bl Xamarin_Forms_Platform__RefreshViewRenderer__ctor
-bl ThisAssembly_Git__ctor
-bl ThisAssembly_Git_BaseVersion__ctor
-bl ThisAssembly_Git_SemVer__ctor
+bl Xamarin_Forms_Platform__SwipeViewRenderer__ctor
 bl method_addresses
 bl wrapper_other_object_gsharedvt_out_sig_intptr
 bl wrapper_other_object_gsharedvt_out_sig_intptr_0
@@ -1879,7 +2017,7 @@ mono_aot_Xamarin_Forms_Platform_plt:
 plt_end:
 .section __DATA, __bss
 	.align 3
-.lcomm mono_aot_Xamarin_Forms_Platform_got, 512
+.lcomm mono_aot_Xamarin_Forms_Platform_got, 536
 got_end:
 .section __TEXT, __const
 	.align 3
@@ -1902,7 +2040,7 @@ runtime_version:
 .section __TEXT, __const
 	.align 2
 assembly_guid:
-	.asciz "DE6368FF-D7E7-46B3-98F0-47480E56F40B"
+	.asciz "DDA75B69-5F64-4E35-A211-B6970C4F707F"
 .section __TEXT, __const
 	.align 2
 assembly_name:
@@ -1911,7 +2049,7 @@ assembly_name:
 	.align 3
 _mono_aot_file_info:
 
-	.long 170,0
+	.long 171,0
 	.align 3
 	.quad mono_aot_Xamarin_Forms_Platform_got
 	.align 3
@@ -1989,14 +2127,14 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 63,512,1,39,2,358,387000831,0
-	.long 2602,128,8,8,8,9,8388607,0
-	.long 4,25,3632,0,0,1024,832,248
-	.long 0,680,760,576,0,224,72,1016
+	.long 66,536,1,42,2,358,387000831,0
+	.long 2806,128,8,8,8,9,8388607,0
+	.long 4,25,3848,0,0,1032,840,256
+	.long 0,688,768,584,0,232,80,1024
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
-	.byte 137,229,106,233,19,1,237,254,240,46,202,70,98,64,147,52
+	.byte 109,84,47,114,241,189,61,141,159,106,6,223,95,187,224,134
 	.globl _mono_aot_module_Xamarin_Forms_Platform_info
 	.align 3
 _mono_aot_module_Xamarin_Forms_Platform_info:
@@ -2079,6 +2217,174 @@ LDIFF_SYM12=Lme_0 - ThisAssembly__ctor
 Lfde0_end:
 
 .section __DWARF, __debug_info,regular,debug
+LTDIE_2:
+
+	.byte 5
+	.asciz "_Git"
+
+	.byte 16,16
+LDIFF_SYM13=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM13
+	.byte 2,35,0,0,7
+	.asciz "_Git"
+
+LDIFF_SYM14=LTDIE_2 - Ldebug_info_start
+	.long LDIFF_SYM14
+LTDIE_2_POINTER:
+
+	.byte 13
+LDIFF_SYM15=LTDIE_2 - Ldebug_info_start
+	.long LDIFF_SYM15
+LTDIE_2_REFERENCE:
+
+	.byte 14
+LDIFF_SYM16=LTDIE_2 - Ldebug_info_start
+	.long LDIFF_SYM16
+	.byte 2
+	.asciz "ThisAssembly/Git:.ctor"
+	.asciz "ThisAssembly_Git__ctor"
+
+	.byte 0,0
+	.quad ThisAssembly_Git__ctor
+	.quad Lme_1
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM17=LTDIE_2_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM17
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM18=Lfde1_end - Lfde1_start
+	.long LDIFF_SYM18
+Lfde1_start:
+
+	.long 0
+	.align 3
+	.quad ThisAssembly_Git__ctor
+
+LDIFF_SYM19=Lme_1 - ThisAssembly_Git__ctor
+	.long LDIFF_SYM19
+	.long 0
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.align 3
+Lfde1_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_3:
+
+	.byte 5
+	.asciz "_BaseVersion"
+
+	.byte 16,16
+LDIFF_SYM20=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM20
+	.byte 2,35,0,0,7
+	.asciz "_BaseVersion"
+
+LDIFF_SYM21=LTDIE_3 - Ldebug_info_start
+	.long LDIFF_SYM21
+LTDIE_3_POINTER:
+
+	.byte 13
+LDIFF_SYM22=LTDIE_3 - Ldebug_info_start
+	.long LDIFF_SYM22
+LTDIE_3_REFERENCE:
+
+	.byte 14
+LDIFF_SYM23=LTDIE_3 - Ldebug_info_start
+	.long LDIFF_SYM23
+	.byte 2
+	.asciz "ThisAssembly/Git/BaseVersion:.ctor"
+	.asciz "ThisAssembly_Git_BaseVersion__ctor"
+
+	.byte 0,0
+	.quad ThisAssembly_Git_BaseVersion__ctor
+	.quad Lme_2
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM24=LTDIE_3_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM24
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM25=Lfde2_end - Lfde2_start
+	.long LDIFF_SYM25
+Lfde2_start:
+
+	.long 0
+	.align 3
+	.quad ThisAssembly_Git_BaseVersion__ctor
+
+LDIFF_SYM26=Lme_2 - ThisAssembly_Git_BaseVersion__ctor
+	.long LDIFF_SYM26
+	.long 0
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.align 3
+Lfde2_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_4:
+
+	.byte 5
+	.asciz "_SemVer"
+
+	.byte 16,16
+LDIFF_SYM27=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM27
+	.byte 2,35,0,0,7
+	.asciz "_SemVer"
+
+LDIFF_SYM28=LTDIE_4 - Ldebug_info_start
+	.long LDIFF_SYM28
+LTDIE_4_POINTER:
+
+	.byte 13
+LDIFF_SYM29=LTDIE_4 - Ldebug_info_start
+	.long LDIFF_SYM29
+LTDIE_4_REFERENCE:
+
+	.byte 14
+LDIFF_SYM30=LTDIE_4 - Ldebug_info_start
+	.long LDIFF_SYM30
+	.byte 2
+	.asciz "ThisAssembly/Git/SemVer:.ctor"
+	.asciz "ThisAssembly_Git_SemVer__ctor"
+
+	.byte 0,0
+	.quad ThisAssembly_Git_SemVer__ctor
+	.quad Lme_3
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM31=LTDIE_4_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM31
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM32=Lfde3_end - Lfde3_start
+	.long LDIFF_SYM32
+Lfde3_start:
+
+	.long 0
+	.align 3
+	.quad ThisAssembly_Git_SemVer__ctor
+
+LDIFF_SYM33=Lme_3 - ThisAssembly_Git_SemVer__ctor
+	.long LDIFF_SYM33
+	.long 0
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.align 3
+Lfde3_end:
+
+.section __DWARF, __debug_info,regular,debug
 
 	.byte 2
 	.asciz "Xamarin.Forms.Platform.Loader:Load"
@@ -2086,177 +2392,9 @@ Lfde0_end:
 
 	.byte 0,0
 	.quad Xamarin_Forms_Platform_Loader_Load
-	.quad Lme_1
-
-	.byte 2,118,16,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM13=Lfde1_end - Lfde1_start
-	.long LDIFF_SYM13
-Lfde1_start:
-
-	.long 0
-	.align 3
-	.quad Xamarin_Forms_Platform_Loader_Load
-
-LDIFF_SYM14=Lme_1 - Xamarin_Forms_Platform_Loader_Load
-	.long LDIFF_SYM14
-	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
-	.align 3
-Lfde1_end:
-
-.section __DWARF, __debug_info,regular,debug
-LTDIE_2:
-
-	.byte 5
-	.asciz "Xamarin_Forms_Platform__BoxViewRenderer"
-
-	.byte 16,16
-LDIFF_SYM15=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM15
-	.byte 2,35,0,0,7
-	.asciz "Xamarin_Forms_Platform__BoxViewRenderer"
-
-LDIFF_SYM16=LTDIE_2 - Ldebug_info_start
-	.long LDIFF_SYM16
-LTDIE_2_POINTER:
-
-	.byte 13
-LDIFF_SYM17=LTDIE_2 - Ldebug_info_start
-	.long LDIFF_SYM17
-LTDIE_2_REFERENCE:
-
-	.byte 14
-LDIFF_SYM18=LTDIE_2 - Ldebug_info_start
-	.long LDIFF_SYM18
-	.byte 2
-	.asciz "Xamarin.Forms.Platform._BoxViewRenderer:.ctor"
-	.asciz "Xamarin_Forms_Platform__BoxViewRenderer__ctor"
-
-	.byte 0,0
-	.quad Xamarin_Forms_Platform__BoxViewRenderer__ctor
-	.quad Lme_2
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM19=LTDIE_2_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM19
-	.byte 2,141,16,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM20=Lfde2_end - Lfde2_start
-	.long LDIFF_SYM20
-Lfde2_start:
-
-	.long 0
-	.align 3
-	.quad Xamarin_Forms_Platform__BoxViewRenderer__ctor
-
-LDIFF_SYM21=Lme_2 - Xamarin_Forms_Platform__BoxViewRenderer__ctor
-	.long LDIFF_SYM21
-	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
-	.align 3
-Lfde2_end:
-
-.section __DWARF, __debug_info,regular,debug
-LTDIE_3:
-
-	.byte 5
-	.asciz "Xamarin_Forms_Platform__EntryRenderer"
-
-	.byte 16,16
-LDIFF_SYM22=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM22
-	.byte 2,35,0,0,7
-	.asciz "Xamarin_Forms_Platform__EntryRenderer"
-
-LDIFF_SYM23=LTDIE_3 - Ldebug_info_start
-	.long LDIFF_SYM23
-LTDIE_3_POINTER:
-
-	.byte 13
-LDIFF_SYM24=LTDIE_3 - Ldebug_info_start
-	.long LDIFF_SYM24
-LTDIE_3_REFERENCE:
-
-	.byte 14
-LDIFF_SYM25=LTDIE_3 - Ldebug_info_start
-	.long LDIFF_SYM25
-	.byte 2
-	.asciz "Xamarin.Forms.Platform._EntryRenderer:.ctor"
-	.asciz "Xamarin_Forms_Platform__EntryRenderer__ctor"
-
-	.byte 0,0
-	.quad Xamarin_Forms_Platform__EntryRenderer__ctor
-	.quad Lme_3
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM26=LTDIE_3_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM26
-	.byte 2,141,16,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM27=Lfde3_end - Lfde3_start
-	.long LDIFF_SYM27
-Lfde3_start:
-
-	.long 0
-	.align 3
-	.quad Xamarin_Forms_Platform__EntryRenderer__ctor
-
-LDIFF_SYM28=Lme_3 - Xamarin_Forms_Platform__EntryRenderer__ctor
-	.long LDIFF_SYM28
-	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
-	.align 3
-Lfde3_end:
-
-.section __DWARF, __debug_info,regular,debug
-LTDIE_4:
-
-	.byte 5
-	.asciz "Xamarin_Forms_Platform__EditorRenderer"
-
-	.byte 16,16
-LDIFF_SYM29=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM29
-	.byte 2,35,0,0,7
-	.asciz "Xamarin_Forms_Platform__EditorRenderer"
-
-LDIFF_SYM30=LTDIE_4 - Ldebug_info_start
-	.long LDIFF_SYM30
-LTDIE_4_POINTER:
-
-	.byte 13
-LDIFF_SYM31=LTDIE_4 - Ldebug_info_start
-	.long LDIFF_SYM31
-LTDIE_4_REFERENCE:
-
-	.byte 14
-LDIFF_SYM32=LTDIE_4 - Ldebug_info_start
-	.long LDIFF_SYM32
-	.byte 2
-	.asciz "Xamarin.Forms.Platform._EditorRenderer:.ctor"
-	.asciz "Xamarin_Forms_Platform__EditorRenderer__ctor"
-
-	.byte 0,0
-	.quad Xamarin_Forms_Platform__EditorRenderer__ctor
 	.quad Lme_4
 
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM33=LTDIE_4_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM33
-	.byte 2,141,16,0
+	.byte 2,118,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
@@ -2266,9 +2404,9 @@ Lfde4_start:
 
 	.long 0
 	.align 3
-	.quad Xamarin_Forms_Platform__EditorRenderer__ctor
+	.quad Xamarin_Forms_Platform_Loader_Load
 
-LDIFF_SYM35=Lme_4 - Xamarin_Forms_Platform__EditorRenderer__ctor
+LDIFF_SYM35=Lme_4 - Xamarin_Forms_Platform_Loader_Load
 	.long LDIFF_SYM35
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
@@ -2279,13 +2417,13 @@ Lfde4_end:
 LTDIE_5:
 
 	.byte 5
-	.asciz "Xamarin_Forms_Platform__LabelRenderer"
+	.asciz "Xamarin_Forms_Platform__BoxViewRenderer"
 
 	.byte 16,16
 LDIFF_SYM36=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM36
 	.byte 2,35,0,0,7
-	.asciz "Xamarin_Forms_Platform__LabelRenderer"
+	.asciz "Xamarin_Forms_Platform__BoxViewRenderer"
 
 LDIFF_SYM37=LTDIE_5 - Ldebug_info_start
 	.long LDIFF_SYM37
@@ -2300,11 +2438,11 @@ LTDIE_5_REFERENCE:
 LDIFF_SYM39=LTDIE_5 - Ldebug_info_start
 	.long LDIFF_SYM39
 	.byte 2
-	.asciz "Xamarin.Forms.Platform._LabelRenderer:.ctor"
-	.asciz "Xamarin_Forms_Platform__LabelRenderer__ctor"
+	.asciz "Xamarin.Forms.Platform._BoxViewRenderer:.ctor"
+	.asciz "Xamarin_Forms_Platform__BoxViewRenderer__ctor"
 
 	.byte 0,0
-	.quad Xamarin_Forms_Platform__LabelRenderer__ctor
+	.quad Xamarin_Forms_Platform__BoxViewRenderer__ctor
 	.quad Lme_5
 
 	.byte 2,118,16,3
@@ -2322,9 +2460,9 @@ Lfde5_start:
 
 	.long 0
 	.align 3
-	.quad Xamarin_Forms_Platform__LabelRenderer__ctor
+	.quad Xamarin_Forms_Platform__BoxViewRenderer__ctor
 
-LDIFF_SYM42=Lme_5 - Xamarin_Forms_Platform__LabelRenderer__ctor
+LDIFF_SYM42=Lme_5 - Xamarin_Forms_Platform__BoxViewRenderer__ctor
 	.long LDIFF_SYM42
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
@@ -2335,13 +2473,13 @@ Lfde5_end:
 LTDIE_6:
 
 	.byte 5
-	.asciz "Xamarin_Forms_Platform__ImageRenderer"
+	.asciz "Xamarin_Forms_Platform__EntryRenderer"
 
 	.byte 16,16
 LDIFF_SYM43=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM43
 	.byte 2,35,0,0,7
-	.asciz "Xamarin_Forms_Platform__ImageRenderer"
+	.asciz "Xamarin_Forms_Platform__EntryRenderer"
 
 LDIFF_SYM44=LTDIE_6 - Ldebug_info_start
 	.long LDIFF_SYM44
@@ -2356,11 +2494,11 @@ LTDIE_6_REFERENCE:
 LDIFF_SYM46=LTDIE_6 - Ldebug_info_start
 	.long LDIFF_SYM46
 	.byte 2
-	.asciz "Xamarin.Forms.Platform._ImageRenderer:.ctor"
-	.asciz "Xamarin_Forms_Platform__ImageRenderer__ctor"
+	.asciz "Xamarin.Forms.Platform._EntryRenderer:.ctor"
+	.asciz "Xamarin_Forms_Platform__EntryRenderer__ctor"
 
 	.byte 0,0
-	.quad Xamarin_Forms_Platform__ImageRenderer__ctor
+	.quad Xamarin_Forms_Platform__EntryRenderer__ctor
 	.quad Lme_6
 
 	.byte 2,118,16,3
@@ -2378,9 +2516,9 @@ Lfde6_start:
 
 	.long 0
 	.align 3
-	.quad Xamarin_Forms_Platform__ImageRenderer__ctor
+	.quad Xamarin_Forms_Platform__EntryRenderer__ctor
 
-LDIFF_SYM49=Lme_6 - Xamarin_Forms_Platform__ImageRenderer__ctor
+LDIFF_SYM49=Lme_6 - Xamarin_Forms_Platform__EntryRenderer__ctor
 	.long LDIFF_SYM49
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
@@ -2391,13 +2529,13 @@ Lfde6_end:
 LTDIE_7:
 
 	.byte 5
-	.asciz "Xamarin_Forms_Platform__ButtonRenderer"
+	.asciz "Xamarin_Forms_Platform__EditorRenderer"
 
 	.byte 16,16
 LDIFF_SYM50=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM50
 	.byte 2,35,0,0,7
-	.asciz "Xamarin_Forms_Platform__ButtonRenderer"
+	.asciz "Xamarin_Forms_Platform__EditorRenderer"
 
 LDIFF_SYM51=LTDIE_7 - Ldebug_info_start
 	.long LDIFF_SYM51
@@ -2412,11 +2550,11 @@ LTDIE_7_REFERENCE:
 LDIFF_SYM53=LTDIE_7 - Ldebug_info_start
 	.long LDIFF_SYM53
 	.byte 2
-	.asciz "Xamarin.Forms.Platform._ButtonRenderer:.ctor"
-	.asciz "Xamarin_Forms_Platform__ButtonRenderer__ctor"
+	.asciz "Xamarin.Forms.Platform._EditorRenderer:.ctor"
+	.asciz "Xamarin_Forms_Platform__EditorRenderer__ctor"
 
 	.byte 0,0
-	.quad Xamarin_Forms_Platform__ButtonRenderer__ctor
+	.quad Xamarin_Forms_Platform__EditorRenderer__ctor
 	.quad Lme_7
 
 	.byte 2,118,16,3
@@ -2434,9 +2572,9 @@ Lfde7_start:
 
 	.long 0
 	.align 3
-	.quad Xamarin_Forms_Platform__ButtonRenderer__ctor
+	.quad Xamarin_Forms_Platform__EditorRenderer__ctor
 
-LDIFF_SYM56=Lme_7 - Xamarin_Forms_Platform__ButtonRenderer__ctor
+LDIFF_SYM56=Lme_7 - Xamarin_Forms_Platform__EditorRenderer__ctor
 	.long LDIFF_SYM56
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
@@ -2447,13 +2585,13 @@ Lfde7_end:
 LTDIE_8:
 
 	.byte 5
-	.asciz "Xamarin_Forms_Platform__ImageButtonRenderer"
+	.asciz "Xamarin_Forms_Platform__LabelRenderer"
 
 	.byte 16,16
 LDIFF_SYM57=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM57
 	.byte 2,35,0,0,7
-	.asciz "Xamarin_Forms_Platform__ImageButtonRenderer"
+	.asciz "Xamarin_Forms_Platform__LabelRenderer"
 
 LDIFF_SYM58=LTDIE_8 - Ldebug_info_start
 	.long LDIFF_SYM58
@@ -2468,11 +2606,11 @@ LTDIE_8_REFERENCE:
 LDIFF_SYM60=LTDIE_8 - Ldebug_info_start
 	.long LDIFF_SYM60
 	.byte 2
-	.asciz "Xamarin.Forms.Platform._ImageButtonRenderer:.ctor"
-	.asciz "Xamarin_Forms_Platform__ImageButtonRenderer__ctor"
+	.asciz "Xamarin.Forms.Platform._LabelRenderer:.ctor"
+	.asciz "Xamarin_Forms_Platform__LabelRenderer__ctor"
 
 	.byte 0,0
-	.quad Xamarin_Forms_Platform__ImageButtonRenderer__ctor
+	.quad Xamarin_Forms_Platform__LabelRenderer__ctor
 	.quad Lme_8
 
 	.byte 2,118,16,3
@@ -2490,9 +2628,9 @@ Lfde8_start:
 
 	.long 0
 	.align 3
-	.quad Xamarin_Forms_Platform__ImageButtonRenderer__ctor
+	.quad Xamarin_Forms_Platform__LabelRenderer__ctor
 
-LDIFF_SYM63=Lme_8 - Xamarin_Forms_Platform__ImageButtonRenderer__ctor
+LDIFF_SYM63=Lme_8 - Xamarin_Forms_Platform__LabelRenderer__ctor
 	.long LDIFF_SYM63
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
@@ -2503,13 +2641,13 @@ Lfde8_end:
 LTDIE_9:
 
 	.byte 5
-	.asciz "Xamarin_Forms_Platform__TableViewRenderer"
+	.asciz "Xamarin_Forms_Platform__ImageRenderer"
 
 	.byte 16,16
 LDIFF_SYM64=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM64
 	.byte 2,35,0,0,7
-	.asciz "Xamarin_Forms_Platform__TableViewRenderer"
+	.asciz "Xamarin_Forms_Platform__ImageRenderer"
 
 LDIFF_SYM65=LTDIE_9 - Ldebug_info_start
 	.long LDIFF_SYM65
@@ -2524,11 +2662,11 @@ LTDIE_9_REFERENCE:
 LDIFF_SYM67=LTDIE_9 - Ldebug_info_start
 	.long LDIFF_SYM67
 	.byte 2
-	.asciz "Xamarin.Forms.Platform._TableViewRenderer:.ctor"
-	.asciz "Xamarin_Forms_Platform__TableViewRenderer__ctor"
+	.asciz "Xamarin.Forms.Platform._ImageRenderer:.ctor"
+	.asciz "Xamarin_Forms_Platform__ImageRenderer__ctor"
 
 	.byte 0,0
-	.quad Xamarin_Forms_Platform__TableViewRenderer__ctor
+	.quad Xamarin_Forms_Platform__ImageRenderer__ctor
 	.quad Lme_9
 
 	.byte 2,118,16,3
@@ -2546,9 +2684,9 @@ Lfde9_start:
 
 	.long 0
 	.align 3
-	.quad Xamarin_Forms_Platform__TableViewRenderer__ctor
+	.quad Xamarin_Forms_Platform__ImageRenderer__ctor
 
-LDIFF_SYM70=Lme_9 - Xamarin_Forms_Platform__TableViewRenderer__ctor
+LDIFF_SYM70=Lme_9 - Xamarin_Forms_Platform__ImageRenderer__ctor
 	.long LDIFF_SYM70
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
@@ -2559,13 +2697,13 @@ Lfde9_end:
 LTDIE_10:
 
 	.byte 5
-	.asciz "Xamarin_Forms_Platform__ListViewRenderer"
+	.asciz "Xamarin_Forms_Platform__ButtonRenderer"
 
 	.byte 16,16
 LDIFF_SYM71=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM71
 	.byte 2,35,0,0,7
-	.asciz "Xamarin_Forms_Platform__ListViewRenderer"
+	.asciz "Xamarin_Forms_Platform__ButtonRenderer"
 
 LDIFF_SYM72=LTDIE_10 - Ldebug_info_start
 	.long LDIFF_SYM72
@@ -2580,11 +2718,11 @@ LTDIE_10_REFERENCE:
 LDIFF_SYM74=LTDIE_10 - Ldebug_info_start
 	.long LDIFF_SYM74
 	.byte 2
-	.asciz "Xamarin.Forms.Platform._ListViewRenderer:.ctor"
-	.asciz "Xamarin_Forms_Platform__ListViewRenderer__ctor"
+	.asciz "Xamarin.Forms.Platform._ButtonRenderer:.ctor"
+	.asciz "Xamarin_Forms_Platform__ButtonRenderer__ctor"
 
 	.byte 0,0
-	.quad Xamarin_Forms_Platform__ListViewRenderer__ctor
+	.quad Xamarin_Forms_Platform__ButtonRenderer__ctor
 	.quad Lme_a
 
 	.byte 2,118,16,3
@@ -2602,9 +2740,9 @@ Lfde10_start:
 
 	.long 0
 	.align 3
-	.quad Xamarin_Forms_Platform__ListViewRenderer__ctor
+	.quad Xamarin_Forms_Platform__ButtonRenderer__ctor
 
-LDIFF_SYM77=Lme_a - Xamarin_Forms_Platform__ListViewRenderer__ctor
+LDIFF_SYM77=Lme_a - Xamarin_Forms_Platform__ButtonRenderer__ctor
 	.long LDIFF_SYM77
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
@@ -2615,13 +2753,13 @@ Lfde10_end:
 LTDIE_11:
 
 	.byte 5
-	.asciz "Xamarin_Forms_Platform__CollectionViewRenderer"
+	.asciz "Xamarin_Forms_Platform__ImageButtonRenderer"
 
 	.byte 16,16
 LDIFF_SYM78=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM78
 	.byte 2,35,0,0,7
-	.asciz "Xamarin_Forms_Platform__CollectionViewRenderer"
+	.asciz "Xamarin_Forms_Platform__ImageButtonRenderer"
 
 LDIFF_SYM79=LTDIE_11 - Ldebug_info_start
 	.long LDIFF_SYM79
@@ -2636,11 +2774,11 @@ LTDIE_11_REFERENCE:
 LDIFF_SYM81=LTDIE_11 - Ldebug_info_start
 	.long LDIFF_SYM81
 	.byte 2
-	.asciz "Xamarin.Forms.Platform._CollectionViewRenderer:.ctor"
-	.asciz "Xamarin_Forms_Platform__CollectionViewRenderer__ctor"
+	.asciz "Xamarin.Forms.Platform._ImageButtonRenderer:.ctor"
+	.asciz "Xamarin_Forms_Platform__ImageButtonRenderer__ctor"
 
 	.byte 0,0
-	.quad Xamarin_Forms_Platform__CollectionViewRenderer__ctor
+	.quad Xamarin_Forms_Platform__ImageButtonRenderer__ctor
 	.quad Lme_b
 
 	.byte 2,118,16,3
@@ -2658,9 +2796,9 @@ Lfde11_start:
 
 	.long 0
 	.align 3
-	.quad Xamarin_Forms_Platform__CollectionViewRenderer__ctor
+	.quad Xamarin_Forms_Platform__ImageButtonRenderer__ctor
 
-LDIFF_SYM84=Lme_b - Xamarin_Forms_Platform__CollectionViewRenderer__ctor
+LDIFF_SYM84=Lme_b - Xamarin_Forms_Platform__ImageButtonRenderer__ctor
 	.long LDIFF_SYM84
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
@@ -2671,13 +2809,13 @@ Lfde11_end:
 LTDIE_12:
 
 	.byte 5
-	.asciz "Xamarin_Forms_Platform__CarouselViewRenderer"
+	.asciz "Xamarin_Forms_Platform__TableViewRenderer"
 
 	.byte 16,16
 LDIFF_SYM85=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM85
 	.byte 2,35,0,0,7
-	.asciz "Xamarin_Forms_Platform__CarouselViewRenderer"
+	.asciz "Xamarin_Forms_Platform__TableViewRenderer"
 
 LDIFF_SYM86=LTDIE_12 - Ldebug_info_start
 	.long LDIFF_SYM86
@@ -2692,11 +2830,11 @@ LTDIE_12_REFERENCE:
 LDIFF_SYM88=LTDIE_12 - Ldebug_info_start
 	.long LDIFF_SYM88
 	.byte 2
-	.asciz "Xamarin.Forms.Platform._CarouselViewRenderer:.ctor"
-	.asciz "Xamarin_Forms_Platform__CarouselViewRenderer__ctor"
+	.asciz "Xamarin.Forms.Platform._TableViewRenderer:.ctor"
+	.asciz "Xamarin_Forms_Platform__TableViewRenderer__ctor"
 
 	.byte 0,0
-	.quad Xamarin_Forms_Platform__CarouselViewRenderer__ctor
+	.quad Xamarin_Forms_Platform__TableViewRenderer__ctor
 	.quad Lme_c
 
 	.byte 2,118,16,3
@@ -2714,9 +2852,9 @@ Lfde12_start:
 
 	.long 0
 	.align 3
-	.quad Xamarin_Forms_Platform__CarouselViewRenderer__ctor
+	.quad Xamarin_Forms_Platform__TableViewRenderer__ctor
 
-LDIFF_SYM91=Lme_c - Xamarin_Forms_Platform__CarouselViewRenderer__ctor
+LDIFF_SYM91=Lme_c - Xamarin_Forms_Platform__TableViewRenderer__ctor
 	.long LDIFF_SYM91
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
@@ -2727,13 +2865,13 @@ Lfde12_end:
 LTDIE_13:
 
 	.byte 5
-	.asciz "Xamarin_Forms_Platform__SliderRenderer"
+	.asciz "Xamarin_Forms_Platform__ListViewRenderer"
 
 	.byte 16,16
 LDIFF_SYM92=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM92
 	.byte 2,35,0,0,7
-	.asciz "Xamarin_Forms_Platform__SliderRenderer"
+	.asciz "Xamarin_Forms_Platform__ListViewRenderer"
 
 LDIFF_SYM93=LTDIE_13 - Ldebug_info_start
 	.long LDIFF_SYM93
@@ -2748,11 +2886,11 @@ LTDIE_13_REFERENCE:
 LDIFF_SYM95=LTDIE_13 - Ldebug_info_start
 	.long LDIFF_SYM95
 	.byte 2
-	.asciz "Xamarin.Forms.Platform._SliderRenderer:.ctor"
-	.asciz "Xamarin_Forms_Platform__SliderRenderer__ctor"
+	.asciz "Xamarin.Forms.Platform._ListViewRenderer:.ctor"
+	.asciz "Xamarin_Forms_Platform__ListViewRenderer__ctor"
 
 	.byte 0,0
-	.quad Xamarin_Forms_Platform__SliderRenderer__ctor
+	.quad Xamarin_Forms_Platform__ListViewRenderer__ctor
 	.quad Lme_d
 
 	.byte 2,118,16,3
@@ -2770,9 +2908,9 @@ Lfde13_start:
 
 	.long 0
 	.align 3
-	.quad Xamarin_Forms_Platform__SliderRenderer__ctor
+	.quad Xamarin_Forms_Platform__ListViewRenderer__ctor
 
-LDIFF_SYM98=Lme_d - Xamarin_Forms_Platform__SliderRenderer__ctor
+LDIFF_SYM98=Lme_d - Xamarin_Forms_Platform__ListViewRenderer__ctor
 	.long LDIFF_SYM98
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
@@ -2783,13 +2921,13 @@ Lfde13_end:
 LTDIE_14:
 
 	.byte 5
-	.asciz "Xamarin_Forms_Platform__WebViewRenderer"
+	.asciz "Xamarin_Forms_Platform__CollectionViewRenderer"
 
 	.byte 16,16
 LDIFF_SYM99=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM99
 	.byte 2,35,0,0,7
-	.asciz "Xamarin_Forms_Platform__WebViewRenderer"
+	.asciz "Xamarin_Forms_Platform__CollectionViewRenderer"
 
 LDIFF_SYM100=LTDIE_14 - Ldebug_info_start
 	.long LDIFF_SYM100
@@ -2804,11 +2942,11 @@ LTDIE_14_REFERENCE:
 LDIFF_SYM102=LTDIE_14 - Ldebug_info_start
 	.long LDIFF_SYM102
 	.byte 2
-	.asciz "Xamarin.Forms.Platform._WebViewRenderer:.ctor"
-	.asciz "Xamarin_Forms_Platform__WebViewRenderer__ctor"
+	.asciz "Xamarin.Forms.Platform._CollectionViewRenderer:.ctor"
+	.asciz "Xamarin_Forms_Platform__CollectionViewRenderer__ctor"
 
 	.byte 0,0
-	.quad Xamarin_Forms_Platform__WebViewRenderer__ctor
+	.quad Xamarin_Forms_Platform__CollectionViewRenderer__ctor
 	.quad Lme_e
 
 	.byte 2,118,16,3
@@ -2826,9 +2964,9 @@ Lfde14_start:
 
 	.long 0
 	.align 3
-	.quad Xamarin_Forms_Platform__WebViewRenderer__ctor
+	.quad Xamarin_Forms_Platform__CollectionViewRenderer__ctor
 
-LDIFF_SYM105=Lme_e - Xamarin_Forms_Platform__WebViewRenderer__ctor
+LDIFF_SYM105=Lme_e - Xamarin_Forms_Platform__CollectionViewRenderer__ctor
 	.long LDIFF_SYM105
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
@@ -2839,13 +2977,13 @@ Lfde14_end:
 LTDIE_15:
 
 	.byte 5
-	.asciz "Xamarin_Forms_Platform__SearchBarRenderer"
+	.asciz "Xamarin_Forms_Platform__CarouselViewRenderer"
 
 	.byte 16,16
 LDIFF_SYM106=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM106
 	.byte 2,35,0,0,7
-	.asciz "Xamarin_Forms_Platform__SearchBarRenderer"
+	.asciz "Xamarin_Forms_Platform__CarouselViewRenderer"
 
 LDIFF_SYM107=LTDIE_15 - Ldebug_info_start
 	.long LDIFF_SYM107
@@ -2860,11 +2998,11 @@ LTDIE_15_REFERENCE:
 LDIFF_SYM109=LTDIE_15 - Ldebug_info_start
 	.long LDIFF_SYM109
 	.byte 2
-	.asciz "Xamarin.Forms.Platform._SearchBarRenderer:.ctor"
-	.asciz "Xamarin_Forms_Platform__SearchBarRenderer__ctor"
+	.asciz "Xamarin.Forms.Platform._CarouselViewRenderer:.ctor"
+	.asciz "Xamarin_Forms_Platform__CarouselViewRenderer__ctor"
 
 	.byte 0,0
-	.quad Xamarin_Forms_Platform__SearchBarRenderer__ctor
+	.quad Xamarin_Forms_Platform__CarouselViewRenderer__ctor
 	.quad Lme_f
 
 	.byte 2,118,16,3
@@ -2882,9 +3020,9 @@ Lfde15_start:
 
 	.long 0
 	.align 3
-	.quad Xamarin_Forms_Platform__SearchBarRenderer__ctor
+	.quad Xamarin_Forms_Platform__CarouselViewRenderer__ctor
 
-LDIFF_SYM112=Lme_f - Xamarin_Forms_Platform__SearchBarRenderer__ctor
+LDIFF_SYM112=Lme_f - Xamarin_Forms_Platform__CarouselViewRenderer__ctor
 	.long LDIFF_SYM112
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
@@ -2895,13 +3033,13 @@ Lfde15_end:
 LTDIE_16:
 
 	.byte 5
-	.asciz "Xamarin_Forms_Platform__SwitchRenderer"
+	.asciz "Xamarin_Forms_Platform__SliderRenderer"
 
 	.byte 16,16
 LDIFF_SYM113=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM113
 	.byte 2,35,0,0,7
-	.asciz "Xamarin_Forms_Platform__SwitchRenderer"
+	.asciz "Xamarin_Forms_Platform__SliderRenderer"
 
 LDIFF_SYM114=LTDIE_16 - Ldebug_info_start
 	.long LDIFF_SYM114
@@ -2916,11 +3054,11 @@ LTDIE_16_REFERENCE:
 LDIFF_SYM116=LTDIE_16 - Ldebug_info_start
 	.long LDIFF_SYM116
 	.byte 2
-	.asciz "Xamarin.Forms.Platform._SwitchRenderer:.ctor"
-	.asciz "Xamarin_Forms_Platform__SwitchRenderer__ctor"
+	.asciz "Xamarin.Forms.Platform._SliderRenderer:.ctor"
+	.asciz "Xamarin_Forms_Platform__SliderRenderer__ctor"
 
 	.byte 0,0
-	.quad Xamarin_Forms_Platform__SwitchRenderer__ctor
+	.quad Xamarin_Forms_Platform__SliderRenderer__ctor
 	.quad Lme_10
 
 	.byte 2,118,16,3
@@ -2938,9 +3076,9 @@ Lfde16_start:
 
 	.long 0
 	.align 3
-	.quad Xamarin_Forms_Platform__SwitchRenderer__ctor
+	.quad Xamarin_Forms_Platform__SliderRenderer__ctor
 
-LDIFF_SYM119=Lme_10 - Xamarin_Forms_Platform__SwitchRenderer__ctor
+LDIFF_SYM119=Lme_10 - Xamarin_Forms_Platform__SliderRenderer__ctor
 	.long LDIFF_SYM119
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
@@ -2951,13 +3089,13 @@ Lfde16_end:
 LTDIE_17:
 
 	.byte 5
-	.asciz "Xamarin_Forms_Platform__DatePickerRenderer"
+	.asciz "Xamarin_Forms_Platform__WebViewRenderer"
 
 	.byte 16,16
 LDIFF_SYM120=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM120
 	.byte 2,35,0,0,7
-	.asciz "Xamarin_Forms_Platform__DatePickerRenderer"
+	.asciz "Xamarin_Forms_Platform__WebViewRenderer"
 
 LDIFF_SYM121=LTDIE_17 - Ldebug_info_start
 	.long LDIFF_SYM121
@@ -2972,11 +3110,11 @@ LTDIE_17_REFERENCE:
 LDIFF_SYM123=LTDIE_17 - Ldebug_info_start
 	.long LDIFF_SYM123
 	.byte 2
-	.asciz "Xamarin.Forms.Platform._DatePickerRenderer:.ctor"
-	.asciz "Xamarin_Forms_Platform__DatePickerRenderer__ctor"
+	.asciz "Xamarin.Forms.Platform._WebViewRenderer:.ctor"
+	.asciz "Xamarin_Forms_Platform__WebViewRenderer__ctor"
 
 	.byte 0,0
-	.quad Xamarin_Forms_Platform__DatePickerRenderer__ctor
+	.quad Xamarin_Forms_Platform__WebViewRenderer__ctor
 	.quad Lme_11
 
 	.byte 2,118,16,3
@@ -2994,9 +3132,9 @@ Lfde17_start:
 
 	.long 0
 	.align 3
-	.quad Xamarin_Forms_Platform__DatePickerRenderer__ctor
+	.quad Xamarin_Forms_Platform__WebViewRenderer__ctor
 
-LDIFF_SYM126=Lme_11 - Xamarin_Forms_Platform__DatePickerRenderer__ctor
+LDIFF_SYM126=Lme_11 - Xamarin_Forms_Platform__WebViewRenderer__ctor
 	.long LDIFF_SYM126
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
@@ -3007,13 +3145,13 @@ Lfde17_end:
 LTDIE_18:
 
 	.byte 5
-	.asciz "Xamarin_Forms_Platform__TimePickerRenderer"
+	.asciz "Xamarin_Forms_Platform__SearchBarRenderer"
 
 	.byte 16,16
 LDIFF_SYM127=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM127
 	.byte 2,35,0,0,7
-	.asciz "Xamarin_Forms_Platform__TimePickerRenderer"
+	.asciz "Xamarin_Forms_Platform__SearchBarRenderer"
 
 LDIFF_SYM128=LTDIE_18 - Ldebug_info_start
 	.long LDIFF_SYM128
@@ -3028,11 +3166,11 @@ LTDIE_18_REFERENCE:
 LDIFF_SYM130=LTDIE_18 - Ldebug_info_start
 	.long LDIFF_SYM130
 	.byte 2
-	.asciz "Xamarin.Forms.Platform._TimePickerRenderer:.ctor"
-	.asciz "Xamarin_Forms_Platform__TimePickerRenderer__ctor"
+	.asciz "Xamarin.Forms.Platform._SearchBarRenderer:.ctor"
+	.asciz "Xamarin_Forms_Platform__SearchBarRenderer__ctor"
 
 	.byte 0,0
-	.quad Xamarin_Forms_Platform__TimePickerRenderer__ctor
+	.quad Xamarin_Forms_Platform__SearchBarRenderer__ctor
 	.quad Lme_12
 
 	.byte 2,118,16,3
@@ -3050,9 +3188,9 @@ Lfde18_start:
 
 	.long 0
 	.align 3
-	.quad Xamarin_Forms_Platform__TimePickerRenderer__ctor
+	.quad Xamarin_Forms_Platform__SearchBarRenderer__ctor
 
-LDIFF_SYM133=Lme_12 - Xamarin_Forms_Platform__TimePickerRenderer__ctor
+LDIFF_SYM133=Lme_12 - Xamarin_Forms_Platform__SearchBarRenderer__ctor
 	.long LDIFF_SYM133
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
@@ -3063,13 +3201,13 @@ Lfde18_end:
 LTDIE_19:
 
 	.byte 5
-	.asciz "Xamarin_Forms_Platform__PickerRenderer"
+	.asciz "Xamarin_Forms_Platform__SwitchRenderer"
 
 	.byte 16,16
 LDIFF_SYM134=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM134
 	.byte 2,35,0,0,7
-	.asciz "Xamarin_Forms_Platform__PickerRenderer"
+	.asciz "Xamarin_Forms_Platform__SwitchRenderer"
 
 LDIFF_SYM135=LTDIE_19 - Ldebug_info_start
 	.long LDIFF_SYM135
@@ -3084,11 +3222,11 @@ LTDIE_19_REFERENCE:
 LDIFF_SYM137=LTDIE_19 - Ldebug_info_start
 	.long LDIFF_SYM137
 	.byte 2
-	.asciz "Xamarin.Forms.Platform._PickerRenderer:.ctor"
-	.asciz "Xamarin_Forms_Platform__PickerRenderer__ctor"
+	.asciz "Xamarin.Forms.Platform._SwitchRenderer:.ctor"
+	.asciz "Xamarin_Forms_Platform__SwitchRenderer__ctor"
 
 	.byte 0,0
-	.quad Xamarin_Forms_Platform__PickerRenderer__ctor
+	.quad Xamarin_Forms_Platform__SwitchRenderer__ctor
 	.quad Lme_13
 
 	.byte 2,118,16,3
@@ -3106,9 +3244,9 @@ Lfde19_start:
 
 	.long 0
 	.align 3
-	.quad Xamarin_Forms_Platform__PickerRenderer__ctor
+	.quad Xamarin_Forms_Platform__SwitchRenderer__ctor
 
-LDIFF_SYM140=Lme_13 - Xamarin_Forms_Platform__PickerRenderer__ctor
+LDIFF_SYM140=Lme_13 - Xamarin_Forms_Platform__SwitchRenderer__ctor
 	.long LDIFF_SYM140
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
@@ -3119,13 +3257,13 @@ Lfde19_end:
 LTDIE_20:
 
 	.byte 5
-	.asciz "Xamarin_Forms_Platform__StepperRenderer"
+	.asciz "Xamarin_Forms_Platform__DatePickerRenderer"
 
 	.byte 16,16
 LDIFF_SYM141=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM141
 	.byte 2,35,0,0,7
-	.asciz "Xamarin_Forms_Platform__StepperRenderer"
+	.asciz "Xamarin_Forms_Platform__DatePickerRenderer"
 
 LDIFF_SYM142=LTDIE_20 - Ldebug_info_start
 	.long LDIFF_SYM142
@@ -3140,11 +3278,11 @@ LTDIE_20_REFERENCE:
 LDIFF_SYM144=LTDIE_20 - Ldebug_info_start
 	.long LDIFF_SYM144
 	.byte 2
-	.asciz "Xamarin.Forms.Platform._StepperRenderer:.ctor"
-	.asciz "Xamarin_Forms_Platform__StepperRenderer__ctor"
+	.asciz "Xamarin.Forms.Platform._DatePickerRenderer:.ctor"
+	.asciz "Xamarin_Forms_Platform__DatePickerRenderer__ctor"
 
 	.byte 0,0
-	.quad Xamarin_Forms_Platform__StepperRenderer__ctor
+	.quad Xamarin_Forms_Platform__DatePickerRenderer__ctor
 	.quad Lme_14
 
 	.byte 2,118,16,3
@@ -3162,9 +3300,9 @@ Lfde20_start:
 
 	.long 0
 	.align 3
-	.quad Xamarin_Forms_Platform__StepperRenderer__ctor
+	.quad Xamarin_Forms_Platform__DatePickerRenderer__ctor
 
-LDIFF_SYM147=Lme_14 - Xamarin_Forms_Platform__StepperRenderer__ctor
+LDIFF_SYM147=Lme_14 - Xamarin_Forms_Platform__DatePickerRenderer__ctor
 	.long LDIFF_SYM147
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
@@ -3175,13 +3313,13 @@ Lfde20_end:
 LTDIE_21:
 
 	.byte 5
-	.asciz "Xamarin_Forms_Platform__ProgressBarRenderer"
+	.asciz "Xamarin_Forms_Platform__TimePickerRenderer"
 
 	.byte 16,16
 LDIFF_SYM148=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM148
 	.byte 2,35,0,0,7
-	.asciz "Xamarin_Forms_Platform__ProgressBarRenderer"
+	.asciz "Xamarin_Forms_Platform__TimePickerRenderer"
 
 LDIFF_SYM149=LTDIE_21 - Ldebug_info_start
 	.long LDIFF_SYM149
@@ -3196,11 +3334,11 @@ LTDIE_21_REFERENCE:
 LDIFF_SYM151=LTDIE_21 - Ldebug_info_start
 	.long LDIFF_SYM151
 	.byte 2
-	.asciz "Xamarin.Forms.Platform._ProgressBarRenderer:.ctor"
-	.asciz "Xamarin_Forms_Platform__ProgressBarRenderer__ctor"
+	.asciz "Xamarin.Forms.Platform._TimePickerRenderer:.ctor"
+	.asciz "Xamarin_Forms_Platform__TimePickerRenderer__ctor"
 
 	.byte 0,0
-	.quad Xamarin_Forms_Platform__ProgressBarRenderer__ctor
+	.quad Xamarin_Forms_Platform__TimePickerRenderer__ctor
 	.quad Lme_15
 
 	.byte 2,118,16,3
@@ -3218,9 +3356,9 @@ Lfde21_start:
 
 	.long 0
 	.align 3
-	.quad Xamarin_Forms_Platform__ProgressBarRenderer__ctor
+	.quad Xamarin_Forms_Platform__TimePickerRenderer__ctor
 
-LDIFF_SYM154=Lme_15 - Xamarin_Forms_Platform__ProgressBarRenderer__ctor
+LDIFF_SYM154=Lme_15 - Xamarin_Forms_Platform__TimePickerRenderer__ctor
 	.long LDIFF_SYM154
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
@@ -3231,13 +3369,13 @@ Lfde21_end:
 LTDIE_22:
 
 	.byte 5
-	.asciz "Xamarin_Forms_Platform__ScrollViewRenderer"
+	.asciz "Xamarin_Forms_Platform__PickerRenderer"
 
 	.byte 16,16
 LDIFF_SYM155=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM155
 	.byte 2,35,0,0,7
-	.asciz "Xamarin_Forms_Platform__ScrollViewRenderer"
+	.asciz "Xamarin_Forms_Platform__PickerRenderer"
 
 LDIFF_SYM156=LTDIE_22 - Ldebug_info_start
 	.long LDIFF_SYM156
@@ -3252,11 +3390,11 @@ LTDIE_22_REFERENCE:
 LDIFF_SYM158=LTDIE_22 - Ldebug_info_start
 	.long LDIFF_SYM158
 	.byte 2
-	.asciz "Xamarin.Forms.Platform._ScrollViewRenderer:.ctor"
-	.asciz "Xamarin_Forms_Platform__ScrollViewRenderer__ctor"
+	.asciz "Xamarin.Forms.Platform._PickerRenderer:.ctor"
+	.asciz "Xamarin_Forms_Platform__PickerRenderer__ctor"
 
 	.byte 0,0
-	.quad Xamarin_Forms_Platform__ScrollViewRenderer__ctor
+	.quad Xamarin_Forms_Platform__PickerRenderer__ctor
 	.quad Lme_16
 
 	.byte 2,118,16,3
@@ -3274,9 +3412,9 @@ Lfde22_start:
 
 	.long 0
 	.align 3
-	.quad Xamarin_Forms_Platform__ScrollViewRenderer__ctor
+	.quad Xamarin_Forms_Platform__PickerRenderer__ctor
 
-LDIFF_SYM161=Lme_16 - Xamarin_Forms_Platform__ScrollViewRenderer__ctor
+LDIFF_SYM161=Lme_16 - Xamarin_Forms_Platform__PickerRenderer__ctor
 	.long LDIFF_SYM161
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
@@ -3287,13 +3425,13 @@ Lfde22_end:
 LTDIE_23:
 
 	.byte 5
-	.asciz "Xamarin_Forms_Platform__ActivityIndicatorRenderer"
+	.asciz "Xamarin_Forms_Platform__StepperRenderer"
 
 	.byte 16,16
 LDIFF_SYM162=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM162
 	.byte 2,35,0,0,7
-	.asciz "Xamarin_Forms_Platform__ActivityIndicatorRenderer"
+	.asciz "Xamarin_Forms_Platform__StepperRenderer"
 
 LDIFF_SYM163=LTDIE_23 - Ldebug_info_start
 	.long LDIFF_SYM163
@@ -3308,11 +3446,11 @@ LTDIE_23_REFERENCE:
 LDIFF_SYM165=LTDIE_23 - Ldebug_info_start
 	.long LDIFF_SYM165
 	.byte 2
-	.asciz "Xamarin.Forms.Platform._ActivityIndicatorRenderer:.ctor"
-	.asciz "Xamarin_Forms_Platform__ActivityIndicatorRenderer__ctor"
+	.asciz "Xamarin.Forms.Platform._StepperRenderer:.ctor"
+	.asciz "Xamarin_Forms_Platform__StepperRenderer__ctor"
 
 	.byte 0,0
-	.quad Xamarin_Forms_Platform__ActivityIndicatorRenderer__ctor
+	.quad Xamarin_Forms_Platform__StepperRenderer__ctor
 	.quad Lme_17
 
 	.byte 2,118,16,3
@@ -3330,9 +3468,9 @@ Lfde23_start:
 
 	.long 0
 	.align 3
-	.quad Xamarin_Forms_Platform__ActivityIndicatorRenderer__ctor
+	.quad Xamarin_Forms_Platform__StepperRenderer__ctor
 
-LDIFF_SYM168=Lme_17 - Xamarin_Forms_Platform__ActivityIndicatorRenderer__ctor
+LDIFF_SYM168=Lme_17 - Xamarin_Forms_Platform__StepperRenderer__ctor
 	.long LDIFF_SYM168
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
@@ -3343,13 +3481,13 @@ Lfde23_end:
 LTDIE_24:
 
 	.byte 5
-	.asciz "Xamarin_Forms_Platform__FrameRenderer"
+	.asciz "Xamarin_Forms_Platform__ProgressBarRenderer"
 
 	.byte 16,16
 LDIFF_SYM169=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM169
 	.byte 2,35,0,0,7
-	.asciz "Xamarin_Forms_Platform__FrameRenderer"
+	.asciz "Xamarin_Forms_Platform__ProgressBarRenderer"
 
 LDIFF_SYM170=LTDIE_24 - Ldebug_info_start
 	.long LDIFF_SYM170
@@ -3364,11 +3502,11 @@ LTDIE_24_REFERENCE:
 LDIFF_SYM172=LTDIE_24 - Ldebug_info_start
 	.long LDIFF_SYM172
 	.byte 2
-	.asciz "Xamarin.Forms.Platform._FrameRenderer:.ctor"
-	.asciz "Xamarin_Forms_Platform__FrameRenderer__ctor"
+	.asciz "Xamarin.Forms.Platform._ProgressBarRenderer:.ctor"
+	.asciz "Xamarin_Forms_Platform__ProgressBarRenderer__ctor"
 
 	.byte 0,0
-	.quad Xamarin_Forms_Platform__FrameRenderer__ctor
+	.quad Xamarin_Forms_Platform__ProgressBarRenderer__ctor
 	.quad Lme_18
 
 	.byte 2,118,16,3
@@ -3386,9 +3524,9 @@ Lfde24_start:
 
 	.long 0
 	.align 3
-	.quad Xamarin_Forms_Platform__FrameRenderer__ctor
+	.quad Xamarin_Forms_Platform__ProgressBarRenderer__ctor
 
-LDIFF_SYM175=Lme_18 - Xamarin_Forms_Platform__FrameRenderer__ctor
+LDIFF_SYM175=Lme_18 - Xamarin_Forms_Platform__ProgressBarRenderer__ctor
 	.long LDIFF_SYM175
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
@@ -3399,13 +3537,13 @@ Lfde24_end:
 LTDIE_25:
 
 	.byte 5
-	.asciz "Xamarin_Forms_Platform__CheckBoxRenderer"
+	.asciz "Xamarin_Forms_Platform__ScrollViewRenderer"
 
 	.byte 16,16
 LDIFF_SYM176=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM176
 	.byte 2,35,0,0,7
-	.asciz "Xamarin_Forms_Platform__CheckBoxRenderer"
+	.asciz "Xamarin_Forms_Platform__ScrollViewRenderer"
 
 LDIFF_SYM177=LTDIE_25 - Ldebug_info_start
 	.long LDIFF_SYM177
@@ -3420,11 +3558,11 @@ LTDIE_25_REFERENCE:
 LDIFF_SYM179=LTDIE_25 - Ldebug_info_start
 	.long LDIFF_SYM179
 	.byte 2
-	.asciz "Xamarin.Forms.Platform._CheckBoxRenderer:.ctor"
-	.asciz "Xamarin_Forms_Platform__CheckBoxRenderer__ctor"
+	.asciz "Xamarin.Forms.Platform._ScrollViewRenderer:.ctor"
+	.asciz "Xamarin_Forms_Platform__ScrollViewRenderer__ctor"
 
 	.byte 0,0
-	.quad Xamarin_Forms_Platform__CheckBoxRenderer__ctor
+	.quad Xamarin_Forms_Platform__ScrollViewRenderer__ctor
 	.quad Lme_19
 
 	.byte 2,118,16,3
@@ -3442,9 +3580,9 @@ Lfde25_start:
 
 	.long 0
 	.align 3
-	.quad Xamarin_Forms_Platform__CheckBoxRenderer__ctor
+	.quad Xamarin_Forms_Platform__ScrollViewRenderer__ctor
 
-LDIFF_SYM182=Lme_19 - Xamarin_Forms_Platform__CheckBoxRenderer__ctor
+LDIFF_SYM182=Lme_19 - Xamarin_Forms_Platform__ScrollViewRenderer__ctor
 	.long LDIFF_SYM182
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
@@ -3455,13 +3593,13 @@ Lfde25_end:
 LTDIE_26:
 
 	.byte 5
-	.asciz "Xamarin_Forms_Platform__OpenGLViewRenderer"
+	.asciz "Xamarin_Forms_Platform__ActivityIndicatorRenderer"
 
 	.byte 16,16
 LDIFF_SYM183=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM183
 	.byte 2,35,0,0,7
-	.asciz "Xamarin_Forms_Platform__OpenGLViewRenderer"
+	.asciz "Xamarin_Forms_Platform__ActivityIndicatorRenderer"
 
 LDIFF_SYM184=LTDIE_26 - Ldebug_info_start
 	.long LDIFF_SYM184
@@ -3476,11 +3614,11 @@ LTDIE_26_REFERENCE:
 LDIFF_SYM186=LTDIE_26 - Ldebug_info_start
 	.long LDIFF_SYM186
 	.byte 2
-	.asciz "Xamarin.Forms.Platform._OpenGLViewRenderer:.ctor"
-	.asciz "Xamarin_Forms_Platform__OpenGLViewRenderer__ctor"
+	.asciz "Xamarin.Forms.Platform._ActivityIndicatorRenderer:.ctor"
+	.asciz "Xamarin_Forms_Platform__ActivityIndicatorRenderer__ctor"
 
 	.byte 0,0
-	.quad Xamarin_Forms_Platform__OpenGLViewRenderer__ctor
+	.quad Xamarin_Forms_Platform__ActivityIndicatorRenderer__ctor
 	.quad Lme_1a
 
 	.byte 2,118,16,3
@@ -3498,9 +3636,9 @@ Lfde26_start:
 
 	.long 0
 	.align 3
-	.quad Xamarin_Forms_Platform__OpenGLViewRenderer__ctor
+	.quad Xamarin_Forms_Platform__ActivityIndicatorRenderer__ctor
 
-LDIFF_SYM189=Lme_1a - Xamarin_Forms_Platform__OpenGLViewRenderer__ctor
+LDIFF_SYM189=Lme_1a - Xamarin_Forms_Platform__ActivityIndicatorRenderer__ctor
 	.long LDIFF_SYM189
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
@@ -3511,13 +3649,13 @@ Lfde26_end:
 LTDIE_27:
 
 	.byte 5
-	.asciz "Xamarin_Forms_Platform__TabbedPageRenderer"
+	.asciz "Xamarin_Forms_Platform__FrameRenderer"
 
 	.byte 16,16
 LDIFF_SYM190=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM190
 	.byte 2,35,0,0,7
-	.asciz "Xamarin_Forms_Platform__TabbedPageRenderer"
+	.asciz "Xamarin_Forms_Platform__FrameRenderer"
 
 LDIFF_SYM191=LTDIE_27 - Ldebug_info_start
 	.long LDIFF_SYM191
@@ -3532,11 +3670,11 @@ LTDIE_27_REFERENCE:
 LDIFF_SYM193=LTDIE_27 - Ldebug_info_start
 	.long LDIFF_SYM193
 	.byte 2
-	.asciz "Xamarin.Forms.Platform._TabbedPageRenderer:.ctor"
-	.asciz "Xamarin_Forms_Platform__TabbedPageRenderer__ctor"
+	.asciz "Xamarin.Forms.Platform._FrameRenderer:.ctor"
+	.asciz "Xamarin_Forms_Platform__FrameRenderer__ctor"
 
 	.byte 0,0
-	.quad Xamarin_Forms_Platform__TabbedPageRenderer__ctor
+	.quad Xamarin_Forms_Platform__FrameRenderer__ctor
 	.quad Lme_1b
 
 	.byte 2,118,16,3
@@ -3554,9 +3692,9 @@ Lfde27_start:
 
 	.long 0
 	.align 3
-	.quad Xamarin_Forms_Platform__TabbedPageRenderer__ctor
+	.quad Xamarin_Forms_Platform__FrameRenderer__ctor
 
-LDIFF_SYM196=Lme_1b - Xamarin_Forms_Platform__TabbedPageRenderer__ctor
+LDIFF_SYM196=Lme_1b - Xamarin_Forms_Platform__FrameRenderer__ctor
 	.long LDIFF_SYM196
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
@@ -3567,13 +3705,13 @@ Lfde27_end:
 LTDIE_28:
 
 	.byte 5
-	.asciz "Xamarin_Forms_Platform__NavigationPageRenderer"
+	.asciz "Xamarin_Forms_Platform__IndicatorViewRenderer"
 
 	.byte 16,16
 LDIFF_SYM197=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM197
 	.byte 2,35,0,0,7
-	.asciz "Xamarin_Forms_Platform__NavigationPageRenderer"
+	.asciz "Xamarin_Forms_Platform__IndicatorViewRenderer"
 
 LDIFF_SYM198=LTDIE_28 - Ldebug_info_start
 	.long LDIFF_SYM198
@@ -3588,11 +3726,11 @@ LTDIE_28_REFERENCE:
 LDIFF_SYM200=LTDIE_28 - Ldebug_info_start
 	.long LDIFF_SYM200
 	.byte 2
-	.asciz "Xamarin.Forms.Platform._NavigationPageRenderer:.ctor"
-	.asciz "Xamarin_Forms_Platform__NavigationPageRenderer__ctor"
+	.asciz "Xamarin.Forms.Platform._IndicatorViewRenderer:.ctor"
+	.asciz "Xamarin_Forms_Platform__IndicatorViewRenderer__ctor"
 
 	.byte 0,0
-	.quad Xamarin_Forms_Platform__NavigationPageRenderer__ctor
+	.quad Xamarin_Forms_Platform__IndicatorViewRenderer__ctor
 	.quad Lme_1c
 
 	.byte 2,118,16,3
@@ -3610,9 +3748,9 @@ Lfde28_start:
 
 	.long 0
 	.align 3
-	.quad Xamarin_Forms_Platform__NavigationPageRenderer__ctor
+	.quad Xamarin_Forms_Platform__IndicatorViewRenderer__ctor
 
-LDIFF_SYM203=Lme_1c - Xamarin_Forms_Platform__NavigationPageRenderer__ctor
+LDIFF_SYM203=Lme_1c - Xamarin_Forms_Platform__IndicatorViewRenderer__ctor
 	.long LDIFF_SYM203
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
@@ -3623,13 +3761,13 @@ Lfde28_end:
 LTDIE_29:
 
 	.byte 5
-	.asciz "Xamarin_Forms_Platform__CarouselPageRenderer"
+	.asciz "Xamarin_Forms_Platform__CheckBoxRenderer"
 
 	.byte 16,16
 LDIFF_SYM204=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM204
 	.byte 2,35,0,0,7
-	.asciz "Xamarin_Forms_Platform__CarouselPageRenderer"
+	.asciz "Xamarin_Forms_Platform__CheckBoxRenderer"
 
 LDIFF_SYM205=LTDIE_29 - Ldebug_info_start
 	.long LDIFF_SYM205
@@ -3644,11 +3782,11 @@ LTDIE_29_REFERENCE:
 LDIFF_SYM207=LTDIE_29 - Ldebug_info_start
 	.long LDIFF_SYM207
 	.byte 2
-	.asciz "Xamarin.Forms.Platform._CarouselPageRenderer:.ctor"
-	.asciz "Xamarin_Forms_Platform__CarouselPageRenderer__ctor"
+	.asciz "Xamarin.Forms.Platform._CheckBoxRenderer:.ctor"
+	.asciz "Xamarin_Forms_Platform__CheckBoxRenderer__ctor"
 
 	.byte 0,0
-	.quad Xamarin_Forms_Platform__CarouselPageRenderer__ctor
+	.quad Xamarin_Forms_Platform__CheckBoxRenderer__ctor
 	.quad Lme_1d
 
 	.byte 2,118,16,3
@@ -3666,9 +3804,9 @@ Lfde29_start:
 
 	.long 0
 	.align 3
-	.quad Xamarin_Forms_Platform__CarouselPageRenderer__ctor
+	.quad Xamarin_Forms_Platform__CheckBoxRenderer__ctor
 
-LDIFF_SYM210=Lme_1d - Xamarin_Forms_Platform__CarouselPageRenderer__ctor
+LDIFF_SYM210=Lme_1d - Xamarin_Forms_Platform__CheckBoxRenderer__ctor
 	.long LDIFF_SYM210
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
@@ -3679,13 +3817,13 @@ Lfde29_end:
 LTDIE_30:
 
 	.byte 5
-	.asciz "Xamarin_Forms_Platform__PageRenderer"
+	.asciz "Xamarin_Forms_Platform__OpenGLViewRenderer"
 
 	.byte 16,16
 LDIFF_SYM211=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM211
 	.byte 2,35,0,0,7
-	.asciz "Xamarin_Forms_Platform__PageRenderer"
+	.asciz "Xamarin_Forms_Platform__OpenGLViewRenderer"
 
 LDIFF_SYM212=LTDIE_30 - Ldebug_info_start
 	.long LDIFF_SYM212
@@ -3700,11 +3838,11 @@ LTDIE_30_REFERENCE:
 LDIFF_SYM214=LTDIE_30 - Ldebug_info_start
 	.long LDIFF_SYM214
 	.byte 2
-	.asciz "Xamarin.Forms.Platform._PageRenderer:.ctor"
-	.asciz "Xamarin_Forms_Platform__PageRenderer__ctor"
+	.asciz "Xamarin.Forms.Platform._OpenGLViewRenderer:.ctor"
+	.asciz "Xamarin_Forms_Platform__OpenGLViewRenderer__ctor"
 
 	.byte 0,0
-	.quad Xamarin_Forms_Platform__PageRenderer__ctor
+	.quad Xamarin_Forms_Platform__OpenGLViewRenderer__ctor
 	.quad Lme_1e
 
 	.byte 2,118,16,3
@@ -3722,9 +3860,9 @@ Lfde30_start:
 
 	.long 0
 	.align 3
-	.quad Xamarin_Forms_Platform__PageRenderer__ctor
+	.quad Xamarin_Forms_Platform__OpenGLViewRenderer__ctor
 
-LDIFF_SYM217=Lme_1e - Xamarin_Forms_Platform__PageRenderer__ctor
+LDIFF_SYM217=Lme_1e - Xamarin_Forms_Platform__OpenGLViewRenderer__ctor
 	.long LDIFF_SYM217
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
@@ -3735,13 +3873,13 @@ Lfde30_end:
 LTDIE_31:
 
 	.byte 5
-	.asciz "Xamarin_Forms_Platform__MasterDetailPageRenderer"
+	.asciz "Xamarin_Forms_Platform__TabbedPageRenderer"
 
 	.byte 16,16
 LDIFF_SYM218=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM218
 	.byte 2,35,0,0,7
-	.asciz "Xamarin_Forms_Platform__MasterDetailPageRenderer"
+	.asciz "Xamarin_Forms_Platform__TabbedPageRenderer"
 
 LDIFF_SYM219=LTDIE_31 - Ldebug_info_start
 	.long LDIFF_SYM219
@@ -3756,11 +3894,11 @@ LTDIE_31_REFERENCE:
 LDIFF_SYM221=LTDIE_31 - Ldebug_info_start
 	.long LDIFF_SYM221
 	.byte 2
-	.asciz "Xamarin.Forms.Platform._MasterDetailPageRenderer:.ctor"
-	.asciz "Xamarin_Forms_Platform__MasterDetailPageRenderer__ctor"
+	.asciz "Xamarin.Forms.Platform._TabbedPageRenderer:.ctor"
+	.asciz "Xamarin_Forms_Platform__TabbedPageRenderer__ctor"
 
 	.byte 0,0
-	.quad Xamarin_Forms_Platform__MasterDetailPageRenderer__ctor
+	.quad Xamarin_Forms_Platform__TabbedPageRenderer__ctor
 	.quad Lme_1f
 
 	.byte 2,118,16,3
@@ -3778,9 +3916,9 @@ Lfde31_start:
 
 	.long 0
 	.align 3
-	.quad Xamarin_Forms_Platform__MasterDetailPageRenderer__ctor
+	.quad Xamarin_Forms_Platform__TabbedPageRenderer__ctor
 
-LDIFF_SYM224=Lme_1f - Xamarin_Forms_Platform__MasterDetailPageRenderer__ctor
+LDIFF_SYM224=Lme_1f - Xamarin_Forms_Platform__TabbedPageRenderer__ctor
 	.long LDIFF_SYM224
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
@@ -3791,13 +3929,13 @@ Lfde31_end:
 LTDIE_32:
 
 	.byte 5
-	.asciz "Xamarin_Forms_Platform__RefreshViewRenderer"
+	.asciz "Xamarin_Forms_Platform__NavigationPageRenderer"
 
 	.byte 16,16
 LDIFF_SYM225=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM225
 	.byte 2,35,0,0,7
-	.asciz "Xamarin_Forms_Platform__RefreshViewRenderer"
+	.asciz "Xamarin_Forms_Platform__NavigationPageRenderer"
 
 LDIFF_SYM226=LTDIE_32 - Ldebug_info_start
 	.long LDIFF_SYM226
@@ -3812,11 +3950,11 @@ LTDIE_32_REFERENCE:
 LDIFF_SYM228=LTDIE_32 - Ldebug_info_start
 	.long LDIFF_SYM228
 	.byte 2
-	.asciz "Xamarin.Forms.Platform._RefreshViewRenderer:.ctor"
-	.asciz "Xamarin_Forms_Platform__RefreshViewRenderer__ctor"
+	.asciz "Xamarin.Forms.Platform._NavigationPageRenderer:.ctor"
+	.asciz "Xamarin_Forms_Platform__NavigationPageRenderer__ctor"
 
 	.byte 0,0
-	.quad Xamarin_Forms_Platform__RefreshViewRenderer__ctor
+	.quad Xamarin_Forms_Platform__NavigationPageRenderer__ctor
 	.quad Lme_20
 
 	.byte 2,118,16,3
@@ -3834,9 +3972,9 @@ Lfde32_start:
 
 	.long 0
 	.align 3
-	.quad Xamarin_Forms_Platform__RefreshViewRenderer__ctor
+	.quad Xamarin_Forms_Platform__NavigationPageRenderer__ctor
 
-LDIFF_SYM231=Lme_20 - Xamarin_Forms_Platform__RefreshViewRenderer__ctor
+LDIFF_SYM231=Lme_20 - Xamarin_Forms_Platform__NavigationPageRenderer__ctor
 	.long LDIFF_SYM231
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
@@ -3847,13 +3985,13 @@ Lfde32_end:
 LTDIE_33:
 
 	.byte 5
-	.asciz "_Git"
+	.asciz "Xamarin_Forms_Platform__CarouselPageRenderer"
 
 	.byte 16,16
 LDIFF_SYM232=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM232
 	.byte 2,35,0,0,7
-	.asciz "_Git"
+	.asciz "Xamarin_Forms_Platform__CarouselPageRenderer"
 
 LDIFF_SYM233=LTDIE_33 - Ldebug_info_start
 	.long LDIFF_SYM233
@@ -3868,11 +4006,11 @@ LTDIE_33_REFERENCE:
 LDIFF_SYM235=LTDIE_33 - Ldebug_info_start
 	.long LDIFF_SYM235
 	.byte 2
-	.asciz "ThisAssembly/Git:.ctor"
-	.asciz "ThisAssembly_Git__ctor"
+	.asciz "Xamarin.Forms.Platform._CarouselPageRenderer:.ctor"
+	.asciz "Xamarin_Forms_Platform__CarouselPageRenderer__ctor"
 
 	.byte 0,0
-	.quad ThisAssembly_Git__ctor
+	.quad Xamarin_Forms_Platform__CarouselPageRenderer__ctor
 	.quad Lme_21
 
 	.byte 2,118,16,3
@@ -3890,9 +4028,9 @@ Lfde33_start:
 
 	.long 0
 	.align 3
-	.quad ThisAssembly_Git__ctor
+	.quad Xamarin_Forms_Platform__CarouselPageRenderer__ctor
 
-LDIFF_SYM238=Lme_21 - ThisAssembly_Git__ctor
+LDIFF_SYM238=Lme_21 - Xamarin_Forms_Platform__CarouselPageRenderer__ctor
 	.long LDIFF_SYM238
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
@@ -3903,13 +4041,13 @@ Lfde33_end:
 LTDIE_34:
 
 	.byte 5
-	.asciz "_BaseVersion"
+	.asciz "Xamarin_Forms_Platform__PageRenderer"
 
 	.byte 16,16
 LDIFF_SYM239=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM239
 	.byte 2,35,0,0,7
-	.asciz "_BaseVersion"
+	.asciz "Xamarin_Forms_Platform__PageRenderer"
 
 LDIFF_SYM240=LTDIE_34 - Ldebug_info_start
 	.long LDIFF_SYM240
@@ -3924,11 +4062,11 @@ LTDIE_34_REFERENCE:
 LDIFF_SYM242=LTDIE_34 - Ldebug_info_start
 	.long LDIFF_SYM242
 	.byte 2
-	.asciz "ThisAssembly/Git/BaseVersion:.ctor"
-	.asciz "ThisAssembly_Git_BaseVersion__ctor"
+	.asciz "Xamarin.Forms.Platform._PageRenderer:.ctor"
+	.asciz "Xamarin_Forms_Platform__PageRenderer__ctor"
 
 	.byte 0,0
-	.quad ThisAssembly_Git_BaseVersion__ctor
+	.quad Xamarin_Forms_Platform__PageRenderer__ctor
 	.quad Lme_22
 
 	.byte 2,118,16,3
@@ -3946,9 +4084,9 @@ Lfde34_start:
 
 	.long 0
 	.align 3
-	.quad ThisAssembly_Git_BaseVersion__ctor
+	.quad Xamarin_Forms_Platform__PageRenderer__ctor
 
-LDIFF_SYM245=Lme_22 - ThisAssembly_Git_BaseVersion__ctor
+LDIFF_SYM245=Lme_22 - Xamarin_Forms_Platform__PageRenderer__ctor
 	.long LDIFF_SYM245
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
@@ -3959,13 +4097,13 @@ Lfde34_end:
 LTDIE_35:
 
 	.byte 5
-	.asciz "_SemVer"
+	.asciz "Xamarin_Forms_Platform__MasterDetailPageRenderer"
 
 	.byte 16,16
 LDIFF_SYM246=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM246
 	.byte 2,35,0,0,7
-	.asciz "_SemVer"
+	.asciz "Xamarin_Forms_Platform__MasterDetailPageRenderer"
 
 LDIFF_SYM247=LTDIE_35 - Ldebug_info_start
 	.long LDIFF_SYM247
@@ -3980,11 +4118,11 @@ LTDIE_35_REFERENCE:
 LDIFF_SYM249=LTDIE_35 - Ldebug_info_start
 	.long LDIFF_SYM249
 	.byte 2
-	.asciz "ThisAssembly/Git/SemVer:.ctor"
-	.asciz "ThisAssembly_Git_SemVer__ctor"
+	.asciz "Xamarin.Forms.Platform._MasterDetailPageRenderer:.ctor"
+	.asciz "Xamarin_Forms_Platform__MasterDetailPageRenderer__ctor"
 
 	.byte 0,0
-	.quad ThisAssembly_Git_SemVer__ctor
+	.quad Xamarin_Forms_Platform__MasterDetailPageRenderer__ctor
 	.quad Lme_23
 
 	.byte 2,118,16,3
@@ -4002,14 +4140,182 @@ Lfde35_start:
 
 	.long 0
 	.align 3
-	.quad ThisAssembly_Git_SemVer__ctor
+	.quad Xamarin_Forms_Platform__MasterDetailPageRenderer__ctor
 
-LDIFF_SYM252=Lme_23 - ThisAssembly_Git_SemVer__ctor
+LDIFF_SYM252=Lme_23 - Xamarin_Forms_Platform__MasterDetailPageRenderer__ctor
 	.long LDIFF_SYM252
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
 Lfde35_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_36:
+
+	.byte 5
+	.asciz "Xamarin_Forms_Platform__MediaElementRenderer"
+
+	.byte 16,16
+LDIFF_SYM253=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM253
+	.byte 2,35,0,0,7
+	.asciz "Xamarin_Forms_Platform__MediaElementRenderer"
+
+LDIFF_SYM254=LTDIE_36 - Ldebug_info_start
+	.long LDIFF_SYM254
+LTDIE_36_POINTER:
+
+	.byte 13
+LDIFF_SYM255=LTDIE_36 - Ldebug_info_start
+	.long LDIFF_SYM255
+LTDIE_36_REFERENCE:
+
+	.byte 14
+LDIFF_SYM256=LTDIE_36 - Ldebug_info_start
+	.long LDIFF_SYM256
+	.byte 2
+	.asciz "Xamarin.Forms.Platform._MediaElementRenderer:.ctor"
+	.asciz "Xamarin_Forms_Platform__MediaElementRenderer__ctor"
+
+	.byte 0,0
+	.quad Xamarin_Forms_Platform__MediaElementRenderer__ctor
+	.quad Lme_24
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM257=LTDIE_36_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM257
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM258=Lfde36_end - Lfde36_start
+	.long LDIFF_SYM258
+Lfde36_start:
+
+	.long 0
+	.align 3
+	.quad Xamarin_Forms_Platform__MediaElementRenderer__ctor
+
+LDIFF_SYM259=Lme_24 - Xamarin_Forms_Platform__MediaElementRenderer__ctor
+	.long LDIFF_SYM259
+	.long 0
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.align 3
+Lfde36_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_37:
+
+	.byte 5
+	.asciz "Xamarin_Forms_Platform__RefreshViewRenderer"
+
+	.byte 16,16
+LDIFF_SYM260=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM260
+	.byte 2,35,0,0,7
+	.asciz "Xamarin_Forms_Platform__RefreshViewRenderer"
+
+LDIFF_SYM261=LTDIE_37 - Ldebug_info_start
+	.long LDIFF_SYM261
+LTDIE_37_POINTER:
+
+	.byte 13
+LDIFF_SYM262=LTDIE_37 - Ldebug_info_start
+	.long LDIFF_SYM262
+LTDIE_37_REFERENCE:
+
+	.byte 14
+LDIFF_SYM263=LTDIE_37 - Ldebug_info_start
+	.long LDIFF_SYM263
+	.byte 2
+	.asciz "Xamarin.Forms.Platform._RefreshViewRenderer:.ctor"
+	.asciz "Xamarin_Forms_Platform__RefreshViewRenderer__ctor"
+
+	.byte 0,0
+	.quad Xamarin_Forms_Platform__RefreshViewRenderer__ctor
+	.quad Lme_25
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM264=LTDIE_37_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM264
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM265=Lfde37_end - Lfde37_start
+	.long LDIFF_SYM265
+Lfde37_start:
+
+	.long 0
+	.align 3
+	.quad Xamarin_Forms_Platform__RefreshViewRenderer__ctor
+
+LDIFF_SYM266=Lme_25 - Xamarin_Forms_Platform__RefreshViewRenderer__ctor
+	.long LDIFF_SYM266
+	.long 0
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.align 3
+Lfde37_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_38:
+
+	.byte 5
+	.asciz "Xamarin_Forms_Platform__SwipeViewRenderer"
+
+	.byte 16,16
+LDIFF_SYM267=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM267
+	.byte 2,35,0,0,7
+	.asciz "Xamarin_Forms_Platform__SwipeViewRenderer"
+
+LDIFF_SYM268=LTDIE_38 - Ldebug_info_start
+	.long LDIFF_SYM268
+LTDIE_38_POINTER:
+
+	.byte 13
+LDIFF_SYM269=LTDIE_38 - Ldebug_info_start
+	.long LDIFF_SYM269
+LTDIE_38_REFERENCE:
+
+	.byte 14
+LDIFF_SYM270=LTDIE_38 - Ldebug_info_start
+	.long LDIFF_SYM270
+	.byte 2
+	.asciz "Xamarin.Forms.Platform._SwipeViewRenderer:.ctor"
+	.asciz "Xamarin_Forms_Platform__SwipeViewRenderer__ctor"
+
+	.byte 0,0
+	.quad Xamarin_Forms_Platform__SwipeViewRenderer__ctor
+	.quad Lme_26
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM271=LTDIE_38_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM271
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM272=Lfde38_end - Lfde38_start
+	.long LDIFF_SYM272
+Lfde38_start:
+
+	.long 0
+	.align 3
+	.quad Xamarin_Forms_Platform__SwipeViewRenderer__ctor
+
+LDIFF_SYM273=Lme_26 - Xamarin_Forms_Platform__SwipeViewRenderer__ctor
+	.long LDIFF_SYM273
+	.long 0
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.align 3
+Lfde38_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -4019,36 +4325,36 @@ Lfde35_end:
 
 	.byte 0,0
 	.quad wrapper_other_object_gsharedvt_out_sig_intptr
-	.quad Lme_25
+	.quad Lme_28
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM253=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM253
+LDIFF_SYM274=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM274
 	.byte 2,141,24,3
 	.asciz "ftndesc"
 
-LDIFF_SYM254=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM254
+LDIFF_SYM275=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM275
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM255=Lfde36_end - Lfde36_start
-	.long LDIFF_SYM255
-Lfde36_start:
+LDIFF_SYM276=Lfde39_end - Lfde39_start
+	.long LDIFF_SYM276
+Lfde39_start:
 
 	.long 0
 	.align 3
 	.quad wrapper_other_object_gsharedvt_out_sig_intptr
 
-LDIFF_SYM256=Lme_25 - wrapper_other_object_gsharedvt_out_sig_intptr
-	.long LDIFF_SYM256
+LDIFF_SYM277=Lme_28 - wrapper_other_object_gsharedvt_out_sig_intptr
+	.long LDIFF_SYM277
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,154,6
 	.align 3
-Lfde36_end:
+Lfde39_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -4058,31 +4364,31 @@ Lfde36_end:
 
 	.byte 0,0
 	.quad wrapper_other_object_gsharedvt_out_sig_intptr_0
-	.quad Lme_26
+	.quad Lme_29
 
 	.byte 2,118,16,3
 	.asciz "ftndesc"
 
-LDIFF_SYM257=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM257
+LDIFF_SYM278=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM278
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM258=Lfde37_end - Lfde37_start
-	.long LDIFF_SYM258
-Lfde37_start:
+LDIFF_SYM279=Lfde40_end - Lfde40_start
+	.long LDIFF_SYM279
+Lfde40_start:
 
 	.long 0
 	.align 3
 	.quad wrapper_other_object_gsharedvt_out_sig_intptr_0
 
-LDIFF_SYM259=Lme_26 - wrapper_other_object_gsharedvt_out_sig_intptr_0
-	.long LDIFF_SYM259
+LDIFF_SYM280=Lme_29 - wrapper_other_object_gsharedvt_out_sig_intptr_0
+	.long LDIFF_SYM280
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4
 	.align 3
-Lfde37_end:
+Lfde40_end:
 
 .section __DWARF, __debug_info,regular,debug
 

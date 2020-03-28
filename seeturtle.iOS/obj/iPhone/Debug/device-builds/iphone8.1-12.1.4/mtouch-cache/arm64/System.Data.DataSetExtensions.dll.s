@@ -21,7 +21,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 8,1
-	.asciz "Mono AOT Compiler 6.6.0 (2019-08/fd9f379d294 Wed Dec 18 16:32:17 EST 2019)"
+	.asciz "Mono AOT Compiler 6.8.0 (2019-10/c0c5c78e2bd Tue Feb 18 13:51:26 EST 2020)"
 	.asciz "System.Data.DataSetExtensions.dll"
 	.asciz ""
 
@@ -575,7 +575,7 @@ Lme_c:
 	.no_dead_strip DataSetUtil__cctor
 DataSetUtil__cctor:
 .loc 1 98 0 prologue_end
-.word 0xa9bf7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 
 adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+0
@@ -585,6 +585,9 @@ ldr x1, [x16, #440]
 adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+0
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x0, [x16, #392]
+.word 0xf9001fa0
+.word 0xd5033bbf
+.word 0xf9401fa0
 .word 0xf9000001
 .loc 1 99 0
 
@@ -595,6 +598,9 @@ ldr x1, [x16, #448]
 adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+0
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x0, [x16, #400]
+.word 0xf9001ba0
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9000001
 .loc 1 100 0
 
@@ -605,6 +611,9 @@ ldr x1, [x16, #456]
 adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+0
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x0, [x16, #408]
+.word 0xf90017a0
+.word 0xd5033bbf
+.word 0xf94017a0
 .word 0xf9000001
 .loc 1 101 0
 
@@ -615,6 +624,9 @@ ldr x1, [x16, #464]
 adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+0
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x0, [x16, #416]
+.word 0xf90013a0
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xf9000001
 .loc 1 102 0
 
@@ -625,6 +637,9 @@ ldr x1, [x16, #472]
 adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+0
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x0, [x16, #424]
+.word 0xf9000fa0
+.word 0xd5033bbf
+.word 0xf9400fa0
 .word 0xf9000001
 .loc 1 103 0
 
@@ -635,9 +650,12 @@ ldr x1, [x16, #480]
 adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+0
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x0, [x16, #432]
+.word 0xf9000ba0
+.word 0xd5033bbf
+.word 0xf9400ba0
 .word 0xf9000001
 .word 0x910003bf
-.word 0xa8c17bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
 
 Lme_d:
@@ -771,7 +789,7 @@ bl _p_17
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_18
 
@@ -1218,7 +1236,7 @@ bl _p_26
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_18
 
@@ -1286,7 +1304,7 @@ bl _p_27
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_18
 
@@ -1620,11 +1638,14 @@ System_Data_DataRowComparer_1_TRow_REF__cctor:
 bl _p_28
 .word 0xd2800201
 bl _p_4
-.word 0xf90013a0
+.word 0xf90017a0
 bl _p_37
 .word 0xf9400ba0
 bl _p_29
-.word 0xf94013a1
+.word 0xf90013a0
+.word 0xf94017a1
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -2266,7 +2287,7 @@ Lme_25:
 	.no_dead_strip System_Data_DataTableExtensions_LoadTableFromEnumerable_T_REF_System_Collections_Generic_IEnumerable_1_T_REF_System_Data_DataTable_System_Nullable_1_System_Data_LoadOption_System_Data_FillErrorEventHandler
 System_Data_DataTableExtensions_LoadTableFromEnumerable_T_REF_System_Collections_Generic_IEnumerable_1_T_REF_System_Data_DataTable_System_Nullable_1_System_Data_LoadOption_System_Data_FillErrorEventHandler:
 .loc 4 88 0 prologue_end
-.word 0xa9a67bfd
+.word 0xa9a57bfd
 .word 0x910003fd
 .word 0xa9016bb9
 .word 0xf90023af
@@ -2302,7 +2323,7 @@ bl _p_74
 .word 0x51000400
 .word 0xd280005e
 .word 0x6b1e001f
-.word 0x54003be8
+.word 0x54003c48
 .loc 4 102 0
 .word 0xf94023a0
 bl _p_75
@@ -2342,11 +2363,11 @@ bl _p_34
 bl _p_2
 .word 0xf9406bba
 .word 0xf9004bbf
-.word 0x940001a6
+.word 0x940001a9
 .word 0xf9404ba0
 .word 0xb4000040
 bl _p_76
-.word 0x140001b3
+.word 0x140001b6
 .loc 4 111 0
 .word 0xf94013a0
 .word 0xb5001380
@@ -2432,7 +2453,7 @@ add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x1, [x16, #696]
 .word 0xeb01001f
 .word 0x10000011
-.word 0x54002e81
+.word 0x54002ee1
 .word 0xaa1a03f9
 .loc 4 131 0
 .word 0xf94013a0
@@ -2541,7 +2562,7 @@ bl _p_77
 .word 0xf9002ba0
 .loc 4 141 0
 .word 0xf9402ba0
-.word 0xb4001a80
+.word 0xb4001ae0
 .loc 4 146 0
 .word 0xf90037bf
 .loc 4 150 0
@@ -2661,7 +2682,7 @@ bl _p_30
 bl _p_88
 bl _p_2
 .loc 4 176 0
-.word 0x1400006e
+.word 0x14000071
 .word 0xf9006fa0
 .word 0xf9406fa0
 .loc 4 177 0
@@ -2678,34 +2699,37 @@ bl _p_90
 .word 0xf90043bf
 .loc 4 185 0
 .word 0xf9401fa0
-.word 0xb40005c0
+.word 0xb4000620
 .loc 4 187 0
 .word 0xf94013a0
-.word 0xf900cba0
-.word 0xf94037a0
 .word 0xf900cfa0
+.word 0xf94037a0
+.word 0xf900d3a0
 
 adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+0
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x0, [x16, #728]
 .word 0xd2800601
 bl _p_4
-.word 0xf940cba1
-.word 0xf940cfa2
-.word 0xf900c7a0
+.word 0xf940cfa1
+.word 0xf940d3a2
+.word 0xf900cba0
 bl _p_91
-.word 0xf940c7a0
+.word 0xf940cba0
 .word 0xf90073a0
 .word 0xf94073a0
-.word 0xf94073a2
-.word 0xf9403fa1
-.word 0xf90077a2
-.word 0xf9007ba1
-.word 0xf94077a1
-.word 0x3940003e
-.word 0xf94077a2
+.word 0xf900c7a0
+.word 0xf94073a1
+.word 0xf9403fa0
+.word 0xf90077a1
+.word 0xf9007ba0
+.word 0xf94077a0
+.word 0x3940001e
+.word 0xf94077a0
 .word 0xf9407ba1
-.word 0x91006042
+.word 0x91006002
+.word 0xd5033bbf
+.word 0xf940c7a0
 .word 0xf9000041
 .word 0xd349fc42
 .word 0xd29ffffe
@@ -2800,7 +2824,7 @@ ldr x15, [x16, #672]
 .word 0xf8706830
 .word 0xd63f0200
 .word 0x53001c00
-.word 0x35ffe260
+.word 0x35ffe200
 .loc 4 212 0
 .word 0xf90047bf
 .word 0x9400000a
@@ -2845,7 +2869,7 @@ ldr x15, [x16, #712]
 .word 0xaa1a03e0
 .word 0xa9416bb9
 .word 0x910003bf
-.word 0xa8da7bfd
+.word 0xa8db7bfd
 .word 0xd65f03c0
 .loc 4 97 0
 
@@ -2857,7 +2881,7 @@ bl _p_74
 .word 0x93407c00
 bl _p_94
 bl _p_2
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_18
 
@@ -2870,7 +2894,7 @@ System_Data_DataTableExtensions_AsDataView_System_Data_DataTable:
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
-.word 0xd28028a0
+.word 0xd28028c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_2
@@ -2888,7 +2912,7 @@ System_Data_DataTableExtensions_AsDataView_T_REF_System_Data_EnumerableRowCollec
 .word 0x910003fd
 .word 0xf9000faf
 .word 0xf9000ba0
-.word 0xd28028a0
+.word 0xd28028c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_2
@@ -2984,6 +3008,7 @@ System_Data_EnumerableRowCollection_1_TRow_REF__ctor_System_Collections_Generic_
 .word 0xf90017a3
 .word 0xf9400ba0
 .word 0x91006001
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -2999,10 +3024,11 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .loc 5 79 0
 .word 0x394083a0
-.word 0x340001e0
+.word 0x34000200
 .loc 5 81 0
 .word 0xf9400ba0
 .word 0x91004001
+.word 0xd5033bbf
 .word 0xf94017a0
 .word 0xf9000020
 .word 0xd349fc21
@@ -3032,9 +3058,10 @@ bl _p_96
 bl _p_4
 .word 0xf90023a0
 bl _p_97
+.word 0xf94027a0
+.word 0x91008001
+.word 0xd5033bbf
 .word 0xf94023a0
-.word 0xf94027a1
-.word 0x91008021
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -3057,9 +3084,10 @@ bl _p_98
 bl _p_4
 .word 0xf9001ba0
 bl _p_99
+.word 0xf9401fa0
+.word 0x9100a001
+.word 0xd5033bbf
 .word 0xf9401ba0
-.word 0xf9401fa1
-.word 0x9100a021
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -3083,13 +3111,16 @@ Lme_30:
 	.no_dead_strip System_Data_EnumerableRowCollection_1_TRow_REF__ctor_System_Data_DataTable
 System_Data_EnumerableRowCollection_1_TRow_REF__ctor_System_Data_DataTable:
 .loc 5 92 0 prologue_end
-.word 0xa9bb7bfd
+.word 0xa9ba7bfd
 .word 0x910003fd
 .word 0xf9000bba
 .word 0xf9000fa0
 .word 0xaa0103fa
 .word 0xf9400fa0
 .word 0x91004000
+.word 0xf9002fa0
+.word 0xd5033bbf
+.word 0xf9402fa0
 .word 0xf900001a
 .word 0xd349fc00
 .word 0xd29ffffe
@@ -3104,18 +3135,22 @@ ldr x1, [x16, #16]
 .word 0x3900001e
 .loc 5 93 0
 .word 0xf9400fa0
-.word 0xf90023a0
+.word 0xf90027a0
 .word 0x3940035e
 .word 0xf9401b40
-.word 0xf90027a0
+.word 0xf9002ba0
 .word 0xf9400fa0
 .word 0xf9400000
 bl _p_100
 .word 0xaa0003ef
-.word 0xf94027a0
+.word 0xf9402ba0
 bl _p_101
-.word 0xf94023a1
-.word 0x91006021
+.word 0xaa0003e1
+.word 0xf94027a0
+.word 0xf90023a1
+.word 0x91006001
+.word 0xd5033bbf
+.word 0xf94023a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -3144,9 +3179,10 @@ bl _p_96
 bl _p_4
 .word 0xf9001ba0
 bl _p_97
+.word 0xf9401fa0
+.word 0x91008001
+.word 0xd5033bbf
 .word 0xf9401ba0
-.word 0xf9401fa1
-.word 0x91008021
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -3169,9 +3205,10 @@ bl _p_98
 bl _p_4
 .word 0xf90013a0
 bl _p_99
+.word 0xf94017a0
+.word 0x9100a001
+.word 0xd5033bbf
 .word 0xf94013a0
-.word 0xf94017a1
-.word 0x9100a021
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -3187,7 +3224,7 @@ ldr x2, [x16, #16]
 .loc 5 96 0
 .word 0xf9400bba
 .word 0x910003bf
-.word 0xa8c57bfd
+.word 0xa8c67bfd
 .word 0xd65f03c0
 
 Lme_31:
@@ -3196,7 +3233,7 @@ Lme_31:
 	.no_dead_strip System_Data_EnumerableRowCollection_1_TRow_REF__ctor_System_Data_EnumerableRowCollection_1_TRow_REF_System_Collections_Generic_IEnumerable_1_TRow_REF_System_Func_2_TRow_REF_TRow_REF
 System_Data_EnumerableRowCollection_1_TRow_REF__ctor_System_Data_EnumerableRowCollection_1_TRow_REF_System_Collections_Generic_IEnumerable_1_TRow_REF_System_Func_2_TRow_REF_TRow_REF:
 .loc 5 106 0 prologue_end
-.word 0xa9bb7bfd
+.word 0xa9ba7bfd
 .word 0x910003fd
 .word 0xf9000bb8
 .word 0xf9000fa0
@@ -3205,6 +3242,7 @@ System_Data_EnumerableRowCollection_1_TRow_REF__ctor_System_Data_EnumerableRowCo
 .word 0xf90017a3
 .word 0xf9400fa0
 .word 0x91006001
+.word 0xd5033bbf
 .word 0xf94013a0
 .word 0xf9000020
 .word 0xd349fc21
@@ -3221,6 +3259,7 @@ ldr x2, [x16, #16]
 .loc 5 107 0
 .word 0xf9400fa0
 .word 0x9100c001
+.word 0xd5033bbf
 .word 0xf94017a0
 .word 0xf9000020
 .word 0xd349fc21
@@ -3235,14 +3274,17 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .loc 5 108 0
-.word 0xb40008b8
+.word 0xb40009b8
 .loc 5 110 0
 .word 0xf9401b00
-.word 0xb50001e0
+.word 0xb5000240
 .loc 5 112 0
-.word 0xf9400fa1
-.word 0xf9400b00
-.word 0x91004021
+.word 0xf9400fa0
+.word 0xf9400b01
+.word 0xf9001ba1
+.word 0x91004001
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -3257,9 +3299,9 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .loc 5 114 0
 .word 0xf9400fa0
-.word 0xf90023a0
-.word 0xf9401300
 .word 0xf90027a0
+.word 0xf9401300
+.word 0xf9002ba0
 .word 0xf9400fa0
 .word 0xf9400000
 bl _p_96
@@ -3271,12 +3313,13 @@ bl _p_11
 bl _p_96
 .word 0xd2800501
 bl _p_4
-.word 0xf94027a1
-.word 0xf9001fa0
+.word 0xf9402ba1
+.word 0xf90023a0
 bl _p_102
-.word 0xf9401fa0
-.word 0xf94023a1
-.word 0x91008021
+.word 0xf94027a0
+.word 0x91008001
+.word 0xd5033bbf
+.word 0xf94023a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -3291,13 +3334,17 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .loc 5 116 0
 .word 0xf9400fa0
-.word 0xf9001ba0
+.word 0xf9001fa0
 .word 0xf9401701
 .word 0xaa0103e0
 .word 0x3940003e
 bl _p_103
-.word 0xf9401ba1
-.word 0x9100a021
+.word 0xaa0003e1
+.word 0xf9401fa0
+.word 0xf9001ba1
+.word 0x9100a001
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -3311,7 +3358,7 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .loc 5 117 0
-.word 0x14000035
+.word 0x14000037
 .loc 5 120 0
 .word 0xf9400fa0
 .word 0xf90027a0
@@ -3328,9 +3375,10 @@ bl _p_96
 bl _p_4
 .word 0xf90023a0
 bl _p_97
+.word 0xf94027a0
+.word 0x91008001
+.word 0xd5033bbf
 .word 0xf94023a0
-.word 0xf94027a1
-.word 0x91008021
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -3353,9 +3401,10 @@ bl _p_98
 bl _p_4
 .word 0xf9001ba0
 bl _p_99
+.word 0xf9401fa0
+.word 0x9100a001
+.word 0xd5033bbf
 .word 0xf9401ba0
-.word 0xf9401fa1
-.word 0x9100a021
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -3371,7 +3420,7 @@ ldr x2, [x16, #16]
 .loc 5 123 0
 .word 0xf9400bb8
 .word 0x910003bf
-.word 0xa8c57bfd
+.word 0xa8c67bfd
 .word 0xd65f03c0
 
 Lme_32:
@@ -3483,7 +3532,7 @@ Lme_36:
 	.no_dead_strip System_Data_EnumerableRowCollection_1_TRow_REF_AddSortExpression_TKey_REF_System_Func_2_TRow_REF_TKey_REF_System_Collections_Generic_IComparer_1_TKey_REF_bool_bool
 System_Data_EnumerableRowCollection_1_TRow_REF_AddSortExpression_TKey_REF_System_Func_2_TRow_REF_TKey_REF_System_Collections_Generic_IComparer_1_TKey_REF_bool_bool:
 .loc 5 0 0 prologue_end
-.word 0xa9b47bfd
+.word 0xa9b27bfd
 .word 0x910003fd
 .word 0xf9001faf
 .word 0xf9000ba0
@@ -3495,12 +3544,14 @@ System_Data_EnumerableRowCollection_1_TRow_REF_AddSortExpression_TKey_REF_System
 bl _p_111
 .word 0xd2800501
 bl _p_4
-.word 0xf9005fa0
+.word 0xf9006fa0
 bl _p_112
-.word 0xf9405fa1
+.word 0xf9406fa1
 .word 0xaa0103e0
-.word 0xaa0003e2
-.word 0x91004043
+.word 0xf9006ba0
+.word 0x91004003
+.word 0xd5033bbf
+.word 0xf9406ba0
 .word 0xf9400fa2
 .word 0xf9000062
 .word 0xd349fc63
@@ -3516,7 +3567,10 @@ ldr x4, [x16, #16]
 .word 0x3900007e
 .word 0x3940a3a2
 .word 0x39008022
+.word 0xf90067a0
 .word 0x91006002
+.word 0xd5033bbf
+.word 0xf94067a0
 .word 0xf94013a1
 .word 0xf9000041
 .word 0xd349fc42
@@ -3531,56 +3585,59 @@ ldr x3, [x16, #16]
 .word 0xd280003e
 .word 0x3900005e
 .loc 5 163 0
-.word 0xf90053a0
+.word 0xf9005ba0
 .word 0xf9400800
-.word 0xf90057a0
+.word 0xf9005fa0
 
 adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+0
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x0, [x16, #736]
-.word 0xf9005ba0
+.word 0xf90063a0
 .word 0xf9401fa0
 bl _p_113
 .word 0xaa0003ef
-.word 0xf94057a0
-.word 0xf9405ba1
+.word 0xf9405fa0
+.word 0xf94063a1
 bl _p_114
-.word 0xf94053a0
+.word 0xf9405ba0
 .loc 5 164 0
-.word 0xf90047a0
+.word 0xf9004fa0
 .word 0xf9400c00
-.word 0xf9004ba0
+.word 0xf90053a0
 
 adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+0
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x0, [x16, #744]
-.word 0xf9004fa0
+.word 0xf90057a0
 .word 0xf9401fa0
 bl _p_115
 .word 0xaa0003ef
-.word 0xf9404ba0
-.word 0xf9404fa1
+.word 0xf94053a0
+.word 0xf94057a1
 bl _p_116
-.word 0xf94047a1
+.word 0xf9404fa1
 .loc 5 166 0
 .word 0xf9400ba0
 .word 0xf9401402
 .word 0xf9002ba2
-.word 0xf90043a1
+.word 0xf9004ba1
 .word 0xeb1f003f
 .word 0x10000011
-.word 0x54000c40
+.word 0x54000d00
 .word 0xf9400000
 bl _p_117
 .word 0xd2801001
 bl _p_4
 .word 0xaa0003e1
-.word 0xf94043a0
+.word 0xf9404ba0
+.word 0xf90047a0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54000ac0
+.word 0x54000b60
+.word 0xd5033bbf
+.word 0xf94047a0
 .word 0xf9001020
-.word 0xf9003fa1
+.word 0xf90043a1
 .word 0x91008021
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -3593,18 +3650,18 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-.word 0xf90037a0
+.word 0xf9003ba0
 .word 0xf9401fa0
 bl _p_118
 .word 0xaa0003e1
-.word 0xf9403fa0
+.word 0xf94043a0
 .word 0xf9002001
-.word 0xf9003ba0
+.word 0xf9003fa0
 .word 0xf9401fa0
 bl _p_119
 .word 0xaa0003e2
-.word 0xf94037a0
-.word 0xf9403ba1
+.word 0xf9403ba0
+.word 0xf9403fa1
 .word 0xf9400443
 .word 0xf9001423
 .word 0xf9401443
@@ -3613,10 +3670,10 @@ bl _p_119
 .word 0xf9000822
 .word 0x3901c03f
 .word 0xf90023a1
-.word 0xf90033a0
+.word 0xf90037a0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54000680
+.word 0x540006e0
 
 adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+0
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
@@ -3624,10 +3681,13 @@ ldr x0, [x16, #752]
 .word 0xd2801001
 bl _p_4
 .word 0xaa0003e1
-.word 0xf94033a0
+.word 0xf94037a0
+.word 0xf90033a0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x540004e0
+.word 0x54000520
+.word 0xd5033bbf
+.word 0xf94033a0
 .word 0xf9001020
 .word 0xf9002fa1
 .word 0x91008021
@@ -3666,12 +3726,12 @@ bl _p_121
 bl _p_122
 .loc 5 176 0
 .word 0x910003bf
-.word 0xa8cc7bfd
+.word 0xa8ce7bfd
 .word 0xd65f03c0
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_18
-.word 0xd2801920
+.word 0xd2801940
 .word 0xaa1103e1
 bl _p_18
 
@@ -4316,7 +4376,7 @@ bl _p_194
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_18
 
@@ -4349,25 +4409,29 @@ Lme_43:
 System_Data_SortExpressionBuilder_1_T_REF_Add_System_Func_2_T_REF_object_System_Comparison_1_object_bool:
 .file 8 "/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/src/Xamarin.iOS/external/corefx/src/System.Data.DataSetExtensions/src/System/Data/SortExpressionBuilder.cs"
 .loc 8 56 0 prologue_end
-.word 0xa9bc7bfd
+.word 0xa9bb7bfd
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf90013a2
 .word 0xf90017a3
 .word 0x3940a3a0
-.word 0x34000580
+.word 0x34000680
 .loc 8 58 0
 .word 0xf9400ba0
-.word 0xf9001fa0
+.word 0xf90027a0
 .word 0xf9400ba0
 .word 0xf9400802
 .word 0xaa0203e0
 .word 0xf9400fa1
 .word 0x3940005e
 bl _p_196
-.word 0xf9401fa1
-.word 0x91008021
+.word 0xaa0003e1
+.word 0xf94027a0
+.word 0xf90023a1
+.word 0x91008001
+.word 0xd5033bbf
+.word 0xf94023a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -4382,15 +4446,19 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .loc 8 59 0
 .word 0xf9400ba0
-.word 0xf9001ba0
+.word 0xf9001fa0
 .word 0xf9400ba0
 .word 0xf9400c02
 .word 0xaa0203e0
 .word 0xf94013a1
 .word 0x3940005e
 bl _p_197
-.word 0xf9401ba1
-.word 0x9100a021
+.word 0xaa0003e1
+.word 0xf9401fa0
+.word 0xf9001ba1
+.word 0x9100a001
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -4404,10 +4472,10 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .loc 8 60 0
-.word 0x1400002f
+.word 0x14000037
 .loc 8 67 0
 .word 0xf9400ba0
-.word 0xf9001fa0
+.word 0xf90027a0
 .word 0xf9400ba0
 .word 0xf9400803
 .word 0xf9400ba0
@@ -4416,8 +4484,12 @@ ldr x2, [x16, #16]
 .word 0xf9400fa2
 .word 0x3940007e
 bl _p_198
-.word 0xf9401fa1
-.word 0x91008021
+.word 0xaa0003e1
+.word 0xf94027a0
+.word 0xf90023a1
+.word 0x91008001
+.word 0xd5033bbf
+.word 0xf94023a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -4432,7 +4504,7 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .loc 8 68 0
 .word 0xf9400ba0
-.word 0xf9001ba0
+.word 0xf9001fa0
 .word 0xf9400ba0
 .word 0xf9400c03
 .word 0xf9400ba0
@@ -4441,8 +4513,12 @@ ldr x2, [x16, #16]
 .word 0xf94013a2
 .word 0x3940007e
 bl _p_199
-.word 0xf9401ba1
-.word 0x9100a021
+.word 0xaa0003e1
+.word 0xf9401fa0
+.word 0xf9001ba1
+.word 0x9100a001
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -4457,7 +4533,7 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .loc 8 70 0
 .word 0x910003bf
-.word 0xa8c47bfd
+.word 0xa8c57bfd
 .word 0xd65f03c0
 
 Lme_44:
@@ -4497,7 +4573,10 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+0
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x1, [x16, #776]
 .word 0xf9400021
+.word 0xf9004ba0
 .word 0x91004002
+.word 0xd5033bbf
+.word 0xf9404ba0
 .word 0xf9000041
 .word 0xd349fc42
 .word 0xd29ffffe
@@ -4765,7 +4844,7 @@ bl _p_208
 .word 0xaa0103e0
 .word 0x3940003e
 bl _p_200
-.word 0x14000025
+.word 0x14000028
 .word 0xf94013a0
 .word 0xf9400000
 bl _p_201
@@ -4779,14 +4858,17 @@ bl _p_201
 .word 0xf9401421
 bl _p_209
 .word 0x53001c00
-.word 0x34000260
+.word 0x340002c0
 .loc 8 136 0
 .word 0xf9400b42
 .word 0xaa0203e0
 .word 0xaa1903e1
 .word 0x3940005e
 bl _p_210
+.word 0xf90063a0
 .word 0x91008341
+.word 0xd5033bbf
+.word 0xf94063a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -4815,7 +4897,7 @@ bl _p_201
 .word 0x910143a0
 bl _p_203
 .word 0x53001c00
-.word 0x35fffaa0
+.word 0x35fffa40
 .word 0xf9003fbf
 .word 0x94000005
 .word 0xf9403fa0
@@ -4837,7 +4919,7 @@ bl _p_201
 .word 0xaa0103e0
 .word 0x3940003e
 bl _p_204
-.word 0x14000025
+.word 0x14000028
 
 adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+0
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
@@ -4852,14 +4934,17 @@ ldr x0, [x16, #784]
 .word 0xf9401421
 bl _p_209
 .word 0x53001c00
-.word 0x34000260
+.word 0x340002c0
 .loc 8 149 0
 .word 0xf9400f42
 .word 0xaa0203e0
 .word 0xaa1903e1
 .word 0x3940005e
 bl _p_211
+.word 0xf90063a0
 .word 0x9100a341
+.word 0xd5033bbf
+.word 0xf94063a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -4888,7 +4973,7 @@ ldr x15, [x16, #784]
 .word 0x9100a3a0
 bl _p_206
 .word 0x53001c00
-.word 0x35fffac0
+.word 0x35fffa60
 .word 0xf90047bf
 .word 0x94000005
 .word 0xf94047a0
@@ -4917,7 +5002,7 @@ Lme_48:
 	.no_dead_strip System_Data_SortExpressionBuilder_1_T_REF_CloneCast_TResult_REF
 System_Data_SortExpressionBuilder_1_T_REF_CloneCast_TResult_REF:
 .loc 8 165 0 prologue_end
-.word 0xa9b27bfd
+.word 0xa9b17bfd
 .word 0x910003fd
 .word 0xa9016bb9
 .word 0xf90017af
@@ -4949,23 +5034,27 @@ bl _p_213
 .word 0xaa0103e0
 .word 0x3940003e
 bl _p_200
-.word 0x1400008c
+.word 0x14000099
 .word 0xf94017a0
 bl _p_214
 .word 0xd2800301
 bl _p_4
-.word 0xf90067a0
+.word 0xf9006ba0
 bl _p_215
-.word 0xf94067a0
+.word 0xf9406ba0
 .word 0xaa0003f9
 .word 0xaa1903e0
-.word 0xf90063a0
+.word 0xf90067a0
 .word 0xf94013a0
 .word 0xf9400000
 bl _p_201
-.word 0xf94063a1
-.word 0xf9403ba0
-.word 0x91004021
+.word 0xaa0003e1
+.word 0xf94067a0
+.word 0xf9403ba1
+.word 0xf90063a1
+.word 0x91004001
+.word 0xd5033bbf
+.word 0xf94063a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -4987,22 +5076,25 @@ ldr x2, [x16, #16]
 .word 0xf9401421
 bl _p_209
 .word 0x53001c00
-.word 0x34000760
+.word 0x34000820
 .loc 8 171 0
 .word 0xf9400b40
-.word 0xf90067a0
+.word 0xf9006ba0
 .word 0xeb1f033f
 .word 0x10000011
-.word 0x54001820
+.word 0x540019a0
 .word 0xf94017a0
 bl _p_216
 .word 0xd2801001
 bl _p_4
+.word 0xf90073a0
 .word 0xeb1f033f
 .word 0x10000011
-.word 0x540016e0
+.word 0x54001840
+.word 0xd5033bbf
+.word 0xf94073a0
 .word 0xf9001019
-.word 0xf9006ba0
+.word 0xf9006fa0
 .word 0x91008000
 .word 0xd349fc00
 .word 0xd29ffffe
@@ -5018,13 +5110,13 @@ ldr x1, [x16, #16]
 .word 0xf94017a0
 bl _p_217
 .word 0xaa0003e1
-.word 0xf9406ba0
+.word 0xf9406fa0
 .word 0xf9002001
-.word 0xf90063a0
+.word 0xf90067a0
 .word 0xf94017a0
 bl _p_218
-.word 0xf94063a1
-.word 0xf94067a2
+.word 0xf94067a1
+.word 0xf9406ba2
 .word 0xf9400403
 .word 0xf9001423
 .word 0xf9401403
@@ -5035,7 +5127,10 @@ bl _p_218
 .word 0xaa0203e0
 .word 0x3940005e
 bl _p_219
+.word 0xf90063a0
 .word 0x91008341
+.word 0xd5033bbf
+.word 0xf94063a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -5049,20 +5144,23 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .loc 8 172 0
-.word 0x1400002e
+.word 0x14000031
 .loc 8 175 0
 .word 0xf9400b40
 .word 0xf90067a0
 .word 0xeb1f033f
 .word 0x10000011
-.word 0x540010e0
+.word 0x540011a0
 .word 0xf94017a0
 bl _p_216
 .word 0xd2801001
 bl _p_4
+.word 0xf9006fa0
 .word 0xeb1f033f
 .word 0x10000011
-.word 0x54000fa0
+.word 0x54001040
+.word 0xd5033bbf
+.word 0xf9406fa0
 .word 0xf9001019
 .word 0xf9006ba0
 .word 0x91008000
@@ -5105,7 +5203,7 @@ bl _p_201
 .word 0x910163a0
 bl _p_203
 .word 0x53001c00
-.word 0x35ffedc0
+.word 0x35ffec20
 .word 0xf90043bf
 .word 0x94000005
 .word 0xf94043a0
@@ -5127,7 +5225,7 @@ bl _p_201
 .word 0xaa0103e0
 .word 0x3940003e
 bl _p_204
-.word 0x14000025
+.word 0x14000028
 
 adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+0
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
@@ -5142,14 +5240,17 @@ ldr x0, [x16, #784]
 .word 0xf9401421
 bl _p_209
 .word 0x53001c00
-.word 0x34000260
+.word 0x340002c0
 .loc 8 184 0
 .word 0xf9400f42
 .word 0xaa0203e0
 .word 0xaa1903e1
 .word 0x3940005e
 bl _p_211
+.word 0xf90063a0
 .word 0x9100a341
+.word 0xd5033bbf
+.word 0xf94063a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -5178,7 +5279,7 @@ ldr x15, [x16, #784]
 .word 0x9100c3a0
 bl _p_206
 .word 0x53001c00
-.word 0x35fffac0
+.word 0x35fffa60
 .word 0xf9004bbf
 .word 0x94000005
 .word 0xf9404ba0
@@ -5198,12 +5299,12 @@ ldr x0, [x16, #784]
 .word 0xaa1a03e0
 .word 0xa9416bb9
 .word 0x910003bf
-.word 0xa8ce7bfd
+.word 0xa8cf7bfd
 .word 0xd65f03c0
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_18
-.word 0xd2801920
+.word 0xd2801940
 .word 0xaa1103e1
 bl _p_18
 
@@ -5217,17 +5318,18 @@ System_Data_SortExpressionBuilder_1_T_REF__ctor:
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9400ba0
-.word 0xf9001ba0
+.word 0xf9001fa0
 .word 0xf9400ba0
 .word 0xf9400000
 bl _p_222
 .word 0xd2800601
 bl _p_4
-.word 0xf90017a0
+.word 0xf9001ba0
 bl _p_223
-.word 0xf94017a0
-.word 0xf9401ba1
-.word 0x91004021
+.word 0xf9401fa0
+.word 0x91004001
+.word 0xd5033bbf
+.word 0xf9401ba0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -5242,15 +5344,19 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .loc 8 42 0
 .word 0xf9400ba0
-.word 0xf90013a0
+.word 0xf90017a0
 
 adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+0
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x0, [x16, #792]
 .word 0xd2800601
 bl _p_4
-.word 0xf94013a1
-.word 0x91006021
+.word 0xaa0003e1
+.word 0xf94017a0
+.word 0xf90013a1
+.word 0x91006001
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -5868,10 +5974,13 @@ System_Data_DataRowExtensions_UnboxT_1_T_REF__cctor:
 bl _p_284
 .word 0xaa0003ef
 bl _p_285
-.word 0xf90013a0
+.word 0xf90017a0
 .word 0xf9400ba0
 bl _p_286
-.word 0xf94013a1
+.word 0xf90013a0
+.word 0xf94017a1
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -6325,7 +6434,7 @@ bl _p_303
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_18
 
@@ -7308,23 +7417,26 @@ bl _p_317
 .word 0xf9400ba0
 bl _p_306
 bl _p_292
-.word 0xf9001ba0
+.word 0xf9001fa0
 .word 0xf9400ba0
 bl _p_318
 .word 0xaa0003e1
-.word 0xf9401ba0
-.word 0xf90017a0
+.word 0xf9401fa0
+.word 0xf9001ba0
 .word 0xd63f0020
 .word 0xf9400ba0
 bl _p_307
-.word 0xf90013a0
+.word 0xf90017a0
 .word 0xf9400ba0
 bl _p_308
 .word 0xaa0003e2
-.word 0xf94013a0
-.word 0xf94017a1
+.word 0xf94017a0
+.word 0xf9401ba1
 .word 0xd1000442
 .word 0x8b020000
+.word 0xf90013a0
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -9271,7 +9383,7 @@ bl _p_383
 .word 0x93407c00
 bl _p_94
 bl _p_2
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_18
 
@@ -9291,7 +9403,7 @@ bl _p_395
 .word 0xf94013a0
 .word 0xb9800000
 .word 0xf90013bf
-.word 0xd28028a0
+.word 0xd28028c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_2
@@ -9400,6 +9512,7 @@ bl _p_401
 .word 0xf94006e1
 .word 0xd1000421
 .word 0x8b010001
+.word 0xd5033bbf
 .word 0xf94013a0
 .word 0xf9000020
 .word 0xd349fc21
@@ -9415,12 +9528,13 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .loc 5 79 0
 .word 0x3940a3a0
-.word 0x34000220
+.word 0x34000240
 .loc 5 81 0
 .word 0xf9400fa0
 .word 0xf9400ae1
 .word 0xd1000421
 .word 0x8b010001
+.word 0xd5033bbf
 .word 0xf9401ba0
 .word 0xf9000020
 .word 0xd349fc21
@@ -9455,11 +9569,12 @@ bl _p_403
 .word 0xf94037a0
 .word 0xf9002fa0
 .word 0xd63f0020
+.word 0xf94033a0
+.word 0xf9400ee1
+.word 0xd1000421
+.word 0x8b010001
+.word 0xd5033bbf
 .word 0xf9402fa0
-.word 0xf94033a1
-.word 0xf9400ee2
-.word 0xd1000442
-.word 0x8b020021
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -9487,11 +9602,12 @@ bl _p_405
 .word 0xf9402ba0
 .word 0xf90023a0
 .word 0xd63f0020
+.word 0xf94027a0
+.word 0xf94012e1
+.word 0xd1000421
+.word 0x8b010001
+.word 0xd5033bbf
 .word 0xf94023a0
-.word 0xf94027a1
-.word 0xf94012e2
-.word 0xd1000442
-.word 0x8b020021
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -9516,7 +9632,7 @@ Lme_7d:
 	.no_dead_strip System_Data_EnumerableRowCollection_1_TRow_GSHAREDVT__ctor_System_Data_DataTable
 System_Data_EnumerableRowCollection_1_TRow_GSHAREDVT__ctor_System_Data_DataTable:
 .loc 5 90 0 prologue_end
-.word 0xa9b87bfd
+.word 0xa9b77bfd
 .word 0x910003fd
 .word 0xa9016bb9
 .word 0xf90013a0
@@ -9534,6 +9650,9 @@ bl _p_401
 .word 0xf9400721
 .word 0xd1000421
 .word 0x8b010000
+.word 0xf90043a0
+.word 0xd5033bbf
+.word 0xf94043a0
 .word 0xf900001a
 .word 0xd349fc00
 .word 0xd29ffffe
@@ -9548,26 +9667,30 @@ ldr x1, [x16, #16]
 .word 0x3900001e
 .loc 5 93 0
 .word 0xf94013a0
-.word 0xf90033a0
+.word 0xf90037a0
 .word 0xaa1a03e0
 .word 0x3940035e
 bl _p_407
-.word 0xf90037a0
+.word 0xf9003ba0
 .word 0xf94013a0
 .word 0xf9400000
 bl _p_408
-.word 0xf9003ba0
+.word 0xf9003fa0
 .word 0xf94013a0
 .word 0xf9400000
 bl _p_409
 .word 0xaa0003e1
-.word 0xf94037a0
-.word 0xf9403baf
+.word 0xf9403ba0
+.word 0xf9403faf
 .word 0xd63f0020
-.word 0xf94033a1
-.word 0xf9400b22
-.word 0xd1000442
-.word 0x8b020021
+.word 0xaa0003e1
+.word 0xf94037a0
+.word 0xf90033a1
+.word 0xf9400b21
+.word 0xd1000421
+.word 0x8b010001
+.word 0xd5033bbf
+.word 0xf94033a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -9601,11 +9724,12 @@ bl _p_403
 .word 0xf9402fa0
 .word 0xf90027a0
 .word 0xd63f0020
+.word 0xf9402ba0
+.word 0xf9400f21
+.word 0xd1000421
+.word 0x8b010001
+.word 0xd5033bbf
 .word 0xf94027a0
-.word 0xf9402ba1
-.word 0xf9400f22
-.word 0xd1000442
-.word 0x8b020021
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -9633,11 +9757,12 @@ bl _p_405
 .word 0xf94023a0
 .word 0xf9001ba0
 .word 0xd63f0020
+.word 0xf9401fa0
+.word 0xf9401321
+.word 0xd1000421
+.word 0x8b010001
+.word 0xd5033bbf
 .word 0xf9401ba0
-.word 0xf9401fa1
-.word 0xf9401322
-.word 0xd1000442
-.word 0x8b020021
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -9653,7 +9778,7 @@ ldr x2, [x16, #16]
 .loc 5 96 0
 .word 0xa9416bb9
 .word 0x910003bf
-.word 0xa8c87bfd
+.word 0xa8c97bfd
 .word 0xd65f03c0
 
 Lme_7e:
@@ -9662,7 +9787,7 @@ Lme_7e:
 	.no_dead_strip System_Data_EnumerableRowCollection_1_TRow_GSHAREDVT__ctor_System_Data_EnumerableRowCollection_1_TRow_GSHAREDVT_System_Collections_Generic_IEnumerable_1_TRow_GSHAREDVT_System_Func_2_TRow_GSHAREDVT_TRow_GSHAREDVT
 System_Data_EnumerableRowCollection_1_TRow_GSHAREDVT__ctor_System_Data_EnumerableRowCollection_1_TRow_GSHAREDVT_System_Collections_Generic_IEnumerable_1_TRow_GSHAREDVT_System_Func_2_TRow_GSHAREDVT_TRow_GSHAREDVT:
 .loc 5 102 0 prologue_end
-.word 0xa9b97bfd
+.word 0xa9b87bfd
 .word 0x910003fd
 .word 0xa90163b7
 .word 0xf90013a0
@@ -9682,6 +9807,7 @@ bl _p_401
 .word 0xf94006e1
 .word 0xd1000421
 .word 0x8b010001
+.word 0xd5033bbf
 .word 0xf94017a0
 .word 0xf9000020
 .word 0xd349fc21
@@ -9700,6 +9826,7 @@ ldr x2, [x16, #16]
 .word 0xf9400ae1
 .word 0xd1000421
 .word 0x8b010001
+.word 0xd5033bbf
 .word 0xf9401ba0
 .word 0xf9000020
 .word 0xd349fc21
@@ -9714,22 +9841,25 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .loc 5 108 0
-.word 0xb4000c18
+.word 0xb4000d18
 .loc 5 110 0
 .word 0xf9400ae0
 .word 0xd1000400
 .word 0x8b000300
 .word 0xf9400000
-.word 0xb5000280
+.word 0xb50002e0
 .loc 5 112 0
-.word 0xf94013a1
-.word 0xf9400ee0
-.word 0xd1000400
-.word 0x8b000300
-.word 0xf9400000
-.word 0xf9400ee2
-.word 0xd1000442
-.word 0x8b020021
+.word 0xf94013a0
+.word 0xf9400ee1
+.word 0xd1000421
+.word 0x8b010301
+.word 0xf9400021
+.word 0xf90023a1
+.word 0xf9400ee1
+.word 0xd1000421
+.word 0x8b010001
+.word 0xd5033bbf
+.word 0xf94023a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -9744,12 +9874,12 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .loc 5 114 0
 .word 0xf94013a0
-.word 0xf9002fa0
+.word 0xf90033a0
 .word 0xf94012e0
 .word 0xd1000400
 .word 0x8b000300
 .word 0xf9400000
-.word 0xf90037a0
+.word 0xf9003ba0
 .word 0xf94013a0
 .word 0xf9400000
 bl _p_402
@@ -9760,20 +9890,21 @@ bl _p_11
 .word 0xf9400000
 bl _p_402
 bl _p_292
-.word 0xf90033a0
+.word 0xf90037a0
 .word 0xf94013a0
 .word 0xf9400000
 bl _p_411
 .word 0xaa0003e2
-.word 0xf94033a0
-.word 0xf94037a1
-.word 0xf9002ba0
+.word 0xf94037a0
+.word 0xf9403ba1
+.word 0xf9002fa0
 .word 0xd63f0040
-.word 0xf9402ba0
-.word 0xf9402fa1
-.word 0xf94012e2
-.word 0xd1000442
-.word 0x8b020021
+.word 0xf94033a0
+.word 0xf94012e1
+.word 0xd1000421
+.word 0x8b010001
+.word 0xd5033bbf
+.word 0xf9402fa0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -9788,22 +9919,26 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .loc 5 116 0
 .word 0xf94013a0
-.word 0xf90023a0
+.word 0xf90027a0
 .word 0xf94016e0
 .word 0xd1000400
 .word 0x8b000300
 .word 0xf9400000
-.word 0xf90027a0
+.word 0xf9002ba0
 .word 0xf94013a0
 .word 0xf9400000
 bl _p_412
 .word 0xaa0003e1
-.word 0xf94027a0
+.word 0xf9402ba0
 .word 0xd63f0020
-.word 0xf94023a1
-.word 0xf94016e2
-.word 0xd1000442
-.word 0x8b020021
+.word 0xaa0003e1
+.word 0xf94027a0
+.word 0xf90023a1
+.word 0xf94016e1
+.word 0xd1000421
+.word 0x8b010001
+.word 0xd5033bbf
+.word 0xf94023a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -9817,7 +9952,7 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .loc 5 117 0
-.word 0x14000043
+.word 0x14000045
 .loc 5 120 0
 .word 0xf94013a0
 .word 0xf90033a0
@@ -9839,11 +9974,12 @@ bl _p_403
 .word 0xf94037a0
 .word 0xf9002fa0
 .word 0xd63f0020
+.word 0xf94033a0
+.word 0xf94012e1
+.word 0xd1000421
+.word 0x8b010001
+.word 0xd5033bbf
 .word 0xf9402fa0
-.word 0xf94033a1
-.word 0xf94012e2
-.word 0xd1000442
-.word 0x8b020021
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -9871,11 +10007,12 @@ bl _p_405
 .word 0xf9402ba0
 .word 0xf90023a0
 .word 0xd63f0020
+.word 0xf94027a0
+.word 0xf94016e1
+.word 0xd1000421
+.word 0x8b010001
+.word 0xd5033bbf
 .word 0xf94023a0
-.word 0xf94027a1
-.word 0xf94016e2
-.word 0xd1000442
-.word 0x8b020021
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -9891,7 +10028,7 @@ ldr x2, [x16, #16]
 .loc 5 123 0
 .word 0xa94163b7
 .word 0x910003bf
-.word 0xa8c77bfd
+.word 0xa8c87bfd
 .word 0xd65f03c0
 
 Lme_7f:
@@ -10053,7 +10190,7 @@ Lme_83:
 	.no_dead_strip System_Data_EnumerableRowCollection_1_TRow_GSHAREDVT_AddSortExpression_TKey_GSHAREDVT_System_Func_2_TRow_GSHAREDVT_TKey_GSHAREDVT_System_Collections_Generic_IComparer_1_TKey_GSHAREDVT_bool_bool
 System_Data_EnumerableRowCollection_1_TRow_GSHAREDVT_AddSortExpression_TKey_GSHAREDVT_System_Func_2_TRow_GSHAREDVT_TKey_GSHAREDVT_System_Collections_Generic_IComparer_1_TKey_GSHAREDVT_bool_bool:
 .loc 5 0 0 prologue_end
-.word 0xa9b17bfd
+.word 0xa9af7bfd
 .word 0x910003fd
 .word 0xa9015bb5
 .word 0xf90023af
@@ -10070,18 +10207,20 @@ bl _p_425
 .word 0xf94023a0
 bl _p_426
 bl _p_292
-.word 0xf90077a0
+.word 0xf90083a0
 .word 0xf94023a0
 bl _p_427
 .word 0xaa0003e1
-.word 0xf94077a0
-.word 0xf90073a0
+.word 0xf94083a0
+.word 0xf9007fa0
 .word 0xd63f0020
-.word 0xf94073a0
-.word 0xaa0003e1
-.word 0xf94006a2
-.word 0xd1000442
-.word 0x8b020022
+.word 0xf9407fa0
+.word 0xf9007ba0
+.word 0xf94006a1
+.word 0xd1000421
+.word 0x8b010002
+.word 0xd5033bbf
+.word 0xf9407ba0
 .word 0xf94013a1
 .word 0xf9000041
 .word 0xd349fc42
@@ -10102,7 +10241,10 @@ ldr x3, [x16, #16]
 .word 0x39000022
 .word 0xf9400ea1
 .word 0xd1000421
+.word 0xf90077a0
 .word 0x8b010002
+.word 0xd5033bbf
+.word 0xf94077a0
 .word 0xf94017a1
 .word 0xf9000041
 .word 0xd349fc42
@@ -10119,81 +10261,81 @@ ldr x3, [x16, #16]
 .loc 5 163 0
 .word 0xf94006a1
 .word 0xd1000421
-.word 0xf90063a0
+.word 0xf90067a0
 .word 0x8b010000
 .word 0xf9400000
-.word 0xf90067a0
+.word 0xf9006ba0
 
 adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+0
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x0, [x16, #736]
-.word 0xf9006ba0
+.word 0xf9006fa0
 .word 0xf94023a0
 bl _p_428
-.word 0xf9006fa0
+.word 0xf90073a0
 .word 0xf94023a0
 bl _p_429
 .word 0xaa0003e2
-.word 0xf94067a0
-.word 0xf9406ba1
-.word 0xf9406faf
+.word 0xf9406ba0
+.word 0xf9406fa1
+.word 0xf94073af
 .word 0xd63f0040
-.word 0xf94063a0
+.word 0xf94067a0
 .loc 5 164 0
 .word 0xf9400ea1
 .word 0xd1000421
-.word 0xf90053a0
+.word 0xf90057a0
 .word 0x8b010000
 .word 0xf9400000
-.word 0xf90057a0
+.word 0xf9005ba0
 
 adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+0
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x0, [x16, #744]
-.word 0xf9005ba0
+.word 0xf9005fa0
 .word 0xf94023a0
 bl _p_430
-.word 0xf9005fa0
+.word 0xf90063a0
 .word 0xf94023a0
 bl _p_431
 .word 0xaa0003e2
-.word 0xf94057a0
-.word 0xf9405ba1
-.word 0xf9405faf
+.word 0xf9405ba0
+.word 0xf9405fa1
+.word 0xf94063af
 .word 0xd63f0040
-.word 0xf94053a0
+.word 0xf94057a0
 .loc 5 166 0
 .word 0xf94012a1
 .word 0xd1000421
 .word 0x8b0102c1
 .word 0xf9400021
 .word 0xf9002ba1
-.word 0xf9004ba0
+.word 0xf9004fa0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x540009e0
+.word 0x54000a40
 .word 0xf94023a0
 bl _p_432
 bl _p_433
-.word 0xf9004fa0
+.word 0xf90053a0
 .word 0xf94002c0
 bl _p_434
 bl _p_292
-.word 0xf90047a0
+.word 0xf9004ba0
 .word 0xf94002c0
 bl _p_435
 .word 0xaa0003e3
-.word 0xf94047a0
-.word 0xf9404ba1
-.word 0xf9404fa2
+.word 0xf9404ba0
+.word 0xf9404fa1
+.word 0xf94053a2
 .word 0xf9002fa0
-.word 0xf90043a1
+.word 0xf90047a1
 .word 0xd63f0060
-.word 0xf94043a0
-.word 0xf9003fa0
+.word 0xf94047a0
+.word 0xf90043a0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54000720
+.word 0x54000780
 
 adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+0
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
@@ -10201,10 +10343,13 @@ ldr x0, [x16, #752]
 .word 0xd2801001
 bl _p_4
 .word 0xaa0003e1
-.word 0xf9403fa0
+.word 0xf94043a0
+.word 0xf9003fa0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54000580
+.word 0x540005c0
+.word 0xd5033bbf
+.word 0xf9403fa0
 .word 0xf9001020
 .word 0xf9003ba1
 .word 0x91008021
@@ -10248,12 +10393,12 @@ bl _p_438
 .loc 5 176 0
 .word 0xa9415bb5
 .word 0x910003bf
-.word 0xa8cf7bfd
+.word 0xa8d17bfd
 .word 0xd65f03c0
-.word 0xd2802700
+.word 0xd2802720
 .word 0xaa1103e1
 bl _p_18
-.word 0xd2801920
+.word 0xd2801940
 .word 0xaa1103e1
 bl _p_18
 
@@ -11102,7 +11247,7 @@ bl _p_522
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_18
 
@@ -11146,7 +11291,7 @@ Lme_90:
 	.no_dead_strip System_Data_SortExpressionBuilder_1_T_GSHAREDVT_Add_System_Func_2_T_GSHAREDVT_object_System_Comparison_1_object_bool
 System_Data_SortExpressionBuilder_1_T_GSHAREDVT_Add_System_Func_2_T_GSHAREDVT_object_System_Comparison_1_object_bool:
 .loc 8 56 0 prologue_end
-.word 0xa9b97bfd
+.word 0xa9b87bfd
 .word 0x910003fd
 .word 0xf9000bb7
 .word 0xf9000fa0
@@ -11160,27 +11305,31 @@ bl _p_525
 .word 0xb98002e0
 .word 0xf9001fbf
 .word 0x3940c3a0
-.word 0x340007c0
+.word 0x340008c0
 .loc 8 58 0
 .word 0xf9400fa0
-.word 0xf9002ba0
+.word 0xf90033a0
 .word 0xf9400fa0
 .word 0xf94006e1
 .word 0xd1000421
 .word 0x8b010000
 .word 0xf9400000
-.word 0xf9002fa0
+.word 0xf90037a0
 .word 0xf9400fa0
 .word 0xf9400000
 bl _p_526
 .word 0xaa0003e2
-.word 0xf9402fa0
+.word 0xf94037a0
 .word 0xf94013a1
 .word 0xd63f0040
-.word 0xf9402ba1
-.word 0xf9400ae2
-.word 0xd1000442
-.word 0x8b020021
+.word 0xaa0003e1
+.word 0xf94033a0
+.word 0xf9002fa1
+.word 0xf9400ae1
+.word 0xd1000421
+.word 0x8b010001
+.word 0xd5033bbf
+.word 0xf9402fa0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -11195,24 +11344,28 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .loc 8 59 0
 .word 0xf9400fa0
-.word 0xf90023a0
+.word 0xf90027a0
 .word 0xf9400fa0
 .word 0xf9400ee1
 .word 0xd1000421
 .word 0x8b010000
 .word 0xf9400000
-.word 0xf90027a0
+.word 0xf9002ba0
 .word 0xf9400fa0
 .word 0xf9400000
 bl _p_527
 .word 0xaa0003e2
-.word 0xf94027a0
+.word 0xf9402ba0
 .word 0xf94017a1
 .word 0xd63f0040
-.word 0xf94023a1
-.word 0xf94012e2
-.word 0xd1000442
-.word 0x8b020021
+.word 0xaa0003e1
+.word 0xf94027a0
+.word 0xf90023a1
+.word 0xf94012e1
+.word 0xd1000421
+.word 0x8b010001
+.word 0xd5033bbf
+.word 0xf94023a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -11226,34 +11379,38 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .loc 8 60 0
-.word 0x1400004b
+.word 0x14000053
 .loc 8 67 0
 .word 0xf9400fa0
-.word 0xf9002fa0
+.word 0xf90037a0
 .word 0xf9400fa0
 .word 0xf94006e1
 .word 0xd1000421
 .word 0x8b010000
 .word 0xf9400000
-.word 0xf90033a0
+.word 0xf9003ba0
 .word 0xf9400fa0
 .word 0xf9400ae1
 .word 0xd1000421
 .word 0x8b010000
 .word 0xf9400000
-.word 0xf90037a0
+.word 0xf9003fa0
 .word 0xf9400fa0
 .word 0xf9400000
 bl _p_528
 .word 0xaa0003e3
-.word 0xf94033a0
-.word 0xf94037a1
+.word 0xf9403ba0
+.word 0xf9403fa1
 .word 0xf94013a2
 .word 0xd63f0060
-.word 0xf9402fa1
-.word 0xf9400ae2
-.word 0xd1000442
-.word 0x8b020021
+.word 0xaa0003e1
+.word 0xf94037a0
+.word 0xf90033a1
+.word 0xf9400ae1
+.word 0xd1000421
+.word 0x8b010001
+.word 0xd5033bbf
+.word 0xf94033a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -11268,31 +11425,35 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .loc 8 68 0
 .word 0xf9400fa0
-.word 0xf90023a0
+.word 0xf90027a0
 .word 0xf9400fa0
 .word 0xf9400ee1
 .word 0xd1000421
 .word 0x8b010000
 .word 0xf9400000
-.word 0xf90027a0
+.word 0xf9002ba0
 .word 0xf9400fa0
 .word 0xf94012e1
 .word 0xd1000421
 .word 0x8b010000
 .word 0xf9400000
-.word 0xf9002ba0
+.word 0xf9002fa0
 .word 0xf9400fa0
 .word 0xf9400000
 bl _p_529
 .word 0xaa0003e3
-.word 0xf94027a0
-.word 0xf9402ba1
+.word 0xf9402ba0
+.word 0xf9402fa1
 .word 0xf94017a2
 .word 0xd63f0060
-.word 0xf94023a1
-.word 0xf94012e2
-.word 0xd1000442
-.word 0x8b020021
+.word 0xaa0003e1
+.word 0xf94027a0
+.word 0xf90023a1
+.word 0xf94012e1
+.word 0xd1000421
+.word 0x8b010001
+.word 0xd5033bbf
+.word 0xf94023a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -11308,7 +11469,7 @@ ldr x2, [x16, #16]
 .loc 8 70 0
 .word 0xf9400bb7
 .word 0x910003bf
-.word 0xa8c77bfd
+.word 0xa8c87bfd
 .word 0xd65f03c0
 
 Lme_91:
@@ -11687,7 +11848,7 @@ bl _p_532
 .word 0xf94063a0
 .word 0x910163a8
 .word 0xd63f0020
-.word 0x14000047
+.word 0x1400004a
 .word 0xf94017a0
 .word 0xf9400000
 bl _p_533
@@ -11719,23 +11880,26 @@ bl _p_551
 .word 0xf94063a0
 bl _p_209
 .word 0x53001c00
-.word 0x34000380
+.word 0x340003e0
 .loc 8 136 0
 .word 0xf9400740
 .word 0xd1000400
 .word 0x8b000320
 .word 0xf9400000
-.word 0xf90063a0
+.word 0xf90067a0
 .word 0xf94017a0
 .word 0xf9400000
 bl _p_552
 .word 0xaa0003e2
-.word 0xf94063a0
+.word 0xf94067a0
 .word 0xaa1803e1
 .word 0xd63f0040
-.word 0xf9400b41
-.word 0xd1000421
-.word 0x8b010321
+.word 0xf90063a0
+.word 0xf9400b40
+.word 0xd1000400
+.word 0x8b000321
+.word 0xd5033bbf
+.word 0xf94063a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -11776,7 +11940,7 @@ bl _p_537
 .word 0x910163a0
 .word 0xd63f0020
 .word 0x53001c00
-.word 0x35fff5c0
+.word 0x35fff560
 .word 0xf90047bf
 .word 0x94000005
 .word 0xf94047a0
@@ -11811,7 +11975,7 @@ bl _p_540
 .word 0xf94063a0
 .word 0x9100c3a8
 .word 0xd63f0020
-.word 0x14000047
+.word 0x1400004a
 
 adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+0
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
@@ -11844,23 +12008,26 @@ bl _p_553
 .word 0xf94063a0
 bl _p_209
 .word 0x53001c00
-.word 0x34000380
+.word 0x340003e0
 .loc 8 149 0
 .word 0xf9400f40
 .word 0xd1000400
 .word 0x8b000320
 .word 0xf9400000
-.word 0xf90063a0
+.word 0xf90067a0
 .word 0xf94017a0
 .word 0xf9400000
 bl _p_554
 .word 0xaa0003e2
-.word 0xf94063a0
+.word 0xf94067a0
 .word 0xaa1803e1
 .word 0xd63f0040
-.word 0xf9401341
-.word 0xd1000421
-.word 0x8b010321
+.word 0xf90063a0
+.word 0xf9401340
+.word 0xd1000400
+.word 0x8b000321
+.word 0xd5033bbf
+.word 0xf94063a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -11902,7 +12069,7 @@ bl _p_544
 .word 0x9100c3a0
 .word 0xd63f0020
 .word 0x53001c00
-.word 0x35fff5c0
+.word 0x35fff560
 .word 0xf9004bbf
 .word 0x94000005
 .word 0xf9404ba0
@@ -11938,7 +12105,7 @@ Lme_95:
 	.no_dead_strip System_Data_SortExpressionBuilder_1_T_GSHAREDVT_CloneCast_TResult_GSHAREDVT
 System_Data_SortExpressionBuilder_1_T_GSHAREDVT_CloneCast_TResult_GSHAREDVT:
 .loc 8 165 0 prologue_end
-.word 0xa9b17bfd
+.word 0xa9b07bfd
 .word 0x910003fd
 .word 0xa90167b8
 .word 0xf90013ba
@@ -11985,36 +12152,40 @@ bl _p_532
 .word 0xf94063a0
 .word 0x910183a8
 .word 0xd63f0020
-.word 0x1400008a
+.word 0x14000091
 .word 0xf9401ba0
 bl _p_558
 bl _p_292
-.word 0xf90077a0
+.word 0xf9007ba0
 .word 0xf9401ba0
 bl _p_559
 .word 0xaa0003e1
-.word 0xf94077a0
-.word 0xf90073a0
+.word 0xf9407ba0
+.word 0xf90077a0
 .word 0xd63f0020
-.word 0xf94073a0
+.word 0xf94077a0
 .word 0xaa0003f8
 .word 0xaa1803e0
-.word 0xf9006ba0
+.word 0xf9006fa0
 .word 0xf94017a0
 .word 0xf9400000
 bl _p_533
-.word 0xf9006fa0
+.word 0xf90073a0
 .word 0xf94017a0
 .word 0xf9400000
 bl _p_534
 .word 0xaa0003e1
-.word 0xf9406faf
+.word 0xf94073af
 .word 0x910183a0
 .word 0xd63f0020
-.word 0xf9406ba1
-.word 0xf9400b42
-.word 0xd1000442
-.word 0x8b020021
+.word 0xaa0003e1
+.word 0xf9406fa0
+.word 0xf9006ba1
+.word 0xf9400b41
+.word 0xd1000421
+.word 0x8b010001
+.word 0xd5033bbf
+.word 0xf9406ba0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -12049,41 +12220,44 @@ bl _p_551
 .word 0xf94063a0
 bl _p_209
 .word 0x53001c00
-.word 0x340005c0
+.word 0x34000620
 .loc 8 171 0
 .word 0xf9401340
 .word 0xd1000400
 .word 0x8b000320
 .word 0xf9400000
-.word 0xf90063a0
+.word 0xf90067a0
 .word 0xeb1f031f
 .word 0x10000011
-.word 0x54001c00
+.word 0x54001cc0
 .word 0xf9401ba0
 bl _p_560
 bl _p_433
-.word 0xf9006fa0
+.word 0xf90073a0
 .word 0xf9401ba0
 bl _p_561
 bl _p_292
-.word 0xf9006ba0
+.word 0xf9006fa0
 .word 0xf9401ba0
 bl _p_562
 .word 0xaa0003e3
-.word 0xf9406ba0
-.word 0xf9406fa2
-.word 0xf90067a0
+.word 0xf9406fa0
+.word 0xf94073a2
+.word 0xf9006ba0
 .word 0xaa1803e1
 .word 0xd63f0060
 .word 0xf9401ba0
 bl _p_563
 .word 0xaa0003e2
-.word 0xf94063a0
-.word 0xf94067a1
+.word 0xf94067a0
+.word 0xf9406ba1
 .word 0xd63f0040
-.word 0xf9401741
-.word 0xd1000421
-.word 0x8b010321
+.word 0xf90063a0
+.word 0xf9401740
+.word 0xd1000400
+.word 0x8b000321
+.word 0xd5033bbf
+.word 0xf94063a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -12106,7 +12280,7 @@ ldr x2, [x16, #16]
 .word 0xf90063a0
 .word 0xeb1f031f
 .word 0x10000011
-.word 0x54001660
+.word 0x540016c0
 .word 0xf9401ba0
 bl _p_564
 bl _p_433
@@ -12142,7 +12316,7 @@ bl _p_537
 .word 0x910183a0
 .word 0xd63f0020
 .word 0x53001c00
-.word 0x35ffed60
+.word 0x35ffec80
 .word 0xf9004bbf
 .word 0x94000005
 .word 0xf9404ba0
@@ -12177,7 +12351,7 @@ bl _p_540
 .word 0xf94063a0
 .word 0x9100e3a8
 .word 0xd63f0020
-.word 0x14000047
+.word 0x1400004a
 
 adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+0
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
@@ -12210,23 +12384,26 @@ bl _p_553
 .word 0xf94063a0
 bl _p_209
 .word 0x53001c00
-.word 0x34000380
+.word 0x340003e0
 .loc 8 184 0
 .word 0xf9402340
 .word 0xd1000400
 .word 0x8b000320
 .word 0xf9400000
-.word 0xf90063a0
+.word 0xf90067a0
 .word 0xf94017a0
 .word 0xf9400000
 bl _p_554
 .word 0xaa0003e2
-.word 0xf94063a0
+.word 0xf94067a0
 .word 0xaa1803e1
 .word 0xd63f0040
-.word 0xf9402741
-.word 0xd1000421
-.word 0x8b010321
+.word 0xf90063a0
+.word 0xf9402740
+.word 0xd1000400
+.word 0x8b000321
+.word 0xd5033bbf
+.word 0xf94063a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -12268,7 +12445,7 @@ bl _p_544
 .word 0x9100e3a0
 .word 0xd63f0020
 .word 0x53001c00
-.word 0x35fff5c0
+.word 0x35fff560
 .word 0xf9004fbf
 .word 0x94000005
 .word 0xf9404fa0
@@ -12295,9 +12472,9 @@ bl _p_545
 .word 0xa94167b8
 .word 0xf94013ba
 .word 0x910003bf
-.word 0xa8cf7bfd
+.word 0xa8d07bfd
 .word 0xd65f03c0
-.word 0xd2801920
+.word 0xd2801940
 .word 0xaa1103e1
 bl _p_18
 
@@ -12331,11 +12508,12 @@ bl _p_567
 .word 0xf9402ba0
 .word 0xf90023a0
 .word 0xd63f0020
+.word 0xf94027a0
+.word 0xf9400741
+.word 0xd1000421
+.word 0x8b010001
+.word 0xd5033bbf
 .word 0xf94023a0
-.word 0xf94027a1
-.word 0xf9400742
-.word 0xd1000442
-.word 0x8b020021
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -12359,11 +12537,12 @@ ldr x0, [x16, #792]
 bl _p_4
 .word 0xf9001ba0
 bl _p_568
+.word 0xf9401fa0
+.word 0xf9400b41
+.word 0xd1000421
+.word 0x8b010001
+.word 0xd5033bbf
 .word 0xf9401ba0
-.word 0xf9401fa1
-.word 0xf9400b42
-.word 0xd1000442
-.word 0x8b020021
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -13445,22 +13624,25 @@ bl _p_643
 .word 0xf9000fbf
 .word 0xf9400ba0
 bl _p_644
-.word 0xf9001ba0
+.word 0xf9001fa0
 .word 0xf9400ba0
 bl _p_645
-.word 0xf9401baf
+.word 0xf9401faf
 .word 0xd63f0000
-.word 0xf90017a0
+.word 0xf9001ba0
 .word 0xf9400ba0
 bl _p_646
-.word 0xf90013a0
+.word 0xf90017a0
 .word 0xf9400ba0
 bl _p_647
 .word 0xaa0003e2
-.word 0xf94013a0
-.word 0xf94017a1
+.word 0xf94017a0
+.word 0xf9401ba1
 .word 0xd1000442
 .word 0x8b020000
+.word 0xf90013a0
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -14043,7 +14225,7 @@ bl _p_662
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_18
 
@@ -14105,7 +14287,7 @@ bl _p_663
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_18
 
@@ -14167,7 +14349,7 @@ bl _p_664
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_18
 
@@ -14229,7 +14411,7 @@ bl _p_665
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_18
 
@@ -14250,7 +14432,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+0
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x35000720
+.word 0x35000740
 .word 0x14000001
 .word 0xf9403f38
 .word 0xaa1803e0
@@ -14264,14 +14446,15 @@ ldr x0, [x16, #48]
 .word 0xaa1a03e1
 .word 0xd63f0040
 .word 0x53001c00
-.word 0x14000020
+.word 0x14000021
 .word 0xf9401f20
 .word 0xf9400b21
 .word 0xaa1a03e0
 .word 0xd63f0020
 .word 0x53001c00
-.word 0x1400001a
-.word 0xb9801b19
+.word 0x1400001b
+.word 0xb9801b00
+.word 0xaa0003f9
 .word 0xd2800017
 .word 0x93407ee0
 .word 0xb9801b01
@@ -14310,8 +14493,8 @@ bl _p_90
 bl _p_666
 .word 0xaa0003f8
 .word 0xb5ffff20
-.word 0x17ffffc6
-.word 0xd2802380
+.word 0x17ffffc5
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_18
 
@@ -14332,7 +14515,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+0
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x35000680
+.word 0x350006a0
 .word 0x14000001
 .word 0xf9403f38
 .word 0xaa1803e0
@@ -14345,13 +14528,14 @@ ldr x0, [x16, #48]
 .word 0xaa1803e0
 .word 0xaa1a03e1
 .word 0xd63f0040
-.word 0x1400001c
+.word 0x1400001d
 .word 0xf9401f20
 .word 0xf9400b21
 .word 0xaa1a03e0
 .word 0xd63f0020
-.word 0x14000017
-.word 0xb9801b19
+.word 0x14000018
+.word 0xb9801b00
+.word 0xaa0003f9
 .word 0xd2800017
 .word 0x93407ee0
 .word 0xb9801b01
@@ -14387,8 +14571,8 @@ bl _p_90
 bl _p_666
 .word 0xaa0003f8
 .word 0xb5ffff20
-.word 0x17ffffcb
-.word 0xd2802380
+.word 0x17ffffca
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_18
 
@@ -14410,7 +14594,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+0
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x35000780
+.word 0x350007a0
 .word 0x14000001
 .word 0xf9403f17
 .word 0xaa1703e0
@@ -14425,15 +14609,16 @@ ldr x0, [x16, #48]
 .word 0xaa1a03e2
 .word 0xd63f0060
 .word 0x93407c00
-.word 0x14000022
+.word 0x14000023
 .word 0xf9401f00
 .word 0xf9400b02
 .word 0xaa1903e0
 .word 0xaa1a03e1
 .word 0xd63f0040
 .word 0x93407c00
-.word 0x1400001b
-.word 0xb9801af8
+.word 0x1400001c
+.word 0xb9801ae0
+.word 0xaa0003f8
 .word 0xd2800016
 .word 0x93407ec0
 .word 0xb9801ae1
@@ -14473,8 +14658,8 @@ bl _p_90
 bl _p_666
 .word 0xaa0003f7
 .word 0xb5ffff20
-.word 0x17ffffc3
-.word 0xd2802380
+.word 0x17ffffc2
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_18
 
@@ -14495,7 +14680,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+0
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x350006c0
+.word 0x350006e0
 .word 0x14000001
 .word 0xf9403f38
 .word 0xaa1803e0
@@ -14508,13 +14693,14 @@ ldr x0, [x16, #48]
 .word 0xaa1803e0
 .word 0xaa1a03e1
 .word 0xd63f0040
-.word 0x1400001e
+.word 0x1400001f
 .word 0xf9401f20
 .word 0xf9400b21
 .word 0xaa1a03e0
 .word 0xd63f0020
-.word 0x14000019
-.word 0xb9801b19
+.word 0x1400001a
+.word 0xb9801b00
+.word 0xaa0003f9
 .word 0xd2800017
 .word 0x93407ee0
 .word 0xb9801b01
@@ -14552,8 +14738,8 @@ bl _p_90
 bl _p_666
 .word 0xaa0003f8
 .word 0xb5ffff20
-.word 0x17ffffc9
-.word 0xd2802380
+.word 0x17ffffc8
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_18
 
@@ -14574,7 +14760,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+0
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x35000720
+.word 0x35000740
 .word 0x14000001
 .word 0xf9403f38
 .word 0xaa1803e0
@@ -14588,14 +14774,15 @@ ldr x0, [x16, #48]
 .word 0xaa1a03e1
 .word 0xd63f0040
 .word 0x53001c00
-.word 0x14000020
+.word 0x14000021
 .word 0xf9401f20
 .word 0xf9400b21
 .word 0xaa1a03e0
 .word 0xd63f0020
 .word 0x53001c00
-.word 0x1400001a
-.word 0xb9801b19
+.word 0x1400001b
+.word 0xb9801b00
+.word 0xaa0003f9
 .word 0xd2800017
 .word 0x93407ee0
 .word 0xb9801b01
@@ -14634,8 +14821,8 @@ bl _p_90
 bl _p_666
 .word 0xaa0003f8
 .word 0xb5ffff20
-.word 0x17ffffc6
-.word 0xd2802380
+.word 0x17ffffc5
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_18
 
@@ -14656,7 +14843,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+0
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x35000720
+.word 0x35000740
 .word 0x14000001
 .word 0xf9403f38
 .word 0xaa1803e0
@@ -14670,14 +14857,15 @@ ldr x0, [x16, #48]
 .word 0xaa1a03e1
 .word 0xd63f0040
 .word 0x53001c00
-.word 0x14000020
+.word 0x14000021
 .word 0xf9401f20
 .word 0xf9400b21
 .word 0xaa1a03e0
 .word 0xd63f0020
 .word 0x53001c00
-.word 0x1400001a
-.word 0xb9801b19
+.word 0x1400001b
+.word 0xb9801b00
+.word 0xaa0003f9
 .word 0xd2800017
 .word 0x93407ee0
 .word 0xb9801b01
@@ -14716,8 +14904,8 @@ bl _p_90
 bl _p_666
 .word 0xaa0003f8
 .word 0xb5ffff20
-.word 0x17ffffc6
-.word 0xd2802380
+.word 0x17ffffc5
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_18
 
@@ -14738,7 +14926,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+0
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x35000680
+.word 0x350006a0
 .word 0x14000001
 .word 0xf9403f38
 .word 0xaa1803e0
@@ -14751,13 +14939,14 @@ ldr x0, [x16, #48]
 .word 0xaa1803e0
 .word 0xaa1a03e1
 .word 0xd63f0040
-.word 0x1400001c
+.word 0x1400001d
 .word 0xf9401f20
 .word 0xf9400b21
 .word 0xaa1a03e0
 .word 0xd63f0020
-.word 0x14000017
-.word 0xb9801b19
+.word 0x14000018
+.word 0xb9801b00
+.word 0xaa0003f9
 .word 0xd2800017
 .word 0x93407ee0
 .word 0xb9801b01
@@ -14793,8 +14982,8 @@ bl _p_90
 bl _p_666
 .word 0xaa0003f8
 .word 0xb5ffff20
-.word 0x17ffffcb
-.word 0xd2802380
+.word 0x17ffffca
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_18
 
@@ -14816,7 +15005,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+0
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x35000780
+.word 0x350007a0
 .word 0x14000001
 .word 0xf9403f17
 .word 0xaa1703e0
@@ -14831,15 +15020,16 @@ ldr x0, [x16, #48]
 .word 0xaa1a03e2
 .word 0xd63f0060
 .word 0x93407c00
-.word 0x14000022
+.word 0x14000023
 .word 0xf9401f00
 .word 0xf9400b02
 .word 0xaa1903e0
 .word 0xaa1a03e1
 .word 0xd63f0040
 .word 0x93407c00
-.word 0x1400001b
-.word 0xb9801af8
+.word 0x1400001c
+.word 0xb9801ae0
+.word 0xaa0003f8
 .word 0xd2800016
 .word 0x93407ec0
 .word 0xb9801ae1
@@ -14879,8 +15069,8 @@ bl _p_90
 bl _p_666
 .word 0xaa0003f7
 .word 0xb5ffff20
-.word 0x17ffffc3
-.word 0xd2802380
+.word 0x17ffffc2
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_18
 
@@ -14901,7 +15091,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+0
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
-.word 0x350006c0
+.word 0x350006e0
 .word 0x14000001
 .word 0xf9403f38
 .word 0xaa1803e0
@@ -14914,13 +15104,14 @@ ldr x0, [x16, #48]
 .word 0xaa1803e0
 .word 0xaa1a03e1
 .word 0xd63f0040
-.word 0x1400001e
+.word 0x1400001f
 .word 0xf9401f20
 .word 0xf9400b21
 .word 0xaa1a03e0
 .word 0xd63f0020
-.word 0x14000019
-.word 0xb9801b19
+.word 0x1400001a
+.word 0xb9801b00
+.word 0xaa0003f9
 .word 0xd2800017
 .word 0x93407ee0
 .word 0xb9801b01
@@ -14958,8 +15149,8 @@ bl _p_90
 bl _p_666
 .word 0xaa0003f8
 .word 0xb5ffff20
-.word 0x17ffffc9
-.word 0xd2802380
+.word 0x17ffffc8
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_18
 
@@ -15039,14 +15230,8 @@ System_Nullable_1_System_Data_LoadOption_get_Value:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 .loc 11 46 0
-.word 0xd2938c80
 bl _p_667
-.word 0xaa0003e1
-.word 0xd2802440
-.word 0xf2a04000
-bl _mono_create_corlib_exception_1
-bl _p_2
-.word 0x17fffff4
+.word 0x17fffffa
 
 Lme_c2:
 .text
@@ -15356,7 +15541,7 @@ bl _p_67
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_18
 
@@ -15432,11 +15617,11 @@ bl _p_67
 .word 0xa8c47bfd
 .word 0xd65f03c0
 .loc 12 70 0
-.word 0xd2802420
+.word 0xd2802440
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_2
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_18
 
@@ -15463,7 +15648,7 @@ wrapper_other_byte___Get_int:
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_18
 
@@ -15482,7 +15667,7 @@ wrapper_runtime_invoke__Module_runtime_invoke_byte__this___int_object_intptr_int
 .word 0xf9001fbf
 .word 0xf90023bf
 .word 0xf94017a0
-.word 0xb4000620
+.word 0xb4000680
 
 adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+0
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
@@ -15513,12 +15698,15 @@ bl _p_4
 .word 0xf94033a1
 .word 0x39004001
 .word 0xf9001fa0
-.word 0x14000012
+.word 0x14000015
 .word 0xf90027a0
 .word 0xf94027a0
 .word 0xf90023a0
 .word 0xf94017a1
 .word 0xf94023a0
+.word 0xf90033a0
+.word 0xd5033bbf
+.word 0xf94033a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -15596,7 +15784,7 @@ wrapper_other_byte___Set_int_byte:
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_18
 
@@ -15605,7 +15793,7 @@ Lme_cf:
 	.align 4
 	.no_dead_strip wrapper_runtime_invoke__Module_runtime_invoke_void__this___int_byte_object_intptr_intptr_intptr
 wrapper_runtime_invoke__Module_runtime_invoke_void__this___int_byte_object_intptr_intptr_intptr:
-.word 0xa9ba7bfd
+.word 0xa9b97bfd
 .word 0x910003fd
 .word 0xf9000bb7
 .word 0xf9000fb9
@@ -15616,7 +15804,7 @@ wrapper_runtime_invoke__Module_runtime_invoke_void__this___int_byte_object_intpt
 .word 0xf9001fbf
 .word 0xf90023bf
 .word 0xf94017a0
-.word 0xb4000520
+.word 0xb4000580
 
 adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+0
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
@@ -15638,12 +15826,15 @@ bl _p_90
 .word 0xf94013a0
 .word 0xf9401ba3
 .word 0xd63f0060
-.word 0x14000012
+.word 0x14000015
 .word 0xf90027a0
 .word 0xf94027a0
 .word 0xf90023a0
 .word 0xf94017a1
 .word 0xf94023a0
+.word 0xf90033a0
+.word 0xd5033bbf
+.word 0xf94033a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -15677,7 +15868,7 @@ ldr x0, [x16, #48]
 .word 0xf9400bb7
 .word 0xf9400fb9
 .word 0x910003bf
-.word 0xa8c67bfd
+.word 0xa8c77bfd
 .word 0xd65f03c0
 bl _p_668
 .word 0xaa0003f7
@@ -15712,7 +15903,7 @@ wrapper_other_int16___Get_int:
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_18
 
@@ -15731,7 +15922,7 @@ wrapper_runtime_invoke__Module_runtime_invoke_int16__this___int_object_intptr_in
 .word 0xf9001fbf
 .word 0xf90023bf
 .word 0xf94017a0
-.word 0xb4000620
+.word 0xb4000680
 
 adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+0
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
@@ -15762,12 +15953,15 @@ bl _p_4
 .word 0xf94033a1
 .word 0x79002001
 .word 0xf9001fa0
-.word 0x14000012
+.word 0x14000015
 .word 0xf90027a0
 .word 0xf94027a0
 .word 0xf90023a0
 .word 0xf94017a1
 .word 0xf94023a0
+.word 0xf90033a0
+.word 0xd5033bbf
+.word 0xf94033a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -15846,7 +16040,7 @@ wrapper_other_int16___Set_int_int16:
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_18
 
@@ -15855,7 +16049,7 @@ Lme_d3:
 	.align 4
 	.no_dead_strip wrapper_runtime_invoke__Module_runtime_invoke_void__this___int_int16_object_intptr_intptr_intptr
 wrapper_runtime_invoke__Module_runtime_invoke_void__this___int_int16_object_intptr_intptr_intptr:
-.word 0xa9ba7bfd
+.word 0xa9b97bfd
 .word 0x910003fd
 .word 0xf9000bb7
 .word 0xf9000fb9
@@ -15866,7 +16060,7 @@ wrapper_runtime_invoke__Module_runtime_invoke_void__this___int_int16_object_intp
 .word 0xf9001fbf
 .word 0xf90023bf
 .word 0xf94017a0
-.word 0xb4000520
+.word 0xb4000580
 
 adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+0
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
@@ -15888,12 +16082,15 @@ bl _p_90
 .word 0xf94013a0
 .word 0xf9401ba3
 .word 0xd63f0060
-.word 0x14000012
+.word 0x14000015
 .word 0xf90027a0
 .word 0xf94027a0
 .word 0xf90023a0
 .word 0xf94017a1
 .word 0xf94023a0
+.word 0xf90033a0
+.word 0xd5033bbf
+.word 0xf94033a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -15927,7 +16124,7 @@ ldr x0, [x16, #48]
 .word 0xf9400bb7
 .word 0xf9400fb9
 .word 0x910003bf
-.word 0xa8c67bfd
+.word 0xa8c77bfd
 .word 0xd65f03c0
 bl _p_668
 .word 0xaa0003f7
@@ -15962,7 +16159,7 @@ wrapper_other_int___Get_int:
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_18
 
@@ -15981,7 +16178,7 @@ wrapper_runtime_invoke__Module_runtime_invoke_int__this___int_object_intptr_intp
 .word 0xf9001fbf
 .word 0xf90023bf
 .word 0xf94017a0
-.word 0xb4000640
+.word 0xb40006a0
 
 adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+0
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
@@ -16013,12 +16210,15 @@ bl _p_4
 .word 0xf94033a1
 .word 0xb9001001
 .word 0xf9001fa0
-.word 0x14000012
+.word 0x14000015
 .word 0xf90027a0
 .word 0xf94027a0
 .word 0xf90023a0
 .word 0xf94017a1
 .word 0xf94023a0
+.word 0xf90033a0
+.word 0xd5033bbf
+.word 0xf94033a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -16098,7 +16298,7 @@ wrapper_other_int___Set_int_int:
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_18
 
@@ -16107,7 +16307,7 @@ Lme_d7:
 	.align 4
 	.no_dead_strip wrapper_runtime_invoke__Module_runtime_invoke_void__this___int_int_object_intptr_intptr_intptr
 wrapper_runtime_invoke__Module_runtime_invoke_void__this___int_int_object_intptr_intptr_intptr:
-.word 0xa9ba7bfd
+.word 0xa9b97bfd
 .word 0x910003fd
 .word 0xf9000bb7
 .word 0xf9000fb9
@@ -16118,7 +16318,7 @@ wrapper_runtime_invoke__Module_runtime_invoke_void__this___int_int_object_intptr
 .word 0xf9001fbf
 .word 0xf90023bf
 .word 0xf94017a0
-.word 0xb4000520
+.word 0xb4000580
 
 adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+0
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
@@ -16140,12 +16340,15 @@ bl _p_90
 .word 0xf94013a0
 .word 0xf9401ba3
 .word 0xd63f0060
-.word 0x14000012
+.word 0x14000015
 .word 0xf90027a0
 .word 0xf94027a0
 .word 0xf90023a0
 .word 0xf94017a1
 .word 0xf94023a0
+.word 0xf90033a0
+.word 0xd5033bbf
+.word 0xf94033a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -16179,7 +16382,7 @@ ldr x0, [x16, #48]
 .word 0xf9400bb7
 .word 0xf9400fb9
 .word 0x910003bf
-.word 0xa8c67bfd
+.word 0xa8c77bfd
 .word 0xd65f03c0
 bl _p_668
 .word 0xaa0003f7
@@ -16214,7 +16417,7 @@ wrapper_other_long___Get_int:
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_18
 
@@ -16233,7 +16436,7 @@ wrapper_runtime_invoke__Module_runtime_invoke_long__this___int_object_intptr_int
 .word 0xf9001fbf
 .word 0xf90023bf
 .word 0xf94017a0
-.word 0xb4000620
+.word 0xb4000680
 
 adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+0
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
@@ -16264,12 +16467,15 @@ bl _p_4
 .word 0xf94033a1
 .word 0xf9000801
 .word 0xf9001fa0
-.word 0x14000012
+.word 0x14000015
 .word 0xf90027a0
 .word 0xf94027a0
 .word 0xf90023a0
 .word 0xf94017a1
 .word 0xf94023a0
+.word 0xf90033a0
+.word 0xd5033bbf
+.word 0xf94033a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -16348,7 +16554,7 @@ wrapper_other_long___Set_int_long:
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_18
 
@@ -16357,7 +16563,7 @@ Lme_db:
 	.align 4
 	.no_dead_strip wrapper_runtime_invoke__Module_runtime_invoke_void__this___int_long_object_intptr_intptr_intptr
 wrapper_runtime_invoke__Module_runtime_invoke_void__this___int_long_object_intptr_intptr_intptr:
-.word 0xa9ba7bfd
+.word 0xa9b97bfd
 .word 0x910003fd
 .word 0xf9000bb7
 .word 0xf9000fb9
@@ -16368,7 +16574,7 @@ wrapper_runtime_invoke__Module_runtime_invoke_void__this___int_long_object_intpt
 .word 0xf9001fbf
 .word 0xf90023bf
 .word 0xf94017a0
-.word 0xb4000520
+.word 0xb4000580
 
 adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+0
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
@@ -16390,12 +16596,15 @@ bl _p_90
 .word 0xf94013a0
 .word 0xf9401ba3
 .word 0xd63f0060
-.word 0x14000012
+.word 0x14000015
 .word 0xf90027a0
 .word 0xf94027a0
 .word 0xf90023a0
 .word 0xf94017a1
 .word 0xf94023a0
+.word 0xf90033a0
+.word 0xd5033bbf
+.word 0xf94033a0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -16429,7 +16638,7 @@ ldr x0, [x16, #48]
 .word 0xf9400bb7
 .word 0xf9400fb9
 .word 0x910003bf
-.word 0xa8c67bfd
+.word 0xa8c77bfd
 .word 0xd65f03c0
 bl _p_668
 .word 0xaa0003f7
@@ -18184,13 +18393,16 @@ System_Linq_Enumerable_CastIterator_TResult_REF_System_Collections_IEnumerable:
 bl _p_723
 .word 0xd2800701
 bl _p_4
-.word 0xf90013a0
+.word 0xf90017a0
 .word 0x92800021
 .word 0xf2bfffe1
 bl _p_724
-.word 0xf94013a1
-.word 0xaa0103e0
-.word 0x91008022
+.word 0xf94017a0
+.word 0xaa0003e1
+.word 0xf90013a1
+.word 0x91008002
+.word 0xd5033bbf
+.word 0xf94013a0
 .word 0xf9400ba1
 .word 0xf9000041
 .word 0xd349fc42
@@ -18375,10 +18587,10 @@ bl _p_731
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2802420
+.word 0xd2802440
 .word 0xaa1103e1
 bl _p_18
-.word 0xd2802380
+.word 0xd28023a0
 .word 0xaa1103e1
 bl _p_18
 
@@ -18398,6 +18610,7 @@ bl _p_732
 .loc 15 91 0
 .word 0xf9400ba0
 .word 0x91008001
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -18414,6 +18627,7 @@ ldr x2, [x16, #16]
 .loc 15 92 0
 .word 0xf9400ba0
 .word 0x9100a001
+.word 0xd5033bbf
 .word 0xf94013a0
 .word 0xf9000020
 .word 0xd349fc21
@@ -18448,6 +18662,7 @@ bl _p_733
 .loc 15 308 0
 .word 0xf9400ba0
 .word 0x91008001
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -18464,6 +18679,7 @@ ldr x2, [x16, #16]
 .loc 15 309 0
 .word 0xf9400ba0
 .word 0x9100a001
+.word 0xd5033bbf
 .word 0xf94013a0
 .word 0xf9000020
 .word 0xd349fc21
@@ -18498,6 +18714,7 @@ bl _p_734
 .loc 15 207 0
 .word 0xf9400ba0
 .word 0x91008001
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -18514,6 +18731,7 @@ ldr x2, [x16, #16]
 .loc 15 208 0
 .word 0xf9400ba0
 .word 0x9100a001
+.word 0xd5033bbf
 .word 0xf94013a0
 .word 0xf9000020
 .word 0xd349fc21
@@ -18539,7 +18757,7 @@ Lme_115:
 System_Linq_OrderedEnumerable_2_TElement_REF_TKey_REF__ctor_System_Collections_Generic_IEnumerable_1_TElement_REF_System_Func_2_TElement_REF_TKey_REF_System_Collections_Generic_IComparer_1_TKey_REF_bool_System_Linq_OrderedEnumerable_1_TElement_REF:
 .file 18 "/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/src/Xamarin.iOS/external/corefx/src/System.Linq/src/System/Linq/OrderedEnumerable.cs"
 .loc 18 386 0 prologue_end
-.word 0xa9bb7bfd
+.word 0xa9ba7bfd
 .word 0x910003fd
 .word 0xa90157b4
 .word 0xf90013a0
@@ -18551,8 +18769,11 @@ System_Linq_OrderedEnumerable_2_TElement_REF_TKey_REF__ctor_System_Collections_G
 .word 0xf94013b5
 .word 0xf94017b4
 .word 0xf94017a0
-.word 0xb4000900
+.word 0xb4000a40
 .word 0x910042a0
+.word 0xf9002ba0
+.word 0xd5033bbf
+.word 0xf9402ba0
 .word 0xf9000014
 .word 0xd349fc00
 .word 0xd29ffffe
@@ -18568,6 +18789,7 @@ ldr x1, [x16, #16]
 .loc 18 387 0
 .word 0xf94013a0
 .word 0x91006001
+.word 0xd5033bbf
 .word 0xf94027a0
 .word 0xf9000020
 .word 0xd349fc21
@@ -18585,8 +18807,11 @@ ldr x2, [x16, #16]
 .word 0xf94013b5
 .word 0xf9401bb4
 .word 0xf9401ba0
-.word 0xb4000620
+.word 0xb40006e0
 .word 0x910082a0
+.word 0xf9002ba0
+.word 0xd5033bbf
+.word 0xf9402ba0
 .word 0xf9000014
 .word 0xd349fc00
 .word 0xd29ffffe
@@ -18611,6 +18836,9 @@ bl _p_735
 bl _p_736
 .word 0xaa0003f4
 .word 0x9100a2a0
+.word 0xf9002ba0
+.word 0xd5033bbf
+.word 0xf9402ba0
 .word 0xf9000014
 .word 0xd349fc00
 .word 0xd29ffffe
@@ -18630,7 +18858,7 @@ ldr x1, [x16, #16]
 .loc 18 391 0
 .word 0xa94157b4
 .word 0x910003bf
-.word 0xa8c57bfd
+.word 0xa8c67bfd
 .word 0xd65f03c0
 .loc 18 386 0
 
@@ -18667,6 +18895,7 @@ bl _p_737
 .loc 17 102 0
 .word 0xf9400ba0
 .word 0x91008001
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -18683,6 +18912,7 @@ ldr x2, [x16, #16]
 .loc 17 103 0
 .word 0xf9400ba0
 .word 0x9100a001
+.word 0xd5033bbf
 .word 0xf94013a0
 .word 0xf9000020
 .word 0xd349fc21
@@ -18717,6 +18947,7 @@ bl _p_738
 .loc 17 623 0
 .word 0xf9400ba0
 .word 0x91008001
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -18733,6 +18964,7 @@ ldr x2, [x16, #16]
 .loc 17 624 0
 .word 0xf9400ba0
 .word 0x9100a001
+.word 0xd5033bbf
 .word 0xf94013a0
 .word 0xf9000020
 .word 0xd349fc21
@@ -18767,6 +18999,7 @@ bl _p_739
 .loc 17 472 0
 .word 0xf9400ba0
 .word 0x91008001
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -18783,6 +19016,7 @@ ldr x2, [x16, #16]
 .loc 17 473 0
 .word 0xf9400ba0
 .word 0x9100a001
+.word 0xd5033bbf
 .word 0xf94013a0
 .word 0xf9000020
 .word 0xd349fc21
@@ -18817,6 +19051,7 @@ bl _p_740
 .loc 17 332 0
 .word 0xf9400ba0
 .word 0x91008001
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -18833,6 +19068,7 @@ ldr x2, [x16, #16]
 .loc 17 333 0
 .word 0xf9400ba0
 .word 0x9100a001
+.word 0xd5033bbf
 .word 0xf94013a0
 .word 0xf9000020
 .word 0xd349fc21
@@ -18867,6 +19103,7 @@ bl _p_741
 .loc 17 209 0
 .word 0xf9400ba0
 .word 0x91008001
+.word 0xd5033bbf
 .word 0xf9400fa0
 .word 0xf9000020
 .word 0xd349fc21
@@ -18883,6 +19120,7 @@ ldr x2, [x16, #16]
 .loc 17 210 0
 .word 0xf9400ba0
 .word 0x9100a001
+.word 0xd5033bbf
 .word 0xf94013a0
 .word 0xf9000020
 .word 0xd349fc21
@@ -19324,43 +19562,43 @@ unwind_info:
 
 	.byte 0,13,12,31,0,68,14,48,157,6,158,5,68,13,29,13,12,31,0,68,14,32,157,4,158,3,68,13,29,16,12,31
 	.byte 0,68,14,112,157,14,158,13,68,13,29,68,154,12,16,12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2,13
-	.byte 12,31,0,68,14,16,157,2,158,1,68,13,29,18,12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4,154,3
-	.byte 18,12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,154,1,28,12,31,0,68,14,80,157,10,158,9,68,13
-	.byte 29,68,149,8,150,7,68,151,6,152,5,68,153,4,154,3,21,12,31,0,68,14,64,157,8,158,7,68,13,29,68,152
-	.byte 6,153,5,68,154,4,23,12,31,0,68,14,80,157,10,158,9,68,13,29,68,151,8,152,7,68,153,6,154,5,16,12
-	.byte 31,0,68,14,64,157,8,158,7,68,13,29,68,153,6,16,12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6
-	.byte 21,12,31,0,68,14,64,157,8,158,7,68,13,29,68,151,6,152,5,68,153,4,13,12,31,0,68,14,64,157,8,158
-	.byte 7,68,13,29,13,12,31,0,68,14,80,157,10,158,9,68,13,29,13,12,31,0,68,14,96,157,12,158,11,68,13,29
-	.byte 19,12,31,0,68,14,160,3,157,52,158,51,68,13,29,68,153,50,154,49,16,12,31,0,68,14,80,157,10,158,9,68
-	.byte 13,29,68,154,8,16,12,31,0,68,14,80,157,10,158,9,68,13,29,68,152,8,14,12,31,0,68,14,192,1,157,24
-	.byte 158,23,68,13,29,16,12,31,0,68,14,96,157,12,158,11,68,13,29,68,153,10,16,12,31,0,68,14,96,157,12,158
-	.byte 11,68,13,29,68,152,10,19,12,31,0,68,14,80,157,10,158,9,68,13,29,68,150,8,68,153,7,29,12,31,0,68
-	.byte 14,160,1,157,20,158,19,68,13,29,68,149,18,150,17,68,151,16,152,15,68,153,14,154,13,24,12,31,0,68,14,160
-	.byte 1,157,20,158,19,68,13,29,68,151,18,152,17,68,153,16,154,15,19,12,31,0,68,14,208,1,157,26,158,25,68,13
-	.byte 29,68,153,24,154,23,19,12,31,0,68,14,224,1,157,28,158,27,68,13,29,68,153,26,154,25,21,12,31,0,68,14
-	.byte 96,157,12,158,11,68,13,29,68,151,10,152,9,68,153,8,18,12,31,0,68,14,96,157,12,158,11,68,13,29,68,153
-	.byte 10,154,9,26,12,31,0,68,14,80,157,10,158,9,68,13,29,68,150,8,151,7,68,152,6,153,5,68,154,4,29,12
-	.byte 31,0,68,14,128,1,157,16,158,15,68,13,29,68,149,14,150,13,68,151,12,152,11,68,153,10,154,9,23,12,31,0
-	.byte 68,14,96,157,12,158,11,68,13,29,68,151,10,152,9,68,153,8,154,7,22,12,31,0,68,14,128,1,157,16,158,15
-	.byte 68,13,29,68,151,14,152,13,68,153,12,22,12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,150,16,151,15,68
-	.byte 152,14,23,12,31,0,68,14,112,157,14,158,13,68,13,29,68,151,12,152,11,68,153,10,154,9,14,12,31,0,68,14
-	.byte 128,1,157,16,158,15,68,13,29,19,12,31,0,68,14,128,3,157,48,158,47,68,13,29,68,153,46,154,45,16,12,31
-	.byte 0,68,14,48,157,6,158,5,68,13,29,68,154,4,16,12,31,0,68,14,112,157,14,158,13,68,13,29,68,151,12,19
-	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,153,14,154,13,18,12,31,0,68,14,112,157,14,158,13,68,13
-	.byte 29,68,151,12,152,11,16,12,31,0,68,14,64,157,8,158,7,68,13,29,68,154,6,19,12,31,0,68,14,240,1,157
-	.byte 30,158,29,68,13,29,68,149,28,150,27,13,12,31,0,68,14,112,157,14,158,13,68,13,29,14,12,31,0,68,14,144
-	.byte 1,157,18,158,17,68,13,29,21,12,31,0,68,14,96,157,12,158,11,68,13,29,68,150,10,68,152,9,153,8,21,12
-	.byte 31,0,68,14,96,157,12,158,11,68,13,29,68,152,10,153,9,68,154,8,24,12,31,0,68,14,144,1,157,18,158,17
-	.byte 68,13,29,68,151,16,152,15,68,153,14,154,13,24,12,31,0,68,14,176,1,157,22,158,21,68,13,29,68,151,20,152
-	.byte 19,68,153,18,154,17,22,12,31,0,68,14,224,1,157,28,158,27,68,13,29,68,152,26,153,25,68,154,24,22,12,31
-	.byte 0,68,14,240,1,157,30,158,29,68,13,29,68,152,28,153,27,68,154,26,16,12,31,0,68,14,96,157,12,158,11,68
-	.byte 13,29,68,154,10,21,12,31,0,68,14,80,157,10,158,9,68,13,29,68,152,8,153,7,68,154,6,29,12,31,0,68
-	.byte 14,96,157,12,158,11,68,13,29,68,148,10,68,150,9,151,8,68,152,7,153,6,68,154,5,26,12,31,0,68,14,112
-	.byte 157,14,158,13,68,13,29,68,150,12,151,11,68,152,10,153,9,68,154,8,16,12,31,0,68,14,32,157,4,158,3,68
-	.byte 13,29,68,153,2,16,12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4,19,12,31,0,68,14,96,157,12,158
-	.byte 11,68,13,29,68,151,10,68,153,9,16,12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4,18,12,31,0,68
-	.byte 14,64,157,8,158,7,68,13,29,68,153,6,154,5,18,12,31,0,68,14,80,157,10,158,9,68,13,29,68,148,8,149
-	.byte 7
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,13,12,31,0,68,14,16,157,2,158,1,68,13,29,18,12,31,0,68
+	.byte 14,48,157,6,158,5,68,13,29,68,153,4,154,3,18,12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,154
+	.byte 1,28,12,31,0,68,14,80,157,10,158,9,68,13,29,68,149,8,150,7,68,151,6,152,5,68,153,4,154,3,21,12
+	.byte 31,0,68,14,64,157,8,158,7,68,13,29,68,152,6,153,5,68,154,4,23,12,31,0,68,14,80,157,10,158,9,68
+	.byte 13,29,68,151,8,152,7,68,153,6,154,5,16,12,31,0,68,14,64,157,8,158,7,68,13,29,68,153,6,16,12,31
+	.byte 0,68,14,64,157,8,158,7,68,13,29,68,152,6,21,12,31,0,68,14,64,157,8,158,7,68,13,29,68,151,6,152
+	.byte 5,68,153,4,13,12,31,0,68,14,80,157,10,158,9,68,13,29,13,12,31,0,68,14,96,157,12,158,11,68,13,29
+	.byte 19,12,31,0,68,14,176,3,157,54,158,53,68,13,29,68,153,52,154,51,16,12,31,0,68,14,96,157,12,158,11,68
+	.byte 13,29,68,154,10,16,12,31,0,68,14,96,157,12,158,11,68,13,29,68,152,10,14,12,31,0,68,14,224,1,157,28
+	.byte 158,27,68,13,29,16,12,31,0,68,14,96,157,12,158,11,68,13,29,68,153,10,19,12,31,0,68,14,80,157,10,158
+	.byte 9,68,13,29,68,150,8,68,153,7,29,12,31,0,68,14,160,1,157,20,158,19,68,13,29,68,149,18,150,17,68,151
+	.byte 16,152,15,68,153,14,154,13,24,12,31,0,68,14,160,1,157,20,158,19,68,13,29,68,151,18,152,17,68,153,16,154
+	.byte 15,19,12,31,0,68,14,208,1,157,26,158,25,68,13,29,68,153,24,154,23,19,12,31,0,68,14,240,1,157,30,158
+	.byte 29,68,13,29,68,153,28,154,27,16,12,31,0,68,14,80,157,10,158,9,68,13,29,68,152,8,21,12,31,0,68,14
+	.byte 96,157,12,158,11,68,13,29,68,151,10,152,9,68,153,8,16,12,31,0,68,14,80,157,10,158,9,68,13,29,68,154
+	.byte 8,18,12,31,0,68,14,96,157,12,158,11,68,13,29,68,153,10,154,9,26,12,31,0,68,14,80,157,10,158,9,68
+	.byte 13,29,68,150,8,151,7,68,152,6,153,5,68,154,4,29,12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,149
+	.byte 14,150,13,68,151,12,152,11,68,153,10,154,9,23,12,31,0,68,14,96,157,12,158,11,68,13,29,68,151,10,152,9
+	.byte 68,153,8,154,7,22,12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,151,14,152,13,68,153,12,22,12,31,0
+	.byte 68,14,144,1,157,18,158,17,68,13,29,68,150,16,151,15,68,152,14,23,12,31,0,68,14,112,157,14,158,13,68,13
+	.byte 29,68,151,12,152,11,68,153,10,154,9,14,12,31,0,68,14,128,1,157,16,158,15,68,13,29,19,12,31,0,68,14
+	.byte 128,3,157,48,158,47,68,13,29,68,153,46,154,45,16,12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4,16
+	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29,68,151,12,19,12,31,0,68,14,144,1,157,18,158,17,68,13,29,68
+	.byte 153,16,154,15,19,12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,151,14,152,13,16,12,31,0,68,14,64,157
+	.byte 8,158,7,68,13,29,68,154,6,19,12,31,0,68,14,144,2,157,34,158,33,68,13,29,68,149,32,150,31,13,12,31
+	.byte 0,68,14,112,157,14,158,13,68,13,29,14,12,31,0,68,14,144,1,157,18,158,17,68,13,29,21,12,31,0,68,14
+	.byte 96,157,12,158,11,68,13,29,68,150,10,68,152,9,153,8,21,12,31,0,68,14,96,157,12,158,11,68,13,29,68,152
+	.byte 10,153,9,68,154,8,17,12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,151,14,24,12,31,0,68,14,144,1
+	.byte 157,18,158,17,68,13,29,68,151,16,152,15,68,153,14,154,13,24,12,31,0,68,14,176,1,157,22,158,21,68,13,29
+	.byte 68,151,20,152,19,68,153,18,154,17,22,12,31,0,68,14,224,1,157,28,158,27,68,13,29,68,152,26,153,25,68,154
+	.byte 24,22,12,31,0,68,14,128,2,157,32,158,31,68,13,29,68,152,30,153,29,68,154,28,21,12,31,0,68,14,80,157
+	.byte 10,158,9,68,13,29,68,152,8,153,7,68,154,6,29,12,31,0,68,14,96,157,12,158,11,68,13,29,68,148,10,68
+	.byte 150,9,151,8,68,152,7,153,6,68,154,5,26,12,31,0,68,14,112,157,14,158,13,68,13,29,68,150,12,151,11,68
+	.byte 152,10,153,9,68,154,8,16,12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,16,12,31,0,68,14,48,157
+	.byte 6,158,5,68,13,29,68,152,4,19,12,31,0,68,14,112,157,14,158,13,68,13,29,68,151,12,68,153,11,16,12,31
+	.byte 0,68,14,48,157,6,158,5,68,13,29,68,153,4,18,12,31,0,68,14,64,157,8,158,7,68,13,29,68,153,6,154
+	.byte 5,18,12,31,0,68,14,96,157,12,158,11,68,13,29,68,148,10,149,9
 
 .text
 	.align 4
@@ -24694,8 +24932,8 @@ add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2160]
 br x16
 .word 22707
-	.no_dead_strip plt__jit_icall_mono_helper_ldstr_mscorlib
-plt__jit_icall_mono_helper_ldstr_mscorlib:
+	.no_dead_strip plt_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_NoValue
+plt_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_NoValue:
 _p_667:
 adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
@@ -24709,7 +24947,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2176]
 br x16
-.word 22713
+.word 22715
 	.no_dead_strip plt__rgctx_fetch_487
 plt__rgctx_fetch_487:
 _p_669:
@@ -24717,7 +24955,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2184]
 br x16
-.word 22737
+.word 22739
 	.no_dead_strip plt__rgctx_fetch_488
 plt__rgctx_fetch_488:
 _p_670:
@@ -24725,7 +24963,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2192]
 br x16
-.word 22749
+.word 22751
 	.no_dead_strip plt_System_Linq_Enumerable_CastIterator_TResult_REF_System_Collections_IEnumerable
 plt_System_Linq_Enumerable_CastIterator_TResult_REF_System_Collections_IEnumerable:
 _p_671:
@@ -24733,7 +24971,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2200]
 br x16
-.word 22770
+.word 22772
 	.no_dead_strip plt_System_Linq_Error_ArgumentNull_string
 plt_System_Linq_Error_ArgumentNull_string:
 _p_672:
@@ -24741,7 +24979,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2208]
 br x16
-.word 22785
+.word 22787
 	.no_dead_strip plt__rgctx_fetch_489
 plt__rgctx_fetch_489:
 _p_673:
@@ -24749,7 +24987,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2216]
 br x16
-.word 22790
+.word 22792
 	.no_dead_strip plt__rgctx_fetch_490
 plt__rgctx_fetch_490:
 _p_674:
@@ -24757,7 +24995,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2224]
 br x16
-.word 22798
+.word 22800
 	.no_dead_strip plt_System_Collections_Generic_Comparer_1_T_REF_CreateComparer
 plt_System_Collections_Generic_Comparer_1_T_REF_CreateComparer:
 _p_675:
@@ -24765,7 +25003,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2232]
 br x16
-.word 22806
+.word 22808
 	.no_dead_strip plt__rgctx_fetch_491
 plt__rgctx_fetch_491:
 _p_676:
@@ -24773,7 +25011,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2240]
 br x16
-.word 22844
+.word 22846
 	.no_dead_strip plt__rgctx_fetch_492
 plt__rgctx_fetch_492:
 _p_677:
@@ -24781,7 +25019,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2248]
 br x16
-.word 22856
+.word 22858
 	.no_dead_strip plt__rgctx_fetch_493
 plt__rgctx_fetch_493:
 _p_678:
@@ -24789,7 +25027,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2256]
 br x16
-.word 22875
+.word 22877
 	.no_dead_strip plt_System_Linq_Enumerable_WhereArrayIterator_1_TSource_REF__ctor_TSource_REF___System_Func_2_TSource_REF_bool
 plt_System_Linq_Enumerable_WhereArrayIterator_1_TSource_REF__ctor_TSource_REF___System_Func_2_TSource_REF_bool:
 _p_679:
@@ -24797,7 +25035,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2264]
 br x16
-.word 22887
+.word 22889
 	.no_dead_strip plt__rgctx_fetch_494
 plt__rgctx_fetch_494:
 _p_680:
@@ -24805,7 +25043,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2272]
 br x16
-.word 22910
+.word 22912
 	.no_dead_strip plt__rgctx_fetch_495
 plt__rgctx_fetch_495:
 _p_681:
@@ -24813,7 +25051,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2280]
 br x16
-.word 22922
+.word 22924
 	.no_dead_strip plt__rgctx_fetch_496
 plt__rgctx_fetch_496:
 _p_682:
@@ -24821,7 +25059,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2288]
 br x16
-.word 22941
+.word 22943
 	.no_dead_strip plt__rgctx_fetch_497
 plt__rgctx_fetch_497:
 _p_683:
@@ -24829,7 +25067,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2296]
 br x16
-.word 22960
+.word 22962
 	.no_dead_strip plt_System_Linq_Enumerable_WhereListIterator_1_TSource_REF__ctor_System_Collections_Generic_List_1_TSource_REF_System_Func_2_TSource_REF_bool
 plt_System_Linq_Enumerable_WhereListIterator_1_TSource_REF__ctor_System_Collections_Generic_List_1_TSource_REF_System_Func_2_TSource_REF_bool:
 _p_684:
@@ -24837,7 +25075,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2304]
 br x16
-.word 22972
+.word 22974
 	.no_dead_strip plt__rgctx_fetch_498
 plt__rgctx_fetch_498:
 _p_685:
@@ -24845,7 +25083,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2312]
 br x16
-.word 22996
+.word 22998
 	.no_dead_strip plt_System_Linq_Enumerable_WhereEnumerableIterator_1_TSource_REF__ctor_System_Collections_Generic_IEnumerable_1_TSource_REF_System_Func_2_TSource_REF_bool
 plt_System_Linq_Enumerable_WhereEnumerableIterator_1_TSource_REF__ctor_System_Collections_Generic_IEnumerable_1_TSource_REF_System_Func_2_TSource_REF_bool:
 _p_686:
@@ -24853,7 +25091,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2320]
 br x16
-.word 23008
+.word 23010
 	.no_dead_strip plt__rgctx_fetch_499
 plt__rgctx_fetch_499:
 _p_687:
@@ -24861,7 +25099,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2328]
 br x16
-.word 23045
+.word 23047
 	.no_dead_strip plt_System_Linq_OrderedEnumerable_2_TSource_REF_TKey_REF__ctor_System_Collections_Generic_IEnumerable_1_TSource_REF_System_Func_2_TSource_REF_TKey_REF_System_Collections_Generic_IComparer_1_TKey_REF_bool_System_Linq_OrderedEnumerable_1_TSource_REF
 plt_System_Linq_OrderedEnumerable_2_TSource_REF_TKey_REF__ctor_System_Collections_Generic_IEnumerable_1_TSource_REF_System_Func_2_TSource_REF_TKey_REF_System_Collections_Generic_IComparer_1_TKey_REF_bool_System_Linq_OrderedEnumerable_1_TSource_REF:
 _p_688:
@@ -24869,7 +25107,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2336]
 br x16
-.word 23057
+.word 23059
 	.no_dead_strip plt__rgctx_fetch_500
 plt__rgctx_fetch_500:
 _p_689:
@@ -24877,7 +25115,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2344]
 br x16
-.word 23094
+.word 23096
 	.no_dead_strip plt_System_Linq_OrderedEnumerable_2_TSource_REF_TKey_REF__ctor_System_Collections_Generic_IEnumerable_1_TSource_REF_System_Func_2_TSource_REF_TKey_REF_System_Collections_Generic_IComparer_1_TKey_REF_bool_System_Linq_OrderedEnumerable_1_TSource_REF_0
 plt_System_Linq_OrderedEnumerable_2_TSource_REF_TKey_REF__ctor_System_Collections_Generic_IEnumerable_1_TSource_REF_System_Func_2_TSource_REF_TKey_REF_System_Collections_Generic_IComparer_1_TKey_REF_bool_System_Linq_OrderedEnumerable_1_TSource_REF_0:
 _p_690:
@@ -24885,7 +25123,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2352]
 br x16
-.word 23106
+.word 23108
 	.no_dead_strip plt__rgctx_fetch_501
 plt__rgctx_fetch_501:
 _p_691:
@@ -24893,7 +25131,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2360]
 br x16
-.word 23143
+.word 23145
 	.no_dead_strip plt_System_Linq_OrderedEnumerable_2_TSource_REF_TKey_REF__ctor_System_Collections_Generic_IEnumerable_1_TSource_REF_System_Func_2_TSource_REF_TKey_REF_System_Collections_Generic_IComparer_1_TKey_REF_bool_System_Linq_OrderedEnumerable_1_TSource_REF_1
 plt_System_Linq_OrderedEnumerable_2_TSource_REF_TKey_REF__ctor_System_Collections_Generic_IEnumerable_1_TSource_REF_System_Func_2_TSource_REF_TKey_REF_System_Collections_Generic_IComparer_1_TKey_REF_bool_System_Linq_OrderedEnumerable_1_TSource_REF_1:
 _p_692:
@@ -24901,7 +25139,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2368]
 br x16
-.word 23155
+.word 23157
 	.no_dead_strip plt__rgctx_fetch_502
 plt__rgctx_fetch_502:
 _p_693:
@@ -24909,7 +25147,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2376]
 br x16
-.word 23192
+.word 23194
 	.no_dead_strip plt_System_Linq_OrderedEnumerable_2_TSource_REF_TKey_REF__ctor_System_Collections_Generic_IEnumerable_1_TSource_REF_System_Func_2_TSource_REF_TKey_REF_System_Collections_Generic_IComparer_1_TKey_REF_bool_System_Linq_OrderedEnumerable_1_TSource_REF_2
 plt_System_Linq_OrderedEnumerable_2_TSource_REF_TKey_REF__ctor_System_Collections_Generic_IEnumerable_1_TSource_REF_System_Func_2_TSource_REF_TKey_REF_System_Collections_Generic_IComparer_1_TKey_REF_bool_System_Linq_OrderedEnumerable_1_TSource_REF_2:
 _p_694:
@@ -24917,7 +25155,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2384]
 br x16
-.word 23204
+.word 23206
 	.no_dead_strip plt__rgctx_fetch_503
 plt__rgctx_fetch_503:
 _p_695:
@@ -24925,7 +25163,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2392]
 br x16
-.word 23251
+.word 23253
 	.no_dead_strip plt__rgctx_fetch_504
 plt__rgctx_fetch_504:
 _p_696:
@@ -24933,7 +25171,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2400]
 br x16
-.word 23280
+.word 23282
 	.no_dead_strip plt__rgctx_fetch_505
 plt__rgctx_fetch_505:
 _p_697:
@@ -24941,7 +25179,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2408]
 br x16
-.word 23339
+.word 23341
 	.no_dead_strip plt__rgctx_fetch_506
 plt__rgctx_fetch_506:
 _p_698:
@@ -24949,7 +25187,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2416]
 br x16
-.word 23368
+.word 23370
 	.no_dead_strip plt__rgctx_fetch_507
 plt__rgctx_fetch_507:
 _p_699:
@@ -24957,7 +25195,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2424]
 br x16
-.word 23427
+.word 23429
 	.no_dead_strip plt__rgctx_fetch_508
 plt__rgctx_fetch_508:
 _p_700:
@@ -24965,7 +25203,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2432]
 br x16
-.word 23456
+.word 23458
 	.no_dead_strip plt__rgctx_fetch_509
 plt__rgctx_fetch_509:
 _p_701:
@@ -24973,7 +25211,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2440]
 br x16
-.word 23515
+.word 23517
 	.no_dead_strip plt__rgctx_fetch_510
 plt__rgctx_fetch_510:
 _p_702:
@@ -24981,7 +25219,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2448]
 br x16
-.word 23544
+.word 23546
 	.no_dead_strip plt__rgctx_fetch_511
 plt__rgctx_fetch_511:
 _p_703:
@@ -24989,7 +25227,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2456]
 br x16
-.word 23600
+.word 23602
 	.no_dead_strip plt__rgctx_fetch_512
 plt__rgctx_fetch_512:
 _p_704:
@@ -24997,7 +25235,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2464]
 br x16
-.word 23616
+.word 23618
 	.no_dead_strip plt__rgctx_fetch_513
 plt__rgctx_fetch_513:
 _p_705:
@@ -25005,7 +25243,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2472]
 br x16
-.word 23645
+.word 23647
 	.no_dead_strip plt__rgctx_fetch_514
 plt__rgctx_fetch_514:
 _p_706:
@@ -25013,7 +25251,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2480]
 br x16
-.word 23683
+.word 23685
 	.no_dead_strip plt__rgctx_fetch_515
 plt__rgctx_fetch_515:
 _p_707:
@@ -25021,7 +25259,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2488]
 br x16
-.word 23695
+.word 23697
 	.no_dead_strip plt__rgctx_fetch_516
 plt__rgctx_fetch_516:
 _p_708:
@@ -25029,7 +25267,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2496]
 br x16
-.word 23714
+.word 23716
 	.no_dead_strip plt_System_Linq_Enumerable_SelectArrayIterator_2_TSource_REF_TResult_REF__ctor_TSource_REF___System_Func_2_TSource_REF_TResult_REF
 plt_System_Linq_Enumerable_SelectArrayIterator_2_TSource_REF_TResult_REF__ctor_TSource_REF___System_Func_2_TSource_REF_TResult_REF:
 _p_709:
@@ -25037,7 +25275,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2504]
 br x16
-.word 23726
+.word 23728
 	.no_dead_strip plt__rgctx_fetch_517
 plt__rgctx_fetch_517:
 _p_710:
@@ -25045,7 +25283,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2512]
 br x16
-.word 23751
+.word 23753
 	.no_dead_strip plt__rgctx_fetch_518
 plt__rgctx_fetch_518:
 _p_711:
@@ -25053,7 +25291,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2520]
 br x16
-.word 23763
+.word 23765
 	.no_dead_strip plt__rgctx_fetch_519
 plt__rgctx_fetch_519:
 _p_712:
@@ -25061,7 +25299,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2528]
 br x16
-.word 23784
+.word 23786
 	.no_dead_strip plt__rgctx_fetch_520
 plt__rgctx_fetch_520:
 _p_713:
@@ -25069,7 +25307,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2536]
 br x16
-.word 23803
+.word 23805
 	.no_dead_strip plt_System_Linq_Enumerable_SelectListIterator_2_TSource_REF_TResult_REF__ctor_System_Collections_Generic_List_1_TSource_REF_System_Func_2_TSource_REF_TResult_REF
 plt_System_Linq_Enumerable_SelectListIterator_2_TSource_REF_TResult_REF__ctor_System_Collections_Generic_List_1_TSource_REF_System_Func_2_TSource_REF_TResult_REF:
 _p_714:
@@ -25077,7 +25315,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2544]
 br x16
-.word 23815
+.word 23817
 	.no_dead_strip plt__rgctx_fetch_521
 plt__rgctx_fetch_521:
 _p_715:
@@ -25085,7 +25323,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2552]
 br x16
-.word 23839
+.word 23841
 	.no_dead_strip plt_System_Linq_Enumerable_SelectIListIterator_2_TSource_REF_TResult_REF__ctor_System_Collections_Generic_IList_1_TSource_REF_System_Func_2_TSource_REF_TResult_REF
 plt_System_Linq_Enumerable_SelectIListIterator_2_TSource_REF_TResult_REF__ctor_System_Collections_Generic_IList_1_TSource_REF_System_Func_2_TSource_REF_TResult_REF:
 _p_716:
@@ -25093,7 +25331,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2560]
 br x16
-.word 23851
+.word 23853
 	.no_dead_strip plt__rgctx_fetch_522
 plt__rgctx_fetch_522:
 _p_717:
@@ -25101,7 +25339,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2568]
 br x16
-.word 23876
+.word 23878
 	.no_dead_strip plt__rgctx_fetch_523
 plt__rgctx_fetch_523:
 _p_718:
@@ -25109,7 +25347,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2576]
 br x16
-.word 23896
+.word 23898
 	.no_dead_strip plt__rgctx_fetch_524
 plt__rgctx_fetch_524:
 _p_719:
@@ -25117,7 +25355,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2584]
 br x16
-.word 23915
+.word 23917
 	.no_dead_strip plt_System_Linq_Enumerable_SelectIPartitionIterator_2_TSource_REF_TResult_REF__ctor_System_Linq_IPartition_1_TSource_REF_System_Func_2_TSource_REF_TResult_REF
 plt_System_Linq_Enumerable_SelectIPartitionIterator_2_TSource_REF_TResult_REF__ctor_System_Linq_IPartition_1_TSource_REF_System_Func_2_TSource_REF_TResult_REF:
 _p_720:
@@ -25125,7 +25363,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2592]
 br x16
-.word 23927
+.word 23929
 	.no_dead_strip plt__rgctx_fetch_525
 plt__rgctx_fetch_525:
 _p_721:
@@ -25133,7 +25371,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2600]
 br x16
-.word 23951
+.word 23953
 	.no_dead_strip plt_System_Linq_Enumerable_SelectEnumerableIterator_2_TSource_REF_TResult_REF__ctor_System_Collections_Generic_IEnumerable_1_TSource_REF_System_Func_2_TSource_REF_TResult_REF
 plt_System_Linq_Enumerable_SelectEnumerableIterator_2_TSource_REF_TResult_REF__ctor_System_Collections_Generic_IEnumerable_1_TSource_REF_System_Func_2_TSource_REF_TResult_REF:
 _p_722:
@@ -25141,7 +25379,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2608]
 br x16
-.word 23963
+.word 23965
 	.no_dead_strip plt__rgctx_fetch_526
 plt__rgctx_fetch_526:
 _p_723:
@@ -25149,7 +25387,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2616]
 br x16
-.word 24001
+.word 24003
 	.no_dead_strip plt_System_Linq_Enumerable__CastIteratord__34_1_TResult_REF__ctor_int
 plt_System_Linq_Enumerable__CastIteratord__34_1_TResult_REF__ctor_int:
 _p_724:
@@ -25157,7 +25395,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2624]
 br x16
-.word 24013
+.word 24015
 	.no_dead_strip plt__rgctx_fetch_527
 plt__rgctx_fetch_527:
 _p_725:
@@ -25165,7 +25403,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2632]
 br x16
-.word 24030
+.word 24032
 	.no_dead_strip plt__rgctx_fetch_528
 plt__rgctx_fetch_528:
 _p_726:
@@ -25173,7 +25411,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2640]
 br x16
-.word 24045
+.word 24047
 	.no_dead_strip plt_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType
 plt_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType:
 _p_727:
@@ -25181,7 +25419,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2648]
 br x16
-.word 24055
+.word 24057
 	.no_dead_strip plt__rgctx_fetch_529
 plt__rgctx_fetch_529:
 _p_728:
@@ -25189,7 +25427,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2656]
 br x16
-.word 24060
+.word 24062
 	.no_dead_strip plt_wrapper_alloc_object_AllocVector_intptr_intptr
 plt_wrapper_alloc_object_AllocVector_intptr_intptr:
 _p_729:
@@ -25197,7 +25435,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2664]
 br x16
-.word 24068
+.word 24070
 	.no_dead_strip plt__rgctx_fetch_530
 plt__rgctx_fetch_530:
 _p_730:
@@ -25205,7 +25443,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2672]
 br x16
-.word 24083
+.word 24085
 	.no_dead_strip plt_System_Collections_Generic_ObjectComparer_1_T_REF__ctor
 plt_System_Collections_Generic_ObjectComparer_1_T_REF__ctor:
 _p_731:
@@ -25213,7 +25451,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2680]
 br x16
-.word 24093
+.word 24095
 	.no_dead_strip plt_System_Linq_Enumerable_Iterator_1_TSource_REF__ctor
 plt_System_Linq_Enumerable_Iterator_1_TSource_REF__ctor:
 _p_732:
@@ -25221,7 +25459,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2688]
 br x16
-.word 24119
+.word 24121
 	.no_dead_strip plt_System_Linq_Enumerable_Iterator_1_TSource_REF__ctor_0
 plt_System_Linq_Enumerable_Iterator_1_TSource_REF__ctor_0:
 _p_733:
@@ -25229,7 +25467,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2696]
 br x16
-.word 24143
+.word 24145
 	.no_dead_strip plt_System_Linq_Enumerable_Iterator_1_TSource_REF__ctor_1
 plt_System_Linq_Enumerable_Iterator_1_TSource_REF__ctor_1:
 _p_734:
@@ -25237,7 +25475,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2704]
 br x16
-.word 24167
+.word 24169
 	.no_dead_strip plt__rgctx_fetch_531
 plt__rgctx_fetch_531:
 _p_735:
@@ -25245,7 +25483,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2712]
 br x16
-.word 24197
+.word 24199
 	.no_dead_strip plt_System_Collections_Generic_Comparer_1_TKey_REF_get_Default_0
 plt_System_Collections_Generic_Comparer_1_TKey_REF_get_Default_0:
 _p_736:
@@ -25253,7 +25491,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2720]
 br x16
-.word 24207
+.word 24209
 	.no_dead_strip plt_System_Linq_Enumerable_Iterator_1_TResult_REF__ctor
 plt_System_Linq_Enumerable_Iterator_1_TResult_REF__ctor:
 _p_737:
@@ -25261,7 +25499,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2728]
 br x16
-.word 24241
+.word 24243
 	.no_dead_strip plt_System_Linq_Enumerable_Iterator_1_TResult_REF__ctor_0
 plt_System_Linq_Enumerable_Iterator_1_TResult_REF__ctor_0:
 _p_738:
@@ -25269,7 +25507,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2736]
 br x16
-.word 24273
+.word 24275
 	.no_dead_strip plt_System_Linq_Enumerable_Iterator_1_TResult_REF__ctor_1
 plt_System_Linq_Enumerable_Iterator_1_TResult_REF__ctor_1:
 _p_739:
@@ -25277,7 +25515,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2744]
 br x16
-.word 24305
+.word 24307
 	.no_dead_strip plt_System_Linq_Enumerable_Iterator_1_TResult_REF__ctor_2
 plt_System_Linq_Enumerable_Iterator_1_TResult_REF__ctor_2:
 _p_740:
@@ -25285,7 +25523,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2752]
 br x16
-.word 24337
+.word 24339
 	.no_dead_strip plt_System_Linq_Enumerable_Iterator_1_TResult_REF__ctor_3
 plt_System_Linq_Enumerable_Iterator_1_TResult_REF__ctor_3:
 _p_741:
@@ -25293,7 +25531,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2760]
 br x16
-.word 24369
+.word 24371
 	.no_dead_strip plt_System_Environment_get_CurrentManagedThreadId
 plt_System_Environment_get_CurrentManagedThreadId:
 _p_742:
@@ -25301,7 +25539,7 @@ adrp x16, mono_aot_System_Data_DataSetExtensions_got@PAGE+4096
 add x16, x16, mono_aot_System_Data_DataSetExtensions_got@PAGEOFF
 ldr x16, [x16, #2768]
 br x16
-.word 24388
+.word 24390
 plt_end:
 .section __DATA, __bss
 	.align 3
@@ -25336,7 +25574,7 @@ runtime_version:
 .section __TEXT, __const
 	.align 2
 assembly_guid:
-	.asciz "AD94B12D-0B8B-4890-AD5D-C186CF24392A"
+	.asciz "3C7E8623-46B2-4019-A861-8E3B1E8EF81F"
 .section __TEXT, __const
 	.align 2
 assembly_name:
@@ -25345,7 +25583,7 @@ assembly_name:
 	.align 3
 _mono_aot_file_info:
 
-	.long 170,0
+	.long 171,0
 	.align 3
 	.quad mono_aot_System_Data_DataSetExtensions_got
 	.align 3
@@ -25424,13 +25662,13 @@ _mono_aot_file_info:
 	.quad unbox_trampoline_addresses
 
 	.long 116,6872,743,288,66,354,387000831,0
-	.long 57945,128,8,8,8,9,8388607,0
-	.long 4,25,66288,0,0,8336,7856,6920
+	.long 58243,128,8,8,8,9,8388607,0
+	.long 4,25,66592,0,0,8336,7856,6920
 	.long 0,7272,7808,7096,0,5400,408,8328
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
-	.byte 22,245,182,82,63,92,119,225,150,89,116,47,190,124,84,30
+	.byte 239,229,154,38,145,121,139,107,198,135,26,146,119,214,84,109
 	.globl _mono_aot_module_System_Data_DataSetExtensions_info
 	.align 3
 _mono_aot_module_System_Data_DataSetExtensions_info:
@@ -26965,7 +27203,7 @@ Lfde13_start:
 LDIFF_SYM233=Lme_d - DataSetUtil__cctor
 	.long LDIFF_SYM233
 	.long 0
-	.byte 12,31,0,68,14,16,157,2,158,1,68,13,29
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
 	.align 3
 Lfde13_end:
 
@@ -34678,7 +34916,7 @@ Lfde38_start:
 LDIFF_SYM1524=Lme_26 - System_Data_DataTableExtensions_LoadTableFromEnumerable_T_REF_System_Collections_Generic_IEnumerable_1_T_REF_System_Data_DataTable_System_Nullable_1_System_Data_LoadOption_System_Data_FillErrorEventHandler
 	.long LDIFF_SYM1524
 	.long 0
-	.byte 12,31,0,68,14,160,3,157,52,158,51,68,13,29,68,153,50,154,49
+	.byte 12,31,0,68,14,176,3,157,54,158,53,68,13,29,68,153,52,154,51
 	.align 3
 Lfde38_end:
 
@@ -35721,7 +35959,7 @@ Lfde47_start:
 LDIFF_SYM1686=Lme_31 - System_Data_EnumerableRowCollection_1_TRow_REF__ctor_System_Data_DataTable
 	.long LDIFF_SYM1686
 	.long 0
-	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,154,8
+	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,154,10
 	.align 3
 Lfde47_end:
 
@@ -35770,7 +36008,7 @@ Lfde48_start:
 LDIFF_SYM1692=Lme_32 - System_Data_EnumerableRowCollection_1_TRow_REF__ctor_System_Data_EnumerableRowCollection_1_TRow_REF_System_Collections_Generic_IEnumerable_1_TRow_REF_System_Func_2_TRow_REF_TRow_REF
 	.long LDIFF_SYM1692
 	.long 0
-	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,152,8
+	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,152,10
 	.align 3
 Lfde48_end:
 
@@ -36109,7 +36347,7 @@ Lfde53_start:
 LDIFF_SYM1738=Lme_37 - System_Data_EnumerableRowCollection_1_TRow_REF_AddSortExpression_TKey_REF_System_Func_2_TRow_REF_TKey_REF_System_Collections_Generic_IComparer_1_TKey_REF_bool_bool
 	.long LDIFF_SYM1738
 	.long 0
-	.byte 12,31,0,68,14,192,1,157,24,158,23,68,13,29
+	.byte 12,31,0,68,14,224,1,157,28,158,27,68,13,29
 	.align 3
 Lfde53_end:
 
@@ -40482,7 +40720,7 @@ Lfde66_start:
 LDIFF_SYM2492=Lme_44 - System_Data_SortExpressionBuilder_1_T_REF_Add_System_Func_2_T_REF_object_System_Comparison_1_object_bool
 	.long LDIFF_SYM2492
 	.long 0
-	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
+	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29
 	.align 3
 Lfde66_end:
 
@@ -40978,7 +41216,7 @@ Lfde71_start:
 LDIFF_SYM2569=Lme_49 - System_Data_SortExpressionBuilder_1_T_REF_CloneCast_TResult_REF
 	.long LDIFF_SYM2569
 	.long 0
-	.byte 12,31,0,68,14,224,1,157,28,158,27,68,13,29,68,153,26,154,25
+	.byte 12,31,0,68,14,240,1,157,30,158,29,68,13,29,68,153,28,154,27
 	.align 3
 Lfde71_end:
 
@@ -44285,7 +44523,7 @@ Lfde123_start:
 LDIFF_SYM3006=Lme_7e - System_Data_EnumerableRowCollection_1_TRow_GSHAREDVT__ctor_System_Data_DataTable
 	.long LDIFF_SYM3006
 	.long 0
-	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,153,14,154,13
+	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,153,16,154,15
 	.align 3
 Lfde123_end:
 
@@ -44334,7 +44572,7 @@ Lfde124_start:
 LDIFF_SYM3012=Lme_7f - System_Data_EnumerableRowCollection_1_TRow_GSHAREDVT__ctor_System_Data_EnumerableRowCollection_1_TRow_GSHAREDVT_System_Collections_Generic_IEnumerable_1_TRow_GSHAREDVT_System_Func_2_TRow_GSHAREDVT_TRow_GSHAREDVT
 	.long LDIFF_SYM3012
 	.long 0
-	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29,68,151,12,152,11
+	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,151,14,152,13
 	.align 3
 Lfde124_end:
 
@@ -44673,7 +44911,7 @@ Lfde129_start:
 LDIFF_SYM3058=Lme_84 - System_Data_EnumerableRowCollection_1_TRow_GSHAREDVT_AddSortExpression_TKey_GSHAREDVT_System_Func_2_TRow_GSHAREDVT_TKey_GSHAREDVT_System_Collections_Generic_IComparer_1_TKey_GSHAREDVT_bool_bool
 	.long LDIFF_SYM3058
 	.long 0
-	.byte 12,31,0,68,14,240,1,157,30,158,29,68,13,29,68,149,28,150,27
+	.byte 12,31,0,68,14,144,2,157,34,158,33,68,13,29,68,149,32,150,31
 	.align 3
 Lfde129_end:
 
@@ -49046,7 +49284,7 @@ Lfde142_start:
 LDIFF_SYM3812=Lme_91 - System_Data_SortExpressionBuilder_1_T_GSHAREDVT_Add_System_Func_2_T_GSHAREDVT_object_System_Comparison_1_object_bool
 	.long LDIFF_SYM3812
 	.long 0
-	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29,68,151,12
+	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,151,14
 	.align 3
 Lfde142_end:
 
@@ -49500,7 +49738,7 @@ Lfde147_start:
 LDIFF_SYM3881=Lme_96 - System_Data_SortExpressionBuilder_1_T_GSHAREDVT_CloneCast_TResult_GSHAREDVT
 	.long LDIFF_SYM3881
 	.long 0
-	.byte 12,31,0,68,14,240,1,157,30,158,29,68,13,29,68,152,28,153,27,68,154,26
+	.byte 12,31,0,68,14,128,2,157,32,158,31,68,13,29,68,152,30,153,29,68,154,28
 	.align 3
 Lfde147_end:
 
@@ -52580,7 +52818,7 @@ Lfde201_start:
 LDIFF_SYM4276=Lme_d0 - wrapper_runtime_invoke__Module_runtime_invoke_void__this___int_byte_object_intptr_intptr_intptr
 	.long LDIFF_SYM4276
 	.long 0
-	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,151,10,68,153,9
+	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29,68,151,12,68,153,11
 	.align 3
 Lfde201_end:
 
@@ -52808,7 +53046,7 @@ Lfde205_start:
 LDIFF_SYM4306=Lme_d4 - wrapper_runtime_invoke__Module_runtime_invoke_void__this___int_int16_object_intptr_intptr_intptr
 	.long LDIFF_SYM4306
 	.long 0
-	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,151,10,68,153,9
+	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29,68,151,12,68,153,11
 	.align 3
 Lfde205_end:
 
@@ -53009,7 +53247,7 @@ Lfde209_start:
 LDIFF_SYM4331=Lme_d8 - wrapper_runtime_invoke__Module_runtime_invoke_void__this___int_int_object_intptr_intptr_intptr
 	.long LDIFF_SYM4331
 	.long 0
-	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,151,10,68,153,9
+	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29,68,151,12,68,153,11
 	.align 3
 Lfde209_end:
 
@@ -53210,7 +53448,7 @@ Lfde213_start:
 LDIFF_SYM4356=Lme_dc - wrapper_runtime_invoke__Module_runtime_invoke_void__this___int_long_object_intptr_intptr_intptr
 	.long LDIFF_SYM4356
 	.long 0
-	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,151,10,68,153,9
+	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29,68,151,12,68,153,11
 	.align 3
 Lfde213_end:
 
@@ -57289,7 +57527,7 @@ Lfde271_start:
 LDIFF_SYM4914=Lme_116 - System_Linq_OrderedEnumerable_2_TElement_REF_TKey_REF__ctor_System_Collections_Generic_IEnumerable_1_TElement_REF_System_Func_2_TElement_REF_TKey_REF_System_Collections_Generic_IComparer_1_TKey_REF_bool_System_Linq_OrderedEnumerable_1_TElement_REF
 	.long LDIFF_SYM4914
 	.long 0
-	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,148,8,149,7
+	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,148,10,149,9
 	.align 3
 Lfde271_end:
 

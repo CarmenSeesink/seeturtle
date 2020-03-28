@@ -796,6 +796,9 @@
     <AndroidAsset Include="Assets\Montserrat-Regular.ttf" />
     <AndroidAsset Include="Assets\Montserrat-Medium.ttf" />
     <AndroidAsset Include="Assets\whitebubbles.json" />
+    <AndroidAsset Include="Assets\Poppins-Bold.otf" />
+    <AndroidAsset Include="Assets\Poppins-Regular.otf" />
+    <AndroidAsset Include="Assets\Poppins-Medium.otf" />
   </ItemGroup>
  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

@@ -24,7 +24,7 @@ namespace seeturtle
                 case GestureStatus.Completed:
                     y = bottomSheet.TranslationY;
                     break;
-            }
+            }            
         }
 
         /* Tooltip */
@@ -204,13 +204,9 @@ namespace seeturtle
 
             turtle.cleanOcean();
 
-            //bag.IsVisible = false;
-            //bag.ScaleTo(3, 1000);
-            await bag.ScaleTo(3, 500);
-            await bag.ScaleTo(1, 100, Easing.BounceOut);
-            // set opacity to 0 (transparent)
+            await bag.ScaleTo(3, 50);
+            await bag.ScaleTo(1, 50, Easing.BounceOut);
             await bag.FadeTo(0, 50);    
-         
         }
 
         /* Jellyfish */
@@ -358,6 +354,7 @@ namespace seeturtle
                 turtleNameLabel.Text = turtle.TurtleName.ToString();
             }
 
+
             if (timeElapsed.TotalSeconds < 20)
             {
                 newTurtleState = TurtleState.good;
@@ -371,6 +368,8 @@ namespace seeturtle
                 newTurtleState = TurtleState.worse;
             }
 
+            /* Display bag and jellyfish */
+
             if (timeElapsed.TotalSeconds >= 10)
             {
                 Device.BeginInvokeOnMainThread(() =>
@@ -379,6 +378,8 @@ namespace seeturtle
                     jellyfish.FadeTo(1, 500, Easing.Linear);
                 });
             }
+
+            /* Update state */
 
             if (newTurtleState != turtle.CurrentTurtleState)
             {
@@ -396,6 +397,8 @@ namespace seeturtle
 
             HappinessState newHappinessState = happiness.CurrentHappinessState;
 
+            /* Timer statement to display state */
+
             if (timeHappinessElapsed.TotalSeconds < 20)
             {
                 newHappinessState = HappinessState.good;
@@ -411,6 +414,8 @@ namespace seeturtle
                 newHappinessState = HappinessState.worse;
                 HappinessProgressBar.ProgressTo(0.1, 900, Easing.Linear);
             }
+
+            /* Update state */
 
             if (newHappinessState != happiness.CurrentHappinessState)
             {
@@ -433,6 +438,8 @@ namespace seeturtle
                 fish2.FadeTo(1, 500, Easing.Linear);
             }
 
+            /* Timer statement to display state */
+
             if (timeCoralElapsed.TotalSeconds < 30)
             {
                 newCoralState = CoralState.good;
@@ -449,6 +456,8 @@ namespace seeturtle
                 fish2.FadeTo(0, 500, Easing.Linear);
             }
 
+            /* Update state */
+
             if (newCoralState != corals.CurrentCoralState)
             {
                 corals.CurrentCoralState = newCoralState;
@@ -463,6 +472,8 @@ namespace seeturtle
             TimeSpan timeHealthElapsed = e.SignalTime - timeKeeperHealth.StartTime;
 
             HealthState newHealthState = health.CurrentHealthState;
+
+            /* Timer statement to display state */
 
             if (timeHealthElapsed.TotalSeconds < 20)
             {
@@ -480,6 +491,8 @@ namespace seeturtle
                 HealthProgressBar.ProgressTo(0.1, 900, Easing.Linear);
             }
 
+            /* Update state */
+
             if (newHealthState != health.CurrentHealthState)
             {
                 health.CurrentHealthState = newHealthState;
@@ -494,6 +507,8 @@ namespace seeturtle
             TimeSpan timeHungerElapsed = e.SignalTime - timeKeeperHunger.StartTime;
 
             HungerState newHungerState = hunger.CurrentHungerState;
+
+            /* Timer statement to display state */
 
             if (timeHungerElapsed.TotalSeconds < 30)
             {
@@ -511,20 +526,24 @@ namespace seeturtle
                 HungerProgressBar.ProgressTo(0.1, 900, Easing.Linear);
             }
 
+            /* Update state */
+
             if (newHungerState != hunger.CurrentHungerState)
             {
                 hunger.CurrentHungerState = newHungerState;
                 updateHungerUI();
             }
 
-            if (droppable.BackgroundColor == Color.FromHex("#6328cf"))
-            {
-                //turtle.giveFood();
-                ResetHungerTimer();
-                //ResetTimer();
-                updateHungerUI();
-                //updateUI();
-            }
+            /* Drag and Drop */
+
+            //if (droppable.BackgroundColor == Color.FromHex("#6328cf"))
+            //{
+            //    //turtle.giveFood();
+            //    ResetHungerTimer();
+            //    //ResetTimer();
+            //    updateHungerUI();
+            //    //updateUI();
+            //}
         }
 
     }

@@ -102,14 +102,6 @@
     <ImageAsset Include="Assets.xcassets\coral.imageset\coral_3px.png" />
     <ImageAsset Include="Assets.xcassets\coral.imageset\coral_2px.png" />
     <ImageAsset Include="Assets.xcassets\coral.imageset\coral_1px.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo2.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo3.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo2a.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo2a-2.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo2b.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo3a.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo2c.png" />
     <ImageAsset Include="Assets.xcassets\diver.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\diver.imageset\dive_3px.png" />
     <ImageAsset Include="Assets.xcassets\diver.imageset\divexhdpi.png" />
@@ -258,6 +250,23 @@
     <ImageAsset Include="Assets.xcassets\turtle_bad_3.imageset\turtle_sad_3mdpi.png" />
     <ImageAsset Include="Assets.xcassets\turtle_bad_3.imageset\turtle_sad_3xhdpi.png" />
     <ImageAsset Include="Assets.xcassets\turtle_bad_3.imageset\turtle_sad_3xxhdpi.png" />
+    <InterfaceDefinition Include="CustomLaunchScreen.storyboard" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\appicon.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\appicon58.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\appicon87.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\appicon120.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\appicon120-1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\appicon180.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\appicon80.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\appicon40.png" />
+    <ImageAsset Include="Assets.xcassets\bagdark.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\bagdark.imageset\bagsxxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\bagdark.imageset\bagsxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\bagdark.imageset\bagsmdpi.png" />
+    <ImageAsset Include="Assets.xcassets\jellyfishdark.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\jellyfishdark.imageset\jellyfishyxxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\jellyfishdark.imageset\jellyfishyxhdpi.png" />
+    <ImageAsset Include="Assets.xcassets\jellyfishdark.imageset\jellyfishymdpi.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -344,11 +353,16 @@
     <Folder Include="Assets.xcassets\turtle_bad_1.imageset\" />
     <Folder Include="Assets.xcassets\turtle_bad_2.imageset\" />
     <Folder Include="Assets.xcassets\turtle_bad_3.imageset\" />
+    <Folder Include="Assets.xcassets\bagdark.imageset\" />
+    <Folder Include="Assets.xcassets\jellyfishdark.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Montserrat-Bold.ttf" />
     <BundleResource Include="Resources\Montserrat-Regular.ttf" />
     <BundleResource Include="Resources\Montserrat-Medium.ttf" />
     <BundleResource Include="Resources\whitebubbles.json" />
+    <BundleResource Include="Resources\Poppins-Bold.otf" />
+    <BundleResource Include="Resources\Poppins-Medium.otf" />
+    <BundleResource Include="Resources\Poppins-Regular.otf" />
   </ItemGroup>
 </Project>

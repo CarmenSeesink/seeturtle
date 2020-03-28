@@ -4,28 +4,37 @@
              x:Class="seeturtle.RenamePage"
              BackgroundColor="White">
 <ContentPage.Content>
-    <StackLayout Margin="0, 150, 0, 20">
+    <StackLayout Margin="0, 100, 0, 20" VerticalOptions="CenterAndExpand">
             <ScrollView  x:Name="layout" Orientation="Vertical" VerticalScrollBarVisibility="Never">
                 <StackLayout>
                     <Image Source="turtlelogo"
-                           WidthRequest="150"
-                           HeightRequest="150"></Image>
+                           WidthRequest="130"
+                           HeightRequest="130">
+                      <Image.TranslationY>
+                          <OnPlatform
+                            x:TypeArguments="x:Double"
+                            iOS="0"
+                            Android="20" />
+                      </Image.TranslationY>
+                    </Image>
                     <Label Style="{StaticResource HeaderBlack}"
                            Text="Name turtle"
                            VerticalOptions="Start"/>
                     <Label Style="{StaticResource Body}"
+                           Margin="35, -10, 0, 30"
                            Text="Give turtle a name"/>
-                        <effects:CustomEntry Margin="35, 0, 35, 30"
+                        <effects:CustomEntry Margin="40, 0, 40, 30"
                                Text="Lily"
                                x:Name="TurtleNameInput"
-                               FontFamily="Montserrat-Regular"
-                               HeightRequest="55"
-                               WidthRequest="70"
+                               FontFamily="Poppins-Regular"
+                               HeightRequest="50"
+                               WidthRequest="60"
                                BackgroundColor="Transparent">
                         </effects:CustomEntry>
                     <Button Text="Start"
                             Style="{StaticResource buttonStyle}"
-                            Clicked="LetsPlayTapped">
+                            Clicked="LetsPlayTapped"
+                            WidthRequest="180">
                     </Button>
                    </StackLayout>
             </ScrollView>

@@ -1,2 +1,8 @@
-USB Debugging: 1
+IP: 10.0.0.7
+IP: 169.254.11.88
+IP: fe80::1ca9:31bf:83ba:a705
+IP: fe80::c4ed:2dff:fec9:1706
+IP: fe80::c4e6:b811:8920:9c0b
+IP: fe80::9701:836f:3a61:12be
+IP: fe80::66:51b:f762:c870
 Port: 10000

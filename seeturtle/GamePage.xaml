@@ -9,50 +9,47 @@
        
           <BoxView CornerRadius="0,0, 30, 0"
                                 WidthRequest="55"
-                               HeightRequest="100"
-                               BackgroundColor="#f4315d"
-                               HorizontalOptions="End"
-                               VerticalOptions="Start">      
+                                HeightRequest="120"
+                                BackgroundColor="#f4315d"
+                                HorizontalOptions="End"
+                                VerticalOptions="Start">      
            </BoxView>
            <ImageButton Source="menu"
                               Clicked="MenuIconTapped"
                               TranslationY="-60"
-                              TranslationX="-14"
+                              TranslationX="-15"
                               HorizontalOptions="End"
-                              WidthRequest="15"
-                              HeightRequest="15"
+                              WidthRequest="20"
+                              HeightRequest="10"
                               CornerRadius="0"
                               BackgroundColor="Transparent">
            </ImageButton>
-           
-
             <StackLayout VerticalOptions="FillAndExpand"
-                         Margin="0, -70, 0, 40">
+                         Margin="0, -60, 0, 40">
                 <Label Style="{StaticResource HeaderWhite}"
                        Text="Let's play"/>
                 <Label Style="{StaticResource BodyWhite}"
-                       Text="Help clean up the beach"/>
-                  <Label Style="{StaticResource BodyWhite}"
-                       Text=""
-                         x:Name="gameWonLabel"/>
+                       Text="Help clean up the beach"
+                       Margin="35, -5, 0, 0"/>
+       
             </StackLayout>
             <pancake:PancakeView HeightRequest="500"
-                                   BackgroundColor="#fcd98d"
-                                   CornerRadius="40, 40, 0, 0"
+                                   BackgroundColor="#f7dca1"
+                                   CornerRadius="60, 60, 0, 0"
                                    VerticalOptions="End">
             <StackLayout HorizontalOptions="CenterAndExpand">
               <Grid Margin="20, 40, 20, 20">
                   <Grid.RowDefinitions>
-                      <RowDefinition Height="*"></RowDefinition>
-                      <RowDefinition Height="Auto"></RowDefinition>
-                       <RowDefinition Height="Auto"></RowDefinition>
-                      <RowDefinition Height="Auto"></RowDefinition>
+                      <RowDefinition Height="60"></RowDefinition>
+                      <RowDefinition Height="60"></RowDefinition>
+                      <RowDefinition Height="60"></RowDefinition>
+                      <RowDefinition Height="60"></RowDefinition>
                   </Grid.RowDefinitions>
                   <Grid.ColumnDefinitions>
-                      <ColumnDefinition Width="50"></ColumnDefinition>
-                      <ColumnDefinition Width="50"></ColumnDefinition>
-                      <ColumnDefinition Width="50"></ColumnDefinition>
-                      <ColumnDefinition Width="50"></ColumnDefinition>
+                      <ColumnDefinition Width="60"></ColumnDefinition>
+                      <ColumnDefinition Width="60"></ColumnDefinition>
+                      <ColumnDefinition Width="60"></ColumnDefinition>
+                      <ColumnDefinition Width="60"></ColumnDefinition>
                   </Grid.ColumnDefinitions>
                   <ImageButton Source="bags"
                                x:Name="plastic1"
@@ -138,6 +135,12 @@
                        WidthRequest="80"
                        HeightRequest="80"
                        Margin="0, 0, 0, 0">
+                      <Image.TranslationY>
+                        <OnPlatform
+                            x:TypeArguments="x:Double"
+                            iOS="40"
+                            Android="0" />
+                      </Image.TranslationY>
                 </Image>
             </StackLayout>
               </pancake:PancakeView>

@@ -110,12 +110,12 @@
 /Users/CarmenSeesink/Desktop/project/seeturtle.iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.PancakeView.dll
 /Users/CarmenSeesink/Desktop/project/seeturtle.iOS/bin/iPhoneSimulator/Debug/seeturtle.dll
 /Users/CarmenSeesink/Desktop/project/seeturtle.iOS/bin/iPhoneSimulator/Debug/seeturtle.pdb
-/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/ibtool/_BundleResourceWithLogicalName.items
-/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/_PartialAppManifest.items
-/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/_BundleResourceWithLogicalName.items
-/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/coremlc/_PartialAppManifest.items
-/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/coremlc/_BundleResourceWithLogicalName.items
-/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/optimized/
+/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.4/ibtool/_BundleResourceWithLogicalName.items
+/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.4/actool/_PartialAppManifest.items
+/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.4/actool/_BundleResourceWithLogicalName.items
+/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.4/coremlc/_PartialAppManifest.items
+/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.4/coremlc/_BundleResourceWithLogicalName.items
+/Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.4/optimized/
 /Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/seeturtle.iOS.csprojAssemblyReference.cache
 /Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/seeturtle.iOS.csproj.CoreCompileInputs.cache
 /Users/CarmenSeesink/Desktop/project/seeturtle.iOS/obj/iPhoneSimulator/Debug/XamlC.stamp

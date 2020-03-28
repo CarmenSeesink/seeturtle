@@ -14,6 +14,7 @@ namespace seeturtle
         {
             InitializeComponent();
         }
+
         /* Navigation */
 
         async void MenuIconTapped(System.Object sender, System.EventArgs e)
@@ -21,97 +22,89 @@ namespace seeturtle
             await Navigation.PushModalAsync(new MenuPage());
         }
 
-        private void hidePlastic1Tapped(object sender, EventArgs args)
-        {
-            Device.BeginInvokeOnMainThread(() =>
-            {
-                plastic1.IsVisible = false;
+        /* Hiding Plastics */
 
-            });
+        async private void hidePlastic1Tapped(object sender, EventArgs args)
+        {
+            await plastic1.ScaleTo(3, 50);
+            await plastic1.ScaleTo(1, 50, Easing.BounceOut);
+            await plastic1.FadeTo(0, 50);
         }
 
-        private void hidePlastic2Tapped(object sender, EventArgs args)
+        async private void hidePlastic2Tapped(object sender, EventArgs args)
         {
-            Device.BeginInvokeOnMainThread(() =>
-            {
-                plastic2.IsVisible = false;
-
-            });
-        }
-
-
-        private void hidePlastic3Tapped(object sender, EventArgs args)
-        {
-            Device.BeginInvokeOnMainThread(() =>
-            {
-                plastic3.IsVisible = false;
-
-            });
-        }
-
-        private void hidePlastic4Tapped(object sender, EventArgs args)
-        {
-            Device.BeginInvokeOnMainThread(() =>
-            {
-                plastic4.IsVisible = false;
-
-            });
-        }
-
-        private void hideBottle1Tapped(object sender, EventArgs args)
-        {
-            Device.BeginInvokeOnMainThread(() =>
-            {
-                bottle1.IsVisible = false;
-
-            });
-        }
-
-        private void hideBottle2Tapped(object sender, EventArgs args)
-        {
-            Device.BeginInvokeOnMainThread(() =>
-            {
-                bottle2.IsVisible = false;
-
-            });
+            await plastic2.ScaleTo(3, 50);
+            await plastic2.ScaleTo(1, 50, Easing.BounceOut);
+            await plastic2.FadeTo(0, 50);
         }
 
 
-        private void hideBottle3Tapped(object sender, EventArgs args)
+        async private void hidePlastic3Tapped(object sender, EventArgs args)
         {
-            Device.BeginInvokeOnMainThread(() =>
-            {
-                bottle3.IsVisible = false;
-
-            });
+            await plastic3.ScaleTo(3, 50);
+            await plastic3.ScaleTo(1, 50, Easing.BounceOut);
+            await plastic3.FadeTo(0, 50);
         }
 
-        private void hideBottle4Tapped(object sender, EventArgs args)
+        async private void hidePlastic4Tapped(object sender, EventArgs args)
         {
-            Device.BeginInvokeOnMainThread(() =>
-            {
-                bottle4.IsVisible = false;
-
-            });
+            await plastic4.ScaleTo(3, 50);
+            await plastic4.ScaleTo(1, 50, Easing.BounceOut);
+            await plastic4.FadeTo(0, 50);
         }
 
-        async void TurtleMove(object sender, EventArgs args)
+        async private void hideBottle1Tapped(object sender, EventArgs args)
         {
-            if (plastic1.IsVisible && plastic2.IsVisible && plastic3.IsVisible && plastic4.IsVisible && bottle1.IsVisible && bottle2.IsVisible && bottle3.IsVisible && bottle4.IsVisible == false)
-            {
-                //await DisplayAlert("Well done", "You helped turtle get safely to the ocean", "Restart game");
-
-                await turtletopImage.TranslateTo(-100, -100, 2000, Easing.BounceOut);
-                //turtle.cleanOcean();
-                GameWon();
-               
-            }
+            await bottle1.ScaleTo(3, 50);
+            await bottle1.ScaleTo(1, 50, Easing.BounceOut);
+            await bottle1.FadeTo(0, 50);
         }
 
-       void GameWon()
+        async private void hideBottle2Tapped(object sender, EventArgs args)
         {
-            gameWonLabel.Text = "Well done you won the game!";
+            await bottle2.ScaleTo(3, 50);
+            await bottle2.ScaleTo(1, 50, Easing.BounceOut);
+            await bottle2.FadeTo(0, 50);
+        }
 
+        async private void hideBottle3Tapped(object sender, EventArgs args)
+        {
+            await bottle3.ScaleTo(3, 50);
+            await bottle3.ScaleTo(1, 50, Easing.BounceOut);
+            await bottle3.FadeTo(0, 50);
+        }
+
+        async void hideBottle4Tapped(object sender, EventArgs args)
+        {
+            await bottle4.ScaleTo(3, 50);
+            await bottle4.ScaleTo(1, 50, Easing.BounceOut);
+            await bottle4.FadeTo(0, 50);
+            TurtleMove();
+        }
+
+        /* Turtle Move */
+
+        async void TurtleMove()
+        {
+            await turtletopImage.TranslateTo(0, -280, 2000, Easing.BounceOut);
+            await DisplayAlert("Well done", "You helped turtle get safely to the ocean", "Return");
+            resetUI();
+            turtle.cleanOcean();
+        }
+
+        /* Reset UI */
+
+        private void resetUI()
+        {
+            plastic1.FadeTo(1, 50);
+            plastic2.FadeTo(1, 50);
+            plastic3.FadeTo(1, 50);
+            plastic4.FadeTo(1, 50);
+            bottle1.FadeTo(1, 50);
+            bottle2.FadeTo(1, 50);
+            bottle3.FadeTo(1, 50);
+            bottle4.FadeTo(1, 50);
+            turtletopImage.TranslateTo(0, 0, 1000, Easing.BounceOut);
         }
     }
 }

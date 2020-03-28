@@ -19,11 +19,5 @@ namespace seeturtle
             InitializeComponent();
         }
 
-        async void Intro_Tapped(object sender, System.EventArgs e)
-        {
-            await Navigation.PushModalAsync(new IntroductionPage());
-
-        }
-
     }
 }

@@ -6,6 +6,6 @@
              mc:Ignorable="d"
              x:Class="seeturtle.MainPage">
   <StackLayout>
-      <Button Text="Rename turtle" Clicked="Intro_Tapped"></Button>
+   
   </StackLayout>
 </ContentPage>

@@ -17,7 +17,7 @@
                          HorizontalOptions="End"
                          BackgroundColor="#f4315d"
                          WidthRequest="55"
-                         HeightRequest="100"
+                         HeightRequest="120"
                          CornerRadius="0, 0, 30, 0">
                 </BoxView>
                  <ImageButton Source="backarrow"

@@ -13,38 +13,84 @@
                 Grid.Row="1"
                 x:Name="boxView"
                 BackgroundColor="White"
-                HeightRequest="350"
                 CornerRadius="60,60,0,0"
                 HorizontalOptions="Fill"
-                VerticalOptions="End"/>
+                VerticalOptions="End">
+                <BoxView.HeightRequest>
+                        <OnPlatform
+                            x:TypeArguments="x:Double"
+                            iOS="400"
+                            Android="320" />
+                </BoxView.HeightRequest>
+            </BoxView>
             <Image Grid.Row="1"
                    WidthRequest="220"
                    HeightRequest="220"
                    Source="diver"
                    x:Name="mainImage"
-                   TranslationY="-60"
-                   VerticalOptions="Start"/>
-            <StackLayout Grid.Row="1" Margin="20, 140, 20, 20">
+                   VerticalOptions="Start">
+                   <Image.TranslationY>
+                        <OnPlatform
+                            x:TypeArguments="x:Double"
+                            iOS="-90"
+                            Android="-10" />
+                   </Image.TranslationY>
+            </Image>
+            <StackLayout Grid.Row="1" Margin="20, 120, 20, 20">
+                 <StackLayout.TranslationY>
+                        <OnPlatform
+                            x:TypeArguments="x:Double"
+                            iOS="0"
+                            Android="50" />
+                </StackLayout.TranslationY>
                 <Label Style="{StaticResource HeaderBlack}"
                        Text="Welcome"
                        x:Name="welcomeLabel"
                        VerticalOptions="Start"/>
                 <Label Style="{StaticResource SubHeader}"
-                       Text="SeeTurtle"
+                       Text="to seeturtle"
                        x:Name="subheaderLabel"
+                       VerticalOptions="Start"/>
+                <Label Style="{StaticResource Body}"
+                       Text="are you new to the game?"
+                       x:Name="questionLabel"
                        VerticalOptions="Start"/>
                 <Label Style="{StaticResource Body}"
                        x:Name="content"
                        Text="A leatherback turtle needs to complete her seasonal migration. You have been selected to be part of our marine conservation team, to assist the turtle on her important journey. Are you ready to help her navigate the challenges of her migration?"
                        Opacity="0"/>
-                 <Button TranslationY="-180"
-                         x:Name="button1"
-                         Text="Let's go"
-                         Style="{StaticResource buttonStyle}"
-                         Clicked="LetsGoTapped">
-                 </Button>
-                 <Button TranslationY="-180"
-                         x:Name="button2"
+                <Grid VerticalOptions="FillAndExpand" HorizontalOptions="CenterAndExpand">
+                    <Grid.TranslationY>
+                        <OnPlatform
+                            x:TypeArguments="x:Double"
+                            iOS="-200"
+                            Android="-180" />
+                    </Grid.TranslationY>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                         <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="button1"
+                            Text="Yes"
+                            Style="{StaticResource buttonStyle}"
+                            WidthRequest="140"
+                            BackgroundColor="WhiteSmoke"
+                            TextColor="Black"
+                            Clicked="YesTapped">
+                    </Button>
+                     <Button Grid.Column="1"
+                             x:Name="button2"
+                             Text="No"
+                             Style="{StaticResource buttonStyle}"
+                             WidthRequest="140"
+                             Clicked="NoTapped">
+                    </Button>
+                </Grid>
+                 <Button TranslationY="0"
+                         x:Name="button3"
                          Text="Let's play"
                          Style="{StaticResource buttonStyle}"
                          Clicked="LetsPlayTapped"
