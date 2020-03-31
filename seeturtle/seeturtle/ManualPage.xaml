@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             x:Class="seeturtle.ManualPage">
+    <StackLayout>
+          <pancake:PancakeView CornerRadius="0,0, 30, 0"
+                               HeightRequest="120"
+                               WidthRequest="55"
+                               BackgroundColor="#f4315d"
+                               HorizontalOptions="End"
+                               VerticalOptions="Start">
+                   <RelativeLayout>
+                   <ImageButton Source="menu"
+                                Clicked="MenuTapped"
+                                WidthRequest="22"
+                                HeightRequest="11"
+                                TranslationX="19"
+                                Padding="1"
+                                TranslationY="70"
+                                CornerRadius="0">
+                   </ImageButton>
+                       </RelativeLayout>
+               </pancake:PancakeView>
+        <StackLayout>
+            <StackLayout VerticalOptions="FillAndExpand"
+                         Margin="0, -40, 0, 50">
+                <Label Style="{StaticResource HeaderBlack}"
+                       Text="Manual"/>
+                <Label Style="{StaticResource Body}"
+                       Text="Learn more"
+                       Margin="35, -10, 0, 0"/>
+            </StackLayout>
+           <ScrollView HorizontalScrollBarVisibility="Never" Orientation="Horizontal">
+                <StackLayout Orientation="Horizontal">
+                    <pancake:PancakeView CornerRadius="40"  Margin="35, 0, 10, 0">
+                        <Grid
+                            BackgroundColor="#6328cf"
+                            HeightRequest="400"
+                            WidthRequest="290">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="250"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <StackLayout Margin="0, 5, 0, 0">
+                            <Label Text="Coral Restoration"
+                                   LineHeight="0.8"
+                                   Style="{StaticResource ManualHeader}"></Label>
+                            <Label Text="Coral restoration refers to the process of growing corals in land-based nurseries to transplant coral colonies to degraded reefs."
+                                   Style="{StaticResource BodyWhite}"></Label>
+                            </StackLayout>  
+                            <Image Grid.Row="1"
+                                   Source="coral"
+                                   HeightRequest="110"
+                                   WidthRequest="110"
+                                   TranslationX="40">
+                                 <Image.TranslationY>
+                                    <OnPlatform
+                                       x:TypeArguments="x:Double"
+                                       iOS="40"
+                                       Android="0" />
+                                </Image.TranslationY>
+                            </Image>
+                        </Grid>
+                    </pancake:PancakeView>
+                    <pancake:PancakeView CornerRadius="40"  Margin="0, 0, 10, 0">
+                        <Grid
+                            BackgroundColor="#6328cf"
+                            WidthRequest="290">
+                            <Grid.HeightRequest>
+                                <OnPlatform
+                                       x:TypeArguments="x:Double"
+                                       iOS="450"
+                                       Android="400" />
+                            </Grid.HeightRequest>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="250"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <StackLayout Margin="0, 5, 0, 0">
+                            <Label Text="Pollution"
+                                   Style="{StaticResource ManualHeader}"></Label>
+                            <Label Text="There can be several causes of ocean pollution, but the leading causes include sewage, toxic chemicals from industries, nuclear waste, thermal pollution, plastics, acid rain, and oil spillage"
+                                   Style="{StaticResource BodyWhite}"></Label>
+                            </StackLayout>  
+                            <Image Grid.Row="1"
+                                   Source="bags"
+                                   TranslationY="10"
+                                   HeightRequest="105"
+                                   WidthRequest="105"
+                                   TranslationX="40">
+                                 <Image.TranslationY>
+                                    <OnPlatform
+                                       x:TypeArguments="x:Double"
+                                       iOS="40"
+                                       Android="0" />
+                                </Image.TranslationY>
+                            </Image>
+                        </Grid>
+                    </pancake:PancakeView>
+                    <pancake:PancakeView CornerRadius="40"  Margin="0, 0, 10, 0">
+                        <Grid
+                            BackgroundColor="#6328cf"
+                            HeightRequest="400"
+                            WidthRequest="290">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="250"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <StackLayout Margin="0, 5, 0, 0">
+                            <Label Text="Migration"
+                                   Style="{StaticResource ManualHeader}"></Label>
+                            <Label Text="Sea turtles are able to migrate back to the exact beach they hatched. This allows them to navigate vast distances between their nesting and feeding grounds."
+                                   Style="{StaticResource BodyWhite}"></Label>
+                            </StackLayout>  
+                            <Image Grid.Row="1"
+                                   Source="compass"
+                                   HeightRequest="110"
+                                   WidthRequest="110"
+                                   TranslationX="40">
+                                <Image.TranslationY>
+                                    <OnPlatform
+                                       x:TypeArguments="x:Double"
+                                       iOS="30"
+                                       Android="0" />
+                                </Image.TranslationY>
+                            </Image>
+                                   
+                        </Grid>
+                    </pancake:PancakeView>
+                    <pancake:PancakeView CornerRadius="40"  Margin="0, 0, 10, 0">
+                        <Grid
+                            BackgroundColor="#6328cf"
+                            HeightRequest="400"
+                            WidthRequest="290">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="250"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <StackLayout Margin="0, 5, 0, 0">
+                            <Label Text="Feeding"
+                                   Style="{StaticResource ManualHeader}"></Label>
+                            <Label Text="Leatherbacks have delicate scissor-like jaws that would be damaged by anything other than their normal diet of jellyfish, tunicates, and other soft-bodied animals. "
+                                   Style="{StaticResource BodyWhite}"></Label>
+                            </StackLayout>  
+                            <Image Grid.Row="1"
+                                   Source="jellyfishs"
+                                   HeightRequest="110"
+                                   WidthRequest="110"
+                                   TranslationX="40">
+                                 <Image.TranslationY>
+                                    <OnPlatform
+                                       x:TypeArguments="x:Double"
+                                       iOS="30"
+                                       Android="0" />
+                                </Image.TranslationY>
+                            </Image>
+                        </Grid>
+                    </pancake:PancakeView>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
