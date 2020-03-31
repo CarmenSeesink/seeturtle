@@ -74,12 +74,12 @@ Use `Open Workspace` in Visual Studio.
 
 ## Unit Testing
 
-These are two examples of unit tests that can be run on this system:
+These are two examples of unit tests that can be run on this system. Navigate to Test Explorer to run the unit tests.
+
 
 ### GetLevelFromXpTest
 
-The following test checks if the correct level is selected based on the Xp level. Navigate to Test Explorer and run unit tests.
-
+The following test checks if the correct level is selected based on the Xp level. 
 ```
 //ARRANGE
 int xp = 1500;
@@ -95,7 +95,7 @@ Assert.AreEqual(expectedLevel, result);
 
 ### GetTurtleStateTest
 
-The following test checks if the correct state is selected based on the turtle string. Navigate to Test Explorer and run unit tests.
+The following test checks if the correct state is selected based on the turtle string. 
 
 ```
 //ARRANGE
