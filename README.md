@@ -71,7 +71,6 @@ git clone https:://github.com/CarmenSeesink/seeturtle.git
 
 Use `Open Workspace` in Visual Studio.
 
-<!—UNIT TESTS-->
 
 ## Unit Testing
 
@@ -156,7 +155,7 @@ Contributions are what make the open source community such an amazing place to b
 <!-- AUTHORS -->
 ## Authors
 
-* **Carmen Seesink** [CarmenSeesink](https://github.com/CarmenSeesink)
+* **Carmen Seesink** - [CarmenSeesink](https://github.com/CarmenSeesink)
 
 <!-- LICENSE -->
 ## License
