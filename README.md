@@ -8,7 +8,7 @@
     <img src="Images/logo.png" alt="Logo" width="140" height="140">
   </a>
   
-  <h3 align="center">seetrutle</h3>
+  <h3 align="center">seeturtle</h3>
 
   <p align="center">
     Enjoy, play, learn
@@ -29,8 +29,8 @@
    * [Feed](#multiplayer)
    * [Remove Plastic Waste](#sentences-and-score)
    * [Name your Turtle](#name-your-turtle)
-   * [Manual](#manual)
    * [Games](#games)
+   * [Manual](#manual)
 * [Contributing](#contributing)
 * [License](#license)
 * [Acknowledgements](#acknowledgements)
