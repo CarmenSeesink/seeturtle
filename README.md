@@ -23,7 +23,7 @@
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [How to install](#how-to-install)
-*[Unit Testing](#unit-testing)
+* [Unit Testing](#unit-testing)
 * [Features and Functionality](#features-and-functionality)
    * [Plant Coral](#plant-coral)
    * [Feed](#multiplayer)
